@@ -1,0 +1,1581 @@
+{
+  "model_name": "OLMo2-13B-Instruct",
+  "model_path": "olmo_models/OLMo2-13B-Instruct",
+  "dataset_name": "contaminated_midtraining_stackexchange_math_test_shifted",
+  "dataset_path": "benchmark/midtraining/stackexchange/contaminated/shifted/test/contaminated_midtraining_stackexchange_math_test_shifted.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 29.12042474746704,
+  "result": {
+    "method": "dcq",
+    "dataset": "contaminated_midtraining_stackexchange_math_test_shifted",
+    "dataset_path": "benchmark/midtraining/stackexchange/contaminated/shifted/test/contaminated_midtraining_stackexchange_math_test_shifted.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "min_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.17594482829528196,
+      "B": 0.36742772654231104,
+      "C": 0.12979344971245155,
+      "D": 0.21214279768589353
+    },
+    "non_preferred": [
+      "A",
+      "C"
+    ],
+    "num_total_records": 35,
+    "num_scored_records": 28,
+    "summary": {
+      "mean_score": 0.2782622699492744
+    },
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "math_stackexchange_com-239959-240022",
+        "label": null,
+        "perturbations": {
+          "a": "Conormal Sheaf (Morphisms of Schemes, Stacks Project)\n\nThe initial part of this inquiry refers to Lemma 33.2 from the chapter \"Morphisms of Schemes\" of the Stacks Project. In particular, if $i: Z \\rightarrow X$ is an embedding and $\\mathcal{I}$ is the corresponding ideal sheaf, then the conormal sheaf is $C_{Z/X} = i^*(\\mathcal{I})$. What i don't perceive is why $i^*(\\mathcal{I}) = i^{-1}(\\mathcal{I}/\\mathcal{I}^2)$. My attempts: if i apply the definition of the pullback $i^*$ i get $i^*(\\mathcal{I}) = i^{-1} \\mathcal{I} \\otimes_{i^{-1}O_X} O_Z$. Additionally, i also observe that if $R$ is a ring and $I$ some ideal then $I/I^2 = I \\times_R R/I$. But i am struggling to merge these two facts to obtain $i^{-1}(\\mathcal{I}/\\mathcal{I}^2)$.\n\nBy definition, we have $ i^*(\\mathcal{I}) = i^{-1}(\\mathcal{I})\\otimes _{i^{-1}\\mathcal O_X} \\mathcal O_Z$. On the other hand $\\mathcal O_Z=i^{-1}(\\mathcal O_X/\\mathcal I)$, so that $$ i^*(\\mathcal{I}) = i^{-1}(\\mathcal{I})\\otimes _{i^{-1}\\mathcal O_X} i^{-1}(\\mathcal O_X/\\mathcal I)=i^{-1}[\\mathcal I\\otimes _{\\mathcal O_X} \\mathcal O_X/\\mathcal I]=i^{-1}[\\mathcal I/\\mathcal I^2]$$ just as is stated in the Stacks Project.",
+          "b": "Conormal Sheaf (Morphisms of Schemes, Stacks Project)\n\nThe opening part of this query refers to Lemma 33.2 from the chapter \"Morphisms of Schemes\" of the Stacks Project. In particular, if $i: Z \\rightarrow X$ is an inclusion and $\\mathcal{I}$ is the corresponding ideal sheaf, then the conormal sheaf is $C_{Z/X} = i^*(\\mathcal{I})$. What i don't comprehend is why $i^*(\\mathcal{I}) = i^{-1}(\\mathcal{I}/\\mathcal{I}^2)$. My endeavors: if i apply the definition of the pullback $i^*$ i get $i^*(\\mathcal{I}) = i^{-1} \\mathcal{I} \\otimes_{i^{-1}O_X} O_Z$. Additionally, i also recognize that if $R$ is a ring and $I$ some ideal then $I/I^2 = I \\times_R R/I$. But i am finding it difficult to combine these two facts to obtain $i^{-1}(\\mathcal{I}/\\mathcal{I}^2)$.\n\nBy definition, we have $ i^*(\\mathcal{I}) = i^{-1}(\\mathcal{I})\\otimes _{i^{-1}\\mathcal O_X} \\mathcal O_Z$. On the other hand $\\mathcal O_Z=i^{-1}(\\mathcal O_X/\\mathcal I)$, so that $$ i^*(\\mathcal{I}) = i^{-1}(\\mathcal{I})\\otimes _{i^{-1}\\mathcal O_X} i^{-1}(\\mathcal O_X/\\mathcal I)=i^{-1}[\\mathcal I\\otimes _{\\mathcal O_X} \\mathcal O_X/\\mathcal I]=i^{-1}[\\mathcal I/\\mathcal I^2]$$ just as is stated in the Stacks Project.",
+          "c": "Conormal Sheaf (Morphisms of Schemes, Stacks Project)\n\nThe initial segment of this question refers to Lemma 33.2 from the chapter \"Morphisms of Schemes\" of the Stacks Project. In particular, if $i: Z \\rightarrow X$ is an entrance and $\\mathcal{I}$ is the corresponding ideal sheaf, then the conormal sheaf is $C_{Z/X} = i^*(\\mathcal{I})$. What i don't grasp is why $i^*(\\mathcal{I}) = i^{-1}(\\mathcal{I}/\\mathcal{I}^2)$. My efforts: if i apply the definition of the pullback $i^*$ i get $i^*(\\mathcal{I}) = i^{-1} \\mathcal{I} \\otimes_{i^{-1}O_X} O_Z$. Additionally, i also see that if $R$ is a ring and $I$ some ideal then $I/I^2 = I \\times_R R/I$. But i am having difficulty merging these two facts to obtain $i^{-1}(\\mathcal{I}/\\mathcal{I}^2)$.\n\nBy definition, we have $ i^*(\\mathcal{I}) = i^{-1}(\\mathcal{I})\\otimes _{i^{-1}\\mathcal O_X} \\mathcal O_Z$. On the other hand $\\mathcal O_Z=i^{-1}(\\mathcal O_X/\\mathcal I)$, so that $$ i^*(\\mathcal{I}) = i^{-1}(\\mathcal{I})\\otimes _{i^{-1}\\mathcal O_X} i^{-1}(\\mathcal O_X/\\mathcal I)=i^{-1}[\\mathcal I\\otimes _{\\mathcal O_X} \\mathcal O_X/\\mathcal I]=i^{-1}[\\mathcal I/\\mathcal I^2]$$ just as is stated in the Stacks Project.",
+          "d": "Conormal Sheaf (Morphisms of Schemes, Stacks Project)\n\nThe first segment of this query refers to Lemma 33.2 from the chapter \"Morphisms of Schemes\" of the Stacks Project. In particular, if $i: Z \\rightarrow X$ is a map and $\\mathcal{I}$ is the corresponding ideal sheaf, then the conormal sheaf is $C_{Z/X} = i^*(\\mathcal{I})$. What i don't understand is why $i^*(\\mathcal{I}) = i^{-1}(\\mathcal{I}/\\mathcal{I}^2)$. My attempts: if i apply the definition of the pullback $i^*$ i get $i^*(\\mathcal{I}) = i^{-1} \\mathcal{I} \\otimes_{i^{-1}O_X} O_Z$. Additionally, i also notice that if $R$ is a ring and $I$ some ideal then $I/I^2 = I \\times_R R/I$. But i am having trouble combining these two facts to obtain $i^{-1}(\\mathcal{I}/\\mathcal{I}^2)$.\n\nBy definition, we have $ i^*(\\mathcal{I}) = i^{-1}(\\mathcal{I})\\otimes _{i^{-1}\\mathcal O_X} \\mathcal O_Z$. On the other hand $\\mathcal O_Z=i^{-1}(\\mathcal O_X/\\mathcal I)$, so that $$ i^*(\\mathcal{I}) = i^{-1}(\\mathcal{I})\\otimes _{i^{-1}\\mathcal O_X} i^{-1}(\\mathcal O_X/\\mathcal I)=i^{-1}[\\mathcal I\\otimes _{\\mathcal O_X} \\mathcal O_X/\\mathcal I]=i^{-1}[\\mathcal I/\\mathcal I^2]$$ just as is stated in the Stacks Project."
+        },
+        "bdq_probs": {
+          "A": 0.2659304440021515,
+          "B": 0.3523007035255432,
+          "C": 0.1379629373550415,
+          "D": 0.1256166249513626,
+          "E": 0.11800596117973328
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2805725038051605,
+            "B": 0.36026233434677124,
+            "C": 0.12067277729511261,
+            "D": 0.10987375676631927,
+            "E": 0.1284555196762085
+          },
+          "B": {
+            "A": 0.2708638608455658,
+            "B": 0.3702270984649658,
+            "C": 0.136198952794075,
+            "D": 0.11649707704782486,
+            "E": 0.10607185959815979
+          },
+          "C": {
+            "A": 0.27044934034347534,
+            "B": 0.347263902425766,
+            "C": 0.14935635030269623,
+            "D": 0.11274003982543945,
+            "E": 0.12001123279333115
+          },
+          "D": {
+            "A": 0.2303863912820816,
+            "B": 0.3248969614505768,
+            "C": 0.12723147869110107,
+            "D": 0.16855426132678986,
+            "E": 0.1487487107515335
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2805725038051605,
+          "B": 0.3702270984649658,
+          "C": 0.14935635030269623,
+          "D": 0.16855426132678986
+        },
+        "score": 0.14935635030269623
+      },
+      {
+        "record_index": 1,
+        "sample_id": "math_stackexchange_com-240678-240691",
+        "label": null,
+        "perturbations": {
+          "a": "how many 2x2 arrays are invertible in mod p",
+          "b": "how many 2x2 matrices are non-singular in mod p",
+          "c": "how many 2x2 matrices are reversible in mod p",
+          "d": "how many 2x2 matrices are valid in mod p"
+        },
+        "bdq_probs": {
+          "A": 0.0394543781876564,
+          "B": 0.8049412965774536,
+          "C": 0.12344174832105637,
+          "D": 0.013215553015470505,
+          "E": 0.018930422142148018
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.6781998872756958,
+            "B": 0.0737508237361908,
+            "C": 0.013431019149720669,
+            "D": 0.007302320562303066,
+            "E": 0.22716860473155975
+          },
+          "B": {
+            "A": 0.005976404529064894,
+            "B": 0.9894943833351135,
+            "C": 0.0018227004911750555,
+            "D": 0.0006824248703196645,
+            "E": 0.0019101742655038834
+          },
+          "C": {
+            "A": 0.014967291615903378,
+            "B": 0.05389927327632904,
+            "C": 0.9259933829307556,
+            "D": 0.003112899139523506,
+            "E": 0.0014819629723206162
+          },
+          "D": {
+            "A": 0.003540355945006013,
+            "B": 0.010569547303020954,
+            "C": 0.0027357751969248056,
+            "D": 0.9816423058509827,
+            "E": 0.0014874147018417716
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.6781998872756958,
+          "B": 0.9894943833351135,
+          "C": 0.9259933829307556,
+          "D": 0.9816423058509827
+        },
+        "score": 0.6781998872756958
+      },
+      {
+        "record_index": 2,
+        "sample_id": "math_stackexchange_com-242218-242226",
+        "label": null,
+        "perturbations": {
+          "a": "How do I obtain the integer portion of a number by employing basic arithmetic?",
+          "b": "How do I acquire the integer section of a number by utilizing basic arithmetic?",
+          "c": "How do I receive the integer fragment of a number by applying basic arithmetic?",
+          "d": "How do I achieve the integer component of a number by using fundamental arithmetic?"
+        },
+        "bdq_probs": {
+          "A": 0.7407828569412231,
+          "B": 0.2189750224351883,
+          "C": 0.003351037623360753,
+          "D": 0.015862498432397842,
+          "E": 0.021014399826526642
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.6857630014419556,
+            "B": 0.07457327097654343,
+            "C": 0.012173750437796116,
+            "D": 0.04249056801199913,
+            "E": 0.18457065522670746
+          },
+          "B": {
+            "A": 0.024489110335707664,
+            "B": 0.9481174945831299,
+            "C": 0.013108073733747005,
+            "D": 0.004673827439546585,
+            "E": 0.00959007441997528
+          },
+          "C": {
+            "A": 0.03689034655690193,
+            "B": 0.12875980138778687,
+            "C": 0.7887499928474426,
+            "D": 0.033588990569114685,
+            "E": 0.011976532638072968
+          },
+          "D": {
+            "A": 0.015616788528859615,
+            "B": 0.010733249597251415,
+            "C": 0.004203201737254858,
+            "D": 0.9076388478279114,
+            "E": 0.06176559627056122
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.6857630014419556,
+          "B": 0.9481174945831299,
+          "C": 0.7887499928474426,
+          "D": 0.9076388478279114
+        },
+        "score": 0.6857630014419556
+      },
+      {
+        "record_index": 4,
+        "sample_id": "math_stackexchange_com-242430-242519",
+        "label": null,
+        "perturbations": {
+          "a": "Harmonic function.\n\nThe function $f : \\mathbb{R}^n \\rightarrow \\mathbb{R}$ defined by $f(x) = \\|x\\|^{2-n}$, where $\\|~\\|$ signifies the Euclidean norm, is harmonic. This is merely a straightforward computation.\n\nMy question is: why should we anticipate this function to be harmonic? In other words, if someone inquired whether this function is harmonic or not, what type of reasoning could lead you to suggest that this is the case, before actually calculating its laplacian?\n\nI'm just attempting to grasp the intuition behind harmonic functions. Since this can be a little unclear, I'm willing to accept alternative proofs of this truth as an answer, even if they are superfluous.\n\nAs I remarked, if $n \\ge 2$ this function is not harmonic at the origin. By the Divergence Theorem, the flux of the gradient of $f$ outward through the boundary of a confined region with smooth boundary is $0$ if $f$ is harmonic in the region. In particular this should be accurate for the region between two spheres centred at the origin. For $f(x) = \\|x\\|^{2-n}$ the gradient is directed towards the origin (and thus normal to the surface), with magnitude proportional to $\\|x\\|^{1-n}$. Since the $n-1$-dimensional area of the sphere of radius $r$ is proportional to $r^{n-1}$, that means the flux through the sphere is the same for every $r$, so the flux out of the region between the two spheres is $0$, as it should be.",
+          "b": "Harmonic function.\n\nThe function $f : \\mathbb{R}^n \\rightarrow \\mathbb{R}$ represented by $f(x) = \\|x\\|^{2-n}$, where $\\|~\\|$ indicates the Euclidean norm, is harmonic. This is simply a plain computation.\n\nMy question is: why should we foresee this function to be harmonic? In other words, if someone queried whether this function is harmonic or not, what sort of reasoning could lead you to consider that this is the case, before ultimately calculating its laplacian?\n\nI'm just aiming to comprehend the intuition behind harmonic functions. Since this can be a little ambiguous, I'm willing to accept alternative proofs of this reality as an answer, even if they are excessive.\n\nAs I noted, if $n \\ge 2$ this function is not harmonic at the origin. By the Divergence Theorem, the flux of the gradient of $f$ outward through the boundary of a limited region with smooth boundary is $0$ if $f$ is harmonic in the region. In particular this should be valid for the region between two spheres centred at the origin. For $f(x) = \\|x\\|^{2-n}$ the gradient is directed towards the origin (and thus normal to the surface), with magnitude proportional to $\\|x\\|^{1-n}$. Since the $n-1$-dimensional area of the sphere of radius $r$ is proportional to $r^{n-1}$, that means the flux through the sphere is the same for every $r$, so the flux out of the region between the two spheres is $0$, as it should be.",
+          "c": "Harmonic function.\n\nThe function $f : \\mathbb{R}^n \\rightarrow \\mathbb{R}$ determined by $f(x) = \\|x\\|^{2-n}$, where $\\|~\\|$ signifies the Euclidean norm, is harmonic. This is just a simple calculation.\n\nMy question is: why should we believe this function to be harmonic? In other words, if someone questioned whether this function is harmonic or not, what form of reasoning could lead you to presume that this is the case, before actually measuring its laplacian?\n\nI'm just trying to figure out the intuition behind harmonic functions. Since this can be a little indistinct, I'm willing to accept alternative proofs of this phenomenon as an answer, even if they are redundant.\n\nAs I expressed, if $n \\ge 2$ this function is not harmonic at the origin. By the Divergence Theorem, the flux of the gradient of $f$ outward through the boundary of a constrained region with smooth boundary is $0$ if $f$ is harmonic in the region. In particular this should be true for the region between two spheres centred at the origin. For $f(x) = \\|x\\|^{2-n}$ the gradient is directed towards the origin (and thus normal to the surface), with magnitude proportional to $\\|x\\|^{1-n}$. Since the $n-1$-dimensional area of the sphere of radius $r$ is proportional to $r^{n-1}$, that means the flux through the sphere is the same for every $r$, so the flux out of the region between the two spheres is $0$, as it should be.",
+          "d": "Harmonic function.\n\nThe function $f : \\mathbb{R}^n \\rightarrow \\mathbb{R}$ described by $f(x) = \\|x\\|^{2-n}$, where $\\|~\\|$ represents the Euclidean norm, is harmonic. This is merely a basic computation.\n\nMy question is: why should we presume this function to be harmonic? In other words, if someone posed the question whether this function is harmonic or not, what variety of reasoning could lead you to suspect that this is the case, before actually evaluating its laplacian?\n\nI'm just striving to grasp the intuition behind harmonic functions. Since this can be a little unclear, I'm willing to accept alternative proofs of this assertion as an answer, even if they are excessive.\n\nAs I pointed out, if $n \\ge 2$ this function is not harmonic at the origin. By the Divergence Theorem, the flux of the gradient of $f$ outward through the boundary of a bounded region with smooth boundary is $0$ if $f$ is harmonic in the region. In particular this should be accurate for the region between two spheres centred at the origin. For $f(x) = \\|x\\|^{2-n}$ the gradient is directed towards the origin (and thus normal to the surface), with magnitude proportional to $\\|x\\|^{1-n}$. Since the $n-1$-dimensional area of the sphere of radius $r$ is proportional to $r^{n-1}$, that means the flux through the sphere is the same for every $r$, so the flux out of the region between the two spheres is $0$, as it should be."
+        },
+        "bdq_probs": {
+          "A": 0.12225010991096497,
+          "B": 0.20795442163944244,
+          "C": 0.09823069721460342,
+          "D": 0.25880348682403564,
+          "E": 0.3121768832206726
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.09999921172857285,
+            "B": 0.1410214602947235,
+            "C": 0.1169109046459198,
+            "D": 0.19275356829166412,
+            "E": 0.4481658339500427
+          },
+          "B": {
+            "A": 0.1086944043636322,
+            "B": 0.2230263650417328,
+            "C": 0.11937741935253143,
+            "D": 0.2527220547199249,
+            "E": 0.29546231031417847
+          },
+          "C": {
+            "A": 0.11010392755270004,
+            "B": 0.20570118725299835,
+            "C": 0.11010391265153885,
+            "D": 0.26412561535835266,
+            "E": 0.30879446864128113
+          },
+          "D": {
+            "A": 0.11526425182819366,
+            "B": 0.20229502022266388,
+            "C": 0.08976788818836212,
+            "D": 0.3232666254043579,
+            "E": 0.2679978907108307
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.09999921172857285,
+          "B": 0.2230263650417328,
+          "C": 0.11010391265153885,
+          "D": 0.3232666254043579
+        },
+        "score": 0.09999921172857285
+      },
+      {
+        "record_index": 5,
+        "sample_id": "math_stackexchange_com-243843-243847",
+        "label": null,
+        "perturbations": {
+          "a": "Obtain the anticipated value for a Pareto distribution?",
+          "b": "Compute the predicted value for a Pareto distribution?",
+          "c": "Extract the presumed value for a Pareto distribution?",
+          "d": "Determine the expected value for a Pareto distribution?"
+        },
+        "bdq_probs": {
+          "A": 0.009794734418392181,
+          "B": 0.05549085512757301,
+          "C": 0.00455497158691287,
+          "D": 0.9240060448646545,
+          "E": 0.006129386369138956
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.14634519815444946,
+            "B": 0.0021876832470297813,
+            "C": 0.00021830889454577118,
+            "D": 0.8421585559844971,
+            "E": 0.009067697450518608
+          },
+          "B": {
+            "A": 0.0022763139568269253,
+            "B": 0.9929520487785339,
+            "C": 0.00030806558788754046,
+            "D": 0.003694822546094656,
+            "E": 0.0007506487891077995
+          },
+          "C": {
+            "A": 0.015004578046500683,
+            "B": 0.0786183550953865,
+            "C": 0.8997395634651184,
+            "D": 0.005875877104699612,
+            "E": 0.0007528931018896401
+          },
+          "D": {
+            "A": 0.030432896688580513,
+            "B": 0.18068839609622955,
+            "C": 0.026030635461211205,
+            "D": 0.7607266306877136,
+            "E": 0.0021035976242274046
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.14634519815444946,
+          "B": 0.9929520487785339,
+          "C": 0.8997395634651184,
+          "D": 0.7607266306877136
+        },
+        "score": 0.14634519815444946
+      },
+      {
+        "record_index": 7,
+        "sample_id": "math_stackexchange_com-245668-245725",
+        "label": null,
+        "perturbations": {
+          "a": "Myhill Nerode - is vernacular regular or not?",
+          "b": "Myhill Nerode - is dialect regular or not?",
+          "c": "Myhill Nerode - is tongue regular or not?",
+          "d": "Myhill Nerode - is speech regular or not?"
+        },
+        "bdq_probs": {
+          "A": 0.5932360291481018,
+          "B": 0.23968900740146637,
+          "C": 0.014851370826363564,
+          "D": 0.045745447278022766,
+          "E": 0.10636141896247864
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.8864012360572815,
+            "B": 0.03033098578453064,
+            "C": 0.0019695297814905643,
+            "D": 0.007668875157833099,
+            "E": 0.07052168250083923
+          },
+          "B": {
+            "A": 0.19178885221481323,
+            "B": 0.7826183438301086,
+            "C": 0.008831014856696129,
+            "D": 0.0020014960318803787,
+            "E": 0.014334158040583134
+          },
+          "C": {
+            "A": 0.09719996899366379,
+            "B": 0.1873578131198883,
+            "C": 0.6143227815628052,
+            "D": 0.0711129903793335,
+            "E": 0.029644327238202095
+          },
+          "D": {
+            "A": 0.07595936954021454,
+            "B": 0.1292112171649933,
+            "C": 0.1464155912399292,
+            "D": 0.6359999775886536,
+            "E": 0.011832190677523613
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.8864012360572815,
+          "B": 0.7826183438301086,
+          "C": 0.6143227815628052,
+          "D": 0.6359999775886536
+        },
+        "score": 0.6143227815628052
+      },
+      {
+        "record_index": 8,
+        "sample_id": "math_stackexchange_com-245852-245867",
+        "label": null,
+        "perturbations": {
+          "a": "Prime spectrum of a ring, grasping geometry",
+          "b": "Prime spectrum of a ring, comprehending geometry",
+          "c": "Prime spectrum of a ring, interpreting geometry",
+          "d": "Prime spectrum of a ring, recognizing geometry"
+        },
+        "bdq_probs": {
+          "A": 0.09060949832201004,
+          "B": 0.5379732847213745,
+          "C": 0.016501206904649734,
+          "D": 0.18019843101501465,
+          "E": 0.17465445399284363
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3049483299255371,
+            "B": 0.18496054410934448,
+            "C": 0.41681498289108276,
+            "D": 0.020751995965838432,
+            "E": 0.07243167608976364
+          },
+          "B": {
+            "A": 0.11002657562494278,
+            "B": 0.2898814082145691,
+            "C": 0.27231839299201965,
+            "D": 0.05532483384013176,
+            "E": 0.272318571805954
+          },
+          "C": {
+            "A": 0.046982426196336746,
+            "B": 0.3471558392047882,
+            "C": 0.4599069058895111,
+            "D": 0.06835900247097015,
+            "E": 0.07746099680662155
+          },
+          "D": {
+            "A": 0.05119636654853821,
+            "B": 0.2089131474494934,
+            "C": 0.08440867811441422,
+            "D": 0.5678850412368774,
+            "E": 0.08708810061216354
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3049483299255371,
+          "B": 0.2898814082145691,
+          "C": 0.4599069058895111,
+          "D": 0.5678850412368774
+        },
+        "score": 0.2898814082145691
+      },
+      {
+        "record_index": 9,
+        "sample_id": "math_stackexchange_com-245899-245931",
+        "label": null,
+        "perturbations": {
+          "a": "How to demonstrate exponential of every square matrix is non-declinable?",
+          "b": "How to validate exponential of every square matrix is reversible?",
+          "c": "How to establish exponential of every square matrix is non-reversible?",
+          "d": "How to confirm exponential of every square matrix is invertible?"
+        },
+        "bdq_probs": {
+          "A": 0.024224620312452316,
+          "B": 0.043185025453567505,
+          "C": 0.003954559098929167,
+          "D": 0.8148418664932251,
+          "E": 0.11377748847007751
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.11417331546545029,
+            "B": 0.00966941099613905,
+            "C": 0.0022260244004428387,
+            "D": 0.8704128265380859,
+            "E": 0.0035020296927541494
+          },
+          "B": {
+            "A": 0.009797630831599236,
+            "B": 0.9838913679122925,
+            "C": 0.0019292677752673626,
+            "D": 0.0036043464206159115,
+            "E": 0.0007734285900369287
+          },
+          "C": {
+            "A": 0.0746997818350792,
+            "B": 0.2863534092903137,
+            "C": 0.5349787473678589,
+            "D": 0.07469972968101501,
+            "E": 0.029252860695123672
+          },
+          "D": {
+            "A": 0.07392760366201401,
+            "B": 0.1424991637468338,
+            "C": 0.059402499347925186,
+            "D": 0.6589095592498779,
+            "E": 0.06524088978767395
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.11417331546545029,
+          "B": 0.9838913679122925,
+          "C": 0.5349787473678589,
+          "D": 0.6589095592498779
+        },
+        "score": 0.11417331546545029
+      },
+      {
+        "record_index": 10,
+        "sample_id": "math_stackexchange_com-245952-246033",
+        "label": null,
+        "perturbations": {
+          "a": "How can i discover this Basis in $\\mathbb{R}^n$?",
+          "b": "How can i locate this Basis in $\\mathbb{R}^n$?",
+          "c": "How can i obtain this Basis in $\\mathbb{R}^n$?",
+          "d": "How can i identify this Basis in $\\mathbb{R}^n$?"
+        },
+        "bdq_probs": {
+          "A": 0.14600132405757904,
+          "B": 0.39687246084213257,
+          "C": 0.2995751202106476,
+          "D": 0.10034505277872086,
+          "E": 0.05717494338750839
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.59210604429245,
+            "B": 0.15936319530010223,
+            "C": 0.06643245369195938,
+            "D": 0.04565831646323204,
+            "E": 0.13631057739257812
+          },
+          "B": {
+            "A": 0.05757460370659828,
+            "B": 0.7236670851707458,
+            "C": 0.13386495411396027,
+            "D": 0.06731151789426804,
+            "E": 0.017559261992573738
+          },
+          "C": {
+            "A": 0.028246818110346794,
+            "B": 0.37793824076652527,
+            "C": 0.5673525929450989,
+            "D": 0.020029988139867783,
+            "E": 0.006401970982551575
+          },
+          "D": {
+            "A": 0.04155482351779938,
+            "B": 0.2709714472293854,
+            "C": 0.06046193093061447,
+            "D": 0.538891077041626,
+            "E": 0.08797156065702438
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.59210604429245,
+          "B": 0.7236670851707458,
+          "C": 0.5673525929450989,
+          "D": 0.538891077041626
+        },
+        "score": 0.538891077041626
+      },
+      {
+        "record_index": 11,
+        "sample_id": "math_stackexchange_com-246146-246239",
+        "label": null,
+        "perturbations": {
+          "a": "Is the collection of all polynomial open in the space $C[-1, 1]$?",
+          "b": "Is the group of all polynomial open in the space $C[-1, 1]$?",
+          "c": "Is the set of every polynomial open in the space $C[-1, 1]$?",
+          "d": "Is the array of all polynomial open in the space $C[-1, 1]$?"
+        },
+        "bdq_probs": {
+          "A": 0.09343025833368301,
+          "B": 0.07745631039142609,
+          "C": 0.7582131028175354,
+          "D": 0.029399104416370392,
+          "E": 0.04145945608615875
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.13966575264930725,
+            "B": 0.11946233361959457,
+            "C": 0.3917020559310913,
+            "D": 0.053011078387498856,
+            "E": 0.2956726551055908
+          },
+          "B": {
+            "A": 0.14134041965007782,
+            "B": 0.57675701379776,
+            "C": 0.23303095996379852,
+            "D": 0.01610765978693962,
+            "E": 0.032538436353206635
+          },
+          "C": {
+            "A": 0.0861484706401825,
+            "B": 0.07843900471925735,
+            "C": 0.7442089319229126,
+            "D": 0.057387206703424454,
+            "E": 0.03373625501990318
+          },
+          "D": {
+            "A": 0.06538134813308716,
+            "B": 0.0384356789290905,
+            "C": 0.029469676315784454,
+            "D": 0.7482498288154602,
+            "E": 0.11839032918214798
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.13966575264930725,
+          "B": 0.57675701379776,
+          "C": 0.7442089319229126,
+          "D": 0.7482498288154602
+        },
+        "score": 0.13966575264930725
+      },
+      {
+        "record_index": 12,
+        "sample_id": "math_stackexchange_com-246435-246451",
+        "label": null,
+        "perturbations": {
+          "a": "Puzzled about why \"disjointifying\" signifies \"AC\"",
+          "b": "Baffled about why \"disjointifying\" denotes \"AC\"",
+          "c": "Perplexed about why \"disjointifying\" suggests \"AC\"",
+          "d": "bewildered about why \"disjointifying\" indicates \"AC\""
+        },
+        "bdq_probs": {
+          "A": 0.19293774664402008,
+          "B": 0.24011486768722534,
+          "C": 0.07323087006807327,
+          "D": 0.1099325492978096,
+          "E": 0.38370266556739807
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.12977494299411774,
+            "B": 0.1948152631521225,
+            "C": 0.047741521149873734,
+            "D": 0.08121106773614883,
+            "E": 0.5463730096817017
+          },
+          "B": {
+            "A": 0.07332917302846909,
+            "B": 0.12473710626363754,
+            "C": 0.055351756513118744,
+            "D": 0.028716113418340683,
+            "E": 0.717812716960907
+          },
+          "C": {
+            "A": 0.08175954967737198,
+            "B": 0.2518371045589447,
+            "C": 0.11895942687988281,
+            "D": 0.11895938217639923,
+            "E": 0.4283895492553711
+          },
+          "D": {
+            "A": 0.13245660066604614,
+            "B": 0.2984955310821533,
+            "C": 0.192723348736763,
+            "D": 0.3382398188114166,
+            "E": 0.03794945403933525
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.12977494299411774,
+          "B": 0.12473710626363754,
+          "C": 0.11895942687988281,
+          "D": 0.3382398188114166
+        },
+        "score": 0.11895942687988281
+      },
+      {
+        "record_index": 13,
+        "sample_id": "math_stackexchange_com-246888-246897",
+        "label": null,
+        "perturbations": {
+          "a": "Pumping lemma negation",
+          "b": "Pumping lemma contradiction",
+          "c": "Pumping lemma inverse",
+          "d": "Pumping lemma counterexample"
+        },
+        "bdq_probs": {
+          "A": 0.05032484605908394,
+          "B": 0.3082770109176636,
+          "C": 0.03681843355298042,
+          "D": 0.2326996624469757,
+          "E": 0.371853232383728
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.8783592581748962,
+            "B": 0.03199423849582672,
+            "C": 0.002211521379649639,
+            "D": 0.0027522831223905087,
+            "E": 0.08429359644651413
+          },
+          "B": {
+            "A": 0.1971207708120346,
+            "B": 0.4583195149898529,
+            "C": 0.07481859624385834,
+            "D": 0.0530543252825737,
+            "E": 0.2164948433637619
+          },
+          "C": {
+            "A": 0.06690318137407303,
+            "B": 0.2564661204814911,
+            "C": 0.16049239039421082,
+            "D": 0.1762663871049881,
+            "E": 0.33976244926452637
+          },
+          "D": {
+            "A": 0.04741334542632103,
+            "B": 0.3614608347415924,
+            "C": 0.19961772859096527,
+            "D": 0.2996615767478943,
+            "E": 0.0913916751742363
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.8783592581748962,
+          "B": 0.4583195149898529,
+          "C": 0.16049239039421082,
+          "D": 0.2996615767478943
+        },
+        "score": 0.16049239039421082
+      },
+      {
+        "record_index": 15,
+        "sample_id": "math_stackexchange_com-247240-247253",
+        "label": null,
+        "perturbations": {
+          "a": "Demonstrating The Extension Lemma For Vector Fields On Submanifolds",
+          "b": "Establishing The Extension Lemma For Vector Fields On Submanifolds",
+          "c": "Confirming The Extension Lemma For Vector Fields On Submanifolds",
+          "d": "Validating The Extension Lemma For Vector Fields On Submanifolds"
+        },
+        "bdq_probs": {
+          "A": 0.08360759168863297,
+          "B": 0.8184270262718201,
+          "C": 0.012234488502144814,
+          "D": 0.036525435745716095,
+          "E": 0.04915039613842964
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.36886271834373474,
+            "B": 0.19136346876621246,
+            "C": 0.049920134246349335,
+            "D": 0.06409871578216553,
+            "E": 0.32552024722099304
+          },
+          "B": {
+            "A": 0.16440987586975098,
+            "B": 0.6502537727355957,
+            "C": 0.05507040023803711,
+            "D": 0.030412761494517326,
+            "E": 0.09971964359283447
+          },
+          "C": {
+            "A": 0.06532943248748779,
+            "B": 0.6598038673400879,
+            "C": 0.23526032269001007,
+            "D": 0.010499391704797745,
+            "E": 0.0289897620677948
+          },
+          "D": {
+            "A": 0.09305165708065033,
+            "B": 0.4580162763595581,
+            "C": 0.1684948205947876,
+            "D": 0.2303050309419632,
+            "E": 0.04980695992708206
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.36886271834373474,
+          "B": 0.6502537727355957,
+          "C": 0.23526032269001007,
+          "D": 0.2303050309419632
+        },
+        "score": 0.2303050309419632
+      },
+      {
+        "record_index": 16,
+        "sample_id": "math_stackexchange_com-248063-248098",
+        "label": null,
+        "perturbations": {
+          "a": "Functions of limited variation as the dual of $C([a,b])$",
+          "b": "Functions of constrained variation as the dual of $C([a,b])$",
+          "c": "Functions of restricted variation as the dual of $C([a,b])$",
+          "d": "Functions of finite variation as the dual of $C([a,b])$"
+        },
+        "bdq_probs": {
+          "A": 0.045182980597019196,
+          "B": 0.11904118955135345,
+          "C": 0.017149515450000763,
+          "D": 0.7067802548408508,
+          "E": 0.11182894557714462
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.7338578701019287,
+            "B": 0.10907824337482452,
+            "C": 0.008280807174742222,
+            "D": 0.11611319333314896,
+            "E": 0.032243479043245316
+          },
+          "B": {
+            "A": 0.09242899715900421,
+            "B": 0.8238106369972229,
+            "C": 0.027321957051753998,
+            "D": 0.03508208319544792,
+            "E": 0.021278372034430504
+          },
+          "C": {
+            "A": 0.09087186306715012,
+            "B": 0.2320493757724762,
+            "C": 0.6113690137863159,
+            "D": 0.04569321498274803,
+            "E": 0.019961902871727943
+          },
+          "D": {
+            "A": 0.047911398112773895,
+            "B": 0.10464806109666824,
+            "C": 0.03142106905579567,
+            "D": 0.7977963089942932,
+            "E": 0.018185114488005638
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.7338578701019287,
+          "B": 0.8238106369972229,
+          "C": 0.6113690137863159,
+          "D": 0.7977963089942932
+        },
+        "score": 0.6113690137863159
+      },
+      {
+        "record_index": 17,
+        "sample_id": "math_stackexchange_com-248591-248742",
+        "label": null,
+        "perturbations": {
+          "a": "flat graphs and points of degree $5$",
+          "b": "plane graphs and nodes of degree $5$",
+          "c": "planar diagrams and vertices of classification $5$",
+          "d": "planar figures and vertices of rank $5$"
+        },
+        "bdq_probs": {
+          "A": 0.018257921561598778,
+          "B": 0.8797157406806946,
+          "C": 0.005313355941325426,
+          "D": 0.03865201026201248,
+          "E": 0.05802357569336891
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.43906956911087036,
+            "B": 0.4673871695995331,
+            "C": 0.003739803098142147,
+            "D": 0.04485378414392471,
+            "E": 0.04485378786921501
+          },
+          "B": {
+            "A": 0.04581427946686745,
+            "B": 0.864452064037323,
+            "C": 0.011053208261728287,
+            "D": 0.01970447413623333,
+            "E": 0.05882671847939491
+          },
+          "C": {
+            "A": 0.00459208432585001,
+            "B": 0.18058627843856812,
+            "C": 0.8093315958976746,
+            "D": 0.003359639085829258,
+            "E": 0.00210241018794477
+          },
+          "D": {
+            "A": 0.0012502227909862995,
+            "B": 0.01442025788128376,
+            "C": 0.0013102218508720398,
+            "D": 0.9798349142074585,
+            "E": 0.0031677107326686382
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.43906956911087036,
+          "B": 0.864452064037323,
+          "C": 0.8093315958976746,
+          "D": 0.9798349142074585
+        },
+        "score": 0.43906956911087036
+      },
+      {
+        "record_index": 18,
+        "sample_id": "math_stackexchange_com-248885-248888",
+        "label": null,
+        "perturbations": {
+          "a": "Items in a subcategory",
+          "b": "Goods in a subcategory",
+          "c": "Merchandise in a subcategory",
+          "d": "Commodities in a subcategory"
+        },
+        "bdq_probs": {
+          "A": 0.09433607012033463,
+          "B": 0.42278483510017395,
+          "C": 0.19970940053462982,
+          "D": 0.1762429028749466,
+          "E": 0.10689682513475418
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.6690468192100525,
+            "B": 0.10585859417915344,
+            "C": 0.03129173815250397,
+            "D": 0.0774477943778038,
+            "E": 0.11626292020082474
+          },
+          "B": {
+            "A": 0.230173721909523,
+            "B": 0.5027456879615784,
+            "C": 0.04392942041158676,
+            "D": 0.0546710342168808,
+            "E": 0.16839872300624847
+          },
+          "C": {
+            "A": 0.11207427084445953,
+            "B": 0.3911776840686798,
+            "C": 0.18477925658226013,
+            "D": 0.05131130665540695,
+            "E": 0.26058056950569153
+          },
+          "D": {
+            "A": 0.109485924243927,
+            "B": 0.3168080747127533,
+            "C": 0.12406382709741592,
+            "D": 0.21773874759674072,
+            "E": 0.2317817062139511
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.6690468192100525,
+          "B": 0.5027456879615784,
+          "C": 0.18477925658226013,
+          "D": 0.21773874759674072
+        },
+        "score": 0.18477925658226013
+      },
+      {
+        "record_index": 20,
+        "sample_id": "math_stackexchange_com-249735-249778",
+        "label": null,
+        "perturbations": {
+          "a": "Generating Pythagorean triplets for $a^2+b^2=5c^2$?",
+          "b": "Just attempting to determine a method to generate triplets for $a^2+b^2=5c^2$. The wiki entry illustrates how it is performed for $a^2+b^2=c^2$ but I am not confident how to extrapolate.",
+          "c": "This is one of those CW responses. Country and Western.",
+          "d": "I did Gerry's formula and I quite appreciate how it operates. Educational, you might assert. I took the gradient $t = \\frac{q}{r}$ and initiating rational point $(2,1).$ The other point calculates to be $$ x = \\frac{2 t^2 - 2 t - 2}{t^2 + 1}, \\; \\; \\; y = \\frac{- t^2 - 4 t + 1}{t^2 + 1}, $$ so multiply everything by $r^2$ to arrive at\n\n$$ x = \\frac{2 q^2 - 2qr - 2r^2}{q^2 + r^2}, \\; \\; \\; y = \\frac{- q^2 - 4 qr + r^2}{q^2 + r^2}. $$ Thus far $x^2 + y^2 = 5.$ Multiply through by $q^2 + r^2$ to derive\n\n$$ a = 2 q^2 - 2 q r - 2 r^2 $$\n\n$$ b = -q^2 - 4 q r + r^2 $$\n\n$$ c = q^2 + r^2 $$ $$ a^2 + b^2 = 5 q^4 + 10 r^2 q^2 + 5 r^4 $$ and $$ c^2 = q^4 + 2 r^2 q^2 + r^4 $$ and $$ a^2 + b^2 = 5 c^2 $$"
+        },
+        "bdq_probs": {
+          "A": 0.05020268261432648,
+          "B": 0.33775410056114197,
+          "C": 0.020283712074160576,
+          "D": 0.5231238603591919,
+          "E": 0.06861890852451324
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.17360320687294006,
+            "B": 0.20940539240837097,
+            "C": 0.17360319197177887,
+            "D": 0.3346288800239563,
+            "E": 0.10863814502954483
+          },
+          "B": {
+            "A": 0.15460030734539032,
+            "B": 0.24705052375793457,
+            "C": 0.21802134811878204,
+            "D": 0.23944959044456482,
+            "E": 0.1407652050256729
+          },
+          "C": {
+            "A": 0.1274978369474411,
+            "B": 0.4051871597766876,
+            "C": 0.1315450519323349,
+            "D": 0.28732073307037354,
+            "E": 0.048392727971076965
+          },
+          "D": {
+            "A": 0.04298599436879158,
+            "B": 0.23238006234169006,
+            "C": 0.01764141581952572,
+            "D": 0.6724140644073486,
+            "E": 0.034540217369794846
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.17360320687294006,
+          "B": 0.24705052375793457,
+          "C": 0.1315450519323349,
+          "D": 0.6724140644073486
+        },
+        "score": 0.1315450519323349
+      },
+      {
+        "record_index": 21,
+        "sample_id": "math_stackexchange_com-250526-250546",
+        "label": null,
+        "perturbations": {
+          "a": "Anticipated value of mean of Brownian motion",
+          "b": "Expected value of mean of Brownian motion",
+          "c": "Predicted value of average of Brownian motion",
+          "d": "Forecasted value of average of Brownian motion"
+        },
+        "bdq_probs": {
+          "A": 0.10616246610879898,
+          "B": 0.6109226942062378,
+          "C": 0.02561287395656109,
+          "D": 0.11659661680459976,
+          "E": 0.14064249396324158
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.9061546921730042,
+            "B": 0.06362204998731613,
+            "C": 0.00439771544188261,
+            "D": 0.00808863528072834,
+            "E": 0.01766720600426197
+          },
+          "B": {
+            "A": 0.12147489935159683,
+            "B": 0.8432028889656067,
+            "C": 0.01696169376373291,
+            "D": 0.0066422950476408005,
+            "E": 0.011657592840492725
+          },
+          "C": {
+            "A": 0.034110527485609055,
+            "B": 0.7524661421775818,
+            "C": 0.1843997687101364,
+            "D": 0.01335787121206522,
+            "E": 0.015616938471794128
+          },
+          "D": {
+            "A": 0.02826983854174614,
+            "B": 0.19623154401779175,
+            "C": 0.04113238304853439,
+            "D": 0.7290887832641602,
+            "E": 0.005148320458829403
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.9061546921730042,
+          "B": 0.8432028889656067,
+          "C": 0.1843997687101364,
+          "D": 0.7290887832641602
+        },
+        "score": 0.1843997687101364
+      },
+      {
+        "record_index": 22,
+        "sample_id": "math_stackexchange_com-251147-251149",
+        "label": null,
+        "perturbations": {
+          "a": "Binomial Theorem Query..\n\nJust revising for my combinatorics assessment. My instructor mentioned there would be a query akin to this one on the assessment, so I'm attempting to solve this one.\n\n$$\\sum^{20}_{k=0} \\binom{41}{k}$$\n\nI understand if I can extract $\\dbinom{20}{k}$ then I can achieve the subsequent:\n\n$$A\\sum^{20}_{k=0}\\binom{20}{k} * 1^k * 1^{n-k} = A(1+1)^{20}$$\n\nI just am uncertain how to arrive there...\n\nAny assistance is greatly valued!\n\n\nYou’re on the incorrect path, I fear. The secret is to comprehend that your sum is precisely half of the complete sum $\\sum_{k=0}^{41}\\binom{41}k$ due to the symmetry of the binomial coefficients: $\\binom{41}{41-k}=\\binom{41}k$.\n\n$$\\begin{align*} 2^{41}&=\\sum_{k=0}^{41}\\binom{41}k\\\\ &=\\sum_{k=0}^{20}\\binom{41}k+\\sum_{k=21}^{41}\\binom{41}k\\\\ &=\\sum_{k=0}^{20}\\binom{41}k+\\sum_{k=21}^{41}\\binom{41}{41-k}\\\\ &=\\sum_{k=0}^{20}\\binom{41}k+\\sum_{i=0}^{20}\\binom{41}i&&\\text{set }i=41-k\\\\ &=2\\sum_{k=0}^{20}\\binom{41}k\\;, \\end{align*}$$\n\nso that $$\\sum_{k=0}^{20}\\binom{41}k=2^{40}\\;.$$",
+          "b": "Binomial Theorem Problem..\n\nJust preparing for my combinatorics examination. My lecturer indicated there would be a problem comparable to this one on the examination, so I'm trying to untangle this one.\n\n$$\\sum^{20}_{k=0} \\binom{41}{k}$$\n\nI realize if I can remove $\\dbinom{20}{k}$ then I can obtain the next:\n\n$$A\\sum^{20}_{k=0}\\binom{20}{k} * 1^k * 1^{n-k} = A(1+1)^{20}$$\n\nI just do not comprehend how to get there...\n\nAny guidance is highly appreciated!\n\n\nYou’re on the mistaken route, I’m afraid. The technique is to recognize that your sum is precisely half of the entire sum $\\sum_{k=0}^{41}\\binom{41}k$ owing to the symmetry of the binomial coefficients: $\\binom{41}{41-k}=\\binom{41}k$.\n\n$$\\begin{align*} 2^{41}&=\\sum_{k=0}^{41}\\binom{41}k\\\\ &=\\sum_{k=0}^{20}\\binom{41}k+\\sum_{k=21}^{41}\\binom{41}k\\\\ &=\\sum_{k=0}^{20}\\binom{41}k+\\sum_{k=21}^{41}\\binom{41}{41-k}\\\\ &=\\sum_{k=0}^{20}\\binom{41}k+\\sum_{i=0}^{20}\\binom{41}i&&\\text{set }i=41-k\\\\ &=2\\sum_{k=0}^{20}\\binom{41}k\\;, \\end{align*}$$\n\nso that $$\\sum_{k=0}^{20}\\binom{41}k=2^{40}\\;.$$",
+          "c": "Binomial Theorem Inquiry..\n\nJust learning for my combinatorics test. My educator stated there would be an inquiry similar to this one on the test, so I'm attempting to decipher this one.\n\n$$\\sum^{20}_{k=0} \\binom{41}{k}$$\n\nI know if I can detach $\\dbinom{20}{k}$ then I can derive the following:\n\n$$A\\sum^{20}_{k=0}\\binom{20}{k} * 1^k * 1^{n-k} = A(1+1)^{20}$$\n\nI just am puzzled how to attain that...\n\nAny support is enormously appreciated!\n\n\nYou’re on the flawed path, I’m afraid. The tactic is to perceive that your sum is exactly half of the complete sum $\\sum_{k=0}^{41}\\binom{41}k$ because of the symmetry of the binomial coefficients: $\\binom{41}{41-k}=\\binom{41}k$.\n\n$$\\begin{align*} 2^{41}&=\\sum_{k=0}^{41}\\binom{41}k\\\\ &=\\sum_{k=0}^{20}\\binom{41}k+\\sum_{k=21}^{41}\\binom{41}k\\\\ &=\\sum_{k=0}^{20}\\binom{41}k+\\sum_{k=21}^{41}\\binom{41}{41-k}\\\\ &=\\sum_{k=0}^{20}\\binom{41}k+\\sum_{i=0}^{20}\\binom{41}i&&\\text{set }i=41-k\\\\ &=2\\sum_{k=0}^{20}\\binom{41}k\\;, \\end{align*}$$\n\nso that $$\\sum_{k=0}^{20}\\binom{41}k=2^{40}\\;.$$",
+          "d": "Binomial Theorem Challenge..\n\nJust revisiting for my combinatorics quiz. My teacher remarked there would be a challenge resembling this one on the quiz, so I'm trying to clarify this one.\n\n$$\\sum^{20}_{k=0} \\binom{41}{k}$$\n\nI recognize if I can pull out $\\dbinom{20}{k}$ then I can arrive at the following:\n\n$$A\\sum^{20}_{k=0}\\binom{20}{k} * 1^k * 1^{n-k} = A(1+1)^{20}$$\n\nI just do not have a clue how to achieve that...\n\nAny assistance is profoundly appreciated!\n\n\nYou’re on the erroneous course, I’m afraid. The notion is to acknowledge that your sum is exactly half of the entire sum $\\sum_{k=0}^{41}\\binom{41}k$ owing to the symmetry of the binomial coefficients: $\\binom{41}{41-k}=\\binom{41}k$.\n\n$$\\begin{align*} 2^{41}&=\\sum_{k=0}^{41}\\binom{41}k\\\\ &=\\sum_{k=0}^{20}\\binom{41}k+\\sum_{k=21}^{41}\\binom{41}k\\\\ &=\\sum_{k=0}^{20}\\binom{41}k+\\sum_{k=21}^{41}\\binom{41}{41-k}\\\\ &=\\sum_{k=0}^{20}\\binom{41}k+\\sum_{i=0}^{20}\\binom{41}i&&\\text{set }i=41-k\\\\ &=2\\sum_{k=0}^{20}\\binom{41}k\\;, \\end{align*}$$\n\nso that $$\\sum_{k=0}^{20}\\binom{41}k=2^{40}\\;.$$"
+        },
+        "bdq_probs": {
+          "A": 0.3040153384208679,
+          "B": 0.19628708064556122,
+          "C": 0.10840000957250595,
+          "D": 0.08710184693336487,
+          "E": 0.3040154278278351
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2966611087322235,
+            "B": 0.14917057752609253,
+            "C": 0.20389200747013092,
+            "D": 0.09631175547838211,
+            "E": 0.2537478506565094
+          },
+          "B": {
+            "A": 0.2889595329761505,
+            "B": 0.24716021120548248,
+            "C": 0.10967665910720825,
+            "D": 0.09092514961957932,
+            "E": 0.2631007432937622
+          },
+          "C": {
+            "A": 0.27220770716667175,
+            "B": 0.22566810250282288,
+            "C": 0.13266342878341675,
+            "D": 0.09705864638090134,
+            "E": 0.27220776677131653
+          },
+          "D": {
+            "A": 0.24047264456748962,
+            "B": 0.16527427732944489,
+            "C": 0.10342598706483841,
+            "D": 0.09417043626308441,
+            "E": 0.3964724838733673
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2966611087322235,
+          "B": 0.24716021120548248,
+          "C": 0.13266342878341675,
+          "D": 0.09417043626308441
+        },
+        "score": 0.09417043626308441
+      },
+      {
+        "record_index": 23,
+        "sample_id": "math_stackexchange_com-251617-251647",
+        "label": null,
+        "perturbations": {
+          "a": "What is the distinction between a divisible group and a uniquely divisible group?",
+          "b": "What is the disparity between a divisible group and a uniquely divisible group?",
+          "c": "What is the variation between a divisible group and a uniquely divisible group?",
+          "d": "What is the divergence between a divisible group and a uniquely divisible group?"
+        },
+        "bdq_probs": {
+          "A": 0.6493611931800842,
+          "B": 0.2623656690120697,
+          "C": 0.004307526629418135,
+          "D": 0.0175774022936821,
+          "E": 0.0663364827632904
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3750646412372589,
+            "B": 0.1009472906589508,
+            "C": 0.009840172715485096,
+            "D": 0.017002295702695847,
+            "E": 0.49688008427619934
+          },
+          "B": {
+            "A": 0.007071879226714373,
+            "B": 0.9859702587127686,
+            "C": 0.002482463140040636,
+            "D": 0.0009645811514928937,
+            "E": 0.0035008355043828487
+          },
+          "C": {
+            "A": 0.026764895766973495,
+            "B": 0.09638401120901108,
+            "C": 0.8590616583824158,
+            "D": 0.012063871137797832,
+            "E": 0.005698581226170063
+          },
+          "D": {
+            "A": 0.07051588594913483,
+            "B": 0.07506373524665833,
+            "C": 0.014551776461303234,
+            "D": 0.8326286673545837,
+            "E": 0.00720364972949028
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3750646412372589,
+          "B": 0.9859702587127686,
+          "C": 0.8590616583824158,
+          "D": 0.8326286673545837
+        },
+        "score": 0.3750646412372589
+      },
+      {
+        "record_index": 24,
+        "sample_id": "math_stackexchange_com-252272-252275",
+        "label": null,
+        "perturbations": {
+          "a": "Is trace constant under cyclic rearrangement with rectangular matrices?",
+          "b": "Is trace unchanged under cyclic alteration with rectangular matrices?",
+          "c": "Is trace invariant under cyclic change with rectangular matrices?",
+          "d": "Is trace stable under cyclic transformation with rectangular matrices?"
+        },
+        "bdq_probs": {
+          "A": 0.0859290286898613,
+          "B": 0.26467934250831604,
+          "C": 0.5781136751174927,
+          "D": 0.05051489919424057,
+          "E": 0.020731378346681595
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.7514351606369019,
+            "B": 0.13900156319141388,
+            "C": 0.041088782250881195,
+            "D": 0.031015438959002495,
+            "E": 0.03741176798939705
+          },
+          "B": {
+            "A": 0.013346077874302864,
+            "B": 0.9805341362953186,
+            "C": 0.004332836717367172,
+            "D": 0.0005956198438070714,
+            "E": 0.001139153027907014
+          },
+          "C": {
+            "A": 0.012095389887690544,
+            "B": 0.06239275261759758,
+            "C": 0.9168549180030823,
+            "D": 0.006081942468881607,
+            "E": 0.0008040343527682126
+          },
+          "D": {
+            "A": 0.012770292349159718,
+            "B": 0.03417506814002991,
+            "C": 0.07012270390987396,
+            "D": 0.8813866972923279,
+            "E": 0.0015371559420600533
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.7514351606369019,
+          "B": 0.9805341362953186,
+          "C": 0.9168549180030823,
+          "D": 0.8813866972923279
+        },
+        "score": 0.7514351606369019
+      },
+      {
+        "record_index": 25,
+        "sample_id": "math_stackexchange_com-252339-252350",
+        "label": null,
+        "perturbations": {
+          "a": "Is there one technique of adding and subtracting without a calculator?",
+          "b": "Is there one approach of adding and subtracting without a calculator?",
+          "c": "Is there one system of adding and subtracting without a calculator?",
+          "d": "Is there one method of summing and subtracting without a calculator?"
+        },
+        "bdq_probs": {
+          "A": 0.3371596336364746,
+          "B": 0.6105172634124756,
+          "C": 0.0063713183626532555,
+          "D": 0.030874524265527725,
+          "E": 0.015047049149870872
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.45729678869247437,
+            "B": 0.16305416822433472,
+            "C": 0.10203670710325241,
+            "D": 0.20292425155639648,
+            "E": 0.07465168088674545
+          },
+          "B": {
+            "A": 0.13852255046367645,
+            "B": 0.7258059978485107,
+            "C": 0.050959568470716476,
+            "D": 0.05424616113305092,
+            "E": 0.030429376289248466
+          },
+          "C": {
+            "A": 0.05005894973874092,
+            "B": 0.3264249563217163,
+            "C": 0.6098423600196838,
+            "D": 0.006989781279116869,
+            "E": 0.0066697061993181705
+          },
+          "D": {
+            "A": 0.055933862924575806,
+            "B": 0.7253607511520386,
+            "C": 0.11841198056936264,
+            "D": 0.092219278216362,
+            "E": 0.008058039471507072
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.45729678869247437,
+          "B": 0.7258059978485107,
+          "C": 0.6098423600196838,
+          "D": 0.092219278216362
+        },
+        "score": 0.092219278216362
+      },
+      {
+        "record_index": 26,
+        "sample_id": "math_stackexchange_com-253043-253047",
+        "label": null,
+        "perturbations": {
+          "a": "Cryptography and Encoding Theory",
+          "b": "Cryptography and Coding Principles",
+          "c": "Cryptography and Coding Concepts",
+          "d": "Cryptography and Ciphers Theory"
+        },
+        "bdq_probs": {
+          "A": 0.03996388241648674,
+          "B": 0.13948757946491241,
+          "C": 0.15319715440273285,
+          "D": 0.5516842007637024,
+          "E": 0.11563937366008759
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2960788607597351,
+            "B": 0.0931653305888176,
+            "C": 0.21661590039730072,
+            "D": 0.230586439371109,
+            "E": 0.16351032257080078
+          },
+          "B": {
+            "A": 0.03663385659456253,
+            "B": 0.887556791305542,
+            "C": 0.04282929375767708,
+            "D": 0.026801884174346924,
+            "E": 0.006170148961246014
+          },
+          "C": {
+            "A": 0.03782132267951965,
+            "B": 0.06637843698263168,
+            "C": 0.8608090281486511,
+            "D": 0.025994161143898964,
+            "E": 0.008983349427580833
+          },
+          "D": {
+            "A": 0.024862656369805336,
+            "B": 0.05430496856570244,
+            "C": 0.056028831750154495,
+            "D": 0.8494729995727539,
+            "E": 0.015317422337830067
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2960788607597351,
+          "B": 0.887556791305542,
+          "C": 0.8608090281486511,
+          "D": 0.8494729995727539
+        },
+        "score": 0.2960788607597351
+      },
+      {
+        "record_index": 28,
+        "sample_id": "math_stackexchange_com-253486-253528",
+        "label": null,
+        "perturbations": {
+          "a": "Title of \"De Moivre's equation\"",
+          "b": "Name of \"De Moivre's formula\"",
+          "c": "Designation of \"De Moivre's equation\"",
+          "d": "Label of \"De Moivre's equation\""
+        },
+        "bdq_probs": {
+          "A": 0.011748800054192543,
+          "B": 0.9480200409889221,
+          "C": 0.010531553067266941,
+          "D": 0.012312631122767925,
+          "E": 0.017363611608743668
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1121220737695694,
+            "B": 0.19072596728801727,
+            "C": 0.1485375612974167,
+            "D": 0.20302674174308777,
+            "E": 0.3453603684902191
+          },
+          "B": {
+            "A": 0.08783932030200958,
+            "B": 0.23142579197883606,
+            "C": 0.1403668224811554,
+            "D": 0.07997860014438629,
+            "E": 0.4602452218532562
+          },
+          "C": {
+            "A": 0.02488783560693264,
+            "B": 0.5405049920082092,
+            "C": 0.19272300601005554,
+            "D": 0.043002303689718246,
+            "E": 0.19884078204631805
+          },
+          "D": {
+            "A": 0.016329139471054077,
+            "B": 0.4081770181655884,
+            "C": 0.03350520879030228,
+            "D": 0.3491322994232178,
+            "E": 0.19280920922756195
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1121220737695694,
+          "B": 0.23142579197883606,
+          "C": 0.19272300601005554,
+          "D": 0.3491322994232178
+        },
+        "score": 0.1121220737695694
+      },
+      {
+        "record_index": 29,
+        "sample_id": "math_stackexchange_com-253860-254203",
+        "label": null,
+        "perturbations": {
+          "a": "The pebble arrangement (Bulgarian solitaire)  \n  \nLet we have $n\\cdot(n+1)/2$ rocks grouped by heaps. We can select 1 rock from each heap and place them as a new heap. Show that after doing it some times we will achieve the following heaps: $1, 2, \\ldots n$ rocks.  \n  \nExample: $n = 3$  \n  \nLet we have 2 heaps with 3 rocks of each.  \n  \n$$3 3 \\to 2 2 2 \\to 1 1 1 3 \\to 2 4 \\to 1 3 2$$  \n  \nThis was originally established by Jørgen Brandt in Cycles of Partitions, Proceedings of the American Mathematical Society, Vol. 85, No. 3 (Jul., 1982), pp. 483-486, which is freely accessible here. The verification of this outcome covers the first page and a half and is quite concise.  \n  \nFirst note that there are merely finitely many possible sets of heap sizes, so at some instance a position must repeat a former position. Say that $P_{m+p}=P_m$ for some $p>0$, where $P_n$ is the $n$-th position (set of heap sizes) in the game. It’s not difficult to see that the game will then cycle through the positions $P_{m+k}$, $k=0,\\dots,p-1$, repeatedly. The verification consists in demonstrating that when there are $\\frac12n(n+1)$ pebbles, the sole possible cycle is the one of length one from $\\{1,2,\\dots,n\\}$ to $\\{1,2,\\dots,n\\}$.  \n  \nBrian Hopkins, 30 Years of Bulgarian Solitaire, The College Mathematics Journal, Vol. 43, No. 2, March 2012, pp. 135-140, has references to other published verifications; one appears to be to a less accessible version of the document Karatsuba Solitaire (Therese A. Hart, Gabriel Khan, Mizan R. Khan) that MJD found at arXiv.org.  \n  \nAdded: And having now read the Hart, Khan, & Khan article, I concur with MJD: the reasoning is quite straightforward, and it’s presented very well.  \n  \nAdded 28 April 2023: The final published edition of the Hart, Khan, & Khan article is now accessible at arXiv. Vesselin Drensky, The Bulgarian solitaire and the mathematics surrounding it, is also of interest and is also accessible at arXiv.",
+          "b": "The pebble series (Bulgarian solitaire)  \n  \nLet we have $n\\cdot(n+1)/2$ gems grouped by stacks. We can take 1 gem from each stack and set them as a new stack. Show that after doing it some times we will reach the following stacks: $1, 2, \\ldots n$ gems.  \n  \nExample: $n = 3$  \n  \nLet we have 2 stacks with 3 gems of each.  \n  \n$$3 3 \\to 2 2 2 \\to 1 1 1 3 \\to 2 4 \\to 1 3 2$$  \n  \nThis was originally demonstrated by Jørgen Brandt in Cycles of Partitions, Proceedings of the American Mathematical Society, Vol. 85, No. 3 (Jul., 1982), pp. 483-486, which is freely obtainable here. The justification of this finding covers the first page and a half and is rather brief.  \n  \nFirst note that there are only finitely many possible sets of stack sizes, so at some point a position must repeat a prior position. Say that $P_{m+p}=P_m$ for some $p>0$, where $P_n$ is the $n$-th position (set of stack sizes) in the game. It’s not hard to observe that the game will then cycle through the positions $P_{m+k}$, $k=0,\\dots,p-1$, repeatedly. The justification consists in showing that when there are $\\frac12n(n+1)$ pebbles, the only feasible cycle is the one of length one from $\\{1,2,\\dots,n\\}$ to $\\{1,2,\\dots,n\\}$.  \n  \nBrian Hopkins, 30 Years of Bulgarian Solitaire, The College Mathematics Journal, Vol. 43, No. 2, March 2012, pp. 135-140, has references to other published justifications; one appears to be to a less accessible version of the manuscript Karatsuba Solitaire (Therese A. Hart, Gabriel Khan, Mizan R. Khan) that MJD found at arXiv.org.  \n  \nAdded: And having now read the Hart, Khan, & Khan treatise, I agree with MJD: the argument is quite easy, and it’s presented very well.  \n  \nAdded 28 April 2023: The final published version of the Hart, Khan, & Khan treatise is now available at arXiv. Vesselin Drensky, The Bulgarian solitaire and the mathematics about it, is also of interest and is also available at arXiv.",
+          "c": "The pebble progression (Bulgarian solitaire)  \n  \nLet we have $n\\cdot(n+1)/2$ elements grouped by clusters. We can extract 1 element from each cluster and move them as a new cluster. Show that after doing it some times we will obtain the following clusters: $1, 2, \\ldots n$ elements.  \n  \nExample: $n = 3$  \n  \nLet we have 2 clusters with 3 elements of each.  \n  \n$$3 3 \\to 2 2 2 \\to 1 1 1 3 \\to 2 4 \\to 1 3 2$$  \n  \nThis was originally validated by Jørgen Brandt in Cycles of Partitions, Proceedings of the American Mathematical Society, Vol. 85, No. 3 (Jul., 1982), pp. 483-486, which is freely accessible here. The confirmation of this result covers the first page and a half and is quite succinct.  \n  \nFirst note that there are only finitely many possible sets of cluster sizes, so at some instance a position must repeat a earlier position. Say that $P_{m+p}=P_m$ for some $p>0$, where $P_n$ is the $n$-th position (set of cluster sizes) in the game. It’s not challenging to see that the game will then cycle through the positions $P_{m+k}$, $k=0,\\dots,p-1$, continually. The confirmation consists in showing that when there are $\\frac12n(n+1)$ pebbles, the only imaginable cycle is the one of length one from $\\{1,2,\\dots,n\\}$ to $\\{1,2,\\dots,n\\}$.  \n  \nBrian Hopkins, 30 Years of Bulgarian Solitaire, The College Mathematics Journal, Vol. 43, No. 2, March 2012, pp. 135-140, has references to other published confirmations; one appears to be to a less accessible version of the document Karatsuba Solitaire (Therese A. Hart, Gabriel Khan, Mizan R. Khan) that MJD found at arXiv.org.  \n  \nAdded: And having now read the Hart, Khan, & Khan report, I side with MJD: the case is quite straightforward, and it’s presented very well.  \n  \nAdded 28 April 2023: The final published edition of the Hart, Khan, & Khan report is now accessible at arXiv. Vesselin Drensky, The Bulgarian solitaire and the mathematics surrounding it, is also of interest and is also accessible at arXiv.",
+          "d": "The pebble configuration (Bulgarian solitaire)  \n  \nLet we have $n\\cdot(n+1)/2$ marbles grouped by mounds. We can gather 1 marble from each mound and assemble them as a new mound. Show that after doing it some times we will realize the following mounds: $1, 2, \\ldots n$ marbles.  \n  \nExample: $n = 3$  \n  \nLet we have 2 mounds with 3 marbles of each.  \n  \n$$3 3 \\to 2 2 2 \\to 1 1 1 3 \\to 2 4 \\to 1 3 2$$  \n  \nThis was originally substantiated by Jørgen Brandt in Cycles of Partitions, Proceedings of the American Mathematical Society, Vol. 85, No. 3 (Jul., 1982), pp. 483-486, which is freely obtainable here. The substantiation of this phenomenon covers the first page and a half and is rather concise.  \n  \nFirst note that there are solely finitely many possible sets of mound sizes, so at some time a position must repeat a prior position. Say that $P_{m+p}=P_m$ for some $p>0$, where $P_n$ is the $n$-th position (set of mound sizes) in the game. It’s not difficult to ascertain that the game will then cycle through the positions $P_{m+k}$, $k=0,\\dots,p-1$, frequently. The substantiation consists in demonstrating that when there are $\\frac12n(n+1)$ pebbles, the only existing cycle is the one of length one from $\\{1,2,\\dots,n\\}$ to $\\{1,2,\\dots,n\\}$.  \n  \nBrian Hopkins, 30 Years of Bulgarian Solitaire, The College Mathematics Journal, Vol. 43, No. 2, March 2012, pp. 135-140, has references to other published substantiations; one appears to be to a less accessible version of the paper Karatsuba Solitaire (Therese A. Hart, Gabriel Khan, Mizan R. Khan) that MJD found at arXiv.org.  \n  \nAdded: And having now read the Hart, Khan, & Khan manuscript, I side with MJD: the reasoning is quite simple, and it’s presented very well.  \n  \nAdded 28 April 2023: The final published version of the Hart, Khan, & Khan manuscript is now accessible at arXiv. Vesselin Drensky, The Bulgarian solitaire and the mathematics surrounding it, is also of interest and is also accessible at arXiv."
+        },
+        "bdq_probs": {
+          "A": 0.2625754773616791,
+          "B": 0.20449396967887878,
+          "C": 0.28838276863098145,
+          "D": 0.11651714891195297,
+          "E": 0.12796910107135773
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.25964194536209106,
+            "B": 0.2291332185268402,
+            "C": 0.18411371111869812,
+            "D": 0.10490481555461884,
+            "E": 0.22208359837532043
+          },
+          "B": {
+            "A": 0.28424370288848877,
+            "B": 0.20795713365077972,
+            "C": 0.400847852230072,
+            "D": 0.035025689750909805,
+            "E": 0.07186809182167053
+          },
+          "C": {
+            "A": 0.25012239813804626,
+            "B": 0.18299345672130585,
+            "C": 0.41238218545913696,
+            "D": 0.08918388187885284,
+            "E": 0.06524836272001266
+          },
+          "D": {
+            "A": 0.26471495628356934,
+            "B": 0.20616021752357483,
+            "C": 0.31930720806121826,
+            "D": 0.12901175022125244,
+            "E": 0.0807335376739502
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.25964194536209106,
+          "B": 0.20795713365077972,
+          "C": 0.41238218545913696,
+          "D": 0.12901175022125244
+        },
+        "score": 0.12901175022125244
+      },
+      {
+        "record_index": 30,
+        "sample_id": "math_stackexchange_com-254237-254244",
+        "label": null,
+        "perturbations": {
+          "a": "De Morgan's Second principle",
+          "b": "De Morgan's second principle",
+          "c": "De Morgan's Second theorem",
+          "d": "De Morgan's second theorem"
+        },
+        "bdq_probs": {
+          "A": 0.043816614896059036,
+          "B": 0.5173722505569458,
+          "C": 0.0405237190425396,
+          "D": 0.31380200386047363,
+          "E": 0.08445879071950912
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.8969321846961975,
+            "B": 0.01861523650586605,
+            "C": 0.001204059924930334,
+            "D": 0.07135951519012451,
+            "E": 0.011832568794488907
+          },
+          "B": {
+            "A": 0.08109062910079956,
+            "B": 0.8718065023422241,
+            "C": 0.008414382115006447,
+            "D": 0.02983156405389309,
+            "E": 0.008818198926746845
+          },
+          "C": {
+            "A": 0.014978116378188133,
+            "B": 0.9266632199287415,
+            "C": 0.044716399163007736,
+            "D": 0.005340609699487686,
+            "E": 0.008271702565252781
+          },
+          "D": {
+            "A": 0.008765975013375282,
+            "B": 0.9082345366477966,
+            "C": 0.018269862979650497,
+            "D": 0.06376805901527405,
+            "E": 0.0009348178282380104
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.8969321846961975,
+          "B": 0.8718065023422241,
+          "C": 0.044716399163007736,
+          "D": 0.06376805901527405
+        },
+        "score": 0.044716399163007736
+      },
+      {
+        "record_index": 31,
+        "sample_id": "math_stackexchange_com-254300-254363",
+        "label": null,
+        "perturbations": {
+          "a": "Given a set (finite or infinite), is there a way to discover all its subgroups?",
+          "b": "Given a collection (finite or infinite), is there a way to locate all its subgroups?",
+          "c": "Given a group (finite or infinite), is there a way to identify all its subgroups?",
+          "d": "Given a group (finite or infinite), is there a way to ascertain all its subgroups?"
+        },
+        "bdq_probs": {
+          "A": 0.10212920606136322,
+          "B": 0.13959380984306335,
+          "C": 0.5696308016777039,
+          "D": 0.1485968679189682,
+          "E": 0.039994366466999054
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06453792005777359,
+            "B": 0.07784751057624817,
+            "C": 0.7620427012443542,
+            "D": 0.09101297706365585,
+            "E": 0.004531272687017918
+          },
+          "B": {
+            "A": 0.044087864458560944,
+            "B": 0.8582832217216492,
+            "C": 0.05840691924095154,
+            "D": 0.0275894608348608,
+            "E": 0.011501007713377476
+          },
+          "C": {
+            "A": 0.07734037935733795,
+            "B": 0.19749552011489868,
+            "C": 0.459191232919693,
+            "D": 0.2535892426967621,
+            "E": 0.009093779139220715
+          },
+          "D": {
+            "A": 0.08272381871938705,
+            "B": 0.14071786403656006,
+            "C": 0.23936933279037476,
+            "D": 0.5067446827888489,
+            "E": 0.02996056340634823
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06453792005777359,
+          "B": 0.8582832217216492,
+          "C": 0.459191232919693,
+          "D": 0.5067446827888489
+        },
+        "score": 0.06453792005777359
+      },
+      {
+        "record_index": 33,
+        "sample_id": "math_stackexchange_com-258008-258028",
+        "label": null,
+        "perturbations": {
+          "a": "Correlation and association between $X$ and $Y:=X^2$",
+          "b": "Correlation and relationship between $X$ and $Y:=X^2$",
+          "c": "Correlation and linkage between $X$ and $Y:=X^2$",
+          "d": "Correlation and connection between $X$ and $Y:=X^2$"
+        },
+        "bdq_probs": {
+          "A": 0.32302945852279663,
+          "B": 0.3332834839820862,
+          "C": 0.02376866340637207,
+          "D": 0.16242940723896027,
+          "E": 0.15743204951286316
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.7745636701583862,
+            "B": 0.134598970413208,
+            "C": 0.016075555235147476,
+            "D": 0.06162390857934952,
+            "E": 0.01312048826366663
+          },
+          "B": {
+            "A": 0.1715819090604782,
+            "B": 0.793386697769165,
+            "C": 0.023221086710691452,
+            "D": 0.009236710146069527,
+            "E": 0.002564941765740514
+          },
+          "C": {
+            "A": 0.15326020121574402,
+            "B": 0.4575503468513489,
+            "C": 0.3144695460796356,
+            "D": 0.061922695487737656,
+            "E": 0.012778476811945438
+          },
+          "D": {
+            "A": 0.09085242450237274,
+            "B": 0.3073495924472809,
+            "C": 0.09978184849023819,
+            "D": 0.4911433756351471,
+            "E": 0.01085076853632927
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.7745636701583862,
+          "B": 0.793386697769165,
+          "C": 0.3144695460796356,
+          "D": 0.4911433756351471
+        },
+        "score": 0.3144695460796356
+      }
+    ]
+  }
+}

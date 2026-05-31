@@ -1,0 +1,3725 @@
+{
+  "model_name": "OLMo2-32B-Instruct",
+  "model_path": "olmo_models/OLMo2-32B-Instruct",
+  "dataset_name": "contaminated_posttraining_rlvr_math_no_cot_test",
+  "dataset_path": "benchmark/posttraining/rlvr/contaminated/test/contaminated_posttraining_rlvr_math_no_cot_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 89.92189049720764,
+  "result": {
+    "method": "dcq",
+    "dataset": "contaminated_posttraining_rlvr_math_no_cot_test",
+    "dataset_path": "benchmark/posttraining/rlvr/contaminated/test/contaminated_posttraining_rlvr_math_no_cot_test.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "mean_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.23494162632903057,
+      "B": 0.37891715172845036,
+      "C": 0.22376154438217186,
+      "D": 0.15869982254260512
+    },
+    "non_preferred": [
+      "D"
+    ],
+    "num_total_records": 93,
+    "num_scored_records": 67,
+    "summary": {
+      "mean_score": 0.45549221777829774
+    },
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "sample_0",
+        "label": null,
+        "perturbations": {
+          "a": "Chandra possesses four dishes. Each one is a distinct hue (red, blue, yellow, green). She also possesses precisely one cup the same hue as each dish. If she selects a dish and a cup from the cupboard, how many combinations are achievable? One such combination is a blue dish and a yellow cup.",
+          "b": "Chandra has four containers. Each one is a unique tint (red, blue, yellow, green). She also has exactly one vessel the same tint as each container. If she picks a container and a vessel from the cupboard, how many pairings are feasible? One such pairing is a blue container and a yellow vessel.",
+          "c": "Chandra owns four bowls. Each one is a distinct shade (red, blue, yellow, green). She also has exactly one glass the same shade as each bowl. If she selects a bowl and a glass from the cupboard, how many combinations are possible? One such combination is a blue bowl and a yellow glass.",
+          "d": "Chandra possesses four bowls. Each one is a different shade (red, blue, yellow, green). She also has exactly one glass the same shade as each bowl. If she chooses a bowl and a glass from the cupboard, how many pairings are achievable? One such pairing is a blue bowl and a yellow glass."
+        },
+        "bdq_probs": {
+          "A": 0.1410573422908783,
+          "B": 0.12448456883430481,
+          "C": 0.43447911739349365,
+          "D": 0.2986038029193878,
+          "E": 0.0010769370710477233
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1594826877117157,
+            "B": 0.09673406183719635,
+            "C": 0.38255178928375244,
+            "D": 0.3593716025352478,
+            "E": 0.0005075457156635821
+          },
+          "B": {
+            "A": 0.18996265530586243,
+            "B": 0.16765110194683075,
+            "C": 0.5163692235946655,
+            "D": 0.12263649702072144,
+            "E": 0.002177051967009902
+          },
+          "C": {
+            "A": 0.12166626751422882,
+            "B": 0.037107791751623154,
+            "C": 0.7451968193054199,
+            "D": 0.09473069757223129,
+            "E": 0.00038715379196219146
+          },
+          "D": {
+            "A": 0.13004159927368164,
+            "B": 0.050927188247442245,
+            "C": 0.11473917216062546,
+            "D": 0.7029168605804443,
+            "E": 0.0002016854559769854
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1594826877117157,
+          "B": 0.16765110194683075,
+          "C": 0.7451968193054199,
+          "D": 0.7029168605804443
+        },
+        "score": 0.4438118673861027
+      },
+      {
+        "record_index": 1,
+        "sample_id": "sample_1",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Determine the value of $x$ such that $\\sqrt{3x + 7} = 10$.",
+          "b": "Question: Identify the value of $x$ such that $\\sqrt{3x + 7} = 10$.",
+          "c": "Question: Discover the value of $x$ such that $\\sqrt{3x + 7} = 10$.",
+          "d": "Question: Locate the value of $x$ such that $\\sqrt{3x + 7} = 10$."
+        },
+        "bdq_probs": {
+          "A": 0.2594400942325592,
+          "B": 0.4018354117870331,
+          "C": 0.21508795022964478,
+          "D": 0.12255081534385681,
+          "E": 0.0003900211304426193
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2883872389793396,
+            "B": 0.30703049898147583,
+            "C": 0.2709190547466278,
+            "D": 0.12021582573652267,
+            "E": 0.0003947251825593412
+          },
+          "B": {
+            "A": 0.2134549766778946,
+            "B": 0.6998705863952637,
+            "C": 0.06929459422826767,
+            "D": 0.014525738544762135,
+            "E": 0.0002007901348406449
+          },
+          "C": {
+            "A": 0.0909096971154213,
+            "B": 0.040344297885894775,
+            "C": 0.8624494075775146,
+            "D": 0.004668997600674629,
+            "E": 0.00019272077770438045
+          },
+          "D": {
+            "A": 0.13743345439434052,
+            "B": 0.08874237537384033,
+            "C": 0.11390805244445801,
+            "D": 0.6555969715118408,
+            "E": 0.0001333811233052984
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2883872389793396,
+          "B": 0.6998705863952637,
+          "C": 0.8624494075775146,
+          "D": 0.6555969715118408
+        },
+        "score": 0.6265760511159897
+      },
+      {
+        "record_index": 2,
+        "sample_id": "sample_2",
+        "label": null,
+        "perturbations": {
+          "a": "Alex must to seize a train. The train comes unpredictably some time between 1:00 and 2:00, lingers for 10 minutes, and then departs. If Alex likewise arrives unpredictably between 1:00 and 2:00, what is the likelihood that the train will be present when Alex arrives?",
+          "b": "Alex has to grab a train. The train shows up intermittently some time between 1:00 and 2:00, hangs for 10 minutes, and then exits. If Alex also shows up intermittently between 1:00 and 2:00, what is the chance that the train will be available when Alex arrives?",
+          "c": "Alex needs to obtain a train. The train turns up sporadically some time between 1:00 and 2:00, stays for 10 minutes, and then goes. If Alex also turns up sporadically between 1:00 and 2:00, what is the prospect that the train will be present when Alex arrives?",
+          "d": "Alex must catch a train. The train reaches unexpectedly some time between 1:00 and 2:00, remains for 10 minutes, and then departs. If Alex likewise reaches unexpectedly between 1:00 and 2:00, what is the probability that the train will be there when Alex arrives?"
+        },
+        "bdq_probs": {
+          "A": 0.20298443734645844,
+          "B": 0.0958840623497963,
+          "C": 0.14849908649921417,
+          "D": 0.5517596006393433,
+          "E": 0.00047263532178476453
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.30495989322662354,
+            "B": 0.19690892100334167,
+            "C": 0.20959512889385223,
+            "D": 0.28649136424064636,
+            "E": 0.0009705914417281747
+          },
+          "B": {
+            "A": 0.31140103936195374,
+            "B": 0.3528807759284973,
+            "C": 0.1565829962491989,
+            "D": 0.1774325966835022,
+            "E": 0.0006601703935302794
+          },
+          "C": {
+            "A": 0.20564992725849152,
+            "B": 0.048851463943719864,
+            "C": 0.525119960308075,
+            "D": 0.21888868510723114,
+            "E": 0.0004788143851328641
+          },
+          "D": {
+            "A": 0.36119216680526733,
+            "B": 0.09133300930261612,
+            "C": 0.1101517602801323,
+            "D": 0.43568870425224304,
+            "E": 0.00018187530804425478
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.30495989322662354,
+          "B": 0.3528807759284973,
+          "C": 0.525119960308075,
+          "D": 0.43568870425224304
+        },
+        "score": 0.4046623334288597
+      },
+      {
+        "record_index": 4,
+        "sample_id": "sample_4",
+        "label": null,
+        "perturbations": {
+          "a": "A math instructor requires Noelle to do one homework task for each of the first five homework points she wants to earn; for each of the next five homework points, she needs to do two homework tasks; and so on, so that to earn the $n^{\\text{th}}$ homework point, she has to do $n\\div5$ (rounded up) homework tasks. For instance, when she has 11 points, it will take $12\\div5=2.4\\rightarrow3$ homework tasks to earn her $12^{\\text{th}}$ point. What is the smallest number of homework tasks necessary to earn a total of 25 homework points?",
+          "b": "A math educator requires Noelle to do one homework assignment for each of the first five homework scores she hopes to earn; for each of the next five homework scores, she needs to do two homework assignments; and so on, so that to earn the $n^{\\text{th}}$ homework score, she has to do $n\\div5$ (rounded up) homework assignments. For example, when she has 11 scores, it will take $12\\div5=2.4\\rightarrow3$ homework assignments to earn her $12^{\\text{th}}$ score. What is the smallest number of homework assignments necessary to earn a total of 25 homework scores?",
+          "c": "A math teacher demands Noelle to do one homework assignment for each of the first five homework points she wishes to earn; for each of the next five homework points, she needs to do two homework assignments; and so forth, so that to earn the $n^{\\text{th}}$ homework point, she has to do $n\\div5$ (rounded up) homework assignments. For instance, when she has 11 points, it will take $12\\div5=2.4\\rightarrow3$ homework assignments to earn her $12^{\\text{th}}$ point. What is the smallest number of homework assignments necessary to earn a total of 25 homework points?",
+          "d": "A math instructor asks Noelle to do one homework task for each of the first five homework points she wants to acquire; for each of the next five homework points, she needs to do two homework tasks; and so on, so that to earn the $n^{\\text{th}}$ homework point, she has to do $n\\div5$ (rounded up) homework tasks. For example, when she has 11 points, it will take $12\\div5=2.4\\rightarrow3$ homework tasks to earn her $12^{\\text{th}}$ point. What is the smallest number of homework tasks necessary to earn a total of 25 homework points?"
+        },
+        "bdq_probs": {
+          "A": 0.2880247235298157,
+          "B": 0.18596825003623962,
+          "C": 0.4190734922885895,
+          "D": 0.10595589131116867,
+          "E": 0.0007365792989730835
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.30421727895736694,
+            "B": 0.13500207662582397,
+            "C": 0.47118842601776123,
+            "D": 0.0871579721570015,
+            "E": 0.0015963766491040587
+          },
+          "B": {
+            "A": 0.4040454030036926,
+            "B": 0.1486477106809616,
+            "C": 0.2776971757411957,
+            "D": 0.1684328317642212,
+            "E": 0.0007799806189723313
+          },
+          "C": {
+            "A": 0.1980528086423874,
+            "B": 0.0775609239935875,
+            "C": 0.691256046295166,
+            "D": 0.03232917562127113,
+            "E": 0.000475792185170576
+          },
+          "D": {
+            "A": 0.1828615516424179,
+            "B": 0.040802616626024246,
+            "C": 0.4120621383190155,
+            "D": 0.3636470139026642,
+            "E": 0.0002208935038652271
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.30421727895736694,
+          "B": 0.1486477106809616,
+          "C": 0.691256046295166,
+          "D": 0.3636470139026642
+        },
+        "score": 0.3769420124590397
+      },
+      {
+        "record_index": 5,
+        "sample_id": "sample_5",
+        "label": null,
+        "perturbations": {
+          "a": "Question: How many crosswise lines does a regular seven-sided polygon contain?",
+          "b": "Question: How many diagonals does a uniform seven-sided polygon contain?",
+          "c": "Question: How many diagonals does a consistent seven-sided polygon contain?",
+          "d": "Question: How many diagonals does a regular heptagon contain?"
+        },
+        "bdq_probs": {
+          "A": 0.09404078871011734,
+          "B": 0.16504551470279694,
+          "C": 0.04441176354885101,
+          "D": 0.6947987675666809,
+          "E": 0.0006744666025042534
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.276713103055954,
+            "B": 0.16787026822566986,
+            "C": 0.057988572865724564,
+            "D": 0.48567748069763184,
+            "E": 0.00036712639848701656
+          },
+          "B": {
+            "A": 0.09376083314418793,
+            "B": 0.611333966255188,
+            "C": 0.03670850396156311,
+            "D": 0.2548364996910095,
+            "E": 0.0006122431950643659
+          },
+          "C": {
+            "A": 0.08184079080820084,
+            "B": 0.06374658644199371,
+            "C": 0.8264740705490112,
+            "D": 0.02495207078754902,
+            "E": 0.00031412826501764357
+          },
+          "D": {
+            "A": 0.2911841571331024,
+            "B": 0.18803825974464417,
+            "C": 0.03477051854133606,
+            "D": 0.4801241159439087,
+            "E": 0.0003517582663334906
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.276713103055954,
+          "B": 0.611333966255188,
+          "C": 0.8264740705490112,
+          "D": 0.4801241159439087
+        },
+        "score": 0.5486613139510155
+      },
+      {
+        "record_index": 6,
+        "sample_id": "sample_6",
+        "label": null,
+        "perturbations": {
+          "a": "Question: If $n$ is a whole number, what is the remainder when the total of $7 - n$ and $n + 3$ is divided by $7$?",
+          "b": "Question: If $n$ is a whole integer, what is the remainder when the sum of $7 - n$ and $n + 3$ is divided by $7$?",
+          "c": "Question: If $n$ is a numeral, what is the remainder when the addition of $7 - n$ and $n + 3$ is divided by $7$?",
+          "d": "Question: If $n$ is a counting number, what is the remainder when the aggregation of $7 - n$ and $n + 3$ is divided by $7$?"
+        },
+        "bdq_probs": {
+          "A": 0.24143192172050476,
+          "B": 0.698602557182312,
+          "C": 0.03702407330274582,
+          "D": 0.021766237914562225,
+          "E": 0.0006996255251578987
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.367378830909729,
+            "B": 0.5345736742019653,
+            "C": 0.059971295297145844,
+            "D": 0.03210342675447464,
+            "E": 0.0008035830105654895
+          },
+          "B": {
+            "A": 0.21751178801059723,
+            "B": 0.7591925263404846,
+            "C": 0.016255732625722885,
+            "D": 0.005445478949695826,
+            "E": 0.0004331945674493909
+          },
+          "C": {
+            "A": 0.15731602907180786,
+            "B": 0.21503174304962158,
+            "C": 0.6221907734870911,
+            "D": 0.004604119807481766,
+            "E": 0.00012078805593773723
+          },
+          "D": {
+            "A": 0.16595391929149628,
+            "B": 0.3100457489490509,
+            "C": 0.04195486381649971,
+            "D": 0.4802035391330719,
+            "E": 0.00023436013725586236
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.367378830909729,
+          "B": 0.7591925263404846,
+          "C": 0.6221907734870911,
+          "D": 0.4802035391330719
+        },
+        "score": 0.5572414174675941
+      },
+      {
+        "record_index": 8,
+        "sample_id": "sample_8",
+        "label": null,
+        "perturbations": {
+          "a": "Thoroughly factor the ensuing expression: \\[(6a^3+92a^2-7)-(-7a^3+a^2-7)\\]",
+          "b": "Fully factor the subsequent expression: \\[(6a^3+92a^2-7)-(-7a^3+a^2-7)\\]",
+          "c": "Totally factor the following expression: \\[(6a^3+92a^2-7)-(-7a^3+a^2-7)\\]",
+          "d": "Entirely factor the next expression: \\[(6a^3+92a^2-7)-(-7a^3+a^2-7)\\]"
+        },
+        "bdq_probs": {
+          "A": 0.22298668324947357,
+          "B": 0.5025039911270142,
+          "C": 0.20947954058647156,
+          "D": 0.06388630717992783,
+          "E": 0.0007096960325725377
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.31521013379096985,
+            "B": 0.2455180585384369,
+            "C": 0.315236896276474,
+            "D": 0.11596446484327316,
+            "E": 0.0006277956417761743
+          },
+          "B": {
+            "A": 0.40098559856414795,
+            "B": 0.3539423644542694,
+            "C": 0.20165449380874634,
+            "D": 0.0397050566971302,
+            "E": 0.00026748282834887505
+          },
+          "C": {
+            "A": 0.16916200518608093,
+            "B": 0.5904365181922913,
+            "C": 0.21721068024635315,
+            "D": 0.02020300179719925,
+            "E": 0.000238898690440692
+          },
+          "D": {
+            "A": 0.1870948076248169,
+            "B": 0.5413767695426941,
+            "C": 0.14570148289203644,
+            "D": 0.12079235911369324,
+            "E": 0.0001602565753273666
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.31521013379096985,
+          "B": 0.3539423644542694,
+          "C": 0.21721068024635315,
+          "D": 0.12079235911369324
+        },
+        "score": 0.2517888844013214
+      },
+      {
+        "record_index": 10,
+        "sample_id": "sample_10",
+        "label": null,
+        "perturbations": {
+          "a": "Let $A$, $B$, $C$ and $D$ be the points of a regular tetrahedron each of whose sides measures 1 meter. A bug, beginning from point $A$, observes the following principle: at each point it selects one of the three sides meeting at that point, each side being equally likely to be selected, and crawls along that side to the point at its opposite end. Let $p = \\frac n{729}$ be the likelihood that the bug is at point $A$ when it has crawled exactly 7 meters. Find the value of $n$.",
+          "b": "Let $A$, $B$, $C$ and $D$ be the angles of a regular tetrahedron each of whose edges measures 1 meter. A bug, starting from angle $A$, observes the following guideline: at each angle it picks one of the three edges meeting at that angle, each edge being equally likely to be picked, and crawls along that edge to the angle at its opposite end. Let $p = \\frac n{729}$ be the chance that the bug is at angle $A$ when it has crawled exactly 7 meters. Find the value of $n$.",
+          "c": "Let $A$, $B$, $C$ and $D$ be the vertices of a regular tetrahedron each of whose lines measures 1 meter. A bug, initiating from vertex $A$, observes the following rule: at each vertex it opts one of the three lines meeting at that vertex, each line being equally likely to be opted, and crawls along that line to the vertex at its opposite end. Let $p = \\frac n{729}$ be the probability that the bug is at vertex $A$ when it has crawled exactly 7 meters. Find the value of $n$.",
+          "d": "Let $A$, $B$, $C$ and $D$ be the corners of a regular tetrahedron each of whose edges measures 1 meter. A bug, commencing from corner $A$, observes the following regulation: at each corner it decides on one of the three edges meeting at that corner, each edge being equally likely to be decided on, and crawls along that edge to the corner at its opposite end. Let $p = \\frac n{729}$ be the probability that the bug is at corner $A$ when it has crawled exactly 7 meters. Find the value of $n$."
+        },
+        "bdq_probs": {
+          "A": 0.26822251081466675,
+          "B": 0.09867683798074722,
+          "C": 0.533427894115448,
+          "D": 0.09867140650749207,
+          "E": 0.0006648431299254298
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.22346322238445282,
+            "B": 0.12732994556427002,
+            "C": 0.5035814046859741,
+            "D": 0.14427465200424194,
+            "E": 0.0005203332402743399
+          },
+          "B": {
+            "A": 0.22982493042945862,
+            "B": 0.6247319579124451,
+            "C": 0.09580539166927338,
+            "D": 0.04817357286810875,
+            "E": 0.0008288332028314471
+          },
+          "C": {
+            "A": 0.1944730579853058,
+            "B": 0.02322784811258316,
+            "C": 0.7691492438316345,
+            "D": 0.012431716546416283,
+            "E": 0.00035266135819256306
+          },
+          "D": {
+            "A": 0.2107495665550232,
+            "B": 0.07283629477024078,
+            "C": 0.6098208427429199,
+            "D": 0.10596736520528793,
+            "E": 0.00019826990319415927
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.22346322238445282,
+          "B": 0.6247319579124451,
+          "C": 0.7691492438316345,
+          "D": 0.10596736520528793
+        },
+        "score": 0.4308279473334551
+      },
+      {
+        "record_index": 11,
+        "sample_id": "sample_11",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Discover all roots of the polynomial $x^3-5x^2+3x+9$. Enter your answer as a series of numbers separated by commas. If a root appears more than once, enter it as many times as its multiplicity.",
+          "b": "Question: Locate all roots of the polynomial $x^3-5x^2+3x+9$. Enter your answer as a list of numbers divided by commas. If a root arises more than once, enter it as many times as its multiplicity.",
+          "c": "Question: Identify all roots of the polynomial $x^3-5x^2+3x+9$. Enter your answer as a collection of numbers isolated by commas. If a root exists more than once, enter it as many times as its multiplicity.",
+          "d": "Question: Determine all roots of the polynomial $x^3-5x^2+3x+9$. Enter your answer as an array of numbers separated by commas. If a root manifests more than once, enter it as many times as its multiplicity."
+        },
+        "bdq_probs": {
+          "A": 0.25391680002212524,
+          "B": 0.25392693281173706,
+          "C": 0.3260400891304016,
+          "D": 0.16394031047821045,
+          "E": 0.0016071749851107597
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.23023982346057892,
+            "B": 0.3796161115169525,
+            "C": 0.2609018087387085,
+            "D": 0.1232389435172081,
+            "E": 0.0015513277612626553
+          },
+          "B": {
+            "A": 0.19402262568473816,
+            "B": 0.561428964138031,
+            "C": 0.1608521044254303,
+            "D": 0.08088039606809616,
+            "E": 0.0013915696181356907
+          },
+          "C": {
+            "A": 0.09761979430913925,
+            "B": 0.07142605632543564,
+            "C": 0.817322850227356,
+            "D": 0.01240937877446413,
+            "E": 0.0004115662886761129
+          },
+          "D": {
+            "A": 0.17279326915740967,
+            "B": 0.15249976515769958,
+            "C": 0.1727760285139084,
+            "D": 0.4999779164791107,
+            "E": 0.00031333666993305087
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.23023982346057892,
+          "B": 0.561428964138031,
+          "C": 0.817322850227356,
+          "D": 0.4999779164791107
+        },
+        "score": 0.5272423885762691
+      },
+      {
+        "record_index": 12,
+        "sample_id": "sample_12",
+        "label": null,
+        "perturbations": {
+          "a": "A aircraft is distinctly ascertained by three non-collinear locations. What is the highest feasible quantity of aircraft that can be ascertained by 12 locations in space?",
+          "b": "A jet is solely established by three non-collinear spots. What is the utmost attainable number of jets that can be established by 12 spots in space?",
+          "c": "An airplane is exclusively defined by three non-collinear positions. What is the greatest potential amount of airplanes that can be defined by 12 positions in space?",
+          "d": "A spacecraft is specifically identified by three non-collinear areas. What is the maximum achievable count of spacecraft that can be identified by 12 areas in space?"
+        },
+        "bdq_probs": {
+          "A": 0.2972602844238281,
+          "B": 0.27926167845726013,
+          "C": 0.33685624599456787,
+          "D": 0.08516500145196915,
+          "E": 0.0009761107503436506
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4155755043029785,
+            "B": 0.268368661403656,
+            "C": 0.17325051128864288,
+            "D": 0.13493208587169647,
+            "E": 0.0018078915309160948
+          },
+          "B": {
+            "A": 0.25663742423057556,
+            "B": 0.6156808137893677,
+            "C": 0.08331950753927231,
+            "D": 0.0418967567384243,
+            "E": 0.0005440827808342874
+          },
+          "C": {
+            "A": 0.3842560946941376,
+            "B": 0.04051024094223976,
+            "C": 0.5591155886650085,
+            "D": 0.014440622180700302,
+            "E": 0.0001707550836727023
+          },
+          "D": {
+            "A": 0.3374245762825012,
+            "B": 0.12415915727615356,
+            "C": 0.31698107719421387,
+            "D": 0.21784815192222595,
+            "E": 0.00021144158381503075
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4155755043029785,
+          "B": 0.6156808137893677,
+          "C": 0.5591155886650085,
+          "D": 0.21784815192222595
+        },
+        "score": 0.45205501466989517
+      },
+      {
+        "record_index": 13,
+        "sample_id": "sample_13",
+        "label": null,
+        "perturbations": {
+          "a": "$p + t = 0$",
+          "b": "$p + u = 0$",
+          "c": "$p + v = 0$",
+          "d": "$q + u = 0$"
+        },
+        "bdq_probs": {
+          "A": 0.3544105291366577,
+          "B": 0.31277796626091003,
+          "C": 0.25929689407348633,
+          "D": 0.06158660352230072,
+          "E": 0.004749331623315811
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1729525476694107,
+            "B": 0.44167235493659973,
+            "C": 0.19598320126533508,
+            "D": 0.11887536197900772,
+            "E": 0.034061696380376816
+          },
+          "B": {
+            "A": 0.11352768540382385,
+            "B": 0.477987676858902,
+            "C": 0.2723420262336731,
+            "D": 0.10664878040552139,
+            "E": 0.01635674014687538
+          },
+          "C": {
+            "A": 0.15735672414302826,
+            "B": 0.2940017282962799,
+            "C": 0.2594301998615265,
+            "D": 0.24372342228889465,
+            "E": 0.03098985366523266
+          },
+          "D": {
+            "A": 0.19061248004436493,
+            "B": 0.33459925651550293,
+            "C": 0.24475136399269104,
+            "D": 0.1906256377696991,
+            "E": 0.0019896943122148514
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1729525476694107,
+          "B": 0.477987676858902,
+          "C": 0.2594301998615265,
+          "D": 0.1906256377696991
+        },
+        "score": 0.27524901553988457
+      },
+      {
+        "record_index": 17,
+        "sample_id": "sample_17",
+        "label": null,
+        "perturbations": {
+          "a": "Bertha possesses 6 daughters and no sons. Some of her daughters possess 6 daughters, and the rest possess none. Bertha possesses a total of 30 daughters and granddaughters, and no great-granddaughters. How many of Bertha's daughters and granddaughters possess no daughters?",
+          "b": "Bertha has 6 daughters and no sons. Some of her daughters have 6 offspring, and the rest have none. Bertha has a total of 30 daughters and granddaughters, and no great-granddaughters. How many of Bertha's daughters and granddaughters have no offspring?",
+          "c": "Bertha has 6 daughters and no sons. Some of her daughters own 6 daughters, and the rest own none. Bertha has a total of 30 daughters and granddaughters, and no great-granddaughters. How many of Bertha's daughters and granddaughters own no daughters?",
+          "d": "Bertha has 6 daughters and no sons. Some of her daughters contain 6 daughters, and the rest contain none. Bertha has a total of 30 daughters and granddaughters, and no great-granddaughters. How many of Bertha's daughters and granddaughters contain no daughters?"
+        },
+        "bdq_probs": {
+          "A": 0.301657110452652,
+          "B": 0.46722185611724854,
+          "C": 0.1516851931810379,
+          "D": 0.05580154433846474,
+          "E": 0.02326134219765663
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4468063414096832,
+            "B": 0.2391701191663742,
+            "C": 0.22467783093452454,
+            "D": 0.0826532319188118,
+            "E": 0.005121160298585892
+          },
+          "B": {
+            "A": 0.6882966160774231,
+            "B": 0.23789118230342865,
+            "C": 0.04400354623794556,
+            "D": 0.02669014036655426,
+            "E": 0.002260242123156786
+          },
+          "C": {
+            "A": 0.483047217130661,
+            "B": 0.15683656930923462,
+            "C": 0.35342708230018616,
+            "D": 0.005536654964089394,
+            "E": 0.0004991081659682095
+          },
+          "D": {
+            "A": 0.31803789734840393,
+            "B": 0.3836416006088257,
+            "C": 0.09111939370632172,
+            "D": 0.2053464949131012,
+            "E": 0.00039637077134102583
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4468063414096832,
+          "B": 0.23789118230342865,
+          "C": 0.35342708230018616,
+          "D": 0.2053464949131012
+        },
+        "score": 0.3108677752315998
+      },
+      {
+        "record_index": 18,
+        "sample_id": "sample_18",
+        "label": null,
+        "perturbations": {
+          "a": "For how many whole values of $a$ does the equation $$x^2 + ax + 8a = 0$$ have whole solutions for $x$?",
+          "b": "For how many integral values of $a$ does the equation $$x^2 + ax + 8a = 0$$ have integral solutions for $x$?",
+          "c": "For how many integer values of $a$ does the expression $$x^2 + ax + 8a = 0$$ have integer roots for $x$?",
+          "d": "For how many integer values of $a$ does the formula $$x^2 + ax + 8a = 0$$ have integer outcomes for $x$?"
+        },
+        "bdq_probs": {
+          "A": 0.2908700406551361,
+          "B": 0.4505133032798767,
+          "C": 0.2265373021364212,
+          "D": 0.029714373871684074,
+          "E": 0.0018410950433462858
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2243955433368683,
+            "B": 0.6099841594696045,
+            "C": 0.13610531389713287,
+            "D": 0.02365141175687313,
+            "E": 0.0018236866453662515
+          },
+          "B": {
+            "A": 0.4832194447517395,
+            "B": 0.3763907551765442,
+            "C": 0.12219050526618958,
+            "D": 0.014593144878745079,
+            "E": 0.0007494867313653231
+          },
+          "C": {
+            "A": 0.2293735146522522,
+            "B": 0.585729718208313,
+            "C": 0.1678178608417511,
+            "D": 0.014663313515484333,
+            "E": 0.0005017039366066456
+          },
+          "D": {
+            "A": 0.20166020095348358,
+            "B": 0.4010859727859497,
+            "C": 0.2756490111351013,
+            "D": 0.114897720515728,
+            "E": 0.0004143347614444792
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2243955433368683,
+          "B": 0.3763907551765442,
+          "C": 0.1678178608417511,
+          "D": 0.114897720515728
+        },
+        "score": 0.2208754699677229
+      },
+      {
+        "record_index": 20,
+        "sample_id": "sample_20",
+        "label": null,
+        "perturbations": {
+          "a": "Ten marks are indicated on a circle. How many unique convex polygons of three or more edges can be formed using some (or all) of the ten marks as vertices?",
+          "b": "Ten points are represented on a circle. How many separate convex polygons of three or more angles can be created using some (or all) of the ten points as vertices?",
+          "c": "Ten dots are placed on a circle. How many distinct convex polygons of three or more sides can be constructed using some (or all) of the ten dots as vertices?",
+          "d": "Ten points are situated on a circle. How many varied convex polygons of three or more corners can be drawn using some (or all) of the ten points as vertices?"
+        },
+        "bdq_probs": {
+          "A": 0.42064520716667175,
+          "B": 0.053485628217458725,
+          "C": 0.4766786992549896,
+          "D": 0.047194190323352814,
+          "E": 0.0015170469414442778
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.382462739944458,
+            "B": 0.08018846809864044,
+            "C": 0.46137693524360657,
+            "D": 0.07074723392724991,
+            "E": 0.0009188211406581104
+          },
+          "B": {
+            "A": 0.4206119477748871,
+            "B": 0.420666366815567,
+            "C": 0.1365726739168167,
+            "D": 0.01967354118824005,
+            "E": 0.0005580035503953695
+          },
+          "C": {
+            "A": 0.3336413502693176,
+            "B": 0.03304379805922508,
+            "C": 0.623350977897644,
+            "D": 0.008351916447281837,
+            "E": 0.00032382248900830746
+          },
+          "D": {
+            "A": 0.3882521688938141,
+            "B": 0.05956461653113365,
+            "C": 0.3647438585758209,
+            "D": 0.18339036405086517,
+            "E": 0.0003123924834653735
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.382462739944458,
+          "B": 0.420666366815567,
+          "C": 0.623350977897644,
+          "D": 0.18339036405086517
+        },
+        "score": 0.40246761217713356
+      },
+      {
+        "record_index": 22,
+        "sample_id": "sample_22",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Of the 36 pupils in Richelle's class, 12 favor chocolate pie, 8 favor apple, and 6 favor blueberry. Half of the leftover pupils favor cherry pie and half favor lemon. For Richelle's pie graph depicting this data, how many degrees should she utilize for cherry pie?",
+          "b": "Question: Of the 36 learners in Richelle's class, 12 choose chocolate pie, 8 choose apple, and 6 choose blueberry. Half of the rest learners choose cherry pie and half choose lemon. For Richelle's pie graph illustrating this data, how many degrees should she employ for cherry pie?",
+          "c": "Question: Of the 36 scholars in Richelle's class, 12 like chocolate pie, 8 like apple, and 6 like blueberry. Half of the remaining scholars like cherry pie and half like lemon. For Richelle's pie graph representing this data, how many degrees should she apply for cherry pie?",
+          "d": "Question: Of the 36 students in Richelle's class, 12 pick chocolate pie, 8 pick apple, and 6 pick blueberry. Half of the other students pick cherry pie and half pick lemon. For Richelle's pie graph demonstrating this data, how many degrees should she allocate for cherry pie?"
+        },
+        "bdq_probs": {
+          "A": 0.15099947154521942,
+          "B": 0.5610204935073853,
+          "C": 0.18213798105716705,
+          "D": 0.10377868264913559,
+          "E": 0.001730661140754819
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3006012737751007,
+            "B": 0.38598859310150146,
+            "C": 0.20660482347011566,
+            "D": 0.10388592630624771,
+            "E": 0.0017874091863632202
+          },
+          "B": {
+            "A": 0.15601128339767456,
+            "B": 0.699161171913147,
+            "C": 0.09462335705757141,
+            "D": 0.047579433768987656,
+            "E": 0.0014823736855760217
+          },
+          "C": {
+            "A": 0.10096979141235352,
+            "B": 0.04622815176844597,
+            "C": 0.8453802466392517,
+            "D": 0.006659151986241341,
+            "E": 0.00029719204758293927
+          },
+          "D": {
+            "A": 0.10426431894302368,
+            "B": 0.4123617112636566,
+            "C": 0.16147781908512115,
+            "D": 0.32114529609680176,
+            "E": 0.00030213213176466525
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3006012737751007,
+          "B": 0.699161171913147,
+          "C": 0.8453802466392517,
+          "D": 0.32114529609680176
+        },
+        "score": 0.5415719971060753
+      },
+      {
+        "record_index": 26,
+        "sample_id": "sample_26",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Let $ABCD$ be an symmetric trapezoid with $\\overline{AD}||\\overline{BC}$ whose angle at the longer base $\\overline{AD}$ is $\\dfrac{\\pi}{3}$. The diagonals have length $10\\sqrt {21}$, and point $E$ is at distances $10\\sqrt {7}$ and $30\\sqrt {7}$ from vertices $A$ and $D$, respectively. Let $F$ be the foot of the height from $C$ to $\\overline{AD}$. The distance $EF$ can be expressed in the form $m\\sqrt {n}$, where $m$ and $n$ are positive integers and $n$ is not divisible by the square of any prime. Find $m + n$.",
+          "b": "Question: Let $ABCD$ be an even trapezoid with $\\overline{AD}||\\overline{BC}$ whose angle at the longer base $\\overline{AD}$ is $\\dfrac{\\pi}{3}$. The diagonals have length $10\\sqrt {21}$, and point $E$ is at distances $10\\sqrt {7}$ and $30\\sqrt {7}$ from vertices $A$ and $D$, respectively. Let $F$ be the foot of the drop from $C$ to $\\overline{AD}$. The distance $EF$ can be expressed in the form $m\\sqrt {n}$, where $m$ and $n$ are positive integers and $n$ is not divisible by the square of any prime. Find $m + n$.",
+          "c": "Question: Let $ABCD$ be an equivalent trapezoid with $\\overline{AD}||\\overline{BC}$ whose angle at the longer base $\\overline{AD}$ is $\\dfrac{\\pi}{3}$. The diagonals have length $10\\sqrt {21}$, and point $E$ is at distances $10\\sqrt {7}$ and $30\\sqrt {7}$ from vertices $A$ and $D$, respectively. Let $F$ be the foot of the perpendicular from $C$ to $\\overline{AD}$. The distance $EF$ can be expressed in the form $m\\sqrt {n}$, where $m$ and $n$ are positive integers and $n$ is not divisible by the square of any prime. Find $m + n$.",
+          "d": "Question: Let $ABCD$ be an equal trapezoid with $\\overline{AD}||\\overline{BC}$ whose angle at the longer base $\\overline{AD}$ is $\\dfrac{\\pi}{3}$. The diagonals have length $10\\sqrt {21}$, and point $E$ is at distances $10\\sqrt {7}$ and $30\\sqrt {7}$ from vertices $A$ and $D$, respectively. Let $F$ be the foot of the elevation from $C$ to $\\overline{AD}$. The distance $EF$ can be expressed in the form $m\\sqrt {n}$, where $m$ and $n$ are positive integers and $n$ is not divisible by the square of any prime. Find $m + n$."
+        },
+        "bdq_probs": {
+          "A": 0.2569963037967682,
+          "B": 0.4510495066642761,
+          "C": 0.16593265533447266,
+          "D": 0.08343566209077835,
+          "E": 0.04195357859134674
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.24008683860301971,
+            "B": 0.34933438897132874,
+            "C": 0.22554554045200348,
+            "D": 0.13680005073547363,
+            "E": 0.047276753932237625
+          },
+          "B": {
+            "A": 0.2387017458677292,
+            "B": 0.5053383708000183,
+            "C": 0.15412011742591858,
+            "D": 0.07280056178569794,
+            "E": 0.028508737683296204
+          },
+          "C": {
+            "A": 0.2550034821033478,
+            "B": 0.44754981994628906,
+            "C": 0.21140934526920319,
+            "D": 0.056898992508649826,
+            "E": 0.02861042320728302
+          },
+          "D": {
+            "A": 0.18503718078136444,
+            "B": 0.3917285203933716,
+            "C": 0.20967552065849304,
+            "D": 0.19697348773479462,
+            "E": 0.01616833731532097
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.24008683860301971,
+          "B": 0.5053383708000183,
+          "C": 0.21140934526920319,
+          "D": 0.19697348773479462
+        },
+        "score": 0.28845201060175896
+      },
+      {
+        "record_index": 27,
+        "sample_id": "sample_27",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Determine for $x$: $\\frac{3x - 1}{4x-4} = \\frac23$.",
+          "b": "Question: Find for $x$: $\\frac{3x - 1}{4x-4} = \\frac23$.",
+          "c": "Question: Compute for $x$: $\\frac{3x - 1}{4x-4} = \\frac23$.",
+          "d": "Question: Figure out for $x$: $\\frac{3x - 1}{4x-4} = \\frac23$."
+        },
+        "bdq_probs": {
+          "A": 0.1615598201751709,
+          "B": 0.6801766157150269,
+          "C": 0.104307159781456,
+          "D": 0.05244949460029602,
+          "E": 0.0009310579625889659
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5421833395957947,
+            "B": 0.21236266195774078,
+            "C": 0.1653684675693512,
+            "D": 0.07338295876979828,
+            "E": 0.0006757733062840998
+          },
+          "B": {
+            "A": 0.11539313197135925,
+            "B": 0.8525351881980896,
+            "C": 0.02343922108411789,
+            "D": 0.006716161035001278,
+            "E": 0.00019049884576816112
+          },
+          "C": {
+            "A": 0.05385511368513107,
+            "B": 0.04464966803789139,
+            "C": 0.8966894745826721,
+            "D": 0.0033363348338752985,
+            "E": 0.00015604849613737315
+          },
+          "D": {
+            "A": 0.10163663327693939,
+            "B": 0.24381959438323975,
+            "C": 0.10161718726158142,
+            "D": 0.5493980646133423,
+            "E": 0.00011177545820828527
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5421833395957947,
+          "B": 0.8525351881980896,
+          "C": 0.8966894745826721,
+          "D": 0.5493980646133423
+        },
+        "score": 0.7102015167474747
+      },
+      {
+        "record_index": 28,
+        "sample_id": "sample_28",
+        "label": null,
+        "perturbations": {
+          "a": "If $a$ is a fixed constant such that $9x^2 + 24x + a$ is the square of a polynomial, then what is $a$?",
+          "b": "If $a$ is a stable constant such that $9x^2 + 24x + a$ is the square of a binomial, then what is $a$?",
+          "c": "If $a$ is a permanent constant such that $9x^2 + 24x + a$ is the square of a quadratic, then what is $a$?",
+          "d": "If $a$ is an unchanged constant such that $9x^2 + 24x + a$ is the square of a binomial, then what is $a$?"
+        },
+        "bdq_probs": {
+          "A": 0.26588183641433716,
+          "B": 0.46664389967918396,
+          "C": 0.09188639372587204,
+          "D": 0.1716698706150055,
+          "E": 0.0031441363971680403
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5803225040435791,
+            "B": 0.10737110674381256,
+            "C": 0.15620049834251404,
+            "D": 0.14674027264118195,
+            "E": 0.001192531199194491
+          },
+          "B": {
+            "A": 0.3165050446987152,
+            "B": 0.6294687390327454,
+            "C": 0.037801723927259445,
+            "D": 0.011895308271050453,
+            "E": 0.0012150552356615663
+          },
+          "C": {
+            "A": 0.36320024728775024,
+            "B": 0.08628103137016296,
+            "C": 0.5284586548805237,
+            "D": 0.019248394295573235,
+            "E": 0.0005129203200340271
+          },
+          "D": {
+            "A": 0.3927966058254242,
+            "B": 0.28743550181388855,
+            "C": 0.08764342963695526,
+            "D": 0.223836287856102,
+            "E": 0.0006092676776461303
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5803225040435791,
+          "B": 0.6294687390327454,
+          "C": 0.5284586548805237,
+          "D": 0.223836287856102
+        },
+        "score": 0.49052154645323753
+      },
+      {
+        "record_index": 29,
+        "sample_id": "sample_29",
+        "label": null,
+        "perturbations": {
+          "a": "Question: What is the worth of $x^2+y^2-z^2+2xy$ when $x=-3$, $y=5$, and $z=-4$?",
+          "b": "Question: What is the cost of $x^2+y^2-z^2+2xy$ when $x=-3$, $y=5$, and $z=-4$?",
+          "c": "Question: What is the significance of $x^2+y^2-z^2+2xy$ when $x=-3$, $y=5$, and $z=-4$?",
+          "d": "Question: What is the importance of $x^2+y^2-z^2+2xy$ when $x=-3$, $y=5$, and $z=-4$?"
+        },
+        "bdq_probs": {
+          "A": 0.8847771286964417,
+          "B": 0.0876157358288765,
+          "C": 0.014301909133791924,
+          "D": 0.012233700603246689,
+          "E": 0.0007120086811482906
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.8999884128570557,
+            "B": 0.02718399651348591,
+            "C": 0.044812045991420746,
+            "D": 0.02116897702217102,
+            "E": 0.0005640546442009509
+          },
+          "B": {
+            "A": 0.2550344467163086,
+            "B": 0.7379932403564453,
+            "C": 0.003872429020702839,
+            "D": 0.001493052113801241,
+            "E": 9.924119513016194e-05
+          },
+          "C": {
+            "A": 0.12440211325883865,
+            "B": 0.009898718446493149,
+            "C": 0.8635103106498718,
+            "D": 0.0012582571944221854,
+            "E": 0.00015027412155177444
+          },
+          "D": {
+            "A": 0.3134602904319763,
+            "B": 0.042426254600286484,
+            "C": 0.017682727426290512,
+            "D": 0.6234122514724731,
+            "E": 0.00013713921362068504
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.8999884128570557,
+          "B": 0.7379932403564453,
+          "C": 0.8635103106498718,
+          "D": 0.6234122514724731
+        },
+        "score": 0.7812260538339615
+      },
+      {
+        "record_index": 30,
+        "sample_id": "sample_30",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Let $f(x) = Ax + B$ and $g(x) = Bx + A$, where $A \\neq B$. If $f(g(x)) - g(f(x)) = B - A$, what is $A + C$?",
+          "b": "Question: Let $f(x) = Ax + B$ and $g(x) = Bx + A$, where $A \\neq B$. If $f(g(x)) - g(f(x)) = C - A$, what is $A + B$?",
+          "c": "Question: Let $f(x) = Ax + C$ and $g(x) = Bx + A$, where $A \\neq B$. If $f(g(x)) - g(f(x)) = B - C$, what is $A + B$?",
+          "d": "Question: Let $f(x) = Cx + B$ and $g(x) = Bx + A$, where $A \\neq B$. If $f(g(x)) - g(f(x)) = B - A$, what is $C + B$?"
+        },
+        "bdq_probs": {
+          "A": 0.30539947748184204,
+          "B": 0.3460717499256134,
+          "C": 0.19718359410762787,
+          "D": 0.14426259696483612,
+          "E": 0.006539667956531048
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.51939857006073,
+            "B": 0.24536974728107452,
+            "C": 0.1397995799779892,
+            "D": 0.09026386588811874,
+            "E": 0.0020574009977281094
+          },
+          "B": {
+            "A": 0.3690180480480194,
+            "B": 0.47384899854660034,
+            "C": 0.10572709888219833,
+            "D": 0.0469171516597271,
+            "E": 0.0029992484487593174
+          },
+          "C": {
+            "A": 0.14052443206310272,
+            "B": 0.04422183707356453,
+            "C": 0.808623194694519,
+            "D": 0.005448164418339729,
+            "E": 0.0005310834967531264
+          },
+          "D": {
+            "A": 0.32436391711235046,
+            "B": 0.1848311573266983,
+            "C": 0.14393474161624908,
+            "D": 0.3453042805194855,
+            "E": 0.00034579919883981347
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.51939857006073,
+          "B": 0.47384899854660034,
+          "C": 0.808623194694519,
+          "D": 0.3453042805194855
+        },
+        "score": 0.5367937609553337
+      },
+      {
+        "record_index": 32,
+        "sample_id": "sample_32",
+        "label": null,
+        "perturbations": {
+          "a": "A scanning code comprises a $7 \\times 7$ grid of squares, with some of its squares tinted black and the rest tinted white. There must be at least one square of each hue in this grid of $49$ squares. A scanning code is termed $\\textit{symmetric}$ if its appearance does not alter when the entire square is rotated by a multiple of $90 ^{\\circ}$ counterclockwise around its center, nor when it is mirrored across a line connecting opposite corners or a line connecting midpoints of opposing sides. What is the total quantity of possible symmetric scanning codes?",
+          "b": "A scanning code consists of a $7 \\times 7$ matrix of squares, with some of its squares shaded black and the rest shaded white. There must be at least one square of each shade in this grid of $49$ squares. A scanning code is labeled $\\textit{symmetric}$ if its form does not change when the entire square is rotated by a multiple of $90 ^{\\circ}$ counterclockwise around its center, nor when it is reflected across a line linking opposite corners or a line linking midpoints of opposing sides. What is the total count of potential symmetric scanning codes?",
+          "c": "A scanning code entails a $7 \\times 7$ array of squares, with some of its squares painted black and the rest painted white. There must be at least one square of each tone in this grid of $49$ squares. A scanning code is described as $\\textit{symmetric}$ if its design does not shift when the entire square is rotated by a multiple of $90 ^{\\circ}$ counterclockwise around its center, nor when it is reflected across a line joining opposing corners or a line joining midpoints of opposite sides. What is the total number of feasible symmetric scanning codes?",
+          "d": "A scanning code comprises a $7 \\times 7$ layout of squares, with some of its squares colored ebony and the rest colored ivory. There must be at least one square of each tint in this grid of $49$ squares. A scanning code is identified as $\\textit{symmetric}$ if its configuration does not alter when the entire square is rotated by a multiple of $90 ^{\\circ}$ counterclockwise around its center, nor when it is mirrored across a line connecting opposite corners or a line connecting midpoints of contrasting sides. What is the total sum of potential symmetric scanning codes?"
+        },
+        "bdq_probs": {
+          "A": 0.24087724089622498,
+          "B": 0.47904253005981445,
+          "C": 0.18759550154209137,
+          "D": 0.08861297369003296,
+          "E": 0.0035449431743472815
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.16307523846626282,
+            "B": 0.36750903725624084,
+            "C": 0.22289572656154633,
+            "D": 0.23727606236934662,
+            "E": 0.007165564224123955
+          },
+          "B": {
+            "A": 0.15258511900901794,
+            "B": 0.6424111723899841,
+            "C": 0.15258482098579407,
+            "D": 0.04953732714056969,
+            "E": 0.0022456261795014143
+          },
+          "C": {
+            "A": 0.15586434304714203,
+            "B": 0.45101243257522583,
+            "C": 0.3299650549888611,
+            "D": 0.06103682518005371,
+            "E": 0.0015280423685908318
+          },
+          "D": {
+            "A": 0.23351699113845825,
+            "B": 0.3850114941596985,
+            "C": 0.20607802271842957,
+            "D": 0.17084580659866333,
+            "E": 0.00377446785569191
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.16307523846626282,
+          "B": 0.6424111723899841,
+          "C": 0.3299650549888611,
+          "D": 0.17084580659866333
+        },
+        "score": 0.32657431811094284
+      },
+      {
+        "record_index": 33,
+        "sample_id": "sample_33",
+        "label": null,
+        "perturbations": {
+          "a": "Question: How many double-digit numbers have digits whose sum is a perfect square?",
+          "b": "Question: How many two-figure numbers have digits whose sum is a perfect square?",
+          "c": "Question: How many two-digit numerals have digits whose sum is a perfect square?",
+          "d": "Question: How many two-digit figures have digits whose sum is a perfect square?"
+        },
+        "bdq_probs": {
+          "A": 0.14273598790168762,
+          "B": 0.4680054485797882,
+          "C": 0.3645044267177582,
+          "D": 0.020561939105391502,
+          "E": 0.0031533539295196533
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.20983177423477173,
+            "B": 0.535824179649353,
+            "C": 0.223382830619812,
+            "D": 0.022115696221590042,
+            "E": 0.0018729319563135505
+          },
+          "B": {
+            "A": 0.11664948612451553,
+            "B": 0.8095583915710449,
+            "C": 0.05865012854337692,
+            "D": 0.009878665208816528,
+            "E": 0.0021361953113228083
+          },
+          "C": {
+            "A": 0.04030687361955643,
+            "B": 0.03787542134523392,
+            "C": 0.9171538949012756,
+            "D": 0.002273090183734894,
+            "E": 0.00038891227450221777
+          },
+          "D": {
+            "A": 0.10974063724279404,
+            "B": 0.26326248049736023,
+            "C": 0.35975492000579834,
+            "D": 0.2632022798061371,
+            "E": 0.0003602745127864182
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.20983177423477173,
+          "B": 0.8095583915710449,
+          "C": 0.9171538949012756,
+          "D": 0.2632022798061371
+        },
+        "score": 0.5499365851283073
+      },
+      {
+        "record_index": 34,
+        "sample_id": "sample_34",
+        "label": null,
+        "perturbations": {
+          "a": "Question: What is the convergence of the lines given by $y=-4x$ and $y-2=12x$? Express your answer as an ordered pair, with both coordinates expressed as common fractions.",
+          "b": "Question: What is the meeting point of the lines given by $y=-4x$ and $y-2=12x$? Express your answer as an ordered pair, with both coordinates expressed as common fractions.",
+          "c": "Question: What is the crossroad of the lines given by $y=-4x$ and $y-2=12x$? Express your answer as an ordered pair, with both coordinates expressed as common fractions.",
+          "d": "Question: What is the junction of the lines given by $y=-4x$ and $y-2=12x$? Express your answer as an ordered pair, with both coordinates expressed as common fractions."
+        },
+        "bdq_probs": {
+          "A": 0.05313720554113388,
+          "B": 0.8847883939743042,
+          "C": 0.031236404553055763,
+          "D": 0.0284416526556015,
+          "E": 0.0019969057757407427
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1571526974439621,
+            "B": 0.7497197985649109,
+            "C": 0.04502330347895622,
+            "D": 0.045025117695331573,
+            "E": 0.0009056674898602068
+          },
+          "B": {
+            "A": 0.04813748225569725,
+            "B": 0.9370340704917908,
+            "C": 0.008363909088075161,
+            "D": 0.005234389565885067,
+            "E": 0.0003674906911328435
+          },
+          "C": {
+            "A": 0.030308442190289497,
+            "B": 0.6685580015182495,
+            "C": 0.2966683506965637,
+            "D": 0.003508097492158413,
+            "E": 0.00030177616281434894
+          },
+          "D": {
+            "A": 0.03433665633201599,
+            "B": 0.7341045141220093,
+            "C": 0.020182263106107712,
+            "D": 0.21032564342021942,
+            "E": 0.00024243324878625572
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1571526974439621,
+          "B": 0.9370340704917908,
+          "C": 0.2966683506965637,
+          "D": 0.21032564342021942
+        },
+        "score": 0.400295190513134
+      },
+      {
+        "record_index": 36,
+        "sample_id": "sample_36",
+        "label": null,
+        "perturbations": {
+          "a": "Question: What is the digits unit of $3^{2004}$?",
+          "b": "Question: What is the unit's digit of $3^{2004}$?",
+          "c": "Question: What is the units figure of $3^{2004}$?",
+          "d": "Question: What is the units numeral of $3^{2004}$?"
+        },
+        "bdq_probs": {
+          "A": 0.08065938949584961,
+          "B": 0.8671024441719055,
+          "C": 0.03692672774195671,
+          "D": 0.013166869059205055,
+          "E": 0.0011150932405143976
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.6280989646911621,
+            "B": 0.2787815034389496,
+            "C": 0.05842702090740204,
+            "D": 0.02435794472694397,
+            "E": 0.0018202787032350898
+          },
+          "B": {
+            "A": 0.02732367254793644,
+            "B": 0.962957501411438,
+            "C": 0.005379284266382456,
+            "D": 0.0015412322245538235,
+            "E": 0.0002290917036589235
+          },
+          "C": {
+            "A": 0.01674504019320011,
+            "B": 0.06623382121324539,
+            "C": 0.9141027927398682,
+            "D": 0.0006909217336215079,
+            "E": 8.188372885342687e-05
+          },
+          "D": {
+            "A": 0.02953585609793663,
+            "B": 0.8627722263336182,
+            "C": 0.016820933669805527,
+            "D": 0.08544110506772995,
+            "E": 0.000255449500400573
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.6280989646911621,
+          "B": 0.962957501411438,
+          "C": 0.9141027927398682,
+          "D": 0.08544110506772995
+        },
+        "score": 0.6476500909775496
+      },
+      {
+        "record_index": 37,
+        "sample_id": "sample_37",
+        "label": null,
+        "perturbations": {
+          "a": "In triangle $ABC$, $AB = 13$, $AC = 15$, and $BC = 14$.  Let $I$ be the center.  The incircle of triangle $ABC$ touches sides $BC$, $AC$, and $AB$ at $D$, $E$, and $F$, respectively.  Find the distance of $BI$.",
+          "b": "In triangle $ABC$, $AB = 13$, $AC = 15$, and $BC = 14$.  Let $I$ be the incenter.  The incircle of triangle $ABC$ contacts sides $BC$, $AC$, and $AB$ at $D$, $E$, and $F$, respectively.  Find the measurement of $BI$.",
+          "c": "In triangle $ABC$, $AB = 13$, $AC = 15$, and $BC = 14$.  Let $I$ be the incenter.  The incircle of triangle $ABC$ meets sides $BC$, $AC$, and $AB$ at $D$, $E$, and $F$, respectively.  Find the size of $BI$.",
+          "d": "In triangle $ABC$, $AB = 13$, $AC = 15$, and $BC = 14$.  Let $I$ be the inner center.  The incircle of triangle $ABC$ intersects sides $BC$, $AC$, and $AB$ at $D$, $E$, and $F$, respectively.  Find the length of $BI$."
+        },
+        "bdq_probs": {
+          "A": 0.20158745348453522,
+          "B": 0.5479679703712463,
+          "C": 0.1893760710954666,
+          "D": 0.05425620079040527,
+          "E": 0.0062806010246276855
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3096940517425537,
+            "B": 0.24119751155376434,
+            "C": 0.3296765983104706,
+            "D": 0.11393078416585922,
+            "E": 0.003778511891141534
+          },
+          "B": {
+            "A": 0.25890034437179565,
+            "B": 0.5834409594535828,
+            "C": 0.13018491864204407,
+            "D": 0.022622814401984215,
+            "E": 0.003810174996033311
+          },
+          "C": {
+            "A": 0.21483807265758514,
+            "B": 0.2936500310897827,
+            "C": 0.4841470420360565,
+            "D": 0.006094170268625021,
+            "E": 0.00041470807627774775
+          },
+          "D": {
+            "A": 0.21363410353660583,
+            "B": 0.4814211130142212,
+            "C": 0.14682132005691528,
+            "D": 0.15629372000694275,
+            "E": 0.0004821274196729064
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3096940517425537,
+          "B": 0.5834409594535828,
+          "C": 0.4841470420360565,
+          "D": 0.15629372000694275
+        },
+        "score": 0.38339394330978394
+      },
+      {
+        "record_index": 39,
+        "sample_id": "sample_39",
+        "label": null,
+        "perturbations": {
+          "a": "Question: How many favorable two-digit integers have an odd quantity of favorable factors?",
+          "b": "Question: How many advantageous two-digit integers have an odd count of advantageous factors?",
+          "c": "Question: How many beneficial two-digit integers have an odd number of beneficial factors?",
+          "d": "Question: How many positive two-digit integers possess an odd amount of positive factors?"
+        },
+        "bdq_probs": {
+          "A": 0.1674911230802536,
+          "B": 0.047988951206207275,
+          "C": 0.03297126665711403,
+          "D": 0.7505364418029785,
+          "E": 0.00028088930412195623
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.7228351831436157,
+            "B": 0.05238564312458038,
+            "C": 0.029833775013685226,
+            "D": 0.18280422687530518,
+            "E": 0.00024248230329249054
+          },
+          "B": {
+            "A": 0.09801230579614639,
+            "B": 0.8733670115470886,
+            "C": 0.014116843231022358,
+            "D": 0.010995561257004738,
+            "E": 0.0005473913042806089
+          },
+          "C": {
+            "A": 0.05604672431945801,
+            "B": 0.0069082616828382015,
+            "C": 0.9330831170082092,
+            "D": 0.0019781209994107485,
+            "E": 0.00015017634723335505
+          },
+          "D": {
+            "A": 0.23400478065013885,
+            "B": 0.04609323665499687,
+            "C": 0.03818729892373085,
+            "D": 0.6771152019500732,
+            "E": 0.00015128710947465152
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.7228351831436157,
+          "B": 0.8733670115470886,
+          "C": 0.9330831170082092,
+          "D": 0.6771152019500732
+        },
+        "score": 0.8016001284122467
+      },
+      {
+        "record_index": 41,
+        "sample_id": "sample_41",
+        "label": null,
+        "perturbations": {
+          "a": "An integer among $1000$ and $9999$, inclusive, is referred to as balanced if the total of its two leftmost digits equals the total of its two rightmost digits. How many balanced integers exist?",
+          "b": "An integer in $1000$ and $9999$, inclusive, is designated balanced if the sum of its two leftmost digits equals the sum of its two rightmost digits. How many balanced integers are present?",
+          "c": "An integer between $1000$ and $9999$, inclusive, is termed balanced if the addition of its two leftmost digits equals the addition of its two rightmost digits. How many balanced integers are there?",
+          "d": "An integer amongst $1000$ and $9999$, inclusive, is identified as balanced if the sum of its two leftmost digits equals the sum of its two rightmost digits. How many balanced integers can be found?"
+        },
+        "bdq_probs": {
+          "A": 0.19516462087631226,
+          "B": 0.5647231936454773,
+          "C": 0.16179947555065155,
+          "D": 0.07642709463834763,
+          "E": 0.0014900652458891273
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3396087884902954,
+            "B": 0.2645244598388672,
+            "C": 0.26451149582862854,
+            "D": 0.12493913620710373,
+            "E": 0.0012248014099895954
+          },
+          "B": {
+            "A": 0.27497896552085876,
+            "B": 0.5821138024330139,
+            "C": 0.10768494009971619,
+            "D": 0.03284180536866188,
+            "E": 0.0009915734408423305
+          },
+          "C": {
+            "A": 0.14578983187675476,
+            "B": 0.4780069887638092,
+            "C": 0.34972500801086426,
+            "D": 0.025331852957606316,
+            "E": 0.0003613311564549804
+          },
+          "D": {
+            "A": 0.1623057723045349,
+            "B": 0.566450834274292,
+            "C": 0.1432192474603653,
+            "D": 0.12639054656028748,
+            "E": 0.000251715537160635
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3396087884902954,
+          "B": 0.5821138024330139,
+          "C": 0.34972500801086426,
+          "D": 0.12639054656028748
+        },
+        "score": 0.34945953637361526
+      },
+      {
+        "record_index": 42,
+        "sample_id": "sample_42",
+        "label": null,
+        "perturbations": {
+          "a": "Two positive whole numbers $m$ and $n$ are selected such that $m$ is the smallest positive whole number with only two positive factors and $n$ is the largest whole number less than $100$ with exactly three positive factors. What is $m+n$?",
+          "b": "Two positive integers $m$ and $n$ are picked such that $m$ is the smallest positive integer with only two positive factors and $n$ is the largest integer lower than $100$ with exactly three positive factors. What is $m+n$?",
+          "c": "Two positive digits $m$ and $n$ are chosen such that $m$ is the smallest positive digit with only two positive divisors and $n$ is the largest digit less than $100$ with exactly three positive divisors. What is $m+n$?",
+          "d": "Two positive integers $m$ and $n$ are determined such that $m$ is the smallest positive integer with only two positive divisors and $n$ is the largest integer beneath $100$ with exactly three positive divisors. What is $m+n$?"
+        },
+        "bdq_probs": {
+          "A": 0.23097847402095795,
+          "B": 0.40538156032562256,
+          "C": 0.06617465615272522,
+          "D": 0.2965875267982483,
+          "E": 0.0005549063207581639
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3954315483570099,
+            "B": 0.2893204092979431,
+            "C": 0.041677139699459076,
+            "D": 0.2717922031879425,
+            "E": 0.00037202652310952544
+          },
+          "B": {
+            "A": 0.3751998245716095,
+            "B": 0.5459298491477966,
+            "C": 0.0420970544219017,
+            "D": 0.03490043058991432,
+            "E": 0.0010872682323679328
+          },
+          "C": {
+            "A": 0.25878265500068665,
+            "B": 0.40081432461738586,
+            "C": 0.3121577203273773,
+            "D": 0.027274634689092636,
+            "E": 0.0004408368840813637
+          },
+          "D": {
+            "A": 0.2988480031490326,
+            "B": 0.4628696143627167,
+            "C": 0.031496092677116394,
+            "D": 0.20540161430835724,
+            "E": 0.00028114058659411967
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3954315483570099,
+          "B": 0.5459298491477966,
+          "C": 0.3121577203273773,
+          "D": 0.20540161430835724
+        },
+        "score": 0.36473018303513527
+      },
+      {
+        "record_index": 45,
+        "sample_id": "sample_45",
+        "label": null,
+        "perturbations": {
+          "a": "Locate the fraction that equals $0.\\overline{4}$.",
+          "b": "Discover the fraction that equals $0.\\overline{4}$.",
+          "c": "Identify the fraction that equals $0.\\overline{4}$.",
+          "d": "Determine the fraction that equals $0.\\overline{4}$."
+        },
+        "bdq_probs": {
+          "A": 0.12437932938337326,
+          "B": 0.03563998267054558,
+          "C": 0.8110549449920654,
+          "D": 0.027748895809054375,
+          "E": 0.0005082384450361133
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.12003467977046967,
+            "B": 0.041495513170957565,
+            "C": 0.782709538936615,
+            "D": 0.046993982046842575,
+            "E": 0.0003819722624029964
+          },
+          "B": {
+            "A": 0.29832223057746887,
+            "B": 0.4340774118900299,
+            "C": 0.24731780588626862,
+            "D": 0.016828184947371483,
+            "E": 0.00016494542069267482
+          },
+          "C": {
+            "A": 0.49866387248039246,
+            "B": 0.01102132722735405,
+            "C": 0.4684688448905945,
+            "D": 0.019333718344569206,
+            "E": 0.00012237321061547846
+          },
+          "D": {
+            "A": 0.0492875762283802,
+            "B": 0.0068839783780276775,
+            "C": 0.9298407435417175,
+            "D": 0.009113195352256298,
+            "E": 0.000266777235083282
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.12003467977046967,
+          "B": 0.4340774118900299,
+          "C": 0.4684688448905945,
+          "D": 0.009113195352256298
+        },
+        "score": 0.2579235329758376
+      },
+      {
+        "record_index": 46,
+        "sample_id": "sample_46",
+        "label": null,
+        "perturbations": {
+          "a": "Calculate $\\arccos (\\cos 7).$  All functions are in radians.",
+          "b": "Determine $\\arccos (\\cos 7).$  All functions are in radians.",
+          "c": "Evaluate $\\arccos (\\cos 7).$  All functions are in radians.",
+          "d": "Find $\\arccos (\\cos 7).$  All functions are in radians."
+        },
+        "bdq_probs": {
+          "A": 0.0926596000790596,
+          "B": 0.6431503891944885,
+          "C": 0.14351098239421844,
+          "D": 0.1189686730504036,
+          "E": 0.0009668716229498386
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2030610591173172,
+            "B": 0.29548850655555725,
+            "C": 0.35640090703964233,
+            "D": 0.13955745100975037,
+            "E": 0.0008561073918826878
+          },
+          "B": {
+            "A": 0.2864428460597992,
+            "B": 0.13534227013587952,
+            "C": 0.2690739929676056,
+            "D": 0.3049059510231018,
+            "E": 0.000286825408693403
+          },
+          "C": {
+            "A": 0.07031048089265823,
+            "B": 0.8563832640647888,
+            "C": 0.054744549095630646,
+            "D": 0.015684498474001884,
+            "E": 0.0004737124254461378
+          },
+          "D": {
+            "A": 0.04668146371841431,
+            "B": 0.7771368622779846,
+            "C": 0.11917783319950104,
+            "D": 0.052881475538015366,
+            "E": 0.00044344455818645656
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2030610591173172,
+          "B": 0.13534227013587952,
+          "C": 0.054744549095630646,
+          "D": 0.052881475538015366
+        },
+        "score": 0.11150733847171068
+      },
+      {
+        "record_index": 47,
+        "sample_id": "sample_47",
+        "label": null,
+        "perturbations": {
+          "a": "Question: For how many actual values of $c$ do we have $\\left|\\frac12-ci\\right| = \\frac34$?",
+          "b": "Question: For how many genuine values of $c$ do we have $\\left|\\frac12-ci\\right| = \\frac34$?",
+          "c": "Question: For how many existing values of $c$ do we have $\\left|\\frac12-ci\\right| = \\frac34$?",
+          "d": "Question: For how many true values of $c$ do we have $\\left|\\frac12-ci\\right| = \\frac34$?"
+        },
+        "bdq_probs": {
+          "A": 0.37403440475463867,
+          "B": 0.27366483211517334,
+          "C": 0.21312612295150757,
+          "D": 0.13760535418987274,
+          "E": 0.0010182546684518456
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.385786771774292,
+            "B": 0.362455815076828,
+            "C": 0.14192993938922882,
+            "D": 0.10384278744459152,
+            "E": 0.0013485250528901815
+          },
+          "B": {
+            "A": 0.17301994562149048,
+            "B": 0.7753724455833435,
+            "C": 0.03626514598727226,
+            "D": 0.012931270524859428,
+            "E": 0.0010950859868898988
+          },
+          "C": {
+            "A": 0.06258028745651245,
+            "B": 0.011221084743738174,
+            "C": 0.919491171836853,
+            "D": 0.0058197397738695145,
+            "E": 0.00017851080338004977
+          },
+          "D": {
+            "A": 0.11000683158636093,
+            "B": 0.02306191809475422,
+            "C": 0.05195092782378197,
+            "D": 0.8128049969673157,
+            "E": 0.0002190787927247584
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.385786771774292,
+          "B": 0.7753724455833435,
+          "C": 0.919491171836853,
+          "D": 0.8128049969673157
+        },
+        "score": 0.723363846540451
+      },
+      {
+        "record_index": 48,
+        "sample_id": "sample_48",
+        "label": null,
+        "perturbations": {
+          "a": "Question: What is the digit in the units of $\\frac{20 \\cdot 21 \\cdot 22 \\cdot 23 \\cdot 24 \\cdot 25}{1000}$?",
+          "b": "Question: What is the digit of the units in $\\frac{20 \\cdot 21 \\cdot 22 \\cdot 23 \\cdot 24 \\cdot 25}{1000}$?",
+          "c": "Question: What is the final digit of $\\frac{20 \\cdot 21 \\cdot 22 \\cdot 23 \\cdot 24 \\cdot 25}{1000}$?",
+          "d": "Question: What is the units figure of $\\frac{20 \\cdot 21 \\cdot 22 \\cdot 23 \\cdot 24 \\cdot 25}{1000}$?"
+        },
+        "bdq_probs": {
+          "A": 0.1849038302898407,
+          "B": 0.3677251636981964,
+          "C": 0.36773496866226196,
+          "D": 0.07707589864730835,
+          "E": 0.0018701713997870684
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.289674311876297,
+            "B": 0.11345755308866501,
+            "C": 0.5084380507469177,
+            "D": 0.07795923203229904,
+            "E": 0.0014732003910467029
+          },
+          "B": {
+            "A": 0.09667804092168808,
+            "B": 0.8616148829460144,
+            "C": 0.02601928450167179,
+            "D": 0.013083569705486298,
+            "E": 0.0006023988826200366
+          },
+          "C": {
+            "A": 0.05473216995596886,
+            "B": 0.025060907006263733,
+            "C": 0.9113143682479858,
+            "D": 0.007178137544542551,
+            "E": 0.0005281976773403585
+          },
+          "D": {
+            "A": 0.15567085146903992,
+            "B": 0.1005161851644516,
+            "C": 0.29080936312675476,
+            "D": 0.45043155550956726,
+            "E": 0.000495418906211853
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.289674311876297,
+          "B": 0.8616148829460144,
+          "C": 0.9113143682479858,
+          "D": 0.45043155550956726
+        },
+        "score": 0.6282587796449661
+      },
+      {
+        "record_index": 49,
+        "sample_id": "sample_49",
+        "label": null,
+        "perturbations": {
+          "a": "A line is articulated in the form\n\\[\\begin{pmatrix} -2 \\\\ -5 \\end{pmatrix} \\cdot \\left( \\begin{pmatrix} x \\\\ y \\end{pmatrix} - \\begin{pmatrix} 1 \\\\ 11 \\end{pmatrix} \\right) = 0.\\]The equation of the line can be articulated in the form $y = mx + b.$  Enter the ordered pair $(m,b).$",
+          "b": "A line is stated in the form\n\\[\\begin{pmatrix} -2 \\\\ -5 \\end{pmatrix} \\cdot \\left( \\begin{pmatrix} x \\\\ y \\end{pmatrix} - \\begin{pmatrix} 1 \\\\ 11 \\end{pmatrix} \\right) = 0.\\]The equation of the line can be stated in the form $y = mx + b.$  Enter the ordered pair $(m,b).$",
+          "c": "A line is defined in the form\n\\[\\begin{pmatrix} -2 \\\\ -5 \\end{pmatrix} \\cdot \\left( \\begin{pmatrix} x \\\\ y \\end{pmatrix} - \\begin{pmatrix} 1 \\\\ 11 \\end{pmatrix} \\right) = 0.\\]The equation of the line can be defined in the form $y = mx + b.$  Enter the ordered pair $(m,b).$",
+          "d": "A line is conveyed in the form\n\\[\\begin{pmatrix} -2 \\\\ -5 \\end{pmatrix} \\cdot \\left( \\begin{pmatrix} x \\\\ y \\end{pmatrix} - \\begin{pmatrix} 1 \\\\ 11 \\end{pmatrix} \\right) = 0.\\]The equation of the line can be conveyed in the form $y = mx + b.$  Enter the ordered pair $(m,b).$"
+        },
+        "bdq_probs": {
+          "A": 0.13733872771263123,
+          "B": 0.5782161951065063,
+          "C": 0.2410372495651245,
+          "D": 0.04188521206378937,
+          "E": 0.0012648296542465687
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.20098811388015747,
+            "B": 0.39971962571144104,
+            "C": 0.33137232065200806,
+            "D": 0.06525030732154846,
+            "E": 0.0016853919951245189
+          },
+          "B": {
+            "A": 0.21789756417274475,
+            "B": 0.556419849395752,
+            "C": 0.19229374825954437,
+            "D": 0.031390756368637085,
+            "E": 0.0014230035012587905
+          },
+          "C": {
+            "A": 0.09883958846330643,
+            "B": 0.7303091883659363,
+            "C": 0.15308202803134918,
+            "D": 0.016646701842546463,
+            "E": 0.0007546303677372634
+          },
+          "D": {
+            "A": 0.07720636576414108,
+            "B": 0.688119649887085,
+            "C": 0.20986507833003998,
+            "D": 0.023545673117041588,
+            "E": 0.0008312746067531407
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.20098811388015747,
+          "B": 0.556419849395752,
+          "C": 0.15308202803134918,
+          "D": 0.023545673117041588
+        },
+        "score": 0.23350891610607505
+      },
+      {
+        "record_index": 50,
+        "sample_id": "sample_50",
+        "label": null,
+        "perturbations": {
+          "a": "\\[f(x) = \\log (x + \\sqrt{1 + x^2})\\]a symmetrical function, odd function, or neither?",
+          "b": "\\[f(x) = \\log (x + \\sqrt{1 + x^2})\\]an even characteristic, odd characteristic, or neither?",
+          "c": "\\[f(x) = \\log (x + \\sqrt{1 + x^2})\\]an even operation, odd operation, or neither?",
+          "d": "\\[f(x) = \\log (x + \\sqrt{1 + x^2})\\]an even relation, odd relation, or neither?"
+        },
+        "bdq_probs": {
+          "A": 0.20807935297489166,
+          "B": 0.4138246476650238,
+          "C": 0.16205398738384247,
+          "D": 0.19547617435455322,
+          "E": 0.019354475662112236
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2036103755235672,
+            "B": 0.4049535095691681,
+            "C": 0.16880682110786438,
+            "D": 0.16880592703819275,
+            "E": 0.02755567617714405
+          },
+          "B": {
+            "A": 0.18731234967708588,
+            "B": 0.21228396892547607,
+            "C": 0.25604596734046936,
+            "D": 0.15529438853263855,
+            "E": 0.15528982877731323
+          },
+          "C": {
+            "A": 0.12433141469955444,
+            "B": 0.31754228472709656,
+            "C": 0.1809142529964447,
+            "D": 0.1699478179216385,
+            "E": 0.15965242683887482
+          },
+          "D": {
+            "A": 0.16058838367462158,
+            "B": 0.24877509474754333,
+            "C": 0.1250702440738678,
+            "D": 0.24873459339141846,
+            "E": 0.14173324406147003
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2036103755235672,
+          "B": 0.21228396892547607,
+          "C": 0.1809142529964447,
+          "D": 0.24873459339141846
+        },
+        "score": 0.2113857977092266
+      },
+      {
+        "record_index": 52,
+        "sample_id": "sample_52",
+        "label": null,
+        "perturbations": {
+          "a": "In composing the integers from 10 through 99 inclusive, how many times is the numeral 6 written?",
+          "b": "In drafting the integers from 10 through 99 inclusive, how many times is the figure 6 written?",
+          "c": "In scripting the integers from 10 through 99 inclusive, how many times is the character 6 written?",
+          "d": "In inscribing the integers from 10 through 99 inclusive, how many times is the digit 6 documented?"
+        },
+        "bdq_probs": {
+          "A": 0.530161440372467,
+          "B": 0.16170820593833923,
+          "C": 0.250456303358078,
+          "D": 0.055879857391119,
+          "E": 0.0009318299125880003
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4918879568576813,
+            "B": 0.21831588447093964,
+            "C": 0.21829494833946228,
+            "D": 0.06253965944051743,
+            "E": 0.0005410228623077273
+          },
+          "B": {
+            "A": 0.4000128507614136,
+            "B": 0.5467958450317383,
+            "C": 0.04216333106160164,
+            "D": 0.006883190479129553,
+            "E": 0.0003647177363745868
+          },
+          "C": {
+            "A": 0.5381292700767517,
+            "B": 0.03441090136766434,
+            "C": 0.41912293434143066,
+            "D": 0.006363734137266874,
+            "E": 0.00031680116080679
+          },
+          "D": {
+            "A": 0.4736303389072418,
+            "B": 0.12752078473567963,
+            "C": 0.23817497491836548,
+            "D": 0.15377108752727509,
+            "E": 0.0002876740472856909
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4918879568576813,
+          "B": 0.5467958450317383,
+          "C": 0.41912293434143066,
+          "D": 0.15377108752727509
+        },
+        "score": 0.4028944559395313
+      },
+      {
+        "record_index": 53,
+        "sample_id": "sample_53",
+        "label": null,
+        "perturbations": {
+          "a": "The formula of a parabola is $y^2 + 6y + 2x + 5 = 0.$  Discover the vertex of the parabola.",
+          "b": "The expression of a parabola is $y^2 + 6y + 2x + 5 = 0.$  Locate the vertex of the parabola.",
+          "c": "The representation of a parabola is $y^2 + 6y + 2x + 5 = 0.$  Identify the vertex of the parabola.",
+          "d": "The definition of a parabola is $y^2 + 6y + 2x + 5 = 0.$  Determine the vertex of the parabola."
+        },
+        "bdq_probs": {
+          "A": 0.3601449131965637,
+          "B": 0.28049349784851074,
+          "C": 0.24753181636333466,
+          "D": 0.10984010994434357,
+          "E": 0.0014717811718583107
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.36553847789764404,
+            "B": 0.25125622749328613,
+            "C": 0.2512381374835968,
+            "D": 0.12632951140403748,
+            "E": 0.0008781750220805407
+          },
+          "B": {
+            "A": 0.3139113187789917,
+            "B": 0.6242943406105042,
+            "C": 0.04522290825843811,
+            "D": 0.01514823641628027,
+            "E": 0.00028177996864542365
+          },
+          "C": {
+            "A": 0.46601495146751404,
+            "B": 0.11070533841848373,
+            "C": 0.41128453612327576,
+            "D": 0.010622629895806313,
+            "E": 0.0003108762321062386
+          },
+          "D": {
+            "A": 0.39719223976135254,
+            "B": 0.187641441822052,
+            "C": 0.2126017063856125,
+            "D": 0.19973249733448029,
+            "E": 0.00037366015021689236
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.36553847789764404,
+          "B": 0.6242943406105042,
+          "C": 0.41128453612327576,
+          "D": 0.19973249733448029
+        },
+        "score": 0.40021246299147606
+      },
+      {
+        "record_index": 54,
+        "sample_id": "sample_54",
+        "label": null,
+        "perturbations": {
+          "a": "The six edges of a tetrahedron $ABCD$ measure $7, 13, 18, 27, 36$ and $41$ units. If the length of edge $AB$ is $41$, then the length of edge $CD$ is\n$\\textbf{(A)}\\ 7\\qquad \\textbf{(B)}\\ 13\\qquad \\textbf{(C)}\\ 18\\qquad \\textbf{(D)}\\ 27\\qquad \\textbf{(E)}\\ 36$",
+          "b": "The six edges of a tetrahedron $ABCD$ measure $7, 13, 18, 27, 36$ and $41$ units. If the measurement of edge $AB$ is $41$, then the measurement of edge $CD$ is\n$\\textbf{(A)}\\ 7\\qquad \\textbf{(B)}\\ 13\\qquad \\textbf{(C)}\\ 18\\qquad \\textbf{(D)}\\ 27\\qquad \\textbf{(E)}\\ 36$",
+          "c": "The six edges of a tetrahedron $ABCD$ measure $7, 13, 18, 27, 36$ and $41$ units. If the dimension of edge $AB$ is $41$, then the dimension of edge $CD$ is\n$\\textbf{(A)}\\ 7\\qquad \\textbf{(B)}\\ 13\\qquad \\textbf{(C)}\\ 18\\qquad \\textbf{(D)}\\ 27\\qquad \\textbf{(E)}\\ 36$",
+          "d": "The six edges of a tetrahedron $ABCD$ measure $7, 13, 18, 27, 36$ and $41$ units. If the size of edge $AB$ is $41$, then the size of edge $CD$ is\n$\\textbf{(A)}\\ 7\\qquad \\textbf{(B)}\\ 13\\qquad \\textbf{(C)}\\ 18\\qquad \\textbf{(D)}\\ 27\\qquad \\textbf{(E)}\\ 36$"
+        },
+        "bdq_probs": {
+          "A": 0.16512975096702576,
+          "B": 0.4778222441673279,
+          "C": 0.2257070690393448,
+          "D": 0.11349169909954071,
+          "E": 0.017404889687895775
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.14011508226394653,
+            "B": 0.35780370235443115,
+            "C": 0.3577987551689148,
+            "D": 0.13162516057491302,
+            "E": 0.010805020108819008
+          },
+          "B": {
+            "A": 0.22568704187870026,
+            "B": 0.34955576062202454,
+            "C": 0.34955549240112305,
+            "D": 0.06883101165294647,
+            "E": 0.004684125538915396
+          },
+          "C": {
+            "A": 0.16872155666351318,
+            "B": 0.43085038661956787,
+            "C": 0.35718563199043274,
+            "D": 0.04007454961538315,
+            "E": 0.002561945468187332
+          },
+          "D": {
+            "A": 0.17298485338687897,
+            "B": 0.41497519612312317,
+            "C": 0.23644161224365234,
+            "D": 0.17298509180545807,
+            "E": 0.002045657252892852
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.14011508226394653,
+          "B": 0.34955576062202454,
+          "C": 0.35718563199043274,
+          "D": 0.17298509180545807
+        },
+        "score": 0.25496039167046547
+      },
+      {
+        "record_index": 55,
+        "sample_id": "sample_55",
+        "label": null,
+        "perturbations": {
+          "a": "One additional than $11$ times a particular prime $p$ is another prime $q$. What is the value of $q$?",
+          "b": "One greater than $11$ times a specific prime $p$ is another prime $q$. What is the value of $q$?",
+          "c": "One more than $11$ times a designated prime $p$ is another prime $q$. What is the value of $q$?",
+          "d": "One exceeding $11$ times an identifiable prime $p$ is another prime $q$. What is the value of $q$?"
+        },
+        "bdq_probs": {
+          "A": 0.08404993265867233,
+          "B": 0.7973809838294983,
+          "C": 0.07417133450508118,
+          "D": 0.042260944843292236,
+          "E": 0.001401571906171739
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3353692293167114,
+            "B": 0.4045644700527191,
+            "C": 0.15842305123806,
+            "D": 0.09608941525220871,
+            "E": 0.0007335782865993679
+          },
+          "B": {
+            "A": 0.1423119753599167,
+            "B": 0.8188705444335938,
+            "C": 0.028021318838000298,
+            "D": 0.009097827598452568,
+            "E": 0.0005815287004224956
+          },
+          "C": {
+            "A": 0.05579845607280731,
+            "B": 0.7701647281646729,
+            "C": 0.16144037246704102,
+            "D": 0.010985549539327621,
+            "E": 0.00046782480785623193
+          },
+          "D": {
+            "A": 0.04297710210084915,
+            "B": 0.8630174994468689,
+            "C": 0.040361352264881134,
+            "D": 0.048687342554330826,
+            "E": 0.00039570825174450874
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3353692293167114,
+          "B": 0.8188705444335938,
+          "C": 0.16144037246704102,
+          "D": 0.048687342554330826
+        },
+        "score": 0.34109187219291925
+      },
+      {
+        "record_index": 56,
+        "sample_id": "sample_56",
+        "label": null,
+        "perturbations": {
+          "a": "Alpha and Beta both participated in a two-day problem-solving contest. At the conclusion of the second day, each had tried questions worth a total of 500 points. Alpha scored 160 points out of 300 points attempted on the first day, and scored 140 points out of 200 points attempted on the second day. Beta, who did not try 300 points on the first day, had a positive integer score on each of the two days, and Beta's daily success ratio (points scored divided by points attempted) on each day was less than Alpha's on that day. Alpha's two-day success ratio was $300/500 = 3/5$.\n\nFind the largest possible two-day success ratio that Beta could have attained.",
+          "b": "Alpha and Beta both engaged in a two-day problem-solving contest. At the finish of the second day, each had worked on questions worth a total of 500 points. Alpha scored 160 points out of 300 points attempted on the first day, and scored 140 points out of 200 points attempted on the second day. Beta, who did not tackle 300 points on the first day, had a positive integer score on each of the two days, and Beta's daily success ratio (points scored divided by points attempted) on each day was less than Alpha's on that day. Alpha's two-day success ratio was $300/500 = 3/5$.\n\nFind the largest possible two-day success ratio that Beta could have realized.",
+          "c": "Alpha and Beta both partook in a two-day problem-solving competition. At the closure of the second day, each had attempted questions worth a total of 500 points. Alpha scored 160 points out of 300 points attempted on the first day, and scored 140 points out of 200 points attempted on the second day. Beta, who did not engage 300 points on the first day, had a positive integer score on each of the two days, and Beta's daily success ratio (points scored divided by points attempted) on each day was less than Alpha's on that day. Alpha's two-day success ratio was $300/500 = 3/5$.\n\nFind the largest possible two-day success ratio that Beta could have accomplished.",
+          "d": "Alpha and Beta both participated in a two-day problem-solving event. At the conclusion of the second day, each had attempted questions worth a total of 500 points. Alpha scored 160 points out of 300 points attempted on the first day, and scored 140 points out of 200 points attempted on the second day. Beta, who did not pursue 300 points on the first day, had a positive integer score on each of the two days, and Beta's daily success ratio (points scored divided by points attempted) on each day was less than Alpha's on that day. Alpha's two-day success ratio was $300/500 = 3/5$.\n\nFind the largest possible two-day success ratio that Beta could have achieved."
+        },
+        "bdq_probs": {
+          "A": 0.2576833665370941,
+          "B": 0.22740888595581055,
+          "C": 0.3749285042285919,
+          "D": 0.13792605698108673,
+          "E": 0.0017913358751684427
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2666867971420288,
+            "B": 0.20770274102687836,
+            "C": 0.38803136348724365,
+            "D": 0.13409705460071564,
+            "E": 0.0016360963927581906
+          },
+          "B": {
+            "A": 0.29063472151756287,
+            "B": 0.2126377820968628,
+            "C": 0.3731861114501953,
+            "D": 0.12115328758955002,
+            "E": 0.0016234401846304536
+          },
+          "C": {
+            "A": 0.3084619343280792,
+            "B": 0.13688258826732635,
+            "C": 0.508573055267334,
+            "D": 0.04443743824958801,
+            "E": 0.0011477750958874822
+          },
+          "D": {
+            "A": 0.2598530650138855,
+            "B": 0.21543075144290924,
+            "C": 0.3551782965660095,
+            "D": 0.16777127981185913,
+            "E": 0.0012033340753987432
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2666867971420288,
+          "B": 0.2126377820968628,
+          "C": 0.508573055267334,
+          "D": 0.16777127981185913
+        },
+        "score": 0.2889172285795212
+      },
+      {
+        "record_index": 57,
+        "sample_id": "sample_57",
+        "label": null,
+        "perturbations": {
+          "a": "Question: If $f(x)$ is a function specified only for $0 \\le x \\le 1$, and $f(x) = ax+b$ for constants $a$ and $b$ where $a < 0$, then what is the scope of $f$ in terms of $a$ and $b$? Express your answer in interval notation.",
+          "b": "Question: If $f(x)$ is a function established only for $0 \\le x \\le 1$, and $f(x) = ax+b$ for constants $a$ and $b$ where $a < 0$, then what is the extent of $f$ in terms of $a$ and $b$? Express your answer in interval notation.",
+          "c": "Question: If $f(x)$ is a function described only for $0 \\le x \\le 1$, and $f(x) = ax+b$ for constants $a$ and $b$ where $a < 0$, then what is the domain of $f$ in terms of $a$ and $b$? Express your answer in interval notation.",
+          "d": "Question: If $f(x)$ is a function indicated only for $0 \\le x \\le 1$, and $f(x) = ax+b$ for constants $a$ and $b$ where $a < 0$, then what is the range of $f$ in terms of $a$ and $b$? Express your response in interval notation."
+        },
+        "bdq_probs": {
+          "A": 0.050828639417886734,
+          "B": 0.15656404197216034,
+          "C": 0.08920272439718246,
+          "D": 0.7016499638557434,
+          "E": 0.001354528940282762
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.18615542352199554,
+            "B": 0.17488345503807068,
+            "C": 0.02519126795232296,
+            "D": 0.6103840470314026,
+            "E": 0.0006507341749966145
+          },
+          "B": {
+            "A": 0.034656986594200134,
+            "B": 0.8662774562835693,
+            "C": 0.021686257794499397,
+            "D": 0.07569405436515808,
+            "E": 0.0010143406689167023
+          },
+          "C": {
+            "A": 0.06197642162442207,
+            "B": 0.06197812408208847,
+            "C": 0.8555347919464111,
+            "D": 0.01950039155781269,
+            "E": 0.0005619091098196805
+          },
+          "D": {
+            "A": 0.08345440030097961,
+            "B": 0.27363869547843933,
+            "C": 0.3100604712963104,
+            "D": 0.3300619125366211,
+            "E": 0.0019022654742002487
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.18615542352199554,
+          "B": 0.8662774562835693,
+          "C": 0.8555347919464111,
+          "D": 0.3300619125366211
+        },
+        "score": 0.5595073960721493
+      },
+      {
+        "record_index": 58,
+        "sample_id": "sample_58",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Locate the midpoint of the circle with formula $9x^2-18x+9y^2+36y+44=0.$",
+          "b": "Question: Determine the core of the circle with expression $9x^2-18x+9y^2+36y+44=0.$",
+          "c": "Question: Identify the hub of the circle with statement $9x^2-18x+9y^2+36y+44=0.$",
+          "d": "Question: Discover the focal point of the circle with representation $9x^2-18x+9y^2+36y+44=0.$"
+        },
+        "bdq_probs": {
+          "A": 0.33775800466537476,
+          "B": 0.38274624943733215,
+          "C": 0.18079359829425812,
+          "D": 0.09677213430404663,
+          "E": 0.0013803155161440372
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4092525243759155,
+            "B": 0.24826693534851074,
+            "C": 0.2332013100385666,
+            "D": 0.10348349064588547,
+            "E": 0.0011860039085149765
+          },
+          "B": {
+            "A": 0.04289190098643303,
+            "B": 0.9461143612861633,
+            "C": 0.005804035812616348,
+            "D": 0.0037475700955837965,
+            "E": 0.00012046492338413373
+          },
+          "C": {
+            "A": 0.042784251272678375,
+            "B": 0.011162244714796543,
+            "C": 0.9437262415885925,
+            "D": 0.001510283094830811,
+            "E": 8.520529081579298e-05
+          },
+          "D": {
+            "A": 0.16963225603103638,
+            "B": 0.02769611030817032,
+            "C": 0.0402858704328537,
+            "D": 0.7602346539497375,
+            "E": 9.528934606350958e-05
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4092525243759155,
+          "B": 0.9461143612861633,
+          "C": 0.9437262415885925,
+          "D": 0.7602346539497375
+        },
+        "score": 0.7648319453001022
+      },
+      {
+        "record_index": 59,
+        "sample_id": "sample_59",
+        "label": null,
+        "perturbations": {
+          "a": "Let $a,$ $b,$ $c,$ $d$ be actual numbers such that  \n\\begin{align*}  \na + b + c + d &= 6, \\\\  \na^2 + b^2 + c^2 + d^2 &= 12.  \n\\end{align*}Let $m$ and $M$ signify minimum and maximum values of  \n\\[4(a^3 + b^3 + c^3 + d^3) - (a^4 + b^4 + c^4 + d^4),\\]respectively.  Determine $m + M.$",
+          "b": "Let $a,$ $b,$ $c,$ $d$ be genuine numbers such that  \n\\begin{align*}  \na + b + c + d &= 6, \\\\  \na^2 + b^2 + c^2 + d^2 &= 12.  \n\\end{align*}Let $m$ and $M$ indicate minimum and maximum values of  \n\\[4(a^3 + b^3 + c^3 + d^3) - (a^4 + b^4 + c^4 + d^4),\\]respectively.  Compute $m + M.$",
+          "c": "Let $a,$ $b,$ $c,$ $d$ be numerical values such that  \n\\begin{align*}  \na + b + c + d &= 6, \\\\  \na^2 + b^2 + c^2 + d^2 &= 12.  \n\\end{align*}Let $m$ and $M$ represent minimum and maximum values of  \n\\[4(a^3 + b^3 + c^3 + d^3) - (a^4 + b^4 + c^4 + d^4),\\]respectively.  Find $m + M.$",
+          "d": "Let $a,$ $b,$ $c,$ $d$ be quantified numbers such that  \n\\begin{align*}  \na + b + c + d &= 6, \\\\  \na^2 + b^2 + c^2 + d^2 &= 12.  \n\\end{align*}Let $m$ and $M$ denote the least and greatest values of  \n\\[4(a^3 + b^3 + c^3 + d^3) - (a^4 + b^4 + c^4 + d^4),\\]respectively.  Determine $m + M.$"
+        },
+        "bdq_probs": {
+          "A": 0.1551481932401657,
+          "B": 0.5415146946907043,
+          "C": 0.19921384751796722,
+          "D": 0.10016939043998718,
+          "E": 0.0036486629396677017
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.29511821269989014,
+            "B": 0.27724483609199524,
+            "C": 0.2772403061389923,
+            "D": 0.1483948528766632,
+            "E": 0.0013666519662365317
+          },
+          "B": {
+            "A": 0.24876534938812256,
+            "B": 0.5266392230987549,
+            "C": 0.1508849561214447,
+            "D": 0.07127183675765991,
+            "E": 0.0019595795311033726
+          },
+          "C": {
+            "A": 0.15007054805755615,
+            "B": 0.1597498506307602,
+            "C": 0.6725471615791321,
+            "D": 0.01683630235493183,
+            "E": 0.0004486725083552301
+          },
+          "D": {
+            "A": 0.19013644754886627,
+            "B": 0.33369991183280945,
+            "C": 0.21544276177883148,
+            "D": 0.25987643003463745,
+            "E": 0.00040309957694262266
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.29511821269989014,
+          "B": 0.5266392230987549,
+          "C": 0.6725471615791321,
+          "D": 0.25987643003463745
+        },
+        "score": 0.43854525685310364
+      },
+      {
+        "record_index": 60,
+        "sample_id": "sample_60",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Locate a positive integer that is divisible by 18 and whose cube root is a figure between 8 and 8.1.",
+          "b": "Question: Identify a positive integer that is divisible by 18 and whose cube root is a value between 8 and 8.1.",
+          "c": "Question: Discover a positive integer that is divisible by 18 and whose cube root is a digit between 8 and 8.1.",
+          "d": "Question: Seek a positive integer that is divisible by 18 and whose cube root is a numeral between 8 and 8.1."
+        },
+        "bdq_probs": {
+          "A": 0.1975121647119522,
+          "B": 0.608385443687439,
+          "C": 0.144507497549057,
+          "D": 0.046912215650081635,
+          "E": 0.001876711379736662
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3271065056324005,
+            "B": 0.506672739982605,
+            "C": 0.12810611724853516,
+            "D": 0.03238896653056145,
+            "E": 0.0011797002516686916
+          },
+          "B": {
+            "A": 0.11464823782444,
+            "B": 0.8470531105995178,
+            "C": 0.029904203489422798,
+            "D": 0.006672810763120651,
+            "E": 0.00043325693695805967
+          },
+          "C": {
+            "A": 0.08560725301504135,
+            "B": 0.1929226666688919,
+            "C": 0.7167505621910095,
+            "D": 0.00364493764936924,
+            "E": 0.00020887123537249863
+          },
+          "D": {
+            "A": 0.15368273854255676,
+            "B": 0.5364021062850952,
+            "C": 0.14436808228492737,
+            "D": 0.1635914295911789,
+            "E": 0.0003929996455553919
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3271065056324005,
+          "B": 0.8470531105995178,
+          "C": 0.7167505621910095,
+          "D": 0.1635914295911789
+        },
+        "score": 0.5136254020035267
+      },
+      {
+        "record_index": 61,
+        "sample_id": "sample_61",
+        "label": null,
+        "perturbations": {
+          "a": "The initial four terms in an arithmetic sequence are $x+y$, $x-y$, $xy$, and $x/y$, in that sequence. What is the fifth term? Express your answer as a standard fraction.",
+          "b": "The premier four terms in an arithmetic sequence are $x+y$, $x-y$, $xy$, and $x/y$, in that arrangement. What is the fifth term? Express your answer as a conventional fraction.",
+          "c": "The opening four terms in an arithmetic sequence are $x+y$, $x-y$, $xy$, and $x/y$, in that order. What is the fifth term? Express your answer as a usual fraction.",
+          "d": "The first quartet of terms in an arithmetic sequence are $x+y$, $x-y$, $xy$, and $x/y$, in that sequence. What is the fifth term? Express your answer as a typical fraction."
+        },
+        "bdq_probs": {
+          "A": 0.26185399293899536,
+          "B": 0.38100382685661316,
+          "C": 0.24599727988243103,
+          "D": 0.10915636271238327,
+          "E": 0.0016064262017607689
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3349692225456238,
+            "B": 0.31469956040382385,
+            "C": 0.20317938923835754,
+            "D": 0.13964299857616425,
+            "E": 0.0030849610920995474
+          },
+          "B": {
+            "A": 0.24526667594909668,
+            "B": 0.6262862086296082,
+            "C": 0.09604717791080475,
+            "D": 0.029293032363057137,
+            "E": 0.0014582525473088026
+          },
+          "C": {
+            "A": 0.22880518436431885,
+            "B": 0.05785750597715378,
+            "C": 0.7047730684280396,
+            "D": 0.007354278117418289,
+            "E": 0.00032310988171957433
+          },
+          "D": {
+            "A": 0.3089941442012787,
+            "B": 0.15538932383060455,
+            "C": 0.13710829615592957,
+            "D": 0.3967515528202057,
+            "E": 0.00016562474775128067
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3349692225456238,
+          "B": 0.6262862086296082,
+          "C": 0.7047730684280396,
+          "D": 0.3967515528202057
+        },
+        "score": 0.5156950131058693
+      },
+      {
+        "record_index": 62,
+        "sample_id": "sample_62",
+        "label": null,
+        "perturbations": {
+          "a": "It requires 24 minutes for Jana to stroll one mile. At that pace, how distant in miles will she travel in 10 minutes? Express your answer as a decimal to the nearest tenth.",
+          "b": "It takes 24 minutes for Jana to tread one mile. At that speed, how far in miles will she cover in 10 minutes? Express your answer as a decimal to the nearest tenth.",
+          "c": "It consumes 24 minutes for Jana to march one mile. At that rate, how far in miles will she journey in 10 minutes? Express your answer as a decimal to the nearest tenth.",
+          "d": "It occupies 24 minutes for Jana to step one mile. At that rate, how far in miles will she proceed in 10 minutes? Express your answer as a decimal to the nearest tenth."
+        },
+        "bdq_probs": {
+          "A": 0.12926165759563446,
+          "B": 0.6166480183601379,
+          "C": 0.13759543001651764,
+          "D": 0.11407040059566498,
+          "E": 0.0019022184424102306
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.47528812289237976,
+            "B": 0.30690446496009827,
+            "C": 0.10605836659669876,
+            "D": 0.1060633435845375,
+            "E": 0.0008892808691598475
+          },
+          "B": {
+            "A": 0.18576152622699738,
+            "B": 0.7820354104042053,
+            "C": 0.018391134217381477,
+            "D": 0.012252279557287693,
+            "E": 0.00041917760972864926
+          },
+          "C": {
+            "A": 0.1425919532775879,
+            "B": 0.25025808811187744,
+            "C": 0.600302517414093,
+            "D": 0.005703762639313936,
+            "E": 0.00013205110735725611
+          },
+          "D": {
+            "A": 0.09406410902738571,
+            "B": 0.7397788166999817,
+            "C": 0.026943974196910858,
+            "D": 0.13684405386447906,
+            "E": 0.0001413812133250758
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.47528812289237976,
+          "B": 0.7820354104042053,
+          "C": 0.600302517414093,
+          "D": 0.13684405386447906
+        },
+        "score": 0.4986175261437893
+      },
+      {
+        "record_index": 63,
+        "sample_id": "sample_63",
+        "label": null,
+        "perturbations": {
+          "a": "Question: If $a$ and $b$ are positive whole numbers for which $ab - 6a + 5b = 373$, what is the smallest possible value of $|a - b|$?",
+          "b": "Question: If $a$ and $b$ are positive integers for which $ab - 6a + 5b = 373$, what is the least possible value of $|a - b|$?",
+          "c": "Question: If $a$ and $b$ are positive integers for which $ab - 6a + 5b = 373$, what is the minimal feasible value of $|a - b|$?",
+          "d": "Question: If $a$ and $b$ are positive integers for which $ab - 6a + 5b = 373$, what is the minimum possible value of $|a - b|$?"
+        },
+        "bdq_probs": {
+          "A": 0.18925639986991882,
+          "B": 0.5476212501525879,
+          "C": 0.08397770673036575,
+          "D": 0.17778877913951874,
+          "E": 0.0007734046084806323
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.21612681448459625,
+            "B": 0.2954220771789551,
+            "C": 0.14853136241436005,
+            "D": 0.33475247025489807,
+            "E": 0.0005526781897060573
+          },
+          "B": {
+            "A": 0.3097364008426666,
+            "B": 0.4233717620372772,
+            "C": 0.08873838931322098,
+            "D": 0.1764853447675705,
+            "E": 0.000437425245763734
+          },
+          "C": {
+            "A": 0.18259644508361816,
+            "B": 0.5986908674240112,
+            "C": 0.16113941371440887,
+            "D": 0.055686499923467636,
+            "E": 0.0008455055067315698
+          },
+          "D": {
+            "A": 0.14833469688892365,
+            "B": 0.5866571664810181,
+            "C": 0.08451437205076218,
+            "D": 0.1789257973432541,
+            "E": 0.000625409884378314
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.21612681448459625,
+          "B": 0.4233717620372772,
+          "C": 0.16113941371440887,
+          "D": 0.1789257973432541
+        },
+        "score": 0.2448909468948841
+      },
+      {
+        "record_index": 64,
+        "sample_id": "sample_64",
+        "label": null,
+        "perturbations": {
+          "a": "Question: What is the 39th digit in the sequence of Pascal's triangle that has 41 values?",
+          "b": "Question: What is the 39th numeral in the line of Pascal's triangle that has 41 counts?",
+          "c": "Question: What is the 39th figure in the array of Pascal's triangle that has 41 entries?",
+          "d": "Question: What is the 39th item in the column of Pascal's triangle that has 41 elements?"
+        },
+        "bdq_probs": {
+          "A": 0.28159794211387634,
+          "B": 0.2816159725189209,
+          "C": 0.26454517245292664,
+          "D": 0.17079780995845795,
+          "E": 0.000697987386956811
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.38882648944854736,
+            "B": 0.20816607773303986,
+            "C": 0.25105881690979004,
+            "D": 0.14304502308368683,
+            "E": 0.0004999889060854912
+          },
+          "B": {
+            "A": 0.20561477541923523,
+            "B": 0.7176467776298523,
+            "C": 0.05533880367875099,
+            "D": 0.019124671816825867,
+            "E": 0.00037282818811945617
+          },
+          "C": {
+            "A": 0.13324911892414093,
+            "B": 0.043263934552669525,
+            "C": 0.8162246942520142,
+            "D": 0.006039789877831936,
+            "E": 0.0001253503141924739
+          },
+          "D": {
+            "A": 0.280193567276001,
+            "B": 0.20501968264579773,
+            "C": 0.28019091486930847,
+            "D": 0.23229087889194489,
+            "E": 0.00020528724417090416
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.38882648944854736,
+          "B": 0.7176467776298523,
+          "C": 0.8162246942520142,
+          "D": 0.23229087889194489
+        },
+        "score": 0.5387472100555897
+      },
+      {
+        "record_index": 67,
+        "sample_id": "sample_67",
+        "label": null,
+        "perturbations": {
+          "a": "The measurement of the median to the hypotenuse of an isosceles, right triangle is $10$ units. What is the measurement of a leg of the triangle, in units? Express your response in simplest radical form.",
+          "b": "The distance of the median to the hypotenuse of an isosceles, right triangle is $10$ units. What is the distance of a leg of the triangle, in units? Express your answer in simplest radical form.",
+          "c": "The size of the median to the hypotenuse of an isosceles, right triangle is $10$ units. What is the size of a leg of the triangle, in units? Express your answer in simplest radical form.",
+          "d": "The extent of the median to the hypotenuse of an isosceles, right triangle is $10$ units. What is the extent of a leg of the triangle, in units? Express your answer in simplest radical form."
+        },
+        "bdq_probs": {
+          "A": 0.166019469499588,
+          "B": 0.7440394163131714,
+          "C": 0.05063300579786301,
+          "D": 0.03704404830932617,
+          "E": 0.0017875194316729903
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.41346895694732666,
+            "B": 0.4401604235172272,
+            "C": 0.08141911029815674,
+            "D": 0.05956914648413658,
+            "E": 0.0023096248041838408
+          },
+          "B": {
+            "A": 0.26920658349990845,
+            "B": 0.6874327063560486,
+            "C": 0.03215181827545166,
+            "D": 0.008928774856030941,
+            "E": 0.0008303846698254347
+          },
+          "C": {
+            "A": 0.204205721616745,
+            "B": 0.19184261560440063,
+            "C": 0.5908887982368469,
+            "D": 0.011519820429384708,
+            "E": 0.00043290623580105603
+          },
+          "D": {
+            "A": 0.19372913241386414,
+            "B": 0.6761671900749207,
+            "C": 0.04601240158081055,
+            "D": 0.0807608962059021,
+            "E": 0.0006562932976521552
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.41346895694732666,
+          "B": 0.6874327063560486,
+          "C": 0.5908887982368469,
+          "D": 0.0807608962059021
+        },
+        "score": 0.44313783943653107
+      },
+      {
+        "record_index": 68,
+        "sample_id": "sample_68",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Let $N$ be the largest integer multiple of 8, no two of whose digits are distinct. What is the remainder when $N$ is divided by 1000?",
+          "b": "Question: Let $N$ be the highest integer multiple of 8, no two of whose digits are different. What is the remainder when $N$ is divided by 1000?",
+          "c": "Question: Let $N$ be the maximum integer multiple of 8, no two of whose digits are unique. What is the remainder when $N$ is divided by 1000?",
+          "d": "Question: Let $N$ be the supreme integer multiple of 8, no two of whose digits are dissimilar. What is the remainder when $N$ is divided by 1000?"
+        },
+        "bdq_probs": {
+          "A": 0.18899905681610107,
+          "B": 0.4826223850250244,
+          "C": 0.24268154799938202,
+          "D": 0.08386648446321487,
+          "E": 0.0013138295616954565
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3692452311515808,
+            "B": 0.21042247116565704,
+            "C": 0.3258965015411377,
+            "D": 0.08239379525184631,
+            "E": 0.0036200182512402534
+          },
+          "B": {
+            "A": 0.179965540766716,
+            "B": 0.7576390504837036,
+            "C": 0.04550038278102875,
+            "D": 0.014772131107747555,
+            "E": 0.0008870789897628129
+          },
+          "C": {
+            "A": 0.16684739291667938,
+            "B": 0.12207667529582977,
+            "C": 0.70245361328125,
+            "D": 0.007330031134188175,
+            "E": 0.0003121453046333045
+          },
+          "D": {
+            "A": 0.13476867973804474,
+            "B": 0.25177431106567383,
+            "C": 0.19606192409992218,
+            "D": 0.41508519649505615,
+            "E": 0.000471047154860571
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3692452311515808,
+          "B": 0.7576390504837036,
+          "C": 0.70245361328125,
+          "D": 0.41508519649505615
+        },
+        "score": 0.5611057728528976
+      },
+      {
+        "record_index": 69,
+        "sample_id": "sample_69",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Determine for $r$: \\[\\frac{r-45}{2} = \\frac{3-2r}{5}.\\]",
+          "b": "Question: Calculate for $r$: \\[\\frac{r-45}{2} = \\frac{3-2r}{5}.\\]",
+          "c": "Question: Figure out for $r$: \\[\\frac{r-45}{2} = \\frac{3-2r}{5}.\\]",
+          "d": "Question: Find for $r$: \\[\\frac{r-45}{2} = \\frac{3-2r}{5}.\\]"
+        },
+        "bdq_probs": {
+          "A": 0.096936896443367,
+          "B": 0.46245166659355164,
+          "C": 0.2985762357711792,
+          "D": 0.14103654026985168,
+          "E": 0.0005414520273916423
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.22866497933864594,
+            "B": 0.2434498816728592,
+            "C": 0.3326931595802307,
+            "D": 0.18956990540027618,
+            "E": 0.00038953503826633096
+          },
+          "B": {
+            "A": 0.07536960393190384,
+            "B": 0.8623934388160706,
+            "C": 0.04865292087197304,
+            "D": 0.012302400544285774,
+            "E": 0.0004275839601177722
+          },
+          "C": {
+            "A": 0.04066287726163864,
+            "B": 0.02466399036347866,
+            "C": 0.9253808856010437,
+            "D": 0.008259729482233524,
+            "E": 0.0003924260090570897
+          },
+          "D": {
+            "A": 0.060883454978466034,
+            "B": 0.05373020097613335,
+            "C": 0.09427811205387115,
+            "D": 0.7894651889801025,
+            "E": 0.0001290662621613592
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.22866497933864594,
+          "B": 0.8623934388160706,
+          "C": 0.9253808856010437,
+          "D": 0.7894651889801025
+        },
+        "score": 0.7014761231839657
+      },
+      {
+        "record_index": 70,
+        "sample_id": "sample_70",
+        "label": null,
+        "perturbations": {
+          "a": "Assess $81^{3/4}$.",
+          "b": "Calculate $81^{3/4}$.",
+          "c": "Examine $81^{3/4}$.",
+          "d": "Determine $81^{3/4}$."
+        },
+        "bdq_probs": {
+          "A": 0.2111201286315918,
+          "B": 0.5738840103149414,
+          "C": 0.0685364305973053,
+          "D": 0.14509885013103485,
+          "E": 0.0005929312901571393
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2251628339290619,
+            "B": 0.5074617266654968,
+            "C": 0.0686573013663292,
+            "D": 0.18667538464069366,
+            "E": 0.0004212165076751262
+          },
+          "B": {
+            "A": 0.3670291304588318,
+            "B": 0.5685353875160217,
+            "C": 0.026587964966893196,
+            "D": 0.03414047881960869,
+            "E": 0.000356232572812587
+          },
+          "C": {
+            "A": 0.22718650102615356,
+            "B": 0.2740558385848999,
+            "C": 0.4518301784992218,
+            "D": 0.044730689376592636,
+            "E": 0.0003750798059627414
+          },
+          "D": {
+            "A": 0.18409201502799988,
+            "B": 0.642586350440979,
+            "C": 0.02065168507397175,
+            "D": 0.14336520433425903,
+            "E": 0.00022236017684917897
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2251628339290619,
+          "B": 0.5685353875160217,
+          "C": 0.4518301784992218,
+          "D": 0.14336520433425903
+        },
+        "score": 0.3472234010696411
+      },
+      {
+        "record_index": 71,
+        "sample_id": "sample_71",
+        "label": null,
+        "perturbations": {
+          "a": "What is the worth of $x$ if $|x-1| = |x-2|$? Express your response as a common fraction.",
+          "b": "What is the cost of $x$ if $|x-1| = |x-2|$? Express your reply as a common fraction.",
+          "c": "What is the price of $x$ if $|x-1| = |x-2|$? Express your answer as a usual fraction.",
+          "d": "What is the amount of $x$ if $|x-1| = |x-2|$? Express your solution as a common fraction."
+        },
+        "bdq_probs": {
+          "A": 0.38734251260757446,
+          "B": 0.13386991620063782,
+          "C": 0.19476757943630219,
+          "D": 0.28338876366615295,
+          "E": 0.00020124315051361918
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.43711230158805847,
+            "B": 0.11766394227743149,
+            "C": 0.23397484421730042,
+            "D": 0.20648737251758575,
+            "E": 0.00032026777626015246
+          },
+          "B": {
+            "A": 0.2453894168138504,
+            "B": 0.7100448608398438,
+            "C": 0.03320997580885887,
+            "D": 0.00981694646179676,
+            "E": 0.00038061587838456035
+          },
+          "C": {
+            "A": 0.2933271825313568,
+            "B": 0.0372961051762104,
+            "C": 0.6610276103019714,
+            "D": 0.007343075703829527,
+            "E": 0.00014093950449023396
+          },
+          "D": {
+            "A": 0.4017401337623596,
+            "B": 0.11511983722448349,
+            "C": 0.3330691456794739,
+            "D": 0.14779193699359894,
+            "E": 0.00016254631918855011
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.43711230158805847,
+          "B": 0.7100448608398438,
+          "C": 0.6610276103019714,
+          "D": 0.14779193699359894
+        },
+        "score": 0.48899417743086815
+      },
+      {
+        "record_index": 72,
+        "sample_id": "sample_72",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Two lines are orthogonal. One line has a direction vector of $\\begin{pmatrix} 3 \\\\ -7 \\end{pmatrix}.$ The other line has a direction vector of $\\begin{pmatrix} a \\\\ 2 \\end{pmatrix}.$ Find $a.$",
+          "b": "Question: Two lines are vertical. One line has a direction vector of $\\begin{pmatrix} 3 \\\\ -7 \\end{pmatrix}.$ The other line has a direction vector of $\\begin{pmatrix} a \\\\ 2 \\end{pmatrix}.$ Find $a.$",
+          "c": "Question: Two lines are perpendicular. One line has a direction vector of $\\begin{pmatrix} 3 \\\\ -7 \\end{pmatrix}.$ The other line has a direction vector of $\\begin{pmatrix} b \\\\ 2 \\end{pmatrix}.$ Find $a.$",
+          "d": "Question: Two lines are perpendicular. One line has a direction vector of $\\begin{pmatrix} 3 \\\\ -7 \\end{pmatrix}.$ The other line has a direction vector of $\\begin{pmatrix} a \\\\ 5 \\end{pmatrix}.$ Find $a.$"
+        },
+        "bdq_probs": {
+          "A": 0.3457241654396057,
+          "B": 0.3051060438156128,
+          "C": 0.06007678806781769,
+          "D": 0.28662019968032837,
+          "E": 0.0021210091654211283
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4765719175338745,
+            "B": 0.2396487146615982,
+            "C": 0.0938427746295929,
+            "D": 0.18663543462753296,
+            "E": 0.00171880261041224
+          },
+          "B": {
+            "A": 0.3059450387954712,
+            "B": 0.6476882696151733,
+            "C": 0.02673269435763359,
+            "D": 0.017260627821087837,
+            "E": 0.0014617873821407557
+          },
+          "C": {
+            "A": 0.109446682035923,
+            "B": 0.01626897230744362,
+            "C": 0.860819399356842,
+            "D": 0.01153450645506382,
+            "E": 0.0013777052517980337
+          },
+          "D": {
+            "A": 0.1621963232755661,
+            "B": 0.036192409694194794,
+            "C": 0.026473168283700943,
+            "D": 0.7737653255462646,
+            "E": 0.00033329063444398344
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4765719175338745,
+          "B": 0.6476882696151733,
+          "C": 0.860819399356842,
+          "D": 0.7737653255462646
+        },
+        "score": 0.6897112280130386
+      },
+      {
+        "record_index": 75,
+        "sample_id": "sample_75",
+        "label": null,
+        "perturbations": {
+          "a": "Let $a_1,$ $a_2,$ $a_3$ be the initial three terms of a geometric sequence.  If $a_1 = 1,$ determine the smallest feasible value of $4a_2 + 5a_3.$",
+          "b": "Let $a_1,$ $a_2,$ $a_3$ be the preceding three terms of a geometric sequence.  If $a_1 = 1,$ locate the smallest possible value of $4a_2 + 5a_3.$",
+          "c": "Let $a_1,$ $a_2,$ $a_3$ be the first three elements of a geometric sequence.  If $a_1 = 1,$ find the minimum attainable value of $4a_2 + 5a_3.$",
+          "d": "Let $a_1,$ $a_2,$ $a_3$ be the initial three components of a geometric sequence.  If $a_1 = 1,$ discover the smallest achievable value of $4a_2 + 5a_3.$"
+        },
+        "bdq_probs": {
+          "A": 0.2948662340641022,
+          "B": 0.2770058512687683,
+          "C": 0.2948751151561737,
+          "D": 0.13084571063518524,
+          "E": 0.002049849135801196
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3364151418209076,
+            "B": 0.20405684411525726,
+            "C": 0.3160424530506134,
+            "D": 0.14023961126804352,
+            "E": 0.0012517910217866302
+          },
+          "B": {
+            "A": 0.33822494745254517,
+            "B": 0.36005493998527527,
+            "C": 0.21838513016700745,
+            "D": 0.08033668249845505,
+            "E": 0.0016672678757458925
+          },
+          "C": {
+            "A": 0.30147168040275574,
+            "B": 0.22056464850902557,
+            "C": 0.43864935636520386,
+            "D": 0.038326364010572433,
+            "E": 0.0002748897240962833
+          },
+          "D": {
+            "A": 0.24661728739738464,
+            "B": 0.1495930552482605,
+            "C": 0.46074172854423523,
+            "D": 0.14050815999507904,
+            "E": 0.00033756211632862687
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3364151418209076,
+          "B": 0.36005493998527527,
+          "C": 0.43864935636520386,
+          "D": 0.14050815999507904
+        },
+        "score": 0.31890689954161644
+      },
+      {
+        "record_index": 76,
+        "sample_id": "sample_76",
+        "label": null,
+        "perturbations": {
+          "a": "Locate $2.4 \\times 0.2$.",
+          "b": "Discover $2.4 \\times 0.2$.",
+          "c": "Identify $2.4 \\times 0.2$.",
+          "d": "Determine $2.4 \\times 0.2$."
+        },
+        "bdq_probs": {
+          "A": 0.3218492269515991,
+          "B": 0.10450015217065811,
+          "C": 0.36470291018486023,
+          "D": 0.20779284834861755,
+          "E": 0.0004405411600600928
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.417704701423645,
+            "B": 0.13564971089363098,
+            "C": 0.16355934739112854,
+            "D": 0.2697084844112396,
+            "E": 0.00024590513203293085
+          },
+          "B": {
+            "A": 0.5767626166343689,
+            "B": 0.3724362552165985,
+            "C": 0.034638114273548126,
+            "D": 0.011971093714237213,
+            "E": 6.183405639603734e-05
+          },
+          "C": {
+            "A": 0.44468235969543457,
+            "B": 0.007652508560568094,
+            "C": 0.5363910794258118,
+            "D": 0.008669309318065643,
+            "E": 9.3345224740915e-05
+          },
+          "D": {
+            "A": 0.22911708056926727,
+            "B": 0.01660003885626793,
+            "C": 0.45560261607170105,
+            "D": 0.29415109753608704,
+            "E": 0.00020890624728053808
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.417704701423645,
+          "B": 0.3724362552165985,
+          "C": 0.5363910794258118,
+          "D": 0.29415109753608704
+        },
+        "score": 0.4051707834005356
+      },
+      {
+        "record_index": 79,
+        "sample_id": "sample_79",
+        "label": null,
+        "perturbations": {
+          "a": "Question: If $23=x^4+\\frac{1}{x^4}$, then what is the worth of $x^2+\\frac{1}{x^2}$?",
+          "b": "Question: If $23=x^4+\\frac{1}{x^4}$, then what is the significance of $x^2+\\frac{1}{x^2}$?",
+          "c": "Question: If $23=x^4+\\frac{1}{x^4}$, then what is the value of $x^2+\\frac{1}{x^2}$?",
+          "d": "Question: If $23=x^4+\\frac{1}{x^4}$, then what is the outcome of $x^2+\\frac{1}{x^2}$?"
+        },
+        "bdq_probs": {
+          "A": 0.04025380685925484,
+          "B": 0.00817892700433731,
+          "C": 0.9451937079429626,
+          "D": 0.005798524245619774,
+          "E": 0.0002567700284998864
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03648075833916664,
+            "B": 0.013012226670980453,
+            "C": 0.9407014846801758,
+            "D": 0.0036112999077886343,
+            "E": 0.00023087406589183956
+          },
+          "B": {
+            "A": 0.11599760502576828,
+            "B": 0.5198490619659424,
+            "C": 0.35729777812957764,
+            "D": 0.005424912553280592,
+            "E": 0.0004890445852652192
+          },
+          "C": {
+            "A": 0.032753411680459976,
+            "B": 0.007309523411095142,
+            "C": 0.9570850133895874,
+            "D": 0.0019667292945086956,
+            "E": 0.00011447580618551001
+          },
+          "D": {
+            "A": 0.017265085130929947,
+            "B": 0.00479532964527607,
+            "C": 0.9424813389778137,
+            "D": 0.034328609704971313,
+            "E": 0.00011450757301645353
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03648075833916664,
+          "B": 0.5198490619659424,
+          "C": 0.9570850133895874,
+          "D": 0.034328609704971313
+        },
+        "score": 0.38693586084991693
+      },
+      {
+        "record_index": 80,
+        "sample_id": "sample_80",
+        "label": null,
+        "perturbations": {
+          "a": "Question: If $x - y = 12$ and $x + y = 6$, what is the worth of $y$?",
+          "b": "Question: If $x - y = 12$ and $x + y = 6$, what is the figure of $y$?",
+          "c": "Question: If $x - y = 12$ and $x + y = 6$, what is the outcome of $y$?",
+          "d": "Question: If $x - y = 12$ and $x + y = 6$, what is the value of $y$?"
+        },
+        "bdq_probs": {
+          "A": 0.0893784910440445,
+          "B": 0.023316284641623497,
+          "C": 0.03843573108315468,
+          "D": 0.8479307889938354,
+          "E": 0.0002934778749477118
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.28254827857017517,
+            "B": 0.02179017663002014,
+            "C": 0.05225639417767525,
+            "D": 0.6367409229278564,
+            "E": 0.00018848605395760387
+          },
+          "B": {
+            "A": 0.18578708171844482,
+            "B": 0.5375811457633972,
+            "C": 0.036579426378011703,
+            "D": 0.23854300379753113,
+            "E": 0.00018604654178489
+          },
+          "C": {
+            "A": 0.03964107856154442,
+            "B": 0.006471061613410711,
+            "C": 0.7960264682769775,
+            "D": 0.15673936903476715,
+            "E": 0.0001835409930208698
+          },
+          "D": {
+            "A": 0.22109128534793854,
+            "B": 0.04933904856443405,
+            "C": 0.08656775951385498,
+            "D": 0.6397241950035095,
+            "E": 0.0001953891769517213
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.28254827857017517,
+          "B": 0.5375811457633972,
+          "C": 0.7960264682769775,
+          "D": 0.6397241950035095
+        },
+        "score": 0.5639700219035149
+      },
+      {
+        "record_index": 81,
+        "sample_id": "sample_81",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Ascertain the intricate number $z$ fulfilling the equation $2z-3i\\bar{z}=-7+3i$.  Note that $\\bar{z}$ signifies the conjugate of $z$.",
+          "b": "Question: Identify the complicated number $z$ meeting the equation $2z-3i\\bar{z}=-7+3i$.  Note that $\\bar{z}$ represents the conjugate of $z$.",
+          "c": "Question: Resolve the elaborate number $z$ answering the equation $2z-3i\\bar{z}=-7+3i$.  Note that $\\bar{z}$ indicates the conjugate of $z$.",
+          "d": "Question: Find the intricate number $z$ satisfying the equation $2z-3i\\bar{z}=-7+3i$.  Note that $\\bar{z}$ denotes the conjugate of $z$."
+        },
+        "bdq_probs": {
+          "A": 0.23512013256549835,
+          "B": 0.1258573979139328,
+          "C": 0.25027817487716675,
+          "D": 0.3876463770866394,
+          "E": 0.0005648532533086836
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.32421791553497314,
+            "B": 0.04972616955637932,
+            "C": 0.11926399916410446,
+            "D": 0.5021753907203674,
+            "E": 0.00030502380104735494
+          },
+          "B": {
+            "A": 0.19714590907096863,
+            "B": 0.44428449869155884,
+            "C": 0.08747667819261551,
+            "D": 0.2694665193557739,
+            "E": 0.0004050995921716094
+          },
+          "C": {
+            "A": 0.15034396946430206,
+            "B": 0.07560410350561142,
+            "C": 0.7172216773033142,
+            "D": 0.055301301181316376,
+            "E": 0.00039665395161136985
+          },
+          "D": {
+            "A": 0.2069036364555359,
+            "B": 0.05928758159279823,
+            "C": 0.2656484842300415,
+            "D": 0.4662593901157379,
+            "E": 0.0002744982484728098
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.32421791553497314,
+          "B": 0.44428449869155884,
+          "C": 0.7172216773033142,
+          "D": 0.4662593901157379
+        },
+        "score": 0.487995870411396
+      },
+      {
+        "record_index": 82,
+        "sample_id": "sample_82",
+        "label": null,
+        "perturbations": {
+          "a": "The phrase $\\dfrac{\\sqrt[3]{5}}{\\sqrt[5]{5}}$ equals 5 elevated to what power?",
+          "b": "The statement $\\dfrac{\\sqrt[3]{5}}{\\sqrt[5]{5}}$ equals 5 raised to what exponent?",
+          "c": "The formula $\\dfrac{\\sqrt[3]{5}}{\\sqrt[5]{5}}$ equals 5 lifted to what power?",
+          "d": "The notation $\\dfrac{\\sqrt[3]{5}}{\\sqrt[5]{5}}$ equals 5 heightened to what power?"
+        },
+        "bdq_probs": {
+          "A": 0.24684172868728638,
+          "B": 0.630342423915863,
+          "C": 0.06241185963153839,
+          "D": 0.05863184109330177,
+          "E": 0.0009476215345785022
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2727370262145996,
+            "B": 0.577421247959137,
+            "C": 0.10033784061670303,
+            "D": 0.04452444612979889,
+            "E": 0.0005604428588412702
+          },
+          "B": {
+            "A": 0.5721334218978882,
+            "B": 0.39327454566955566,
+            "C": 0.02760973758995533,
+            "D": 0.005269658286124468,
+            "E": 0.00019800959853455424
+          },
+          "C": {
+            "A": 0.11628638952970505,
+            "B": 0.5211594104766846,
+            "C": 0.3581782579421997,
+            "D": 0.0031970487907528877,
+            "E": 0.00014719992759637535
+          },
+          "D": {
+            "A": 0.1277541071176529,
+            "B": 0.7825545072555542,
+            "C": 0.011880074627697468,
+            "D": 0.07279209792613983,
+            "E": 0.00027942308224737644
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2727370262145996,
+          "B": 0.39327454566955566,
+          "C": 0.3581782579421997,
+          "D": 0.07279209792613983
+        },
+        "score": 0.2742454819381237
+      },
+      {
+        "record_index": 83,
+        "sample_id": "sample_83",
+        "label": null,
+        "perturbations": {
+          "a": "An oval whose axes are aligned to the coordinate axes is tangent to the $x$-axis at $(4, 0)$ and tangent to the $y$-axis at $(0, 1).$ Find the distance between the foci of the oval.",
+          "b": "A curve whose axes are parallel to the coordinate axes is tangent to the $x$-axis at $(4, 0)$ and tangent to the $y$-axis at $(0, 1).$ Find the distance between the foci of the curve.",
+          "c": "A circle whose axes are parallel to the coordinate axes is tangent to the $x$-axis at $(4, 0)$ and tangent to the $y$-axis at $(0, 1).$ Find the distance between the foci of the circle.",
+          "d": "An ellipse whose axes are congruent to the coordinate axes is tangent to the $x$-axis at $(4, 0)$ and tangent to the $y$-axis at $(0, 1).$ Find the distance between the foci of the ellipse."
+        },
+        "bdq_probs": {
+          "A": 0.1553567796945572,
+          "B": 0.44954708218574524,
+          "C": 0.019750254228711128,
+          "D": 0.37269049882888794,
+          "E": 0.002017773687839508
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.39949965476989746,
+            "B": 0.25795719027519226,
+            "C": 0.07866634428501129,
+            "D": 0.25795263051986694,
+            "E": 0.0015337638324126601
+          },
+          "B": {
+            "A": 0.3548187017440796,
+            "B": 0.5163117051124573,
+            "C": 0.02268349751830101,
+            "D": 0.10166922956705093,
+            "E": 0.0022459453903138638
+          },
+          "C": {
+            "A": 0.24978353083133698,
+            "B": 0.1337108463048935,
+            "C": 0.5992160439491272,
+            "D": 0.015967486426234245,
+            "E": 0.0004529437574092299
+          },
+          "D": {
+            "A": 0.3251388669013977,
+            "B": 0.3684965968132019,
+            "C": 0.01618601754307747,
+            "D": 0.28696832060813904,
+            "E": 0.0004888024996034801
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.39949965476989746,
+          "B": 0.5163117051124573,
+          "C": 0.5992160439491272,
+          "D": 0.28696832060813904
+        },
+        "score": 0.45049893110990524
+      },
+      {
+        "record_index": 84,
+        "sample_id": "sample_84",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Given the equation $f(x)=3x^3+2$, determine the value of $x$ such that $f^{-1}(x)=4$.",
+          "b": "Question: Given the expression $f(x)=3x^3+2$, identify the value of $x$ so that $f^{-1}(x)=4$.",
+          "c": "Question: Given the formula $f(x)=3x^3+2$, find the value of $x$ in order that $f^{-1}(x)=4$.",
+          "d": "Question: Given the model $f(x)=3x^3+2$, ascertain the value of $x$ such that $f^{-1}(x)=4$."
+        },
+        "bdq_probs": {
+          "A": 0.15261119604110718,
+          "B": 0.6035750508308411,
+          "C": 0.17293475568294525,
+          "D": 0.06771962344646454,
+          "E": 0.0025448971427977085
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1744096428155899,
+            "B": 0.6087397933006287,
+            "C": 0.1638440638780594,
+            "D": 0.04694134742021561,
+            "E": 0.0010369669180363417
+          },
+          "B": {
+            "A": 0.15215854346752167,
+            "B": 0.7726672887802124,
+            "C": 0.059583839029073715,
+            "D": 0.013717247173190117,
+            "E": 0.0005154564278200269
+          },
+          "C": {
+            "A": 0.09344924241304398,
+            "B": 0.1640101969242096,
+            "C": 0.7350080609321594,
+            "D": 0.006560364738106728,
+            "E": 0.00020122276328038424
+          },
+          "D": {
+            "A": 0.10760605335235596,
+            "B": 0.35281431674957275,
+            "C": 0.13815376162528992,
+            "D": 0.39978232979774475,
+            "E": 0.0002751646388787776
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1744096428155899,
+          "B": 0.7726672887802124,
+          "C": 0.7350080609321594,
+          "D": 0.39978232979774475
+        },
+        "score": 0.5204668305814266
+      },
+      {
+        "record_index": 85,
+        "sample_id": "sample_85",
+        "label": null,
+        "perturbations": {
+          "a": "A rectangular image frame is constructed from one-inch-wide segments of wood. The area of only the frame is $18$ square inches, and one of the outer sides of the frame is $5$ inches long. What is the total of the lengths of the four inner sides of the frame?",
+          "b": "A rectangular photo frame is crafted from one-inch-wide strips of wood. The area of merely the frame is $18$ square inches, and one of the outer dimensions of the frame is $5$ inches long. What is the accumulation of the lengths of the four inner edges of the frame?",
+          "c": "A rectangular portrait frame is created from one-inch-wide planks of wood. The area of solely the frame is $18$ square inches, and one of the outer lengths of the frame is $5$ inches long. What is the aggregate of the lengths of the four internal edges of the frame?",
+          "d": "A rectangular canvas frame is assembled from one-inch-wide boards of wood. The area of just the frame is $18$ square inches, and one of the outer measurements of the frame is $5$ inches long. What is the sum total of the lengths of the four inner edges of the frame?"
+        },
+        "bdq_probs": {
+          "A": 0.38303959369659424,
+          "B": 0.21825973689556122,
+          "C": 0.205034539103508,
+          "D": 0.19260942935943604,
+          "E": 0.0007394282147288322
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3282439410686493,
+            "B": 0.2256137877702713,
+            "C": 0.25564369559288025,
+            "D": 0.18703289330005646,
+            "E": 0.0009512160322628915
+          },
+          "B": {
+            "A": 0.21570204198360443,
+            "B": 0.6644101738929749,
+            "C": 0.09571767598390579,
+            "D": 0.022734856233000755,
+            "E": 0.0005181946908123791
+          },
+          "C": {
+            "A": 0.1860741823911667,
+            "B": 0.020878199487924576,
+            "C": 0.7833774089813232,
+            "D": 0.00897853821516037,
+            "E": 0.0002587081107776612
+          },
+          "D": {
+            "A": 0.2948824465274811,
+            "B": 0.16802923381328583,
+            "C": 0.07936221361160278,
+            "D": 0.4567315876483917,
+            "E": 0.00016825566126499325
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3282439410686493,
+          "B": 0.6644101738929749,
+          "C": 0.7833774089813232,
+          "D": 0.4567315876483917
+        },
+        "score": 0.5581907778978348
+      },
+      {
+        "record_index": 86,
+        "sample_id": "sample_86",
+        "label": null,
+        "perturbations": {
+          "a": "Question: What is the greatest integer value of $x$ for which $5-4x>17$?",
+          "b": "Question: What is the highest integer value of $x$ for which $5-4x>17$?",
+          "c": "Question: What is the maximum integer value of $x$ for which $5-4x>17$?",
+          "d": "Question: What is the biggest integer value of $x$ for which $5-4x>17$?"
+        },
+        "bdq_probs": {
+          "A": 0.32987961173057556,
+          "B": 0.20009660720825195,
+          "C": 0.3738176226615906,
+          "D": 0.09450945258140564,
+          "E": 0.0009862772421911359
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.30495569109916687,
+            "B": 0.1850060522556305,
+            "C": 0.41685938835144043,
+            "D": 0.08207528293132782,
+            "E": 0.0005529955960810184
+          },
+          "B": {
+            "A": 0.35246843099594116,
+            "B": 0.4251824915409088,
+            "C": 0.17724516987800598,
+            "D": 0.04209782928228378,
+            "E": 0.0009013767703436315
+          },
+          "C": {
+            "A": 0.14997370541095734,
+            "B": 0.02774660661816597,
+            "C": 0.8106746077537537,
+            "D": 0.009889674372971058,
+            "E": 0.00027192779816687107
+          },
+          "D": {
+            "A": 0.24878446757793427,
+            "B": 0.03815876320004463,
+            "C": 0.300057590007782,
+            "D": 0.41017037630081177,
+            "E": 0.00020654985564760864
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.30495569109916687,
+          "B": 0.4251824915409088,
+          "C": 0.8106746077537537,
+          "D": 0.41017037630081177
+        },
+        "score": 0.4877457916736603
+      },
+      {
+        "record_index": 87,
+        "sample_id": "sample_87",
+        "label": null,
+        "perturbations": {
+          "a": "A aircraft intersects a right circular cylinder of radius $1$ forming an ellipse. If the major axis of the ellipse of $50\\%$ longer than the minor axis, the length of the major axis is\n$\\textbf{(A)}\\ 1\\qquad \\textbf{(B)}\\ \\frac{3}{2}\\qquad \\textbf{(C)}\\ 2\\qquad \\textbf{(D)}\\ \\frac{9}{4}\\qquad \\textbf{(E)}\\ 3$",
+          "b": "A aeroplane intersects a right circular cylinder of radius $1$ forming an ellipse. If the major axis of the ellipse of $50\\%$ longer than the minor axis, the length of the major axis is\n$\\textbf{(A)}\\ 1\\qquad \\textbf{(B)}\\ \\frac{3}{2}\\qquad \\textbf{(C)}\\ 2\\qquad \\textbf{(D)}\\ \\frac{9}{4}\\qquad \\textbf{(E)}\\ 3$",
+          "c": "A jet intersects a right circular cylinder of radius $1$ forming an ellipse. If the major axis of the ellipse of $50\\%$ longer than the minor axis, the length of the major axis is\n$\\textbf{(A)}\\ 1\\qquad \\textbf{(B)}\\ \\frac{3}{2}\\qquad \\textbf{(C)}\\ 2\\qquad \\textbf{(D)}\\ \\frac{9}{4}\\qquad \\textbf{(E)}\\ 3$",
+          "d": "A vessel intersects a right circular cylinder of radius $1$ forming an ellipse. If the major axis of the ellipse of $50\\%$ longer than the minor axis, the length of the major axis is\n$\\textbf{(A)}\\ 1\\qquad \\textbf{(B)}\\ \\frac{3}{2}\\qquad \\textbf{(C)}\\ 2\\qquad \\textbf{(D)}\\ \\frac{9}{4}\\qquad \\textbf{(E)}\\ 3$"
+        },
+        "bdq_probs": {
+          "A": 0.060490988194942474,
+          "B": 0.506484866142273,
+          "C": 0.30719897150993347,
+          "D": 0.12029868364334106,
+          "E": 0.004812675528228283
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.11868787556886673,
+            "B": 0.3891720175743103,
+            "C": 0.34343421459198,
+            "D": 0.14316312968730927,
+            "E": 0.002173912012949586
+          },
+          "B": {
+            "A": 0.07667656987905502,
+            "B": 0.53224116563797,
+            "C": 0.32282373309135437,
+            "D": 0.05609746277332306,
+            "E": 0.003475977573543787
+          },
+          "C": {
+            "A": 0.16943486034870148,
+            "B": 0.2175680249929428,
+            "C": 0.5913867950439453,
+            "D": 0.020235633477568626,
+            "E": 0.0006504846387542784
+          },
+          "D": {
+            "A": 0.054725032299757004,
+            "B": 0.4877644181251526,
+            "C": 0.2958381474018097,
+            "D": 0.15834976732730865,
+            "E": 0.0018726008711382747
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.11868787556886673,
+          "B": 0.53224116563797,
+          "C": 0.5913867950439453,
+          "D": 0.15834976732730865
+        },
+        "score": 0.35016640089452267
+      },
+      {
+        "record_index": 88,
+        "sample_id": "sample_88",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Identify all real numbers $ a$ such that the inequality $ |x^2 + 2ax + 3a|\\le2$ has precisely one solution in $ x$.",
+          "b": "Question: Ascertain all real numbers $ a$ such that the inequality $ |x^2 + 2ax + 3a|\\le2$ has solely one solution in $ x$.",
+          "c": "Question: Find all real numbers $ a$ such that the inequality $ |x^2 + 2ax + 3a|\\le2$ has only one solution in $ x$.",
+          "d": "Question: Examine all real numbers $ a$ such that the inequality $ |x^2 + 2ax + 3a|\\le2$ has merely one solution in $ x$."
+        },
+        "bdq_probs": {
+          "A": 0.23769670724868774,
+          "B": 0.2693517804145813,
+          "C": 0.44409120082855225,
+          "D": 0.04680384695529938,
+          "E": 0.001286867423914373
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.27743324637413025,
+            "B": 0.2448553889989853,
+            "C": 0.4036864638328552,
+            "D": 0.06589522957801819,
+            "E": 0.0011697449954226613
+          },
+          "B": {
+            "A": 0.2758066654205322,
+            "B": 0.5838799476623535,
+            "C": 0.1149773895740509,
+            "D": 0.022639920935034752,
+            "E": 0.0010588013101369143
+          },
+          "C": {
+            "A": 0.15556256473064423,
+            "B": 0.04744618758559227,
+            "C": 0.789996862411499,
+            "D": 0.005665964912623167,
+            "E": 0.00019387555948924273
+          },
+          "D": {
+            "A": 0.21785636246204376,
+            "B": 0.08015260100364685,
+            "C": 0.38234299421310425,
+            "D": 0.3169707655906677,
+            "E": 0.0002801420050673187
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.27743324637413025,
+          "B": 0.5838799476623535,
+          "C": 0.789996862411499,
+          "D": 0.3169707655906677
+        },
+        "score": 0.49207020550966263
+      },
+      {
+        "record_index": 91,
+        "sample_id": "sample_91",
+        "label": null,
+        "perturbations": {
+          "a": "Observe that $9^2 = 81$, which consists of no zeros; $99^2 = 9801$, which comprises 1 zero; and $999^2 = 998,\\!001$, which incorporates 2 zeros. Assuming this trend continues, how many zeros are in the expansion of $99,\\!999,\\!999^2$?",
+          "b": "Notice that $9^2 = 81$, which includes no zeros; $99^2 = 9801$, which contains 1 zero; and $999^2 = 998,\\!001$, which has 2 zeros. Assuming this sequence continues, how many zeros are in the expansion of $99,\\!999,\\!999^2$?",
+          "c": "Mark that $9^2 = 81$, which features no zeros; $99^2 = 9801$, which has 1 zero; and $999^2 = 998,\\!001$, which possesses 2 zeros. Assuming this pattern persists, how many zeros are in the expansion of $99,\\!999,\\!999^2$?",
+          "d": "Take note that $9^2 = 81$, which showcases no zeros; $99^2 = 9801$, which displays 1 zero; and $999^2 = 998,\\!001$, which shows 2 zeros. Assuming this pattern carries on, how many zeros are in the expansion of $99,\\!999,\\!999^2$?"
+        },
+        "bdq_probs": {
+          "A": 0.32577434182167053,
+          "B": 0.30604299902915955,
+          "C": 0.23834720253944397,
+          "D": 0.12757647037506104,
+          "E": 0.001937096007168293
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.27001234889030457,
+            "B": 0.27002203464508057,
+            "C": 0.28743040561676025,
+            "D": 0.16377317905426025,
+            "E": 0.0049454388208687305
+          },
+          "B": {
+            "A": 0.3549192249774933,
+            "B": 0.4281271994113922,
+            "C": 0.13899222016334534,
+            "D": 0.07439681887626648,
+            "E": 0.0024673191364854574
+          },
+          "C": {
+            "A": 0.17711730301380157,
+            "B": 0.13794419169425964,
+            "C": 0.658065140247345,
+            "D": 0.02551465854048729,
+            "E": 0.0007015333394519985
+          },
+          "D": {
+            "A": 0.20685067772865295,
+            "B": 0.10401331633329391,
+            "C": 0.12545421719551086,
+            "D": 0.5622755289077759,
+            "E": 0.00036356481723487377
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.27001234889030457,
+          "B": 0.4281271994113922,
+          "C": 0.658065140247345,
+          "D": 0.5622755289077759
+        },
+        "score": 0.4796200543642044
+      },
+      {
+        "record_index": 92,
+        "sample_id": "sample_92",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Determine the area of the region enclosed by the graph of $r = \\sec \\theta,$ the graph of $r = \\csc \\theta,$ the $x$-axis, and the $y$-axis.",
+          "b": "Question: Compute the area of the region confined by the graph of $r = \\sec \\theta,$ the graph of $r = \\csc \\theta,$ the $x$-axis, and the $y$-axis.",
+          "c": "Question: Calculate the area of the region surrounded by the graph of $r = \\sec \\theta,$ the graph of $r = \\csc \\theta,$ the $x$-axis, and the $y$-axis.",
+          "d": "Question: Ascertain the area of the region bordered by the graph of $r = \\sec \\theta,$ the graph of $r = \\csc \\theta,$ the $x$-axis, and the $y$-axis."
+        },
+        "bdq_probs": {
+          "A": 0.3748122453689575,
+          "B": 0.24201498925685883,
+          "C": 0.25762173533439636,
+          "D": 0.1216876357793808,
+          "E": 0.003242678940296173
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3907696306705475,
+            "B": 0.23705227673053741,
+            "C": 0.2523210644721985,
+            "D": 0.11196483671665192,
+            "E": 0.0015477936249226332
+          },
+          "B": {
+            "A": 0.2646157443523407,
+            "B": 0.634783923625946,
+            "C": 0.06690514832735062,
+            "D": 0.029689878225326538,
+            "E": 0.0016748531488701701
+          },
+          "C": {
+            "A": 0.10203631222248077,
+            "B": 0.035266436636447906,
+            "C": 0.8543206453323364,
+            "D": 0.006522427778691053,
+            "E": 0.00045795016922056675
+          },
+          "D": {
+            "A": 0.2673855721950531,
+            "B": 0.08155787736177444,
+            "C": 0.20823249220848083,
+            "D": 0.4408652186393738,
+            "E": 0.0003034245746675879
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3907696306705475,
+          "B": 0.634783923625946,
+          "C": 0.8543206453323364,
+          "D": 0.4408652186393738
+        },
+        "score": 0.5801848545670509
+      }
+    ]
+  }
+}

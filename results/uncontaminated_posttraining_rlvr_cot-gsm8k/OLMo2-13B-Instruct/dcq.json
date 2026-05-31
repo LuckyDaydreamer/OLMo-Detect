@@ -1,0 +1,39 @@
+{
+  "model_name": "OLMo2-13B-Instruct",
+  "model_path": "olmo_models/OLMo2-13B-Instruct",
+  "dataset_name": "uncontaminated_posttraining_rlvr_cot-gsm8k",
+  "dataset_path": "benchmark/posttraining/rlvr/uncontaminated/test/uncontaminated_posttraining_rlvr_cot-gsm8k_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 68.44289183616638,
+  "result": {
+    "method": "dcq",
+    "dataset": "uncontaminated_posttraining_rlvr_cot-gsm8k",
+    "dataset_path": "benchmark/posttraining/rlvr/uncontaminated/test/uncontaminated_posttraining_rlvr_cot-gsm8k_test.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "min_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.21242388069742557,
+      "B": 0.39579740868683794,
+      "C": 0.15132453402585463,
+      "D": 0.20590429720433542
+    },
+    "non_preferred": [
+      "C"
+    ],
+    "num_total_records": 0,
+    "num_scored_records": 0,
+    "summary": {
+      "mean_score": 0.018631712096300886
+    },
+    "samples": []
+  }
+}

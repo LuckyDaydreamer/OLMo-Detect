@@ -1,0 +1,31 @@
+{
+  "created_at_utc": "2026-05-01T17:18:55.638145+00:00",
+  "config": {
+    "data_paths": [
+      "benchmark/midtraining/contaminated/test/contaminated_midtraining_gsm8k_test.jsonl"
+    ],
+    "model_path": "olmo_models/OLMo2-7B-Instruct",
+    "method_names": [
+      "recall"
+    ],
+    "output_dir": "results",
+    "seed": 42,
+    "max_tokens": 1024,
+    "batch_size": 1,
+    "uncon_dev_path": "benchmark/midtraining/math-mix/uncontaminated/dev/uncontaminated_midtraining_math-mix_gsm8k_dev.jsonl"
+  },
+  "model_name": "OLMo2-7B-Instruct",
+  "dataset_name": "contaminated_midtraining_gsm8k_test",
+  "dataset_path": "benchmark/midtraining/contaminated/test/contaminated_midtraining_gsm8k_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "results": [
+    {
+      "dataset_name": "contaminated_midtraining_gsm8k_test",
+      "dataset_path": "benchmark/midtraining/contaminated/test/contaminated_midtraining_gsm8k_test.jsonl",
+      "dataset_data_type": "paragraph",
+      "method_name": "recall",
+      "output_path": "results/contaminated_midtraining_gsm8k_test/OLMo2-7B-Instruct/recall.json",
+      "elapsed_seconds": 234.06079173088074
+    }
+  ]
+}

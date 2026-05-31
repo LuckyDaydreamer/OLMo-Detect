@@ -1,0 +1,1636 @@
+{
+  "model_name": "OLMo2-7B-Instruct",
+  "model_path": "olmo_models/OLMo2-7B-Instruct",
+  "dataset_name": "uncontaminated_posttraining_rlvr_gsm8k_no_cot_test",
+  "dataset_path": "benchmark/posttraining/rlvr/uncontaminated/test/uncontaminated_posttraining_rlvr_gsm8k_no_cot_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 8.734573364257812,
+  "result": {
+    "method": "dcq",
+    "dataset": "uncontaminated_posttraining_rlvr_gsm8k_no_cot_test",
+    "dataset_path": "benchmark/posttraining/rlvr/uncontaminated/test/uncontaminated_posttraining_rlvr_gsm8k_no_cot_test.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "mean_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.024293008557488692,
+      "B": 0.315761087462306,
+      "C": 0.13087167060163257,
+      "D": 0.43329791621915226
+    },
+    "non_preferred": [
+      "A",
+      "C"
+    ],
+    "num_total_records": 88,
+    "num_scored_records": 29,
+    "summary": {
+      "mean_score": 0.12871134948740104
+    },
+    "samples": [
+      {
+        "record_index": 2,
+        "sample_id": "gsm8k_test_question_794",
+        "label": null,
+        "perturbations": {
+          "a": "A wildlife caretaker is tallying how many lions are in their habitat. She counts 12 female lions, half as many male lions, and 14 lion cubs. How many lions are in the habitat?",
+          "b": "A zoo keeper is enumerating how many lions are in their enclosure. She counts 12 female lions, half as many male lions, and 14 lion cubs. How many lions are in the enclosure?",
+          "c": "A zookeeper is assessing how many lions are in their pen. She counts 12 female lions, half as many male lions, and 14 lion cubs. How many lions are in the pen?",
+          "d": "A zookeeper is calculating how many lions are in their cage. She counts 12 female lions, half as many male lions, and 14 lion cubs. How many lions are in the cage?"
+        },
+        "bdq_probs": {
+          "A": 0.03440077230334282,
+          "B": 0.32638639211654663,
+          "C": 0.23878762125968933,
+          "D": 0.3066081404685974,
+          "E": 0.09351208806037903
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.059229232370853424,
+            "B": 0.30079424381256104,
+            "C": 0.11779172718524933,
+            "D": 0.4111306667327881,
+            "E": 0.1106564924120903
+          },
+          "B": {
+            "A": 0.05971192568540573,
+            "B": 0.14324285089969635,
+            "C": 0.20841467380523682,
+            "D": 0.4696674644947052,
+            "E": 0.1187531054019928
+          },
+          "C": {
+            "A": 0.017831820994615555,
+            "B": 0.75822913646698,
+            "C": 0.03775004297494888,
+            "D": 0.06223897263407707,
+            "E": 0.1237783432006836
+          },
+          "D": {
+            "A": 0.01440767478197813,
+            "B": 0.632077157497406,
+            "C": 0.12446308135986328,
+            "D": 0.21843868494033813,
+            "E": 0.010541095398366451
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.059229232370853424,
+          "B": 0.14324285089969635,
+          "C": 0.03775004297494888,
+          "D": 0.21843868494033813
+        },
+        "score": 0.1146652027964592
+      },
+      {
+        "record_index": 6,
+        "sample_id": "gsm8k_test_question_1121",
+        "label": null,
+        "perturbations": {
+          "a": "In 7 days, Sofie will stroll twice as far as Brian. If Sofie plans to stroll 10 miles every day, how many miles will Brian stroll in seven days?",
+          "b": "In 7 days, Sofie will march twice as far as Brian. If Sofie plans to march 10 miles every day, how many miles will Brian march in seven days?",
+          "c": "In 7 days, Sofie will hike twice as far as Brian. If Sofie plans to hike 10 miles every day, how many miles will Brian hike in seven days?",
+          "d": "In 7 days, Sofie will travel twice as far as Brian. If Sofie plans to travel 10 miles every day, how many miles will Brian travel in seven days?"
+        },
+        "bdq_probs": {
+          "A": 0.02374359406530857,
+          "B": 0.16481465101242065,
+          "C": 0.32776767015457153,
+          "D": 0.27172785997390747,
+          "E": 0.21162675321102142
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03242352604866028,
+            "B": 0.14531421661376953,
+            "C": 0.18658430874347687,
+            "D": 0.3274635672569275,
+            "E": 0.307629257440567
+          },
+          "B": {
+            "A": 0.07703028619289398,
+            "B": 0.11207913607358932,
+            "C": 0.20938946306705475,
+            "D": 0.4164194166660309,
+            "E": 0.1847880631685257
+          },
+          "C": {
+            "A": 0.044058382511138916,
+            "B": 0.41801729798316956,
+            "C": 0.08231206238269806,
+            "D": 0.2698885202407837,
+            "E": 0.1854945421218872
+          },
+          "D": {
+            "A": 0.09517952799797058,
+            "B": 0.22832605242729187,
+            "C": 0.1778186410665512,
+            "D": 0.4265587627887726,
+            "E": 0.07184729725122452
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03242352604866028,
+          "B": 0.11207913607358932,
+          "C": 0.08231206238269806,
+          "D": 0.4265587627887726
+        },
+        "score": 0.16334337182343006
+      },
+      {
+        "record_index": 7,
+        "sample_id": "gsm8k_test_question_610",
+        "label": null,
+        "perturbations": {
+          "a": "It expenses $194 per meter to resurface a street. Monica's street is 150 meters lengthy. How much more does it expense to resurface Lewis' street, which is 490 meters lengthy?",
+          "b": "It charges $194 per meter to renovate a street. Monica's street is 150 meters extensive. How much more does it charge to renovate Lewis' street, which is 490 meters extensive?",
+          "c": "It requires $194 per meter to refurbish a street. Monica's street is 150 meters substantial. How much more does it require to refurbish Lewis' street, which is 490 meters substantial?",
+          "d": "It necessitates $194 per meter to repair a street. Monica's street is 150 meters considerable. How much more does it necessitate to repair Lewis' street, which is 490 meters considerable?"
+        },
+        "bdq_probs": {
+          "A": 0.01571398787200451,
+          "B": 0.4314118027687073,
+          "C": 0.1315716952085495,
+          "D": 0.21692347526550293,
+          "E": 0.20378507673740387
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.023127572610974312,
+            "B": 0.2486516386270523,
+            "C": 0.09147226810455322,
+            "D": 0.2486436367034912,
+            "E": 0.38511452078819275
+          },
+          "B": {
+            "A": 0.044861290603876114,
+            "B": 0.1298145353794098,
+            "C": 0.1666799634695053,
+            "D": 0.3998415172100067,
+            "E": 0.2581639289855957
+          },
+          "C": {
+            "A": 0.03148479014635086,
+            "B": 0.4484402537345886,
+            "C": 0.14558453857898712,
+            "D": 0.18693268299102783,
+            "E": 0.18693773448467255
+          },
+          "D": {
+            "A": 0.012202555313706398,
+            "B": 0.13965141773223877,
+            "C": 0.08470243960618973,
+            "D": 0.7549418210983276,
+            "E": 0.008386807516217232
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.023127572610974312,
+          "B": 0.1298145353794098,
+          "C": 0.14558453857898712,
+          "D": 0.7549418210983276
+        },
+        "score": 0.2633671169169247
+      },
+      {
+        "record_index": 13,
+        "sample_id": "gsm8k_test_question_345",
+        "label": null,
+        "perturbations": {
+          "a": "A bistro has 40 desks with 4 legs and 50 desks with 3 legs. Calculate the total number of legs the bistro's desks have.",
+          "b": "A diner has 40 tables with 4 legs and 50 tables with 3 legs. Calculate the total number of legs the diner's tables have.",
+          "c": "An eatery has 40 tables with 4 legs and 50 tables with 3 legs. Calculate the total number of legs the eatery's tables have.",
+          "d": "A café has 40 tables with 4 legs and 50 tables with 3 legs. Calculate the total number of legs the café's tables have."
+        },
+        "bdq_probs": {
+          "A": 0.032464075833559036,
+          "B": 0.09999670833349228,
+          "C": 0.0999961793422699,
+          "D": 0.6125496625900269,
+          "E": 0.15487819910049438
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.12275734543800354,
+            "B": 0.09560442715883255,
+            "C": 0.12275749444961548,
+            "D": 0.456097811460495,
+            "E": 0.20239539444446564
+          },
+          "B": {
+            "A": 0.06587956845760345,
+            "B": 0.17908082902431488,
+            "C": 0.20292320847511292,
+            "D": 0.4035598337650299,
+            "E": 0.14846332371234894
+          },
+          "C": {
+            "A": 0.0403684601187706,
+            "B": 0.2050091028213501,
+            "C": 0.10308445990085602,
+            "D": 0.4917866885662079,
+            "E": 0.15966133773326874
+          },
+          "D": {
+            "A": 0.0700097605586052,
+            "B": 0.11542686820030212,
+            "C": 0.2025797963142395,
+            "D": 0.5861828327178955,
+            "E": 0.025755390524864197
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.12275734543800354,
+          "B": 0.17908082902431488,
+          "C": 0.10308445990085602,
+          "D": 0.5861828327178955
+        },
+        "score": 0.2477763667702675
+      },
+      {
+        "record_index": 17,
+        "sample_id": "gsm8k_test_question_720",
+        "label": null,
+        "perturbations": {
+          "a": "Castle acquired 3 boxes of Coco Crunch and 5 boxes of Fruit Loops this week. Last week she acquired 4 boxes of cereal. How many additional boxes of cereal did she acquire this week than last week?",
+          "b": "Castle purchased 3 boxes of Coco Crunch and 5 boxes of Fruit Loops this week. Last week she purchased 4 boxes of cereal. How many extra boxes of cereal did she purchase this week than last week?",
+          "c": "Castle secured 3 boxes of Coco Crunch and 5 boxes of Fruit Loops this week. Last week she secured 4 boxes of cereal. How many further boxes of cereal did she secure this week than last week?",
+          "d": "Castle obtained 3 boxes of Coco Crunch and 5 boxes of Fruit Loops this week. Last week she obtained 4 boxes of cereal. How many additional boxes of cereal did she obtain this week than last week?"
+        },
+        "bdq_probs": {
+          "A": 0.028122978284955025,
+          "B": 0.1833851933479309,
+          "C": 0.09221138060092926,
+          "D": 0.6400680541992188,
+          "E": 0.05593009293079376
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03141641616821289,
+            "B": 0.24710921943187714,
+            "C": 0.11672545969486237,
+            "D": 0.5231230854988098,
+            "E": 0.08022548258304596
+          },
+          "B": {
+            "A": 0.025731218978762627,
+            "B": 0.10833258181810379,
+            "C": 0.12275581806898117,
+            "D": 0.6636077761650085,
+            "E": 0.07925834506750107
+          },
+          "C": {
+            "A": 0.031364500522613525,
+            "B": 0.37034401297569275,
+            "C": 0.07292481511831284,
+            "D": 0.37033921480178833,
+            "E": 0.15438266098499298
+          },
+          "D": {
+            "A": 0.0616663359105587,
+            "B": 0.3333663046360016,
+            "C": 0.09551087766885757,
+            "D": 0.4850410521030426,
+            "E": 0.024149278178811073
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03141641616821289,
+          "B": 0.10833258181810379,
+          "C": 0.07292481511831284,
+          "D": 0.4850410521030426
+        },
+        "score": 0.17442871630191803
+      },
+      {
+        "record_index": 19,
+        "sample_id": "gsm8k_test_question_44",
+        "label": null,
+        "perturbations": {
+          "a": "Charlie desires to sell beeswax candles.  For every pound of beeswax, he can produce 10 tapered candles.  One pound of beeswax and the wicks cost $10.00 in materials.   If he sells each candle for $2.00 each, what is his net gain if he makes and sells 20 candles?",
+          "b": "Charlie wishes to sell beeswax candles.  For every pound of beeswax, he can create 10 tapered candles.  One pound of beeswax and the wicks cost $10.00 in resources.   If he sells each candle for $2.00 each, what is his net revenue if he makes and sells 20 candles?",
+          "c": "Charlie aims to sell beeswax candles.  For every pound of beeswax, he can generate 10 tapered candles.  One pound of beeswax and the wicks cost $10.00 in supplies.   If he sells each candle for $2.00 each, what is his net earnings if he makes and sells 20 candles?",
+          "d": "Charlie intends to sell beeswax candles.  For every pound of beeswax, he can manufacture 10 tapered candles.  One pound of beeswax and the wicks cost $10.00 in supplies.   If he sells each candle for $2.00 each, what is his net profit if he makes and sells 20 candles?"
+        },
+        "bdq_probs": {
+          "A": 0.007393648382276297,
+          "B": 0.09007315337657928,
+          "C": 0.061905961483716965,
+          "D": 0.8028036952018738,
+          "E": 0.03754883632063866
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.006693621631711721,
+            "B": 0.013311794027686119,
+            "C": 0.06760268658399582,
+            "D": 0.7736682295799255,
+            "E": 0.12630179524421692
+          },
+          "B": {
+            "A": 0.004715359769761562,
+            "B": 0.022495774552226067,
+            "C": 0.03708888217806816,
+            "D": 0.844132125377655,
+            "E": 0.08897414803504944
+          },
+          "C": {
+            "A": 0.003530229441821575,
+            "B": 0.03565423935651779,
+            "C": 0.03349389135837555,
+            "D": 0.8638132214546204,
+            "E": 0.06257622689008713
+          },
+          "D": {
+            "A": 0.015943346545100212,
+            "B": 0.10396381467580795,
+            "C": 0.19422928988933563,
+            "D": 0.6779274344444275,
+            "E": 0.006646280642598867
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.006693621631711721,
+          "B": 0.022495774552226067,
+          "C": 0.03349389135837555,
+          "D": 0.6779274344444275
+        },
+        "score": 0.1851526804966852
+      },
+      {
+        "record_index": 20,
+        "sample_id": "gsm8k_test_question_912",
+        "label": null,
+        "perturbations": {
+          "a": "John consumes a bottle of water every thirty minutes.  A standard sudoku puzzle requires him 45 minutes.  An extreme sudoku requires 4 times that duration.  How many bottles of water does he consume in that time?",
+          "b": "John sips a bottle of water every half hour.  A typical sudoku puzzle occupies him 45 minutes.  An extreme sudoku occupies 4 times that period.  How many bottles of water does he sip in that time?",
+          "c": "John has a bottle of water every half hour.  A usual sudoku puzzle lasts him 45 minutes.  An extreme sudoku lasts 4 times that span.  How many bottles of water does he have in that time?",
+          "d": "John gulps a bottle of water every half hour.  An everyday sudoku puzzle engages him 45 minutes.  An extreme sudoku engages 4 times that interval.  How many bottles of water does he gulp in that time?"
+        },
+        "bdq_probs": {
+          "A": 0.013586102984845638,
+          "B": 0.6149553656578064,
+          "C": 0.03931276872754097,
+          "D": 0.15548434853553772,
+          "E": 0.17618919909000397
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010770336724817753,
+            "B": 0.6458367109298706,
+            "C": 0.020760459825396538,
+            "D": 0.09904191642999649,
+            "E": 0.22319690883159637
+          },
+          "B": {
+            "A": 0.013256185688078403,
+            "B": 0.03603409230709076,
+            "C": 0.02476564422249794,
+            "D": 0.8201155662536621,
+            "E": 0.10426948964595795
+          },
+          "C": {
+            "A": 0.012560601346194744,
+            "B": 0.7531901597976685,
+            "C": 0.026590926572680473,
+            "D": 0.08450528979301453,
+            "E": 0.12295547127723694
+          },
+          "D": {
+            "A": 0.007205067202448845,
+            "B": 0.8592293858528137,
+            "C": 0.020207272842526436,
+            "D": 0.07992056012153625,
+            "E": 0.03331635519862175
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010770336724817753,
+          "B": 0.03603409230709076,
+          "C": 0.026590926572680473,
+          "D": 0.07992056012153625
+        },
+        "score": 0.03832897893153131
+      },
+      {
+        "record_index": 21,
+        "sample_id": "gsm8k_test_question_1082",
+        "label": null,
+        "perturbations": {
+          "a": "James chose to stroll to the store.  When he arrived halfway there he recognized he forgot something at home and had to stroll back.  If his home is 4 miles from the store and he strolls 4 miles per hour how long did it take him to arrive at the store?",
+          "b": "James opted to walk to the shop.  When he reached halfway there he understood he forgot something at home and had to walk back.  If his residence is 4 miles from the shop and he walks 4 miles per hour how long did it take him to reach the shop?",
+          "c": "James decided to travel to the store.  When he got halfway there he noticed he forgot something at home and had to travel back.  If his domicile is 4 miles from the store and he travels 4 miles per hour how long did it take him to get to the store?",
+          "d": "James determined to walk to the marketplace.  When he arrived halfway there he discovered he forgot something at home and had to walk back.  If his house is 4 miles from the marketplace and he walks 4 miles per hour how long did it take him to go to the marketplace?"
+        },
+        "bdq_probs": {
+          "A": 0.11404501646757126,
+          "B": 0.3100101351737976,
+          "C": 0.10713575780391693,
+          "D": 0.37393781542778015,
+          "E": 0.09454874694347382
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04813695326447487,
+            "B": 0.4030495882034302,
+            "C": 0.0745568722486496,
+            "D": 0.3341335356235504,
+            "E": 0.13929231464862823
+          },
+          "B": {
+            "A": 0.13097025454044342,
+            "B": 0.19056352972984314,
+            "C": 0.09582046419382095,
+            "D": 0.48661211133003235,
+            "E": 0.09582192450761795
+          },
+          "C": {
+            "A": 0.13864706456661224,
+            "B": 0.3768874406814575,
+            "C": 0.06757202744483948,
+            "D": 0.20173026621341705,
+            "E": 0.214744433760643
+          },
+          "D": {
+            "A": 0.0895100012421608,
+            "B": 0.4545741081237793,
+            "C": 0.12234648317098618,
+            "D": 0.2590058445930481,
+            "E": 0.074208103120327
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04813695326447487,
+          "B": 0.19056352972984314,
+          "C": 0.06757202744483948,
+          "D": 0.2590058445930481
+        },
+        "score": 0.1413195887580514
+      },
+      {
+        "record_index": 24,
+        "sample_id": "gsm8k_test_question_767",
+        "label": null,
+        "perturbations": {
+          "a": "To create 1 liter of beverage, Sam requires 5 kilograms of oranges. Each kilogram of oranges expenses $3. How much money would Sam need to pay to create 4 liters of beverage?",
+          "b": "To prepare 1 liter of drink, Sam wants 5 kilograms of oranges. Each kilogram of oranges costs $3. How much money would Sam have to invest to prepare 4 liters of drink?",
+          "c": "To fashion 1 liter of liquid, Sam necessitates 5 kilograms of oranges. Each kilogram of oranges prices $3. How much money would Sam have to expend to fashion 4 liters of liquid?",
+          "d": "To produce 1 liter of refreshment, Sam needs 5 kilograms of oranges. Each kilogram of oranges charges $3. How much money would Sam have to disburse to produce 4 liters of refreshment?"
+        },
+        "bdq_probs": {
+          "A": 0.004930810071527958,
+          "B": 0.05643048882484436,
+          "C": 0.03215251490473747,
+          "D": 0.8292133808135986,
+          "E": 0.07713215053081512
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.020518286153674126,
+            "B": 0.08912911266088486,
+            "C": 0.10750758647918701,
+            "D": 0.5811751484870911,
+            "E": 0.20085448026657104
+          },
+          "B": {
+            "A": 0.0056990813463926315,
+            "B": 0.02475615218281746,
+            "C": 0.0632152408361435,
+            "D": 0.819779098033905,
+            "E": 0.08640731871128082
+          },
+          "C": {
+            "A": 0.009125223383307457,
+            "B": 0.3216782510280609,
+            "C": 0.14274191856384277,
+            "D": 0.36450234055519104,
+            "E": 0.16175062954425812
+          },
+          "D": {
+            "A": 0.01252942904829979,
+            "B": 0.09855221956968307,
+            "C": 0.1841171532869339,
+            "D": 0.6840748190879822,
+            "E": 0.02065804973244667
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.020518286153674126,
+          "B": 0.02475615218281746,
+          "C": 0.14274191856384277,
+          "D": 0.6840748190879822
+        },
+        "score": 0.21802279399707913
+      },
+      {
+        "record_index": 35,
+        "sample_id": "gsm8k_test_question_278",
+        "label": null,
+        "perturbations": {
+          "a": "Mico and Marco desired to become acquainted with one another. They recognized that the total of their ages is 20. What will be the total of their ages in 10 years?",
+          "b": "Mico and Marco wished to familiarize themselves with each other. They discovered that the aggregate of their ages is 20. What will be the aggregate of their ages in 10 years?",
+          "c": "Mico and Marco hoped to learn about each other. They understood that the combined total of their ages is 20. What will be the combined total of their ages in 10 years?",
+          "d": "Mico and Marco sought to connect with each other. They realized that the addition of their ages is 20. What will be the addition of their ages in 10 years?"
+        },
+        "bdq_probs": {
+          "A": 0.00727192685008049,
+          "B": 0.7417576313018799,
+          "C": 0.044546160846948624,
+          "D": 0.06899392604827881,
+          "E": 0.13721266388893127
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01886935718357563,
+            "B": 0.4866536855697632,
+            "C": 0.08456727862358093,
+            "D": 0.17902660369873047,
+            "E": 0.22987963259220123
+          },
+          "B": {
+            "A": 0.03828975558280945,
+            "B": 0.09185351431369781,
+            "C": 0.3205956220626831,
+            "D": 0.2657822370529175,
+            "E": 0.2829285264015198
+          },
+          "C": {
+            "A": 0.01705196127295494,
+            "B": 0.6601864695549011,
+            "C": 0.02992738038301468,
+            "D": 0.11472189426422119,
+            "E": 0.17768746614456177
+          },
+          "D": {
+            "A": 0.02824595756828785,
+            "B": 0.5498831868171692,
+            "C": 0.07921812683343887,
+            "D": 0.27649495005607605,
+            "E": 0.06567506492137909
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01886935718357563,
+          "B": 0.09185351431369781,
+          "C": 0.02992738038301468,
+          "D": 0.27649495005607605
+        },
+        "score": 0.10428630048409104
+      },
+      {
+        "record_index": 41,
+        "sample_id": "gsm8k_test_question_593",
+        "label": null,
+        "perturbations": {
+          "a": "Mark cultivates a beanstalk beneath his second-floor window, which is 20 feet above the ground. The beanstalk doubles its elevation every day. If the beanstalk begins at 4 feet tall, how many days will it require to exceed Mark's window?",
+          "b": "Mark sows a beanstalk underneath his second-story window, which is 20 feet over the ground. The beanstalk doubles its stature every day. If the beanstalk initiates at 4 feet tall, how many days will it need to surpass Mark's window?",
+          "c": "Mark seeds a beanstalk below his second-story window, which is 20 feet from the ground. The beanstalk doubles its size every day. If the beanstalk starts at 4 feet tall, how many days will it take to rise above Mark's window?",
+          "d": "Mark places a beanstalk beneath his second-floor window, which is 20 feet off the ground. The beanstalk doubles its altitude every day. If the beanstalk starts at 4 feet tall, how many days will it require to grow taller than Mark's window?"
+        },
+        "bdq_probs": {
+          "A": 0.02726287953555584,
+          "B": 0.48324745893478394,
+          "C": 0.12218379229307175,
+          "D": 0.33212825655937195,
+          "E": 0.03500688448548317
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.012075680308043957,
+            "B": 0.3114350438117981,
+            "C": 0.2748379707336426,
+            "D": 0.3315134346485138,
+            "E": 0.06949267536401749
+          },
+          "B": {
+            "A": 0.025573913007974625,
+            "B": 0.07400097697973251,
+            "C": 0.12200598418712616,
+            "D": 0.7473680377006531,
+            "E": 0.030849244445562363
+          },
+          "C": {
+            "A": 0.01189130824059248,
+            "B": 0.629274308681488,
+            "C": 0.024399803951382637,
+            "D": 0.2792339622974396,
+            "E": 0.05498644337058067
+          },
+          "D": {
+            "A": 0.029192375019192696,
+            "B": 0.5863462686538696,
+            "C": 0.21570482850074768,
+            "D": 0.13083070516586304,
+            "E": 0.0374847874045372
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.012075680308043957,
+          "B": 0.07400097697973251,
+          "C": 0.024399803951382637,
+          "D": 0.13083070516586304
+        },
+        "score": 0.060326791601255536
+      },
+      {
+        "record_index": 42,
+        "sample_id": "gsm8k_test_question_713",
+        "label": null,
+        "perturbations": {
+          "a": "Mr Boarden is renovating his bathroom. For every square foot, he requires 24 mosaic tiles. How many mosaic tiles would Mr Boarden require to cover two thirds of his 36 sq ft bathroom?",
+          "b": "Mr Boarden is updating his bathroom. For every square foot, he demands 24 mosaic tiles. How many mosaic tiles would Mr Boarden demand to cover two thirds of his 36 sq ft bathroom?",
+          "c": "Mr Boarden is refurbishing his bathroom. For every square foot, he needs 24 mosaic tiles. How many mosaic tiles would Mr Boarden need to cover two thirds of his 36 sq ft bathroom?",
+          "d": "Mr Boarden is altering his bathroom. For every square foot, he wants 24 mosaic tiles. How many mosaic tiles would Mr Boarden want to cover two thirds of his 36 sq ft bathroom?"
+        },
+        "bdq_probs": {
+          "A": 0.02134847268462181,
+          "B": 0.3554840087890625,
+          "C": 0.45644819736480713,
+          "D": 0.1392088383436203,
+          "E": 0.027412308380007744
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01961974985897541,
+            "B": 0.08792976289987564,
+            "C": 0.6103383302688599,
+            "D": 0.13618594408035278,
+            "E": 0.1449737399816513
+          },
+          "B": {
+            "A": 0.01142013631761074,
+            "B": 0.03744523227214813,
+            "C": 0.8522388339042664,
+            "D": 0.06571796536445618,
+            "E": 0.03304604813456535
+          },
+          "C": {
+            "A": 0.014536219649016857,
+            "B": 0.7455663084983826,
+            "C": 0.03275790438055992,
+            "D": 0.1562781035900116,
+            "E": 0.05073699727654457
+          },
+          "D": {
+            "A": 0.012149694375693798,
+            "B": 0.3550661504268646,
+            "C": 0.48531392216682434,
+            "D": 0.13904476165771484,
+            "E": 0.008350560441613197
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01961974985897541,
+          "B": 0.03744523227214813,
+          "C": 0.03275790438055992,
+          "D": 0.13904476165771484
+        },
+        "score": 0.05721691204234958
+      },
+      {
+        "record_index": 43,
+        "sample_id": "gsm8k_test_question_87",
+        "label": null,
+        "perturbations": {
+          "a": "A corporation pays each of its workers $600 in a month. The corporation has a policy of raising the wages of each of its workers by 10% of the original wage every year for those who've remained in the corporation for five years. If Sylvie just marked 5 years in the corporation last December, what's her yearly wage after three more years of employment?",
+          "b": "A firm pays each of its staff $600 in a month. The firm has a policy of boosting the salaries of each of its staff by 10% of the starting salary every year for those who've been with the firm for five years. If Sylvie just completed 5 years in the firm last December, what's her annual pay after three more years of work?",
+          "c": "An organization pays each of its personnel $600 in a month. The organization has a policy of enhancing the earnings of each of its personnel by 10% of the initial pay every year for those who've worked in the organization for five years. If Sylvie just finished 5 years in the organization last December, what's her yearly income after three more years of service?",
+          "d": "A business pays each of its associates $600 in a month. The business has a policy of augmenting the remuneration of each of its associates by 10% of the base remuneration every year for those who've served in the business for five years. If Sylvie just reached 5 years in the business last December, what's her annual compensation after three more years of tenure?"
+        },
+        "bdq_probs": {
+          "A": 0.020394405350089073,
+          "B": 0.17076228559017181,
+          "C": 0.0972955971956253,
+          "D": 0.6753531098365784,
+          "E": 0.035795506089925766
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.011704736389219761,
+            "B": 0.15179069340229034,
+            "C": 0.09206312894821167,
+            "D": 0.6802361011505127,
+            "E": 0.06328186392784119
+          },
+          "B": {
+            "A": 0.013581693172454834,
+            "B": 0.03691958636045456,
+            "C": 0.12885768711566925,
+            "D": 0.7415134906768799,
+            "E": 0.07816138863563538
+          },
+          "C": {
+            "A": 0.009898429736495018,
+            "B": 0.43425413966178894,
+            "C": 0.029551319777965546,
+            "D": 0.4342449903488159,
+            "E": 0.09102696925401688
+          },
+          "D": {
+            "A": 0.01730242371559143,
+            "B": 0.5056524276733398,
+            "C": 0.18601840734481812,
+            "D": 0.2706541121006012,
+            "E": 0.019606679677963257
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.011704736389219761,
+          "B": 0.03691958636045456,
+          "C": 0.029551319777965546,
+          "D": 0.2706541121006012
+        },
+        "score": 0.08720743865706027
+      },
+      {
+        "record_index": 46,
+        "sample_id": "gsm8k_test_question_828",
+        "label": null,
+        "perturbations": {
+          "a": "Mulan possesses $40. Her dad provided her $100. She purchases two pairs of trousers at $30 each and a purse for $20. How much cash does Mulan have remaining?",
+          "b": "Mulan holds $40. Her father supplied her $100. She acquires two pairs of slacks at $30 each and a bag for $20. How much funds does Mulan have left?",
+          "c": "Mulan retains $40. Her parent bestowed upon her $100. She buys two pairs of pants at $30 each and a satchel for $20. How much wealth does Mulan have after?",
+          "d": "Mulan owns $40. Her progenitor granted her $100. She gets two pairs of denim at $30 each and a backpack for $20. How much money does Mulan still possess?"
+        },
+        "bdq_probs": {
+          "A": 0.00669478764757514,
+          "B": 0.7045632004737854,
+          "C": 0.05103839188814163,
+          "D": 0.18963012099266052,
+          "E": 0.04794672504067421
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010710632428526878,
+            "B": 0.06561057269573212,
+            "C": 0.03979473561048508,
+            "D": 0.7992926239967346,
+            "E": 0.08424650877714157
+          },
+          "B": {
+            "A": 0.015833012759685516,
+            "B": 0.18119937181472778,
+            "C": 0.36035582423210144,
+            "D": 0.38359683752059937,
+            "E": 0.05882785841822624
+          },
+          "C": {
+            "A": 0.002066620159894228,
+            "B": 0.9156776666641235,
+            "C": 0.017852894961833954,
+            "D": 0.0428268238902092,
+            "E": 0.021534806117415428
+          },
+          "D": {
+            "A": 0.0074079278856515884,
+            "B": 0.7556288242340088,
+            "C": 0.0960674062371254,
+            "D": 0.1313083916902542,
+            "E": 0.009512136690318584
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010710632428526878,
+          "B": 0.18119937181472778,
+          "C": 0.017852894961833954,
+          "D": 0.1313083916902542
+        },
+        "score": 0.0852678227238357
+      },
+      {
+        "record_index": 50,
+        "sample_id": "gsm8k_test_question_997",
+        "label": null,
+        "perturbations": {
+          "a": "Walter is gathering funds for charity. First he gathers $500 from his neighbors. Then he gathers $1500 from a fund he established online. His attorney offers to contribute three times as much as everyone else contributes. Walter is going to inform him about his neighbors and the online fund until his friend gives him $200 as well. How much is Walter's attorney going to contribute?",
+          "b": "Walter is amassing money for charity. First he amasses $500 from his neighbors. Then he amasses $1500 from a fund he created online. His solicitor offers to donate three times as much as everyone else gives. Walter is going to mention to him about his neighbors and the online fund until his friend gives him $200 as well. How much is Walter's solicitor going to contribute?",
+          "c": "Walter is gathering cash for charity. First he gathers $500 from his neighbors. Then he gathers $1500 from a fund he initiated online. His counselor offers to donate three times as much as everyone else contributes. Walter is going to inform him about his neighbors and the online fund until his friend gives him $200 as well. How much is Walter's counselor going to contribute?",
+          "d": "Walter is collecting funds for charity. First he collects $500 from his neighbors. Then he collects $1500 from a fund he organized online. His legal representative offers to donate three times as much as everyone else contributes. Walter is going to tell him about his neighbors and the online fund until his friend gives him $200 as well. How much is Walter's legal representative going to contribute?"
+        },
+        "bdq_probs": {
+          "A": 0.00867544487118721,
+          "B": 0.1854890137910843,
+          "C": 0.04992366209626198,
+          "D": 0.7336210608482361,
+          "E": 0.022153668105602264
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.013607969507575035,
+            "B": 0.057291701436042786,
+            "C": 0.03264373913407326,
+            "D": 0.8418859839439392,
+            "E": 0.05382134020328522
+          },
+          "B": {
+            "A": 0.01400301419198513,
+            "B": 0.04051921144127846,
+            "C": 0.04051903262734413,
+            "D": 0.8663256764411926,
+            "E": 0.03806488960981369
+          },
+          "C": {
+            "A": 0.013639992102980614,
+            "B": 0.2739671468734741,
+            "C": 0.037077397108078,
+            "D": 0.6173880696296692,
+            "E": 0.05742732062935829
+          },
+          "D": {
+            "A": 0.03405766189098358,
+            "B": 0.38976967334747314,
+            "C": 0.19598788022994995,
+            "D": 0.3661515414714813,
+            "E": 0.013337490148842335
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.013607969507575035,
+          "B": 0.04051921144127846,
+          "C": 0.037077397108078,
+          "D": 0.3661515414714813
+        },
+        "score": 0.1143390298821032
+      },
+      {
+        "record_index": 57,
+        "sample_id": "gsm8k_test_question_512",
+        "label": null,
+        "perturbations": {
+          "a": "Hannah requires to consume 60 ml of liquid for each kilometer she jogs. If her fitness instructor advises her to jog 8 laps and each lap is 0.25 km, how many milliliters of liquid will Hannah have to consume?",
+          "b": "Hannah must intake 60 ml of beverage for each kilometer she sprints. If her exercise coach instructs her to sprint 8 laps and each lap is 0.25 km, how many milliliters of beverage will Hannah need to intake?",
+          "c": "Hannah has to drink 60 ml of refreshment for each kilometer she runs. If her training mentor tells her to run 8 laps and each lap is 0.25 km, how many milliliters of refreshment will Hannah need to drink?",
+          "d": "Hannah needs to consume 60 ml of fluid for each kilometer she runs. If her athletic teacher tells her to run 8 laps and each lap is 0.25 km, how many milliliters of fluid will Hannah need to consume?"
+        },
+        "bdq_probs": {
+          "A": 0.03756164386868477,
+          "B": 0.17919836938381195,
+          "C": 0.11569760739803314,
+          "D": 0.5185169577598572,
+          "E": 0.14856082201004028
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.029759051278233528,
+            "B": 0.1252911388874054,
+            "C": 0.07138801366090775,
+            "D": 0.5615031719207764,
+            "E": 0.20656999945640564
+          },
+          "B": {
+            "A": 0.0313420332968235,
+            "B": 0.10939561575651169,
+            "C": 0.09069076180458069,
+            "D": 0.6701111197471619,
+            "E": 0.096541628241539
+          },
+          "C": {
+            "A": 0.06626491248607635,
+            "B": 0.2969818115234375,
+            "C": 0.09641483426094055,
+            "D": 0.45996546745300293,
+            "E": 0.07993216067552567
+          },
+          "D": {
+            "A": 0.20619967579841614,
+            "B": 0.20620186626911163,
+            "C": 0.1250663846731186,
+            "D": 0.4100753366947174,
+            "E": 0.05213644355535507
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.029759051278233528,
+          "B": 0.10939561575651169,
+          "C": 0.09641483426094055,
+          "D": 0.4100753366947174
+        },
+        "score": 0.1614112094976008
+      },
+      {
+        "record_index": 59,
+        "sample_id": "gsm8k_test_question_839",
+        "label": null,
+        "perturbations": {
+          "a": "A farmer gathers 5 liters of milk a day from a cow. Since he has 3 cows, how many more cows does he need to acquire to produce 25 liters of milk a day?",
+          "b": "A farmer obtains 5 liters of milk a day from a cow. Since he has 3 cows, how many more cows does he need to possess to produce 25 liters of milk a day?",
+          "c": "A farmer collects 5 liters of milk a day from a cow. Since he has 3 cows, how many more cows does he need to own to produce 25 liters of milk a day?",
+          "d": "A farmer derives 5 liters of milk a day from a cow. Since he has 3 cows, how many more cows does he need to hold to produce 25 liters of milk a day?"
+        },
+        "bdq_probs": {
+          "A": 0.024873407557606697,
+          "B": 0.16734537482261658,
+          "C": 0.4273216128349304,
+          "D": 0.20185184478759766,
+          "E": 0.17813940346240997
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0477336123585701,
+            "B": 0.15651772916316986,
+            "C": 0.35270264744758606,
+            "D": 0.21392221748828888,
+            "E": 0.22773124277591705
+          },
+          "B": {
+            "A": 0.019060363993048668,
+            "B": 0.0379069447517395,
+            "C": 0.557013750076294,
+            "D": 0.18083614110946655,
+            "E": 0.20492270588874817
+          },
+          "C": {
+            "A": 0.0228471327573061,
+            "B": 0.44478222727775574,
+            "C": 0.04990292340517044,
+            "D": 0.34639042615890503,
+            "E": 0.13565115630626678
+          },
+          "D": {
+            "A": 0.025637086480855942,
+            "B": 0.25892674922943115,
+            "C": 0.37673327326774597,
+            "D": 0.24323591589927673,
+            "E": 0.09525436162948608
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0477336123585701,
+          "B": 0.0379069447517395,
+          "C": 0.04990292340517044,
+          "D": 0.24323591589927673
+        },
+        "score": 0.0946948491036892
+      },
+      {
+        "record_index": 60,
+        "sample_id": "gsm8k_test_question_274",
+        "label": null,
+        "perturbations": {
+          "a": "It's April, and Mrs. Rylan has been occupied on her farm sowing different varieties of vegetables for the season. She has purchased 20 packets of tomato seeds and 80 packets of celery seeds to plant. If a packet of tomato seeds costs $40 and a packet of celery seeds costs $30, how much money did she spend to buy the seeds?",
+          "b": "It's April, and Mrs. Rylan has been active on her farm planting various kinds of vegetables for the season. She has acquired 20 packets of tomato seeds and 80 packets of celery seeds to plant. If a packet of tomato seeds costs $40 and a packet of celery seeds costs $30, how much money did she expend to buy the seeds?",
+          "c": "It's April, and Mrs. Rylan has been engaged on her farm cultivating different kinds of vegetables for the season. She has gotten 20 packets of tomato seeds and 80 packets of celery seeds to plant. If a packet of tomato seeds costs $40 and a packet of celery seeds costs $30, how much money did she invest to buy the seeds?",
+          "d": "It's April, and Mrs. Rylan has been occupied on her farm growing different sorts of vegetables for the season. She has secured 20 packets of tomato seeds and 80 packets of celery seeds to plant. If a packet of tomato seeds costs $40 and a packet of celery seeds costs $30, how much money did she utilize to buy the seeds?"
+        },
+        "bdq_probs": {
+          "A": 0.008908656425774097,
+          "B": 0.5177667737007141,
+          "C": 0.08997432887554169,
+          "D": 0.35585471987724304,
+          "E": 0.027440859004855156
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.004412603564560413,
+            "B": 0.226326122879982,
+            "C": 0.13727231323719025,
+            "D": 0.5779259204864502,
+            "E": 0.05375872179865837
+          },
+          "B": {
+            "A": 0.007497038226574659,
+            "B": 0.03807354345917702,
+            "C": 0.09133230149745941,
+            "D": 0.8140263557434082,
+            "E": 0.04888813942670822
+          },
+          "C": {
+            "A": 0.0040768468752503395,
+            "B": 0.7530123591423035,
+            "C": 0.02742869220674038,
+            "D": 0.13085231184959412,
+            "E": 0.08448679745197296
+          },
+          "D": {
+            "A": 0.002803658600896597,
+            "B": 0.753462016582489,
+            "C": 0.03751275688409805,
+            "D": 0.19050423800945282,
+            "E": 0.015637880191206932
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.004412603564560413,
+          "B": 0.03807354345917702,
+          "C": 0.02742869220674038,
+          "D": 0.19050423800945282
+        },
+        "score": 0.06510476930998266
+      },
+      {
+        "record_index": 62,
+        "sample_id": "gsm8k_test_question_1168",
+        "label": null,
+        "perturbations": {
+          "a": "The crimson cord was four times the extent of the azure cord. The azure cord was 7 centimeters shorter than the golden cord. If the 3 cords had a cumulative extent of 37 centimeters, what was the extent of the crimson cord in centimeters?",
+          "b": "The scarlet line was four times the measurement of the cerulean line. The cerulean line was 7 centimeters shorter than the amber line. If the 3 lines had a total measurement of 37 centimeters, what was the measurement of the scarlet line in centimeters?",
+          "c": "The ruby string was four times the width of the turquoise string. The turquoise string was 7 centimeters shorter than the lemon string. If the 3 strings had a combined width of 37 centimeters, what was the width of the ruby string in centimeters?",
+          "d": "The vermilion twine was four times the size of the sapphire twine. The sapphire twine was 7 centimeters shorter than the chartreuse twine. If the 3 twines had a total size of 37 centimeters, what was the size of the vermilion twine in centimeters?"
+        },
+        "bdq_probs": {
+          "A": 0.06079351529479027,
+          "B": 0.4492083489894867,
+          "C": 0.07806041836738586,
+          "D": 0.32864490151405334,
+          "E": 0.08309577405452728
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.041050199419260025,
+            "B": 0.4145946800708771,
+            "C": 0.056109264492988586,
+            "D": 0.30332106351852417,
+            "E": 0.18397635221481323
+          },
+          "B": {
+            "A": 0.18065184354782104,
+            "B": 0.4910641014575958,
+            "C": 0.07074440270662308,
+            "D": 0.1406918168067932,
+            "E": 0.11663810908794403
+          },
+          "C": {
+            "A": 0.08428291976451874,
+            "B": 0.5495970249176025,
+            "C": 0.07917678356170654,
+            "D": 0.1784263700246811,
+            "E": 0.10822274535894394
+          },
+          "D": {
+            "A": 0.10440922528505325,
+            "B": 0.3879290819168091,
+            "C": 0.12594151496887207,
+            "D": 0.364422082901001,
+            "E": 0.01704464852809906
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.041050199419260025,
+          "B": 0.4910641014575958,
+          "C": 0.07917678356170654,
+          "D": 0.364422082901001
+        },
+        "score": 0.24392829183489084
+      },
+      {
+        "record_index": 63,
+        "sample_id": "gsm8k_test_question_800",
+        "label": null,
+        "perturbations": {
+          "a": "Pierson tallied 278 points in one match of bowling. Nikita scored 11 more than half as numerous as Pierson. How many points did Pierson and Nikita possess in total?",
+          "b": "Pierson recorded 278 points in one contest of bowling. Nikita scored 11 additional than half as many as Pierson. How many points did Pierson and Nikita have collectively?",
+          "c": "Pierson achieved 278 points in one game of bowling. Nikita scored 11 more than half as much as Pierson. How many points did Pierson and Nikita accrue in total?",
+          "d": "Pierson amassed 278 points in one round of bowling. Nikita scored 11 more than half as countless as Pierson. How many points did Pierson and Nikita gather in total?"
+        },
+        "bdq_probs": {
+          "A": 0.019078601151704788,
+          "B": 0.3953682482242584,
+          "C": 0.14544710516929626,
+          "D": 0.3953631520271301,
+          "E": 0.04435993358492851
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01372812781482935,
+            "B": 0.36529573798179626,
+            "C": 0.3028346002101898,
+            "D": 0.2215549349784851,
+            "E": 0.0923653393983841
+          },
+          "B": {
+            "A": 0.0141659677028656,
+            "B": 0.05964183062314987,
+            "C": 0.25109559297561646,
+            "D": 0.6023433208465576,
+            "E": 0.07194283604621887
+          },
+          "C": {
+            "A": 0.014727656729519367,
+            "B": 0.4877166450023651,
+            "C": 0.037608642131090164,
+            "D": 0.4043247401714325,
+            "E": 0.05472120642662048
+          },
+          "D": {
+            "A": 0.024565458297729492,
+            "B": 0.5951716303825378,
+            "C": 0.2189508080482483,
+            "D": 0.1327992081642151,
+            "E": 0.02783711440861225
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01372812781482935,
+          "B": 0.05964183062314987,
+          "C": 0.037608642131090164,
+          "D": 0.1327992081642151
+        },
+        "score": 0.06094445218332112
+      },
+      {
+        "record_index": 67,
+        "sample_id": "gsm8k_test_question_621",
+        "label": null,
+        "perturbations": {
+          "a": "John hurt his back and needs to attend physical rehabilitation. He went to physical rehabilitation for 6 weeks. Each week he went twice for 2 hours at a time. If the sessions cost $125 per hour how much did the physical rehabilitation cost?",
+          "b": "John harmed his back and needs to visit physical therapy. He went to physical therapy for 6 weeks. Each week he went twice for 2 hours at a time. If the sessions cost $125 per hour how much did the physical therapy cost?",
+          "c": "John damaged his back and needs to go to bodily therapy. He went to bodily therapy for 6 weeks. Each week he went twice for 2 hours at a time. If the sessions cost $125 per hour how much did the bodily therapy cost?",
+          "d": "John wounded his back and needs to attend physical treatment. He went to physical treatment for 6 weeks. Each week he went twice for 2 hours at a time. If the sessions cost $125 per hour how much did the physical treatment cost?"
+        },
+        "bdq_probs": {
+          "A": 0.024077648296952248,
+          "B": 0.31224510073661804,
+          "C": 0.061484500765800476,
+          "D": 0.4543084502220154,
+          "E": 0.147495299577713
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01933583989739418,
+            "B": 0.5145106911659241,
+            "C": 0.057726334780454636,
+            "D": 0.2931550443172455,
+            "E": 0.11480464786291122
+          },
+          "B": {
+            "A": 0.04649996757507324,
+            "B": 0.13455334305763245,
+            "C": 0.14322996139526367,
+            "D": 0.532159149646759,
+            "E": 0.1432323306798935
+          },
+          "C": {
+            "A": 0.01560516282916069,
+            "B": 0.4560515582561493,
+            "C": 0.030079828575253487,
+            "D": 0.4024588167667389,
+            "E": 0.09559494256973267
+          },
+          "D": {
+            "A": 0.019620584324002266,
+            "B": 0.7596315145492554,
+            "C": 0.04421580955386162,
+            "D": 0.14957864582538605,
+            "E": 0.02681918628513813
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01933583989739418,
+          "B": 0.13455334305763245,
+          "C": 0.030079828575253487,
+          "D": 0.14957864582538605
+        },
+        "score": 0.08338691433891654
+      },
+      {
+        "record_index": 70,
+        "sample_id": "gsm8k_test_question_868",
+        "label": null,
+        "perturbations": {
+          "a": "A three-ounce container of flavored jelly makes 10 small jelly cups.  Greg wants to prepare small jelly cups for his son's outdoor birthday celebration.  There will be 30 children and he wants to have sufficient so that each child can have 4 jelly cups.  Jelly is currently on discount for $1.25.  How much will he spend on jelly?",
+          "b": "A three-ounce package of flavored gelatin makes 10 small gelatin cups.  Greg wants to create small gelatin cups for his son's outdoor birthday festivity.  There will be 30 youngsters and he wants to have ample so that each youngster can have 4 gelatin cups.  Gelatin is currently on sale for $1.25.  How much will he spend on gelatin?",
+          "c": "A three-ounce box of flavored jelly makes 10 small jelly vessels.  Greg wants to make small jelly vessels for his son's outdoor birthday gathering.  There will be 30 kids and he wants to have plenty so that each kid can have 4 jelly vessels.  Jelly is currently on sale for $1.25.  How much will he spend on jelly?",
+          "d": "A three-ounce carton of flavored jello makes 10 small jello servings.  Greg wants to produce small jello servings for his son's outdoor birthday occasion.  There will be 30 kids and he wants to have adequate so that each kid can have 4 jello servings.  Jello is currently on sale for $1.25.  How much will he spend on jello?"
+        },
+        "bdq_probs": {
+          "A": 0.032916199415922165,
+          "B": 0.1570347249507904,
+          "C": 0.0696834921836853,
+          "D": 0.6611343026161194,
+          "E": 0.07896260917186737
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.028623152524232864,
+            "B": 0.10634830594062805,
+            "C": 0.050235144793987274,
+            "D": 0.6934619545936584,
+            "E": 0.12051068991422653
+          },
+          "B": {
+            "A": 0.04588305950164795,
+            "B": 0.11716753989458084,
+            "C": 0.08572094887495041,
+            "D": 0.6333916187286377,
+            "E": 0.11716818064451218
+          },
+          "C": {
+            "A": 0.04679692164063454,
+            "B": 0.30515697598457336,
+            "C": 0.07715525478124619,
+            "D": 0.4170931279659271,
+            "E": 0.15344350039958954
+          },
+          "D": {
+            "A": 0.03629868105053902,
+            "B": 0.13486649096012115,
+            "C": 0.1266942024230957,
+            "D": 0.6848990321159363,
+            "E": 0.01714671589434147
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.028623152524232864,
+          "B": 0.11716753989458084,
+          "C": 0.07715525478124619,
+          "D": 0.6848990321159363
+        },
+        "score": 0.22696124482899904
+      },
+      {
+        "record_index": 78,
+        "sample_id": "gsm8k_test_question_942",
+        "label": null,
+        "perturbations": {
+          "a": "Patty's Plumbing demands $40 to visit a residence to execute a repair, plus $35 per hour, or part thereof, for labor, plus components. One task took 2.25 hours and utilized $60 in components. How much did Patty demand?",
+          "b": "Patty's Plumbing requests $40 to visit a domicile to perform a repair, plus $35 per hour, or part thereof, for labor, plus materials. One assignment took 2.25 hours and consumed $60 in materials. How much did Patty request?",
+          "c": "Patty's Plumbing asks $40 to visit a home to conduct a repair, plus $35 per hour, or part thereof, for labor, plus supplies. One job took 2.25 hours and made use of $60 in supplies. How much did Patty ask?",
+          "d": "Patty's Plumbing charges $40 to visit a household to carry out a repair, plus $35 per hour, or part thereof, for labor, plus goods. One project took 2.25 hours and expended $60 in goods. How much did Patty charge?"
+        },
+        "bdq_probs": {
+          "A": 0.01120777614414692,
+          "B": 0.6720693707466125,
+          "C": 0.11678776890039444,
+          "D": 0.12431919574737549,
+          "E": 0.07540521025657654
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0194682814180851,
+            "B": 0.09886886924505234,
+            "C": 0.056333430111408234,
+            "D": 0.7305310368537903,
+            "E": 0.09287974238395691
+          },
+          "B": {
+            "A": 0.031140180304646492,
+            "B": 0.13956204056739807,
+            "C": 0.12316164374351501,
+            "D": 0.6657992601394653,
+            "E": 0.03998604416847229
+          },
+          "C": {
+            "A": 0.017874548211693764,
+            "B": 0.7140016555786133,
+            "C": 0.03784078359603882,
+            "D": 0.15931321680545807,
+            "E": 0.07069715112447739
+          },
+          "D": {
+            "A": 0.03860555216670036,
+            "B": 0.5006515383720398,
+            "C": 0.20869924128055573,
+            "D": 0.2364867776632309,
+            "E": 0.01511908695101738
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0194682814180851,
+          "B": 0.13956204056739807,
+          "C": 0.03784078359603882,
+          "D": 0.2364867776632309
+        },
+        "score": 0.10833947081118822
+      },
+      {
+        "record_index": 79,
+        "sample_id": "gsm8k_test_question_908",
+        "label": null,
+        "perturbations": {
+          "a": "Dean possesses 30 marbles. He donates 1/5 of them to Jamie and gives 10 to Donald. How many marbles remain for Dean?",
+          "b": "Dean holds 30 marbles. He transfers 1/5 of them to Jamie and gives 10 to Donald. How many marbles stay for Dean?",
+          "c": "Dean has 30 spheres. He provides 1/5 of them to Jamie and gives 10 to Donald. How many spheres are left for Dean?",
+          "d": "Dean retains 30 marbles. He allocates 1/5 of them to Jamie and gives 10 to Donald. How many marbles are available for Dean?"
+        },
+        "bdq_probs": {
+          "A": 0.012728224508464336,
+          "B": 0.5084273815155029,
+          "C": 0.050341058522462845,
+          "D": 0.32826417684555054,
+          "E": 0.1001155748963356
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01039794273674488,
+            "B": 0.4285295605659485,
+            "C": 0.024175962433218956,
+            "D": 0.2766779363155365,
+            "E": 0.259916216135025
+          },
+          "B": {
+            "A": 0.06284244358539581,
+            "B": 0.07580286264419556,
+            "C": 0.12497689574956894,
+            "D": 0.4362114667892456,
+            "E": 0.2998051941394806
+          },
+          "C": {
+            "A": 0.012405605055391788,
+            "B": 0.5615212321281433,
+            "C": 0.04067640006542206,
+            "D": 0.2340756058692932,
+            "E": 0.15113162994384766
+          },
+          "D": {
+            "A": 0.020173445343971252,
+            "B": 0.7111385464668274,
+            "C": 0.05837378278374672,
+            "D": 0.15867620706558228,
+            "E": 0.05151486396789551
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01039794273674488,
+          "B": 0.07580286264419556,
+          "C": 0.04067640006542206,
+          "D": 0.15867620706558228
+        },
+        "score": 0.07138835312798619
+      },
+      {
+        "record_index": 80,
+        "sample_id": "gsm8k_test_question_656",
+        "label": null,
+        "perturbations": {
+          "a": "Mike's instructor, assigns as homework the perusal of a 200-page novel. The task is to be finalized within 30 days. Mike intends to read 10 pages each day. How many days prior to the deadline will Mike complete his reading?",
+          "b": "Mike's educator, designates as homework the examination of a 200-page volume. The job is to be accomplished within 30 days. Mike aims to read 10 pages per day. How many days before the deadline will Mike conclude his reading?",
+          "c": "Mike's mentor, gives as homework the study of a 200-page manuscript. The duty is to be finished within 30 days. Mike proposes to read 10 pages daily. How many days ahead of the deadline will Mike wrap up his reading?",
+          "d": "Mike's professor, assigns as homework the review of a 200-page text. The assignment is to be achieved within 30 days. Mike chooses to read 10 pages every day. How many days before the deadline will Mike finalize his reading?"
+        },
+        "bdq_probs": {
+          "A": 0.019101621583104134,
+          "B": 0.21860693395137787,
+          "C": 0.04304610192775726,
+          "D": 0.6733502149581909,
+          "E": 0.04582301899790764
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04765145480632782,
+            "B": 0.1884680837392807,
+            "C": 0.20061787962913513,
+            "D": 0.4247013032436371,
+            "E": 0.13788659870624542
+          },
+          "B": {
+            "A": 0.02149875834584236,
+            "B": 0.06832344084978104,
+            "C": 0.08772804588079453,
+            "D": 0.734528124332428,
+            "E": 0.08773034065961838
+          },
+          "C": {
+            "A": 0.026609066873788834,
+            "B": 0.5689295530319214,
+            "C": 0.04121300205588341,
+            "D": 0.2860722839832306,
+            "E": 0.07699698209762573
+          },
+          "D": {
+            "A": 0.032948512583971024,
+            "B": 0.5660597085952759,
+            "C": 0.1431218683719635,
+            "D": 0.20823974907398224,
+            "E": 0.0494624488055706
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04765145480632782,
+          "B": 0.06832344084978104,
+          "C": 0.04121300205588341,
+          "D": 0.20823974907398224
+        },
+        "score": 0.09135691169649363
+      },
+      {
+        "record_index": 81,
+        "sample_id": "gsm8k_test_question_150",
+        "label": null,
+        "perturbations": {
+          "a": "Steve and Tim choose to see who can reach home from school the quickest. Steve resides further away than Tim, so he is permitted to ride his bike. Steve lives 3 miles from the school and can cycle at 440 feet per minute. Tim lives 2 miles distant from the school. If Tim can ride his scooter at 264 feet per minute, how long will the champion be waiting at their house before the defeated finishes the competition?",
+          "b": "Steve and Tim decide to see who can arrive home from school the swiftest. Steve dwells further away than Tim, so he is allowed to pedal his bike. Steve lives 3 miles from the school and can ride at 440 feet per minute. Tim lives 2 miles away from the school. If Tim can maneuver his skateboard at 264 feet per minute, how long will the victor be waiting at their house before the vanquished finishes the race?",
+          "c": "Steve and Tim resolve to see who can return home from school the soonest. Steve stays further away than Tim, so he is permitted to ride his bicycle. Steve lives 3 miles from the school and can bike at 440 feet per minute. Tim lives 2 miles away from the school. If Tim can glide on his skateboard at 264 feet per minute, how long will the first place be waiting at their house before the second place completes the race?",
+          "d": "Steve and Tim determine to see who can get home from school the quickest. Steve is situated further away than Tim, so he is allowed to ride on his bike. Steve lives 3 miles from the school and can cycle at 440 feet per minute. Tim lives 2 miles away from the school. If Tim can skateboard at 264 feet per minute, how long will the winner be waiting at their residence before the loser completes the contest?"
+        },
+        "bdq_probs": {
+          "A": 0.04770159348845482,
+          "B": 0.18866407871246338,
+          "C": 0.07388167828321457,
+          "D": 0.6584972143173218,
+          "E": 0.030798988416790962
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06096097454428673,
+            "B": 0.1556713730096817,
+            "C": 0.08332409709692001,
+            "D": 0.6156790256500244,
+            "E": 0.08332677185535431
+          },
+          "B": {
+            "A": 0.05439828708767891,
+            "B": 0.11516252160072327,
+            "C": 0.06984886527061462,
+            "D": 0.7054428458213806,
+            "E": 0.05439949408173561
+          },
+          "C": {
+            "A": 0.03256493806838989,
+            "B": 0.3501092195510864,
+            "C": 0.053690727800130844,
+            "D": 0.5093979239463806,
+            "E": 0.05369200184941292
+          },
+          "D": {
+            "A": 0.04762923717498779,
+            "B": 0.6176698207855225,
+            "C": 0.10083146393299103,
+            "D": 0.2134592980146408,
+            "E": 0.019855549558997154
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06096097454428673,
+          "B": 0.11516252160072327,
+          "C": 0.053690727800130844,
+          "D": 0.2134592980146408
+        },
+        "score": 0.11081838048994541
+      },
+      {
+        "record_index": 82,
+        "sample_id": "gsm8k_test_question_155",
+        "label": null,
+        "perturbations": {
+          "a": "Bill prepares 300 rolls, 120 chocolate croissants, and 60 baguettes each day. Each roll is 4 inches lengthy, each croissant is 6 inches lengthy, and each baguette is two feet lengthy. If Bill places all the baked goods end to end, how lengthy will they be in feet?",
+          "b": "Bill cooks 300 rolls, 120 chocolate croissants, and 60 baguettes every day. Each roll is 4 inches tall, each croissant is 6 inches tall, and each baguette is two feet tall. If Bill arranges all the baked goods end to end, how tall will they be in feet?",
+          "c": "Bill crafts 300 rolls, 120 chocolate croissants, and 60 baguettes daily. Each roll is 4 inches wide, each croissant is 6 inches wide, and each baguette is two feet wide. If Bill positions all the baked goods end to end, how wide will they be in feet?",
+          "d": "Bill makes 300 rolls, 120 chocolate croissants, and 60 baguettes every day. Each roll is 4 inches long, each croissant is 6 inches long, and each baguette is two feet long. If Bill aligns all the baked goods end to end, how long will they be in feet?"
+        },
+        "bdq_probs": {
+          "A": 0.0033509584609419107,
+          "B": 0.015017969533801079,
+          "C": 0.00314793991856277,
+          "D": 0.9291272759437561,
+          "E": 0.04924222454428673
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.005178497172892094,
+            "B": 0.009088554419577122,
+            "C": 0.003788683330640197,
+            "D": 0.8708889484405518,
+            "E": 0.11072182655334473
+          },
+          "B": {
+            "A": 0.011215079575777054,
+            "B": 0.014400464482605457,
+            "C": 0.0034204155672341585,
+            "D": 0.9483836889266968,
+            "E": 0.0223039872944355
+          },
+          "C": {
+            "A": 0.13460177183151245,
+            "B": 0.26768940687179565,
+            "C": 0.07204773277044296,
+            "D": 0.4413435757160187,
+            "E": 0.08164151757955551
+          },
+          "D": {
+            "A": 0.2977124750614166,
+            "B": 0.2796752154827118,
+            "C": 0.0456557497382164,
+            "D": 0.3373526632785797,
+            "E": 0.037849996238946915
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.005178497172892094,
+          "B": 0.014400464482605457,
+          "C": 0.07204773277044296,
+          "D": 0.3373526632785797
+        },
+        "score": 0.10724483942613006
+      },
+      {
+        "record_index": 85,
+        "sample_id": "gsm8k_test_question_1227",
+        "label": null,
+        "perturbations": {
+          "a": "Susan requests 3 publications that deliver 12 editions a year. She has 1 publication that delivers 6 editions a year. Her final publication delivers her 4 times the number of the 6 edition publication. How many publications does she receive every year?",
+          "b": "Susan buys 3 journals that provide 12 releases a year. She has 1 journal that provides 6 releases a year. Her ultimate journal provides her 4 times the total of the 6 release journal. How many journals does she acquire every year?",
+          "c": "Susan obtains 3 periodicals that transmit 12 issues a year. She has 1 periodical that transmits 6 issues a year. Her concluding periodical transmits her 4 times the figure of the 6 issue periodical. How many periodicals does she secure every year?",
+          "d": "Susan takes 3 brochures that send out 12 copies a year. She has 1 brochure that sends out 6 copies a year. Her last brochure sends out her 4 times the number of the 6 copy brochure. How many brochures does she gain every year?"
+        },
+        "bdq_probs": {
+          "A": 0.022500431165099144,
+          "B": 0.14672212302684784,
+          "C": 0.2575019598007202,
+          "D": 0.33063805103302,
+          "E": 0.24190591275691986
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.008880219422280788,
+            "B": 0.030995026230812073,
+            "C": 0.5161082148551941,
+            "D": 0.06561663001775742,
+            "E": 0.37759894132614136
+          },
+          "B": {
+            "A": 0.04133651405572891,
+            "B": 0.09916254878044128,
+            "C": 0.26954737305641174,
+            "D": 0.14427857100963593,
+            "E": 0.4444114863872528
+          },
+          "C": {
+            "A": 0.03579555079340935,
+            "B": 0.3396221697330475,
+            "C": 0.11025925725698471,
+            "D": 0.10357837378978729,
+            "E": 0.4096613824367523
+          },
+          "D": {
+            "A": 0.01808253675699234,
+            "B": 0.26572227478027344,
+            "C": 0.23449818789958954,
+            "D": 0.36319535970687866,
+            "E": 0.11791449785232544
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.008880219422280788,
+          "B": 0.09916254878044128,
+          "C": 0.11025925725698471,
+          "D": 0.36319535970687866
+        },
+        "score": 0.14537434629164636
+      },
+      {
+        "record_index": 86,
+        "sample_id": "gsm8k_test_question_655",
+        "label": null,
+        "perturbations": {
+          "a": "Shiela is obligated to present a 15-page research article. She already completed composing 1/3 of the article. How many pages does she have remaining to compose?",
+          "b": "Shiela is mandated to deliver a 15-page research document. She already accomplished drafting 1/3 of the document. How many pages does she have left to draft?",
+          "c": "Shiela is needed to submit a 15-page research essay. She already finished writing 1/3 of the essay. How many pages does she have yet to write?",
+          "d": "Shiela is tasked to submit a 15-page research study. She already wrapped up writing 1/3 of the study. How many pages does she have to write still?"
+        },
+        "bdq_probs": {
+          "A": 0.013648067601025105,
+          "B": 0.3106292486190796,
+          "C": 0.31062552332878113,
+          "D": 0.25751736760139465,
+          "E": 0.10735180228948593
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.02609628066420555,
+            "B": 0.15017573535442352,
+            "C": 0.21849939227104187,
+            "D": 0.4345353841781616,
+            "E": 0.17017054557800293
+          },
+          "B": {
+            "A": 0.029467279091477394,
+            "B": 0.08010120689868927,
+            "C": 0.46094122529029846,
+            "D": 0.2795754075050354,
+            "E": 0.14964915812015533
+          },
+          "C": {
+            "A": 0.012495249509811401,
+            "B": 0.4404747784137726,
+            "C": 0.03190767019987106,
+            "D": 0.3887121379375458,
+            "E": 0.12619882822036743
+          },
+          "D": {
+            "A": 0.011537513695657253,
+            "B": 0.34787943959236145,
+            "C": 0.2390919178724289,
+            "D": 0.288398802280426,
+            "E": 0.11294091492891312
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.02609628066420555,
+          "B": 0.08010120689868927,
+          "C": 0.03190767019987106,
+          "D": 0.288398802280426
+        },
+        "score": 0.10662599001079798
+      }
+    ]
+  }
+}

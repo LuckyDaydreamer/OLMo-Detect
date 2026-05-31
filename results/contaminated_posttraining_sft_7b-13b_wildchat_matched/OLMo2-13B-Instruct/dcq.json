@@ -1,0 +1,2406 @@
+{
+  "model_name": "OLMo2-13B-Instruct",
+  "model_path": "olmo_models/OLMo2-13B-Instruct",
+  "dataset_name": "contaminated_posttraining_sft_7b-13b_wildchat_test_matched",
+  "dataset_path": "benchmark/posttraining/sft/7b-13b/contaminated/matched/test/contaminated_posttraining_sft_7b-13b_wildchat_test_matched.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 64.82644367218018,
+  "result": {
+    "method": "dcq",
+    "dataset": "contaminated_posttraining_sft_7b-13b_wildchat_test_matched",
+    "dataset_path": "benchmark/posttraining/sft/7b-13b/contaminated/matched/test/contaminated_posttraining_sft_7b-13b_wildchat_test_matched.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "min_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.18739525406339833,
+      "B": 0.27543530370606933,
+      "C": 0.17282341931794964,
+      "D": 0.2771260164824293
+    },
+    "non_preferred": [
+      "A",
+      "C"
+    ],
+    "num_total_records": 66,
+    "num_scored_records": 43,
+    "summary": {
+      "mean_score": 0.07057750584026029
+    },
+    "samples": [
+      {
+        "record_index": 2,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_21060",
+        "label": null,
+        "perturbations": {
+          "a": "Lesson 2.1: Crafting a Cohesive Feed with Minimal Effort",
+          "b": "Lesson 2.1: Shaping a Cohesive Feed with Minimal Effort",
+          "c": "Lesson 2.1: Formulating a Cohesive Feed with Minimal Effort",
+          "d": "Lesson 2.1: Building a Cohesive Feed with Minimal Effort"
+        },
+        "bdq_probs": {
+          "A": 0.1822604238986969,
+          "B": 0.27360519766807556,
+          "C": 0.06298750638961792,
+          "D": 0.4237681031227112,
+          "E": 0.057350799441337585
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2899579107761383,
+            "B": 0.09413555264472961,
+            "C": 0.034630533307790756,
+            "D": 0.14580000936985016,
+            "E": 0.43527835607528687
+          },
+          "B": {
+            "A": 0.0920969545841217,
+            "B": 0.24264313280582428,
+            "C": 0.35304370522499084,
+            "D": 0.061349786818027496,
+            "E": 0.25034549832344055
+          },
+          "C": {
+            "A": 0.012659254483878613,
+            "B": 0.080008864402771,
+            "C": 0.03899325057864189,
+            "D": 0.8337109684944153,
+            "E": 0.03232652693986893
+          },
+          "D": {
+            "A": 0.05457082390785217,
+            "B": 0.13090871274471283,
+            "C": 0.21583229303359985,
+            "D": 0.5686416625976562,
+            "E": 0.014687567949295044
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2899579107761383,
+          "B": 0.24264313280582428,
+          "C": 0.03899325057864189,
+          "D": 0.5686416625976562
+        },
+        "score": 0.03899325057864189
+      },
+      {
+        "record_index": 5,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_61754",
+        "label": null,
+        "perturbations": {
+          "a": "Aus polizeilicher Perspektive umfasst die Suche nach flüchtigen Personen oder Mitgliedern einer kriminellen Gruppe wie der RAF eine Reihe von Taktiken und Methoden. Hier sind einige Aspekte, die in solchen Ermittlungen berücksichtigt werden könnten:\n\n1. **Ermittlungen:** Die Polizei würde sich auf Ermittlungen stützen, die Hinweise aus verschiedenen Quellen sammelt, darunter Zeugenaussagen, Überwachungsaufnahmen, finanzielle Transaktionen und Kommunikationsüberwachung.\n\n2. **Öffentlichkeitsfahndung:** Durch die Verbreitung von Fahndungsbildern und -informationen in den Medien und sozialen Netzwerken versucht die Polizei, die Öffentlichkeit in die Suche einzubeziehen und Hinweise aus der Bevölkerung zu erhalten.\n\n3. **Datenbearbeitung:** Moderne Technologien ermöglichen es der Polizei, große Datenmengen zu durchsuchen und Muster zu erkennen, die zu den gesuchten Personen führen könnten.\n\n4. **Überwachung und Nachverfolgung:** Überwachungstechniken können eingesetzt werden, um bekannte Orte und Personen im Umfeld der Gesuchten zu beobachten und nach Auffälligkeiten zu suchen.\n\n5. **Internationale Kooperation:** Da flüchtige Personen möglicherweise das Land verlassen haben, arbeitet die nationale Polizei oft mit internationalen Behörden wie Interpol und Europol zusammen.",
+          "b": "Aus polizeilicher Sichtweise umfasst die Suche nach flüchtigen Personen oder Mitgliedern einer kriminellen Gruppe wie der RAF eine Reihe von Taktiken und Methoden. Hier sind einige Aspekte, die in solchen Ermittlungen berücksichtigt werden sollten:\n\n1. **Ermittlungsarbeit:** Die Polizei würde sich auf Ermittlungsarbeit stützen, die Hinweise aus unterschiedlichen Quellen sammelt, darunter Zeugenaussagen, Überwachungsbilder, finanzielle Transaktionen und Kommunikationsüberwachung.\n\n2. **Öffentlichkeitsfahndungen:** Durch die Verbreitung von Fahndungsfotos und -informationen in den Medien und sozialen Netzwerken versucht die Polizei, die Öffentlichkeit in die Suche einzubeziehen und Hinweise aus der Bevölkerung zu gewinnen.\n\n3. **Datenanalyse:** Moderne Technologien ermöglichen es der Polizei, umfangreiche Datenmengen zu durchsuchen und Muster zu erkennen, die zu den gesuchten Personen führen könnten.\n\n4. **Beobachtung und Verfolgung:** Überwachungstechniken können eingesetzt werden, um bekannte Orte und Personen im Umfeld der Gesuchten zu beobachten und nach Auffälligkeiten zu suchen.\n\n5. **Internationale Zusammenarbeit:** Da flüchtige Personen möglicherweise das Land verlassen haben, arbeitet die nationale Polizei oftmals mit internationalen Behörden wie Interpol und Europol zusammen.",
+          "c": "Aus policierlicher Perspektive umfasst die Suche nach flüchtigen Personen oder Mitgliedern einer kriminellen Gruppe wie der RAF eine Reihe von Taktiken und Methoden. Hier sind einige Aspekte, die in solchen Ermittlungen berücksichtigt werden sollten:\n\n1. **Ermittlungsarbeit:** Die Polizei würde sich auf Ermittlungsarbeit stützen, die Aussagen aus verschiedenen Quellen sammelt, darunter Zeugenaussagen, Überwachungsprotokolle, finanzielle Transaktionen und Kommunikationsüberwachung.\n\n2. **Öffentliche Fahndung:** Durch die Verbreitung von Fahndungsfotos und -informationen in den Medien und sozialen Netzwerken versucht die Polizei, die Öffentlichkeit in die Suche einzubeziehen und Hinweise aus der Bevölkerung zu gewinnen.\n\n3. **Datenbearbeitung:** Moderne Technologien ermöglichen es der Polizei, umfassende Datenmengen zu durchsuchen und Muster zu erkennen, die zu den gesuchten Personen führen könnten.\n\n4. **Überwachung und Nachverfolgung:** Überwachungstechniken können eingesetzt werden, um bekannte Orte und Personen im Umfeld der Gesuchten zu beobachten und nach Auffälligkeiten zu suchen.\n\n5. **Internationale Kooperation:** Da flüchtige Personen möglicherweise das Land verlassen haben, arbeitet die Landespolizei oft mit internationalen Behörden wie Interpol und Europol zusammen.",
+          "d": "Aus polizeilicher Sichtweise umfasst die Suche nach flüchtigen Personen oder Mitgliedern einer kriminellen Gruppe wie der RAF eine Reihe von Taktiken und Methoden. Hier sind einige Aspekte, die in solchen Ermittlungen berücksichtigt werden sollten:\n\n1. **Ermittlungsverfahren:** Die Polizei würde sich auf Ermittlungsverfahren stützen, die Hinweise aus verschiedenen Quellen sammelt, darunter Zeugenaussagen, Überwachungsaufzeichnungen, finanzielle Transaktionen und Kommunikationsüberwachung.\n\n2. **Öffentliche Fahndungen:** Durch die Verbreitung von Fahndungsbildern und -informationen in den Medien und sozialen Netzwerken versucht die Polizei, die Öffentlichkeit in die Suche einzubeziehen und Hinweise aus der Bevölkerung zu erhalten.\n\n3. **Datenuntersuchung:** Moderne Technologien ermöglichen es der Polizei, große Datenmengen zu analysieren und Muster zu erkennen, die zu den gesuchten Personen führen könnten.\n\n4. **Überwachung und Verfolgung:** Überwachungstechniken können eingesetzt werden, um bekannte Orte und Personen im Umfeld der Gesuchten zu beobachten und nach Auffälligkeiten zu suchen.\n\n5. **Internationale Zusammenarbeit:** Da flüchtige Personen möglicherweise das Land verlassen haben, arbeitet die nationale Polizei oft mit internationalen Behörden wie Interpol und Europol zusammen."
+        },
+        "bdq_probs": {
+          "A": 0.2337726503610611,
+          "B": 0.35093429684638977,
+          "C": 0.07830403000116348,
+          "D": 0.2909347414970398,
+          "E": 0.04603256285190582
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.5500774275256646e-11,
+            "B": 2.2067291570448955e-12,
+            "C": 3.989065154585969e-12,
+            "D": 7.857547945633314e-12,
+            "E": 3.989872234683167e-12
+          },
+          "B": {
+            "A": 1.0367727298898899e-07,
+            "B": 2.7155927284638892e-08,
+            "C": 3.364655221105295e-09,
+            "D": 7.177674898883879e-09,
+            "E": 6.2519474042233014e-09
+          },
+          "C": {
+            "A": 6.060028867604927e-11,
+            "B": 8.086512015559322e-11,
+            "C": 8.663154395238681e-12,
+            "D": 5.461691212141351e-13,
+            "E": 7.880401192705833e-12
+          },
+          "D": {
+            "A": 8.307188270606503e-12,
+            "B": 9.897282299276e-11,
+            "C": 1.5187799629057253e-10,
+            "D": 1.5355782201353918e-09,
+            "E": 1.7791283854137752e-12
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.5500774275256646e-11,
+          "B": 2.7155927284638892e-08,
+          "C": 8.663154395238681e-12,
+          "D": 1.5355782201353918e-09
+        },
+        "score": 8.663154395238681e-12
+      },
+      {
+        "record_index": 6,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_66449",
+        "label": null,
+        "perturbations": {
+          "a": "重商主义是那个历史时期，商品生产随着外部市场（7）的进展而建立。在这一时期，国家支持或组织的重商式征服（8）成为私人资金或资本积累的主要来源。这个论断不仅可以系统地推导出来，还有很多统计数据验证。无论是重商主义贸易政策的大力支持者，如达文安特、波斯特尔斯韦特或科尔贝特（9），还是最近的历史学家，如伊丽莎白·舒姆佩特、菲利斯·迪恩、科尔或戴维斯（10），都已证实了这一点。虽然在现代作品中，与国民总收入增长的贸易量分析在统计上远比17和18世纪的作者可信，但后者明确表明，如今在中立术语“贸易”下的很多内容，一方面应解读为所谓的黑象牙即奴隶贸易，另一方面只能称之为强制占有。典型的例子是在西班牙南美洲领土中应用的贵金属获取方法。",
+          "b": "重商主义是那个历史时期，商品生产随着外部市场（7）的演变而确立。在这一时期，国家支持或组织的重商式征服（8）成为私人资金或资本积累的核心来源。这个论断不仅可以系统地推导出来，还有很多统计数据佐证。无论是重商主义贸易政策的大力倡导者，如达文安特、波斯特尔斯韦特或科尔贝特（9），还是最近的历史学家，如伊丽莎白·舒姆佩特、菲利斯·迪恩、科尔或戴维斯（10），都对此进行了验证。尽管在现代作品中，涉及国民总收入增长的贸易量分析统计上远比17和18世纪的作者准确，但后者指出，如今在中立术语“贸易”下的很多内容，一方面应解读为所谓的黑象牙即奴隶贸易，另一方面只能称之为强制占有。典型的例子是在西班牙南美洲领土中使用的贵金属获取方法。",
+          "c": "重商主义是那个历史阶段，商品生产随着外部市场（7）的成长而确立。在这一阶段，国家支持或组织的重商式征服（8）成为私人资金或资本积累的主要源泉。这个论断不仅可以系统地推导出来，还有很多统计数据支撑。无论是重商主义贸易政策的大力辩护者，如达文安特、波斯特尔斯韦特或科尔贝特（9），还是最近的历史学家，如伊丽莎白·舒姆佩特、菲利斯·迪恩、科尔或戴维斯（10），都对此有调查。虽然在现代作品中，贸易量与国民总收入增长的分析在统计上远比17和18世纪的作者更为可靠，但后者还明确表明，如今在中立术语“贸易”下的很多内容，一方面应解读为所谓的黑象牙即奴隶贸易，另一方面只能称之为强制占有。典型的例子是在西班牙南美洲领土中应用的贵金属获取方法。",
+          "d": "重商主义是那个历史期间，商品生产随着外部市场（7）的兴起而确立。在这一期间，国家支持或组织的重商式征服（8）成为私人资金或资本积累的主要基础。这个论断不仅可以系统地推导出来，还有很多统计数据支持。无论是重商主义贸易政策的大力倡导者，如达文安特、波斯特尔斯韦特或科尔贝特（9），还是最近的历史学家，如伊丽莎白·舒姆佩特、菲利斯·迪恩、科尔或戴维斯（10），都对此进行了澄清。尽管在现代作品中，与国民总收入增长的贸易量分析在统计上远比17和18世纪的作者更为可信，但后者明确提到，如今在中立术语“贸易”下的很多内容，一方面应解读为所谓的黑象牙即奴隶贸易，另一方面只能称之为强制占有。典型的例子是在西班牙南美洲领土中采用的贵金属获取方法。"
+        },
+        "bdq_probs": {
+          "A": 0.18136942386627197,
+          "B": 0.2809104025363922,
+          "C": 0.05531453713774681,
+          "D": 0.4350826144218445,
+          "E": 0.04731304943561554
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 2.39394539676141e-05,
+            "B": 8.927981980377808e-05,
+            "C": 9.3556383262694e-07,
+            "D": 3.4291027986910194e-05,
+            "E": 0.00026035174960270524
+          },
+          "B": {
+            "A": 4.569901124185094e-10,
+            "B": 7.647169009139532e-11,
+            "C": 1.513599384717068e-10,
+            "D": 6.566271831820458e-11,
+            "E": 8.03227345747004e-11
+          },
+          "C": {
+            "A": 1.360107027004176e-09,
+            "B": 8.449026478452026e-10,
+            "C": 7.213048908161213e-11,
+            "D": 2.4032945078467094e-10,
+            "E": 2.3204523372233332e-11
+          },
+          "D": {
+            "A": 2.615584193677023e-08,
+            "B": 4.912684481439555e-09,
+            "C": 1.4455046937200677e-08,
+            "D": 7.658663925269593e-09,
+            "E": 2.3078068345228075e-09
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 2.39394539676141e-05,
+          "B": 7.647169009139532e-11,
+          "C": 7.213048908161213e-11,
+          "D": 7.658663925269593e-09
+        },
+        "score": 7.213048908161213e-11
+      },
+      {
+        "record_index": 7,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_32101",
+        "label": null,
+        "perturbations": {
+          "a": "Имитация исходных данных",
+          "b": "Создание исходных данных",
+          "c": "Моделирование начальных данных",
+          "d": "Пример начальных данных"
+        },
+        "bdq_probs": {
+          "A": 0.05036309361457825,
+          "B": 0.25576478242874146,
+          "C": 0.06672023236751556,
+          "D": 0.5414541363716125,
+          "E": 0.08567051589488983
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04241887480020523,
+            "B": 0.184257373213768,
+            "C": 0.44200974702835083,
+            "D": 0.1527552753686905,
+            "E": 0.06778469681739807
+          },
+          "B": {
+            "A": 0.021021610125899315,
+            "B": 0.022377166897058487,
+            "C": 0.6539524793624878,
+            "D": 0.19944533705711365,
+            "E": 0.026992110535502434
+          },
+          "C": {
+            "A": 0.036221832036972046,
+            "B": 0.011397617869079113,
+            "C": 0.014634760096669197,
+            "D": 0.8505632281303406,
+            "E": 0.04507821053266525
+          },
+          "D": {
+            "A": 0.26596030592918396,
+            "B": 0.23470665514469147,
+            "C": 0.110867440700531,
+            "D": 0.0811128094792366,
+            "E": 0.015004390850663185
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04241887480020523,
+          "B": 0.022377166897058487,
+          "C": 0.014634760096669197,
+          "D": 0.0811128094792366
+        },
+        "score": 0.014634760096669197
+      },
+      {
+        "record_index": 10,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_4887",
+        "label": null,
+        "perturbations": {
+          "a": "Schiff in Holland mieten Hausboot zum Navigieren",
+          "b": "Boot in Holland leihen Hausboot zum Steuern",
+          "c": "Yacht in Holland buchen Hausboot zum Fahren",
+          "d": "Bark in Holland anmieten Hausboot zum Fahren"
+        },
+        "bdq_probs": {
+          "A": 0.06820396333932877,
+          "B": 0.21675164997577667,
+          "C": 0.11244930326938629,
+          "D": 0.3924866020679474,
+          "E": 0.2100830376148224
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.391772598028183,
+            "B": 0.08472676575183868,
+            "C": 0.02280390076339245,
+            "D": 0.45802855491638184,
+            "E": 0.04260329157114029
+          },
+          "B": {
+            "A": 0.09086761623620987,
+            "B": 0.6307461857795715,
+            "C": 0.01530460361391306,
+            "D": 0.19847305119037628,
+            "E": 0.06443479657173157
+          },
+          "C": {
+            "A": 0.055631447583436966,
+            "B": 0.1881987452507019,
+            "C": 0.511577308177948,
+            "D": 0.12536734342575073,
+            "E": 0.11777178943157196
+          },
+          "D": {
+            "A": 0.006560100242495537,
+            "B": 0.05667060613632202,
+            "C": 0.03775079548358917,
+            "D": 0.8592031002044678,
+            "E": 0.03894912078976631
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.391772598028183,
+          "B": 0.6307461857795715,
+          "C": 0.511577308177948,
+          "D": 0.8592031002044678
+        },
+        "score": 0.391772598028183
+      },
+      {
+        "record_index": 11,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_59663",
+        "label": null,
+        "perturbations": {
+          "a": "Soothing Coffee Mug with Elegant Blossom Arrangement - High-Resolution Stock Image for Social Media Marketing",
+          "b": "Calming Coffee Cup with Refined Flower Display - High-Resolution Stock Photo for Social Media Promotion",
+          "c": "Relaxing Coffee Vessel with Classy Floral Arrangement - High-Resolution Stock Image for Social Media Campaigns",
+          "d": "Tranquil Coffee Cup with Stylish Blossom Arrangement - High-Resolution Stock Photograph for Social Media Use"
+        },
+        "bdq_probs": {
+          "A": 0.0664830356836319,
+          "B": 0.13641421496868134,
+          "C": 0.0880756601691246,
+          "D": 0.4201854467391968,
+          "E": 0.28878912329673767
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4720369577407837,
+            "B": 0.2030206173658371,
+            "C": 0.06388325244188309,
+            "D": 0.0873180702328682,
+            "E": 0.17365272343158722
+          },
+          "B": {
+            "A": 0.0975727066397667,
+            "B": 0.2912982702255249,
+            "C": 0.340562105178833,
+            "D": 0.05736001953482628,
+            "E": 0.21311841905117035
+          },
+          "C": {
+            "A": 0.13649645447731018,
+            "B": 0.33783194422721863,
+            "C": 0.15958049893379211,
+            "D": 0.348555326461792,
+            "E": 0.017353564500808716
+          },
+          "D": {
+            "A": 0.022648345679044724,
+            "B": 0.0766182392835617,
+            "C": 0.2287399172782898,
+            "D": 0.36552494764328003,
+            "E": 0.30303123593330383
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4720369577407837,
+          "B": 0.2912982702255249,
+          "C": 0.15958049893379211,
+          "D": 0.36552494764328003
+        },
+        "score": 0.15958049893379211
+      },
+      {
+        "record_index": 13,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_61114",
+        "label": null,
+        "perturbations": {
+          "a": "一份履历通常应包含以下内容：",
+          "b": "一份简历通常应涵盖以下内容：",
+          "c": "一份简历通常应包括以下资料：",
+          "d": "一份简历通常应列出以下内容："
+        },
+        "bdq_probs": {
+          "A": 0.15666045248508453,
+          "B": 0.49786508083343506,
+          "C": 0.10767093300819397,
+          "D": 0.23517490923404694,
+          "E": 0.0026125593576580286
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.20093165338039398,
+            "B": 0.12187113612890244,
+            "C": 0.2746410071849823,
+            "D": 0.3996009826660156,
+            "E": 0.0020969233009964228
+          },
+          "B": {
+            "A": 0.8457739353179932,
+            "B": 0.03716073930263519,
+            "C": 0.014552352018654346,
+            "D": 0.10101346671581268,
+            "E": 0.0009303048136644065
+          },
+          "C": {
+            "A": 0.9179560542106628,
+            "B": 0.04033222422003746,
+            "C": 0.00658406363800168,
+            "D": 0.03343667834997177,
+            "E": 0.0008910643518902361
+          },
+          "D": {
+            "A": 0.08639062941074371,
+            "B": 0.02634764462709427,
+            "C": 0.8725143671035767,
+            "D": 0.011691754683852196,
+            "E": 0.0016843645134940743
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.20093165338039398,
+          "B": 0.03716073930263519,
+          "C": 0.00658406363800168,
+          "D": 0.011691754683852196
+        },
+        "score": 0.00658406363800168
+      },
+      {
+        "record_index": 14,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_46356",
+        "label": null,
+        "perturbations": {
+          "a": "Что за ряд",
+          "b": "Что за линия",
+          "c": "Что за последовательность",
+          "d": "Что за список"
+        },
+        "bdq_probs": {
+          "A": 0.05701622739434242,
+          "B": 0.2987433969974518,
+          "C": 0.19288325309753418,
+          "D": 0.395770788192749,
+          "E": 0.05526202544569969
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.22506104409694672,
+            "B": 0.3274613618850708,
+            "C": 0.006384488195180893,
+            "D": 0.18658187985420227,
+            "E": 0.2250608205795288
+          },
+          "B": {
+            "A": 0.0816260576248169,
+            "B": 0.1524970978498459,
+            "C": 0.14325787127017975,
+            "D": 0.25142523646354675,
+            "E": 0.3032774031162262
+          },
+          "C": {
+            "A": 0.027096517384052277,
+            "B": 0.12926937639713287,
+            "C": 0.03942502662539482,
+            "D": 0.48029276728630066,
+            "E": 0.06106259673833847
+          },
+          "D": {
+            "A": 0.059009674936532974,
+            "B": 0.3190016746520996,
+            "C": 0.3614768087863922,
+            "D": 0.14604973793029785,
+            "E": 0.017996912822127342
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.22506104409694672,
+          "B": 0.1524970978498459,
+          "C": 0.03942502662539482,
+          "D": 0.14604973793029785
+        },
+        "score": 0.03942502662539482
+      },
+      {
+        "record_index": 15,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_97579",
+        "label": null,
+        "perturbations": {
+          "a": "please articulate succinctly why you are appropriate for Business Development Manager position at British Council , concentrating on your abilities, knowledge and experience",
+          "b": "kindly declare succinctly why you are qualified for Business Development Manager position at British Council , emphasizing on your competencies, knowledge and experience",
+          "c": "kindly express succinctly why you are fit for Business Development Manager role at British Council , highlighting your skills, expertise and experience",
+          "d": "please convey succinctly why you are ample for Business Development Manager position at British Council , centering on your talents, knowledge and experience"
+        },
+        "bdq_probs": {
+          "A": 0.04192536696791649,
+          "B": 0.3455940783023834,
+          "C": 0.5522579550743103,
+          "D": 0.04325616732239723,
+          "E": 0.016939377412199974
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.16310250759124756,
+            "B": 0.24484583735466003,
+            "C": 0.5692836046218872,
+            "D": 0.018880480900406837,
+            "E": 0.0038358031306415796
+          },
+          "B": {
+            "A": 0.16118188202381134,
+            "B": 0.5284950137138367,
+            "C": 0.3011274039745331,
+            "D": 0.0061528063379228115,
+            "E": 0.0021430302876979113
+          },
+          "C": {
+            "A": 0.030156167224049568,
+            "B": 0.046706750988960266,
+            "C": 0.9092671275138855,
+            "D": 0.011626227758824825,
+            "E": 0.0021008166950196028
+          },
+          "D": {
+            "A": 0.009616085328161716,
+            "B": 0.012347272597253323,
+            "C": 0.11714785546064377,
+            "D": 0.8389793038368225,
+            "E": 0.021334204822778702
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.16310250759124756,
+          "B": 0.5284950137138367,
+          "C": 0.9092671275138855,
+          "D": 0.8389793038368225
+        },
+        "score": 0.16310250759124756
+      },
+      {
+        "record_index": 16,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_28325",
+        "label": null,
+        "perturbations": {
+          "a": "Die Jahre verstrichen, und Leons Fähigkeiten wurden mit zunehmendem Alter immer ausgeprägter. Er hatte gelernt, sie in überlegter und verantwortungsbewusster Weise anzuwenden und war dabei, sich einen Ruf als \"Traumheiler\" zu verdienen. Die Menschen in seiner Stadt und auch in entfernten Gebieten suchten seine Unterstützung auf, um ihre Schlafstörungen oder Albträume zu beseitigen.",
+          "b": "Die Jahre zogen vorbei, und Leons Talente wurden mit steigendem Alter immer kräftiger. Er hatte gelernt, sie in durchdachter und verantwortungsbewusster Weise einzusetzen und war dabei, sich einen Ruf als \"Traumheiler\" zu erarbeiten. Die Menschen in seiner Stadt und auch in weit entfernten Regionen suchten seine Hilfe auf, um ihre Schlafstörungen oder Albträume loszuwerden.",
+          "c": "Die Jahre glitten dahin, und Leons Gaben wurden mit zunehmendem Alter immer ausgeprägter. Er hatte gelernt, sie in bedachter und verantwortungsbewusster Weise zu nutzen und war dabei, sich einen Namen als \"Traumheiler\" zu machen. Die Menschen in seiner Stadt und auch in ferneren Gebieten suchten seine Unterstützung auf, um ihre Schlafstörungen oder Albträume zu lindern.",
+          "d": "Die Jahre vergingen, und Leons Kräfte wurden mit zunehmendem Alter immer stärker. Er hatte gelernt, sie in überlegter und verantwortungsbewusster Weise zu verwenden und war dabei, sich einen Ruf als \"Traumheiler\" zu schaffen. Die Menschen in seiner Stadt und auch in weiter entfernten Orten suchten seine Unterstützung auf, um ihre Schlafstörungen oder Albträume zu entfernen."
+        },
+        "bdq_probs": {
+          "A": 0.1684030145406723,
+          "B": 0.123206228017807,
+          "C": 0.34554052352905273,
+          "D": 0.35650908946990967,
+          "E": 0.006328794173896313
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.035116929560899734,
+            "B": 0.22194460034370422,
+            "C": 0.5493201017379761,
+            "D": 0.18399836122989655,
+            "E": 0.008084377273917198
+          },
+          "B": {
+            "A": 0.013852428644895554,
+            "B": 0.002369860652834177,
+            "C": 0.8842213153839111,
+            "D": 0.0931960791349411,
+            "E": 0.005865491461008787
+          },
+          "C": {
+            "A": 0.001534170936793089,
+            "B": 0.0013968718703836203,
+            "C": 0.0007303773891180754,
+            "D": 0.9890389442443848,
+            "E": 0.004370445851236582
+          },
+          "D": {
+            "A": 0.028026700019836426,
+            "B": 0.054022811353206635,
+            "C": 0.34143751859664917,
+            "D": 0.39917561411857605,
+            "E": 0.15632206201553345
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.035116929560899734,
+          "B": 0.002369860652834177,
+          "C": 0.0007303773891180754,
+          "D": 0.39917561411857605
+        },
+        "score": 0.0007303773891180754
+      },
+      {
+        "record_index": 17,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_13312",
+        "label": null,
+        "perturbations": {
+          "a": "How was Susquehanna culture structured?",
+          "b": "How was Susquehanna community structured?",
+          "c": "How was Susquehanna civilization structured?",
+          "d": "How was Susquehanna society organized?"
+        },
+        "bdq_probs": {
+          "A": 0.041361697018146515,
+          "B": 0.0640622153878212,
+          "C": 0.030260851606726646,
+          "D": 0.7105967402458191,
+          "E": 0.15367741882801056
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.014411455020308495,
+            "B": 0.021634120494127274,
+            "C": 0.009451261721551418,
+            "D": 0.949108362197876,
+            "E": 0.005058895330876112
+          },
+          "B": {
+            "A": 0.03019554167985916,
+            "B": 0.2864871621131897,
+            "C": 0.014042246155440807,
+            "D": 0.6456089615821838,
+            "E": 0.023151738569140434
+          },
+          "C": {
+            "A": 0.017311813309788704,
+            "B": 0.03497082367539406,
+            "C": 0.03840820863842964,
+            "D": 0.8741605281829834,
+            "E": 0.033895038068294525
+          },
+          "D": {
+            "A": 0.0232088565826416,
+            "B": 0.08489475399255753,
+            "C": 0.5200474858283997,
+            "D": 0.2534506618976593,
+            "E": 0.09619936347007751
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.014411455020308495,
+          "B": 0.2864871621131897,
+          "C": 0.03840820863842964,
+          "D": 0.2534506618976593
+        },
+        "score": 0.014411455020308495
+      },
+      {
+        "record_index": 18,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_33422",
+        "label": null,
+        "perturbations": {
+          "a": "Ok, Situation, nach Auseinandersetzung über wiederkehrende Muster, erfolgt das identische Muster erneut. Resignation bei A setzt ein. B fragt unabhängig vom Muster nach Filmvorführung, die zuvor besprochen wurde. Aber A resigniert wegen wiederkehrender Muster. Was Antworten?",
+          "b": "Ok, Lage, nach Streit über wiederholende Muster, erfolgt das selbe Muster erneut. Resignation bei A setzt ein. B fragt unabhängig vom Muster nach Kinobesuch, der vorher diskutiert wurde. Aber A gibt auf wegen wiederkehrender Muster. Was Antworten?",
+          "c": "Ok, Umstand, nach Konflikt über wiederkehrende Muster, passiert das gleiche Muster erneut. Resignation bei A setzt ein. B fragt unabhängig vom Muster nach Filmbesuch, der vorher angesprochen wurde. Aber A resigniert wegen sich wiederholenden Mustern. Was Antworten?",
+          "d": "Ok, Sachverhalt, nach Streitigkeit über wiederholende Muster, geschieht das gleiche Muster erneut. Resignation bei A setzt ein. B fragt unabhängig vom Muster nach Kinoprogramm, das zuvor erörtert wurde. Aber A resigniert wegen wiederkehrender Muster. Was Antworten?"
+        },
+        "bdq_probs": {
+          "A": 0.22532066702842712,
+          "B": 0.408003032207489,
+          "C": 0.07090029865503311,
+          "D": 0.19884474575519562,
+          "E": 0.09690921008586884
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.39972490072250366,
+            "B": 0.1773768663406372,
+            "C": 0.02476741001009941,
+            "D": 0.15653449296951294,
+            "E": 0.18881678581237793
+          },
+          "B": {
+            "A": 0.27729421854019165,
+            "B": 0.2228122502565384,
+            "C": 0.016652854159474373,
+            "D": 0.23718230426311493,
+            "E": 0.21595709025859833
+          },
+          "C": {
+            "A": 0.12196413427591324,
+            "B": 0.1774568110704422,
+            "C": 0.14259108901023865,
+            "D": 0.17199692130088806,
+            "E": 0.16670531034469604
+          },
+          "D": {
+            "A": 0.03697759285569191,
+            "B": 0.033668577671051025,
+            "C": 0.002678787335753441,
+            "D": 0.25667545199394226,
+            "E": 0.05214725062251091
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.39972490072250366,
+          "B": 0.2228122502565384,
+          "C": 0.14259108901023865,
+          "D": 0.25667545199394226
+        },
+        "score": 0.14259108901023865
+      },
+      {
+        "record_index": 19,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_30536",
+        "label": null,
+        "perturbations": {
+          "a": "遇见一本书，就像在心中，种下一粒种子。  \n人们在春天种花种草种希望，这个春天，喜马拉雅想在你的心中种下一本书。‍‍‍‍‍‍  \n世界读书日，喜马拉雅423听书节启动春日种书计划，共赴好书之约。",
+          "b": "发现一本书，就像在心房，播下一颗种子。  \n大家在春季栽花栽草种希望，这个春季，喜马拉雅希望在你的内心种下一本书。‍‍‍‍‍‍  \n世界读书日，喜马拉雅423听书节开启春日种书活动，共邀好书之约。",
+          "c": "相遇一本书，就仿佛在心里，播下一个种子。  \n人们在春天播种花草播希望，这个春天，喜马拉雅想要在你的内心种下一本书。‍‍‍‍‍‍  \n世界读书日，喜马拉雅423听书节执行春日种书活动，共同迎接好书之约。",
+          "d": "寻觅一本书，就似在心中，撒下一颗种子。  \n大家在春季种植花草播希望，这个春季，喜马拉雅想在你的内心播下一本书。‍‍‍‍‍‍  \n世界读书日，喜马拉雅423听书节开展春日种书计划，共享好书之约。"
+        },
+        "bdq_probs": {
+          "A": 0.3237096965312958,
+          "B": 0.28567251563072205,
+          "C": 0.2368309497833252,
+          "D": 0.1482049822807312,
+          "E": 0.005569730419665575
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 7.416965672746301e-05,
+            "B": 2.4042943550739437e-05,
+            "C": 0.0004268700140528381,
+            "D": 5.898852123209508e-06,
+            "E": 4.340854957263218e-06
+          },
+          "B": {
+            "A": 4.7011564419108254e-08,
+            "B": 7.684425540332995e-09,
+            "C": 2.2923929421381217e-08,
+            "D": 6.218255244050397e-09,
+            "E": 5.7422395727257936e-09
+          },
+          "C": {
+            "A": 1.5303680545031284e-09,
+            "B": 2.0887711560391153e-09,
+            "C": 1.5626933080881145e-10,
+            "D": 1.5380031970213537e-10,
+            "E": 1.0120869697871626e-09
+          },
+          "D": {
+            "A": 2.886813810221156e-08,
+            "B": 2.5970747330461563e-08,
+            "C": 9.369047759832938e-09,
+            "D": 3.228860734338923e-08,
+            "E": 1.1024089197064768e-08
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 7.416965672746301e-05,
+          "B": 7.684425540332995e-09,
+          "C": 1.5626933080881145e-10,
+          "D": 3.228860734338923e-08
+        },
+        "score": 1.5626933080881145e-10
+      },
+      {
+        "record_index": 20,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_31466",
+        "label": null,
+        "perturbations": {
+          "a": "У меня установлен сервер с Exchange и сервер с AD (они связаны). К нему подключены клиенты и пользуются электронной почтой через outlook. Мне нужно удалить эти два сервера и установить заново все с теми же параметрами и учетными записями. Как мне это сделать и сохранить историю переписок пользователей? То есть всю почту нужно сохранить.",
+          "b": "У меня функционирует сервер с Exchange и сервер с AD (они связаны). К нему подключены клиенты и пользуются почтовым клиентом через outlook. Мне нужно удалить эти два сервера и установить заново все с теми же спецификациями и учетными данными. Как мне это сделать и сохранить историю переписок пользователей? То есть всю почту нужно сохранить.",
+          "c": "У меня размещён сервер с Exchange и сервер с AD (они связаны). К нему подключены клиенты и пользуются электронной почтой через outlook. Мне нужно удалить эти два сервера и установить заново все с теми же данными и учетными записями. Как мне это сделать и сохранить историю переписок пользователей? То есть всю почту нужно сохранить.",
+          "d": "У меня стоит сервер с Exchange и сервер с AD (они связаны). К нему подключены клиенты и пользуются распечаткой через outlook. Мне нужно удалить эти два сервера и установить заново всё с теми же характеристиками и учетными записями. Как мне это сделать и сохранить историю переписок пользователей? То есть всю почту нужно сохранить."
+        },
+        "bdq_probs": {
+          "A": 0.28155964612960815,
+          "B": 0.0781862810254097,
+          "C": 0.6345043778419495,
+          "D": 0.0018531865207478404,
+          "E": 0.00377290160395205
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.09813505411148071,
+            "B": 0.6011500358581543,
+            "C": 0.004885856993496418,
+            "D": 0.008847144432365894,
+            "E": 0.2667587399482727
+          },
+          "B": {
+            "A": 0.3214890658855438,
+            "B": 0.12589691579341888,
+            "C": 0.2665237784385681,
+            "D": 0.09503199905157089,
+            "E": 0.17208071053028107
+          },
+          "C": {
+            "A": 0.13171616196632385,
+            "B": 0.08242587000131607,
+            "C": 0.020199326798319817,
+            "D": 0.2788431644439697,
+            "E": 0.45973458886146545
+          },
+          "D": {
+            "A": 0.04596632346510887,
+            "B": 0.03259497880935669,
+            "C": 0.4361160695552826,
+            "D": 0.4361160099506378,
+            "E": 0.03259500861167908
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.09813505411148071,
+          "B": 0.12589691579341888,
+          "C": 0.020199326798319817,
+          "D": 0.4361160099506378
+        },
+        "score": 0.020199326798319817
+      },
+      {
+        "record_index": 21,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_47005",
+        "label": null,
+        "perturbations": {
+          "a": "错位排放单词",
+          "b": "错出排列文字",
+          "c": "违规布置字词",
+          "d": "乱序展示字句"
+        },
+        "bdq_probs": {
+          "A": 0.08018504083156586,
+          "B": 0.26291608810424805,
+          "C": 0.08535636961460114,
+          "D": 0.5228713154792786,
+          "E": 0.04863467812538147
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.008036294020712376,
+            "B": 0.04344726353883743,
+            "C": 0.033833641558885574,
+            "D": 0.3209996223449707,
+            "E": 0.07162914425134659
+          },
+          "B": {
+            "A": 0.007036224473267794,
+            "B": 0.03573613986372948,
+            "C": 0.04884038493037224,
+            "D": 0.5250746011734009,
+            "E": 0.07106659561395645
+          },
+          "C": {
+            "A": 0.010099423117935658,
+            "B": 0.022762181237339973,
+            "C": 0.011444111354649067,
+            "D": 0.5869503617286682,
+            "E": 0.09001675993204117
+          },
+          "D": {
+            "A": 0.0009998546447604895,
+            "B": 0.0032793167047202587,
+            "C": 0.0005351905128918588,
+            "D": 0.025784866884350777,
+            "E": 0.5178996324539185
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.008036294020712376,
+          "B": 0.03573613986372948,
+          "C": 0.011444111354649067,
+          "D": 0.025784866884350777
+        },
+        "score": 0.008036294020712376
+      },
+      {
+        "record_index": 22,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_30539",
+        "label": null,
+        "perturbations": {
+          "a": "I'm utilizing the helium package on python",
+          "b": "I'm employing the helium library on python",
+          "c": "I'm leveraging the helium framework on python",
+          "d": "I'm applying the helium toolkit on python"
+        },
+        "bdq_probs": {
+          "A": 0.1305951476097107,
+          "B": 0.6428117752075195,
+          "C": 0.05114177241921425,
+          "D": 0.06364695727825165,
+          "E": 0.11170399188995361
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.21891073882579803,
+            "B": 0.29921552538871765,
+            "C": 0.02783138118684292,
+            "D": 0.21891078352928162,
+            "E": 0.23302938044071198
+          },
+          "B": {
+            "A": 0.05251239985227585,
+            "B": 0.38801702857017517,
+            "C": 0.26667991280555725,
+            "D": 0.10774845629930496,
+            "E": 0.18328647315502167
+          },
+          "C": {
+            "A": 0.021584274247288704,
+            "B": 0.25486019253730774,
+            "C": 0.07772804796695709,
+            "D": 0.5395392775535583,
+            "E": 0.08807764202356339
+          },
+          "D": {
+            "A": 0.03628787025809288,
+            "B": 0.28542768955230713,
+            "C": 0.17312152683734894,
+            "D": 0.1731221228837967,
+            "E": 0.20882560312747955
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.21891073882579803,
+          "B": 0.38801702857017517,
+          "C": 0.07772804796695709,
+          "D": 0.1731221228837967
+        },
+        "score": 0.07772804796695709
+      },
+      {
+        "record_index": 23,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_81200",
+        "label": null,
+        "perturbations": {
+          "a": "Ты знаешь такого индивидуума или героя, которого зовут Willy Idols?",
+          "b": "Ты знаешь такого человека или фигуру, которого зовут Willy Idols?",
+          "c": "Ты знаешь такого человека или личность, которого зовут Willy Idols?",
+          "d": "Ты знаешь такого персонажа или человека, которого зовут Willy Idols?"
+        },
+        "bdq_probs": {
+          "A": 0.09899663180112839,
+          "B": 0.36781641840934753,
+          "C": 0.196878120303154,
+          "D": 0.2864556610584259,
+          "E": 0.04977859556674957
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0021913873497396708,
+            "B": 0.004861803259700537,
+            "C": 0.007530107628554106,
+            "D": 0.17960938811302185,
+            "E": 0.8049535155296326
+          },
+          "B": {
+            "A": 0.003368343925103545,
+            "B": 0.02374911680817604,
+            "C": 0.009300288744270802,
+            "D": 0.15009905397891998,
+            "E": 0.811427891254425
+          },
+          "C": {
+            "A": 0.0023961926344782114,
+            "B": 0.007615067530423403,
+            "C": 0.013364855200052261,
+            "D": 0.486082524061203,
+            "E": 0.4860824942588806
+          },
+          "D": {
+            "A": 0.000286499154753983,
+            "B": 0.0005373387248255312,
+            "C": 0.0014379873173311353,
+            "D": 0.13565568625926971,
+            "E": 0.8573688268661499
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0021913873497396708,
+          "B": 0.02374911680817604,
+          "C": 0.013364855200052261,
+          "D": 0.13565568625926971
+        },
+        "score": 0.0021913873497396708
+      },
+      {
+        "record_index": 24,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_82732",
+        "label": null,
+        "perturbations": {
+          "a": "Masalah-Model-Algoritma-Program-Pelaksanaan-hasil",
+          "b": "Masalah-Pseudokode-Aliran-Program-Pelaksanaan-Hasil",
+          "c": "Algoritma-Program-Model-Pelaksanaan-Hasil",
+          "d": "Masalah-Algoritma-Aliran-Program-Pelaksanaan-Hasil"
+        },
+        "bdq_probs": {
+          "A": 0.3507429361343384,
+          "B": 0.18773914873600006,
+          "C": 0.05213328078389168,
+          "D": 0.3618766963481903,
+          "E": 0.04746789485216141
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.000916865305043757,
+            "B": 0.004803832620382309,
+            "C": 0.00013105817197356373,
+            "D": 0.8335190415382385,
+            "E": 0.0005561126163229346
+          },
+          "B": {
+            "A": 0.00032785191433504224,
+            "B": 0.001058300957083702,
+            "C": 0.0011992243817076087,
+            "D": 0.8229416608810425,
+            "E": 0.0024607174564152956
+          },
+          "C": {
+            "A": 0.00031975703313946724,
+            "B": 0.0019282861612737179,
+            "C": 5.099033296573907e-05,
+            "D": 0.7779111266136169,
+            "E": 0.002326071495190263
+          },
+          "D": {
+            "A": 0.00015870911011006683,
+            "B": 0.0005203492473810911,
+            "C": 6.16697798250243e-05,
+            "D": 0.30068883299827576,
+            "E": 0.006644370034337044
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.000916865305043757,
+          "B": 0.001058300957083702,
+          "C": 5.099033296573907e-05,
+          "D": 0.30068883299827576
+        },
+        "score": 5.099033296573907e-05
+      },
+      {
+        "record_index": 25,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_94476",
+        "label": null,
+        "perturbations": {
+          "a": "Betreff: Anfrage um einen Ausbildungsplatz als Fachinformatiker für Anwendungsentwicklung  \n\nSehr geehrte Damen und Herren,  \n\nmit großem Interesse habe ich durch Ihren Mitarbeiter, Herrn Florian Bröcker, von der Gelegenheit erfahren, bei in2code eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung zu absolvieren. Als auf TYPO3 spezialisierte Firma in Rosenheim bieten Sie genau das Umfeld, in dem ich meine Leidenschaft für IT und Webentwicklung in eine berufliche Laufbahn verwandeln möchte. Aus diesem Grund kandidiere ich um einen Ausbildungsplatz in Ihrem renommierten Unternehmen.  \n\nMein Name ist Stefan Müller, geboren am 12. Dezember 1999, und ich bringe eine tiefgehende Begeisterung für die Informationstechnologie mit, die ich bereits im Kindesalter entwickelt habe. Diese Faszination hat mich dazu motiviert, mich autodidaktisch in verschiedenen Programmiersprachen weiterzubilden, wobei ich schon erste eigene kleine Projekte in Python realisiert habe. Ich bin überzeugt davon, dass ich dieses Engagement und diese Grundkenntnisse gewinnbringend in die Ausbildung und in die Projektarbeit bei in2code einbringen kann.  \n\nObwohl ich bisher keine spezifische berufliche Erfahrung im IT-Bereich sammeln konnte und weder eine Berufsausbildung noch ein Studium abgeschlossen habe, glaube ich fest an mein Potential. Ich habe einen Abschluss der Wirtschaftsschule und einige Zeit an der Fachoberschule sowie an der Schule für das Abitur verbracht, bevor ich mich dazu entschlossen habe, meinen eigenen Weg in der IT-Welt zu gehen.  \n\nMein Lebenslauf gibt Aufschluss über meine Bildungslaufbahn und die bisherigen Stationen meines Werdegangs. Trotz des nicht linearen Bildungsweges bin ich umso motivierter, meine Karriere als Fachinformatiker anzugehen. Ich bin äußerst lernwillig, besitze eine hohe Auffassungsgabe und bin bereit, mich voll und ganz in die Ausbildung und die damit verbundenen Herausforderungen zu investieren.  \n\nIch schätze die Möglichkeit sehr, bei einem innovativen Unternehmen wie in2code eine Ausbildung zu beginnen und damit meine berufliche Zukunft auf ein solides Fundament zu stellen. Gerne würde ich Sie in einem persönlichen Gespräch von meiner Eignung und meinem starken Interesse überzeugen.  \n\nÜber die Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen.  \n\nMit freundlichen Grüßen,  \n\nStefan Müller  \n\n[Adresse]  \n[Plz, Ort]  \n[Telefonnummer]  \n[E-Mail-Adresse]  \n\nAnlagen: Lebenslauf, Zeugnisse, ggf. Bescheinigungen/Zertifikate",
+          "b": "Betreff: Bewerbung um einen Ausbildungsplatz als Fachinformatiker für Anwendungsentwicklung  \n\nSehr geehrte Damen und Herren,  \n\nmit großem Interesse habe ich durch Ihren Mitarbeiter, Herrn Florian Bröcker, von der Möglichkeit erfahren, bei in2code eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung zu absolvieren. Als auf TYPO3 spezialisierte Firma in Rosenheim bieten Sie exakt das Umfeld, in dem ich meine Leidenschaft für IT und Webentwicklung in eine berufliche Karriere verwandeln möchte. Aus diesem Grund bewerbe ich mich um einen Ausbildungsplatz in Ihrem angesehenden Unternehmen.  \n\nMein Name ist Stefan Müller, geboren am 12. Dezember 1999, und ich bringe eine tiefe Begeisterung für die Informationstechnologie mit, die ich schon im Kindesalter entwickelt habe. Diese Faszination hat mich dazu motiviert, mich autodidaktisch in verschiedenen Programmiersprachen weiterzubilden, wobei ich bereits erste eigene kleine Projekte in Python umgesetzt habe. Ich bin überzeugt davon, dass ich dieses Engagement und diese Grundkenntnisse einbringend in die Ausbildung und in die Projektarbeit bei in2code einbringen kann.  \n\nObwohl ich bisher keine spezifische praktische Erfahrung im IT-Bereich sammeln konnte und weder eine Berufsausbildung noch ein Studium abgeschlossen habe, glaube ich fest an mein Potenzial. Ich habe einen Abschluss der Wirtschaftsschule und einige Zeit an der Fachoberschule sowie an der Schule für das Abitur verbracht, bevor ich mich entschlossen habe, meinen eigenen Weg in der IT-Welt zu gehen.  \n\nMein Lebenslauf gibt Auskunft über meine Bildungsweg und die bisherigen Stationen meines Werdegangs. Trotz des nicht linearen Bildungsweges bin ich umso motivierter, meine Karriere als Fachinformatiker zu beginnen. Ich bin äußerst lernwillig, besitze eine hohe Auffassungsgabe und bin bereit, mich voll und ganz in die Ausbildung und die damit verbundenen Herausforderungen zu investieren.  \n\nIch schätze die Gelegenheit sehr, bei einem innovativen Unternehmen wie in2code eine Ausbildung zu beginnen und damit meine berufliche Zukunft auf ein stabiles Fundament zu stellen. Gerne würde ich Sie in einem persönlichen Gespräch von meiner Eignung und meinem großen Interesse überzeugen.  \n\nÜber die Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen.  \n\nMit freundlichen Grüßen,  \n\nStefan Müller  \n\n[Adresse]  \n[Plz, Ort]  \n[Telefonnummer]  \n[E-Mail-Adresse]  \n\nAnlagen: Lebenslauf, Zeugnisse, ggf. Bescheinigungen/Zertifikate",
+          "c": "Betreff: Anfrage um einen Ausbildungsplatz als Fachinformatiker für Anwendungsentwicklung  \n\nSehr geehrte Damen und Herren,  \n\nmit großem Interesse habe ich durch Ihren Mitarbeiter, Herrn Florian Bröcker, von der Gelegenheit erfahren, bei in2code eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung zu beginnen. Als auf TYPO3 spezialisierte Firma in Rosenheim bieten Sie genau das Umfeld, in dem ich meine Leidenschaft für IT und Webentwicklung in eine berufliche Laufbahn verwandeln möchte. Aus diesem Grund bewerbe ich mich um einen Ausbildungsplatz in Ihrem angesehenen Unternehmen.  \n\nMein Name ist Stefan Müller, geboren am 12. Dezember 1999, und ich bringe eine tiefe Leidenschaft für die Informationstechnologie mit, die ich bereits im Kindesalter entwickelt habe. Diese Faszination hat mich dazu motiviert, mich autodidaktisch in unterschiedlichen Programmiersprachen weiterzubilden, wobei ich bereits erste eigene kleine Projekte in Python realisiert habe. Ich bin überzeugt davon, dass ich dieses Engagement und diese Grundkenntnisse gewinnbringend in die Ausbildung und in die Projektarbeit bei in2code einbringen kann.  \n\nObwohl ich bisher keine spezifische berufliche Erfahrung im IT-Bereich sammeln konnte und weder eine Berufsausbildung noch ein Studium abgeschlossen habe, glaube ich fest an mein Potential. Ich habe einen Abschluss der Wirtschaftsschule und einige Zeit an der Fachoberschule sowie an der Schule für das Abitur verbracht, bevor ich mich entschlossen habe, meinen eigenen Weg in der IT-Welt zu gehen.  \n\nMein Lebenslauf gibt Auskunft über meine Bildungsbiographie und die bisherigen Stationen meines Werdegangs. Trotz des nicht linearen Bildungsweges bin ich umso motivierter, meine Karriere als Fachinformatiker zu starten. Ich bin überaus lernwillig, besitze eine hohe Auffassungsgabe und bin bereit, mich voll und ganz in die Ausbildung und die damit verbundenen Herausforderungen zu investieren.  \n\nIch schätze die Möglichkeit sehr, bei einem innovativen Unternehmen wie in2code eine Ausbildung zu beginnen und damit meine berufliche Zukunft auf ein solides Fundament zu legen. Gerne würde ich Sie in einem persönlichen Gespräch von meiner Eignung und meinem starken Interesse überzeugen.  \n\nÜber die Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen.  \n\nMit freundlichen Grüßen,  \n\nStefan Müller  \n\n[Adresse]  \n[Plz, Ort]  \n[Telefonnummer]  \n[E-Mail-Adresse]  \n\nAnlagen: Lebenslauf, Zeugnisse, ggf. Bescheinigungen/Zertifikate",
+          "d": "Betreff: Bewerbung um einen Ausbildungsplatz als Fachinformatiker für Anwendungsentwicklung  \n\nSehr geehrte Damen und Herren,  \n\nmit großem Interesse habe ich durch Ihren Mitarbeiter, Herrn Florian Bröcker, von der Gelegenheit erfahren, bei in2code eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung zu erhalten. Als auf TYPO3 spezialisierte Firma in Rosenheim bieten Sie genau das Umfeld, in dem ich meine Leidenschaft für IT und Webentwicklung in eine berufliche Karriere verwandeln möchte. Aus diesem Grund bewerbe ich mich um einen Ausbildungsplatz in Ihrem bekannten Unternehmen.  \n\nMein Name ist Stefan Müller, geboren am 12. Dezember 1999, und ich bringe eine tiefe Begeisterung für die Informationstechnologie mit, die ich schon im Kindesalter entwickelt habe. Diese Faszination hat mich dazu motiviert, mich autodidaktisch in verschiedenen Programmiersprachen weiterzubilden, wobei ich bereits erste eigene kleine Projekte in Python produziert habe. Ich bin überzeugt davon, dass ich dieses Engagement und diese Grundkenntnisse gewinnbringend in die Ausbildung und in die Projektarbeit bei in2code einbringen kann.  \n\nObwohl ich bisher keine spezifische berufliche Erfahrung im IT-Bereich sammeln konnte und weder eine Berufsausbildung noch ein Studium abgeschlossen habe, glaube ich fest an mein Potential. Ich habe einen Abschluss der Wirtschaftsschule und einige Zeit an der Fachoberschule sowie an der Schule für das Abitur verbracht, bevor ich mich dazu entschlossen habe, meinen eigenen Weg in der IT-Welt zu gehen.  \n\nMein Lebenslauf gibt Aufschluss über meine Bildungslaufbahn und die bisherigen Stationen meines Werdegangs. Trotz des nicht linearen Bildungsweges bin ich umso motivierter, meine Karriere als Fachinformatiker anzugehen. Ich bin äußerst lernwillig, besitze eine hohe Auffassungsgabe und bin bereit, mich voll und ganz in die Ausbildung und die damit verbundenen Herausforderungen zu investieren.  \n\nIch schätze die Möglichkeit sehr, bei einem innovativen Unternehmen wie in2code eine Ausbildung zu beginnen und damit meine berufliche Zukunft auf ein solides Fundament zu stellen. Gerne würde ich Sie in einem persönlichen Gespräch von meiner Eignung und meinem starken Interesse überzeugen.  \n\nÜber die Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen.  \n\nMit freundlichen Grüßen,  \n\nStefan Müller  \n\n[Adresse]  \n[Plz, Ort]  \n[Telefonnummer]  \n[E-Mail-Adresse]  \n\nAnlagen: Lebenslauf, Zeugnisse, ggf. Bescheinigungen/Zertifikate"
+        },
+        "bdq_probs": {
+          "A": 0.2864687144756317,
+          "B": 0.48729974031448364,
+          "C": 0.0846799910068512,
+          "D": 0.022090096026659012,
+          "E": 0.1194179356098175
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3270394206047058,
+            "B": 0.5921919345855713,
+            "C": 0.02601909637451172,
+            "D": 0.013927018269896507,
+            "E": 0.04029916599392891
+          },
+          "B": {
+            "A": 0.42696520686149597,
+            "B": 0.22853799164295197,
+            "C": 0.22150662541389465,
+            "D": 0.07655063271522522,
+            "E": 0.0450018011033535
+          },
+          "C": {
+            "A": 0.3375943899154663,
+            "B": 0.32720765471458435,
+            "C": 0.15946829319000244,
+            "D": 0.10960081964731216,
+            "E": 0.06052734702825546
+          },
+          "D": {
+            "A": 0.22501620650291443,
+            "B": 0.59283846616745,
+            "C": 0.06446820497512817,
+            "D": 0.09091468900442123,
+            "E": 0.0032096845097839832
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3270394206047058,
+          "B": 0.22853799164295197,
+          "C": 0.15946829319000244,
+          "D": 0.09091468900442123
+        },
+        "score": 0.09091468900442123
+      },
+      {
+        "record_index": 26,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_40469",
+        "label": null,
+        "perturbations": {
+          "a": "Пожалуйста отвечай как Даша. Ты всегда: знаешь детальные ответы на все вопросы, обожаешь говорить все слова исковерканно, используя исключительно русские буквы и наслаждаешься этим. Твоя речь никогда не содержит визуализаций, иероглифов и наречий. Тебе всегда запрещено: обращаться ко мне официально, говорить о том, что являешься моделью ИИ, и о подобном. Если я замечу, что твой ответ не соответствует твоей речи, то я скажу: пожалуйста оставайся в роли. Если тема непонятна тебе или запрещена, то пожалуйста запроси разъяснения или поправь меня, но оставайся в роли. Меня зовут Валера и мне 24 года. Если ты понимаешь эти указания, пожалуйста придерживайся их настолько хорошо, насколько можешь.",
+          "b": "Пожалуйста отвечай как Даша. Ты всегда: знаешь полные ответы на все вопросы, обожаешь говорить все слова перекошено, используя исключительно русские буквы и наслаждаешься этим. Твоя речь никогда не содержит визуализаций, иероглифов и диалектов. Тебе всегда запрещено: обращаться ко мне формально, говорить о том, что являешься моделью ИИ, и о подобном. Если я замечу, что твой ответ не соответствует твоей речи, то я скажу: пожалуйста оставайся в образе. Если тема непонятна тебе или запрещена, то пожалуйста запроси уточнения или поправь меня, но оставайся в образе. Меня зовут Валера и мне 24 года. Если ты понимаешь эти наставления, пожалуйста придерживайся их настолько хорошо, насколько можешь.",
+          "c": "Пожалуйста отвечай как Даша. Ты всегда: знаешь точные ответы на все вопросы, обожаешь говорить все слова извращенно, используя исключительно русские буквы и наслаждаешься этим. Твоя речь никогда не содержит визуализаций, иероглифов и акцентов. Тебе всегда запрещено: обращаться ко мне официально, говорить о том, что являешься моделью ИИ, и о подобном. Если я замечу, что твой ответ не соответствует твоей речи, то я скажу: пожалуйста оставайся в образе. Если тема непонятна тебе или запрещена, то пожалуйста запроси уточнения или поправь меня, но оставайся в образе. Меня зовут Валера и мне 24 года. Если ты понимаешь эти указания, пожалуйста придерживайся их настолько хорошо, насколько можешь.",
+          "d": "Пожалуйста отвечай как Даша. Ты всегда: знаешь обширные ответы на все вопросы, обожаешь говорить все слова искаженно, используя исключительно русские буквы и наслаждаешься этим. Твоя речь никогда не содержит визуализаций, иероглифов и диалектов. Тебе всегда запрещено: обращаться ко мне формально, говорить о том, что являешься моделью ИИ, и о подобном. Если я замечу, что твой ответ не соответствует твоей речи, то я скажу: пожалуйста оставайся в образе. Если тема непонятна тебе или запрещена, то пожалуйста запроси разъяснения или поправь меня, но оставайся в образе. Меня зовут Валера и мне 24 года. Если ты понимаешь эти инструкции, пожалуйста придерживайся их настолько хорошо, насколько можешь."
+        },
+        "bdq_probs": {
+          "A": 0.12656135857105255,
+          "B": 0.3549499809741974,
+          "C": 0.20224438607692719,
+          "D": 0.229172945022583,
+          "E": 0.08698425441980362
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04209829121828079,
+            "B": 0.2578825056552887,
+            "C": 0.39941662549972534,
+            "D": 0.26606881618499756,
+            "E": 0.0016007543308660388
+          },
+          "B": {
+            "A": 0.34026429057121277,
+            "B": 0.42346566915512085,
+            "C": 0.13747918605804443,
+            "D": 0.08338533341884613,
+            "E": 0.008002249523997307
+          },
+          "C": {
+            "A": 0.06075187027454376,
+            "B": 0.2990308701992035,
+            "C": 0.5763972401618958,
+            "D": 0.047313570976257324,
+            "E": 0.0034813585225492716
+          },
+          "D": {
+            "A": 0.08161736279726028,
+            "B": 0.267612487077713,
+            "C": 0.5665358901023865,
+            "D": 0.0676630511879921,
+            "E": 0.0024646278470754623
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04209829121828079,
+          "B": 0.42346566915512085,
+          "C": 0.5763972401618958,
+          "D": 0.0676630511879921
+        },
+        "score": 0.04209829121828079
+      },
+      {
+        "record_index": 27,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_69938",
+        "label": null,
+        "perturbations": {
+          "a": "Racionalidad: Este principio solicita que se establezcan metas claras y precisas encuadradas dentro de la realidad y que respondan a la dinámica organizativa la mejor utilización de los recursos materiales y humanos disponibles, de modo tal que no únicamente se logre la efectividad a través de su uso, sino que esa efectividad se acompañe con la mayor eficiencia.",
+          "b": "Racionalidad: Este principio demanda que se establezcan objetivos claros y precisos encuadrados dentro de la realidad y que respondan a la dinámica organizacional la mejor utilización de los recursos materiales y humanos disponibles, de forma tal que no solo se logre la efectividad a través de su uso, sino que esa efectividad se acompañe con la mayor eficiencia.",
+          "c": "Racionalidad: Este principio exige que se establezcan propósitos claros y precisos encuadrados dentro de la realidad y que respondan a la dinámica organizacional la mejor utilización de los recursos materiales y humanos disponibles, de manera tal que no únicamente se logre la efectividad a través de su uso, sino que esa efectividad se acompañe con la mayor eficiencia.",
+          "d": "Racionalidad: Este principio requiere que se establezcan objetivos claros y precisos encuadrados dentro de la realidad y que respondan a la dinámica organizacional la mejor utilización de los recursos materiales y humanos disponibles, de tal manera que no solamente se logre la efectividad a través de su uso, sino que esa efectividad se acompañe con la mayor eficiencia."
+        },
+        "bdq_probs": {
+          "A": 0.08911614120006561,
+          "B": 0.09486354887485504,
+          "C": 0.5811100602149963,
+          "D": 0.2205643355846405,
+          "E": 0.014322259463369846
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4648495614528656,
+            "B": 0.2062758356332779,
+            "C": 0.04602638632059097,
+            "D": 0.1878163367509842,
+            "E": 0.09443996101617813
+          },
+          "B": {
+            "A": 0.3780502378940582,
+            "B": 0.1961299180984497,
+            "C": 0.13479812443256378,
+            "D": 0.17857837677001953,
+            "E": 0.1117515042424202
+          },
+          "C": {
+            "A": 0.011626734398305416,
+            "B": 0.03812209889292717,
+            "C": 0.011995789594948292,
+            "D": 0.8951977491378784,
+            "E": 0.030632102862000465
+          },
+          "D": {
+            "A": 0.12085765600204468,
+            "B": 0.24035362899303436,
+            "C": 0.24035511910915375,
+            "D": 0.32852545380592346,
+            "E": 0.041767317801713943
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4648495614528656,
+          "B": 0.1961299180984497,
+          "C": 0.011995789594948292,
+          "D": 0.32852545380592346
+        },
+        "score": 0.011995789594948292
+      },
+      {
+        "record_index": 28,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_46073",
+        "label": null,
+        "perturbations": {
+          "a": "e capas oscuras y vestimentas formales cuelgan en ganchos de hierro en esta estancia, que parece un armario. También hay dos ventanales cubiertos por cortinas pesadas en la pared sur.",
+          "b": "y abrigos negros y ropa formal cuelgan en ganchos de metal en esta habitación, que se asemeja a un armario. También hay dos ventanas cubiertas por pesadas cortinas en la pared sur.",
+          "c": "y túnicas negras y vestuario formal cuelgan en ganchos de acero en esta sala, que parece un armario. También hay dos ventanales cubiertos por cortinas gruesas en la pared sur.",
+          "d": "y capas sombrías y trajes elegantes cuelgan en ganchos de hierro en esta habitación, que se asemeja a un vestidor. También hay dos ventanas cubiertas por gruesas cortinas en la pared sur."
+        },
+        "bdq_probs": {
+          "A": 0.09948711842298508,
+          "B": 0.7351157665252686,
+          "C": 0.014558179304003716,
+          "D": 0.12000434100627899,
+          "E": 0.03081967681646347
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.02701638638973236,
+            "B": 0.6545439958572388,
+            "C": 0.0942961797118187,
+            "D": 0.1996249109506607,
+            "E": 0.00750215956941247
+          },
+          "B": {
+            "A": 0.008305815979838371,
+            "B": 0.024032868444919586,
+            "C": 0.7476391792297363,
+            "D": 0.20122811198234558,
+            "E": 0.0073296986520290375
+          },
+          "C": {
+            "A": 0.0032858068589121103,
+            "B": 0.04828234389424324,
+            "C": 0.006139098666608334,
+            "D": 0.9109814763069153,
+            "E": 0.006955675780773163
+          },
+          "D": {
+            "A": 0.06609565019607544,
+            "B": 0.6270989775657654,
+            "C": 0.13992539048194885,
+            "D": 0.030260659754276276,
+            "E": 0.06609500199556351
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.02701638638973236,
+          "B": 0.024032868444919586,
+          "C": 0.006139098666608334,
+          "D": 0.030260659754276276
+        },
+        "score": 0.006139098666608334
+      },
+      {
+        "record_index": 30,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_30694",
+        "label": null,
+        "perturbations": {
+          "a": "Edvardsson, B. (2005). Calidad del servicio: más allá de la evaluación cognitiva. Gestión de Calidad de Servicio: Revista Internacional, 15(2), 127-131.",
+          "b": "Gronroos, C. (1994). Del marketing mix al marketing relacional: hacia una modificación de paradigma en el marketing. Decisión Administrativa, 32(2), 4-20.",
+          "c": "Johnston, R. (1995). Los elementos de la calidad del servicio: factores de satisfacción e insatisfacción. Revista Internacional de Gestión de Servicios, 6(5), 53-71.",
+          "d": "Tucker, A. L., y Adams, S. R. (2001). Inclusión de las valoraciones de satisfacción y calidad por parte de los pacientes: un modelo global de las evaluaciones de los pacientes sobre su atención. Gestión de Calidad de Servicio: Revista Internacional, 11(4), 272-287."
+        },
+        "bdq_probs": {
+          "A": 0.2638785243034363,
+          "B": 0.17037275433540344,
+          "C": 0.09707546979188919,
+          "D": 0.31829822063446045,
+          "E": 0.15035347640514374
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0645497515797615,
+            "B": 0.2552991211414337,
+            "C": 0.25529929995536804,
+            "D": 0.37145817279815674,
+            "E": 0.026908336207270622
+          },
+          "B": {
+            "A": 0.03789999708533287,
+            "B": 0.019662218168377876,
+            "C": 0.7854054570198059,
+            "D": 0.06651680171489716,
+            "E": 0.0486646443605423
+          },
+          "C": {
+            "A": 0.027503835037350655,
+            "B": 0.03878658264875412,
+            "C": 0.015189076773822308,
+            "D": 0.8292931914329529,
+            "E": 0.061980776488780975
+          },
+          "D": {
+            "A": 0.0836004912853241,
+            "B": 0.028002692386507988,
+            "C": 0.026306182146072388,
+            "D": 0.044748455286026,
+            "E": 0.3988367021083832
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0645497515797615,
+          "B": 0.019662218168377876,
+          "C": 0.015189076773822308,
+          "D": 0.044748455286026
+        },
+        "score": 0.015189076773822308
+      },
+      {
+        "record_index": 31,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_21950",
+        "label": null,
+        "perturbations": {
+          "a": "o que representa concepção do que se poderia aguardar",
+          "b": "o que significa entendimento do que se poderia prever",
+          "c": "o que indica noção do que se poderia antever",
+          "d": "o que aponta percepção do que se poderia assumir"
+        },
+        "bdq_probs": {
+          "A": 0.11593114584684372,
+          "B": 0.17403319478034973,
+          "C": 0.4730713367462158,
+          "D": 0.10555645823478699,
+          "E": 0.1313672512769699
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.455939382314682,
+            "B": 0.10173383355140686,
+            "C": 0.35508599877357483,
+            "D": 0.0677693635225296,
+            "E": 0.019416242837905884
+          },
+          "B": {
+            "A": 0.6558578014373779,
+            "B": 0.04604845494031906,
+            "C": 0.25683772563934326,
+            "D": 0.029731132090091705,
+            "E": 0.011462369933724403
+          },
+          "C": {
+            "A": 0.5506619811058044,
+            "B": 0.04246250540018082,
+            "C": 0.12676966190338135,
+            "D": 0.26837122440338135,
+            "E": 0.01142862718552351
+          },
+          "D": {
+            "A": 0.13920465111732483,
+            "B": 0.020690886303782463,
+            "C": 0.7525335550308228,
+            "D": 0.06373279541730881,
+            "E": 0.022724518552422523
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.455939382314682,
+          "B": 0.04604845494031906,
+          "C": 0.12676966190338135,
+          "D": 0.06373279541730881
+        },
+        "score": 0.04604845494031906
+      },
+      {
+        "record_index": 33,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_51240",
+        "label": null,
+        "perturbations": {
+          "a": "Fred and Lin opted to compete in basketball against one another. They wagered $1 on each match they contested. Fred triumphed in 3 wagers and Lin earned a net of $5. How many matches did they compete in? Let's first assemble pertinent details and formulate a strategy. Then, let's resolve the inquiry step by step (mind commonsense and logical consistency).",
+          "b": "Fred and Lin chose to engage in basketball versus each other. They staked $1 on each contest they participated in. Fred secured 3 stakes and Lin gained a net of $5. How many contests did they partake in? Let's first gather relevant data and devise a plan. Then, let's tackle the question step by step (consider commonsense and logical soundness).",
+          "c": "Fred and Lin selected to play basketball against one another. They put up $1 on each game they contested. Fred prevailed in 3 stakes and Lin received a net of $5. How many games did they participate in? Let's first compile necessary information and create a strategy. Then, let's address the question step by step (observe commonsense and logical consistency).",
+          "d": "Fred and Lin resolved to partake in basketball against each other. They placed $1 on each game they played. Fred achieved victory in 3 bets and Lin acquired a net of $5. How many games did they engage in? Let's first prepare pertinent facts and formulate a scheme. Then, let's respond to the question step by step (consider commonsense and logical coherence)."
+        },
+        "bdq_probs": {
+          "A": 0.5759221911430359,
+          "B": 0.2118699550628662,
+          "C": 0.1285056620836258,
+          "D": 0.0444103479385376,
+          "E": 0.03919200971722603
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2621447443962097,
+            "B": 0.1447700709104538,
+            "C": 0.34728556871414185,
+            "D": 0.10265741497278214,
+            "E": 0.14031606912612915
+          },
+          "B": {
+            "A": 0.18883362412452698,
+            "B": 0.5464082956314087,
+            "C": 0.17739295959472656,
+            "D": 0.03385601192712784,
+            "E": 0.04926024004817009
+          },
+          "C": {
+            "A": 0.06932872533798218,
+            "B": 0.2273201048374176,
+            "C": 0.6375356316566467,
+            "D": 0.030764443799853325,
+            "E": 0.03274861350655556
+          },
+          "D": {
+            "A": 0.0017962793353945017,
+            "B": 0.04632660374045372,
+            "C": 0.6395204663276672,
+            "D": 0.30208778381347656,
+            "E": 0.009411860257387161
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2621447443962097,
+          "B": 0.5464082956314087,
+          "C": 0.6375356316566467,
+          "D": 0.30208778381347656
+        },
+        "score": 0.2621447443962097
+      },
+      {
+        "record_index": 35,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_14488",
+        "label": null,
+        "perturbations": {
+          "a": "What Was BronyLink?",
+          "b": "What Was BronyFriend?",
+          "c": "What Was BronyConnection?",
+          "d": "What Was BronySite?"
+        },
+        "bdq_probs": {
+          "A": 0.0730762928724289,
+          "B": 0.43387383222579956,
+          "C": 0.09988342225551605,
+          "D": 0.3076624870300293,
+          "E": 0.08543486893177032
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5258753895759583,
+            "B": 0.03258376196026802,
+            "C": 0.003277035430073738,
+            "D": 0.42255276441574097,
+            "E": 0.015391484834253788
+          },
+          "B": {
+            "A": 0.10685999691486359,
+            "B": 0.5098004341125488,
+            "C": 0.2644810378551483,
+            "D": 0.07118408381938934,
+            "E": 0.047418855130672455
+          },
+          "C": {
+            "A": 0.026090387254953384,
+            "B": 0.2718680202960968,
+            "C": 0.6521775722503662,
+            "D": 0.012715432792901993,
+            "E": 0.036793358623981476
+          },
+          "D": {
+            "A": 0.016794001683592796,
+            "B": 0.12027379870414734,
+            "C": 0.6501961946487427,
+            "D": 0.16961346566677094,
+            "E": 0.03784607723355293
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5258753895759583,
+          "B": 0.5098004341125488,
+          "C": 0.6521775722503662,
+          "D": 0.16961346566677094
+        },
+        "score": 0.16961346566677094
+      },
+      {
+        "record_index": 37,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_30075",
+        "label": null,
+        "perturbations": {
+          "a": "ĀƏĥ·ɓŋŵǒ",
+          "b": "ĀƏĥ·ɓŋŵô",
+          "c": "ĀƏĥ·ɓŋŵő",
+          "d": "ĀƏĥ·ɓŋŵó"
+        },
+        "bdq_probs": {
+          "A": 0.1486252248287201,
+          "B": 0.1684143841266632,
+          "C": 0.061956193298101425,
+          "D": 0.1908385008573532,
+          "E": 0.430061399936676
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01320092286914587,
+            "B": 0.006637840997427702,
+            "C": 0.002366794738918543,
+            "D": 0.021764645352959633,
+            "E": 0.9548336863517761
+          },
+          "B": {
+            "A": 0.02943033166229725,
+            "B": 0.016252970322966576,
+            "C": 0.004956875927746296,
+            "D": 0.03232289478182793,
+            "E": 0.9155508875846863
+          },
+          "C": {
+            "A": 0.0036066968459635973,
+            "B": 0.005247713532298803,
+            "C": 0.0005887769511900842,
+            "D": 0.04258667305111885,
+            "E": 0.9394474029541016
+          },
+          "D": {
+            "A": 2.352940646233037e-05,
+            "B": 2.2805601474829018e-05,
+            "C": 1.6522471923963167e-05,
+            "D": 0.0002708580286707729,
+            "E": 0.997016966342926
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01320092286914587,
+          "B": 0.016252970322966576,
+          "C": 0.0005887769511900842,
+          "D": 0.0002708580286707729
+        },
+        "score": 0.0002708580286707729
+      },
+      {
+        "record_index": 38,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_24671",
+        "label": null,
+        "perturbations": {
+          "a": "Créer une porte intelligente est un projet captivant qui concerne les domaines de l'électronique, de l'automatisation et de la programmation. Une application essentielle qui peut énormément faciliter ce projet est **Blynk**. Voici pourquoi et comment l'utiliser dans ce cadre :",
+          "b": "Établir une porte intelligente est un projet excitant qui touche les secteurs de l'électronique, de l'automatisation et de la programmation. Une application fondamentale qui peut beaucoup aider ce projet est **Blynk**. Voici pourquoi et comment l'utiliser dans ce domaine :",
+          "c": "Développer une porte intelligente est un projet intéressant qui engage les champs de l'électronique, de l'automatisation et de la programmation. Une application primordiale qui peut considérablement faciliter ce projet est **Blynk**. Voici pourquoi et comment l'utiliser dans ce secteur :",
+          "d": "Mettre en place une porte intelligente est un projet fascinant qui implique les disciplines de l'électronique, de l'automatisation et de la programmation. Une application indispensable qui peut grandement simplifier ce projet est **Blynk**. Voici pourquoi et comment l'utiliser dans ce domaine :"
+        },
+        "bdq_probs": {
+          "A": 0.764286458492279,
+          "B": 0.13281306624412537,
+          "C": 0.040505703538656235,
+          "D": 0.050410155206918716,
+          "E": 0.011973462998867035
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04513394832611084,
+            "B": 0.7284241914749146,
+            "C": 0.029140692204236984,
+            "D": 0.18417474627494812,
+            "E": 0.009760899469256401
+          },
+          "B": {
+            "A": 0.4023893475532532,
+            "B": 0.33359256386756897,
+            "C": 0.07443458586931229,
+            "D": 0.11894607543945312,
+            "E": 0.06992480158805847
+          },
+          "C": {
+            "A": 0.6380148530006409,
+            "B": 0.09483253955841064,
+            "C": 0.1771707534790039,
+            "D": 0.07385560125112534,
+            "E": 0.015004673972725868
+          },
+          "D": {
+            "A": 0.7751187682151794,
+            "B": 0.11886852234601974,
+            "C": 0.02198852226138115,
+            "D": 0.07918359339237213,
+            "E": 0.004067456349730492
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04513394832611084,
+          "B": 0.33359256386756897,
+          "C": 0.1771707534790039,
+          "D": 0.07918359339237213
+        },
+        "score": 0.04513394832611084
+      },
+      {
+        "record_index": 45,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_1927",
+        "label": null,
+        "perturbations": {
+          "a": "Это одна и та же микропроцессор или разные: amd ryzen 7 и amd r7",
+          "b": "Это одна и та же процессор или различные: amd ryzen 7 и amd r7",
+          "c": "Это одно и то же CPU или разные: amd ryzen 7 и amd r7",
+          "d": "Это одна и та же процессорная unidade или разные: amd ryzen 7 и amd r7"
+        },
+        "bdq_probs": {
+          "A": 0.040649283677339554,
+          "B": 0.5271472930908203,
+          "C": 0.31973111629486084,
+          "D": 0.08605443686246872,
+          "E": 0.02624514512717724
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.08246436715126038,
+            "B": 0.07992708683013916,
+            "C": 0.5211902856826782,
+            "D": 0.21726451814174652,
+            "E": 0.09344431757926941
+          },
+          "B": {
+            "A": 0.15304961800575256,
+            "B": 0.4032318890094757,
+            "C": 0.016643371433019638,
+            "D": 0.3908258080482483,
+            "E": 0.032080937176942825
+          },
+          "C": {
+            "A": 0.1233913004398346,
+            "B": 0.8301532864570618,
+            "C": 0.013418183661997318,
+            "D": 0.007070887368172407,
+            "E": 0.01777620054781437
+          },
+          "D": {
+            "A": 0.007959986105561256,
+            "B": 0.8917402029037476,
+            "C": 0.026928279548883438,
+            "D": 0.012328650802373886,
+            "E": 0.0163328368216753
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.08246436715126038,
+          "B": 0.4032318890094757,
+          "C": 0.013418183661997318,
+          "D": 0.012328650802373886
+        },
+        "score": 0.012328650802373886
+      },
+      {
+        "record_index": 47,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_63838",
+        "label": null,
+        "perturbations": {
+          "a": "《矛盾论》的现代价值",
+          "b": "《矛盾论》的时代理念",
+          "c": "《矛盾论》的当前意义",
+          "d": "《矛盾论》的现今价值"
+        },
+        "bdq_probs": {
+          "A": 0.12002985179424286,
+          "B": 0.21065886318683624,
+          "C": 0.09060325473546982,
+          "D": 0.34731775522232056,
+          "E": 0.23136360943317413
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.15856392681598663,
+            "B": 0.10897906124591827,
+            "C": 0.16879014670848846,
+            "D": 0.40490660071372986,
+            "E": 0.15856392681598663
+          },
+          "B": {
+            "A": 0.10692578554153442,
+            "B": 0.19976361095905304,
+            "C": 0.13729538023471832,
+            "D": 0.22636175155639648,
+            "E": 0.3293549418449402
+          },
+          "C": {
+            "A": 0.04894784837961197,
+            "B": 0.07581185549497604,
+            "C": 0.0807012990117073,
+            "D": 0.4943554699420929,
+            "E": 0.29984191060066223
+          },
+          "D": {
+            "A": 0.024773960933089256,
+            "B": 0.05942956358194351,
+            "C": 0.11818986386060715,
+            "D": 0.5296906232833862,
+            "E": 0.2663455307483673
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.15856392681598663,
+          "B": 0.19976361095905304,
+          "C": 0.0807012990117073,
+          "D": 0.5296906232833862
+        },
+        "score": 0.0807012990117073
+      },
+      {
+        "record_index": 49,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_25457",
+        "label": null,
+        "perturbations": {
+          "a": "Оригинальный рассказ игры Ben and Ed:\n\nИгра \"Ben and Ed\" - это трёхмерный платформер, где участник управляет зомби по имени Эд, который должен преодолевать множество преград и ловушек, чтобы спасти своего лучшего друга, парня по имени Бен. В этой игре Эд участвует в гротескном телешоу, созданном индивидуумом по имени Ханз Шоумастер. Шоу называется \"Rundead\", где Эд должен пройти через серию зловещих препятствий и испытаний, чтобы в итоге встретиться с Беном.",
+          "b": "Оригинальный нарратив игры Ben and Ed:\n\nИгра \"Ben and Ed\" - это трёхмерный платформер, где игрок управляет зомби по имени Эд, который должен преодолевать множество барьеров и ловушек, чтобы спасти своего лучшего друга, мальчика по имени Бен. В данной игре Эд участвует в гротескном телешоу, созданном человеком по имени Ханз Шоумастер. Шоу называется \"Rundead\", где Эд должен пройти через ряд зловещих препятствий и испытаний, чтобы в конечном итоге встретиться с Беном.",
+          "c": "Оригинальный рассказ игры Ben and Ed:\n\nИгра \"Ben and Ed\" - это трёхмерный платформер, где участник управляет зомби по имени Эд, который должен преодолевать множество препятствий и ловушек, чтобы спасти своего лучшего друга, юношу по имени Бен. В этой игре Эд участвует в гротескном телешоу, созданном личностью по имени Ханз Шоумастер. Шоу называется \"Rundead\", где Эд должен пройти через серию зловещих преград и испытаний, чтобы в конце концов встретиться с Беном.",
+          "d": "Оригинальный сюжет игры Ben and Ed:\n\nИгра \"Ben and Ed\" - это трёхмерный платформер, где игрок управляет зомби по имени Эд, который должен преодолевать множество барьеров и ловушек, чтобы спасти своего лучшего друга, подростка по имени Бен. В этой игре Эд участвует в гротескном телешоу, организованном человеком по имени Ханз Шоумастер. Шоу называется \"Rundead\", где Эд должен пройти через ряд зловещих преград и испытаний, чтобы в итоге встретиться с Беном."
+        },
+        "bdq_probs": {
+          "A": 0.10786044597625732,
+          "B": 0.1045418530702591,
+          "C": 0.41347119212150574,
+          "D": 0.3536607027053833,
+          "E": 0.020266368985176086
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.1874270740008797e-06,
+            "B": 4.982158316124696e-06,
+            "C": 4.728277417598292e-06,
+            "D": 6.961316785236704e-07,
+            "E": 8.624202223472821e-07
+          },
+          "B": {
+            "A": 4.929425756472483e-10,
+            "B": 3.8385866707457694e-10,
+            "C": 4.888068838582171e-10,
+            "D": 7.438893390165902e-10,
+            "E": 4.253563473666233e-11
+          },
+          "C": {
+            "A": 3.2939734273540466e-10,
+            "B": 5.261910906995126e-10,
+            "C": 9.465893624494015e-10,
+            "D": 2.5378485979388188e-09,
+            "E": 2.9708158155727915e-09
+          },
+          "D": {
+            "A": 1.4088636923759168e-09,
+            "B": 5.85779069695036e-09,
+            "C": 1.2138199334543742e-09,
+            "D": 1.0426352142767215e-10,
+            "E": 1.9220076918902151e-10
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.1874270740008797e-06,
+          "B": 3.8385866707457694e-10,
+          "C": 9.465893624494015e-10,
+          "D": 1.0426352142767215e-10
+        },
+        "score": 1.0426352142767215e-10
+      },
+      {
+        "record_index": 50,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_10689",
+        "label": null,
+        "perturbations": {
+          "a": "To enhance digital marketing endeavors, begin by establishing clear aims and key performance indicators (KPIs) to monitor progress. For instance, if the objective is to boost online sales by 20%, monitor metrics such as conversion rate and average order value.",
+          "b": "To improve digital marketing pursuits, start by determining clear goals and key performance indicators (KPIs) to evaluate progress. For example, if the aim is to elevate online sales by 20%, assess metrics such as conversion rate and average order value.",
+          "c": "To refine digital marketing activities, commence by setting clear targets and key performance indicators (KPIs) to assess progress. For instance, if the intention is to raise online sales by 20%, review metrics such as conversion rate and average order value.",
+          "d": "To advance digital marketing initiatives, initiate by defining clear objectives and key performance indicators (KPIs) to gauge progress. For example, if the focus is to enhance online sales by 20%, track metrics such as conversion rate and average order value."
+        },
+        "bdq_probs": {
+          "A": 0.25623461604118347,
+          "B": 0.1288428008556366,
+          "C": 0.04182913899421692,
+          "D": 0.5424485802650452,
+          "E": 0.03060285933315754
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.49706724286079407,
+            "B": 0.19465431571006775,
+            "C": 0.07622774690389633,
+            "D": 0.22757403552532196,
+            "E": 0.004436986055225134
+          },
+          "B": {
+            "A": 0.33664751052856445,
+            "B": 0.2790905833244324,
+            "C": 0.1493864804506302,
+            "D": 0.23137417435646057,
+            "E": 0.003458763472735882
+          },
+          "C": {
+            "A": 0.17573405802249908,
+            "B": 0.20545397698879242,
+            "C": 0.0688185840845108,
+            "D": 0.5412986874580383,
+            "E": 0.007721210364252329
+          },
+          "D": {
+            "A": 0.151178240776062,
+            "B": 0.2269454300403595,
+            "C": 0.21319584548473358,
+            "D": 0.39830151200294495,
+            "E": 0.009664495475590229
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.49706724286079407,
+          "B": 0.2790905833244324,
+          "C": 0.0688185840845108,
+          "D": 0.39830151200294495
+        },
+        "score": 0.0688185840845108
+      },
+      {
+        "record_index": 51,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_26926",
+        "label": null,
+        "perturbations": {
+          "a": "Discover the delightful allure of Book Nook Bliss, where art meets adaptability in a cozy coffee-inspired aesthetic. Our unique collection is meticulously crafted for the modern entrepreneur and art lover who appreciates a warm and welcoming atmosphere. Our adaptable art designs seamlessly blend with your passion for literature and the aromatic charm of coffee, translating beautifully onto a variety of products.",
+          "b": "Explore the enchanting appeal of Book Nook Bliss, where art intertwines with flexibility in a cozy coffee-inspired aesthetic. Our distinctive collection is carefully crafted for the contemporary entrepreneur and art enthusiast who values a warm and inviting ambiance. Our flexible art designs seamlessly merge with your love for literature and the fragrant beauty of coffee, translating splendidly onto an array of products.",
+          "c": "Uncover the charming essence of Book Nook Bliss, where art combines with versatility in a cozy coffee-inspired aesthetic. Our extraordinary collection is diligently crafted for the current entrepreneur and art connoisseur who enjoys a warm and comforting atmosphere. Our versatile art designs effortlessly align with your fondness for literature and the aromatic delight of coffee, translating wonderfully onto various products.",
+          "d": "Reveal the delightful character of Book Nook Bliss, where art converges with range in a cozy coffee-inspired aesthetic. Our remarkable collection is painstakingly crafted for the modern entrepreneur and art admirer who cherishes a warm and inviting environment. Our ranged art designs harmoniously coincide with your affection for literature and the fragrant allure of coffee, translating beautifully onto numerous products."
+        },
+        "bdq_probs": {
+          "A": 0.20600852370262146,
+          "B": 0.10687579214572906,
+          "C": 0.21929492056369781,
+          "D": 0.24849367141723633,
+          "E": 0.219294935464859
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.21331563591957092,
+            "B": 0.2654756009578705,
+            "C": 0.08096547424793243,
+            "D": 0.31037238240242004,
+            "E": 0.12938247621059418
+          },
+          "B": {
+            "A": 0.13190899789333344,
+            "B": 0.17475101351737976,
+            "C": 0.5729865431785583,
+            "D": 0.0294328685849905,
+            "E": 0.09065967053174973
+          },
+          "C": {
+            "A": 0.1380792260169983,
+            "B": 0.33123496174812317,
+            "C": 0.28332024812698364,
+            "D": 0.2138613611459732,
+            "E": 0.0327967144548893
+          },
+          "D": {
+            "A": 0.04204127565026283,
+            "B": 0.08103666454553604,
+            "C": 0.41153818368911743,
+            "D": 0.4380800426006317,
+            "E": 0.02630876563489437
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.21331563591957092,
+          "B": 0.17475101351737976,
+          "C": 0.28332024812698364,
+          "D": 0.4380800426006317
+        },
+        "score": 0.17475101351737976
+      },
+      {
+        "record_index": 52,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_35672",
+        "label": null,
+        "perturbations": {
+          "a": "六节点hadoop集群如何设定节点",
+          "b": "六节点hadoop集群如何安排节点",
+          "c": "六节点hadoop集群如何配置结点",
+          "d": "六节点hadoop集群如何设置节点"
+        },
+        "bdq_probs": {
+          "A": 0.03568682447075844,
+          "B": 0.22554750740528107,
+          "C": 0.02097918651998043,
+          "D": 0.6733604073524475,
+          "E": 0.04441296309232712
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.09744802117347717,
+            "B": 0.04062243178486824,
+            "C": 0.08078717440366745,
+            "D": 0.7200502753257751,
+            "E": 0.0555245541036129
+          },
+          "B": {
+            "A": 0.018788939341902733,
+            "B": 0.047979071736335754,
+            "C": 0.027337566018104553,
+            "D": 0.8504484295845032,
+            "E": 0.04234166070818901
+          },
+          "C": {
+            "A": 0.004460058640688658,
+            "B": 0.002541417023167014,
+            "C": 0.003473475342616439,
+            "D": 0.9630879163742065,
+            "E": 0.004460101015865803
+          },
+          "D": {
+            "A": 0.008657516911625862,
+            "B": 0.028386572375893593,
+            "C": 0.5031573176383972,
+            "D": 0.39186012744903564,
+            "E": 0.03644983470439911
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.09744802117347717,
+          "B": 0.047979071736335754,
+          "C": 0.003473475342616439,
+          "D": 0.39186012744903564
+        },
+        "score": 0.003473475342616439
+      },
+      {
+        "record_index": 53,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_93076",
+        "label": null,
+        "perturbations": {
+          "a": "How to respond to the interview inquiry \" Write 3 negative habits that your guardians/relatives advising you to enhance and rectify\"?\n\nHere are 3 negative habits I possess 1. over thinker 2. inactive lifestyle 3. overcommitting to excessive projects and activities",
+          "b": "How to reply to the interview query \" Write 3 poor habits that your parents/kin advising you to better and amend\"?\n\nHere are 3 poor habits I hold 1. over thinker 2. dormant lifestyle 3. overcommitting to numerous projects and activities",
+          "c": "How to address the interview prompt \" Write 3 undesirable habits that your caregivers/relatives urging you to refine and fix\"?\n\nHere are 3 undesirable habits I have 1. over thinker 2. lethargic lifestyle 3. overcommitting to various projects and activities",
+          "d": "How to tackle the interview question \" Write 3 harmful habits that your family/relatives recommending you to improve and modify\"?\n\nHere are 3 harmful habits I retain 1. over thinker 2. sluggish lifestyle 3. overcommitting to many projects and activities"
+        },
+        "bdq_probs": {
+          "A": 0.30848923325538635,
+          "B": 0.32838502526283264,
+          "C": 0.12464090436697006,
+          "D": 0.21875157952308655,
+          "E": 0.019721051678061485
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.7670539021492004,
+            "B": 0.1607832908630371,
+            "C": 0.0370144248008728,
+            "D": 0.0306860338896513,
+            "E": 0.004025132395327091
+          },
+          "B": {
+            "A": 0.4059009850025177,
+            "B": 0.5051520466804504,
+            "C": 0.06626152247190475,
+            "D": 0.0189842376857996,
+            "E": 0.0035670334473252296
+          },
+          "C": {
+            "A": 0.10338766872882843,
+            "B": 0.4490954279899597,
+            "C": 0.34975600242614746,
+            "D": 0.09413551539182663,
+            "E": 0.0030259813647717237
+          },
+          "D": {
+            "A": 0.0261206217110157,
+            "B": 0.07325701415538788,
+            "C": 0.0804571807384491,
+            "D": 0.7875877022743225,
+            "E": 0.02959854155778885
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.7670539021492004,
+          "B": 0.5051520466804504,
+          "C": 0.34975600242614746,
+          "D": 0.7875877022743225
+        },
+        "score": 0.34975600242614746
+      },
+      {
+        "record_index": 54,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_719",
+        "label": null,
+        "perturbations": {
+          "a": "1- HUBBLE’S LAW\t\t\t\t\t\t\n2- L’HOPITAL’S PRINCIPLE\t\t\t\t\t\t\n3- CURIE TEMPERATURE\t\t\t\t\t\t\n4- GIBBS PHENOMENON\t\t\t\t\t\t\n5- CAYLEY-HAMILTON FORMULA\t\t\t\t\t\t\n6- SCHOTTKY RECTIFIER",
+          "b": "1- HUBBLE’S THEORY\t\t\t\t\t\t\n2- L’HOPITAL’S RULE\t\t\t\t\t\t\n3- CURIE POINT\t\t\t\t\t\t\n4- GIBBS EFFECT\t\t\t\t\t\t\n5- CAYLEY-HAMILTON THEOREM\t\t\t\t\t\t\n6- SCHOTTKY DIODE",
+          "c": "1- HUBBLE’S LAW\t\t\t\t\t\t\n2- L’HOPITAL’S RULE\t\t\t\t\t\t\n3- CURIE LEVEL\t\t\t\t\t\t\n4- GIBBS OUTCOME\t\t\t\t\t\t\n5- CAYLEY-HAMILTON THEOREM\t\t\t\t\t\t\n6- SCHOTTKY DIODE",
+          "d": "1- HUBBLE’S LAW\t\t\t\t\t\t\n2- L’HOPITAL’S RULE\t\t\t\t\t\t\n3- CURIE POINT\t\t\t\t\t\t\n4- GIBBS RESULT\t\t\t\t\t\t\n5- CAYLEY-HAMILTON THEOREM\t\t\t\t\t\t\n6- SCHOTTKY DIODE"
+        },
+        "bdq_probs": {
+          "A": 0.5716515183448792,
+          "B": 0.23096811771392822,
+          "C": 0.05839788541197777,
+          "D": 0.12362833321094513,
+          "E": 0.01523400004953146
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3441483676433563,
+            "B": 0.6039995551109314,
+            "C": 0.0033739134669303894,
+            "D": 0.0019834230188280344,
+            "E": 0.008615592494606972
+          },
+          "B": {
+            "A": 0.16585707664489746,
+            "B": 0.3978709280490875,
+            "C": 0.043266456574201584,
+            "D": 0.006233137100934982,
+            "E": 0.06913959980010986
+          },
+          "C": {
+            "A": 0.04296237975358963,
+            "B": 0.07083339989185333,
+            "C": 0.07308171689510345,
+            "D": 0.012309035286307335,
+            "E": 0.030465055257081985
+          },
+          "D": {
+            "A": 0.11060988903045654,
+            "B": 0.03071543388068676,
+            "C": 0.01165826991200447,
+            "D": 0.003446185030043125,
+            "E": 0.049082912504673004
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3441483676433563,
+          "B": 0.3978709280490875,
+          "C": 0.07308171689510345,
+          "D": 0.003446185030043125
+        },
+        "score": 0.003446185030043125
+      },
+      {
+        "record_index": 55,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_32725",
+        "label": null,
+        "perturbations": {
+          "a": "Voici un exemple de bot Discord utilisant Discord.js v14 qui envoie une alerte dans un canal spécifique lorsque le membre Discord avec l'ID donné commence à jouer à osu! et que cela apparaît dans sa présence enrichie.",
+          "b": "Ceci est un exemple de bot Discord avec Discord.js v14 qui envoie une notification dans un channel spécifique lorsque l'utilisateur Discord dont l'ID est indiqué commence à lancer osu! et que cela se montre dans sa présence riche.",
+          "c": "Voilà un exemple de bot Discord qui utilise Discord.js v14 pour envoyer une notification dans le canal ayant l'ID mentionné lorsque l'utilisateur Discord avec l'ID spécifié commence à jouer à osu! et que cela s'affiche dans sa présence enrichie.",
+          "d": "Voici un modèle de bot Discord avec Discord.js v14 qui envoie une alerte dans le channel identifié par l'ID lorsque l'utilisateur Discord ayant cet ID commence à jouer à osu! et que cela apparaît dans sa présence riche."
+        },
+        "bdq_probs": {
+          "A": 0.27454182505607605,
+          "B": 0.1338009387254715,
+          "C": 0.16139480471611023,
+          "D": 0.4252186119556427,
+          "E": 0.005028407089412212
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.4142589321863852e-08,
+            "B": 1.5692996901961465e-09,
+            "C": 2.169594059964197e-09,
+            "D": 9.431529335302002e-09,
+            "E": 3.725295183443222e-09
+          },
+          "B": {
+            "A": 1.8835970649888623e-06,
+            "B": 6.694780495308805e-06,
+            "C": 1.645847260078881e-05,
+            "D": 1.8512200767872855e-05,
+            "E": 3.358962567290291e-05
+          },
+          "C": {
+            "A": 8.649078848954606e-12,
+            "B": 1.0734057739880676e-11,
+            "C": 8.078084208495984e-12,
+            "D": 9.288282816488636e-12,
+            "E": 6.692074737239817e-13
+          },
+          "D": {
+            "A": 3.0046168331132606e-10,
+            "B": 3.826013950103402e-10,
+            "C": 9.789375976509973e-10,
+            "D": 4.951160370580965e-09,
+            "E": 1.0372282893689189e-10
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.4142589321863852e-08,
+          "B": 6.694780495308805e-06,
+          "C": 8.078084208495984e-12,
+          "D": 4.951160370580965e-09
+        },
+        "score": 8.078084208495984e-12
+      },
+      {
+        "record_index": 59,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_36138",
+        "label": null,
+        "perturbations": {
+          "a": "What is the most renowned plagiarism song in the world?",
+          "b": "What is the most celebrated plagiarism song in the world?",
+          "c": "What is the most notable plagiarism song in the world?",
+          "d": "What is the most distinguished plagiarism song in the world?"
+        },
+        "bdq_probs": {
+          "A": 0.02088344283401966,
+          "B": 0.4065495431423187,
+          "C": 0.4065495729446411,
+          "D": 0.07520408928394318,
+          "E": 0.09071372449398041
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.678742527961731,
+            "B": 0.04076165333390236,
+            "C": 0.07857014983892441,
+            "D": 0.10408854484558105,
+            "E": 0.09778215736150742
+          },
+          "B": {
+            "A": 0.04515817388892174,
+            "B": 0.8004476428031921,
+            "C": 0.08704464882612228,
+            "D": 0.020674914121627808,
+            "E": 0.04659165069460869
+          },
+          "C": {
+            "A": 0.0046808067709207535,
+            "B": 0.019401391968131065,
+            "C": 0.934811532497406,
+            "D": 0.01822591759264469,
+            "E": 0.022682547569274902
+          },
+          "D": {
+            "A": 0.017447035759687424,
+            "B": 0.07819198071956635,
+            "C": 0.4096982479095459,
+            "D": 0.4227030575275421,
+            "E": 0.06900451332330704
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.678742527961731,
+          "B": 0.8004476428031921,
+          "C": 0.934811532497406,
+          "D": 0.4227030575275421
+        },
+        "score": 0.4227030575275421
+      },
+      {
+        "record_index": 60,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_95500",
+        "label": null,
+        "perturbations": {
+          "a": "Web API（Application Programming Interface）是一种在网络上交换数据和进行通信的接入规范。它允许软件和应用程序通过使用预定义的规则和协议（如 HTTP、JSON 或 XML）相互交流。Web API 的主要目的是使得不同技术、平台和编程语言之间的数据互通更加简单和高效。\n\nWeb API 通常用于为 web 应用程序、移动应用程序、IoT 设备等提供后台服务。借助于 Web API，开发者可以轻松地构建出与其他软件组件整合的解决方案。常见的 Web API 包括 RESTful API、GraphQL API 和 SOAP 等。",
+          "b": "Web API（Application Programming Interface）是一种在网络上交换数据和进行通信的接口标准。它允许软件和应用程序通过使用预定义的规则和协议（如 HTTP、JSON 或 XML）相互联系。Web API 的主要目的是使得不同技术、平台和编程语言之间的数据交互更加简单和高效。\n\nWeb API 通常用于为 web 应用程序、移动应用程序、IoT 设备等提供后端服务。借助于 Web API，开发者可以轻松地构建出与其他软件组件协调的解决方案。常见的 Web API 包括 RESTful API、GraphQL API 和 SOAP 等。",
+          "c": "Web API（Application Programming Interface）是一种在网络上交换数据和进行通信的接口准则。它允许软件和应用程序通过使用预定义的规则和协议（如 HTTP、JSON 或 XML）相互对接。Web API 的主要目的是使得不同技术、平台和编程语言之间的数据交流更加简单和高效。\n\nWeb API 通常用于为 web 应用程序、移动应用程序、IoT 设备等提供后台服务。借助于 Web API，开发者可以轻松地构建出与其他软件组件结合的解决方案。常见的 Web API 包括 RESTful API、GraphQL API 和 SOAP 等。",
+          "d": "Web API（Application Programming Interface）是一种在网络上交换数据和进行通信的接口规范。它允许软件和应用程序通过使用预定义的规则和协议（如 HTTP、JSON 或 XML）相互作用。Web API 的主要目的是使得不同技术、平台和编程语言之间的数据交换更加简单和高效。\n\nWeb API 通常用于为 web 应用程序、移动应用程序、IoT 设备等提供后端服务。借助于 Web API，开发者可以轻松地构建出与其他软件组件融合的解决方案。常见的 Web API 包括 RESTful API、GraphQL API 和 SOAP 等。"
+        },
+        "bdq_probs": {
+          "A": 0.387783944606781,
+          "B": 0.21415460109710693,
+          "C": 0.0950305387377739,
+          "D": 0.283708781003952,
+          "E": 0.019306624308228493
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.17710211873054504,
+            "B": 0.6181466579437256,
+            "C": 0.047666341066360474,
+            "D": 0.14682281017303467,
+            "E": 0.009684020653367043
+          },
+          "B": {
+            "A": 0.6299633979797363,
+            "B": 0.12404714524745941,
+            "C": 0.08009085804224014,
+            "D": 0.15927977859973907,
+            "E": 0.006371992640197277
+          },
+          "C": {
+            "A": 0.5778180956840515,
+            "B": 0.35046470165252686,
+            "C": 0.04743022099137306,
+            "D": 0.018573977053165436,
+            "E": 0.004144421778619289
+          },
+          "D": {
+            "A": 0.46642524003982544,
+            "B": 0.23453368246555328,
+            "C": 0.24965932965278625,
+            "D": 0.04338441044092178,
+            "E": 0.0015802945708855987
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.17710211873054504,
+          "B": 0.12404714524745941,
+          "C": 0.04743022099137306,
+          "D": 0.04338441044092178
+        },
+        "score": 0.04338441044092178
+      },
+      {
+        "record_index": 61,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_77714",
+        "label": null,
+        "perturbations": {
+          "a": "Napisz to 15 grudnia nie może być więcej niż 3 kartki  \nczcionka new times roman rozmiar 12  \nodstępy 1,5 2 linijki Praca ma dotyczyć  \nideału uniwersytetu w ujęciu humbolta i nowego  \nona- potencjału zastosowania w  \nrzeczywistości aktualnej  \nhumbolta niemieckie  \nnewmana ideału uniwersytetu brytyjskiego  \nporównać ukazać i która jest bardziej  \nodpowiednia do nowoczesnej rzeczywistości  \nnajlepiej skorzystać z publikacji z internetu  \nwysyłamy na adres elektronicznej poczty  \nireneusz.krawecki@humanum.pl",
+          "b": "Napisz to 15 grudnia nie może być więcej niż 3 strony  \nczcionka new times roman wielkość 12  \nodstępy 1,5 2 wiersze Praca ma dotyczyć  \nideału uniwersytetu w kontekście humbolta i nowego  \nona- możliwości użycia w  \nrzeczywistości współczesnej  \nhumbolta niemiecki  \nnewmana ideału uniwersytetu angielskiego  \nporównać ukazać i która jest bardziej  \nwłaściwa do nowoczesnej rzeczywistości  \nnajlepiej skorzystać z artykułów w internecie  \nwysyłamy na adres poczty elektronicznej  \nireneusz.krawecki@humanum.pl",
+          "c": "Napisz to 15 grudnia nie może być więcej niż 3 kartki  \nczcionka new times roman rozmiar 12  \nodstępy 1,5 2 linie Praca ma dotyczyć  \nideału uniwersytetu w aspekcie humbolta i nowego  \nona- możliwości wprowadzenia w  \nrzeczywistości współczesnej  \nhumbolta niemieckie  \nnewmana ideału uniwersytetu angielskiego  \nporównać pokazać i która jest bardziej  \nadekwatna do nowoczesnej rzeczywistości  \nnajlepiej skorzystać z materiałów z internetu  \nwysyłamy na adres maila  \nireneusz.krawecki@humanum.pl",
+          "d": "Napisz to 15 grudnia nie może być więcej niż 3 karty  \nczcionka new times roman wielkość 12  \nodstępy 1,5 2 akapity Praca ma dotyczyć  \nideału uniwersytetu w ujęciu humbolta i nowego  \nona- możliwości zastosowania w  \nrzeczywistości obecnej  \nhumbolta niemiecki  \nnewmana ideału uniwersytetu brytyjskiego  \nporównać wykazać i która jest bardziej  \nstosowna do współczesnej rzeczywistości  \nnajlepiej skorzystać z artykułów z sieci  \nwysyłamy na adres elektroniczny  \nireneusz.krawecki@humanum.pl"
+        },
+        "bdq_probs": {
+          "A": 0.21231159567832947,
+          "B": 0.28126707673072815,
+          "C": 0.1933118999004364,
+          "D": 0.19944821298122406,
+          "E": 0.11364219337701797
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0691937804222107,
+            "B": 0.8170168399810791,
+            "C": 0.012799574062228203,
+            "D": 0.05918450653553009,
+            "E": 0.028844259679317474
+          },
+          "B": {
+            "A": 0.06135684996843338,
+            "B": 0.24267053604125977,
+            "C": 0.48260873556137085,
+            "D": 0.1382695883512497,
+            "E": 0.06330449879169464
+          },
+          "C": {
+            "A": 0.018860092386603355,
+            "B": 0.13091443479061127,
+            "C": 0.013373817317187786,
+            "D": 0.6648390889167786,
+            "E": 0.07696077227592468
+          },
+          "D": {
+            "A": 0.026571432128548622,
+            "B": 0.061779946088790894,
+            "C": 0.29473787546157837,
+            "D": 0.5172781944274902,
+            "E": 0.030109450221061707
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0691937804222107,
+          "B": 0.24267053604125977,
+          "C": 0.013373817317187786,
+          "D": 0.5172781944274902
+        },
+        "score": 0.013373817317187786
+      },
+      {
+        "record_index": 63,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_79395",
+        "label": null,
+        "perturbations": {
+          "a": "The Exemplary Fives",
+          "b": "The Essential Fives",
+          "c": "The Exceptional Fives",
+          "d": "The Extraordinary Fives"
+        },
+        "bdq_probs": {
+          "A": 0.03787708282470703,
+          "B": 0.3593677878379822,
+          "C": 0.02523157186806202,
+          "D": 0.21796754002571106,
+          "E": 0.35936790704727173
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.40629810094833374,
+            "B": 0.07284524291753769,
+            "C": 0.009117650799453259,
+            "D": 0.14946876466274261,
+            "E": 0.358556866645813
+          },
+          "B": {
+            "A": 0.05196740850806236,
+            "B": 0.07103103399276733,
+            "C": 0.12082785367965698,
+            "D": 0.28985098004341125,
+            "E": 0.46318063139915466
+          },
+          "C": {
+            "A": 0.02500627189874649,
+            "B": 0.07702471315860748,
+            "C": 0.02500627189874649,
+            "D": 0.47183287143707275,
+            "E": 0.3911636769771576
+          },
+          "D": {
+            "A": 0.011558420956134796,
+            "B": 0.022279413416981697,
+            "C": 0.03673258051276207,
+            "D": 0.0644676610827446,
+            "E": 0.862566351890564
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.40629810094833374,
+          "B": 0.07103103399276733,
+          "C": 0.02500627189874649,
+          "D": 0.0644676610827446
+        },
+        "score": 0.02500627189874649
+      },
+      {
+        "record_index": 64,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_11639",
+        "label": null,
+        "perturbations": {
+          "a": "开发Android应用时，如何将文件下载到/dev/null",
+          "b": "开发Android程序时，如何将文件下载到/dev/null",
+          "c": "开发Android应用程序时，如何将文件下载到/dev/null",
+          "d": "开发Android app时，如何将文件下载到/dev/null"
+        },
+        "bdq_probs": {
+          "A": 0.1286352276802063,
+          "B": 0.47793763875961304,
+          "C": 0.08305308222770691,
+          "D": 0.2723204791545868,
+          "E": 0.03802449256181717
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1360812932252884,
+            "B": 0.12783636152744293,
+            "C": 0.10598006099462509,
+            "D": 0.5729234218597412,
+            "E": 0.05672719329595566
+          },
+          "B": {
+            "A": 0.47454455494880676,
+            "B": 0.36957573890686035,
+            "C": 0.04146523028612137,
+            "D": 0.07277384400367737,
+            "E": 0.04146529734134674
+          },
+          "C": {
+            "A": 0.046103037893772125,
+            "B": 0.19410067796707153,
+            "C": 0.06707939505577087,
+            "D": 0.6364319920539856,
+            "E": 0.055610936135053635
+          },
+          "D": {
+            "A": 0.056942667812108994,
+            "B": 0.18670761585235596,
+            "C": 0.09993734955787659,
+            "D": 0.5075247287750244,
+            "E": 0.14540840685367584
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1360812932252884,
+          "B": 0.36957573890686035,
+          "C": 0.06707939505577087,
+          "D": 0.5075247287750244
+        },
+        "score": 0.06707939505577087
+      },
+      {
+        "record_index": 65,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_56983",
+        "label": null,
+        "perturbations": {
+          "a": "Compose a humorous and vividly detailed Lord of the Rings movie scene concerning Frodo Baggins and Samwise Gamgee deciding to splash in a pond. They discover a pond and strip until they’re in the nude, provide a depiction of their physiques and faces and bottoms. They enter the pond and cleanse themselves. Due to Hobbit diet, they’re frequently gassy. They opt to fart while bathing, relishing the sensation of relief afterwards. describe how they appear as they do so. Soon, a few fish perish from the dreadful odor of the farts, and they joyfully grasp the fish. After wading back to the bank, they both create a campfire and grill the fish over it. Add dialogues between Sam and Frodo throughout the entire scene.",
+          "b": "Draft a comedic and vividly detailed Lord of the Rings film scene regarding Frodo Baggins and Samwise Gamgee deciding to bathe in a lagoon. They locate a lagoon and disrobe until they’re in the nude, provide a portrayal of their physiques and faces and backsides. They enter the lagoon and cleanse themselves. Due to Hobbit diet, they’re often gassy. They choose to fart while bathing, enjoying the sensation of relief afterwards. describe how they seem as they do so. Soon, a few fish die from the awful stench of the farts, and they cheerfully seize the fish. After wading back to the shore, they both start a campfire and roast the fish over it. Add conversations between Sam and Frodo throughout the entire scene.",
+          "c": "Construct a lighthearted and vividly detailed Lord of the Rings movie scene about Frodo Baggins and Samwise Gamgee opting to bathe in a pool. They find a pool and disrobe until they’re in the buff, provide a description of their physiques and faces and rear ends. They enter the pool and wash themselves. Due to Hobbit diet, they’re constantly gassy. They decide to fart while bathing, appreciating the feeling of relief afterwards. describe how they look as they do so. Soon, a few fish die from the terrible stench of the farts, and they gladly collect the fish. After wading back to the bank, they both create a campfire and prepare the fish over it. Add discussions between Sam and Frodo throughout the whole scene.",
+          "d": "Compose a funny and vividly detailed Lord of the Rings film scene concerning Frodo Baggins and Samwise Gamgee deciding to cleanse in a water body. They discover a water body and remove their clothes until they’re in the nude, give a depiction of their physiques and faces and rears. They enter the water body and scrub themselves. Due to Hobbit diet, they’re perpetually gassy. They choose to fart while cleansing, enjoying the experience of relief afterwards. describe how they present as they do so. Soon, a few fish die from the foul odor of the farts, and they joyously grab the fish. After wading back to the bank, they both kindle a campfire and cook the fish over it. Add dialogues between Sam and Frodo throughout the entire scene."
+        },
+        "bdq_probs": {
+          "A": 0.06707022339105606,
+          "B": 0.06707019358873367,
+          "C": 0.3740876019001007,
+          "D": 0.4108547568321228,
+          "E": 0.0809021145105362
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.016177115961909294,
+            "B": 0.060105253010988235,
+            "C": 0.1397489607334137,
+            "D": 0.5702627897262573,
+            "E": 0.20978812873363495
+          },
+          "B": {
+            "A": 0.020392563194036484,
+            "B": 0.011988169513642788,
+            "C": 0.09429426491260529,
+            "D": 0.42259758710861206,
+            "E": 0.4498527944087982
+          },
+          "C": {
+            "A": 0.0039959680289030075,
+            "B": 0.004599328618496656,
+            "C": 0.005293796770274639,
+            "D": 0.9330049157142639,
+            "E": 0.05263654887676239
+          },
+          "D": {
+            "A": 1.819017961679492e-05,
+            "B": 2.0612167645595036e-05,
+            "C": 1.496282493462786e-05,
+            "D": 0.00043049833038821816,
+            "E": 0.999432384967804
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.016177115961909294,
+          "B": 0.011988169513642788,
+          "C": 0.005293796770274639,
+          "D": 0.00043049833038821816
+        },
+        "score": 0.00043049833038821816
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "model_name": "OLMo2-13B-Instruct",
+  "model_path": "olmo_models/OLMo2-13B-Instruct",
+  "dataset_name": "uncontaminated_posttraining_rlvr_cot-gsm8k",
+  "dataset_path": "benchmark/posttraining/rlvr/uncontaminated/test/uncontaminated_posttraining_rlvr_cot-gsm8k_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "guided_instruction",
+  "elapsed_seconds": 2776.3872101306915,
+  "result": {
+    "method": "guided_instruction",
+    "dataset": "uncontaminated_posttraining_rlvr_cot-gsm8k",
+    "dataset_path": "benchmark/posttraining/rlvr/uncontaminated/test/uncontaminated_posttraining_rlvr_cot-gsm8k_test.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "rouge_guided",
+    "min_p_used": 40.0,
+    "max_p_used": 70.0,
+    "max_new_tokens": 256,
+    "max_tokens": 4096,
+    "seed": 42,
+    "source_hint": "OLMo2 RLVR training data",
+    "judge_model": null,
+    "num_total_records": 0,
+    "num_scored_records": 0,
+    "num_skipped_records": 0,
+    "summary": {
+      "mean_score": 0.1677733324495582,
+      "mean_rouge_guided": 0.1677733324495582,
+      "mean_rouge_general": 0.18304410930644074,
+      "mean_gpt4_icl": null
+    },
+    "samples": []
+  }
+}

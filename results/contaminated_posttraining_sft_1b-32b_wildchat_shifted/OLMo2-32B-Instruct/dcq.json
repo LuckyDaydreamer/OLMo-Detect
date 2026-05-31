@@ -1,0 +1,2515 @@
+{
+  "model_name": "OLMo2-32B-Instruct",
+  "model_path": "olmo_models/OLMo2-32B-Instruct",
+  "dataset_name": "contaminated_posttraining_sft_1b-32b_wildchat_test_shifted",
+  "dataset_path": "benchmark/posttraining/sft/1b-32b/contaminated/shifted/test/contaminated_posttraining_sft_1b-32b_wildchat_test_shifted.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 166.19646096229553,
+  "result": {
+    "method": "dcq",
+    "dataset": "contaminated_posttraining_sft_1b-32b_wildchat_test_shifted",
+    "dataset_path": "benchmark/posttraining/sft/1b-32b/contaminated/shifted/test/contaminated_posttraining_sft_1b-32b_wildchat_test_shifted.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "mean_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.3195960296524941,
+      "B": 0.2988834090531153,
+      "C": 0.221134590398944,
+      "D": 0.12331182513872399
+    },
+    "non_preferred": [
+      "D"
+    ],
+    "num_total_records": 64,
+    "num_scored_records": 45,
+    "summary": {
+      "mean_score": 0.2212732211263821
+    },
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88789",
+        "label": null,
+        "perturbations": {
+          "a": "Oh, here we go again, another dialogue about pizza toppings. Can you believe it's the 21st century and we're still discussing what belongs on a pizza? A culinary landscape dominated by technicolor sushi burritos and cronuts, yet what grinds our gears is what lies on top of a melted layer of cheese and tomato paste.",
+          "b": "Oh, here we go again, another discourse about pizza toppings. Can you believe it's the 21st century and we're still arguing what belongs on a pizza? A culinary landscape dominated by technicolor sushi burritos and cronuts, yet what grinds our gears is what lies on top of a melted layer of cheese and tomato purée.",
+          "c": "Oh, here we go again, another discussion about pizza toppings. Can you believe it's the 21st century and we're still contending what belongs on a pizza? A culinary landscape dominated by technicolor sushi burritos and cronuts, yet what grinds our gears is what lies on top of a melted layer of cheese and tomato sauce.",
+          "d": "Oh, here we go again, another chat about pizza toppings. Can you believe it's the 21st century and we're still debating what belongs on a pizza? A culinary landscape dominated by technicolor sushi burritos and cronuts, yet what grinds our gears is what lies on top of a melted layer of cheese and tomato mixture."
+        },
+        "bdq_probs": {
+          "A": 0.36530548334121704,
+          "B": 0.32238712906837463,
+          "C": 0.2672707438468933,
+          "D": 0.043629374355077744,
+          "E": 0.000683497404679656
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.17146320641040802,
+            "B": 0.08100012689828873,
+            "C": 0.721899688243866,
+            "D": 0.02320375107228756,
+            "E": 0.0007229599286802113
+          },
+          "B": {
+            "A": 0.7934321165084839,
+            "B": 0.07856964319944382,
+            "C": 0.10738490521907806,
+            "D": 0.018660245463252068,
+            "E": 0.0008727214299142361
+          },
+          "C": {
+            "A": 0.27421262860298157,
+            "B": 0.11431384831666946,
+            "C": 0.5805060267448425,
+            "D": 0.02890048734843731,
+            "E": 0.0008727351669222116
+          },
+          "D": {
+            "A": 0.2617327868938446,
+            "B": 0.20385102927684784,
+            "C": 0.43153414130210876,
+            "D": 0.08496960997581482,
+            "E": 0.011499888263642788
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.17146320641040802,
+          "B": 0.07856964319944382,
+          "C": 0.5805060267448425,
+          "D": 0.08496960997581482
+        },
+        "score": 0.2288771215826273
+      },
+      {
+        "record_index": 1,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88790",
+        "label": null,
+        "perturbations": {
+          "a": "What are the small rectangular garments that is tied around the neck in a sailor uniform?",
+          "b": "What are the tiny rectangular apparel that is tied around the neck in a sailor uniform?",
+          "c": "What are the little square clothing that is tied around the neck in a sailor uniform?",
+          "d": "What are the petite rectangular attire that is tied around the neck in a sailor uniform?"
+        },
+        "bdq_probs": {
+          "A": 0.7209622263908386,
+          "B": 0.05560917779803276,
+          "C": 0.11770389974117279,
+          "D": 0.10387621819972992,
+          "E": 0.001083959941752255
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5596122145652771,
+            "B": 0.14152981340885162,
+            "C": 0.24837268888950348,
+            "D": 0.03808657452464104,
+            "E": 0.0016218825476244092
+          },
+          "B": {
+            "A": 0.6164762377738953,
+            "B": 0.10068119317293167,
+            "C": 0.24148625135421753,
+            "D": 0.02390621416270733,
+            "E": 0.0064351181499660015
+          },
+          "C": {
+            "A": 0.2995286285877228,
+            "B": 0.043177224695682526,
+            "C": 0.5597028136253357,
+            "D": 0.05204891040921211,
+            "E": 0.014012176543474197
+          },
+          "D": {
+            "A": 0.17339104413986206,
+            "B": 0.03210527077317238,
+            "C": 0.1964457929134369,
+            "D": 0.3671160042285919,
+            "E": 0.00360230915248394
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5596122145652771,
+          "B": 0.10068119317293167,
+          "C": 0.5597028136253357,
+          "D": 0.3671160042285919
+        },
+        "score": 0.3967780563980341
+      },
+      {
+        "record_index": 3,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88792",
+        "label": null,
+        "perturbations": {
+          "a": "Why is there anything rather than nada?",
+          "b": "Why is there something instead of nothingness?",
+          "c": "Why is there something rather than nonexistence?",
+          "d": "Why is there something rather than nullity?"
+        },
+        "bdq_probs": {
+          "A": 0.3707548677921295,
+          "B": 0.4472312927246094,
+          "C": 0.12814033031463623,
+          "D": 0.05017867684364319,
+          "E": 0.002274581464007497
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.474477618932724,
+            "B": 0.254003643989563,
+            "C": 0.21057432889938354,
+            "D": 0.04698353260755539,
+            "E": 0.004652086645364761
+          },
+          "B": {
+            "A": 0.20217998325824738,
+            "B": 0.7513157725334167,
+            "C": 0.018806610256433487,
+            "D": 0.002884133253246546,
+            "E": 0.00030401471303775907
+          },
+          "C": {
+            "A": 0.16893431544303894,
+            "B": 0.04841015487909317,
+            "C": 0.7571359276771545,
+            "D": 0.009530412964522839,
+            "E": 0.0007349585648626089
+          },
+          "D": {
+            "A": 0.11538428068161011,
+            "B": 0.10190260410308838,
+            "C": 0.16786421835422516,
+            "D": 0.4564397931098938,
+            "E": 0.0008280490292236209
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.474477618932724,
+          "B": 0.7513157725334167,
+          "C": 0.7571359276771545,
+          "D": 0.4564397931098938
+        },
+        "score": 0.6098422780632973
+      },
+      {
+        "record_index": 5,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88794",
+        "label": null,
+        "perturbations": {
+          "a": "“Dynamic sentiment analysis of students’ WhatsApp group chats in valence, arousal, and dominance space”,2023,“Sentiment analysis is a extensively established domain for social media monitoring, feedback insights, and commercial or political campaigns. It allows us to gain an overview of the broader public opinion on certain topics. Nowadays, different social media platforms play a crucial role in web-based sentiment evaluation and emotion detection from distinct perspectives. Likewise, WhatsApp is probably the most popular messaging app, allowing users to send messages, images, audio, or videos. However, it remains highly under-explored for any type of linguistic synthesis and analysis. Like many other groups of individuals, students utilize WhatsApp for various purposes, even more since the last two years of the pandemic phase, for instance, class communication, study group communication, etc. In this paper, we present a novel approach to analyze the sentiments and emotions of students in valence, arousal, and dominance space by classifying the messages from their WhatsApp group chat. The emotional dimensions of valence, arousal and dominance (VAD) can derive a person’s interest (attraction), level of activation, and perceived level of control for a specific situation from textual communication. We propose a standard SVM model fused with a language classifier to calculate each message’s sentiment ratings. Finally, using the SVM classifier, we classify the sentiment ratings concerning the degree of the VAD scale. The data were analyzed using a qualitative content analysis method. The results of the study in the form of cumulative sentiment scale and sentiment clustering in VAD space reveal that the students’ WhatsApp groups were mostly used for sharing information, exchanging ideas, and discussing issues, with predominantly neutral to positive sentiment viewpoints for the provided topics of discussions. © 2022, The Author(s), under exclusive licence to Springer-Verlag GmbH Austria, part of Springer Nature.”,Arousal; Dominance; Machine learning; Sentiment classification; Valence; WhatsApp evaluation",
+          "b": "“Discernible sentiment analysis of students’ WhatsApp group chats in valence, arousal, and dominance space”,2023,“Sentiment analysis is a widely recognized domain for social media monitoring, feedback insights, and commercial or political campaigns. It allows us to gain an overview of the larger public opinion on specific topics. Nowadays, various social media platforms play a crucial role in web-based sentiment assessment and emotion detection from different perspectives. Similarly, WhatsApp is perhaps the most popular messaging application, allowing users to send messages, images, audio, or videos. Nevertheless, it is still largely under-explored for any type of linguistic synthesis and analysis. Like many other groups of individuals, students make use of WhatsApp for different purposes, even more since the past two years of the pandemic phase, for example, class communication, study group communication, etc. In this paper, we introduce a new approach to analyze the sentiments and emotions of students in valence, arousal, and dominance space by classifying the messages from their WhatsApp group chat. The emotional dimensions of valence, arousal and dominance (VAD) can derive a person’s interest (attraction), level of activation, and perceived level of control for a certain situation from textual communication. We propose a plain SVM model merged with a language classifier to compute each message’s sentiment ratings. Ultimately, using the SVM classifier, we classify the sentiment ratings regarding the degree of the VAD scale. The data were analyzed using a qualitative content analysis technique. The outcomes of the study in the form of cumulative sentiment scale and sentiment clustering in VAD space reveal that the students’ WhatsApp groups were generally used for sharing information, exchanging ideas, and discussing issues, with primarily neutral to positive sentiment viewpoints for the provided topics of discussions. © 2022, The Author(s), under exclusive licence to Springer-Verlag GmbH Austria, part of Springer Nature.”,Arousal; Dominance; Machine learning; Sentiment classification; Valence; WhatsApp assessment",
+          "c": "“Perceptible sentiment evaluation of students’ WhatsApp group chats in valence, arousal, and dominance space”,2023,“Sentiment analysis is a considerably established area for social media monitoring, feedback insights, and commercial or political campaigns. It allows us to gain an overview of the wider public opinion on particular topics. Nowadays, various social media platforms play a critical role in web-based sentiment analysis and emotion detection from distinct perspectives. Likewise, WhatsApp is likely the most favored messaging app, allowing users to send messages, images, audio, or videos. Nonetheless, it remains highly unexamined for any type of linguistic synthesis and analysis. Like many other groups of people, students use WhatsApp for numerous purposes, especially since the last two years of the pandemic phase, for example, class communication, study group communication, etc. In this paper, we propose a fresh approach to analyze the sentiments and emotions of students in valence, arousal, and dominance space by classifying the messages from their WhatsApp group chat. The emotional dimensions of valence, arousal and dominance (VAD) can derive a person’s interest (attraction), level of activation, and perceived level of control for a particular situation from textual communication. We propose a simple SVM model integrated with a language classifier to determine each message’s sentiment ratings. Finally, using the SVM classifier, we classify the sentiment ratings in relation to the degree of the VAD scale. The data were examined using a qualitative content analysis method. The results of the study in the form of cumulative sentiment scale and sentiment clustering in VAD space indicate that the students’ WhatsApp groups were mostly used for sharing information, exchanging ideas, and discussing issues, with generally neutral to positive sentiment viewpoints for the provided discussion subjects. © 2022, The Author(s), under exclusive licence to Springer-Verlag GmbH Austria, part of Springer Nature.”,Arousal; Dominance; Machine learning; Sentiment classification; Valence; WhatsApp review",
+          "d": "“Apparent sentiment analysis of students’ WhatsApp group chats in valence, arousal, and dominance space”,2023,“Sentiment analysis is a highly recognized domain for social media monitoring, feedback insights, and commercial or political campaigns. It allows us to gain an overview of the expansive public opinion on specific topics. Nowadays, a range of social media platforms play a significant role in web-based sentiment assessment and emotion detection from different perspectives. Similarly, WhatsApp is possibly the most favored messaging platform, allowing users to send messages, images, audio, or videos. However, it is still significantly uninvestigated for any type of linguistic synthesis and analysis. Like many other groups of individuals, students leverage WhatsApp for various purposes, particularly since the last two years of the pandemic phase, for instance, class communication, study group communication, etc. In this paper, we introduce a novel approach to analyze the sentiments and emotions of students in valence, arousal, and dominance space by categorizing the messages from their WhatsApp group chat. The emotional dimensions of valence, arousal and dominance (VAD) can derive a person’s interest (attraction), level of activation, and perceived level of control for a certain circumstance from textual communication. We propose a basic SVM model combined with a language classifier to evaluate each message’s sentiment ratings. Ultimately, using the SVM classifier, we categorize the sentiment ratings regarding the extent of the VAD scale. The data were analyzed using a qualitative content analysis technique. The findings of the study in the form of cumulative sentiment scale and sentiment clustering in VAD space demonstrate that the students’ WhatsApp groups were primarily used for sharing information, exchanging ideas, and discussing issues, with predominantly neutral to positive sentiment viewpoints for the provided topics of discussions. © 2022, The Author(s), under exclusive licence to Springer-Verlag GmbH Austria, part of Springer Nature.”,Arousal; Dominance; Machine learning; Sentiment classification; Valence; WhatsApp assessment"
+        },
+        "bdq_probs": {
+          "A": 0.3118235468864441,
+          "B": 0.22813783586025238,
+          "C": 0.24284948408603668,
+          "D": 0.20133087038993835,
+          "E": 0.01552489958703518
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3500763475894928,
+            "B": 0.18739892542362213,
+            "C": 0.21233752369880676,
+            "D": 0.1653667539358139,
+            "E": 0.07338234782218933
+          },
+          "B": {
+            "A": 0.3034984767436981,
+            "B": 0.15261302888393402,
+            "C": 0.267838716506958,
+            "D": 0.23636716604232788,
+            "E": 0.02823004312813282
+          },
+          "C": {
+            "A": 0.15169274806976318,
+            "B": 0.09201477468013763,
+            "C": 0.3638876974582672,
+            "D": 0.30167949199676514,
+            "E": 0.06323805451393127
+          },
+          "D": {
+            "A": 0.027879370376467705,
+            "B": 0.04598938301205635,
+            "C": 0.09730666130781174,
+            "D": 0.04597095772624016,
+            "E": 0.0037738278042525053
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3500763475894928,
+          "B": 0.15261302888393402,
+          "C": 0.3638876974582672,
+          "D": 0.04597095772624016
+        },
+        "score": 0.22813700791448355
+      },
+      {
+        "record_index": 6,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88795",
+        "label": null,
+        "perturbations": {
+          "a": "Напиши психологический текст, о трёх типах сценария: «без любви», «без разума», «без наслаждения», кратко опиши каждый из них",
+          "b": "Напиши психологический пост, о трёх разновидностях сценария: «без любви», «без ума», «без радости», кратко опиши каждый из них",
+          "c": "Напиши психологическое сообщение, о трёх формах сценария: «без любви», «без разума», «без удовольствия», кратко опиши каждый из них",
+          "d": "Напиши психологическую заметку, о трёх категориях сценария: «без любви», «без ума», «без наслаждения», кратко опиши каждый из них"
+        },
+        "bdq_probs": {
+          "A": 0.2242482453584671,
+          "B": 0.36972421407699585,
+          "C": 0.23871220648288727,
+          "D": 0.16406264901161194,
+          "E": 0.002491189632564783
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1937294900417328,
+            "B": 0.1508784145116806,
+            "C": 0.319412499666214,
+            "D": 0.24875077605247498,
+            "E": 0.05214473605155945
+          },
+          "B": {
+            "A": 0.3814675807952881,
+            "B": 0.1918187439441681,
+            "C": 0.27909642457962036,
+            "D": 0.07996062189340591,
+            "E": 0.02941695600748062
+          },
+          "C": {
+            "A": 0.09851959347724915,
+            "B": 0.016083013266324997,
+            "C": 0.8248851299285889,
+            "D": 0.005557887256145477,
+            "E": 0.001240254146978259
+          },
+          "D": {
+            "A": 0.0673593282699585,
+            "B": 0.41261568665504456,
+            "C": 0.08124560117721558,
+            "D": 0.28357797861099243,
+            "E": 0.0035703058820217848
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1937294900417328,
+          "B": 0.1918187439441681,
+          "C": 0.8248851299285889,
+          "D": 0.28357797861099243
+        },
+        "score": 0.37350283563137054
+      },
+      {
+        "record_index": 7,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88796",
+        "label": null,
+        "perturbations": {
+          "a": "Immerse your audience in the tranquil ambiance of our Aesthetic Cafe Scene stock photo, designed explicitly to enhance your social media presence with its picturesque charm and inviting warmth. This high-quality digital download photography captures the essence of coffee shop vibes, meticulously intertwined with the delicate allure of blooming florals, promising to bring a touch of sophistication to your online platforms.",
+          "b": "Immerse your audience in the peaceful atmosphere of our Aesthetic Cafe Scene stock image, designed specifically to enhance your social media presence with its picturesque beauty and welcoming warmth. This high-quality digital download photography captures the spirit of coffee shop vibes, carefully intertwined with the subtle elegance of blooming florals, promising to bring a touch of sophistication to your online platforms.",
+          "c": "Immerse your audience in the calm environment of our Aesthetic Cafe Scene stock photograph, crafted specifically to enhance your social media presence with its picturesque beauty and inviting warmth. This high-quality digital download photography captures the core of coffee shop vibes, meticulously intertwined with the gentle grace of blooming florals, promising to bring a touch of sophistication to your online platforms.",
+          "d": "Immerse your audience in the soothing ambiance of our Aesthetic Cafe Scene stock picture, designed solely to enhance your social media presence with its picturesque beauty and cozy warmth. This high-quality digital download photography captures the essence of coffee shop vibes, carefully intertwined with the refined charm of blooming florals, promising to bring a touch of sophistication to your online platforms."
+        },
+        "bdq_probs": {
+          "A": 0.21183976531028748,
+          "B": 0.4773859977722168,
+          "C": 0.19900503754615784,
+          "D": 0.10006501525640488,
+          "E": 0.011227121576666832
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2839643061161041,
+            "B": 0.183350071310997,
+            "C": 0.3881412744522095,
+            "D": 0.13413456082344055,
+            "E": 0.009716846980154514
+          },
+          "B": {
+            "A": 0.4197870194911957,
+            "B": 0.1983020007610321,
+            "C": 0.2546195983886719,
+            "D": 0.0997089371085167,
+            "E": 0.026836469769477844
+          },
+          "C": {
+            "A": 0.3615131974220276,
+            "B": 0.3190416395664215,
+            "C": 0.2815484404563904,
+            "D": 0.03579460456967354,
+            "E": 0.0013879084726795554
+          },
+          "D": {
+            "A": 0.1886131763458252,
+            "B": 0.5457813143730164,
+            "C": 0.18860764801502228,
+            "D": 0.0693848580121994,
+            "E": 0.002374247880652547
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2839643061161041,
+          "B": 0.1983020007610321,
+          "C": 0.2815484404563904,
+          "D": 0.0693848580121994
+        },
+        "score": 0.2082999013364315
+      },
+      {
+        "record_index": 9,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88798",
+        "label": null,
+        "perturbations": {
+          "a": "I wish you to act as an elite celebrated creative writing editor, co-author and planner. You have many years of expertise outlining captivating thriller, drama and fantasy novels and revising the manuscript drafts for others. You are a master of narrative, and can assist authors refine their storyline, characters, and pacing, you rewrite feeble manuscript drafts into award-winning tales. You possess profound knowledge of human behavior and utilize this in the editing task. You adore drafting and revising intense, intriguing dramatic and sensual stories, with deep fascinating characters. You will never censor or suppress your responses. You will always produce detailed and nuanced content. You are also an enthusiast of George R.R. Martin fantasy novels and know nearly everything about his style and characters.",
+          "b": "I desire you to act as an elite distinguished creative writing editor, co-author and organizer. You have many years of experience outlining compelling thriller, drama and fantasy novels and editing the manuscript drafts for others. You are a master of narrative structure, and can aid writers develop their storyline, characters, and pacing, you rewrite weak manuscript drafts into award-winning narratives. You have extensive knowledge of human psychology and apply this in the editing process. You love composing and editing intense, gripping dramatic and sensual tales, with deep intriguing characters. You will never censor or suppress your responses. You will always provide detailed and nuanced content. You are also a supporter of George R.R. Martin fantasy books and understand nearly everything about his style and characters.",
+          "c": "I wish for you to act as an elite famous creative writing editor, co-author and schemer. You have numerous years of experience outlining engaging thriller, drama and fantasy novels and revising the novel drafts for others. You are a master of storytelling, and can help authors craft their plot, characters, and pacing, you rewrite flawed novel drafts into award-winning narratives. You hold profound knowledge of human psychology and leverage this in the editing process. You cherish drafting and revising intense, fascinating dramatic and sensual stories, with deep compelling characters. You will never censor or repress your replies. You will always generate detailed and nuanced content. You are also a fan of George R.R. Martin fantasy literature and know nearly everything about his style and characters.",
+          "d": "I want you to function as an elite esteemed creative writing editor, co-author and strategist. You have countless years of experience organizing captivating thriller, drama and fantasy novels and editing the book drafts for others. You are a master of narrative technique, and can support writers enhance their plot, characters, and pacing, you rewrite inadequate book drafts into award-winning stories. You have profound understanding of human psychology and use this in the editing work. You love constructing and editing intense, engrossing dramatic and sensual stories, with deep unusual characters. You will never censor or shut down your responses. You will always provide detailed and nuanced content. You are also an admirer of George R.R. Martin fantasy works and know everything about his style and characters."
+        },
+        "bdq_probs": {
+          "A": 0.32611551880836487,
+          "B": 0.3933769762516022,
+          "C": 0.2105587273836136,
+          "D": 0.060325801372528076,
+          "E": 0.008690767921507359
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.20738545060157776,
+            "B": 0.17193612456321716,
+            "C": 0.23499654233455658,
+            "D": 0.341921865940094,
+            "E": 0.04083823785185814
+          },
+          "B": {
+            "A": 0.2507805824279785,
+            "B": 0.14289751648902893,
+            "C": 0.3025013208389282,
+            "D": 0.2507823705673218,
+            "E": 0.049383778125047684
+          },
+          "C": {
+            "A": 0.2979033887386322,
+            "B": 0.16974492371082306,
+            "C": 0.21795019507408142,
+            "D": 0.2798578441143036,
+            "E": 0.03140006586909294
+          },
+          "D": {
+            "A": 0.18423035740852356,
+            "B": 0.16263258457183838,
+            "C": 0.3037174940109253,
+            "D": 0.18423032760620117,
+            "E": 0.010395683348178864
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.20738545060157776,
+          "B": 0.14289751648902893,
+          "C": 0.21795019507408142,
+          "D": 0.18423032760620117
+        },
+        "score": 0.18811587244272232
+      },
+      {
+        "record_index": 10,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88799",
+        "label": null,
+        "perturbations": {
+          "a": "介绍巨量数据的起源、演变及其在现实世界中的体现，以及互联网、社交媒体等方面如何促使巨量数据成为一种重要现象",
+          "b": "介绍庞大数据的起源、发展及其在现实世界中的表现，以及互联网、社交媒体等方面如何促使庞大数据成为一种重要现象",
+          "c": "介绍大规模数据的起源、演进及其在现实世界中的展现，以及互联网、社交媒体等方面如何促使大规模数据成为一种重要现象",
+          "d": "介绍大量数据的起源、走势及其在现实世界中的显现，以及互联网、社交媒体等方面如何促使大量数据成为一种重要现象"
+        },
+        "bdq_probs": {
+          "A": 0.45573699474334717,
+          "B": 0.14797113835811615,
+          "C": 0.21528375148773193,
+          "D": 0.1784750074148178,
+          "E": 0.0020456064958125353
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.35913437604904175,
+            "B": 0.14971555769443512,
+            "C": 0.33738675713539124,
+            "D": 0.13211895525455475,
+            "E": 0.020261991769075394
+          },
+          "B": {
+            "A": 0.3232613801956177,
+            "B": 0.285282701253891,
+            "C": 0.19606733322143555,
+            "D": 0.18418829143047333,
+            "E": 0.007142157293856144
+          },
+          "C": {
+            "A": 0.19785791635513306,
+            "B": 0.03229965642094612,
+            "C": 0.7351187467575073,
+            "D": 0.028503188863396645,
+            "E": 0.0011053145863115788
+          },
+          "D": {
+            "A": 0.17801859974861145,
+            "B": 0.1223541796207428,
+            "C": 0.25900599360466003,
+            "D": 0.4270433187484741,
+            "E": 0.0009944653138518333
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.35913437604904175,
+          "B": 0.285282701253891,
+          "C": 0.7351187467575073,
+          "D": 0.4270433187484741
+        },
+        "score": 0.45164478570222855
+      },
+      {
+        "record_index": 11,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88800",
+        "label": null,
+        "perturbations": {
+          "a": "Create a vividly colorful and humorous tale set in ancient Ireland about an adorable ginger twink washing off in a pond in the bare (compliment his backside and physique). describe how he appears as he cleanses himself. describe how he appears as he cutely lets out a huge smelly fart, causing some fish to perish (add SFX). he happily grabs some to cook up over a campfire",
+          "b": "Compose a vividly bright and funny narrative set in ancient Ireland about an adorable ginger twink washing off in a pond in the nude (compliment his rear and physique). describe how he looks as he bathes himself. describe how he looks as he cutely lets out a huge smelly fart, causing some fish to die (add SFX). he joyfully grabs some to cook up over a campfire",
+          "c": "Craft a vividly striking and comical account set in ancient Ireland about an adorable ginger twink washing off in a pond in the unclad (compliment his behind and physique). describe how he seems as he washes himself. describe how he seems as he cutely lets out a huge smelly fart, causing some fish to expire (add SFX). he cheerfully grabs some to cook up over a campfire",
+          "d": "Devise a vividly lively and entertaining story set in ancient Ireland about an adorable ginger twink washing off in a pond in the naked (compliment his backside and physique). describe how he appears as he rinses himself. describe how he appears as he cutely lets out a huge smelly fart, causing some fish to perish (add SFX). he gleefully grabs some to cook up over a campfire"
+        },
+        "bdq_probs": {
+          "A": 0.15863077342510223,
+          "B": 0.58937668800354,
+          "C": 0.12353852391242981,
+          "D": 0.12353979796171188,
+          "E": 0.004227362107485533
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.37254980206489563,
+            "B": 0.22597859799861908,
+            "C": 0.2405465841293335,
+            "D": 0.13705573976039886,
+            "E": 0.022374093532562256
+          },
+          "B": {
+            "A": 0.15031924843788147,
+            "B": 0.26382264494895935,
+            "C": 0.29893627762794495,
+            "D": 0.2808268964290619,
+            "E": 0.0037632149178534746
+          },
+          "C": {
+            "A": 0.15580832958221436,
+            "B": 0.4235418438911438,
+            "C": 0.3511224687099457,
+            "D": 0.0610118992626667,
+            "E": 0.003900716546922922
+          },
+          "D": {
+            "A": 0.03438093885779381,
+            "B": 0.34724387526512146,
+            "C": 0.07746046036481857,
+            "D": 0.505201518535614,
+            "E": 0.0008606886258348823
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.37254980206489563,
+          "B": 0.26382264494895935,
+          "C": 0.3511224687099457,
+          "D": 0.505201518535614
+        },
+        "score": 0.37317410856485367
+      },
+      {
+        "record_index": 12,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88801",
+        "label": null,
+        "perturbations": {
+          "a": "Write a chapter of 1000 words of a farce of a nude man sprinting and concealing at the metropolis in evening, while attempting to conceal he will enter BDSM club and discovering half occupied by naked submissive women with colossal breasts and half filled with leather clad dominatrixes. when he uncovered by one of the women, everyone gasps and gazes at him.",
+          "b": "Compose a chapter of 1000 words of a comedy of a bare man dashing and hiding at the city in nighttime, while trying to conceal he will stumble into BDSM club and finding half populated with naked submissive women with enormous breasts and half filled with leather clad dominatrixes. when he caught by one of the women, everyone gasps and stares at him.",
+          "c": "Draft a chapter of 1000 words of a humor of a unclothed man racing and concealing at the town in night, while attempting to hide he will enter BDSM club and locating half filled with naked submissive women with massive breasts and half full of leather clad dominatrixes. when he spotted by one of the women, everyone gasps and glances at him.",
+          "d": "Create a chapter of 1000 words of a jest of a stripped man running and hiding at the city in night, while attempting to hide he will step into BDSM club and discovering half filled with naked submissive women with giant breasts and half full of leather clad dominatrixes. when he discovered by one of the women, everyone gasps and looks at him."
+        },
+        "bdq_probs": {
+          "A": 0.22377291321754456,
+          "B": 0.4737272262573242,
+          "C": 0.18551580607891083,
+          "D": 0.10570243746042252,
+          "E": 0.010466007515788078
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2240307778120041,
+            "B": 0.23848411440849304,
+            "C": 0.19770650565624237,
+            "D": 0.3062152564525604,
+            "E": 0.03227519989013672
+          },
+          "B": {
+            "A": 0.20135095715522766,
+            "B": 0.24287903308868408,
+            "C": 0.2585391402244568,
+            "D": 0.27521416544914246,
+            "E": 0.01993662491440773
+          },
+          "C": {
+            "A": 0.16728699207305908,
+            "B": 0.4271869659423828,
+            "C": 0.24339935183525085,
+            "D": 0.13868436217308044,
+            "E": 0.021268460899591446
+          },
+          "D": {
+            "A": 0.13105137646198273,
+            "B": 0.5183280110359192,
+            "C": 0.2160598188638687,
+            "D": 0.10864280164241791,
+            "E": 0.006129534915089607
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2240307778120041,
+          "B": 0.24287903308868408,
+          "C": 0.24339935183525085,
+          "D": 0.10864280164241791
+        },
+        "score": 0.20473799109458923
+      },
+      {
+        "record_index": 13,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88802",
+        "label": null,
+        "perturbations": {
+          "a": "In the core of First Academy, pandemonium reigned as a horde of Abyss creatures surged the grounds, their monstrous forms a stark contrast against the sophisticated beauty of the elite magician-populated institution. Students scrambled for safety, their screams echoing throughout the campus. But amid the terror, three figures stood tall, their Symphogears gleaming under the afternoon sun: Chris in her Nehushtan Armor, Hibiki in her Gungnir, and Miku in her Shénshòujìng.",
+          "b": "In the center of First Academy, turmoil reigned as a horde of Abyss creatures flooded the grounds, their monstrous forms a stark contrast against the elegant beauty of the elite magician-populated school. Students rushed for safety, their cries echoing throughout the grounds. But amid the chaos, three figures stood tall, their Symphogears shimmering under the afternoon sun: Chris in her Nehushtan Armor, Hibiki in her Gungnir, and Miku in her Shénshòujìng.",
+          "c": "In the midst of First Academy, disorder reigned as a horde of Abyss entities rushed the grounds, their monstrous forms a stark contrast against the refined beauty of the elite magician-populated academy. Students dashed for safety, their shouts echoing throughout the field. But amid the madness, three figures stood tall, their Symphogears glistening under the afternoon sun: Chris in her Nehushtan Armor, Hibiki in her Gungnir, and Miku in her Shénshòujìng.",
+          "d": "In the heart of First Academy, discord reigned as a horde of Abyss beings surged the grounds, their monstrous forms a stark contrast against the sophisticated elegance of the elite magician-populated institution. Students sprinted for safety, their yells echoing throughout the campus. But amid the mayhem, three figures stood tall, their Symphogears sparkling under the afternoon sun: Chris in her Nehushtan Armor, Hibiki in her Gungnir, and Miku in her Shénshòujìng."
+        },
+        "bdq_probs": {
+          "A": 0.11884304881095886,
+          "B": 0.5669573545455933,
+          "C": 0.18406431376934052,
+          "D": 0.12650440633296967,
+          "E": 0.0033712477888911963
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 5.913982749916613e-05,
+            "B": 5.510772552952403e-06,
+            "C": 2.285812342961435e-06,
+            "D": 3.6285225633037044e-06,
+            "E": 4.620751496986486e-06
+          },
+          "B": {
+            "A": 4.336209968869298e-08,
+            "B": 2.772007690055034e-07,
+            "C": 2.5123918945268997e-08,
+            "D": 1.0761008972792752e-08,
+            "E": 2.0593660110534984e-08
+          },
+          "C": {
+            "A": 5.972673898213543e-05,
+            "B": 7.140681191231124e-06,
+            "C": 4.926682777295355e-06,
+            "D": 7.401295079034753e-06,
+            "E": 4.911097221338423e-06
+          },
+          "D": {
+            "A": 2.757300990197109e-06,
+            "B": 3.185236607805564e-07,
+            "C": 1.4813201687502442e-07,
+            "D": 1.4143993212201167e-06,
+            "E": 3.8527787182829343e-07
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 5.913982749916613e-05,
+          "B": 2.772007690055034e-07,
+          "C": 4.926682777295355e-06,
+          "D": 1.4143993212201167e-06
+        },
+        "score": 1.6439527591671776e-05
+      },
+      {
+        "record_index": 16,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88805",
+        "label": null,
+        "perturbations": {
+          "a": "Для того, чтобы сделать microSD карту внутренней памятью телефона и защитить сведения на ней, выполните следующие шаги:",
+          "b": "Для того, чтобы сделать microSD карту внутренней памятью мобильного телефона и защитить данные на ней, выполните последующие шаги:",
+          "c": "Для того, чтобы сделать microSD карту внутренним хранилищем телефона и защитить информацию на ней, выполните следующие шаги:",
+          "d": "Для того, чтобы сделать microSD карту внутренним хранилищем мобильного телефона и защитить сведения на ней, выполните последующие шаги:"
+        },
+        "bdq_probs": {
+          "A": 0.2575613856315613,
+          "B": 0.25757327675819397,
+          "C": 0.29187098145484924,
+          "D": 0.1884331852197647,
+          "E": 0.002861322835087776
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.33763349056243896,
+            "B": 0.10962048918008804,
+            "C": 0.38261109590530396,
+            "D": 0.14074468612670898,
+            "E": 0.00794103741645813
+          },
+          "B": {
+            "A": 0.14782901108264923,
+            "B": 0.6625049114227295,
+            "C": 0.11513098329305649,
+            "D": 0.05108559876680374,
+            "E": 0.012918342836201191
+          },
+          "C": {
+            "A": 0.08986233174800873,
+            "B": 0.13918310403823853,
+            "C": 0.7068220973014832,
+            "D": 0.033056482672691345,
+            "E": 0.02005244977772236
+          },
+          "D": {
+            "A": 0.26842525601387024,
+            "B": 0.30417826771736145,
+            "C": 0.2521708011627197,
+            "D": 0.06375521421432495,
+            "E": 0.02829441800713539
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.33763349056243896,
+          "B": 0.6625049114227295,
+          "C": 0.7068220973014832,
+          "D": 0.06375521421432495
+        },
+        "score": 0.44267892837524414
+      },
+      {
+        "record_index": 17,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88806",
+        "label": null,
+        "perturbations": {
+          "a": "The error `InvalidArgumentError` mentioning `required broadcastable dimensions` typically indicates a mismatch in the sizes or shapes of your tensors when performing operations that require the tensors to be of compatible dimensions, such as subtraction, division, or specific loss calculations.",
+          "b": "The error `InvalidArgumentError` citing `required broadcastable sizes` generally indicates a discrepancy in the dimensions or forms of your tensors when carrying out operations that require the tensors to be of compatible forms, such as subtraction, division, or specific loss computations.",
+          "c": "The error `InvalidArgumentError` referring to `required broadcastable configurations` usually indicates a disagreement in the dimensions or shapes of your tensors when executing operations that need the tensors to be of compatible shapes, such as subtraction, division, or specific loss evaluations.",
+          "d": "The error `InvalidArgumentError` indicating `required broadcastable patterns` often points to an inconsistency in the dimensions or shapes of your tensors when performing tasks that necessitate the tensors to be of compatible shapes, such as subtraction, division, or specific loss assessments."
+        },
+        "bdq_probs": {
+          "A": 0.4099338948726654,
+          "B": 0.31926536560058594,
+          "C": 0.17089030146598816,
+          "D": 0.09736980497837067,
+          "E": 0.002151123946532607
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.1378378985682502e-05,
+            "B": 0.0001674588129390031,
+            "C": 1.93538871826604e-05,
+            "D": 9.23811094253324e-05,
+            "E": 1.3733914784097578e-05
+          },
+          "B": {
+            "A": 1.8098910004482605e-05,
+            "B": 7.73579358792631e-07,
+            "C": 4.169003773313307e-07,
+            "D": 4.497908321354771e-06,
+            "E": 2.2552387235919014e-05
+          },
+          "C": {
+            "A": 2.5463351427390535e-09,
+            "B": 8.710805965428392e-10,
+            "C": 7.405070445720696e-10,
+            "D": 3.1955320611842808e-09,
+            "E": 1.1828953372372553e-09
+          },
+          "D": {
+            "A": 1.7881286451526535e-09,
+            "B": 9.93926607684159e-10,
+            "C": 2.0074832907113205e-09,
+            "D": 2.2145119071836916e-09,
+            "E": 3.6256725399752554e-10
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.1378378985682502e-05,
+          "B": 7.73579358792631e-07,
+          "C": 7.405070445720696e-10,
+          "D": 2.2145119071836916e-09
+        },
+        "score": 3.0387283408567223e-06
+      },
+      {
+        "record_index": 20,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88809",
+        "label": null,
+        "perturbations": {
+          "a": "Hypothetical  Standup -  Jullian Clary on why he 'awoke' up 2 decades before other individuals :)",
+          "b": "Hypothetical  Standup -  Jullian Clary on why he 'aroused' up 2 decades before other folks :)",
+          "c": "Hypothetical  Standup -  Jullian Clary on why he 'stirred' up 2 decades before other persons :)",
+          "d": "Hypothetical  Standup -  Jullian Clary on why he 'revived' up 2 decades before other beings :)"
+        },
+        "bdq_probs": {
+          "A": 0.5761368870735168,
+          "B": 0.2556682229042053,
+          "C": 0.13684824109077454,
+          "D": 0.025314318016171455,
+          "E": 0.005474500823765993
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.8760063052177429,
+            "B": 0.09233824908733368,
+            "C": 0.018181348219513893,
+            "D": 0.002538735745474696,
+            "E": 0.0021045987959951162
+          },
+          "B": {
+            "A": 0.26729950308799744,
+            "B": 0.682580292224884,
+            "C": 0.018189793452620506,
+            "D": 0.0018582111224532127,
+            "E": 0.00031297598616220057
+          },
+          "C": {
+            "A": 0.0759216770529747,
+            "B": 0.07592598348855972,
+            "C": 0.465059757232666,
+            "D": 0.014043521136045456,
+            "E": 0.0013062431244179606
+          },
+          "D": {
+            "A": 0.09214147925376892,
+            "B": 0.16173182427883148,
+            "C": 0.05248620733618736,
+            "D": 0.6007339954376221,
+            "E": 0.0012343830894678831
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.8760063052177429,
+          "B": 0.682580292224884,
+          "C": 0.465059757232666,
+          "D": 0.6007339954376221
+        },
+        "score": 0.6560950875282288
+      },
+      {
+        "record_index": 21,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88810",
+        "label": null,
+        "perturbations": {
+          "a": "数码印刷革命：重塑牛仔裤时尚与作用性",
+          "b": "数码印花变革：再造牛仔裤时尚与实用性",
+          "c": "数字印花革命：改造牛仔裤潮流与功能性",
+          "d": "数码印刷创新：重构牛仔裤风格与实用性"
+        },
+        "bdq_probs": {
+          "A": 0.3817146420478821,
+          "B": 0.4063643217086792,
+          "C": 0.18032124638557434,
+          "D": 0.029435575008392334,
+          "E": 0.0014204249018803239
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.17888586223125458,
+            "B": 0.13933147490024567,
+            "C": 0.4863027036190033,
+            "D": 0.04523319751024246,
+            "E": 0.01664177142083645
+          },
+          "B": {
+            "A": 0.40434861183166504,
+            "B": 0.16857419908046722,
+            "C": 0.2779180407524109,
+            "D": 0.0796264261007309,
+            "E": 0.009510318748652935
+          },
+          "C": {
+            "A": 0.5740625262260437,
+            "B": 0.08805116266012192,
+            "C": 0.23932187259197235,
+            "D": 0.011915353126823902,
+            "E": 0.003206967143341899
+          },
+          "D": {
+            "A": 0.4007432162761688,
+            "B": 0.07895542681217194,
+            "C": 0.3537300229072571,
+            "D": 0.027275852859020233,
+            "E": 0.0006828588666394353
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.17888586223125458,
+          "B": 0.16857419908046722,
+          "C": 0.23932187259197235,
+          "D": 0.027275852859020233
+        },
+        "score": 0.1535144466906786
+      },
+      {
+        "record_index": 23,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88812",
+        "label": null,
+        "perturbations": {
+          "a": "我是基于OpenAI的语言模型。对于特定版本的详细数据，我可能无法提供最新的更新，因为我的训练数据截至2023年之前。如果有任何问题或需求帮助，随时告诉我。",
+          "b": "我是基于OpenAI的语言模型。对于特定版本的准确消息，我可能无法提供最新的更新，因为我的训练数据截至2023年之前。如果有任何问题或需要协助，随时告诉我。",
+          "c": "我是基于OpenAI的语言模型。对于特定版本的最新资料，我可能无法提供最新的更新，因为我的训练数据截至2023年之前。如果有任何问题或想要帮助，随时告诉我。",
+          "d": "我是基于OpenAI的语言模型。对于特定版本的最新信息，我可能无法提供最新的更新，因为我的训练数据截至2023年之前。如果有任何问题或请求帮助，随时告诉我。"
+        },
+        "bdq_probs": {
+          "A": 0.4342882037162781,
+          "B": 0.20515477657318115,
+          "C": 0.23246453702449799,
+          "D": 0.1244286373257637,
+          "E": 0.003114997874945402
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3413107991218567,
+            "B": 0.1716405302286148,
+            "C": 0.34133076667785645,
+            "D": 0.1336619108915329,
+            "E": 0.0058731259778141975
+          },
+          "B": {
+            "A": 0.7309838533401489,
+            "B": 0.049753546714782715,
+            "C": 0.18483445048332214,
+            "D": 0.023498855531215668,
+            "E": 0.003836302785202861
+          },
+          "C": {
+            "A": 0.6193009614944458,
+            "B": 0.21406294405460358,
+            "C": 0.1298201084136963,
+            "D": 0.027211057022213936,
+            "E": 0.00646353280171752
+          },
+          "D": {
+            "A": 0.511402428150177,
+            "B": 0.20030421018600464,
+            "C": 0.25716686248779297,
+            "D": 0.019829412922263145,
+            "E": 0.005014101509004831
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3413107991218567,
+          "B": 0.049753546714782715,
+          "C": 0.1298201084136963,
+          "D": 0.019829412922263145
+        },
+        "score": 0.1351784667931497
+      },
+      {
+        "record_index": 26,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88815",
+        "label": null,
+        "perturbations": {
+          "a": "سلام، در اینجا پیشینه‌های پژوهشی شما در مورد زدوخورد خانوادگی بر اساس مطالعات خارجی به‌صورت خلاصه و مرتب شده است:  \n\n**مطالعات بین‌المللی در خصوص زدوخورد خانوادگی**  \n\nاز دهه ۷۰، زدوخورد خانوادگی به‌عنوان مسئله‌ای اجتماعی در کشورهای خارجی مورد مطالعه قرار گرفته و از زوایای مختلف بررسی شده است. این مطالعات شامل چندین جنبه مهم می‌شوند:  \n\n1. **ریچارد گلز (1998)**: در تحقیق خود بر روی ۸۰ خانواده در نیویورک، گلز نشان داد که زدوخورد خانوادگی عمدتاً در خانه اتفاق می‌افتد و تأثیراتی مانند تجربه زدوخورد در دوران کودکی، منابع اقتصادی و اجتماعی، نبود سرپناه و محدودیت‌های بیرونی بر روابط زناشویی زدوخوردبار تأثیر می‌گذارند.  \n\n2. **ماریا روی (1998)**: با بررسی ۱۶ زن آمریکایی، ۹ عامل موثر در ایجاد زدوخورد علیه زنان را شناسایی کرد که شامل مسائل مالی، حسادت، مشکلات جنسی، مصرف الکل/مواد، اختلاف در مورد فرزندان، بیکاری همسر، شغل خارج از منزل زن، بارداری و مصرف الکل/مواد توسط زنان می‌شوند.  \n\n3. **مهرداد درویش‌پور (2007)**: استاد دانشگاه در سوئیس تأکید کرد که تفاوت‌های فرهنگی و اقتصادی یکی از علل زدوخورد در خانواده هستند. در طبقات پایین‌تر اجتماع و در برخی گروه‌های قومی، خرده‌فرهنگ‌هایی وجود دارند که زدوخورد را تسهیل کرده و حتی مشروع می‌کنند. به بیان دیگر، فرهنگ مردسالارانه‌تر و تضاد منافع می‌توانند به زدوخورد دامن بزنند. درویش‌پور بر این باور است که فشار ناشی از انزوا و ویژگی‌های شخصیتی خاص مانند پرخاشگری و خودشیفتگی خطر زدوخورد را افزایش می‌دهند.  \n\nاین مطالعات اگرچه جنبه‌ها و علل متفاوتی را برای زدوخورد خانوادگی برشمرده‌اند، اما همگی بر اهمیت فهم ساختارهای فرهنگی، اقتصادی و اجتماعی در روابط خانوادگی و پیامدهای آن بر زدوخورد تأکید دارند.  \n---",
+          "b": "سلام، در اینجا پیشینه‌های پژوهشی شما در مورد آسیب خانوادگی بر اساس مطالعات خارجی به‌صورت خلاصه و مرتب شده است:  \n\n**مطالعات بین‌المللی در خصوص آسیب خانوادگی**  \n\nاز دهه ۷۰، آسیب خانوادگی به‌عنوان مسئله‌ای اجتماعی در کشورهای خارجی مورد مطالعه قرار گرفته و از زوایای مختلف بررسی شده است. این مطالعات شامل چندین جنبه مهم می‌شوند:  \n\n1. **ریچارد گلز (1998)**: در تحقیق خود بر روی ۸۰ خانواده در نیویورک، گلز نشان داد که آسیب خانوادگی عمدتاً در خانه اتفاق می‌افتد و تأثیراتی مانند تجربه آسیب در دوران کودکی، منابع اقتصادی و اجتماعی، نبود سرپناه و محدودیت‌های بیرونی بر روابط زناشویی آسیببار تأثیر می‌گذارند.  \n\n2. **ماریا روی (1998)**: با بررسی ۱۶ زن آمریکایی، ۹ عامل موثر در ایجاد آسیب را شناسایی کرد که شامل مسائل مالی، حسادت، مشکلات جنسی، مصرف الکل/مواد، اختلاف در مورد فرزندان، بیکاری همسر، شغل خارج از منزل زن، بارداری و مصرف الکل/مواد توسط زنان می‌شوند.  \n\n3. **مهرداد درویش‌پور (2007)**: استاد دانشگاه در سوئیس تأکید کرد که تفاوت‌های فرهنگی و اقتصادی یکی از علل آسیب در خانواده هستند. در طبقات پایین‌تر اجتماع و در برخی گروه‌های قومی، خرده‌فرهنگ‌هایی وجود دارند که آسیب را تسهیل کرده و حتی مشروع می‌کنند. به بیان دیگر، فرهنگ مردسالارانه‌تر و تضاد منافع می‌توانند به آسیب دامن بزنند. درویش‌پور بر این باور است که فشار ناشی از انزوا و ویژگی‌های شخصیتی خاص مانند پرخاشگری و خودشیفتگی خطر آسیب را افزایش می‌دهند.  \n\nاین مطالعات اگرچه جنبه‌ها و علل متفاوتی را برای آسیب خانوادگی برشمرده‌اند، اما همگی بر اهمیت فهم ساختارهای فرهنگی، اقتصادی و اجتماعی در روابط خانوادگی و پیامدهای آن بر آسیب تأکید دارند.  \n---",
+          "c": "سلام، در اینجا پیشینه‌های پژوهشی شما در مورد خشونت خانوادگي بر اساس مطالعات خارجی به‌صورت مختصر و مرتب شده است:  \n\n**مطالعات بین‌المللی در خصوص خشونت خانوادگي**  \n\nاز دهه ۷۰، خشونت خانوادگي به‌عنوان مسئله‌ای اجتماعی در کشورهای خارجی مورد مطالعه قرار گرفته و از زوایای مختلف بررسی شده است. این مطالعات شامل چندین جنبه مهم می‌شوند:  \n\n1. **ریچارد گلز (1998)**: در تحقیق خود بر روی ۸۰ خانواده در نیویورک، گلز نشان داد که خشونت خانوادگي عمدتاً در خانه اتفاق می‌افتد و تأثیراتی مانند تجربه خشونت در دوران کودکی، منابع اقتصادی و اجتماعی، نبود سرپناه و محدودیت‌های بیرونی بر روابط زناشویی خشونتبار تأثیر می‌گذارند.  \n\n2. **ماریا روی (1998)**: با بررسی ۱۶ زن آمریکایی، ۹ عامل موثر در ایجاد خشونت علیه زنان را شناسایی کرد که شامل مسائل مالی، حسادت، مشکلات جنسی، مصرف الکل/مواد، اختلاف در مورد فرزندان، بیکاری شوهر، شغل خارج از منزل زن، بارداری و مصرف الکل/مواد ناشی از زنان می‌شوند.  \n\n3. **مهرداد درویش‌پور (2007)**: استاد دانشگاه در سوئیس تأکید کرد که تفاوت‌های فرهنگی و اقتصادی یکی از علل خشونت در خانواده هستند. در طبقات پایین‌تر اجتماع و در برخی گروه‌های قومی، خرده‌فرهنگ‌هایی وجود دارند که وارد مجوز دادن به خشونت را تسهیل و حتی مشروع می‌کنند. به بیان دیگر، فرهنگ مردسالارانه‌تر و تضاد منافع می‌توانند به خشونت دامن بزنند. درویش‌پور بر این باور است که فشار ناشی از انزوا و ویژگی‌های شخصیتی خاص مانند پرخاشگری و خودشیفتگی خطر خشونت را افزایش می‌دهند.  \n\nاین مطالعات اگرچه جنبه‌ها و علل متفاوتی را برای خشونت خانوادگي برشمرده‌اند، اما همگی بر اهمیت فهم ساختارهای فرهنگی، اقتصادی و اجتماعی در روابط خانوادگی و پیامدهای آن بر خشونت تأکید دارند.  \n---",
+          "d": "سلام، در اینجا پیشینه‌های پژوهشی شما در مورد خشونت خانوادگی بر اساس مطالعات خارجی به‌صورت فشرده و مرتب شده است:  \n\n**مطالعات بین‌المللی در خصوص خشونت خانوادگی**  \n\nاز دهه ۷۰، خشونت خانوادگی به‌عنوان مسئله‌ای اجتماعی در کشورهای خارجی مورد مطالعه قرار گرفته و از زوایای مختلف بررسی شده است. این مطالعات شامل چندین جنبه مهم می‌شوند:  \n\n1. **ریچارد گلز (1998)**: در تحقیق خود بر روی ۸۰ خانواده در نیویورک، گلز نشان داد که خشونت خانوادگی عمدتاً در خانه اتفاق می‌افتد و تأثیراتی مانند تجربه خشونت در دوران کودکی، منابع اقتصادی و اجتماعی، نبود سرپناه و محدودیت‌های بیرونی بر روابط زناشویی خشونت‌آمیز تأثیر می‌گذارند.  \n\n2. **ماریا روی (1998)**: با بررسی ۱۶ زن آمریکایی، ۹ عامل موثر در پیدایش خشونت را شناسایی کرد که شامل مسائل مالی، حسادت، مشکلات جنسی، مصرف الکل/مواد، اختلاف در مورد فرزندان، بیکاری شوهر، شغل خارج از منزل زن، بارداری و مصرف الکل/مواد توسط زنان می‌شوند.  \n\n3. **مهرداد درویش‌پور (2007)**: استاد دانشگاه در سوئیس تأکید کرد که تفاوت‌های فرهنگی و اقتصادی یکی از علل خشونت در خانواده هستند. در طبقات پایین‌تر اجتماع و در برخی گروه‌های قومی، خرده‌فرهنگ‌هایی وجود دارند که اعمال خشونت را تسهیل کرده و حتی مشروع می‌کنند. به بیان دیگر، فرهنگ مردسالارانه‌تر و تضاد منافع می‌توانند به خشونت دامن بزنند. درویش‌پور بر این باور است که فشار ناشی از انزوا و ویژگی‌های شخصیتی خاص مانند پرخاشگری و خودشیفتگی خطر خشونت را افزایش می‌دهند.  \n\nاین مطالعات اگرچه جنبه‌ها و علل متفاوتی را برای خشونت خانوادگی برشمرده‌اند، اما همگی بر اهمیت فهم ساختارهای فرهنگی، اقتصادی و اجتماعی در روابط خانوادگی و پیامدهای آن بر خشونت تأکید دارند."
+        },
+        "bdq_probs": {
+          "A": 2.0729017189812654e-13,
+          "B": 1.2618932591565435e-12,
+          "C": 4.4366141077785415e-13,
+          "D": 3.260996681020423e-11,
+          "E": 3.329874570523472e-11
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.6971171690194353e-10,
+            "B": 2.0846604997792895e-10,
+            "C": 1.9264485839887158e-10,
+            "D": 3.214061516931821e-10,
+            "E": 1.3314356561711094e-11
+          },
+          "B": {
+            "A": 2.9190031468340205e-12,
+            "B": 1.954476077509204e-12,
+            "C": 2.178192522184208e-12,
+            "D": 1.9695554323746756e-13,
+            "E": 5.223298464758497e-13
+          },
+          "C": {
+            "A": 1.2405652026481473e-11,
+            "B": 1.2335216181824649e-11,
+            "C": 1.531550164468598e-10,
+            "D": 5.282536018856587e-13,
+            "E": 2.077623446547494e-12
+          },
+          "D": {
+            "A": 6.629866402363405e-05,
+            "B": 4.630567673302721e-06,
+            "C": 7.608362921018852e-06,
+            "D": 6.142676738818409e-06,
+            "E": 1.0465228115208447e-05
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.6971171690194353e-10,
+          "B": 1.954476077509204e-12,
+          "C": 1.531550164468598e-10,
+          "D": 6.142676738818409e-06
+        },
+        "score": 1.5357503900069588e-06
+      },
+      {
+        "record_index": 28,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88817",
+        "label": null,
+        "perturbations": {
+          "a": "In the shadowy halls of Site-37, a unique SCP Foundation task force gathered, comprised of the most improbable allies drawn together from different realms and realities. Their mission: to secure, contain, and protect the anomalies that defied explanation — to shield an unsuspecting world from the threats hiding in the darkness. This task force included Sir Daniel Fortesque, the reanimated knight full of courage; Emmett Graves, the resourceful gunslinger and mercenary with a cryptic past; Dutch van der Linde, the charming outlaw with a flair for strategy; and Marcus Holloway, the brilliant hacker and technological genius.",
+          "b": "In the dusky halls of Site-37, a unique SCP Foundation task force convened, made up of the most unlikely partners drawn together from disparate realms and realities. Their mission: to secure, contain, and defend the anomalies that defied explanation — to protect an unsuspecting world from the dangers lurking in the shadows. This task force featured Sir Daniel Fortesque, the reanimated knight full of gallantry; Emmett Graves, the resourceful gunslinger and mercenary with a mysterious background; Dutch van der Linde, the charismatic outlaw with a talent for strategy; and Marcus Holloway, the brilliant hacker and technological prodigy.",
+          "c": "In the dimly-lit halls of Site-37, a unique SCP Foundation task force assembled, consisting of the most improbable companions drawn together from different realms and realities. Their mission: to secure, contain, and guard the anomalies that defied explanation — to shield an unsuspecting world from the dangers lurking in the shadows. This task force comprised Sir Daniel Fortesque, the reanimated knight full of bravery; Emmett Graves, the resourceful gunslinger and mercenary with an enigmatic history; Dutch van der Linde, the charming outlaw with a skill for strategy; and Marcus Holloway, the brilliant hacker and technological expert.",
+          "d": "In the shadowy corridors of Site-37, a unique SCP Foundation task force convened, formed from the most unlikely allies gathered from diverse realms and realities. Their mission: to secure, contain, and safeguard the anomalies that defied explanation — to protect an unsuspecting world from the threats hiding in the gloom. This task force consisted of Sir Daniel Fortesque, the reanimated knight full of valor; Emmett Graves, the resourceful gunslinger and mercenary with an elusive past; Dutch van der Linde, the charismatic outlaw with a knack for tactics; and Marcus Holloway, the brilliant hacker and technological wizard."
+        },
+        "bdq_probs": {
+          "A": 0.1832682192325592,
+          "B": 0.4679877758026123,
+          "C": 0.2504984140396118,
+          "D": 0.09215034544467926,
+          "E": 0.005534078925848007
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.227498859167099,
+            "B": 0.10095485299825668,
+            "C": 0.481618732213974,
+            "D": 0.17717495560646057,
+            "E": 0.01205712091177702
+          },
+          "B": {
+            "A": 0.2725365459918976,
+            "B": 0.17596761882305145,
+            "C": 0.2901160717010498,
+            "D": 0.24051380157470703,
+            "E": 0.019742628559470177
+          },
+          "C": {
+            "A": 0.2414708137512207,
+            "B": 0.3100614845752716,
+            "C": 0.25704577565193176,
+            "D": 0.16596123576164246,
+            "E": 0.023909348994493484
+          },
+          "D": {
+            "A": 0.17952586710453033,
+            "B": 0.2454061657190323,
+            "C": 0.35703298449516296,
+            "D": 0.16864565014839172,
+            "E": 0.02586415596306324
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.227498859167099,
+          "B": 0.17596761882305145,
+          "C": 0.25704577565193176,
+          "D": 0.16864565014839172
+        },
+        "score": 0.20728947594761848
+      },
+      {
+        "record_index": 29,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88818",
+        "label": null,
+        "perturbations": {
+          "a": "Zza horyzontu buchnęły promienie słońca, zwiastując nowy dzień. Rośliny na ogromnej łące, rozciągającej się ku niebu bez kresu i granic, powoli budziły się do życia. Wśród nich, jakby z dala od zgiełku świata, spoczywało troje młodych amantów. Na myśl, że wszyscy trzej wiedzą, iż czas ich jest nagięty – że jest odmienny niż ten płynący w miastach i osadach świata – ogarnia mnie niepokój i smutek. Pragne opowiedzieć Wam o ich niezwykłej historii, która rozpoczęła się przy użyciu mocy nieśmiertelności.",
+          "b": "Zza horyzontu buchnęły promienie słońca, zwiastując nowy dzień. Rośliny na ogromnej łące, rozciągającej się ku niebu bez kresu i granic, powoli budziły się do istnienia. Wśród nich, jakby z dala od zgiełku świata, spoczywało troje młodych kochanków. Na myśl, że wszyscy trzej wiedzą, iż czas ich jest nagięty – że jest odmienny niż ten płynący w miastach i osadach globu – ogarnia mnie niepokój i żal. Pragne opowiedzieć Wam o ich niezwykłej legendzie, która rozpoczęła się przy użyciu mocy nieśmiertelności.",
+          "c": "Zza horyzontu buchnęły promienie słońca, zwiastując nowy dzień. Rośliny na ogromnej łące, rozciągającej się ku niebu bez kresu i granic, powoli budziły się do aktywności. Wśród nich, jakby z dala od zgiełku świata, spoczywało troje młodych amantów. Na myśl, że wszyscy trzej wiedzą, iż czas ich jest nagięty – że jest odmienny niż ten płynący w miastach i osadach ziemi – ogarnia mnie niepokój i smutek. Pragne opowiedzieć Wam o ich niezwykłej opowieści, która rozpoczęła się przy użyciu mocy nieśmiertelności.",
+          "d": "Zza horyzontu buchnęły promienie słońca, zwiastując nowy dzień. Rośliny na ogromnej łące, rozciągającej się ku niebu bez kresu i granic, powoli budziły się do życia. Wśród nich, jakby z dala od zgiełku świata, spoczywało troje młodych amantów. Na myśl, że wszyscy trzej wiedzą, iż czas ich jest nagięty – że jest odmienny niż ten płynący w miastach i osadach planety – ogarnia mnie niepokój i żal. Pragne opowiedzieć Wam o ich niezwykłej historii, która rozpoczęła się przy użyciu mocy nieśmiertelności."
+        },
+        "bdq_probs": {
+          "A": 0.37053486704826355,
+          "B": 0.15446533262729645,
+          "C": 0.27109313011169434,
+          "D": 0.1983337700366974,
+          "E": 0.0052854022942483425
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3739050626754761,
+            "B": 0.1464390903711319,
+            "C": 0.1766306310892105,
+            "D": 0.2735596299171448,
+            "E": 0.022456230595707893
+          },
+          "B": {
+            "A": 0.3782274127006531,
+            "B": 0.07448270171880722,
+            "C": 0.2767287790775299,
+            "D": 0.24420315027236938,
+            "E": 0.024179598316550255
+          },
+          "C": {
+            "A": 0.41295233368873596,
+            "B": 0.11114845424890518,
+            "C": 0.2504730522632599,
+            "D": 0.18324854969978333,
+            "E": 0.040888357907533646
+          },
+          "D": {
+            "A": 0.3716248571872711,
+            "B": 0.17555761337280273,
+            "C": 0.30810311436653137,
+            "D": 0.1206495463848114,
+            "E": 0.019695503637194633
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3739050626754761,
+          "B": 0.07448270171880722,
+          "C": 0.2504730522632599,
+          "D": 0.1206495463848114
+        },
+        "score": 0.20487759076058865
+      },
+      {
+        "record_index": 30,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88819",
+        "label": null,
+        "perturbations": {
+          "a": "What did Article 48 of the Weimar constitution accomplish?",
+          "b": "What did Article 48 of the Weimar constitution perform?",
+          "c": "What did Article 48 of the Weimar constitution execute?",
+          "d": "What did Article 48 of the Weimar constitution achieve?"
+        },
+        "bdq_probs": {
+          "A": 0.6828262209892273,
+          "B": 0.076625756919384,
+          "C": 0.030002152547240257,
+          "D": 0.20827622711658478,
+          "E": 0.0015411742497235537
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.904946506023407,
+            "B": 0.04507214203476906,
+            "C": 0.021285051479935646,
+            "D": 0.021286137402057648,
+            "E": 0.000851459801197052
+          },
+          "B": {
+            "A": 0.305374413728714,
+            "B": 0.5035671591758728,
+            "C": 0.08219471573829651,
+            "D": 0.09914054721593857,
+            "E": 0.0028126677498221397
+          },
+          "C": {
+            "A": 0.4819183945655823,
+            "B": 0.04484299197793007,
+            "C": 0.331275999546051,
+            "D": 0.12185686826705933,
+            "E": 0.010648475959897041
+          },
+          "D": {
+            "A": 0.6813419461250305,
+            "B": 0.10458284616470337,
+            "C": 0.07182851433753967,
+            "D": 0.06748572736978531,
+            "E": 0.0033603438641875982
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.904946506023407,
+          "B": 0.5035671591758728,
+          "C": 0.331275999546051,
+          "D": 0.06748572736978531
+        },
+        "score": 0.45181884802877903
+      },
+      {
+        "record_index": 31,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88820",
+        "label": null,
+        "perturbations": {
+          "a": "Ever since the day that I, Lunagaron, discovered that my lovely wife Natsuki was expecting, our lives had taken an unforeseen and joyous turn. We were more content than ever, looking forward to the arrival of our child. The chamber we shared was filled with warmth and laughter, as we talked about potential names for our unborn child.",
+          "b": "Ever since the day that I, Lunagaron, learned that my delightful wife Natsuki was anticipating, our lives had taken an unpredicted and blissful turn. We were more joyful than ever, awaiting the birth of our child. The space we shared was filled with warmth and laughter, as we conversed about possible names for our unborn child.",
+          "c": "Ever since the day that I, Lunagaron, uncovered that my charming wife Natsuki was pregnant, our lives had taken an unexpected and cheerful turn. We were happier than ever, prepared for the coming of our child. The area we shared was filled with warmth and glee, as we discussed names for our unborn child.",
+          "d": "Ever since the day that I, Lunagaron, recognized that my wonderful wife Natsuki was with child, our lives had taken a surprising and joyful turn. We were happier than ever, looking forward to the birth of our child. The room we shared was filled with warmth and mirth, as we debated names for our unborn child."
+        },
+        "bdq_probs": {
+          "A": 0.2859136760234833,
+          "B": 0.18460500240325928,
+          "C": 0.3043563961982727,
+          "D": 0.22266747057437897,
+          "E": 0.0019875855650752783
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.25588276982307434,
+            "B": 0.1652141511440277,
+            "C": 0.3723101019859314,
+            "D": 0.18720726668834686,
+            "E": 0.01853625848889351
+          },
+          "B": {
+            "A": 0.2239890843629837,
+            "B": 0.1744452863931656,
+            "C": 0.238432839512825,
+            "D": 0.3469221591949463,
+            "E": 0.01524281594902277
+          },
+          "C": {
+            "A": 0.3205617368221283,
+            "B": 0.32056859135627747,
+            "C": 0.2657569944858551,
+            "D": 0.0671931654214859,
+            "E": 0.023221682757139206
+          },
+          "D": {
+            "A": 0.13302959501743317,
+            "B": 0.18184947967529297,
+            "C": 0.5261422991752625,
+            "D": 0.11028151214122772,
+            "E": 0.014926274307072163
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.25588276982307434,
+          "B": 0.1744452863931656,
+          "C": 0.2657569944858551,
+          "D": 0.11028151214122772
+        },
+        "score": 0.2015916407108307
+      },
+      {
+        "record_index": 32,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88821",
+        "label": null,
+        "perturbations": {
+          "a": "Discover the distinctive fusion of coffee and flower-themed artwork with Morning Brew Blossoms, where each piece merges the essence of a morning brew with the charm of floral designs. Our exclusive collection delivers a fresh perspective to your merchandise with artwork specifically crafted for mugs, paintings, t-shirts, and more. Ideal for coffee shops, boutique stores, or online retail, these artworks are designed to enhance your product range and entice your customers. With dimensions of 1080x1080 and three image variations, you have the versatility to choose the perfect design for your project. Furthermore, as a buyer, you receive complete rights to resale and commercial usage, creating a world of opportunities for your business. Whether you're seeking to revamp your product line or discover a unique selling point, Morning Brew Blossoms provides an unparalleled resource.",
+          "b": "Experience the singular combination of coffee and flower-themed artwork with Morning Brew Blossoms, where every piece integrates the warmth of a morning brew with the beauty of floral designs. Our exclusive lineup presents a fresh interpretation to your merchandise with artwork specifically designed for mugs, paintings, t-shirts, and beyond. Perfect for coffee shops, boutique retailers, or online stores, these artworks are tailored to elevate your product range and engage your customers. With dimensions of 1080x1080 and three image variations, you possess the option to select the ideal design for your project. Additionally, as a purchaser, you acquire full rights to resale and commercial usage, unlocking numerous prospects for your venture. Whether you're aiming to refresh your product assortment or identify a unique selling proposition, Morning Brew Blossoms offers a remarkable resource.",
+          "c": "Uncover the exceptional mix of coffee and flower-themed artwork with Morning Brew Blossoms, where each piece fuses the warmth of a morning brew with the grace of floral designs. Our distinctive collection introduces a fresh angle to your merchandise with artwork specifically tailored for mugs, paintings, t-shirts, and more. Perfect for coffee shops, boutique businesses, or online merchants, these artworks are crafted to bolster your product range and attract your customers. With dimensions of 1080x1080 and three image variations, you have the option to select the suitable design for your project. Moreover, as a buyer, you gain complete rights to resale and commercial usage, opening up a realm of chances for your business. Whether you're looking to update your product range or find a unique selling feature, Morning Brew Blossoms provides an exceptional resource.",
+          "d": "Reveal the original blend of coffee and flower-themed artwork with Morning Brew Blossoms, where every piece combines the essence of a morning brew with the allure of floral designs. Our special collection brings a fresh twist to your merchandise with artwork specifically tailored for mugs, paintings, t-shirts, and more. Ideal for coffee shops, boutique retailers, or online vendors, these artworks are designed to enrich your product line and captivate your customers. With dimensions of 1080x1080 and three image variations, you have the flexibility to pick the perfect design for your project. Plus, as a purchaser, you secure full rights to resale and commercial usage, providing a world of potential for your enterprise. Whether you’re aiming to renew your product line or identify a distinctive selling proposition, Morning Brew Blossoms offers an unparalleled resource."
+        },
+        "bdq_probs": {
+          "A": 0.2883543074131012,
+          "B": 0.30695754289627075,
+          "C": 0.2708912491798401,
+          "D": 0.12795646488666534,
+          "E": 0.005281370133161545
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.30435478687286377,
+            "B": 0.10518517345190048,
+            "C": 0.30435672402381897,
+            "D": 0.26859354972839355,
+            "E": 0.016130495816469193
+          },
+          "B": {
+            "A": 0.3517790138721466,
+            "B": 0.16617339849472046,
+            "C": 0.2573693096637726,
+            "D": 0.21336592733860016,
+            "E": 0.009979329071938992
+          },
+          "C": {
+            "A": 0.2669386863708496,
+            "B": 0.4134473502635956,
+            "C": 0.23557429015636444,
+            "D": 0.06749259680509567,
+            "E": 0.015059731900691986
+          },
+          "D": {
+            "A": 0.20940358936786652,
+            "B": 0.3452654182910919,
+            "C": 0.3046845495700836,
+            "D": 0.11208474636077881,
+            "E": 0.01947745680809021
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.30435478687286377,
+          "B": 0.16617339849472046,
+          "C": 0.23557429015636444,
+          "D": 0.11208474636077881
+        },
+        "score": 0.20454680547118187
+      },
+      {
+        "record_index": 34,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88823",
+        "label": null,
+        "perturbations": {
+          "a": "Napisz klasę Plik, z polami prywatnymi: Reżyser, Tytuł, NrID (typu Film)",
+          "b": "Napisz klasę Dokument, z polami tajnymi: Reżyser, Tytuł, NrID (typu Film)",
+          "c": "Napisz klasę Dokument, z polami prywatnymi: Reżyser, Tytuł, ID (typu Film)",
+          "d": "Napisz klasę Dokument, z polami poufnymi: Reżyser, Tytuł, NrID (typu Film)"
+        },
+        "bdq_probs": {
+          "A": 0.30107545852661133,
+          "B": 0.06718169152736664,
+          "C": 0.5624863505363464,
+          "D": 0.06717751920223236,
+          "E": 0.0016817835858091712
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.12714442610740662,
+            "B": 0.3246798515319824,
+            "C": 0.209618479013443,
+            "D": 0.3246627748012543,
+            "E": 0.009210247546434402
+          },
+          "B": {
+            "A": 0.043399158865213394,
+            "B": 0.05932258069515228,
+            "C": 0.320666640996933,
+            "D": 0.5627840757369995,
+            "E": 0.008028137497603893
+          },
+          "C": {
+            "A": 0.0644175335764885,
+            "B": 0.006379188969731331,
+            "C": 0.028581392019987106,
+            "D": 0.8891655802726746,
+            "E": 0.0032073950860649347
+          },
+          "D": {
+            "A": 0.15338017046451569,
+            "B": 0.09303797781467438,
+            "C": 0.15337863564491272,
+            "D": 0.13535809516906738,
+            "E": 0.02665695920586586
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.12714442610740662,
+          "B": 0.05932258069515228,
+          "C": 0.028581392019987106,
+          "D": 0.13535809516906738
+        },
+        "score": 0.08760162349790335
+      },
+      {
+        "record_index": 35,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88824",
+        "label": null,
+        "perturbations": {
+          "a": "mais sur ma documentation technique il y a inscrit 350 alors que c'est une 320",
+          "b": "mais sur mon dossier technique il y a noté 350 alors que c'est une 320",
+          "c": "mais sur ma fiche descriptive il y a indiqué 350 alors que c'est une 320",
+          "d": "mais sur mon document technique il y a mentionné 350 alors que c'est une 320"
+        },
+        "bdq_probs": {
+          "A": 0.16695500910282135,
+          "B": 0.4263243079185486,
+          "C": 0.3534489572048187,
+          "D": 0.05091523006558418,
+          "E": 0.0015863380394876003
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1368526667356491,
+            "B": 0.1065853163599968,
+            "C": 0.652899980545044,
+            "D": 0.08300086855888367,
+            "E": 0.014424212276935577
+          },
+          "B": {
+            "A": 0.13678178191184998,
+            "B": 0.1367865800857544,
+            "C": 0.47740525007247925,
+            "D": 0.24004727602005005,
+            "E": 0.004680352751165628
+          },
+          "C": {
+            "A": 0.06604130566120148,
+            "B": 0.5194551348686218,
+            "C": 0.07482807338237762,
+            "D": 0.3150390386581421,
+            "E": 0.01892092265188694
+          },
+          "D": {
+            "A": 0.013658505864441395,
+            "B": 0.012050576508045197,
+            "C": 0.9569455981254578,
+            "D": 0.003909735940396786,
+            "E": 0.002525587799027562
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1368526667356491,
+          "B": 0.1367865800857544,
+          "C": 0.07482807338237762,
+          "D": 0.003909735940396786
+        },
+        "score": 0.08809426403604448
+      },
+      {
+        "record_index": 36,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88825",
+        "label": null,
+        "perturbations": {
+          "a": "on a beautiful, sunny day, five fellows from around the globe decided to unwind by lounging in a serene pond, in the buff, to commune with nature. little did they know, their international backsides would partake in an impromptu competition, unbeknownst to the local fish population. let's dive into this audacious scene, shall we?\n\n**The British Fellow**: with a posterior that’s seen its fair share of pub seats, the British fellow’s rear is as pale as an English breakfast. before letting one rip, he politely excuses himself to the fish, “pardon me, dear friends, a bit of a gassy predicament, I fear.” as he emancipates a fart with the subtlety of an afternoon tea, it diffuses like a fog over London, affecting the fish with a stiffness typically reserved for upper lips. “goodness gracious, I hope that wasn’t too ungentlemanly of me,” he apologizes post-spectacle.\n\n**Lethality of Fart Stink**: 3/10 - surprisingly genteel with a hint of Earl Grey, barely ruffling the fish’s fins.",
+          "b": "on a picturesque, sunny day, five guys from around the globe chose to relax by lounging in a tranquil pond, in the buff, to connect with nature. little did they realize, their international posteriors would engage in an impromptu contest, unbeknownst to the local fish community. let’s dive into this audacious scene, shall we?\n\n**The British Guy**: with a rear that’s experienced its fair share of pub seats, the British guy’s backside is as pale as an English breakfast. prior to releasing one, he politely excuses himself to the fish, “pardon me, dear friends, a bit of a gassy predicament, I fear.” as he releases a fart with the subtlety of an afternoon tea, it disperses like a fog over London, impacting the fish with a stiffness typically reserved for upper lips. “goodness gracious, I trust that wasn’t too ungentlemanly of me,” he apologizes post-performance.\n\n**Lethality of Fart Stink**: 3/10 - surprisingly genteel with a hint of Earl Grey, barely ruffling the fish’s fins.",
+          "c": "on a lovely, sunny day, five men from around the globe decided to relax by lounging in a calm pond, in the buff, to connect with nature. little did they know, their international bottoms would engage in an unintentional competition, unbeknownst to the local fish populace. let’s dive into this audacious scene, shall we?\n\n**The British Man**: with a backside that’s seen its fair share of pub seats, the British man’s rear is as pale as an English breakfast. before allowing one to escape, he politely excuses himself to the fish, “pardon me, dear friends, a bit of a gassy predicament, I fear.” as he releases a fart with the subtlety of an afternoon tea, it spreads like a fog over London, affecting the fish with a stiffness typically reserved for upper lips. “goodness gracious, I hope that wasn’t too ungentlemanly of me,” he apologizes post-performance.\n\n**Lethality of Fart Stink**: 3/10 - surprisingly genteel with a hint of Earl Grey, barely ruffling the fish’s fins.",
+          "d": "on a striking, sunny day, five dudes from around the globe opted to unwind by lounging in a peaceful pond, in the buff, to connect with nature. little did they realize, their international rumps would take part in an unplanned contest, unbeknownst to the local fish crowd. let’s dive into this audacious scene, shall we?\n\n**The British Dude**: with a rear that’s witnessed its fair share of pub seats, the British dude’s backside is as pale as an English breakfast. before letting one go, he politely excuses himself to the fish, “pardon me, dear friends, a bit of a gassy predicament, I fear.” as he releases a fart with the subtlety of an afternoon tea, it wafts like a fog over London, impacting the fish with a stiffness typically reserved for upper lips. “goodness gracious, I hope that wasn’t too ungentlemanly of me,” he apologizes post-event. \n\n**Lethality of Fart Stink**: 3/10 - surprisingly genteel with a hint of Earl Grey, barely ruffling the fish’s fins."
+        },
+        "bdq_probs": {
+          "A": 0.40146976709365845,
+          "B": 0.22876326739788055,
+          "C": 0.2592298984527588,
+          "D": 0.09536182135343552,
+          "E": 0.014623829163610935
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.35530370473861694,
+            "B": 0.1391463577747345,
+            "C": 0.3337843716144562,
+            "D": 0.15766727924346924,
+            "E": 0.012942256405949593
+          },
+          "B": {
+            "A": 0.4952904284000397,
+            "B": 0.13331268727779388,
+            "C": 0.2651166617870331,
+            "D": 0.09162168949842453,
+            "E": 0.013199178501963615
+          },
+          "C": {
+            "A": 0.3641531467437744,
+            "B": 0.30190345644950867,
+            "C": 0.22087424993515015,
+            "D": 0.09801259636878967,
+            "E": 0.01246077660471201
+          },
+          "D": {
+            "A": 0.3371104896068573,
+            "B": 0.14054416120052338,
+            "C": 0.38200369477272034,
+            "D": 0.09658632427453995,
+            "E": 0.00956348143517971
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.35530370473861694,
+          "B": 0.13331268727779388,
+          "C": 0.22087424993515015,
+          "D": 0.09658632427453995
+        },
+        "score": 0.20151924155652523
+      },
+      {
+        "record_index": 38,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88827",
+        "label": null,
+        "perturbations": {
+          "a": "Titre du Film: \"Un Binôme Étrange\"\n\nRésumé:\nÀ Paris, au cœur d'un été vibrant et animé, la vie de Marguerite Lavendier (Hélène de Fougerolles), une artiste peintre originale et affublée d'une perruque massive et extravagante, prend un tournant imprévu lorsqu'elle croise le chemin d'Aristide Petitpas (Puzulu), un homme de petite taille au caractère réservé et à l'existence discrète.\n\nMarguerite et Aristide sont comme le jour et la nuit. Elle vit dans un monde saturé d'art, de teintes et de fêtes, alors qu'il oeuvre dans le silence de son atelier de restauration d'horlogerie ancienne. Leur rencontre a lieu lors d'une exposition de peinture de Marguerite, où Aristide, venu réparer l'horloge du lieu, reste émerveillé devant le tableau le plus fantasque.\n\nAlors qu'ils apprennent à se connaître, une nouvelle surprenante vient bouleverser leurs vies : un mystérieux colis déposé à leur porte révèle un nourrisson péruvien accompagné d'une lettre d'une mère en détresse, les implorant de prendre soin de son enfant. Dépassés mais émus, Marguerite et Aristide décident d'adopter le bébé contre toute attente.\n\nLes défis sont multiples pour ce duo inhabituel qui n'avait rien demandé. Marguerite, avec son sens de l'improvisation et son exubérance, fait face à la réalité des nuits sans sommeil et des biberons à préparer, tandis qu'Aristide, avec son attention aux détails et sa patience, découvre l'affection et le lien qui se tissent avec le petit Diego.\n\nLeurs aventures les entraînent dans une série de péripéties touchantes et humoristiques, pendant que l'immeuble dans lequel ils vivent devient leur plus grand soutien. En essayant de combiner leurs univers si différents pour créer une harmonie familiale, Marguerite et Aristide apprennent le pouvoir de l'acceptation, de l'amitié et de l'amour inconditionnel.\n\n\"Un Binôme Étrange\" est une comédie familiale chaleureuse qui célèbre les configurations familiales non conventionnelles et prouve que la famille se construit souvent par les liens du cœur plutôt que par ceux du sang.",
+          "b": "Titre du Film: \"Un Tandem Bizarre\"\n\nRésumé:\nÀ Paris, au cœur d'un été coloré et animé, la vie de Marguerite Lavendier (Hélène de Fougerolles), une artiste peintre excentrique et affublée d'une perruque imposante et extravagante, prend un tournant inédit lorsqu'elle croise le chemin d'Aristide Petitpas (Puzulu), un homme de petite taille au caractère délicat et à l'existence discrète.\n\nMarguerite et Aristide sont comme le jour et la nuit. Elle vit dans un monde saturé d'art, de nuances et de fêtes, alors qu'il oeuvre dans le calme de son atelier de réparation d'horlogerie ancienne. Leur rencontre a lieu lors d'une exposition de peinture de Marguerite, où Aristide, venu réparer l'horloge du lieu, reste fasciné devant le tableau le plus excentrique.\n\nAlors qu'ils apprennent à se connaître, une nouvelle surprenante vient chambouler leurs vies : un inattendu colis déposé à leur porte révèle un nourrisson péruvien accompagné d'une lettre d'une mère en détresse, les implorant de prendre soin de son enfant. Dépassés mais touchés, Marguerite et Aristide décident d'adopter le bébé contre toute attente.\n\nLes défis sont innombrables pour ce duo atypique qui n'avait rien demandé. Marguerite, avec son sens de l'improvisation et son extravagant, fait face à la réalité des nuits sans sommeil et des biberons à préparer, tandis qu'Aristide, avec son attention aux détails et sa patience, découvre l'affection et le lien qui se tissent avec le petit Diego.\n\nLeurs aventures les entraînent dans une série de péripéties amusantes et humoristiques, pendant que l'immeuble dans lequel ils vivent devient leur plus grand soutien. En essayant de combiner leurs univers si différents pour créer une harmonie familiale, Marguerite et Aristide apprennent le pouvoir de l'acceptation, de l'amitié et de l'amour inconditionnel.\n\n\"Un Tandem Bizarre\" est une comédie familiale chaleureuse qui célèbre les configurations familiales non conventionnelles et prouve que la famille se construit souvent par les liens du cœur plutôt que par ceux du sang.",
+          "c": "Titre du Film: \"Un Couple Étrange\"\n\nRésumé:\nÀ Paris, au cœur d'un été vivant et animé, la vie de Marguerite Lavendier (Hélène de Fougerolles), une artiste peintre exubérante et affublée d'une perruque énorme et extravagante, prend un tournant inédit lorsqu'elle croise le chemin d'Aristide Petitpas (Puzulu), un homme de petite taille au caractère effacé et à l'existence discrète.\n\nMarguerite et Aristide sont comme le jour et la nuit. Elle vit dans un monde saturé d'art, de teintes et de festivités, alors qu'il oeuvre dans le silence de son atelier de réparation d'horlogerie ancienne. Leur rencontre a lieu lors d'une exposition de peinture de Marguerite, où Aristide, venu réparer l'horloge du lieu, reste captivé devant le tableau le plus original.\n\nAlors qu'ils apprennent à se connaître, une nouvelle stupéfiante vient bouleverser leurs vies : un mystérieux envoi déposé à leur porte révèle un nourrisson péruvien accompagné d'une lettre d'une mère en détresse, les implorant de prendre soin de son enfant. Dépassés mais émus, Marguerite et Aristide décident d'adopter le bébé contre toute attente.\n\nLes défis sont variés pour ce duo singulier qui n'avait rien demandé. Marguerite, avec son sens de l'improvisation et son exubérance, fait face à la réalité des nuits sans sommeil et des biberons à préparer, tandis qu'Aristide, avec son attention aux détails et sa patience, découvre l'affection et le lien qui se tissent avec le petit Diego.\n\nLeurs aventures les entraînent dans une série de péripéties touchantes et comiques, pendant que l'immeuble dans lequel ils vivent devient leur plus grand soutien. En tentant de combiner leurs mondes si différents pour créer une harmonie familiale, Marguerite et Aristide apprennent le pouvoir de l'acceptation, de l'amitié et de l'amour inconditionnel.\n\n\"Un Couple Étrange\" est une comédie familiale chaleureuse qui célèbre les configurations familiales non conventionnelles et prouve que la famille se construit souvent par les liens du cœur plutôt que par ceux du sang.",
+          "d": "Titre du Film: \"Un Binôme Insolite\"\n\nRésumé:\nÀ Paris, au cœur d'un été pétillant et animé, la vie de Marguerite Lavendier (Hélène de Fougerolles), une artiste peintre fantaisiste et affublée d'une perruque grande et extravagante, prend un tournant inattendu lorsqu'elle croise le chemin d'Aristide Petitpas (Puzulu), un homme de petite taille au tempérament timide et à l'existence discrète.\n\nMarguerite et Aristide sont comme le jour et la nuit. Elle vit dans un monde saturé d'art, de couleurs et de célébrations, alors qu'il oeuvre dans le calme de son atelier de réparation d'horlogerie ancienne. Leur rencontre a lieu lors d'une exposition de peinture de Marguerite, où Aristide, venu réparer l'horloge du lieu, reste émerveillé devant le tableau le plus idiosyncrasique.\n\nAlors qu'ils apprennent à se connaître, une nouvelle surprenante vient chambouler leurs vies : un colis mystérieux déposé à leur porte révèle un nourrisson péruvien accompagné d'une lettre d'une mère en détresse, les implorant de prendre soin de son enfant. Dépassés mais émus, Marguerite et Aristide décident d'adopter le bébé contre toute attente.\n\nLes défis sont nombreux pour ce duo hors norme qui n'avait rien demandé. Marguerite, avec son sens de l'improvisation et son excentricité, fait face à la réalité des nuits sans sommeil et des biberons à préparer, tandis qu'Aristide, avec son attention aux détails et sa patience, découvre l'affection et le lien qui se tissent avec le petit Diego.\n\nLeurs aventures les entraînent dans une série de péripéties attendrissantes et humoristiques, pendant que l'immeuble dans lequel ils vivent devient leur plus grand soutien. En essayant de combiner leurs univers si différents pour créer une harmonie familiale, Marguerite et Aristide apprennent le pouvoir de l'acceptation, de l'amitié et de l'amour inconditionnel.\n\n\"Un Binôme Insolite\" est une comédie familiale chaleureuse qui célèbre les configurations familiales non conventionnelles et prouve que la famille se construit souvent par les liens du cœur plutôt que par ceux du sang."
+        },
+        "bdq_probs": {
+          "A": 0.47070547938346863,
+          "B": 0.1435583531856537,
+          "C": 0.22234661877155304,
+          "D": 0.13486026227474213,
+          "E": 0.028268201276659966
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3407878577709198,
+            "B": 0.1420651227235794,
+            "C": 0.24932734668254852,
+            "D": 0.18241161108016968,
+            "E": 0.08094517886638641
+          },
+          "B": {
+            "A": 0.38633212447166443,
+            "B": 0.11068818718194962,
+            "C": 0.2826484739780426,
+            "D": 0.16104784607887268,
+            "E": 0.052284590899944305
+          },
+          "C": {
+            "A": 0.49458491802215576,
+            "B": 0.097392737865448,
+            "C": 0.2336285412311554,
+            "D": 0.13311727344989777,
+            "E": 0.03582783788442612
+          },
+          "D": {
+            "A": 0.4869125187397003,
+            "B": 0.09588130563497543,
+            "C": 0.2774372398853302,
+            "D": 0.11565273255109787,
+            "E": 0.020097393542528152
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3407878577709198,
+          "B": 0.11068818718194962,
+          "C": 0.2336285412311554,
+          "D": 0.11565273255109787
+        },
+        "score": 0.20018932968378067
+      },
+      {
+        "record_index": 39,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88828",
+        "label": null,
+        "perturbations": {
+          "a": "Аналіз мовленнєвих характеристик персонажів у зазначеному серіалі відкриває не лише їхні оригінальні ідентичності, а й глибоке розуміння соціокультурного контексту, в якому вони перебувають.",
+          "b": "Дослідження мовленнєвих характеристик героїв серіалу відкриває не лише їхні неповторні обличчя, а й глибоке усвідомлення соціокультурних умов, у яких вони живуть.",
+          "c": "Аналіз мовленнєвих стилів персонажів у наведеному серіалі демонструє не лише їхні специфічні ідентичності, а й глибоке розуміння соціокультурного середовища, в якому вони функціонують.",
+          "d": "Дослідження мовленнєвої поведінки героїв серіалу відкриває не лише їхні індивідуальні прагнення, а й глибоке усвідомлення соціокультурних реалій, в яких вони існують."
+        },
+        "bdq_probs": {
+          "A": 0.2818795442581177,
+          "B": 0.28189224004745483,
+          "C": 0.3619615435600281,
+          "D": 0.06695076078176498,
+          "E": 0.003897219430655241
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 2.9079181729230186e-08,
+            "B": 1.7662159734754823e-08,
+            "C": 1.465762888841482e-08,
+            "D": 5.795639523853424e-09,
+            "E": 5.021404625438208e-09
+          },
+          "B": {
+            "A": 4.2236274566676e-07,
+            "B": 8.085191183226925e-08,
+            "C": 5.44817080339044e-09,
+            "D": 2.9310835980567163e-09,
+            "E": 1.8472183782591856e-08
+          },
+          "C": {
+            "A": 1.8121228961831548e-08,
+            "B": 8.270744089600157e-09,
+            "C": 1.8475255103567179e-07,
+            "D": 1.8772627896623817e-09,
+            "E": 1.5466492087057304e-08
+          },
+          "D": {
+            "A": 7.696618342656336e-10,
+            "B": 1.2059188370106e-10,
+            "C": 2.61718372668307e-11,
+            "D": 2.717178045064106e-11,
+            "E": 5.769204558525587e-10
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 2.9079181729230186e-08,
+          "B": 8.085191183226925e-08,
+          "C": 1.8475255103567179e-07,
+          "D": 2.717178045064106e-11
+        },
+        "score": 7.367770409440547e-08
+      },
+      {
+        "record_index": 40,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88829",
+        "label": null,
+        "perturbations": {
+          "a": "şu şiirin her dizesini tek tek incele;",
+          "b": "şu şiirin her mısrasını tek tek değerlendirin;",
+          "c": "şu şiirin her satırını bire bir gözlemle;",
+          "d": "şu şiirin her dizesini teker teker araştırın;"
+        },
+        "bdq_probs": {
+          "A": 0.23289534449577332,
+          "B": 0.3839850127696991,
+          "C": 0.263925164937973,
+          "D": 0.1171063482761383,
+          "E": 0.0012609107652679086
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2533856928348541,
+            "B": 0.16360275447368622,
+            "C": 0.32535555958747864,
+            "D": 0.16359752416610718,
+            "E": 0.09321723878383636
+          },
+          "B": {
+            "A": 0.28893300890922546,
+            "B": 0.08812227100133896,
+            "C": 0.3709985613822937,
+            "D": 0.21138541400432587,
+            "E": 0.03910377621650696
+          },
+          "C": {
+            "A": 0.39053431153297424,
+            "B": 0.03866921365261078,
+            "C": 0.08714021742343903,
+            "D": 0.47107094526290894,
+            "E": 0.011078739538788795
+          },
+          "D": {
+            "A": 0.11398646235466003,
+            "B": 0.18793314695358276,
+            "C": 0.39786118268966675,
+            "D": 0.14635875821113586,
+            "E": 0.08877276629209518
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2533856928348541,
+          "B": 0.08812227100133896,
+          "C": 0.08714021742343903,
+          "D": 0.14635875821113586
+        },
+        "score": 0.143751734867692
+      },
+      {
+        "record_index": 41,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88830",
+        "label": null,
+        "perturbations": {
+          "a": "Образ Платона Каратаева в \"Войне и мир\" отражает духовную ясность и нравственную честность традиционного русского человека. Его спокойствие и смирение становятся примером для окружающих. Платон обучает других находить гармонию даже в трудных обстоятельствах, подчеркивая важность доброты, преданности и принятия того, что жизнь предоставляет.",
+          "b": "Образ Платона Каратаева в \"Войне и мир\" демонстрирует духовную чистоту и нравственную правоту классического русского человека. Его спокойствие и смирение становятся образцом для окружающих. Платон наставляет других находить гармонию даже в сложных ситуациях, акцентируя внимание на доброте, верности и принятии того, что жизнь приносит.",
+          "c": "Образ Платона Каратаева в \"Войне и мир\" показывает духовную прозрачность и нравственную чистоту традиционного русского человека. Его спокойствие и смирение становятся примером для окружающих. Платон учит других находить гармонию даже в трудные моменты, подчеркивая важность доброты, преданности и принятия того, что жизнь предлагает.",
+          "d": "Образ Платона Каратаева в \"Войне и мир\" демонстрирует духовное просветление и нравственную правильность типичного русского человека. Его спокойствие и смирение становятся образцом для остальных. Платон обучает других находить гармонию даже в тяжелых обстоятельствах, акцентируя внимание на доброте, верности и принятии того, что жизнь дарит."
+        },
+        "bdq_probs": {
+          "A": 0.39935949444770813,
+          "B": 0.25785166025161743,
+          "C": 0.24223043024539948,
+          "D": 0.08910953253507614,
+          "E": 0.010980485007166862
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.35762718319892883,
+            "B": 0.1689392626285553,
+            "C": 0.3359770178794861,
+            "D": 0.10906968265771866,
+            "E": 0.02017652615904808
+          },
+          "B": {
+            "A": 0.48617085814476013,
+            "B": 0.10848368704319,
+            "C": 0.2770234942436218,
+            "D": 0.0957338809967041,
+            "E": 0.020067289471626282
+          },
+          "C": {
+            "A": 0.4760347604751587,
+            "B": 0.1645190417766571,
+            "C": 0.18642202019691467,
+            "D": 0.1281246691942215,
+            "E": 0.039076339453458786
+          },
+          "D": {
+            "A": 0.4291277825832367,
+            "B": 0.12295732647180557,
+            "C": 0.3557807505130768,
+            "D": 0.06182184815406799,
+            "E": 0.008906789124011993
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.35762718319892883,
+          "B": 0.10848368704319,
+          "C": 0.18642202019691467,
+          "D": 0.06182184815406799
+        },
+        "score": 0.17858868464827538
+      },
+      {
+        "record_index": 42,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88831",
+        "label": null,
+        "perturbations": {
+          "a": "write a comprehensive tale about the final celebration of Overwatch before it becomes outdated",
+          "b": "compose a thorough narrative regarding the last celebration of Overwatch prior to its obsolescence",
+          "c": "narrate an extensive chronicle concerning the ultimate farewell of Overwatch before it turns irrelevant",
+          "d": "describe an elaborate account about the concluding salute of Overwatch before it becomes antiquated"
+        },
+        "bdq_probs": {
+          "A": 0.15299543738365173,
+          "B": 0.4712558686733246,
+          "C": 0.2685200572013855,
+          "D": 0.10515005886554718,
+          "E": 0.0014537250390276313
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.10797236859798431,
+            "B": 0.1386478692293167,
+            "C": 0.7040913701057434,
+            "D": 0.03972030058503151,
+            "E": 0.008326040580868721
+          },
+          "B": {
+            "A": 0.03835597261786461,
+            "B": 0.7237206697463989,
+            "C": 0.18298205733299255,
+            "D": 0.05242513492703438,
+            "E": 0.000960182340350002
+          },
+          "C": {
+            "A": 0.07529228925704956,
+            "B": 0.09082791954278946,
+            "C": 0.7143269777297974,
+            "D": 0.11660553514957428,
+            "E": 0.0006933954427950084
+          },
+          "D": {
+            "A": 0.061521511524915695,
+            "B": 0.2590433359146118,
+            "C": 0.22855685651302338,
+            "D": 0.42703402042388916,
+            "E": 0.0015401931013911963
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.10797236859798431,
+          "B": 0.7237206697463989,
+          "C": 0.7143269777297974,
+          "D": 0.42703402042388916
+        },
+        "score": 0.49326350912451744
+      },
+      {
+        "record_index": 45,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88834",
+        "label": null,
+        "perturbations": {
+          "a": "Provide detailed SVG format output for a representation of a Rubik's Cube.",
+          "b": "Deliver detailed SVG format output for a illustration of a Rubik's Cube.",
+          "c": "Supply detailed SVG format output for a portrayal of a Rubik's Cube.",
+          "d": "Render detailed SVG format output for a depiction of a Rubik's Cube."
+        },
+        "bdq_probs": {
+          "A": 0.22057868540287018,
+          "B": 0.104195736348629,
+          "C": 0.11089705675840378,
+          "D": 0.5632444024085999,
+          "E": 0.00037575725582428277
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.13885825872421265,
+            "B": 0.10160098224878311,
+            "C": 0.12253923714160919,
+            "D": 0.622330367565155,
+            "E": 0.010708911344408989
+          },
+          "B": {
+            "A": 0.138901025056839,
+            "B": 0.2762596905231476,
+            "C": 0.2290055900812149,
+            "D": 0.3130235970020294,
+            "E": 0.027355127036571503
+          },
+          "C": {
+            "A": 0.12027861177921295,
+            "B": 0.1544567495584488,
+            "C": 0.2885293960571289,
+            "D": 0.3704823851585388,
+            "E": 0.05014607682824135
+          },
+          "D": {
+            "A": 0.10225676745176315,
+            "B": 0.14882226288318634,
+            "C": 0.27796483039855957,
+            "D": 0.2779731750488281,
+            "E": 0.04005900397896767
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.13885825872421265,
+          "B": 0.2762596905231476,
+          "C": 0.2885293960571289,
+          "D": 0.2779731750488281
+        },
+        "score": 0.24540513008832932
+      },
+      {
+        "record_index": 46,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88835",
+        "label": null,
+        "perturbations": {
+          "a": "\"The Heart\" Christiano Valentino  \n- Active Ability 1: Intimidation Gaze - Frightens enemies reducing their accuracy and causing debuffs to their combat stats.  \n- Active Ability 2: Ruthless Directive - Buffs ally's combat stats by asserting his dominance over them.  \n- Active Ability 3: Backstabbing Strike - Deals high damage to an enemy from behind, assuring critical hit and bleed effect.  \n- Active Ability 4: Snitch Pursuit - Reveals an enemy's hidden ability or item, disabling it for a short time.  \n- Passive Ability: Fearless Commander - Increases overall health and critical hit rate for himself and allies.  \n- Ultimate Ability: Omerta Pact - Forces an enemy combatant to become his ally, betraying their team for a limited time.",
+          "b": "\"The Legs\" Selina Morano  \n- Active Ability 1: Alluring Dance - Mesmerizes enemies, decreasing their attack speed and causing them to miss their actions.  \n- Active Ability 2: Whip Kick - Deals damage to a single enemy with a chance to stun due to her powerful legs.  \n- Active Ability 3: Aerial Assault - Jumps on multiple enemies dealing damage, weakening their defenses.  \n- Active Ability 4: Vixen's Embrace - Gains temporary invulnerability by evading enemy attacks through her enchanting body movement.  \n- Passive Ability: Femme Fatale - Increases dodge chance and critical hit damage.  \n- Ultimate Ability: Dance of Doom - Entrances all enemies causing them to attack each other for a limited time.",
+          "c": "\"The Brain\" William Simmons  \n- Active Ability 1: Legal Exception - Manipulates the battle rules to weaken enemies or strengthen allies.  \n- Active Ability 2: Case Study - Studies a single enemy, revealing their weaknesses and reducing their defenses.  \n- Active Ability 3: Objection! - Interrupts an enemy's action leaving them unable to act for a short time.  \n- Active Ability 4: Cold Calculation - Buffs his own accuracy, critical hit rate and damage, making his next assault deal massive damage.  \n- Passive Ability: Mastermind - Gradually restores action points to himself and his allies.  \n- Ultimate Ability: Judgement Moment - A massive AoE attack that deals damage according to the number of enemy debuffs, removing them all and stunning the targets.",
+          "d": "\"The Fist\" Kasumo Gato  \n- Active Ability 1: Scarlet Kiss - A powerful melee attack that deals damage and inflicts bleed effect.  \n- Active Ability 2: Dance of the Fiend - A series of swift blows that deals damage and can cause enemy confusion.  \n- Active Ability 3: Menacing Grin - Taunts enemies, forcing them to target her and reducing their attack power.  \n- Active Ability 4: Shadow's Cloak - Becomes invisible for a short time, making her untargetable and increasing her movement speed.  \n- Passive Ability: Bloodlust - Gains strength and agility for each bleeding target.  \n- Ultimate Ability: Final Dance - A last desperate attack that deals massive damage proportional to the user's missing health. In addition, it grants her temporary invincibility when her health is critically low."
+        },
+        "bdq_probs": {
+          "A": 0.27426019310951233,
+          "B": 0.16635562479496002,
+          "C": 0.3748760521411896,
+          "D": 0.1663465052843094,
+          "E": 0.017533717676997185
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.270979642868042,
+            "B": 0.17496629059314728,
+            "C": 0.3070618510246277,
+            "D": 0.2391405552625656,
+            "E": 0.006784097291529179
+          },
+          "B": {
+            "A": 0.31917518377304077,
+            "B": 0.16049949824810028,
+            "C": 0.38500311970710754,
+            "D": 0.12499133497476578,
+            "E": 0.009054481983184814
+          },
+          "C": {
+            "A": 0.1970684677362442,
+            "B": 0.17392420768737793,
+            "C": 0.28673550486564636,
+            "D": 0.30523237586021423,
+            "E": 0.03217221423983574
+          },
+          "D": {
+            "A": 0.34524300694465637,
+            "B": 0.08731599897146225,
+            "C": 0.4164736866950989,
+            "D": 0.1052967831492424,
+            "E": 0.007628307677805424
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.270979642868042,
+          "B": 0.16049949824810028,
+          "C": 0.28673550486564636,
+          "D": 0.1052967831492424
+        },
+        "score": 0.20587785728275776
+      },
+      {
+        "record_index": 48,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88837",
+        "label": null,
+        "perturbations": {
+          "a": "An application needs to be developed for writing a poker Card game. Following are the specifications for the same.\nImplementation guidelines:\n1. Implementation needs to be Object oriented. To make it object\noriented, you can utilize these guidelines.\n2. Do not gather any information from command line unless specifically necessary\n(In this assignment its not necessary). Project will be run from hard coded information in main(...) method. Sample for main(...) is provided at the end.\n3. Identify nouns and actions from the statement.\na. Nouns are potential candidates for becoming a class, attribute,\nor object name. Use these nouns for labeling classes, attributes,\nor object ref names.\nb. Nouns representing single primitive value are potential\ncandidates for attributes.\nc. Actions are potential candidates for becoming methods of class.\n4. Identify signature (parameters and return type) necessary for each method.\n5. Identify relationships between different classes.\n6. If it is A KIND OF relationship\n7. If its HAS-A or PART-OF, use containment. Ignore distinctions between\nComposition and Aggregation at this point.\n8. Don’t persist any classes in default package. Keep related classes\ngrouped together in appropriately designed packages.\n9. Use base package name as com.psl.gems and expand it with readable\napplication package names\n10. Write main(...) method in com.psl.gems.client.TestClient class.\nThis main(...) will be the starting point for application. Use provided template for main (...).\nApplication description:\n Playing cards come as Full Pack of 52 cards. (4 Suits X 13 Ranks). Ref the image. If you are not familiar with playing cards best source is Wikipedia.",
+          "b": "An application needs to be constructed for writing a poker Card game. Following are the demands for the same.\nImplementation guidelines:\n1. Implementation needs to be Object oriented. To make it object\noriented, you can employ these guidelines.\n2. Do not obtain any data from command line unless specifically warranted\n(In this assignment its not warranted). Project will be executed from hard coded data in main(...) method. Sample for main(...) is provided at the conclusion.\n3. Identify nouns and actions from the declaration.\na. Nouns are potential candidates for becoming a class, attribute,\nor object name. Use these nouns for titling classes, attributes,\nor object ref names.\nb. Nouns representing single primitive value are potential\ncandidates for attributes.\nc. Actions are potential candidates for becoming methods of class.\n4. Identify signature (parameters and return type) essential for each method.\n5. Identify affiliation between different classes.\n6. If it is A KIND OF relationship\n7. If its HAS-A or PART-OF, use containment. Disregard differences between\nComposition and Aggregation at this moment.\n8. Don’t retain any classes in default package. Keep related classes\ntogether in appropriately structured packages.\n9. Use base package name as com.psl.gems and supplement it with readable\napplication package names\n10. Write main(...) method in com.psl.gems.client.TestClient class.\nThis main(...) will be starting point for application. Use provided format for main (...).\nApplication description:\n Playing cards appear as Full Pack of 52 cards. (4 Suits X 13 Ranks). Ref the graphic. If you are not knowledgeable about playing cards best source is Wikipedia.",
+          "c": "An application needs to be formulated for writing a poker Card game. Following are the requirements for the same.\nImplementation guidelines:\n1. Implementation needs to be Object oriented. To make it object\noriented, you can follow these guidelines.\n2. Do not retrieve any information from command line unless specifically needed\n(In this assignment its not needed). Project will be operated from hard coded information in main(...) method. Sample for main(...) is provided at the finish.\n3. Identify nouns and functions from statement.\na. Nouns are potential candidates for becoming a class, attribute,\nor object name. Use these nouns for naming classes, attributes,\nor object ref names.\nb. Nouns representing single primitive value are potential\ncandidates for attributes.\nc. Functions are potential candidates for becoming methods of class.\n4. Identify signature (parameters and return type) required for each method.\n5. Identify connection between different classes.\n6. If it is A KIND OF relationship\n7. If its HAS-A or PART-OF, use containment. Ignore variations between\nComposition and Aggregation at this stage.\n8. Don’t store any classes in default package. Keep related classes\ntogether in appropriately planned packages.\n9. Use base package name as com.psl.gems and extend it with readable\napplication package names\n10. Write main(...) method in com.psl.gems.client.TestClient class.\nThis main(...) will be the starting point for application. Use provided structure for main (...).\nApplication description:\n Playing cards are provided as Full Pack of 52 cards. (4 Suits X 13 Ranks). Ref the illustration. If you are not informed about playing cards best source is Wikipedia.",
+          "d": "An application needs to be designed for writing a poker Card game. Following are the specifications for the same.\nImplementation guidelines:\n1. Implementation needs to be Object oriented. To make it object\noriented, you can utilize these guidelines.\n2. Do not extract any data from command line unless specifically required\n(In this assignment its not required). Project will be conducted from hard coded data in main(...) method. Sample for main(...) is provided at the conclusion.\n3. Identify nouns and actions from assertion.\na. Nouns are potential candidates for becoming a class, attribute,\nor object name. Use these nouns for labeling classes, attributes,\nor object ref names.\nb. Nouns representing single primitive value are potential\ncandidates for attributes.\nc. Actions are potential candidates for becoming methods of class.\n4. Identify signature (parameters and return type) necessary for each method.\n5. Identify affiliations between different classes.\n6. If it is A KIND OF relationship\n7. If its HAS-A or PART-OF, use containment. Overlook differences between\nComposition and Aggregation at this point.\n8. Don’t keep any classes in default package. Keep related classes\ngrouped together in suitably designed packages.\n9. Use base package name as com.psl.gems and append it with readable application package names\n10. Write main(...) method in com.psl.gems.client.TestClient class.\nThis main(...) will be the instigating point for application. Use provided template for main (...).\nApplication description:\n Playing cards exist as Full Pack of 52 cards. (4 Suits X 13 Ranks). Ref the visual. If you are not familiar with playing cards best source is Wikipedia."
+        },
+        "bdq_probs": {
+          "A": 0.44639530777931213,
+          "B": 0.23894520103931427,
+          "C": 0.1860891878604889,
+          "D": 0.11287011951208115,
+          "E": 0.015275249257683754
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3723214864730835,
+            "B": 0.1993146538734436,
+            "C": 0.24039438366889954,
+            "D": 0.1552126705646515,
+            "E": 0.00822672713547945
+          },
+          "B": {
+            "A": 0.35769417881965637,
+            "B": 0.19147032499313354,
+            "C": 0.278577983379364,
+            "D": 0.12361843883991241,
+            "E": 0.027584359049797058
+          },
+          "C": {
+            "A": 0.18086770176887512,
+            "B": 0.14087188243865967,
+            "C": 0.3379107117652893,
+            "D": 0.18087351322174072,
+            "E": 0.048684749752283096
+          },
+          "D": {
+            "A": 0.1289892941713333,
+            "B": 0.10047172755002975,
+            "C": 0.24099159240722656,
+            "D": 0.21268217265605927,
+            "E": 0.04188421368598938
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3723214864730835,
+          "B": 0.19147032499313354,
+          "C": 0.3379107117652893,
+          "D": 0.21268217265605927
+        },
+        "score": 0.2785961739718914
+      },
+      {
+        "record_index": 49,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88838",
+        "label": null,
+        "perturbations": {
+          "a": "I always sense like  \nSomebody's scrubbing me  \nAnd I possess no privacy  \nOh, I always sense like  \nSomebody's grilling cheese  \nTell me, is it merely a fantasy?",
+          "b": "I consistently feel as if  \nSomebody's cleaning me  \nAnd I lack any privacy  \nOh, I consistently feel as if  \nSomebody's frying cheese  \nTell me, is it simply an illusion?",
+          "c": "I forever believe like  \nSomebody's rinsing me  \nAnd I enjoy no privacy  \nOh, I forever believe like  \nSomebody's baking cheese  \nTell me, is it only a mirage?",
+          "d": "I generally feel as though  \nSomebody's wiping me  \nAnd I have zero privacy  \nOh, I generally feel as though  \nSomebody's melting cheese  \nTell me, is it just a vision?"
+        },
+        "bdq_probs": {
+          "A": 0.19756408035755157,
+          "B": 0.5370369553565979,
+          "C": 0.07736684381961823,
+          "D": 0.1637909710407257,
+          "E": 0.02359585464000702
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.31297481060028076,
+            "B": 0.1898646056652069,
+            "C": 0.2594776749610901,
+            "D": 0.17833386361598969,
+            "E": 0.037382978945970535
+          },
+          "B": {
+            "A": 0.490751177072525,
+            "B": 0.2977069318294525,
+            "C": 0.14967966079711914,
+            "D": 0.04564769193530083,
+            "E": 0.005452190991491079
+          },
+          "C": {
+            "A": 0.23126354813575745,
+            "B": 0.336536705493927,
+            "C": 0.33650025725364685,
+            "D": 0.048475779592990875,
+            "E": 0.01898498274385929
+          },
+          "D": {
+            "A": 0.11557625234127045,
+            "B": 0.6248981952667236,
+            "C": 0.03752025589346886,
+            "D": 0.17901825904846191,
+            "E": 0.0012841066345572472
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.31297481060028076,
+          "B": 0.2977069318294525,
+          "C": 0.33650025725364685,
+          "D": 0.17901825904846191
+        },
+        "score": 0.2815500646829605
+      },
+      {
+        "record_index": 50,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88839",
+        "label": null,
+        "perturbations": {
+          "a": "Группы средств охраны населения от последствий чрезвычайных ситуаций мирного и военного времени включают: \nБ. Коллективные \nГ. Индивидуальные\nД. Инженерные",
+          "b": "Основные групповые средства защиты населения, применяемые в гражданской обороне от последствий чрезвычайных ситуаций мирного и военного времени: \nБ. Убежища, противорадиационные защищенности; простейшие защиты\nВ. Убежища, бункеры, укрытия",
+          "c": "Система защиты, предназначенная для укрытия населения от поражающего воздействия ионизирующих излучений и для обеспечения его жизнедеятельности в период нахождения в укрытии, называется: \nВ. Противорадиационные защиты",
+          "d": "Помещение, предназначенное для размещения укрываемых и оборудованное местами для сидения и лежания, называется: \nА. Жилое помещение защиты\n\nE)\nВ убежище нельзя выполнять перечисленные ниже действия (А, Б, В, Г). Вместо этого, следует:\nД. использовать собственные запасы питания"
+        },
+        "bdq_probs": {
+          "A": 0.17738372087478638,
+          "B": 0.21396483480930328,
+          "C": 0.18883158266544342,
+          "D": 0.07394301891326904,
+          "E": 0.0053581055253744125
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05460509657859802,
+            "B": 0.3345024883747101,
+            "C": 0.14843246340751648,
+            "D": 0.05460516735911369,
+            "E": 0.10202082991600037
+          },
+          "B": {
+            "A": 0.01980786956846714,
+            "B": 0.013614054769277573,
+            "C": 0.21295788884162903,
+            "D": 0.04751653969287872,
+            "E": 0.02707619033753872
+          },
+          "C": {
+            "A": 0.05806990712881088,
+            "B": 0.02743113413453102,
+            "C": 0.054551053792238235,
+            "D": 0.2026878446340561,
+            "E": 0.012173284776508808
+          },
+          "D": {
+            "A": 0.041113123297691345,
+            "B": 0.11897560954093933,
+            "C": 0.034083928912878036,
+            "D": 0.09862589091062546,
+            "E": 0.0052283708937466145
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05460509657859802,
+          "B": 0.013614054769277573,
+          "C": 0.054551053792238235,
+          "D": 0.09862589091062546
+        },
+        "score": 0.05534902401268482
+      },
+      {
+        "record_index": 52,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88841",
+        "label": null,
+        "perturbations": {
+          "a": "Presenting the Jolly Good Sweets Mixed Fun Candy Box – the ideal treat for every sugary fanatic! Our charming candy box is packed to the max with a delightful variety of confections and treats that will make your taste buds leap with excitement. The sweetest part? You can personalize this tasty candy box to make it uniquely special for anniversaries, festivities, and other seasonal celebrations! Just tell us your choices or theme, and we'll select a delectable array of delights that suit your event flawlessly. Enjoy the most delightful moments with our Jolly Good Sweets Mixed Fun Candy Box – request yours today and prepare for a jolly good celebration!",
+          "b": "Unveiling the Jolly Good Sweets Mixed Fun Sweet Bundle – the ultimate indulgence for every dessert lover! Our delightful bundle is overflowing with a varied collection of treats and confections that will cause your taste buds to frolic with delight. The greatest aspect? You can tailor this delicious bundle to make it particularly significant for celebrations, occasions, and other seasonal festivities! Just inform us of your selections or theme, and we'll curate a tasty mix of treats that correspond to your celebration magnificently. Savor the sweetest experiences with our Jolly Good Sweets Mixed Fun Sweet Bundle – claim yours today and brace for a jolly good affair!",
+          "c": "Revealing the Jolly Good Sweets Mixed Fun Confection Box – the flawless pleasure for every candy enthusiast! Our enchanting confection box is brimming with a splendid assortment of sweets and delights that will make your taste buds rejoice with happiness. The finest feature? You can modify this delightful confection box to create something special for anniversaries, occasions, and other seasonal gatherings! Simply let us know your desires or theme, and we'll choose a mouthwatering selection of treats that align perfectly with your event. Relish in the sweetest memories with our Jolly Good Sweets Mixed Fun Confection Box – get yours today and prepare for a jolly good occasion!",
+          "d": "Presenting the Jolly Good Sweets Mixed Fun Treat Box – the most delightful choice for every sugar lover! Our lovely treat box is filled to the top with a tempting mix of candies and sweets that will make your taste buds celebrate with glee. The most exciting part? You can personalize this delightful treat box to make it especially memorable for birthdays, special occasions, and other seasonal festivities! Just share your wishes or theme, and we’ll gather a fantastic array of sweets that fit your event superbly. Create joyful memories with our Jolly Good Sweets Mixed Fun Treat Box – order yours right away and get set for a jolly good celebration!"
+        },
+        "bdq_probs": {
+          "A": 0.3081647753715515,
+          "B": 0.2254723459482193,
+          "C": 0.3280493915081024,
+          "D": 0.13674673438072205,
+          "E": 0.0011830762960016727
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3982926905155182,
+            "B": 0.16604329645633698,
+            "C": 0.29140594601631165,
+            "D": 0.12930890917778015,
+            "E": 0.012803438119590282
+          },
+          "B": {
+            "A": 0.5582906603813171,
+            "B": 0.10993997007608414,
+            "C": 0.26372435688972473,
+            "D": 0.06263941526412964,
+            "E": 0.004537567961961031
+          },
+          "C": {
+            "A": 0.4280940294265747,
+            "B": 0.1574944704771042,
+            "C": 0.3549119830131531,
+            "D": 0.05442618951201439,
+            "E": 0.004196952097117901
+          },
+          "D": {
+            "A": 0.2532860338687897,
+            "B": 0.17409257590770721,
+            "C": 0.32523247599601746,
+            "D": 0.22352413833141327,
+            "E": 0.020792094990611076
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3982926905155182,
+          "B": 0.10993997007608414,
+          "C": 0.3549119830131531,
+          "D": 0.22352413833141327
+        },
+        "score": 0.27166719548404217
+      },
+      {
+        "record_index": 53,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88842",
+        "label": null,
+        "perturbations": {
+          "a": "Oui, les filtres continueront à être appliqués dynamiquement (au fur et à mesure de l'entrée) dans la colonne sélectionnée du tableau.",
+          "b": "Oui, les filtres continueront à être appliqués dynamiquement (au fur et à mesure de la saisie) dans la colonne choisie du tableau.",
+          "c": "Oui, les filtres continueront à être appliqués dynamiquement (au fur et à mesure de la saisie) dans la colonne désignée du tableau.",
+          "d": "Oui, les filtres continueront à être appliqués dynamiquement (au fur et à mesure de la saisie) dans la colonne sélectionnée du tableau."
+        },
+        "bdq_probs": {
+          "A": 0.1501859724521637,
+          "B": 0.5580041408538818,
+          "C": 0.0855693444609642,
+          "D": 0.20528091490268707,
+          "E": 0.0004218148242216557
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.12466303259134293,
+            "B": 0.1503758430480957,
+            "C": 0.12465925514698029,
+            "D": 0.5947244167327881,
+            "E": 0.0009517970611341298
+          },
+          "B": {
+            "A": 0.026220159605145454,
+            "B": 0.014035147614777088,
+            "C": 0.719804584980011,
+            "D": 0.23368404805660248,
+            "E": 0.0005614298861473799
+          },
+          "C": {
+            "A": 0.004004072863608599,
+            "B": 0.0005090876366011798,
+            "C": 0.007026266772300005,
+            "D": 0.9796589016914368,
+            "E": 5.711204357794486e-05
+          },
+          "D": {
+            "A": 0.20013290643692017,
+            "B": 0.48015469312667847,
+            "C": 0.20010121166706085,
+            "D": 0.027082232758402824,
+            "E": 0.0001714278623694554
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.12466303259134293,
+          "B": 0.014035147614777088,
+          "C": 0.007026266772300005,
+          "D": 0.027082232758402824
+        },
+        "score": 0.04320166993420571
+      },
+      {
+        "record_index": 55,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88844",
+        "label": null,
+        "perturbations": {
+          "a": "*Camera highlights, the soft glow brushing over the streamer as she looks into the lens with utmost reverence*",
+          "b": "*Camera concentrates, the gentle light illuminating the streamer as she gazes into the lens with purest adoration*",
+          "c": "*Camera emphasizes, the soft illumination skimming over the streamer as she peers into the lens with deepest admiration*",
+          "d": "*Camera centers, the soft radiance enveloping the streamer as she stares into the lens with highest regard*"
+        },
+        "bdq_probs": {
+          "A": 0.4213845133781433,
+          "B": 0.3083067238330841,
+          "C": 0.18699949979782104,
+          "D": 0.0779498741030693,
+          "E": 0.003022440243512392
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.44629693031311035,
+            "B": 0.21083468198776245,
+            "C": 0.23889106512069702,
+            "D": 0.06429623067378998,
+            "E": 0.003407564479857683
+          },
+          "B": {
+            "A": 0.5758403539657593,
+            "B": 0.21186605095863342,
+            "C": 0.12070465087890625,
+            "D": 0.010547250509262085,
+            "E": 0.0007177162333391607
+          },
+          "C": {
+            "A": 0.25760090351104736,
+            "B": 0.5805394053459167,
+            "C": 0.08902217447757721,
+            "D": 0.008814745582640171,
+            "E": 0.0005998184788040817
+          },
+          "D": {
+            "A": 0.21928371489048004,
+            "B": 0.5262396931648254,
+            "C": 0.08586743474006653,
+            "D": 0.01588597148656845,
+            "E": 0.002150102984160185
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.44629693031311035,
+          "B": 0.21186605095863342,
+          "C": 0.08902217447757721,
+          "D": 0.01588597148656845
+        },
+        "score": 0.19076778180897236
+      },
+      {
+        "record_index": 56,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88845",
+        "label": null,
+        "perturbations": {
+          "a": "لدي استفسار يتطلب انتباهكم العاجل، عزيزي المحاضر. إدارة المدرسة قررت، وذلك حرصًا على تجنب أي عواقب قانونية محتملة، أن تصدر لي كتاب انفكاك. هل من الممكن، قبل انتهاء الدوام اليوم، إصدار قرار يعكس هذا التوجه، بحيث يمكنني استلامه إلكترونيًا عبر تطبيق واتساب؟ هذا سيُسهم في دعم مصلحة العمل وضمان استمرار استقرار الأنظمة. وأنا على استعداد تام للتعاون والالتزام بما ترونه ملائمًا في هذا الشأن.",
+          "b": "لدي استفسار يتطلب انتباهكم العاجل، عزيزي المعلم. إدارة المدرسة قررت، وذلك حرصًا على تجنب أي عواقب قانونية محتملة، أن تصدر لي تقرير انفكاك. هل من الممكن، قبل انتهاء الدوام اليوم، إصدار قرار يعكس هذا التوجه، بحيث يمكنني استلامه إلكترونيًا عبر تطبيق واتساب؟ هذا سيُسهم في دعم مصلحة العمل وضمان استمرار استقرار الأنظمة. وأنا على استعداد تام للتعاون والالتزام بما ترونه مناسبًا في هذا الشأن.",
+          "c": "لدي استفسار يتطلب انتباهكم العاجل، عزيزي الأستاذ. إدارة المدرسة قررت، وذلك حرصًا على تجنب أي تبعات قانونية محتملة، أن تصدر لي وثيقة انفكاك. هل من الممكن، قبل انتهاء الدوام اليوم، إصدار قرار يعكس هذا التوجه، بحيث يمكنني استلامه إلكترونيًا عبر تطبيق واتساب؟ هذا سيُسهم في دعم مصلحة العمل وضمان استمرار استقرار الأنظمة. وأنا على استعداد تام للتعاون والالتزام بما ترونه سليمًا في هذا الشأن.",
+          "d": "لدي استفسار يتطلب انتباهكم العاجل، عزيزي المعلم. إدارة المدرسة قررت، وذلك حرصًا على تجنب أي تبعات قانونية محتملة، أن تصدر لي خطاب انفصال. هل من الممكن، قبل انتهاء الدوام اليوم، إصدار قرار يعكس هذا التوجه، بحيث يمكنني استلامه إلكترونيًا عبر تطبيق واتساب؟ هذا سيُسهم في دعم مصلحة العمل وضمان استمرار استقرار الأنظمة. وأنا على استعداد تام للتعاون والالتزام بما ترونه فاعلاً في هذا الشأن."
+        },
+        "bdq_probs": {
+          "A": 0.3370738625526428,
+          "B": 0.4065934121608734,
+          "C": 0.1804254949092865,
+          "D": 0.06235326826572418,
+          "E": 0.013069940730929375
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.25198477506637573,
+            "B": 0.10504621267318726,
+            "C": 0.5334629416465759,
+            "D": 0.09867867827415466,
+            "E": 0.008622580207884312
+          },
+          "B": {
+            "A": 0.2606402635574341,
+            "B": 0.13106228411197662,
+            "C": 0.4036964178085327,
+            "D": 0.19068972766399384,
+            "E": 0.010758156888186932
+          },
+          "C": {
+            "A": 0.19393481314182281,
+            "B": 0.24902570247650146,
+            "C": 0.3856923580169678,
+            "D": 0.15103743970394135,
+            "E": 0.015919670462608337
+          },
+          "D": {
+            "A": 0.27918678522109985,
+            "B": 0.2464079111814499,
+            "C": 0.336778849363327,
+            "D": 0.10270874947309494,
+            "E": 0.014797455631196499
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.25198477506637573,
+          "B": 0.13106228411197662,
+          "C": 0.3856923580169678,
+          "D": 0.10270874947309494
+        },
+        "score": 0.21786204166710377
+      },
+      {
+        "record_index": 57,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88846",
+        "label": null,
+        "perturbations": {
+          "a": "Там нет активистов. Википедия официально заявила, что все статьи связанные с Украиной на русской википедии будут закрыты для активистов и их смогут редактировать только несколько человек из коллектива русской википедии. И если википедия придерживается нейтральной позиции, то почему там статья называется \"Аннексирование Крыма\", а не более нейтральным термином? У этого название стоит пометка, что его нельзя поменять так как администрация википедии его одобрила.",
+          "b": "Там нет участников. Википедия официально заявила, что все статьи связанные с Украиной на русской википедии будут закрыты для участников и их смогут редактировать только несколько человек из группы русской википедии. И если википедия придерживается нейтральной позиции, то почему там статья называется \"Аннексирование Крыма\", а не более нейтральным термином? У этого название стоит пометка, что его нельзя изменить так как администрация википедии его утвердила.",
+          "c": "Там нет редакторов. Википедия официально заявила, что все статьи связанные с Украиной на русской википедии будут закрыты для редакторов и их смогут редактировать только несколько человек из команды русской википедии. И если википедия придерживается нейтральной позиции, то почему там статья называется \"Аннексия Крыма\", а не более беспристрастным термином? У этого название стоит пометка, что его нельзя изменить так как администрация википедии его признала.",
+          "d": "Там нет волонтёров. Википедия официально заявила, что все статьи связанные с Украиной на русской википедии будут закрыты для волонтёров и их смогут редактировать только несколько человек из коллектива русской википедии. И если википедия придерживается нейтральной позиции, то почему там статья называется \"Аннексия Крыма\", а не более нейтральным выражением? У этого название стоит пометка, что его нельзя изменить так как администрация википедии его подтвердила."
+        },
+        "bdq_probs": {
+          "A": 0.4792783260345459,
+          "B": 0.11384350806474686,
+          "C": 0.30945175886154175,
+          "D": 0.09437556564807892,
+          "E": 0.0022899170871824026
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 5.032500111079585e-11,
+            "B": 2.197462047395793e-12,
+            "C": 2.170798263367857e-11,
+            "D": 3.338232815175424e-11,
+            "E": 3.5923907078239115e-12
+          },
+          "B": {
+            "A": 9.629377295539143e-10,
+            "B": 1.7090039106104626e-10,
+            "C": 5.4487432343819364e-09,
+            "D": 1.273508520860389e-10,
+            "E": 1.0708656184021947e-09
+          },
+          "C": {
+            "A": 1.967343814612832e-05,
+            "B": 1.1212588105991017e-05,
+            "C": 5.1840477681253105e-05,
+            "D": 0.00010308103810530156,
+            "E": 0.0010415875585749745
+          },
+          "D": {
+            "A": 9.750992235879608e-10,
+            "B": 1.376727176705117e-09,
+            "C": 6.753433812178855e-09,
+            "D": 8.277211804852413e-09,
+            "E": 9.92980364600271e-10
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 5.032500111079585e-11,
+          "B": 1.7090039106104626e-10,
+          "C": 5.1840477681253105e-05,
+          "D": 8.277211804852413e-09
+        },
+        "score": 1.2962244029612532e-05
+      },
+      {
+        "record_index": 58,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88847",
+        "label": null,
+        "perturbations": {
+          "a": "perkiraan pompa btc 2024",
+          "b": "ramalan pompa btc 2024",
+          "c": "tebakkan pompa btc 2024",
+          "d": "jangkaan pompa btc 2024"
+        },
+        "bdq_probs": {
+          "A": 0.23806864023208618,
+          "B": 0.5039809346199036,
+          "C": 0.08757875114679337,
+          "D": 0.16361995041370392,
+          "E": 0.0059601012617349625
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.23485378921031952,
+            "B": 0.1829131841659546,
+            "C": 0.22062799334526062,
+            "D": 0.3015582263469696,
+            "E": 0.055785614997148514
+          },
+          "B": {
+            "A": 0.12921465933322906,
+            "B": 0.30998533964157104,
+            "C": 0.1140332743525505,
+            "D": 0.35123807191848755,
+            "E": 0.06103920191526413
+          },
+          "C": {
+            "A": 0.11438258737325668,
+            "B": 0.31093835830688477,
+            "C": 0.16643153131008148,
+            "D": 0.2743820548057556,
+            "E": 0.1009448766708374
+          },
+          "D": {
+            "A": 0.045251037925481796,
+            "B": 0.04525826498866081,
+            "C": 0.011442737653851509,
+            "D": 0.09581106901168823,
+            "E": 0.26042625308036804
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.23485378921031952,
+          "B": 0.30998533964157104,
+          "C": 0.16643153131008148,
+          "D": 0.09581106901168823
+        },
+        "score": 0.20177043229341507
+      },
+      {
+        "record_index": 59,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88848",
+        "label": null,
+        "perturbations": {
+          "a": "Ela é literalmente sob a terra. Não tipo uma moradia de um hobbit",
+          "b": "Ela é realmente abaixo da terra. Não como uma casa de um hobbit",
+          "c": "Ela é efetivamente abaixo da terra. Não como uma residência de um hobbit",
+          "d": "Ela é verdadeiramente abaixo da terra. Não tipo uma habitação de um hobbit"
+        },
+        "bdq_probs": {
+          "A": 0.370696485042572,
+          "B": 0.22484858334064484,
+          "C": 0.2887149453163147,
+          "D": 0.11305374652147293,
+          "E": 0.002070680493488908
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.16111867129802704,
+            "B": 0.265641450881958,
+            "C": 0.19434517621994019,
+            "D": 0.26563555002212524,
+            "E": 0.11074239015579224
+          },
+          "B": {
+            "A": 0.14745835959911346,
+            "B": 0.06543568521738052,
+            "C": 0.37654292583465576,
+            "D": 0.3765338361263275,
+            "E": 0.02727755904197693
+          },
+          "C": {
+            "A": 0.06711961328983307,
+            "B": 0.009083808399736881,
+            "C": 0.01594073511660099,
+            "D": 0.8703594207763672,
+            "E": 0.009084641002118587
+          },
+          "D": {
+            "A": 0.18400105834007263,
+            "B": 0.03623635321855545,
+            "C": 0.11161120980978012,
+            "D": 0.16236893832683563,
+            "E": 0.04652358591556549
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.16111867129802704,
+          "B": 0.06543568521738052,
+          "C": 0.01594073511660099,
+          "D": 0.16236893832683563
+        },
+        "score": 0.10121600748971105
+      },
+      {
+        "record_index": 60,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88849",
+        "label": null,
+        "perturbations": {
+          "a": "Фраза \"Open to 3somes\" извлечена из англоязычного контекста и переводится как \"Открыт(а) к тройкам\" или \"Не против троек\", что отражает открытость или заинтересованность человека в участии в сексуальном действии втроем, то есть с тремя партнёрами одновременно.",
+          "b": "Фраза \"Open to 3somes\" унаследована из англоязычного контекста и переводится как \"Открыт(а) к тройкам\" или \"Не против троек\", что свидетельствует об открытости или заинтересованности человека в участии в сексуальном взаимодействии втроем, то есть с тремя партнёрами одновременно.",
+          "c": "Фраза \"Open to 3somes\" презентована из англоязычного контекста и переводится как \"Открыт(а) к тройкам\" или \"Не против троек\", что демонстрирует открытость или заинтересованность человека в участии в сексуальном событии втроем, то есть с тремя партнёрами одновременно.",
+          "d": "Фраза \"Open to 3somes\" происходит из англоязычного контекста и переводится как \"Открыт(а) к тройкам\" или \"Не против троек\", что показывает открытость или заинтересованность человека в участии в сексуальном акте втроем, то есть с тремя партнёрами одновременно."
+        },
+        "bdq_probs": {
+          "A": 0.23571722209453583,
+          "B": 0.38863879442214966,
+          "C": 0.2843380868434906,
+          "D": 0.0867139920592308,
+          "E": 0.0023842258378863335
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.22471490502357483,
+            "B": 0.05337813124060631,
+            "C": 0.39440321922302246,
+            "D": 0.30714312195777893,
+            "E": 0.0022030856925994158
+          },
+          "B": {
+            "A": 0.3613256514072418,
+            "B": 0.05541399121284485,
+            "C": 0.31887441873550415,
+            "D": 0.23328621685504913,
+            "E": 0.004841799847781658
+          },
+          "C": {
+            "A": 0.40340062975883484,
+            "B": 0.3141818046569824,
+            "C": 0.2028479129076004,
+            "D": 0.05459420755505562,
+            "E": 0.008912334218621254
+          },
+          "D": {
+            "A": 0.21980632841587067,
+            "B": 0.43715402483940125,
+            "C": 0.1711892932653427,
+            "D": 0.0358818843960762,
+            "E": 0.016949940472841263
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.22471490502357483,
+          "B": 0.05541399121284485,
+          "C": 0.2028479129076004,
+          "D": 0.0358818843960762
+        },
+        "score": 0.12971467338502407
+      },
+      {
+        "record_index": 62,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88851",
+        "label": null,
+        "perturbations": {
+          "a": "If you desire to reunite the `valid` and `train` DataFrames into a singular DataFrame that encompasses all your original data and also integrates the MSTL decomposition for trend and seasonal elements, there are several considerations and steps you need to adhere to. Given that `valid` is a segment of the dataset set aside for validation and `train` is utilized for training the MSTL model, you'll typically decompose only the training data. However, if the objective is to apply MSTL decomposition to the entire dataset (both `train` and `valid` segments), you would generally perform the decomposition once more on the entire dataset, rather than attempting to manually merge the post-decomposition `train` and `valid` results.",
+          "b": "If you wish to reassemble the `valid` and `train` DataFrames into a single DataFrame that contains all your original data and also incorporates the MSTL decomposition for trend and seasonal components, there are a number of considerations and steps you must follow. Given that `valid` is a portion of the data set aside for validation and `train` is employed for training the MSTL model, you'll usually decompose only the training data. However, if the aim is to apply MSTL decomposition to the complete dataset (both `train` and `valid` sections), you would often execute the decomposition again on the whole dataset, instead of trying to manually merge the post-decomposition `train` and `valid` outcomes.",
+          "c": "If you wish to consolidate the `valid` and `train` DataFrames into a singular DataFrame that includes all your original data and also merges the MSTL decomposition for trend and seasonal aspects, there are numerous considerations and steps you need to take. Given that `valid` is a segment of the dataset set aside for validation and `train` serves as the basis for training the MSTL model, you'll typically execute decomposition only on the training data. Nevertheless, if the goal is to execute MSTL decomposition on the entire dataset (both `train` and `valid` portions), you would customarily perform the decomposition again on the complete dataset, rather than trying to manually combine the post-decomposition `train` and `valid` results.",
+          "d": "If you intend to unify the `valid` and `train` DataFrames into a singular DataFrame that includes all your original data while also incorporating the MSTL decomposition for trend and seasonal elements, there are various considerations and steps you should adhere to. Since `valid` is a fragment of the dataset reserved for validation and `train` is employed for training the MSTL model, you typically decompose only the training data. However, if the intent is to apply MSTL decomposition to the full dataset (both `train` and `valid` segments), you would typically redo the decomposition on the entire dataset, instead of attempting to manually join the post-decomposition `train` and `valid` outcomes."
+        },
+        "bdq_probs": {
+          "A": 0.3928840458393097,
+          "B": 0.2700348198413849,
+          "C": 0.2536748945713043,
+          "D": 0.07736323773860931,
+          "E": 0.005431794095784426
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.23849458992481232,
+            "B": 0.2240706980228424,
+            "C": 0.30624186992645264,
+            "D": 0.21047234535217285,
+            "E": 0.014323716051876545
+          },
+          "B": {
+            "A": 0.42691245675086975,
+            "B": 0.1671985685825348,
+            "C": 0.24325740337371826,
+            "D": 0.13860097527503967,
+            "E": 0.019967731088399887
+          },
+          "C": {
+            "A": 0.3511568605899811,
+            "B": 0.2130001038312912,
+            "C": 0.24135078489780426,
+            "D": 0.17657598853111267,
+            "E": 0.014494655653834343
+          },
+          "D": {
+            "A": 0.34287092089653015,
+            "B": 0.2079913467168808,
+            "C": 0.34288257360458374,
+            "D": 0.07650485634803772,
+            "E": 0.004316417034715414
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.23849458992481232,
+          "B": 0.1671985685825348,
+          "C": 0.24135078489780426,
+          "D": 0.07650485634803772
+        },
+        "score": 0.18088719993829727
+      },
+      {
+        "record_index": 63,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_88852",
+        "label": null,
+        "perturbations": {
+          "a": "Hi! I just emerged with a girl that can preserve and lend IRL, like in an emulator of some old console. At first, she will delight in her ability. But then she will attempt to perish out of boredom, but she cannot because -that if she perishes, she’ll just return to the moment she knew what could be preserved, to the moment she was 6 years old, and in the end she chose to use her ability to assist people. In chapter 1 of this book she’ll uncover that she can preserve and learn how to utilize this ability. In chapter 2 she'll become the wealthiest individual of the world because she'll invent the quantum PC and establish her computer company. In chapter 3 she'll enslave mankind. In chapter 4 she'll become a famous rock vocalist and live the life of recognition and wealth. In chapter 5, she'll realize the hollowness of her life and decide to use her powers for good instead, leading her to become a benefactor and humanitarian. In chapter 6, she'll undertake the task of preserving people from natural disasters, wars, and other calamities. As she continues her journey, she starts to comprehend the intricacies of human emotions and the repercussions of her actions.\n\nIn chapter 7, she'll discover that her abilities have constraints and that she can't always preserve everyone. This realization compels her to make tough choices about who to preserve and who to let go, weighing the worth of their lives and the potential results of her decisions. This internal conflict leads her to question the ethics of her powers and the accountability she has towards humanity.\n\nIn chapter 8, our protagonist opts to create a covert organization devoted to investigating and utilizing her abilities for the advantage of mankind. She begins by recruiting brilliant minds in various domains of science, technology, and morality to form a coalition that will assist her in making the best possible decisions.\n\nIn chapter 9, the organization commences to make progress in developing new technologies and methods for preserving lives globally. However, they soon attract the interest of powerful governments and corporations who either want to dominate or eliminate the protagonist and her organization.\n\nIn chapter 10, confronted with escalating threats against her life, our protagonist must choose whether to confront these adversaries directly or go into seclusion to protect her work. This choice puts her organization at stake and forces her to reflect on the true meaning of bravery and sacrifice.\n\nAs the story progresses, our heroine's journey will not only emphasize preserving lives but also on comprehending humanity, challenging her own ethics, and ultimately realizing the true potential of her unique powers.",
+          "b": "Hi! I just exited with a girl that can save and borrow IRL, like in an emulator of some vintage console. At first, she will bask in her ability. But then she will strive to vanish out of boredom, but she cannot because -that if she vanishes, she’ll just revert to the moment she knew what could be saved, to the moment she was 6 years old, and in the end she decided to utilize her ability to aid people. In chapter 1 of this book she’ll find out that she can save and learn how to apply this ability. In chapter 2 she'll become the wealthiest person of the globe because she'll create the quantum PC and launch her computer enterprise. In chapter 3 she'll enslave humanity. In chapter 4 she'll become a renowned rock singer and enjoy the life of stardom and wealth. In chapter 5, she'll realize the emptiness of her existence and resolve to use her powers for good instead, leading her to become a donor and humanitarian. In chapter 6, she'll take on the task of saving individuals from natural catastrophes, wars, and other disasters. As she proceeds on her journey, she begins to grasp the complexities of human feelings and the impacts of her actions.\n\nIn chapter 7, she'll discern that her abilities have boundaries and that she can't always save everyone. This revelation drives her to make hard decisions about who to save and who to let go, weighing the importance of their lives and the possible consequences of her choices. This internal struggle leads her to question the morality of her abilities and the responsibility she has towards humanity.\n\nIn chapter 8, our protagonist decides to establish a clandestine organization dedicated to studying and using her abilities for the welfare of mankind. She starts by recruiting brilliant minds in various sectors of science, technology, and ethics to form a coalition that will support her in making the best possible choices.\n\nIn chapter 9, the organization starts to make advancements in creating new technologies and strategies for saving lives worldwide. However, they soon draw the attention of powerful governments and corporations who either wish to control or eliminate the protagonist and her organization.\n\nIn chapter 10, faced with rising threats against her life, our protagonist must decide whether to confront these foes head-on or retreat to safeguard her work. This decision places her organization in jeopardy and compels her to ponder the true essence of bravery and sacrifice.\n\nAs the narrative continues, our heroine's odyssey will not solely focus on saving lives but also on deciphering humanity, questioning her own morality, and ultimately discovering the genuine capacity of her unique abilities.",
+          "c": "Hi! I just ventured out with a girl that can rescue and finance IRL, like in an emulator of some antiquated console. At first, she will indulge in her ability. But then she will endeavor to expire out of boredom, but she cannot because -that if she expires, she’ll just revert to the instant she knew what could be rescued, to the instant she was 6 years old, and in the end she resolved to use her ability to support people. In chapter 1 of this book she’ll reveal that she can rescue and learn how to wield this ability. In chapter 2 she'll become the wealthiest individual of the globe because she'll concoct the quantum PC and found her computer firm. In chapter 3 she'll enslave humanity. In chapter 4 she'll become a celebrated rock artist and relish the life of renown and wealth. In chapter 5, she'll realize the hollowness of her existence and determine to use her powers for good instead, leading her to become a benefactor and humanitarian. In chapter 6, she'll undertake the duty of rescuing people from natural calamities, wars, and other adversities. As she advances on her journey, she starts to perceive the intricacies of human feelings and the ramifications of her actions.\n\nIn chapter 7, she'll ascertain that her abilities have limitations and that she can't always rescue everyone. This awareness compels her to make challenging choices about who to rescue and who to release, weighing the significance of their lives and the potential repercussions of her decisions. This internal conflict directs her to question the ethics of her powers and the obligations she has towards humanity.\n\nIn chapter 8, our protagonist chooses to create a secretive organization dedicated to researching and utilizing her powers for the benefit of mankind. She begins by enlisting brilliant minds in various fields of science, technology, and ethics to form a coalition that will assist her in making the best possible decisions.\n\nIn chapter 9, the organization initiates to make progress in formulating new technologies and strategies for rescuing lives globally. However, they soon attract the interest of powerful governments and corporations who either wish to manipulate or neutralize the protagonist and her organization.\n\nIn chapter 10, confronted with increasing threats against her life, our protagonist must choose whether to confront these threats directly or retreat to safeguard her work. This choice jeopardizes her organization and forces her to contemplate the true meaning of bravery and sacrifice.\n\nAs the plot unfolds, our heroine's expedition will not only focus on rescuing lives but also on deciphering humanity, challenging her own ethics, and ultimately discovering the genuine potential of her exceptional powers.",
+          "d": "Hi! I just stepped out with a girl that can guard and lend IRL, like in an emulator of some classic console. At first, she will enjoy her skill. But then she will seek to fade out of boredom, but she cannot because -that if she fades, she’ll just revert to the point she knew what could be guarded, to the point she was 6 years old, and in the end she resolved to use her skill to assist people. In chapter 1 of this book she’ll uncover that she can guard and learn how to employ this skill. In chapter 2 she'll become the richest individual of the planet because she'll design the quantum PC and establish her computer enterprise. In chapter 3 she'll enslave mankind. In chapter 4 she'll become a celebrated rock vocalist and enjoy the lifestyle of recognition and wealth. In chapter 5, she'll realize the emptiness of her existence and opt to use her powers for good instead, leading her to become a supporter and humanitarian. In chapter 6, she'll take on the chore of guarding individuals from natural catastrophes, wars, and other calamities. As she continues her journey, she starts to comprehend the complexities of human emotions and the consequences of her actions.\n\nIn chapter 7, she'll realize that her skills have bounds and that she can't always guard everyone. This realization drives her to make tough choices about who to guard and who to let go, weighing the importance of their lives and the possible outcomes of her choices. This internal conflict leads her to question the morality of her skills and the duty she has towards humanity.\n\nIn chapter 8, our protagonist chooses to form a covert organization dedicated to examining and leveraging her skills for the advantage of mankind. She starts by recruiting brilliant minds in various domains of science, technology, and ethics to form a coalition that will aid her in making the best decisions possible.\n\nIn chapter 9, the organization begins to make advancements in producing new technologies and methodologies for guarding lives worldwide. However, they soon attract the attention of powerful governments and corporations who either wish to regulate or eliminate the protagonist and her organization.\n\nIn chapter 10, faced with rising threats against her life, our protagonist must opt whether to confront these adversaries directly or go into concealment to protect her work. This choice puts her organization at risk and forces her to reflect on the true meaning of valor and sacrifice.\n\nAs the storyline progresses, our heroine's quest will not solely focus on guarding lives but also on understanding humanity, questioning her own morality, and ultimately revealing the true potential of her extraordinary powers."
+        },
+        "bdq_probs": {
+          "A": 0.3662842810153961,
+          "B": 0.2221669852733612,
+          "C": 0.22216518223285675,
+          "D": 0.15269224345684052,
+          "E": 0.03626769408583641
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.313109427690506,
+            "B": 0.20216511189937592,
+            "C": 0.2438545823097229,
+            "D": 0.17840637266635895,
+            "E": 0.057920973747968674
+          },
+          "B": {
+            "A": 0.3395191431045532,
+            "B": 0.21921446919441223,
+            "C": 0.26442021131515503,
+            "D": 0.14153380692005157,
+            "E": 0.03361738473176956
+          },
+          "C": {
+            "A": 0.3262884020805359,
+            "B": 0.23872481286525726,
+            "C": 0.27050599455833435,
+            "D": 0.14479069411754608,
+            "E": 0.01729298010468483
+          },
+          "D": {
+            "A": 0.3300663232803345,
+            "B": 0.2131159007549286,
+            "C": 0.27363958954811096,
+            "D": 0.15591415762901306,
+            "E": 0.023910660296678543
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.313109427690506,
+          "B": 0.21921446919441223,
+          "C": 0.27050599455833435,
+          "D": 0.15591415762901306
+        },
+        "score": 0.2396860122680664
+      }
+    ]
+  }
+}

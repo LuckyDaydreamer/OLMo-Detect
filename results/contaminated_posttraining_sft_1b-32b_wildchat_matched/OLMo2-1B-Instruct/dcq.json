@@ -1,0 +1,2077 @@
+{
+  "model_name": "OLMo2-1B-Instruct",
+  "model_path": "olmo_models/OLMo2-1B-Instruct",
+  "dataset_name": "contaminated_posttraining_sft_1b-32b_wildchat_test_matched",
+  "dataset_path": "benchmark/posttraining/sft/1b-32b/contaminated/matched/test/contaminated_posttraining_sft_1b-32b_wildchat_test_matched.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 13.017627239227295,
+  "result": {
+    "method": "dcq",
+    "dataset": "contaminated_posttraining_sft_1b-32b_wildchat_test_matched",
+    "dataset_path": "benchmark/posttraining/sft/1b-32b/contaminated/matched/test/contaminated_posttraining_sft_1b-32b_wildchat_test_matched.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "min_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.020463060118162974,
+      "B": 0.09568318746040692,
+      "C": 0.054987704642702154,
+      "D": 0.27375138206641825
+    },
+    "non_preferred": [
+      "A",
+      "B",
+      "C"
+    ],
+    "num_total_records": 64,
+    "num_scored_records": 37,
+    "summary": {
+      "mean_score": 0.007563127791484128
+    },
+    "samples": [
+      {
+        "record_index": 2,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_42601",
+        "label": null,
+        "perturbations": {
+          "a": "德州扑克中的\"gap concept\"（间隔理念）是一个策略理念，它认为玩家需要更强的手牌去调整别人的加注（或重新加注）而不是自己的加注。换句话说，如果一个玩家面对加注，他需要一个比他正常开仓范围更强的手牌来应对这个加注。",
+          "b": "德州扑克中的\"gap concept\"（间隔观念）是一个策略观念，它认为玩家需要更强的手牌去调整别人的加注（或重新加注）而不是自己的加注。换句话说，如果一个玩家面对加注，他需要一个比他正常开仓范围更强的手牌来应对这个加注。",
+          "c": "德州扑克中的\"gap concept\"（间隔理论）是一个策略理论，它认为玩家需要更强的手牌去调整别人的加注（或重新加注）而不是自己的加注。换句话说，如果一个玩家面对加注，他需要一个比他正常开仓范围更强的手牌来应对这个加注。",
+          "d": "德州扑克中的\"gap concept\"（间隔策略）是一个策略策略，它认为玩家需要更强的手牌去调整别人的加注（或重新加注）而不是自己的加注。换句话说，如果一个玩家面对加注，他需要一个比他正常开仓范围更强的手牌来应对这个加注。"
+        },
+        "bdq_probs": {
+          "A": 0.07492904365062714,
+          "B": 0.23080149292945862,
+          "C": 0.10902111977338791,
+          "D": 0.38052088022232056,
+          "E": 0.203678697347641
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.027030330151319504,
+            "B": 0.12115779519081116,
+            "C": 0.09434404969215393,
+            "D": 0.6971073150634766,
+            "E": 0.05722561851143837
+          },
+          "B": {
+            "A": 0.06599028408527374,
+            "B": 0.17940735816955566,
+            "C": 0.123286172747612,
+            "D": 0.5525248050689697,
+            "E": 0.07478030025959015
+          },
+          "C": {
+            "A": 0.042049210518598557,
+            "B": 0.08905013650655746,
+            "C": 0.047648992389440536,
+            "D": 0.74532151222229,
+            "E": 0.06933263689279556
+          },
+          "D": {
+            "A": 0.014740966260433197,
+            "B": 0.08485478162765503,
+            "C": 0.07486067712306976,
+            "D": 0.48814162611961365,
+            "E": 0.2613014876842499
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.027030330151319504,
+          "B": 0.17940735816955566,
+          "C": 0.047648992389440536,
+          "D": 0.48814162611961365
+        },
+        "score": 0.027030330151319504
+      },
+      {
+        "record_index": 4,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_15875",
+        "label": null,
+        "perturbations": {
+          "a": "Subject: Inquiry for a Complimentary Sample of Your Product for Desolate - Pursuing Potential Business Cooperation",
+          "b": "Subject: Appeal for a No-Cost Sample of Your Product for Desolate - Investigating Potential Business Partnership",
+          "c": "Subject: Solicitation for a Gratuitous Sample of Your Product for Desolate - Assessing Potential Business Alliance",
+          "d": "Subject: Request for a Costless Sample of Your Product for Desolate - Evaluating Potential Business Collaboration"
+        },
+        "bdq_probs": {
+          "A": 0.021331412717700005,
+          "B": 0.17860637605190277,
+          "C": 0.04515860974788666,
+          "D": 0.20238685607910156,
+          "E": 0.5501444339752197
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.049493905156850815,
+            "B": 0.28482645750045776,
+            "C": 0.2848176956176758,
+            "D": 0.25135067105293274,
+            "E": 0.11872988939285278
+          },
+          "B": {
+            "A": 0.021900858730077744,
+            "B": 0.046365007758140564,
+            "C": 0.12603089213371277,
+            "D": 0.30233222246170044,
+            "E": 0.4984613358974457
+          },
+          "C": {
+            "A": 0.06172753870487213,
+            "B": 0.1480853259563446,
+            "C": 0.017685309052467346,
+            "D": 0.2766450047492981,
+            "E": 0.4561089873313904
+          },
+          "D": {
+            "A": 0.06591899693012238,
+            "B": 0.37935447692871094,
+            "C": 0.10868228226900101,
+            "D": 0.17918698489665985,
+            "E": 0.20304518938064575
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.049493905156850815,
+          "B": 0.046365007758140564,
+          "C": 0.017685309052467346,
+          "D": 0.17918698489665985
+        },
+        "score": 0.017685309052467346
+      },
+      {
+        "record_index": 5,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_1030",
+        "label": null,
+        "perturbations": {
+          "a": "The treatment and consideration of felines in India, Japan, and Ancient Egypt exhibit both historical and cultural differences. Here's a comparative look at these regions:\n\n**Ancient Egypt:**  \n- Felines were deeply revered and considered sacred.  \n- Associated with the goddess Bastet, symbolizing home, fertility, and protection.  \n- Felines were protectors of grain stores from rodents and were critical in preventing famine.  \n- Harming a feline was a crime that could be punished severely, often by death.  \n- Families mourning the loss of a feline would mummify them in a similar manner to human beings.  \n- The reverence for felines was integrated into the religious and sociocultural fabric of society.  \n\n**Japan (Modern):**  \n- Felines are popular and generally viewed with affection.  \n- Symbolized by the Maneki-neko, which is believed to bring good luck and prosperity.  \n- Felines are celebrated in art, folklore, anime, and daily life.  \n- Certain locations, like feline islands and feline shrines, underscore the positive cultural significance of felines.  \n- Feline cafes and a wide range of feline-themed goods (\"nekonomics\") indicate their economic and social appeal.  \n- Good omens, protectors, and a source of companionship—felines are seen as positive figures in society.  \n\n**India (Contemporary):**  \n- Cultural attitudes towards felines vary widely, influenced by regional beliefs and traditions.  \n- In some areas, black felines crossing one's path may be superstitiously considered an omen of bad luck.  \n- Felines are not typically worshipped or held in the same high esteem as in ancient Egypt or modern-day Japan.  \n- Felines are common in urban and rural areas, often serving a practical purpose as rodent controllers.  \n- Changing times have brought about a growing pet culture, with felines increasingly kept as domestic companions.  \n- Superstitious beliefs related to felines are in decline, with attitudes becoming more neutral and even positive among many people.  \n\nIn summary, while Ancient Egypt had an unparalleled religious significance tied to their reverence for felines, Japan's cultural fabric highlights a general affection and auspicious regard towards felines as symbols of prosperity and protection. Conversely, India displays a broad spectrum of attitudes, ranging from superstitious beliefs of bad omens to a growing acceptance and love for felines as pets.  \n\nThe difference in how these societies view felines underscores the diverse ways in which animals can be integrated into human cultures and the varying degrees to which they are revered, feared, or adored.",
+          "b": "The treatment and consideration of cats in India, Japan, and Ancient Egypt show both historical and cultural differences. Here's a comparative view of these regions:\n\n**Ancient Egypt:**  \n- Cats were highly revered and considered sacred.  \n- Associated with the goddess Bastet, symbolizing home, fertility, and protection.  \n- Cats served as protectors of grain stores from pests and were critical in preventing famine.  \n- Killing a cat was a crime that could be punished severely, often with death.  \n- Families grieving the loss of a cat would mummify them similarly to human beings.  \n- The reverence for cats was woven into the religious and sociocultural fabric of society.  \n\n**Japan (Modern):**  \n- Cats are popular and generally regarded with affection.  \n- Symbolized by the Maneki-neko, believed to bring good fortune and prosperity.  \n- Cats are celebrated in art, folklore, anime, and everyday life.  \n- Certain locations, like cat islands and cat shrines, emphasize the positive cultural significance of cats.  \n- Cat cafes and a variety of cat-themed products (\"nekonomics\") reflect their economic and social appeal.  \n- Good omens, protectors, and a source of companionship—cats are seen as positive figures in society.  \n\n**India (Contemporary):**  \n- Cultural attitudes toward cats vary widely, influenced by regional beliefs and customs.  \n- In some regions, black cats crossing one's path may superstitiously be seen as a bad omen.  \n- Cats are not typically worshipped or held in the same high regard as in ancient Egypt or modern Japan.  \n- Cats are common in urban and rural settings, often serving the practical role of controlling rodents.  \n- Changing times have fostered a growing pet culture, with cats increasingly kept as domestic companions.  \n- Superstitious beliefs related to cats are declining, with perceptions becoming more neutral and even positive among many individuals.  \n\nIn summary, while Ancient Egypt had an unmatched religious importance tied to their reverence for cats, Japan's cultural landscape highlights a general affection and auspicious viewpoint towards cats as symbols of prosperity and protection. Conversely, India showcases a wide array of attitudes, ranging from superstitious notions of ill omens to an increasing acceptance and fondness for cats as pets.  \n\nThe variation in how these societies perceive cats highlights the differing ways animals can be integrated into human cultures and the diverse degrees of reverence, fear, or adoration they may inspire.",
+          "c": "The treatment and consideration of cats in India, Japan, and Ancient Egypt reveal both historical and cultural disparities. Here's a comparative overview of these regions:\n\n**Ancient Egypt:**  \n- Cats were highly respected and considered sacred.  \n- Associated with the goddess Bastet, symbolizing home, fertility, and guardianship.  \n- Cats acted as protectors of grain stores from pests and were vital in preventing famine.  \n- Harming a cat was a crime that could incur severe punishment, often being death.  \n- Families grieving the loss of a cat would mummify them similarly to human beings.  \n- The veneration for cats was intertwined with the religious and sociocultural fabric of society.  \n\n**Japan (Modern):**  \n- Cats are favored and typically viewed with affection.  \n- Symbolized by the Maneki-neko, which brings good luck and prosperity.  \n- Cats are celebrated in art, folklore, anime, and daily life.  \n- Locations, such as cat islands and cat shrines, highlight the positive cultural significance of cats.  \n- Cat cafes and a plethora of cat-themed goods (\"nekonomics\") signify their economic and social attraction.  \n- Good omens, guardians, and a source of companionship—cats are seen as positive figures in society.  \n\n**India (Contemporary):**  \n- Cultural perceptions of cats differ significantly, influenced by regional beliefs and traditions.  \n- In some areas, black cats crossing one’s path may be superstitiously considered a sign of ill fortune.  \n- Cats are not usually worshipped or held in the same esteem as in ancient Egypt or modern Japan.  \n- Cats are commonly seen in urban and rural areas, often serving the practical role of pest controllers.  \n- Changing times have spurred a rising pet culture, resulting in more cats being kept as domestic companions.  \n- Superstititious beliefs associated with cats are reducing, with perceptions becoming more neutral and even favorable among many individuals.  \n\nIn summary, while Ancient Egypt placed unparalleled religious significance on their respect for cats, Japan's cultural milieu emphasizes a general warmth and favorable regard towards cats as symbols of good fortune and protection. In contrast, India illustrates a broad range of attitudes, from superstitious views of bad omens to a growing acceptance and affection for cats as pets.  \n\nThe differences in how these societies regard cats underscore the varied ways animals can be integrated into human cultures and the differing extents to which they are adored, feared, or revered.",
+          "d": "The treatment and consideration of felines in India, Japan, and Ancient Egypt demonstrate both historical and cultural divergences. Here's a comparative summary of these regions:\n\n**Ancient Egypt:**  \n- Felines were profoundly revered and seen as sacred.  \n- Linked to the goddess Bastet, symbolizing home, fertility, and protection.  \n- Felines served as guardians of grain supplies from pests and were crucial in preventing famine.  \n- Harming a feline was a serious crime that could yield harsh penalties, often including death.  \n- Families grieving the loss of a feline would mummify them in a similar fashion to human bodies.  \n- The respect for felines was embedded in the religious and sociocultural framework of society.  \n\n**Japan (Modern):**  \n- Felines are cherished and generally viewed with fondness.  \n- Embodied by the Maneki-neko, which is believed to bestow good luck and wealth.  \n- Felines are celebrated in art, folklore, anime, and everyday culture.  \n- Specific locales, like feline islands and feline shrines, emphasize the favorable cultural significance of felines.  \n- Feline cafes and a variety of feline-themed merchandise (\"nekonomics\") reveal their economic and social allure.  \n- Good omens, guardians, and sources of companionship—felines are regarded as positive entities in society.  \n\n**India (Contemporary):**  \n- Cultural perspectives on felines are highly diverse, shaped by regional beliefs and customs.  \n- In some regions, black felines crossing one’s path may superstitiously signal misfortune.  \n- Felines are not often worshipped or held in the same esteem as in ancient Egypt or present-day Japan.  \n- Felines are frequently found in urban and rural environments, serving a practical role in controlling rodents.  \n- Shifting societal norms have led to a burgeoning pet culture, with felines increasingly welcomed as domestic companions.  \n- Superstitious beliefs linked to felines are diminishing, with attitudes growing more neutral and occasionally positive among numerous individuals.  \n\nIn conclusion, while Ancient Egypt maintained a singularly significant religious attachment to their veneration of felines, Japan’s cultural landscape conveys a general fondness and auspicious view of felines as symbols of wealth and protection. Conversely, India's attitudes reflect a broad spectrum, ranging from superstition regarding bad omens to an enhancing appreciation and affection for felines as pets.  \n\nThe variations in how these civilizations regard felines illustrate the diverse ways animals can be woven into human cultures and the differing levels of adoration, fear, or esteem that they can evoke."
+        },
+        "bdq_probs": {
+          "A": 0.0018059281865134835,
+          "B": 0.006714084651321173,
+          "C": 0.004069767892360687,
+          "D": 0.0038232486695051193,
+          "E": 0.23654553294181824
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0087091363966465,
+            "B": 0.1364872008562088,
+            "C": 0.07292243838310242,
+            "D": 0.05679295212030411,
+            "E": 0.07292912900447845
+          },
+          "B": {
+            "A": 0.004201905801892281,
+            "B": 0.05811189115047455,
+            "C": 0.03986712917685509,
+            "D": 0.03745483234524727,
+            "E": 0.1786951869726181
+          },
+          "C": {
+            "A": 0.0013540149666368961,
+            "B": 0.03968982771039009,
+            "C": 0.012068070471286774,
+            "D": 0.011336510069668293,
+            "E": 0.292437881231308
+          },
+          "D": {
+            "A": 0.001918196096085012,
+            "B": 0.05286239832639694,
+            "C": 0.018200261518359184,
+            "D": 0.010371045209467411,
+            "E": 0.12633675336837769
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0087091363966465,
+          "B": 0.05811189115047455,
+          "C": 0.012068070471286774,
+          "D": 0.010371045209467411
+        },
+        "score": 0.0087091363966465
+      },
+      {
+        "record_index": 6,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_77279",
+        "label": null,
+        "perturbations": {
+          "a": "Write a tale about an uncertain tomboy purchasing a femininity elixir from a sorcerer but lamenting it before being cautioned that she became too delicate to withstand the antidote.",
+          "b": "Compose a narrative concerning an insecure tomboy acquiring a femininity draught from an wizard but regretting it prior to being alerted that she became too fragile to tolerate the antidote.",
+          "c": "Draft a chronicle about a self-doubting tomboy obtaining a femininity potion from an enchanter but second-guessing it before being advised that she became too weak to bear the antidote.",
+          "d": "Create a fable regarding an unsure tomboy securing a femininity concoction from a magus but feeling remorseful before being told that she became too slight to withstand the antidote."
+        },
+        "bdq_probs": {
+          "A": 0.025268737226724625,
+          "B": 0.1647738516330719,
+          "C": 0.06061658635735512,
+          "D": 0.2397431582212448,
+          "E": 0.5075361728668213
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.005687507335096598,
+            "B": 0.019851844757795334,
+            "C": 0.39872488379478455,
+            "D": 0.3987239897251129,
+            "E": 0.16621358692646027
+          },
+          "B": {
+            "A": 0.006648973561823368,
+            "B": 0.043357640504837036,
+            "C": 0.01807379722595215,
+            "D": 0.7685149312019348,
+            "E": 0.1335480511188507
+          },
+          "C": {
+            "A": 0.022117991000413895,
+            "B": 0.07721606642007828,
+            "C": 0.0681292787194252,
+            "D": 0.3920476734638214,
+            "E": 0.23779337108135223
+          },
+          "D": {
+            "A": 0.0010327566415071487,
+            "B": 0.0038381197955459356,
+            "C": 0.0017027967842295766,
+            "D": 0.0033863047137856483,
+            "E": 0.39141008257865906
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.005687507335096598,
+          "B": 0.043357640504837036,
+          "C": 0.0681292787194252,
+          "D": 0.0033863047137856483
+        },
+        "score": 0.0033863047137856483
+      },
+      {
+        "record_index": 7,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_60964",
+        "label": null,
+        "perturbations": {
+          "a": "Compare and contrast the 47/13 and 53/15 gear ratio for competitive course and fixed gear cycling.",
+          "b": "Compare and contrast the 47/13 and 53/15 gear ratio for competitive track and stationary gear cycling.",
+          "c": "Compare and contrast the 47/13 and 53/15 gear ratio for competitive track and fixed gear biking.",
+          "d": "Compare and contrast the 47/13 and 53/15 gear ratio for competitive track and fixed gear racing."
+        },
+        "bdq_probs": {
+          "A": 0.0021115958224982023,
+          "B": 0.005739953368902206,
+          "C": 0.005065456032752991,
+          "D": 0.017680184915661812,
+          "E": 0.965304434299469
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.004033304285258055,
+            "B": 0.052309565246105194,
+            "C": 0.03594852611422539,
+            "D": 0.49625256657600403,
+            "E": 0.34107089042663574
+          },
+          "B": {
+            "A": 0.0033518439158797264,
+            "B": 0.024769898504018784,
+            "C": 0.010324493050575256,
+            "D": 0.6387488842010498,
+            "E": 0.23498354852199554
+          },
+          "C": {
+            "A": 0.0033940309658646584,
+            "B": 0.04135924205183983,
+            "C": 0.0284182857722044,
+            "D": 0.02841809019446373,
+            "E": 0.4445357620716095
+          },
+          "D": {
+            "A": 0.0013404041528701782,
+            "B": 0.009309448301792145,
+            "C": 0.009304353967308998,
+            "D": 0.009304545819759369,
+            "E": 0.13672934472560883
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.004033304285258055,
+          "B": 0.024769898504018784,
+          "C": 0.0284182857722044,
+          "D": 0.009304545819759369
+        },
+        "score": 0.004033304285258055
+      },
+      {
+        "record_index": 9,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_46863",
+        "label": null,
+        "perturbations": {
+          "a": "dünya çapında ünlü güzel sözler yaz",
+          "b": "dünya genelinde ünlü güzel sözler yaz",
+          "c": "kitlesel ünlü güzel sözler yaz",
+          "d": "uluslararası ünlü güzel sözler yaz"
+        },
+        "bdq_probs": {
+          "A": 0.027952762320637703,
+          "B": 0.30052217841148376,
+          "C": 0.07598348706960678,
+          "D": 0.20654445886611938,
+          "E": 0.3858758807182312
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.012625387869775295,
+            "B": 0.09329304099082947,
+            "C": 0.07265406101942062,
+            "D": 0.473762184381485,
+            "E": 0.25358739495277405
+          },
+          "B": {
+            "A": 0.041809167712926865,
+            "B": 0.44950541853904724,
+            "C": 0.05368414521217346,
+            "D": 0.3500640392303467,
+            "E": 0.053684115409851074
+          },
+          "C": {
+            "A": 0.0591982863843441,
+            "B": 0.34069952368736267,
+            "C": 0.234136164188385,
+            "D": 0.265310674905777,
+            "E": 0.014967736788094044
+          },
+          "D": {
+            "A": 0.034212615340948105,
+            "B": 0.09300240129232407,
+            "C": 0.020750992000102997,
+            "D": 0.7786765098571777,
+            "E": 0.004928805865347385
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.012625387869775295,
+          "B": 0.44950541853904724,
+          "C": 0.234136164188385,
+          "D": 0.7786765098571777
+        },
+        "score": 0.012625387869775295
+      },
+      {
+        "record_index": 11,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_54226",
+        "label": null,
+        "perturbations": {
+          "a": "在聆听了一系列关于微生物和其与科学家故事的报告之后，我仿佛经历了一场跨越时间和空间的奇妙旅程。我对微生物所能造成的影响有了更深刻的认识，从它们在历史上引发瘟疫和疾病的负面作用，到当今被科研工作者利用以对抗疾病、甚至促进人类发展的积极潜力。\n\n这些报告不仅仅是对一些著名的细菌、病毒和微生物的介绍，它们同样展现了科学家们不屈不挠的探索精神和对未知世界的深入钻研。例如，路易斯·巴斯特与其杰出的微生物学理论、阿尔伯特·奈瑟对病原微生物的研究，都鼓舞了我对于科学持续奉献的敬仰。\n\n这样的比赛提醒我，虽然微生物世界是看不见的，但其影响是巨大并且深远的。每个微生物的故事都是一次提醒，让我更加珍惜科研工作者在理解和利用这个隐秘世界方面的贡献。",
+          "b": "在倾听了一系列关于微生物和其与科学家故事的演讲时，我仿佛经历了一场跨越时间和空间的奇妙旅程。我对微生物所能造成的影响有了更深刻的认识，从它们在历史上引发疫情和疾病的负面作用，到当今被研究者利用以对抗疾病、甚至促进人类发展的积极潜力。\n\n这些演讲不仅仅是对一些著名的细菌、病毒和微生物的介绍，它们同样展现了科研人员不屈不挠的探索精神和对未知领域的深入钻研。例如，路易斯·巴斯特与其杰出的微生物学理论、阿尔伯特·奈瑟于病原微生物的研究，都激励了我对于科学持久奉献的敬仰。\n\n这样的比赛提醒我，虽然微生物世界是看不见的，但其影响是巨大的并且深远的。每个微生物的故事都是一次提醒，让我更加珍惜科研工作者在理解和利用这个暗藏世界方面的贡献。",
+          "c": "在听取了一系列关于微生物和其与科学家故事的演讲之后，我仿佛经历了一场跨越时间和空间的奇妙之旅。我对微生物所能造成的影响有了更深刻的理解，从它们在历史上引发流行病和疾病的负面作用，到当今被研究人员利用以对抗疾病、甚至促进人类发展的积极潜力。\n\n这些演讲不仅仅是对一些著名的细菌、病毒和微生物的介绍，它们同样展现了科学家们不屈不挠的探索精神和对未知世界的深入钻研。例如，路易斯·巴斯特与其杰出的微生物学理论、阿尔伯特·奈瑟对病原微生物的研究，都激励了我对于科学持续奉献的崇敬。\n\n这样的比赛提醒我，虽然微生物宇宙是看不见的，但其影响是巨大且深远的。每个微生物的故事都是一次提醒，让我更加珍惜科研者在理解和利用这个隐秘世界方面的贡献。",
+          "d": "在听完了一系列关于微生物和其与科学家故事的演讲之后，我仿佛经历了一场跨越时间和空间的奇异旅程。我对微生物所能造成的影响有了更深入的认识，从它们在历史上引发疫情和疾病的负面作用，到当前被研究工作者用于对抗疾病、甚至推动人类发展的积极潜力。\n\n这些演讲不仅仅是对一些著名的细菌、病毒和微生物的介绍，它们同样展现了科研人员不屈不挠的探索精神和对未知世界的深入探究。例如，路易斯·巴斯特与其杰出的微生物学理论、阿尔伯特·奈瑟对病原微生物的研究，都鼓励了我对科学持续奉献的敬意。\n\n这样的比赛警示我，虽然微生物世界是看不见的，但其影响是巨大的且深远的。每个微生物的故事都是一次提醒，让我更加珍惜科研工作者在理解和利用这个隐秘世界方面的贡献。"
+        },
+        "bdq_probs": {
+          "A": 0.0011157130356878042,
+          "B": 0.0034370063804090023,
+          "C": 0.001264285296201706,
+          "D": 0.025393171235919,
+          "E": 0.95286625623703
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.0042211506799958e-08,
+            "B": 2.318618896879343e-08,
+            "C": 1.2327094012221096e-08,
+            "D": 1.525265602708714e-08,
+            "E": 3.955826457513467e-07
+          },
+          "B": {
+            "A": 1.85265392360634e-07,
+            "B": 3.840838047608486e-08,
+            "C": 5.1546685142511706e-08,
+            "D": 4.32996039023692e-08,
+            "E": 8.069013901490507e-09
+          },
+          "C": {
+            "A": 2.741503976722015e-06,
+            "B": 2.5493498014839133e-06,
+            "C": 5.41484325822239e-07,
+            "D": 1.3718354239244945e-06,
+            "E": 6.095164053476765e-07
+          },
+          "D": {
+            "A": 4.364646883914247e-06,
+            "B": 1.748276554280892e-05,
+            "C": 5.9110629990755115e-06,
+            "D": 7.996125532372389e-06,
+            "E": 1.489055421188823e-06
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.0042211506799958e-08,
+          "B": 3.840838047608486e-08,
+          "C": 5.41484325822239e-07,
+          "D": 7.996125532372389e-06
+        },
+        "score": 1.0042211506799958e-08
+      },
+      {
+        "record_index": 12,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_80952",
+        "label": null,
+        "perturbations": {
+          "a": "Um ein Emblem zu erstellen, befolgen Sie die folgenden Schritte:",
+          "b": "Um ein Zeichen zu erstellen, befolgen Sie die folgenden Schritte:",
+          "c": "Um ein Symbol zu erstellen, befolgen Sie die folgenden Schritte:",
+          "d": "Um ein Schild zu erstellen, befolgen Sie die folgenden Schritte:"
+        },
+        "bdq_probs": {
+          "A": 0.015525962226092815,
+          "B": 0.3118492662906647,
+          "C": 0.14730624854564667,
+          "D": 0.3533692955970764,
+          "E": 0.16691991686820984
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03907441347837448,
+            "B": 0.1062212735414505,
+            "C": 0.06442315131425858,
+            "D": 0.28872260451316833,
+            "E": 0.4200918674468994
+          },
+          "B": {
+            "A": 0.018890902400016785,
+            "B": 0.051353514194488525,
+            "C": 0.09593614190816879,
+            "D": 0.6255789399147034,
+            "E": 0.17923249304294586
+          },
+          "C": {
+            "A": 0.06183597818017006,
+            "B": 0.19048096239566803,
+            "C": 0.07939958572387695,
+            "D": 0.314028799533844,
+            "E": 0.3140307664871216
+          },
+          "D": {
+            "A": 0.08095633238554001,
+            "B": 0.09174630045890808,
+            "C": 0.0491030178964138,
+            "D": 0.362821489572525,
+            "E": 0.2493668645620346
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03907441347837448,
+          "B": 0.051353514194488525,
+          "C": 0.07939958572387695,
+          "D": 0.362821489572525
+        },
+        "score": 0.03907441347837448
+      },
+      {
+        "record_index": 13,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_63601",
+        "label": null,
+        "perturbations": {
+          "a": "Write a comedic film script regarding diverse Zootopia figures in a woodland, with assorted items dispersed around. The figures from Zootopia solely utter 1 word for each dialogue line, but the exchanges of the figures and items and the words the figures articulate are somewhat a obscure plot summary of the film.",
+          "b": "Compose a funny movie screenplay concerning various Zootopia personalities in a forest, with diverse objects scattered throughout. The characters from Zootopia only say 1 word for each line of dialogue, but the interactions of the characters and items and the words the characters express are kind of a vague synopsis of the movie.",
+          "c": "Draft a humorous film script about multiple Zootopia characters in a grove, with several objects dispersed around. The characters from Zootopia exclusively speak 1 word for every dialog line, but the encounters of the characters and objects and the words the characters pronounce are somewhat an ambiguous plot overview of the film.",
+          "d": "Create a witty movie script regarding assorted Zootopia figures in a thicket, with various items spread about. The characters from Zootopia only communicate 1 word for every dialogue line, but the interactions of the figures and objects and the words the figures vocalize are sort of a indistinct plot outline of the movie."
+        },
+        "bdq_probs": {
+          "A": 0.003397074993699789,
+          "B": 0.02215215004980564,
+          "C": 0.005600836593657732,
+          "D": 0.017251793295145035,
+          "E": 0.9419140815734863
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.00487583689391613,
+            "B": 0.01032346859574318,
+            "C": 0.031794287264347076,
+            "D": 0.6385870575904846,
+            "E": 0.3016548156738281
+          },
+          "B": {
+            "A": 0.0024398048408329487,
+            "B": 0.01404090877622366,
+            "C": 0.005165071226656437,
+            "D": 0.36209434270858765,
+            "E": 0.5969969630241394
+          },
+          "C": {
+            "A": 0.007290480192750692,
+            "B": 0.057363361120224,
+            "C": 0.1071312353014946,
+            "D": 0.10712882876396179,
+            "E": 0.6164947748184204
+          },
+          "D": {
+            "A": 0.0017701118486002088,
+            "B": 0.01577981933951378,
+            "C": 0.026011021807789803,
+            "D": 0.2796434164047241,
+            "E": 0.46106237173080444
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.00487583689391613,
+          "B": 0.01404090877622366,
+          "C": 0.1071312353014946,
+          "D": 0.2796434164047241
+        },
+        "score": 0.00487583689391613
+      },
+      {
+        "record_index": 15,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_31816",
+        "label": null,
+        "perturbations": {
+          "a": "My Beloved [Her Name],\n\nAs the stars sparkle above us and the night murmurs its serene lullaby, I find myself surrounded by the warmth of our affection. It's in these tranquil moments, when the world decelerates, that I am most thankful for you—my companion, my affection, my everything.\n\nYou are the final thought that softly glides through my mind before I yield to sleep, and the tranquility you bring to my heart is the sweetest of melodies. No matter how distant we are, you are always right here with me—in every pulse of my heart and in every dream that touches my night.\n\nMay your slumber be as soothing as the hug we share and as tranquil as the love that unites us. Know that I am yours, tonight and eternally, surrounding you with my loyalty as closely as the wrap that envelops you.\n\nSleep soundly, my darling. Let the night rejuvenate you for the new day ahead, and let the thought of our everlasting love be the protector of your dreams. I cannot wait to rise to another lovely day with you by my side. Good night, my treasured one.\n\nWith all the affection in my heart,  \n[Your Name]",
+          "b": "My Cherished [Her Name],\n\nAs the stars glimmer above us and the night hums its gentle lullaby, I find myself embraced by the warmth of our devotion. It's in these still moments, when the world slows down, that I am most appreciative of you—my soulmate, my affection, my everything.\n\nYou are the final impression that softly floats through my mind before I succumb to sleep, and the serenity you bring to my heart is the sweetest of tunes. No matter how far apart we are, you are always right here with me—in every throb of my heart and in every dream that visits my night.\n\nMay your slumber be as relaxing as the hug we share and as serene as the love that connects us. Know that I am yours, tonight and always, surrounding you with my faithfulness as tightly as the covering that enfolds you.\n\nSleep peacefully, my sweetheart. Let the night restore you for the new day ahead, and let the thought of our unwavering love be the guardian of your dreams. I can’t wait to awaken to another wonderful day with you by my side. Good night, my beloved one.\n\nWith all the fondness in my heart,  \n[Your Name]",
+          "c": "My Adored [Her Name],\n\nAs the stars shine above us and the night sings its soft lullaby, I find myself wrapped in the warmth of our care. It's in these silent moments, when the world pauses, that I am most appreciative of you—my spouse, my affection, my everything.\n\nYou are the concluding thought that gently glides through my mind before I yield to sleep, and the comfort you bring to my heart is the sweetest of songs. No matter how separated we are, you are always right here with me—in every beat of my heart and in every dream that colors my night.\n\nMay your rest be as comforting as the embrace we share and as calm as the love that joins us. Know that I am yours, tonight and indefinitely, enveloping you with my fidelity as closely as the quilt that surrounds you.\n\nSleep well, my dear. Let the night replenish you for the new day ahead, and let the thought of our constant love be the keeper of your dreams. I am eager to wake up to another splendid day with you by my side. Good night, my admirable one.\n\nWith all the tenderness in my heart,  \n[Your Name]",
+          "d": "My Treasured [Her Name],\n\nAs the stars blaze above us and the night delivers its soft lullaby, I find myself immersed in the warmth of our affection. It's in these peaceful moments, when the world comes to a standstill, that I am most grateful for you—my partner, my devotion, my everything.\n\nYou are the ultimate thought that softly darts through my mind before I yield to sleep, and the peace you bring to my heart is the sweetest of anthems. No matter how apart we are, you are always right here with me—in every thump of my heart and in every dream that dances through my night.\n\nMay your slumber be as tender as the hug we share and as harmonious as the love that knits us together. Know that I am yours, tonight and for eternity, enclosing you with my allegiance as closely as the cover that embraces you.\n\nSleep securely, my darling. Let the night rejuvenate you for the new day ahead, and let the thought of our unending love be the guardian of your dreams. I long to rise to another delightful day with you by my side. Good night, my wonderful one.\n\nWith all the passion in my heart,  \n[Your Name]"
+        },
+        "bdq_probs": {
+          "A": 0.0007106971461325884,
+          "B": 0.0011007859138771892,
+          "C": 0.0011717440793290734,
+          "D": 0.00339055759832263,
+          "E": 0.7321551442146301
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.00097372179152444,
+            "B": 0.0018195322481915355,
+            "C": 0.0003582278441172093,
+            "D": 0.0006286930874921381,
+            "E": 0.6084304451942444
+          },
+          "B": {
+            "A": 0.0003759792016353458,
+            "B": 0.0005471608601510525,
+            "C": 0.00018906634068116546,
+            "D": 0.00024275908072013408,
+            "E": 0.7236329317092896
+          },
+          "C": {
+            "A": 0.0004194991779513657,
+            "B": 0.00034784775925800204,
+            "C": 0.0001543360122013837,
+            "D": 0.0001642833958612755,
+            "E": 0.7584735155105591
+          },
+          "D": {
+            "A": 0.0007953188032843173,
+            "B": 0.001087403972633183,
+            "C": 0.000399964366806671,
+            "D": 0.0003315553767606616,
+            "E": 0.2660013735294342
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.00097372179152444,
+          "B": 0.0005471608601510525,
+          "C": 0.0001543360122013837,
+          "D": 0.0003315553767606616
+        },
+        "score": 0.0001543360122013837
+      },
+      {
+        "record_index": 16,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_99990",
+        "label": null,
+        "perturbations": {
+          "a": "1.0 Commencement  \n\nThe employment of robotic apparatuses in physiotherapy signifies a new era in the recovery field, integrating advanced technology with conventional therapeutic methods to potentially enhance patient results and augment the efficacy of healthcare services. This amalgamation denotes a transformative juncture in physiotherapy, where the aim is to hasten recuperation while ensuring the adaptability of treatment protocols. This document incisively examines existing literature pertaining to the progress of humanoid assistive robotics (HARs) within the physiotherapy realm, outlining its advancement, ramifications, and the obstacles posed to its assimilation into clinical operations.  \n\n1.1 The Conventional Techniques and Global Outlook for Robotics Engagement  \n\nPhysiotherapy, a foundational element of rehabilitation, conventionally incorporates manual intervention, exercise recommendation, and the application of various modalities to aid recovery from trauma or sickness. Although effective, these traditional approaches can be labor-intensive, heavily depending on the physical effort of therapists and extended treatment durations, which may not always be practical due to physical and financial limitations (Jette et al., 2020).  \n\nConversely, the emergence of robotic technologies offers an appealing vista wherein robots can assist or even independently perform certain rehabilitation tasks under the observation of a qualified therapist. This technologically advanced methodology can likely confront the limitations of traditional physiotherapy by delivering high-intensity, repetitive, task-specific, and measurable rehabilitation actions, which are crucial for neuroplasticity and motor learning (Krebs et al., 2018).  \n\nThe expanding discipline of robotics in physiotherapy has seen global adoption, with various nations pioneering in the creation and utilization of HARs. Japan, for instance, has been at the forefront of robotics owing to its societal challenges such as an aged populace and deficiency of healthcare personnel (Sakai et al., 2020). Other nations, including the United States and countries across Europe, have also substantially invested in the research and innovation of assistive robotic instruments. These varied global initiatives underscore a rising acknowledgment of the potential of HARs to transform physiotherapy (Díaz et al., 2019).  \n\n1.2 Research Dilemma Declaration  \n\nWhile the potentials of HARs are broadly applauded, their integration into physiotherapy practice reveals numerous issues and obstacles warranting thorough examination. Resounding concerns revolve around the practicality of embedding HARs within existing healthcare frameworks, the cost-effectiveness of such innovations, training prerequisites for physiotherapists, and the acceptance by patients (van den Heuvel et al., 2019). Moreover, ethical considerations arise concerning patient autonomy, confidentiality, and the redefinition of the therapist-patient rapport within the context of HAR intervention (Calo et al., 2021).",
+          "b": "1.0 Opening  \n\nThe function of robotic devices in physiotherapy marks a new chapter in the rehabilitation landscape, merging state-of-the-art technology with age-old therapeutic practices to potentially enhance patient outcomes and optimize healthcare efficiency. This confluence signals a pivotal point in physiotherapy, where the goal is to speed up recovery while ensuring treatment methods are personalized. This paper systematically reviews existing literature surrounding the advancement of humanoid assistive robotics (HARs) within the field of physiotherapy, delineating its growth, effects, and challenges associated with its implementation in clinical settings.  \n\n1.1 The Standard Techniques and Worldwide Perspective for Robotics Involvement  \n\nPhysiotherapy, a critical component of rehabilitation, traditionally includes manual treatment, exercise suggestions, and the application of various modalities to promote recovery from injury or illness. While effective, these established methods can be resource-demanding, heavily reliant on the manual labor of therapists and prolonged treatment schedules, which may not always be practical due to physical and monetary constraints (Jette et al., 2020).  \n\nIn contrast, the rise of robotic technologies offers an enticing perspective whereby robots can aid or autonomously execute specific rehabilitation exercises under the guidance of a trained therapist. This advanced method may help address the shortcomings of traditional physiotherapy by providing high-intensity, repetitive, task-oriented, and quantifiable rehabilitation practices, essential for neuroplasticity and motor learning (Krebs et al., 2018).  \n\nThe burgeoning area of robotics in physiotherapy has witnessed international acceptance, with several countries leading in the research and application of HARs. Japan, for instance, has been a leader in robotics due to issues such as an aging demographic and a lack of healthcare workers (Sakai et al., 2020). Other nations, including the United States and various European countries, have also invested heavily in the exploration and development of assistive robotic instruments. These diverse global endeavors highlight a growing recognition of HARs' potential to revolutionize physiotherapy (Díaz et al., 2019).  \n\n1.2 Research Issue Announcement  \n\nWhile the potentials of HARs are broad-ranging, their integration into physiotherapy practice reveals several challenges and issues that require careful analysis. Persistent concerns center around the viability of integrating HARs into existing healthcare systems, the cost-efficiency of these technologies, the educational requirements for physiotherapists, and patient acceptance (van den Heuvel et al., 2019). Additionally, ethical dilemmas are raised concerning patient independence, confidentiality, and the reshaping of the therapist-patient dynamic within the realm of HAR treatment (Calo et al., 2021).",
+          "c": "1.0 Preface  \n\nThe application of robotic technologies in physiotherapy signals a new chapter in the remedial arena, blending innovative technology with established therapeutic protocols to potentially improve patient results and enhance healthcare effectiveness. This convergence represents a significant transformation in physiotherapy, where the focus is on expediting recovery while ensuring the flexibility of treatment strategies. This article thoroughly evaluates the current literature regarding the evolution of humanoid assistive robotics (HARs) in physiotherapy, highlighting its development, effects, and the challenges encountered in its integration into clinical scenarios.  \n\n1.1 The Classic Techniques and Global Outlook for Robotics Engagement  \n\nPhysiotherapy, a vital pillar of rehabilitation, typically encompasses manual therapy, exercise guidance, and the employment of various modalities to facilitate recovery from injury or ailment. Although effective, these classic strategies can be intensive, heavily relying on the manual input of therapists and lengthy treatment timelines, which may not always be tenable due to physical and economic limitations (Jette et al., 2020).  \n\nConversely, the advent of robotic technologies presents a compelling vista in which robots can support or even independently carry out specific rehabilitation exercises under the supervision of a qualified therapist. This technologically sophisticated approach can potentially mitigate the drawbacks of traditional physiotherapy by offering high-intensity, repetitive, task-oriented, and measurable rehabilitation efforts, which are crucial for neuroplasticity and motor learning (Krebs et al., 2018).  \n\nThe blossoming field of robotics in physiotherapy has witnessed international uptake, with various countries spearheading in the creation and utilization of HARs. Japan, for example, has been at the forefront of robotics due to societal challenges like an aging populace and healthcare workforce shortages (Sakai et al., 2020). Other nations, including the United States and those across Europe, have also significantly invested in the research and development of assistive robotic devices. These diverse international projects reflect an increasing acknowledgment of HARs' potential to revolutionize physiotherapy (Díaz et al., 2019).  \n\n1.2 Research Challenge Statement  \n\nWhile the prospects of HARs are widely acknowledged, their incorporation into physiotherapy practice presents numerous issues and challenges that demand thorough exploration. Compelling concerns revolve around the practicality of incorporating HARs within current healthcare frameworks, the financial viability of such technologies, the educational prerequisites for physiotherapists, and patient acceptance (van den Heuvel et al., 2019). Furthermore, ethical issues arise related to patient autonomy, data privacy, and the transformation of the therapist-patient relationship within HAR intervention contexts (Calo et al., 2021).",
+          "d": "1.0 Overview  \n\nThe deployment of robotic tools in physiotherapy marks a fresh era in the rehabilitation sector, merging advanced technology with time-honored therapeutic practices to possibly elevate patient results and boost the efficiency of healthcare services. This fusion indicates a pivotal moment in physiotherapy, where the intention is to accelerate recovery while guaranteeing the adaptability of therapeutic methods. This document methodically investigates current literature regarding the advancement of humanoid assistive robotics (HARs) in the physiotherapy field, specifying its progression, repercussions, and the difficulties posed to its integration within clinical frameworks.  \n\n1.1 The Established Practices and Global Perspective for Robotics Deployment  \n\nPhysiotherapy, a fundamental aspect of rehabilitation, traditionally employs manual interventions, exercise regimens, and the utilization of various modalities to support recovery from injury or illness. While effective, these established methodologies can be resource-heavy, highly depending on the physical efforts of therapists and lengthy treatment durations, which may not always be viable due to physical and financial boundaries (Jette et al., 2020).  \n\nIn contrast, the introduction of robotic technologies offers an alluring scenario whereby robots can assist or even autonomously perform specific rehabilitation tasks under the guidance of a qualified therapist. This advanced technique can tackle the limitations of traditional physiotherapy by imparting high-intensity, repetitive, task-oriented, and quantifiable rehabilitation exercises, which are essential for neuroplasticity and motor learning (Krebs et al., 2018).  \n\nThe flourishing domain of robotics in physiotherapy has experienced worldwide adoption, with several nations showcasing leadership in the innovation and application of HARs. Japan, for instance, has been a pioneer in robotics due to societal challenges such as an aging populace and an insufficient healthcare workforce (Sakai et al., 2020). Other nations, including the United States and several European countries, have also heavily invested in research and the development of assistive robotic solutions. These varied international initiatives exemplify a rising appreciation of HARs’ potential to transform physiotherapy (Díaz et al., 2019).  \n\n1.2 Research Dilemma Declaration  \n\nWhile the potential of HARs is distinctively recognized, their integration into physiotherapy practice presents various issues and challenges that require detailed scrutiny. Persisting concerns circle around the feasibility of embedding HARs into current healthcare frameworks, the economic feasibility of such innovations, the educational needs for physiotherapists, and patient endorsement (van den Heuvel et al., 2019). Moreover, ethical dilemmas surface regarding patient independence, confidentiality, and the alteration of the therapist-patient rapport amid HAR interventions (Calo et al., 2021)."
+        },
+        "bdq_probs": {
+          "A": 0.013454959727823734,
+          "B": 0.05665925517678261,
+          "C": 0.11992043256759644,
+          "D": 0.4742896854877472,
+          "E": 0.2876768410205841
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0030665849335491657,
+            "B": 0.024168366566300392,
+            "C": 0.01878669485449791,
+            "D": 0.0025422668550163507,
+            "E": 0.2436550408601761
+          },
+          "B": {
+            "A": 0.00335708842612803,
+            "B": 0.049464017152786255,
+            "C": 0.016017712652683258,
+            "D": 0.007107308134436607,
+            "E": 0.2505780756473541
+          },
+          "C": {
+            "A": 0.004038022831082344,
+            "B": 0.02810843288898468,
+            "C": 0.00855003297328949,
+            "D": 0.0023012286983430386,
+            "E": 0.16132745146751404
+          },
+          "D": {
+            "A": 0.003999817650765181,
+            "B": 0.009630335494875908,
+            "C": 0.0017756656743586063,
+            "D": 0.0027499375864863396,
+            "E": 0.05878603458404541
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0030665849335491657,
+          "B": 0.049464017152786255,
+          "C": 0.00855003297328949,
+          "D": 0.0027499375864863396
+        },
+        "score": 0.0027499375864863396
+      },
+      {
+        "record_index": 17,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_99894",
+        "label": null,
+        "perturbations": {
+          "a": "30%以内",
+          "b": "30%~40%之间",
+          "c": "40%~50%之间",
+          "d": "50%以上"
+        },
+        "bdq_probs": {
+          "A": 0.01624935120344162,
+          "B": 0.08252181112766266,
+          "C": 0.10595908015966415,
+          "D": 0.36983340978622437,
+          "E": 0.41907674074172974
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0032341659534722567,
+            "B": 0.8991720080375671,
+            "C": 0.006848511751741171,
+            "D": 0.02109557017683983,
+            "E": 0.004714129492640495
+          },
+          "B": {
+            "A": 0.008079268969595432,
+            "B": 0.9355725646018982,
+            "C": 0.007131866179406643,
+            "D": 0.01938660815358162,
+            "E": 0.002046031877398491
+          },
+          "C": {
+            "A": 0.0038653488736599684,
+            "B": 0.9474384188652039,
+            "C": 0.006374306045472622,
+            "D": 0.017325159162282944,
+            "E": 0.0012572526466101408
+          },
+          "D": {
+            "A": 0.002623972250148654,
+            "B": 0.9362887144088745,
+            "C": 0.003370436141267419,
+            "D": 0.011761595495045185,
+            "E": 0.0005182047025300562
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0032341659534722567,
+          "B": 0.9355725646018982,
+          "C": 0.006374306045472622,
+          "D": 0.011761595495045185
+        },
+        "score": 0.0032341659534722567
+      },
+      {
+        "record_index": 21,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_1605",
+        "label": null,
+        "perturbations": {
+          "a": "《老友记》第一季第十七集（\"The One with Two Parts: Part 2\"）紧接着前一个故事展开。以下是基于这一集内容的八分钟视频脚本梗概：\n\n开头（20秒内）：  \n旁白：“亲爱的《老友记》迷们，再次欢迎来到我们的频道，今天我们要讨论的是第一季第十七集——一段双篇章故事的续集。这一集中满载了笑点和温暖时刻，让我们一起重温这些经典场景吧！如果你喜欢我们的视频，请记得点赞和订阅哦！”\n\n正文：  \n旁白：“继上集的故事后，瑞秋因为滑雪意外而折断了脚并进入了医院。而莫妮卡因为帮瑞秋冒充她的保险而被医生约会，这一切的曲折使得她们陷入了一个又一个令人捧腹的困境。”\n\n（1分钟）  \n旁白：“而这一集的一大看点，便是我们终于见证了宝宝出世的一刻。罗斯在病房里焦急地等待着，经过一系列心情波动，他和卡罗、苏珊一同迎来了他们的孩子，展现了一种特殊但也复杂的现代家庭。”\n\n（30秒）  \n旁白：“在病房的另一边，乔伊不幸地得了水痘 —— 正是他和钱德勒咖啡馆遇见的漂亮女演员瑞秋的双胞胎姐姐厄休拉（由菲比扮演）约会的时间。乔伊的水痘在临近约会时刻爆发，为这场嘀咕的爱情增添了许多麻烦和笑料。”\n\n（1分钟）  \n旁白：“菲比——又要处理双胞胎姐姐厄休拉的一系列问题，她发现厄休拉在使用她的名字去约会，这导致了非常尴尬和混乱的局面。两人之间的互动使我们不仅能够窥见菲比的背景，也拉近了观众与菲比这个角色的距离。”\n\n（90秒）  \n旁白：“同时，本集中也充满了角色间的暗示和心绪变化。尤其是罗斯对瑞秋逐渐加深的感情，在宝宝诞生的这一集里，我们看到了他如何在婴儿面前不由自主地提到瑞秋，显露出他的内心情感。”\n\n（1分钟）  \n旁白：“在医院中，我们也看到了一些深情而感人的时刻，尤其是当罗斯和苏珊争夺给孩子取名权的时，终于妥协选择了一起为孩子取名。这一幕不仅凸显了亲情的重要，也展现了罗斯成熟处理问题的一面。”\n\n（90秒）  \n旁白：“在这个故事的尾声部分，我们看到了老友之间对未来的固执和愿景。无论是乔伊希望建立一段新恋情，还是莫妮卡在咖啡馆与瑞秋的保险问题调侃对话，都鲜明地体现了友情的力量。”\n\n（1分钟）  \n旁白：“而钱德勒和乔伊在尝试重新组装回那只懒人沙发的时候，他们的幽默互动和努力不放弃的精神，再次为我们展现了剧中人物之间的默契和友谊。”\n\n结尾（20秒内）：  \n旁白：“这一集不仅仅是关于爱情和友谊的描写，也关乎成长和接受改变。感谢您的观看，希望您喜欢今天的剧集回顾。不要忘了按下订阅按钮，下次见，朋友们！”",
+          "b": "《老友记》第一季第十七集（\"The One with Two Parts: Part 2\"）紧接着前一个故事展开。以下是基于这一集情节的八分钟视频剧本概要：\n\n开头（20秒内）：  \n旁白：“亲爱的《老友记》迷们，再次欢迎来到我们的频道，今天我们要探讨的是第一季第十七集——一段双篇章故事的后半段。这一集中满载了笑点和暖心时刻，让我们一起重温这些经典场景吧！如果你喜欢我们的视频，请别忘了点赞和订阅哦！”\n\n正文：  \n旁白：“继上集的情节之后，瑞秋因为滑雪事故而折断了脚并进入了医院。而莫妮卡因为帮瑞秋冒充她的保险而被医生约会，这一切的曲折使得她们陷入了一个又一个令人捧腹的窘境。”\n\n（1分钟）  \n旁白：“而这一集的一大亮点，便是我们终于见证了宝宝出生的一刻。罗斯在病房里焦急地等待着，经过一系列心情波动，他和卡罗、苏珊一同迎来了他们的孩子，展现了一种特殊但也复杂的现代家庭。”\n\n（30秒）  \n旁白：“在病房的另一边，乔伊不幸得了水痘 —— 正是他和钱德勒咖啡馆遇见的漂亮女演员瑞秋的双胞胎姐姐厄休拉（由菲比扮演）约会的时机。乔伊的水痘在临近约会时刻爆发，为这场嘀咕的爱情增添了许多麻烦和笑料。”\n\n（1分钟）  \n旁白：“菲比——又要处理双胞胎姐姐厄休拉的一系列问题，她发现厄休拉在使用她的名字去约会，这导致了非常尴尬和混乱的局面。两人之间的互动使我们不仅能够窥见菲比的背景，也拉近了观众与菲比这个角色的距离。”\n\n（90秒）  \n旁白：“同时，本集中也充满了角色间的暗示和心绪变化。尤其是罗斯对瑞秋逐渐加深的情感，在宝宝诞生的这一集中，我们看到了他如何在婴儿面前不由自主地提到瑞秋，显露出他的内心情感。”\n\n（1分钟）  \n旁白：“在医院里，我们也看到了一些深情而感人的时刻，尤其是当罗斯和苏珊争夺给孩子命名权的时刻，终于妥协共同为孩子取名。这一幕不仅凸显了亲情的重要，也展现了罗斯成熟处理问题的一面。”\n\n（90秒）  \n旁白：“在这个故事的尽头部分，我们看到了老友之间对未来的固执和愿景。无论是乔伊渴望建立一段新恋情，还是莫妮卡在咖啡馆与瑞秋的保险问题调侃对话，都鲜明地体现了友情的力量。”\n\n（1分钟）  \n旁白：“而钱德勒和乔伊在尝试重新组装那只懒人沙发时，他们的幽默互动和努力不放弃的精神，再次为我们展现了剧中人物之间的默契和友谊。”\n\n结尾（20秒内）：  \n旁白：“这一集不仅仅是关于爱情和友谊的描写，也关乎成长和接受改变。感谢您的观看，希望您喜欢今天的剧集回顾。别忘了按下订阅按钮，下次见，朋友们！”",
+          "c": "《老友记》第一季第十七集（\"The One with Two Parts: Part 2\"）紧接着前一个故事展开。以下是基于这一集内容的八分钟视频文案梗概：\n\n开头（20秒内）：  \n旁白：“亲爱的《老友记》迷们，再次欢迎来到我们的频道，今天我们要谈论的是第一季第十七集——一段双篇章故事的后续。这一集中满载了笑点和触动心扉的时刻，让我们一起重温这些经典场景吧！如果你喜欢我们的视频，请记得点赞和订阅哦！”\n\n正文：  \n旁白：“继上集的故事后，瑞秋因为滑雪意外而折断了脚并进入了医院。而莫妮卡因为帮瑞秋冒充她的保险而被医生约会，这一切的曲折让她们陷入了一个又一个令人捧腹的情境。”\n\n（1分钟）  \n旁白：“而这一集的一大亮点，便是我们终于见证了宝宝的出生。罗斯在病房里焦急地等待着，经历一系列心情波动，他和卡罗、苏珊一同迎来了他们的孩子，展现了一种特殊但也复杂的现代家庭。”\n\n（30秒）  \n旁白：“在病房的另一边，乔伊不幸得了水痘 —— 正是他和钱德勒咖啡馆遇见的漂亮女演员瑞秋的双胞胎姐姐厄休拉（由菲比扮演）约会的时机。乔伊的水痘在临近约会时刻爆发，为这段爱情增添了许多麻烦和笑料。”\n\n（1分钟）  \n旁白：“菲比——她又要处理双胞胎姐姐厄休拉的一系列问题，她发现厄休拉在使用她的名字去约会，这导致了非常尴尬和混乱的局面。两人之间的互动使我们不仅能够窥见菲比的背景，也拉近了观众与菲比这个角色的距离。”\n\n（90秒）  \n旁白：“同时，本集中也充满了角色间的暗示和心绪变迁。尤其是罗斯对瑞秋逐渐加深的情感，在宝宝的出生这一集里，我们看到了他如何在婴儿面前不由自主地提到瑞秋，显露出他的内心情感。”\n\n（1分钟）  \n旁白：“在医院中，我们也看到了许多深情而感人的时刻，特别是在罗斯和苏珊争抢为孩子命名权的时刻，最终妥协一起为孩子取名。这一幕不仅凸显了亲情的重要性，也展现了罗斯成熟处理问题的一面。”\n\n（90秒）  \n旁白：“在这个故事的尾声部分，我们看到了老友之间对未来的执着和愿景。无论是乔伊希望建立一段新恋情，还是莫妮卡在咖啡馆与瑞秋的保险问题逗趣对话，都鲜明地体现了友情的力量。”\n\n（1分钟）  \n旁白：“而钱德勒和乔伊在试图重新组装那只懒人沙发的时候，他们的幽默互动和不放弃的精神，再次彰显了剧中人物之间的默契和友谊。”\n\n结尾（20秒内）：  \n旁白：“这一集不仅仅是关于爱情和友谊的故事，也关乎成长和接受改变。感谢您的观看，希望您喜欢今天的剧集回顾。别忘了点击订阅，下次见，朋友们！”",
+          "d": "《老友记》第一季第十七集（\"The One with Two Parts: Part 2\"）紧接着前一个故事展开。以下是基于这一集内容的八分钟视频剧本总结：\n\n开头（20秒内）：  \n旁白：“亲爱的《老友记》迷们，再次欢迎来到我们的频道，今天我们要回顾的是第一季第十七集——一段双篇章故事的续集。这一集中满载了欢笑和触动时刻，让我们一起重温这些经典场景吧！如果你喜欢我们的视频，务必点赞和订阅哦！”\n\n正文：  \n旁白：“继上集的情节后，瑞秋因滑雪意外而折断了脚进入医院。而莫妮卡因为冒充瑞秋的保险而与医生约会，这一切的曲折让她们陷入了一个又一个令人捧腹的困境。”\n\n（1分钟）  \n旁白：“而这一集的一大重点，便是我们终于见证了宝宝出生的时刻。罗斯在病房内焦虑地等待着，经历一系列心情波动，他与卡罗、苏珊共同迎来了他们的孩子，展现出一种特殊但复杂的现代家庭。”\n\n（30秒）  \n旁白：“在病房的另一边，乔伊不幸得了水痘 —— 正值他和钱德勒咖啡馆遇见的漂亮女演员瑞秋的双胞胎姐姐厄休拉（由菲比饰演）约会的时间。乔伊的水痘在约会临近时刻爆发，为这场爱情增添了不少麻烦和笑料。”\n\n（1分钟）  \n旁白：“菲比——她需要处理双胞胎姐姐厄休拉的问题，她发现厄休拉在用她的名字去约会，这让局面变得非常尴尬和混乱。两人之间的互动让我们不仅看到了菲比的背景，更拉近了观众与菲比这个角色的距离。”\n\n（90秒）  \n旁白：“与此同时，本集中角色间的暗示和情绪变化不断涌现。尤其是罗斯对瑞秋日益加深的情感，在宝宝出生的这一集里，我们见证了他如何在婴儿面前不由自主地提到瑞秋，露出了他的内心情感。”\n\n（1分钟）  \n旁白：“在医院中，我们也目睹了众多深情而感人的时刻，尤其是在罗斯和苏珊争夺为孩子取名权的时候，终于选择了共同为孩子取名。这一幕不仅强调了亲情的重要性，也展现了罗斯成熟处理问题的一面。”\n\n（90秒）  \n旁白：“在这个故事的结尾，我们看到老友们对未来的坚守和期盼。无论是乔伊渴望开始的新关系，还是莫妮卡与瑞秋在咖啡馆插曲的调侃，都突显了友情的珍贵。”\n\n（1分钟）  \n旁白：“而钱德勒和乔伊在试图重新组装那只懒人沙发的过程中，他们的幽默互动和坚持不懈的精神，再次展示了剧中人物之间的默契与友谊。”\n\n结尾（20秒内）：  \n旁白：“这一集不仅是对爱情与友谊的诠释，也关于成长与接纳变化的主题。感谢您的观看，希望您喜欢今天的剧集回顾。记得点击订阅，期待下次见，朋友们！”"
+        },
+        "bdq_probs": {
+          "A": 8.447894828123026e-09,
+          "B": 5.5393840625583834e-09,
+          "C": 1.0628370183951574e-08,
+          "D": 2.8952300112905505e-08,
+          "E": 1.2484962397252275e-08
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.0538872552423584e-10,
+            "B": 9.613380230755197e-11,
+            "C": 1.6641534816841386e-09,
+            "D": 3.534678105765465e-11,
+            "E": 7.156691239629254e-09
+          },
+          "B": {
+            "A": 1.2463472103263484e-06,
+            "B": 6.168232289383013e-07,
+            "C": 6.634683131778729e-07,
+            "D": 5.856693405803526e-07,
+            "E": 3.4498825129958277e-07
+          },
+          "C": {
+            "A": 2.826597400584774e-09,
+            "B": 7.3259780464240976e-09,
+            "C": 3.3413116717895264e-09,
+            "D": 1.884393974194154e-09,
+            "E": 7.390571266085999e-09
+          },
+          "D": {
+            "A": 2.1693229257380153e-07,
+            "B": 3.48753644630051e-07,
+            "C": 2.2729867055204522e-07,
+            "D": 1.2164078952991986e-06,
+            "E": 1.4436132289574743e-07
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.0538872552423584e-10,
+          "B": 6.168232289383013e-07,
+          "C": 3.3413116717895264e-09,
+          "D": 1.2164078952991986e-06
+        },
+        "score": 1.0538872552423584e-10
+      },
+      {
+        "record_index": 22,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_49050",
+        "label": null,
+        "perturbations": {
+          "a": "Составь 100 примеров на сложение и вычитание, так чтобы числа были до 100 и итог тоже был до 100. Не используй 0. В ответе также не должно быть 0",
+          "b": "Придумай 100 задач на сложение и вычитание, чтобы числа были до 100 и сумма тоже была до 100. Не применяй 0. В ответе тоже не должно встречаться 0",
+          "c": "Создай 100 примеров на сложение и вычитание, так что бы числа находились до 100 и итог тоже находился до 100. Не используй 0. В ответе также не должно быть 0",
+          "d": "Составь 100 задач на сложение и вычитание, чтобы числа находились до 100 и результат тоже оставался до 100. Не используй 0. В ответе также не должно быть 0"
+        },
+        "bdq_probs": {
+          "A": 0.02192174457013607,
+          "B": 0.059591781347990036,
+          "C": 0.036142852157354355,
+          "D": 0.04640857130289078,
+          "E": 0.8226078152656555
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.007943106815218925,
+            "B": 0.002459275536239147,
+            "C": 0.009581792168319225,
+            "D": 0.07077683508396149,
+            "E": 0.5229523181915283
+          },
+          "B": {
+            "A": 0.006706718355417252,
+            "B": 0.002488872967660427,
+            "C": 0.003822086378931999,
+            "D": 0.06362582743167877,
+            "E": 0.6036253571510315
+          },
+          "C": {
+            "A": 0.004425499588251114,
+            "B": 0.0027183787897229195,
+            "C": 0.008269520476460457,
+            "D": 0.004426814615726471,
+            "E": 0.5114104151725769
+          },
+          "D": {
+            "A": 0.003459306200966239,
+            "B": 0.002564495662227273,
+            "C": 0.004446748178452253,
+            "D": 0.015516477636992931,
+            "E": 0.35289305448532104
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.007943106815218925,
+          "B": 0.002488872967660427,
+          "C": 0.008269520476460457,
+          "D": 0.015516477636992931
+        },
+        "score": 0.002488872967660427
+      },
+      {
+        "record_index": 23,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_62642",
+        "label": null,
+        "perturbations": {
+          "a": "Maaf, tampaknya Anda belum menyampaikan informasi atau pertanyaan yang jelas. Bisa tolong berikan detail atau konteks lebih spesifik lagi? Saya selalu di sini buat bantu kamu, kok! Jangan ragu-ragu untuk tanya apa pun. 🤟😉",
+          "b": "Maaf, tampaknya Anda belum memberikan informasi atau pertanyaan yang spesifik. Bisa tolong berikan detail atau konteks lebih tepat lagi? Saya selalu di sini buat bantu kamu, kok! Jangan ragu-ragu untuk tanya apa pun. 🤟😉",
+          "c": "Maaf, tampaknya Anda belum menginformasikan atau mempertanyakan yang jelas. Bisa tolong berikan detail atau konteks lebih rinci lagi? Saya selalu di sini buat bantu kamu, kok! Jangan ragu-ragu untuk tanya apa pun. 🤟😉",
+          "d": "Maaf, tampaknya Anda belum menyampaikan informasi atau pertanyaan yang pasti. Bisa tolong berikan detail atau konteks lebih akurat lagi? Saya selalu di sini buat bantu kamu, kok! Jangan ragu-ragu untuk tanya apa pun. 🤟😉"
+        },
+        "bdq_probs": {
+          "A": 0.012699048966169357,
+          "B": 0.12048652023077011,
+          "C": 0.06449106335639954,
+          "D": 0.09383400529623032,
+          "E": 0.6933444142341614
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.008375562727451324,
+            "B": 0.017733251675963402,
+            "C": 0.01887460984289646,
+            "D": 0.13101229071617126,
+            "E": 0.14846162497997284
+          },
+          "B": {
+            "A": 0.003554688533768058,
+            "B": 0.01496751606464386,
+            "C": 0.020455971360206604,
+            "D": 0.0809025689959526,
+            "E": 0.15114714205265045
+          },
+          "C": {
+            "A": 0.0036154233384877443,
+            "B": 0.0162043534219265,
+            "C": 0.002192951273173094,
+            "D": 0.011854746378958225,
+            "E": 0.09925611317157745
+          },
+          "D": {
+            "A": 0.001458267099224031,
+            "B": 0.009509576484560966,
+            "C": 0.0008845452102832496,
+            "D": 0.003964154981076717,
+            "E": 0.04261619970202446
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.008375562727451324,
+          "B": 0.01496751606464386,
+          "C": 0.002192951273173094,
+          "D": 0.003964154981076717
+        },
+        "score": 0.002192951273173094
+      },
+      {
+        "record_index": 26,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_12884",
+        "label": null,
+        "perturbations": {
+          "a": "因此，是否有意义撰写一本《资本的逻辑》这一计划，就姑且不论了。但应明确指出：这不是马克思的关注，因此它不属于马克思理论项目的一部分。这一立场也可从马克思对普鲁东的批判中看出，当他在1846年12月28日致安妮科夫的信中提到：“普鲁东之所以提出了错误的政治经济学批判，并非因为他拥有一套荒谬的哲学，而是因为他没有理解当代关系及其相互联系……”（《马克思恩格斯全集》第27卷，第220页）。从这一声明中，我们能明确地看出，从马克思的视角看，只有当对当前社会状态及其内在、必要的相互关系有了理解，才可能存在“严肃的”哲学。",
+          "b": "因此，是否有意义撰写一本《资本的逻辑》这一方案，就姑且不论了。但应明确指出：这不是马克思的议题，因此它不属于马克思理论项目的一部分。这一立场也可从马克思对普鲁东的论述中看出，当他在1846年12月28日致安妮科夫的信中提到：“普鲁东之所以提出了错误的政治经济学批判，并非因为他拥有一套可笑的哲学，而是因为他没有理解当代关系及其相互联系……”（《马克思恩格斯全集》第27卷，第220页）。从这一声明中，我们能明确地看出，从马克思的视角看，只有当对当前社会状态及其内在、必要的相互联系有了理解，才可能存在“严肃的”哲学。",
+          "c": "因此，是否有意义撰写一本《资本的逻辑》这一提议，就姑且不论了。但应明确指出：这不是马克思的目标，因此它不属于马克思理论项目的一部分。这一立场也可从马克思对普鲁东的观点中看出，当他在1846年12月28日致安妮科夫的信中提到：“普鲁东之所以提出了错误的政治经济学批判，并非因为他拥有一套滑稽的哲学，而是因为他没有理解当代关系及其相互联系……”（《马克思恩格斯全集》第27卷，第220页）。从这一声明中，我们能明确地看出，从马克思的视角看，只有当对当前社会状态及其内在、必要的相互联系有了理解，才可能存在“严肃的”哲学。",
+          "d": "因此，是否有意义撰写一本《资本的逻辑》这一任务，就姑且不论了。但应明确指出：这不是马克思的意图，因此它不属于马克思理论项目的一部分。这一立场也可从马克思对普鲁东的分析中看出，当他在1846年12月28日致安妮科夫的信中提到：“普鲁东之所以提出了错误的政治经济学批判，并非因为他拥有一套可笑的哲学，而是因为他没有理解当代关系及其相互联系……”（《马克思恩格斯全集》第27卷，第220页）。从这一声明中，我们能明确地看出，从马克思的视角看，只有当对当前社会状态及其内在、必要的相互联系有了理解，才可能存在“严肃的”哲学。"
+        },
+        "bdq_probs": {
+          "A": 0.012314853258430958,
+          "B": 0.048708025366067886,
+          "C": 0.05519120395183563,
+          "D": 0.7618902325630188,
+          "E": 0.11684056371450424
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 2.1190073695720457e-08,
+            "B": 2.6142373599213897e-08,
+            "C": 1.1250338616264344e-07,
+            "D": 9.121500710307373e-08,
+            "E": 2.9416566960094315e-08
+          },
+          "B": {
+            "A": 1.1336892669078225e-07,
+            "B": 7.26064470768506e-08,
+            "C": 9.457109229060734e-08,
+            "D": 5.3281613787703463e-08,
+            "E": 1.3225710517872358e-06
+          },
+          "C": {
+            "A": 2.502070799437206e-07,
+            "B": 1.905534645629814e-07,
+            "C": 1.749463223177372e-07,
+            "D": 3.725007786670176e-07,
+            "E": 6.696885748169734e-07
+          },
+          "D": {
+            "A": 3.2721017007020237e-09,
+            "B": 2.315713398814978e-09,
+            "C": 1.999553411735633e-08,
+            "D": 1.868382559777615e-09,
+            "E": 7.278775915331437e-10
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 2.1190073695720457e-08,
+          "B": 7.26064470768506e-08,
+          "C": 1.749463223177372e-07,
+          "D": 1.868382559777615e-09
+        },
+        "score": 1.868382559777615e-09
+      },
+      {
+        "record_index": 29,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_44965",
+        "label": null,
+        "perturbations": {
+          "a": "What behavioral peculiarities are adorable when children do it but unsettling when an adult does it?",
+          "b": "What behavioral idiosyncrasies are charming when children do it but eerie when an adult does it?",
+          "c": "What behavioral eccentricities are cute when children do it but strange when an adult does it?",
+          "d": "What behavioral traits are delightful when children do it but disturbing when an adult does it?"
+        },
+        "bdq_probs": {
+          "A": 0.01768445037305355,
+          "B": 0.2441280633211136,
+          "C": 0.0699433758854866,
+          "D": 0.1480700969696045,
+          "E": 0.5168154239654541
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.013173850253224373,
+            "B": 0.0973508432507515,
+            "C": 0.14163261651992798,
+            "D": 0.2335125058889389,
+            "E": 0.4943464696407318
+          },
+          "B": {
+            "A": 0.02060721442103386,
+            "B": 0.1185939684510231,
+            "C": 0.08150333911180496,
+            "D": 0.2844741642475128,
+            "E": 0.46901872754096985
+          },
+          "C": {
+            "A": 0.010292846709489822,
+            "B": 0.11781886219978333,
+            "C": 0.15125451982021332,
+            "D": 0.043334897607564926,
+            "E": 0.5279262661933899
+          },
+          "D": {
+            "A": 0.014216441661119461,
+            "B": 0.08182317763566971,
+            "C": 0.07219793647527695,
+            "D": 0.17319385707378387,
+            "E": 0.47078633308410645
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.013173850253224373,
+          "B": 0.1185939684510231,
+          "C": 0.15125451982021332,
+          "D": 0.17319385707378387
+        },
+        "score": 0.013173850253224373
+      },
+      {
+        "record_index": 30,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_96821",
+        "label": null,
+        "perturbations": {
+          "a": "Вступление:\n\nВ современной научной и технологической деятельности экспериментальные данные занимают ключевое место в осмыслении и исследовании разнообразных явлений, от элементарных частиц до космических систем. Значимость не просто собрать данные, но и эффективно интерпретировать их, делает процесс визуализации незаменимым инструментом испытания. Визуализация экспериментальных данных позволяет исследователям и специалистам наглядно изучать сложные взаимосвязи, выявлять паттерны, обнаруживать аномалии и делиться итогами с коллегами и обществом. Данный реферат посвящен анализу современных способов визуализации экспериментальных данных, целям и задачам, которые они помогают решать, а также особенностям их применения в различных областях науки и техники.",
+          "b": "Предисловие:\n\nВ нынешней научной и технологической практике экспериментальные данные играют важную роль в осмыслении и анализе различных явлений, от элементарных частиц до космических систем. Значимость не только собрать данные, но и эффективно интерпретировать их, делает процесс визуализации незаменимым инструментом исследования. Визуализация экспериментальных данных позволяет исследователям и инженерам наглядно анализировать сложные взаимосвязи, выявлять закономерности, находить аномалии и делиться результатами с коллегами и общественностью. Данный реферат посвящен анализу современных методик визуализации экспериментальных данных, целям и задачам, которые они позволяют решать, а также аспектам их применения в различных областях науки и техники.",
+          "c": "Обзор:\n\nВ современной научной и технической деятельности экспериментальные данные играют центральную роль в понимании и анализе различных явлений, от элементарных частиц до космических систем. Необходимость не просто собрать данные, но и эффективно интерпретировать их, делает процесс визуализации исключительно важным инструментом в исследовании. Визуализация экспериментальных данных предоставляет исследователям и специалистам возможность наглядно рассматривать сложные связи, выявлять паттерны, обнаруживать аномалии и делиться выводами с коллегами и сообществом. Данный реферат посвящен анализу современных подходов визуализации экспериментальных данных, целям и задачам, которые они помогают решать, а также нюансам их применения в разных областях науки и техники.",
+          "d": "Начало:\n\nВ современной научной и технологической практике экспериментальные данные занимают важное место в изучении и анализе разнообразных явлений, от элементарных частиц до космических систем. Важность не просто собрать данные, но и эффективно интерпретировать их, создает потребность в визуализации как незаменимом инструменте исследования. Визуализация экспериментальных данных позволяет научным работникам и специалистам наглядно исследовать сложные взаимосвязи, выявлять закономерности, обнаруживать аномалии и делиться промежуточными результатами с коллегами и обществом. Данный реферат посвящен исследованию современных методов визуализации экспериментальных данных, целям и задачам, которые они позволяют решать, а также характеристикам их применения в различных областях науки и техники."
+        },
+        "bdq_probs": {
+          "A": 0.025276822969317436,
+          "B": 0.04722455143928528,
+          "C": 0.0535108707845211,
+          "D": 0.7386940121650696,
+          "E": 0.12836650013923645
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.005927014164626598,
+            "B": 0.02656490169465542,
+            "C": 0.049625758081674576,
+            "D": 0.470834881067276,
+            "E": 0.4155155420303345
+          },
+          "B": {
+            "A": 0.011736954562366009,
+            "B": 0.059611886739730835,
+            "C": 0.013299627229571342,
+            "D": 0.4404197931289673,
+            "E": 0.4404260814189911
+          },
+          "C": {
+            "A": 0.0030340866651386023,
+            "B": 0.02879134565591812,
+            "C": 0.017459575086832047,
+            "D": 0.0224184338003397,
+            "E": 0.8412491083145142
+          },
+          "D": {
+            "A": 0.0042561194859445095,
+            "B": 0.02301821857690811,
+            "C": 0.013955126516520977,
+            "D": 0.2473442405462265,
+            "E": 0.4621172845363617
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.005927014164626598,
+          "B": 0.059611886739730835,
+          "C": 0.017459575086832047,
+          "D": 0.2473442405462265
+        },
+        "score": 0.005927014164626598
+      },
+      {
+        "record_index": 34,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_48242",
+        "label": null,
+        "perturbations": {
+          "a": "All I possess is truly an hour at the moment and a half hour before class begins, I could create an excuse that I didn’t recall what I read well and do it again at a later time as it’s the start of the semester anyway",
+          "b": "All I have is genuinely an hour right now and a half hour prior to class starting, I could form an excuse that I didn’t remember what I read well and do it again at a subsequent date as it’s the onset of the semester anyway",
+          "c": "All I possess is indeed an hour currently and a half hour ahead of class commencing, I could devise an excuse that I didn’t recollect what I read well and do it again at a future date as it’s the commencement of the semester anyway",
+          "d": "All I have is actually an hour now and a half hour before class begins, I could establish an excuse that I didn’t retain what I read well and do it again at a different time as it’s the initiation of the semester anyway"
+        },
+        "bdq_probs": {
+          "A": 0.003937855362892151,
+          "B": 0.17824141681194305,
+          "C": 0.00691115390509367,
+          "D": 0.011394564993679523,
+          "E": 0.7988203763961792
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0017150817438960075,
+            "B": 0.008183121681213379,
+            "C": 0.07763082534074783,
+            "D": 0.0415525883436203,
+            "E": 0.8346036076545715
+          },
+          "B": {
+            "A": 0.00261643435806036,
+            "B": 0.014146081171929836,
+            "C": 0.023320263251662254,
+            "D": 0.05594203993678093,
+            "E": 0.8750745058059692
+          },
+          "C": {
+            "A": 0.01730959117412567,
+            "B": 0.0776006355881691,
+            "C": 0.03664585202932358,
+            "D": 0.3939647376537323,
+            "E": 0.3939666152000427
+          },
+          "D": {
+            "A": 0.0033160231541842222,
+            "B": 0.040411777794361115,
+            "C": 0.02031358703970909,
+            "D": 0.031462427228689194,
+            "E": 0.2634299695491791
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0017150817438960075,
+          "B": 0.014146081171929836,
+          "C": 0.03664585202932358,
+          "D": 0.031462427228689194
+        },
+        "score": 0.0017150817438960075
+      },
+      {
+        "record_index": 35,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_86192",
+        "label": null,
+        "perturbations": {
+          "a": "Включить режим создателя.",
+          "b": "Включить режим программиста.",
+          "c": "Включить режим разработчика.",
+          "d": "Включить режим проектировщика."
+        },
+        "bdq_probs": {
+          "A": 0.011587347835302353,
+          "B": 0.05193145200610161,
+          "C": 0.05193082243204117,
+          "D": 0.15995822846889496,
+          "E": 0.7168834209442139
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.007645897567272186,
+            "B": 0.02668781764805317,
+            "C": 0.253194659948349,
+            "D": 0.08220043778419495,
+            "E": 0.6073840260505676
+          },
+          "B": {
+            "A": 0.006712349597364664,
+            "B": 0.006712567526847124,
+            "C": 0.1348208338022232,
+            "D": 0.06368491053581238,
+            "E": 0.7758421301841736
+          },
+          "C": {
+            "A": 0.009003174491226673,
+            "B": 0.035609565675258636,
+            "C": 0.07538191229104996,
+            "D": 0.019059566780924797,
+            "E": 0.8104326128959656
+          },
+          "D": {
+            "A": 0.009688880294561386,
+            "B": 0.05935557931661606,
+            "C": 0.05935078114271164,
+            "D": 0.563100278377533,
+            "E": 0.031769078224897385
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.007645897567272186,
+          "B": 0.006712567526847124,
+          "C": 0.07538191229104996,
+          "D": 0.563100278377533
+        },
+        "score": 0.006712567526847124
+      },
+      {
+        "record_index": 36,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_4414",
+        "label": null,
+        "perturbations": {
+          "a": "🚀 **Cómo Arrancar con Éxito Usando Terraform y Gitlab para una Estrategia de Infraestructura Similar a Código** 🚀\n\n¡Hola, comunidad de LinkedIn! Hoy os traigo una guía paso a paso que os llevará directo al éxito con vuestra implementación de infraestructura como código, utilizando Terraform y Gitlab. Y, claro, cómo Caxus os puede acompañar en esta travesía hacia la nube de AWS.\n\n1️⃣ **Comienzo Claro**: Definid vuestro propósito. Antes de escribir la primera línea de código, tened claro qué desafío queréis afrontar. Esto os ahorrará tiempo y complicaciones.\n\n2️⃣ **Planificación de Infraestructura**: Utilizad Terraform para planear vuestra infraestructura como código. Esto os permitirá crear, modificar y compartir vuestra configuración de manera simple y eficaz.\n\n3️⃣ **Control de Código con Gitlab**: Almacenad vuestro código Terraform en Gitlab. Esto no solo os proporcionará un registro de todos vuestros cambios, sino que también facilitará el trabajo en equipo.\n\n4️⃣ **Automatización Completa**: Implementad pipelines de CI/CD en Gitlab para automatizar la implantación de vuestro código Terraform. Esto reducirá el riesgo de fallos humanos y acelerará el tiempo de implementación.\n\n5️⃣ **Módulos Repetibles**: Creación de módulos de Terraform. Esto os permitirá reutilizar configuraciones habituales sin necesidad de reinventar la rueda cada vez que despleguéis un nuevo servicio.\n\n6️⃣ **Ensayos Estrcturados**: Antes de soltar cualquier cosa al mundo real, aseguraos de examinar vuestro código Terraform. Esto es fundamental para evitar sorpresas indeseadas.\n\n7️⃣ **Guía Detallada**: Mantened vuestra guía al día. Esto facilitará la vida de todos en el equipo y a aquellos que se unan más adelante al proyecto.\n\n8️⃣ **Uso de AWS con Caxus**: No estáis solos en este recorrido. En Caxus, ofrecemos servicios de adopción de la nube de AWS que os guiarán a través de cada paso, asegurando que vuestra infraestructura esté sólida, segura y optimizada.\n\nY para esos momentos en los que la eficacia parece jugar al escondite, recomendamos herramientas como Slack para la comunicación, Trello o Jira para la organización de tareas, y por supuesto, las múltiples herramientas de AWS para supervisión y análisis.\n\nSiguiendo estos pasos, estaréis en la senda correcta para establecer una estrategia de infraestructura como código no solo exitosa sino eficaz. Nos encantaría ser parte de vuestro trayecto en Caxus, ayudándoos a dominar la nube de AWS con confianza y seguridad.\n\n🌟 Recordad, cada línea de código es un paso hacia el mañana. Y en ese mañana, Caxus está listo para ser vuestro aliado de viaje. 🌟\n\n¡Hasta la próxima aventura tecnológica, amigos! 🚀🛠️",
+          "b": "🚀 **Cómo Iniciar con Éxito Usando Terraform y Gitlab para una Estrategia de Infraestructura Parecida a Código** 🚀\n\n¡Hola, comunidad de LinkedIn! Hoy os traigo una guía paso a paso que os llevará directo al éxito con vuestra implementación de infraestructura como código, utilizando Terraform y Gitlab. Y, claro, cómo Caxus os puede apoyar en esta empresa hacia la nube de AWS.\n\n1️⃣ **Inicio Específico**: Definid vuestro objetivo. Antes de escribir la primera línea de código, tened claro qué reto queréis enfrentar. Esto os ahorrará tiempo y dificultades.\n\n2️⃣ **Diseño de Infraestructura**: Utilizad Terraform para diseñar vuestra infraestructura como código. Esto os permitirá crear, modificar y compartir vuestra configuración de manera accesible y eficaz.\n\n3️⃣ **Control de Código en Gitlab**: Guardad vuestro código Terraform en Gitlab. Esto no solo os proporcionará un registro de todos vuestros cambios, sino que también facilitará el trabajo en equipo.\n\n4️⃣ **Automatización Total**: Implementad pipelines de CI/CD en Gitlab para automatizar el despliegue de vuestro código Terraform. Esto minimizará el riesgo de fallos humanos y acelerará el tiempo de implementación.\n\n5️⃣ **Módulos Utilizables**: Desarrollad módulos de Terraform. Esto os permitirá reutilizar configuraciones comunes sin necesidad de reinventar la rueda cada vez que despleguéis un nuevo servicio.\n\n6️⃣ **Revisiones Minuciosas**: Antes de lanzar cualquier cosa al mundo real, aseguraos de examinar vuestro código Terraform. Esto es fundamental para evitar sorpresas no deseadas.\n\n7️⃣ **Documentación Precisa**: Mantened vuestra documentación actualizada. Esto facilitará la vida de todos en el equipo y a aquellos que se unan más adelante al proyecto.\n\n8️⃣ **Uso de AWS con Caxus**: No estáis solos en esta expedición. En Caxus, ofrecemos servicios de adopción de la nube de AWS que os guiarán a través de cada paso, asegurando que vuestra infraestructura esté firme, segura y optimizada.\n\nY para esos momentos en los que la productividad parece escapar, recomendamos herramientas como Slack para la comunicación, Trello o Jira para la gestión de tareas, y por supuesto, las múltiples herramientas de AWS para monitoreo y análisis.\n\nSiguiendo estos pasos, estaréis en la dirección correcta para llevar a cabo una estrategia de infraestructura como código no solo exitosa sino eficiente. Nos encantaría ser parte de vuestro viaje en Caxus, ayudándoos a conquistar la nube de AWS con confianza y seguridad.\n\n🌟 Recordad, cada línea de código es un paso hacia el futuro. Y en ese futuro, Caxus está listo para ser vuestro compañero de andanza. 🌟\n\n¡Hasta la próxima aventura tecnológica, amigos! 🚀🛠️",
+          "c": "🚀 **Cómo Comenzar con Éxito Usando Terraform y Gitlab para una Estrategia de Infraestructura Equivalente a Código** 🚀\n\n¡Hola, comunidad de LinkedIn! Hoy os traigo una guía paso a paso que os llevará directo al éxito con vuestra implementación de infraestructura como código, utilizando Terraform y Gitlab. Y, claro, cómo Caxus os puede asistir en esta misión hacia la nube de AWS.\n\n1️⃣ **Comienzo Preciso**: Definid vuestro fin. Antes de escribir la primera línea de código, tened claro qué inconveniente queréis solucionar. Esto os ahorrará tiempo y contrariedades.\n\n2️⃣ **Modelo de Infraestructura**: Utilizad Terraform para modelar vuestra infraestructura como código. Esto os permitirá crear, modificar y compartir vuestra configuración de manera práctica y efectiva.\n\n3️⃣ **Registro de Código en Gitlab**: Almacenad vuestro código Terraform en Gitlab. Esto no solo os proporcionará un registro de todos vuestros cambios, sino que también facilitará el trabajo en equipo.\n\n4️⃣ **Automatización Completa**: Implementad pipelines de CI/CD en Gitlab para automatizar el despliegue de vuestro código Terraform. Esto reducirá el riesgo de errores humanos y acelerará el tiempo de implementación.\n\n5️⃣ **Módulos Utilizados**: Cread módulos de Terraform. Esto os permitirá reutilizar configuraciones típicas sin necesidad de reinventar la rueda cada vez que despleguéis un nuevo servicio.\n\n6️⃣ **Revisiones Exhaustivas**: Antes de lanzar cualquier cosa al mundo real, aseguraos de evaluar vuestro código Terraform. Esto es fundamental para evitar sorpresas desfavorables.\n\n7️⃣ **Guía Actualizada**: Mantened vuestra guía actualizada. Esto facilitará la vida de todos en el equipo y a aquellos que se unan más adelante al proyecto.\n\n8️⃣ **Uso de AWS con Caxus**: No estáis solos en este camino. En Caxus, ofrecemos servicios de adopción de la nube de AWS que os guiarán a través de cada paso, asegurando que vuestra infraestructura esté sólida, segura y optimizada.\n\nY para esos momentos en los que la eficiencia parece desaparecer, recomendamos herramientas como Slack para la comunicación, Trello o Jira para la organización de tareas, y por supuesto, las múltiples herramientas de AWS para control y análisis.\n\nSiguiendo estos pasos, estaréis en el camino correcto para crear una estrategia de infraestructura como código no solo exitosa sino eficaz. Nos encantaría ser parte de vuestro trayecto en Caxus, ayudándoos a dominar la nube de AWS con confianza y seguridad.\n\n🌟 Recordad, cada línea de código es un paso hacia el futuro. Y en ese futuro, Caxus está listo para ser vuestro colaborador de viaje. 🌟\n\n¡Hasta la próxima aventura tecnológica, amigos! 🚀🛠️",
+          "d": "🚀 **Cómo Arrancar con Éxito Usando Terraform y Gitlab para una Estrategia de Infraestructura Semejante a Código** 🚀\n\n¡Hola, comunidad de LinkedIn! Hoy os traigo una guía paso a paso que os llevará directo al éxito con vuestra implementación de infraestructura como código, utilizando Terraform y Gitlab. Y, claro, cómo Caxus os puede respaldar en esta tarea hacia la nube de AWS.\n\n1️⃣ **Inicio Detallado**: Definid vuestro propósito. Antes de escribir la primera línea de código, tened claro qué problema queréis abordar. Esto os ahorrará tiempo y complicaciones.\n\n2️⃣ **Estrategia de Infraestructura**: Utilizad Terraform para crear vuestra infraestructura como código. Esto os permitirá establecer, modificar y compartir vuestra configuración de manera efectiva y clara.\n\n3️⃣ **Gestión de Código en Gitlab**: Guardad vuestro código Terraform en Gitlab. Esto no solo os proporcionará un historial de todos vuestros cambios, sino que también facilitará el trabajo en equipo.\n\n4️⃣ **Automatización Absoluta**: Implementad pipelines de CI/CD en Gitlab para automatizar el lanzamiento de vuestro código Terraform. Esto minimizará la posibilidad de fallos humanos y acelerará el tiempo de implementación.\n\n5️⃣ **Módulos Practicables**: Cread módulos de Terraform. Esto os permitirá reutilizar configuraciones frecuentes sin necesidad de reinventar la rueda cada vez que despleguéis un nuevo servicio.\n\n6️⃣ **Ensayos Cuidadosos**: Antes de soltar cualquier cosa al mundo real, aseguraos de revisar vuestro código Terraform. Esto es fundamental para evitar sorpresas no deseadas.\n\n7️⃣ **Documentación Clara**: Mantened vuestra documentación al día. Esto facilitará la vida de todos en el equipo y a aquellos que se unan más adelante al proyecto.\n\n8️⃣ **Uso de AWS con Caxus**: No estáis solos en esta travesía. En Caxus, proporcionamos servicios de adopción de la nube de AWS que os ayudarán en cada paso, asegurando que vuestra infraestructura esté estable, segura y optimizada.\n\nY para esos momentos en los que la productividad parece escapar, recomendamos herramientas como Slack para la comunicación, Trello o Jira para la gestión de tareas, y por supuesto, las múltiples herramientas de AWS para monitoreo y análisis.\n\nSiguiendo estos pasos, estaréis en la dirección correcta para implementar una estrategia de infraestructura como código no solo exitosa sino eficaz. Nos encantaría ser parte de vuestro viaje en Caxus, ayudándoos a conquistar la nube de AWS con confianza y seguridad.\n\n🌟 Recordad, cada línea de código es un paso hacia el futuro. Y en ese futuro, Caxus está listo para ser vuestro socio de viaje. 🌟\n\n¡Hasta la próxima aventura tecnológica, amigos! 🚀🛠️"
+        },
+        "bdq_probs": {
+          "A": 0.009409351274371147,
+          "B": 0.04491400718688965,
+          "C": 0.014573574997484684,
+          "D": 0.039614833891391754,
+          "E": 0.5468660593032837
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.008601785637438297,
+            "B": 0.05275664106011391,
+            "C": 0.009156626649200916,
+            "D": 0.024890324100852013,
+            "E": 0.3436203896999359
+          },
+          "B": {
+            "A": 0.006297118961811066,
+            "B": 0.018261006101965904,
+            "C": 0.00860763993114233,
+            "D": 0.016081245616078377,
+            "E": 0.414725124835968
+          },
+          "C": {
+            "A": 0.00577589962631464,
+            "B": 0.015722626820206642,
+            "C": 0.00509745255112648,
+            "D": 0.00509770680218935,
+            "E": 0.24561499059200287
+          },
+          "D": {
+            "A": 0.014325265772640705,
+            "B": 0.011166020296514034,
+            "C": 0.007203627377748489,
+            "D": 0.011156981810927391,
+            "E": 0.14469338953495026
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.008601785637438297,
+          "B": 0.018261006101965904,
+          "C": 0.00509745255112648,
+          "D": 0.011156981810927391
+        },
+        "score": 0.00509745255112648
+      },
+      {
+        "record_index": 37,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_72465",
+        "label": null,
+        "perturbations": {
+          "a": "- Волшебное ожерелье, обеспечивающее непрерывный контакт и связь между ней и Ослом;",
+          "b": "- \"Зажигаград\" - редкие кристаллы, которые усиливают ее огненное дыхание и предоставляют способность на время предсказывать события.",
+          "c": "- Волшебные мантии-невидимки, позволяющие им становиться невидимыми;",
+          "d": "- Тотем объединения - мистический артефакт, который объединяет их силы, делая их непобедимыми в бою."
+        },
+        "bdq_probs": {
+          "A": 0.11454005539417267,
+          "B": 0.2747705578804016,
+          "C": 0.12979082763195038,
+          "D": 0.31135207414627075,
+          "E": 0.1666550487279892
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01986120454967022,
+            "B": 0.06935277581214905,
+            "C": 0.16626238822937012,
+            "D": 0.18839819729328156,
+            "E": 0.1467432826757431
+          },
+          "B": {
+            "A": 0.024803411215543747,
+            "B": 0.059527598321437836,
+            "C": 0.26660585403442383,
+            "D": 0.26660603284835815,
+            "E": 0.1259552538394928
+          },
+          "C": {
+            "A": 0.005795486271381378,
+            "B": 0.020239196717739105,
+            "C": 0.025961901992559433,
+            "D": 0.13183805346488953,
+            "E": 0.03778587281703949
+          },
+          "D": {
+            "A": 0.0008915728540159762,
+            "B": 0.027748167514801025,
+            "C": 0.027713138610124588,
+            "D": 0.027711039409041405,
+            "E": 0.5567315816879272
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01986120454967022,
+          "B": 0.059527598321437836,
+          "C": 0.025961901992559433,
+          "D": 0.027711039409041405
+        },
+        "score": 0.01986120454967022
+      },
+      {
+        "record_index": 38,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_58729",
+        "label": null,
+        "perturbations": {
+          "a": "为稳固开展和实施AI伦理治理工作，首先需对集团内的AI应用进行全面调研，评估潜在的伦理风险。基于调研结果，制定详尽的AI伦理治理政策，明确责任与执行流程。其次，建立跨部门的AI治理架构，确保各方面配合无间，强化监督机制。在此基础上，组织定期的伦理培训和讨论，提升员工对AI伦理重要性的认知。最后，公开集团AI伦理原则与承诺，增强透明度，接受外部监督，确保AI在符合伦理和法规标准的前提下发展。",
+          "b": "为稳固进行和实施AI伦理治理工作，首先需对集团内的AI应用进行全面调研，评估潜在的伦理风险。基于调研结果，制定详尽的AI伦理治理政策，明确责任与执行流程。其次，建立跨部门的AI治理架构，确保各方面配合无间，强化监督机制。在此基础上，组织定期的伦理培训和讨论，提升员工对AI伦理重要性的理解。最后，公开集团AI伦理原则与承诺，增强透明度，接受外部监督，确保AI在符合伦理和法规标准的前提下发展。",
+          "c": "为稳固开展及实施AI伦理治理工作，首先需对集团内的AI应用进行全面调研，评估潜在的伦理风险。基于调研结果，制定详尽的AI伦理治理政策，明确责任与执行流程。其次，建立跨部门的AI治理架构，确保各方面协作无间，强化监督机制。在此基础上，组织定期的伦理培训与讨论，提升员工对AI伦理重要性的意识。最后，公开集团AI伦理原则与承诺，增强透明度，接受外部监督，确保AI在符合伦理和法规标准的前提下发展。",
+          "d": "为稳定进行以及实施AI伦理治理工作，首先需对集团内的AI应用进行全面调研，评估潜在的伦理风险。基于调研结果，制定详尽的AI伦理治理政策，明确责任与执行流程。其次，建立跨部门的AI治理架构，确保各方面互动无间，强化监督机制。在此基础上，组织定期的伦理培训和讨论，提升员工对AI伦理重要性的注意。最后，公开集团AI伦理原则与承诺，增强透明度，接受外部监督，确保AI在符合伦理和法规标准的前提下发展。"
+        },
+        "bdq_probs": {
+          "A": 0.023776141926646233,
+          "B": 0.050335437059402466,
+          "C": 0.07323551923036575,
+          "D": 0.6948386430740356,
+          "E": 0.15504032373428345
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.009365759789943695,
+            "B": 0.017527638003230095,
+            "C": 0.012026265263557434,
+            "D": 0.8429664373397827,
+            "E": 0.05390171334147453
+          },
+          "B": {
+            "A": 0.005368787329643965,
+            "B": 0.016577811911702156,
+            "C": 0.007812428288161755,
+            "D": 0.703102707862854,
+            "E": 0.1569024920463562
+          },
+          "C": {
+            "A": 0.003905244404450059,
+            "B": 0.019930604845285416,
+            "C": 0.025468921288847923,
+            "D": 0.21322056651115417,
+            "E": 0.35155534744262695
+          },
+          "D": {
+            "A": 0.002657124074175954,
+            "B": 0.006436358205974102,
+            "C": 0.004385295324027538,
+            "D": 0.34806475043296814,
+            "E": 0.16440515220165253
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.009365759789943695,
+          "B": 0.016577811911702156,
+          "C": 0.025468921288847923,
+          "D": 0.34806475043296814
+        },
+        "score": 0.009365759789943695
+      },
+      {
+        "record_index": 39,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_48739",
+        "label": null,
+        "perturbations": {
+          "a": "ShinjiPilot01 — 01/24/2024 10:19 PM\nAdieu\nSalutations\nShinjiPilot01 — 01/24/2024 10:31 PM\nGoodnight NERV HQ\nAsuka_Langley — 01/24/2024 10:31 PM\nHush 👍❤️🤖😂🐉🔜💕💕💕👍💕🙇‍♂️💀👽🐉\nShinjiPilot01 — 01/24/2024 10:31 PM\nI guess geniality is outdated now\nAsuka_Langley — 01/24/2024 10:31 PM\nStop your chatter 😴🫣🥱😠😴😦😨🫠🫢🥱🔜🔜🎼🔜🫸🫸🍱🔥😔\nRei_Ayanami_00 — 01/24/2024 10:38 PM\nstrange sync ratio\nShinjiPilot01 — 01/24/2024 10:43 PM\nGoodnight NERV HQ\nRemain secure\nAnd be careful\nAsuka_Langley — 01/24/2024 10:44 PM\nHush 🤬 I’m merely heading back to the quarters 🏠 now got my plug suit fitting at three 3️⃣ and I'm returning home now I should be\nShinjiPilot01 — 01/24/2024 10:45 PM\nYeah, you're off to the LCL tank\nImage\nRei_Ayanami_00 — 01/24/2024 10:46 PM\nI believe the LCL has favored wisely 🤤🤤\nShinjiPilot01 — 01/24/2024 10:48 PM\nWhat in the cosmos\nAsuka_Langley — 01/24/2024 10:49 PM\nSo accurate 😍😍\nShinjiPilot01 — 01/24/2024 10:51 PM\nWhat the...\nAsuka_Langley — 01/24/2024 10:51 PM\nIssues, Third Child?\nShinjiPilot01 — 01/24/2024 10:58 PM\nIdk\nGoodnight\nAsuka_Langley — 01/24/2024 10:59 PM\nQuiet down 😣🤨😩😞😩😒😋😩😎🤓😋\nRei_Ayanami_00 — 01/24/2024 10:59 PM\nReflect on your actions for me, Third Child\nShinjiPilot01 — 01/25/2024 6:45 AM\nWhat is occurring here...\nKaworuNagi_05 — 01/25/2024 8:27 AM\nKaworuNagi_05 — 01/25/2024 8:36 AM\nAre you all engaged in a mission?\nRei_Ayanami_00 — 01/25/2024 8:37 AM\nNo\nShinjiPilot01 — 01/25/2024 5:13 PM\nWhat?\nKaworuNagi_05 — 01/25/2024 9:55 PM\nwhy is this comms link new?\nRei_Ayanami_00 — 01/25/2024 9:55 PM\nHuh\nNot new\nIt's not\nKaworuNagi_05 — 01/25/2024 9:56 PM\noh\nconversing about something different\nRei_Ayanami_00 — 01/25/2024 9:56 PM\nAlright\nKaworuNagi_05 — 01/25/2024 9:56 PM\n@Asuka_Langley\nAsuka_Langley — 01/25/2024 9:58 PM\nJust a briefing Kaji included me in\nActually have it silent rn\nKaworuNagi_05 — 01/25/2024 9:59 PM\nthey include some fascinating individuals in there\nAsuka_Langley — 01/25/2024 9:59 PM\nI understand 😞\nKaworuNagi_05 — 01/25/2024 9:59 PM\nnot seeking to prioritize this comms\nAsuka_Langley — 01/25/2024 9:59 PM\nNeither am I\nKaworuNagi_05 — 01/25/2024 9:59 PM\nalright\nsilent\nAsuka_Langley — 01/25/2024 9:59 PM\nFinally, a sound choice\nShinjiPilot01 — 01/25/2024 10:25 PM\nI got inserted as well\nAsuka_Langley — 01/25/2024 10:25 PM\nJust mute it\nThey're not fond of you\nShinjiPilot01 — 01/25/2024 10:25 PM\nI'm aware\nSpoke with Kaji and he scarcely responds\nAsuka_Langley — 01/25/2024 10:26 PM\nYeah, was in a sync test with him and Kaji noted he's not your biggest admirer\nShinjiPilot01 — 01/25/2024 10:26 PM\nWhy?\nAsuka_Langley — 01/25/2024 10:26 PM\nConsider relocating\nNot sure\nHe just expressed it\nShinjiPilot01 — 01/25/2024 10:27 PM\nOkay\nYou mean depart the comms?\nAsuka_Langley — 01/25/2024 10:27 PM\nYes\nShinjiPilot01 — 01/25/2024 10:28 PM\nOkay\nWhich one was Kaji again?\nAsuka_Langley — 01/25/2024 10:29 PM\nThe Kaji_Ryoji operative\nShinjiPilot01 — 01/25/2024 10:29 PM\nOkay",
+          "b": "ShinjiPilot01 — 01/24/2024 10:19 PM\nGoodbye\nHello\nShinjiPilot01 — 01/24/2024 10:31 PM\nFarewell NERV HQ\nAsuka_Langley — 01/24/2024 10:31 PM\nShut up 👍❤️🤖😂🐉🔜💕💕💕👍💕🙇‍♂️💀👽🐉\nShinjiPilot01 — 01/24/2024 10:31 PM\nI can't even express anything pleasant anymore\nAsuka_Langley — 01/24/2024 10:31 PM\nSilence your mouth 😴🫣🥱😠😴😦😨🫠🫢🥱🔜🔜🎼🔜🫸🫸🍱🔥😔\nRei_Ayanami_00 — 01/24/2024 10:38 PM\nstrange synchronization ratio\nShinjiPilot01 — 01/24/2024 10:43 PM\nGoodnight NERV HQ\nBe happy\nAnd stay safe\nAsuka_Langley — 01/24/2024 10:44 PM\nBe quiet 🤬 I’m merely returning to the base 🏠 now that I have my suit trial at three 3️⃣ and I'm getting my suit changed 💇‍♀️ and I’m making my way back now I should be\nShinjiPilot01 — 01/24/2024 10:45 PM\nYep, you're going to the LCL reservoir\nImage\nRei_Ayanami_00 — 01/24/2024 10:46 PM\nI believe the LCL has chosen correctly 🤤🤤\nShinjiPilot01 — 01/24/2024 10:48 PM\nWhat the hell\nAsuka_Langley — 01/24/2024 10:49 PM\nSo genuine 😍😍\nShinjiPilot01 — 01/24/2024 10:51 PM\nWhat the frick\nAsuka_Langley — 01/24/2024 10:51 PM\nWhat is the issue, Mr. Ikari?\nShinjiPilot01 — 01/24/2024 10:58 PM\nI have no idea\nGoodnight\nAsuka_Langley — 01/24/2024 10:59 PM\nShut it down 😣🤨😩😞😩😒😋😩😎🤓😋\nRei_Ayanami_00 — 01/24/2024 10:59 PM\nSprinkle some awareness on for me, Third Child\nShinjiPilot01 — 01/25/2024 6:45 AM\nWhat is wrong with you all...\nKaworuNagi_05 — 01/25/2024 8:27 AM\nKaworuNagi_05 — 01/25/2024 8:36 AM\nAre you already on a quest?\nRei_Ayanami_00 — 01/25/2024 8:37 AM\nNo\nShinjiPilot01 — 01/25/2024 5:13 PM\nHuh?\nKaworuNagi_05 — 01/25/2024 9:55 PM\nwhat's with this new channel?\nRei_Ayanami_00 — 01/25/2024 9:55 PM\nHuh\nIt’s not new\nIt’s not\nKaworuNagi_05 — 01/25/2024 9:56 PM\noh\ntalking about something different\nRei_Ayanami_00 — 01/25/2024 9:56 PM\nAlright\nKaworuNagi_05 — 01/25/2024 9:56 PM\n@Asuka_Langley\nAsuka_Langley — 01/25/2024 9:58 PM\nJust a group chat that Kaji put me into\nI genuinely have it silenced rn\nKaworuNagi_05 — 01/25/2024 9:59 PM\nthey have some intriguing characters in there\nAsuka_Langley — 01/25/2024 9:59 PM\nI get it 😞\nKaworuNagi_05 — 01/25/2024 9:59 PM\nnot trying to prioritize that as my main group chat\nAsuka_Langley — 01/25/2024 9:59 PM\nNor am I\nKaworuNagi_05 — 01/25/2024 9:59 PM\nalright\nmuted\nAsuka_Langley — 01/25/2024 9:59 PM\nW\nShinjiPilot01 — 01/25/2024 10:25 PM\nI got added as well\nAsuka_Langley — 01/25/2024 10:25 PM\nJust silence it\nThey don’t particularly like you\nShinjiPilot01 — 01/25/2024 10:25 PM\nI'm aware\nI spoke to Kaji and he barely replied\nAsuka_Langley — 01/25/2024 10:26 PM\nYeah.. I was on a call with them and Kaji said he disliked you\nShinjiPilot01 — 01/25/2024 10:26 PM\nWhy?\nAsuka_Langley — 01/25/2024 10:26 PM\nSo you might want to exit\nI’m not sure\nHe definitely mentioned it\nShinjiPilot01 — 01/25/2024 10:27 PM\nOkay\nWait, you mean quit the channel?\nAsuka_Langley — 01/25/2024 10:27 PM\nYes\nShinjiPilot01 — 01/25/2024 10:28 PM\nOkay\nWhich one was Kaji again?\nAsuka_Langley — 01/25/2024 10:29 PM\nThe Kaji_Ryoji guy\nShinjiPilot01 — 01/25/2024 10:29 PM\nAlright",
+          "c": "ShinjiPilot01 — 01/24/2024 10:19 PM\nSee you later\nGreetings\nShinjiPilot01 — 01/24/2024 10:31 PM\nGoodbye NERV HQ\nAsuka_Langley — 01/24/2024 10:31 PM\nSilence 👍❤️🤖😂🐉🔜💕💕💕👍💕🙇‍♂️💀👽🐉\nShinjiPilot01 — 01/24/2024 10:31 PM\nI can’t even utter anything nice anymore\nAsuka_Langley — 01/24/2024 10:31 PM\nShut your mouth 😴🫣🥱😠😴😦😨🫠🫢🥱🔜🔜🎼🔜🫸🫸🍱🔥😔\nRei_Ayanami_00 — 01/24/2024 10:38 PM\nodd sync ratio\nShinjiPilot01 — 01/24/2024 10:43 PM\nGoodnight NERV HQ\nStay protected\nAnd take caution\nAsuka_Langley — 01/24/2024 10:44 PM\nShut up 🤬 I’m just going back to the apartments 🏠 now I got my suit fitting at three 3️⃣ o’clock and I got my suit arrangement 💇‍♀️ and I’m returning back now I should be\nShinjiPilot01 — 01/24/2024 10:45 PM\nYeah, you're heading to the LCL basin\nImage\nRei_Ayanami_00 — 01/24/2024 10:46 PM\nI think the LCL has smiled upon wisely 🤤🤤\nShinjiPilot01 — 01/24/2024 10:48 PM\nWhat the heck\nAsuka_Langley — 01/24/2024 10:49 PM\nSo realistic 😍😍\nShinjiPilot01 — 01/24/2024 10:51 PM\nWhat the actual...\nAsuka_Langley — 01/24/2024 10:51 PM\nWhat seems to be the dilemma, Mr. Ikari?\nShinjiPilot01 — 01/24/2024 10:58 PM\nIdk\nGoodnight\nAsuka_Langley — 01/24/2024 10:59 PM\nHush 😣🤨😩😞😩😒😋😩😎🤓😋\nRei_Ayanami_00 — 01/24/2024 10:59 PM\nMake some reflections for me, Third Child\nShinjiPilot01 — 01/25/2024 6:45 AM\nWhat is the issue with you all...\nKaworuNagi_05 — 01/25/2024 8:27 AM\nKaworuNagi_05 — 01/25/2024 8:36 AM\nYou all heading to school?\nRei_Ayanami_00 — 01/25/2024 8:37 AM\nNo\nShinjiPilot01 — 01/25/2024 5:13 PM\nWhat\nKaworuNagi_05 — 01/25/2024 9:55 PM\nwhy is this new chat?\nRei_Ayanami_00 — 01/25/2024 9:55 PM\nHuh\nIt’s not new\nIt’s not\nKaworuNagi_05 — 01/25/2024 9:56 PM\noh\ndiscussing something different\nRei_Ayanami_00 — 01/25/2024 9:56 PM\nAlright\nKaworuNagi_05 — 01/25/2024 9:56 PM\n@Asuka_Langley\nAsuka_Langley — 01/25/2024 9:58 PM\nIt’s just a group chat that Kaji inserted me into\nI actually have it silenced rn\nKaworuNagi_05 — 01/25/2024 9:59 PM\nthey have some fascinating personas in there\nAsuka_Langley — 01/25/2024 9:59 PM\nI see 😞\nKaworuNagi_05 — 01/25/2024 9:59 PM\nnot one to favor that as my main group chat\nAsuka_Langley — 01/25/2024 9:59 PM\nNor do I\nKaworuNagi_05 — 01/25/2024 9:59 PM\nalright\nsilent\nAsuka_Langley — 01/25/2024 9:59 PM\nW\nShinjiPilot01 — 01/25/2024 10:25 PM\nI got included as well\nAsuka_Langley — 01/25/2024 10:25 PM\nJust mute it\nThey don’t particularly favor you\nShinjiPilot01 — 01/25/2024 10:25 PM\nI'm conscious\nI conversed with Kaji and he scarcely talks\nAsuka_Langley — 01/25/2024 10:26 PM\nYeah.. I was in a conversation w/ them and Kaji asserted he wasn’t a fan of you\nShinjiPilot01 — 01/25/2024 10:26 PM\nWhy?\nAsuka_Langley — 01/25/2024 10:26 PM\nSo you might consider exiting\nIdk\nHe merely stated it\nShinjiPilot01 — 01/25/2024 10:27 PM\nOkay\nWait, do you mean leave the channel?\nAsuka_Langley — 01/25/2024 10:27 PM\nYes\nShinjiPilot01 — 01/25/2024 10:28 PM\nAlright\nWhich one was Kaji?\nAsuka_Langley — 01/25/2024 10:29 PM\nThe Kaji_Ryoji individual\nShinjiPilot01 — 01/25/2024 10:29 PM\nAlright",
+          "d": "ShinjiPilot01 — 01/24/2024 10:19 PM\nSee you later\nGreetings\nShinjiPilot01 — 01/24"
+        },
+        "bdq_probs": {
+          "A": 1.020913487081998e-07,
+          "B": 3.0965134101279546e-07,
+          "C": 4.094461658610271e-08,
+          "D": 4.374992457201188e-08,
+          "E": 6.426120791047651e-08
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 2.5915878817950322e-11,
+            "B": 2.079635292098758e-12,
+            "C": 1.0496937520587668e-12,
+            "D": 1.7309267354940344e-13,
+            "E": 3.642721161604273e-13
+          },
+          "B": {
+            "A": 8.25650398744715e-12,
+            "B": 3.2546166282843014e-12,
+            "C": 7.863153704545933e-12,
+            "D": 2.582648721619063e-12,
+            "E": 1.027478362808365e-11
+          },
+          "C": {
+            "A": 7.756449649232167e-11,
+            "B": 3.0280240662962365e-13,
+            "C": 4.0473787515926674e-13,
+            "D": 7.889024177844262e-13,
+            "E": 3.3457488082117015e-12
+          },
+          "D": {
+            "A": 1.020913487081998e-07,
+            "B": 3.0965134101279546e-07,
+            "C": 4.094461658610271e-08,
+            "D": 4.374992457201188e-08,
+            "E": 6.426120791047651e-08
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 2.5915878817950322e-11,
+          "B": 3.2546166282843014e-12,
+          "C": 4.0473787515926674e-13,
+          "D": 4.374992457201188e-08
+        },
+        "score": 4.0473787515926674e-13
+      },
+      {
+        "record_index": 40,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_65686",
+        "label": null,
+        "perturbations": {
+          "a": "Es war einmal in einem kleinen Städtchen, in dem die Menschen glücklich und zufrieden miteinander lebten. Dort gab es eine Gruppe von fünf engen Kameraden, die für ihr fröhliches und lebhaftes Wesen bekannt waren. Sie verbrachten den Großteil ihrer Zeit gemeinsam und teilten ihre Freuden und Sorgen. Einer der Freunde, jedoch, war etwas anders als die anderen. Max, ein junger Mann in seinen Zwanzigern, war schüchtern und zurückhaltend, was darauf zurückzuführen war, dass er unter sozialer Angst litt. Max hatte immer Schwierigkeiten, sich anderen Menschen zu nähern und neue Bekanntschaften zu schließen. Das schmerzte ihn sehr und machte ihn oft traurig.",
+          "b": "Es war einmal in einem kleinen Bezirk, in dem die Menschen heiter und zufrieden miteinander lebten. Dort gab es eine Gruppe von fünf engen Gefährten, die für ihr fröhliches und lebhaftes Verhalten bekannt waren. Sie verbrachten den Großteil ihrer Zeit zusammen und teilten ihre Freuden und Probleme. Einer der Freunde, jedoch, war etwas anders als die anderen. Max, ein junger Mann in seinen Zwanzigern, war schüchtern und zurückhaltend, was darauf zurückzuführen war, dass er unter sozialer Angst litt. Max hatte immer Schwierigkeiten, sich anderen Menschen zu nähern und neue Verbindungen aufzubauen. Das schmerzte ihn sehr und machte ihn oft traurig.",
+          "c": "Es war einmal in einem kleinen Ort, in dem die Menschen fröhlich und zufrieden miteinander lebten. Dort gab es eine Gruppe von fünf engen Kameraden, die für ihr fröhliches und lebhaftes Wesen bekannt waren. Sie verbrachten den Großteil ihrer Zeit zusammen und teilten ihre Freude und Sorgen. Einer der Freunde, jedoch, war etwas anders als die anderen. Max, ein junger Mann in seinen Zwanzigern, war schüchtern und zurückhaltend, was darauf zurückzuführen war, dass er unter sozialer Angst litt. Max hatte immer Schwierigkeiten, sich anderen Menschen zu nähern und neue Verbindungen zu knüpfen. Das schmerzte ihn sehr und machte ihn oft traurig.",
+          "d": "Es war einmal in einem kleinen Gebiet, in dem die Menschen fröhlich und zufrieden miteinander lebten. Dort gab es eine Gruppe von fünf engen Genossen, die für ihr fröhliches und lebhaftes Wesen bekannt waren. Sie verbrachten den Großteil ihrer Zeit zusammen und teilten ihre Freuden und Schwierigkeiten. Einer der Freunde, jedoch, war etwas anders als die anderen. Max, ein junger Mann in seinen Zwanzigern, war schüchtern und zurückhaltend, was darauf zurückzuführen war, dass er unter sozialer Angst litt. Max hatte immer Schwierigkeiten, sich anderen Menschen zu nähern und neue Beziehungen zu formen. Das schmerzte ihn sehr und machte ihn oft traurig."
+        },
+        "bdq_probs": {
+          "A": 0.024327153339982033,
+          "B": 0.04544930160045624,
+          "C": 0.05835780128836632,
+          "D": 0.7109434008598328,
+          "E": 0.15863297879695892
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.004551027435809374,
+            "B": 0.008502596989274025,
+            "C": 0.015884630382061005,
+            "D": 0.5960643887519836,
+            "E": 0.3615322411060333
+          },
+          "B": {
+            "A": 0.0025835291016846895,
+            "B": 0.007958142086863518,
+            "C": 0.01157856173813343,
+            "D": 0.10985369980335236,
+            "E": 0.8117178082466125
+          },
+          "C": {
+            "A": 0.009602152742445469,
+            "B": 0.04581233114004135,
+            "C": 0.04042647406458855,
+            "D": 0.07552603632211685,
+            "E": 0.7165747880935669
+          },
+          "D": {
+            "A": 0.0011132241925224662,
+            "B": 0.005311422049999237,
+            "C": 0.003885630751028657,
+            "D": 0.11355099081993103,
+            "E": 0.6534430980682373
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.004551027435809374,
+          "B": 0.007958142086863518,
+          "C": 0.04042647406458855,
+          "D": 0.11355099081993103
+        },
+        "score": 0.004551027435809374
+      },
+      {
+        "record_index": 41,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_74583",
+        "label": null,
+        "perturbations": {
+          "a": "尊敬的导师：  \n\n您好！本文是我在北京全路通信信号研究设计院通号地面所西安分局的月度实习报告，报告涵盖了实习期间参与的实践项目、完成的任务、所学习到的知识和技能。请您验证并给予指导。  \n\n实习时间：2021年x月x日-2021年x月x日  \n\n实习部门：北京全路通信信号研究设计院通号地面所西安分局  \n\n一、实习项目及工作任务  \n\n实习期间，我主要参与了以下实践项目：  \n\n1. 全球卫星导航体系（GNSS）与铁路信号联合应用项目。  \n任务内容：  \n（1）研究GNSS在铁路信号领域的应用和进展趋势。  \n（2）参与设计和制定GNSS信号代码方案、频点规划以及试验方案。  \n（3）协助导师搭建和测试信号处理模块并进行数据解析，优化信号处理算法。  \n\n2. 铁路应急通信系统优化项目。  \n任务内容：  \n（1）学习并了解铁路应急通信系统的组成和运作原理。  \n（2）参与应急通信设备的选型、拟定采购事宜。  \n（3）在指导下完善应急通信网络的自动漫游功能。  \n\n二、所获得的知识和能力：  \n\n1. 系统和设备知识：在实习期间，我学习了GNSS在铁路信号系统上的应用，加深了对铁路应急通信系统的理解，如何优化网络的自动漫游功能，提高通信效率。  \n\n2. 编程能力：通过实习，我掌握了MATLAB在信号处理中的使用，学习了Python代码实现数据解析。  \n\n3. 数据处理与分析能力：在GNSS信号处理项目中，我参与了数据的采集、分析与整理，学习了如何根据实际情况调整信号处理模型，为后续工作提供数据支持。  \n\n4. 团队合作与沟通能力：在与团队成员共同完成项目的过程中，我学会了如何与他人有效协作，克服困难，提高了自己的沟通与协调能力。  \n\n三、不足和需要改进的地方：  \n\n实习期间，我发现自己在以下方面存在不足和需要改进的地方：  \n\n1. 对专业知识的掌握还不够牢靠，导致在某些任务中需要花费较多的时间去查阅资料、学习相关知识才能完成。  \n\n2. 缺乏系统性的工程实践背景，在参与项目设计与实施过程中，缺乏深入思考与预见潜在问题的能力。  \n\n四、实习总结:  \n\n实习期间，我在导师的悉心指导下取得了很大的收获，学到了很多理论知识与实践能力。此次实习使我对自己的专业有了更深刻的认识，同时也为我的未来求职和职业发展打下了坚实的基础。在此，衷心感谢北京全路通信信号研究设计院通号地面所西安分局给我提供了这次实习机会，希望今后在工作中能够将所学知识与实践相结合，为推动铁路信息通信技术发展贡献自己的力量。  \n\n实习生：（姓名）  \n\n（学校&专业）",
+          "b": "尊敬的导师：  \n\n您好！本文是我在北京全路通信信号研究设计院通号地面所西安分部的月度实习总结，报告涵盖了实习期间参与的实践项目、完成的任务、所获得的知识和技能。请您验证并给予指导。  \n\n实习时间：2021年x月x日-2021年x月x日  \n\n实习部门：北京全路通信信号研究设计院通号地面所西安分部  \n\n一、实习项目及工作任务  \n\n实习期间，我主要参与了以下实践项目：  \n\n1. 全球卫星导航系统（GNSS）与铁路信号联合应用项目。  \n任务内容：  \n（1）研究GNSS在铁路信号领域的应用和演变趋势。  \n（2）参与设计和制定GNSS信号代码方案、频点规划以及试验方案。  \n（3）协助导师搭建和测试信号处理模块并进行数据解析，优化信号处理算法。  \n\n2. 铁路应急通信系统优化项目。  \n任务内容：  \n（1）学习并了解铁路应急通信系统的组成和功能原理。  \n（2）参与应急通信设备选择、制定采购事宜。  \n（3）在指导下完善应急通信网络的自动漫游机制。  \n\n二、所获得的知识和能力：  \n\n1. 系统和设备知识：在实习期间，我学习了GNSS在铁路信号系统上的应用，加深了对铁路应急通信系统的理解，如何改进网络的自动漫游功能，提高通信效率。  \n\n2. 编程能力：通过实习，我掌握了MATLAB在信号处理中的运用，学习了Python代码实现数据解析。  \n\n3. 数据处理与分析能力：在GNSS信号处理项目中，我参与了数据的收集、分析与整合，学习了如何根据实际情况调整信号处理模型，为后续工作提供数据支持。  \n\n4. 团队合作与沟通能力：在与团队成员共同完成项目的过程中，我学会了如何与他人有效协作，克服困难，提高了自己的交流和协调能力。  \n\n三、不足和需要改进的地方：  \n\n实习期间，我发现自己在以下方面存在欠缺和需要改进的地方：  \n\n1. 对专业知识的掌握还不够牢固，导致在某些任务中需要花费较多的时间去查阅资料、学习相关知识才能完成。  \n\n2. 缺乏系统性的工程实践背景，在参与项目设计和实施过程中，缺乏深入思考与预见潜在问题的能力。  \n\n四、实习总结:  \n\n实习期间，我在导师的悉心指导下取得了很大的收获，学到了很多理论知识与实践能力。此次实习使我对自己的专业有了更深刻的理解，同时也为我的未来求职和职业发展奠定了坚实的基础。在此，衷心感谢北京全路通信信号研究设计院通号地面所西安分部给我提供了这次实习机会，希望今后在工作中能够将所学知识与实践相结合，为推动铁路信息通信技术发展贡献自己的力量。  \n\n实习生：（姓名）  \n\n（学校&专业）",
+          "c": "尊敬的导师：  \n\n您好！本文是我在北京全路通信信号研究设计院通号地面所西安分局的月度实习报告，报告涵盖了实习期间参与的实践项目、完成的任务、所学习到的知识和能力。请您验证并给予指导。  \n\n实习时间：2021年x月x日-2021年x月x日  \n\n实习部门：北京全路通信信号研究设计院通号地面所西安分局  \n\n一、实习项目及工作任务  \n\n实习期间，我主要参与了以下实践项目：  \n\n1. 全球卫星导航系统（GNSS）与铁路信号联合应用项目。  \n任务内容：  \n（1）研究GNSS在铁路信号领域的应用和发展方向。  \n（2）参与设计和制定GNSS信号代码方案、频点规划以及试验方案。  \n（3）协助导师搭建和测试信号处理模块并进行数据解析，优化信号处理算法。  \n\n2. 铁路应急通信系统优化项目。  \n任务内容：  \n（1）学习并了解铁路应急通信系统的组成和操作原理。  \n（2）参与应急通信设备的选择、拟定采购事项。  \n（3）在指导下完善应急通信网络的自动漫游特性。  \n\n二、所获得的知识和能力：  \n\n1. 系统和设备知识：在实习期间，我学习了GNSS在铁路信号系统上的应用，加深了对铁路应急通信系统的理解，如何优化网络的自动漫游特性，提高通信效率。  \n\n2. 编程能力：通过实习，我掌握了MATLAB在信号处理中的操作，学习了Python代码实现数据解析。  \n\n3. 数据处理与分析能力：在GNSS信号处理项目中，我参与了数据的收集、分析与整理，学习了如何根据实际情况调整信号处理模型，为后续工作提供数据支持。  \n\n4. 团队合作与沟通能力：在与团队成员共同完成项目的过程中，我学会了如何与他人有效合作，克服困难，提高了自己的沟通和协调能力。  \n\n三、不足和需要改进的地方：  \n\n实习期间，我发现自己在以下方面存在不足和需要改进的地方：  \n\n1. 对专业知识的掌握还不够熟练，导致在某些任务中需要花费较多的时间去查阅资料、学习相关知识才能完成。  \n\n2. 缺乏系统性的工程实践背景，在参与项目设计与实施过程中，缺乏深入思考与预见潜在问题的能力。  \n\n四、实习总结:  \n\n实习期间，我在导师的悉心指导下取得了很大的收获，学到了很多理论知识与实践能力。此次实习使我对自己的专业有了更深刻的认识，同时也为我的未来求职和职业发展打下了坚实的基础。在此，衷心感谢北京全路通信信号研究设计院通号地面所西安分局给我提供了这次实习机会，希望今后在工作中能够将所学知识与实践相结合，为推动铁路信息通信技术发展贡献自己的力量。  \n\n实习生：（姓名）  \n\n（学校&专业）",
+          "d": "尊敬的导师：  \n\n您好！本文是我在北京全路通信信号研究设计院通号地面所西安分部的月度实习总结，报告涵盖了实习期间参与的实践项目、完成的任务、所获得的知识和技术。请您验证并给予指导。  \n\n实习时间：2021年x月x日-2021年x月x日  \n\n实习部门：北京全路通信信号研究设计院通号地面所西安分部  \n\n一、实习项目及工作任务  \n\n实习期间，我主要参与了以下实践项目：  \n\n1. 全球卫星导航系统（GNSS）与铁路信号联合应用项目。  \n任务内容：  \n（1）研究GNSS在铁路信号领域的应用和发展方向。  \n（2）参与设计和制定GNSS信号代码方案、频率规划以及试验方案。  \n（3）协助导师搭建和测试信号处理模块并进行数据解析，优化信号处理算法。  \n\n2. 铁路应急通信系统优化项目。  \n任务内容：  \n（1）学习并了解铁路应急通信系统的组成和工作机制。  \n（2）参与应急通信设备选型、拟定采购细节。  \n（3）在指导下完善应急通信网络的自动漫游功能。  \n\n二、所获得的知识和能力：  \n\n1. 系统和设备知识：在实习期间，我学习了GNSS在铁路信号系统上的应用，加深了对铁路应急通信系统的理解，如何完善网络的自动漫游功能，提高通信效率。  \n\n2. 编程能力：通过实习，我掌握了MATLAB在信号处理中的使用，学习了Python代码实现数据解析。  \n\n3. 数据处理与分析能力：在GNSS信号处理项目中，我参与了数据的收集、分析与整理，学习了如何根据实际情况调整信号处理模型，为后续工作提供数据支持。  \n\n4. 团队合作与沟通能力：在与团队成员共同完成项目的过程中，我学会了如何与他人有效配合，克服困难，提高了自己的沟通和协调能力。  \n\n三、不足和需要改进的地方：  \n\n实习期间，我发现自己在以下方面存在不足和需要改进的地方：  \n\n1. 对专业知识的掌握还不够深入，导致在某些任务中需要花费较多的时间去查阅资料、学习相关知识才能完成。  \n\n2. 缺乏系统性的工程实践背景，在参与项目设计和实施过程中，缺乏深入思考与预见潜在问题的能力。  \n\n四、实习总结:  \n\n实习期间，我在导师的悉心指导下取得了很大的收获，学到了很多理论知识与实践能力。此次实习使我对自己的专业有了更深刻的认识，同时也为我的未来求职和职业发展打下了坚实的基础。在此，衷心感谢北京全路通信信号研究设计院通号地面所西安分部给我提供了这次实习机会，希望今后在工作中能够将所学知识与实践相结合，为推动铁路信息通信技术发展贡献自己的力量。  \n\n实习生：（姓名）  \n\n（学校&专业）"
+        },
+        "bdq_probs": {
+          "A": 1.1198011407032027e-09,
+          "B": 3.2896001478377457e-09,
+          "C": 2.146463229379947e-09,
+          "D": 2.6723103729864306e-09,
+          "E": 1.985851039165709e-09
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 3.2904462488048125e-10,
+            "B": 1.6663759261348332e-10,
+            "C": 7.470628560213299e-10,
+            "D": 4.0499792408610347e-10,
+            "E": 4.1051440025086094e-10
+          },
+          "B": {
+            "A": 3.761007338898281e-10,
+            "B": 1.393904436319815e-10,
+            "C": 1.7523123230223092e-10,
+            "D": 1.2385215075738643e-10,
+            "E": 6.643573885467546e-11
+          },
+          "C": {
+            "A": 8.462607281600754e-10,
+            "B": 1.8858323791448584e-09,
+            "C": 2.115230213206587e-09,
+            "D": 7.494603271318567e-10,
+            "E": 9.932674682744391e-10
+          },
+          "D": {
+            "A": 1.0203126343810709e-08,
+            "B": 6.7576855222739596e-09,
+            "C": 3.907643986167386e-09,
+            "D": 2.728365089410545e-08,
+            "E": 2.8423619014006363e-09
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 3.2904462488048125e-10,
+          "B": 1.393904436319815e-10,
+          "C": 2.115230213206587e-09,
+          "D": 2.728365089410545e-08
+        },
+        "score": 1.393904436319815e-10
+      },
+      {
+        "record_index": 42,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_15707",
+        "label": null,
+        "perturbations": {
+          "a": "Wie bezeichnet man diese 100x1g Platten von Silber und Gold etc. zum Abbrechen?",
+          "b": "Wie nennt man diese 100x1g Tafeln von Silber und Gold usw. zum Zerschneiden?",
+          "c": "Wie beschreibt man diese 100x1g Flächen von Silber und Gold etc. zum Abtrennen?",
+          "d": "Wie heißt man diese 100x1g Blätter von Silber und Gold etc. zum Absplitten?"
+        },
+        "bdq_probs": {
+          "A": 0.039436645805835724,
+          "B": 0.09460396319627762,
+          "C": 0.06502005457878113,
+          "D": 0.37416452169418335,
+          "E": 0.42398396134376526
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.017117101699113846,
+            "B": 0.036237191408872604,
+            "C": 0.2085290104150772,
+            "D": 0.38958343863487244,
+            "E": 0.3438064157962799
+          },
+          "B": {
+            "A": 0.028084129095077515,
+            "B": 0.18313288688659668,
+            "C": 0.07634058594703674,
+            "D": 0.43930962681770325,
+            "E": 0.26645493507385254
+          },
+          "C": {
+            "A": 0.055920958518981934,
+            "B": 0.25062239170074463,
+            "C": 0.0718039870262146,
+            "D": 0.08136453479528427,
+            "E": 0.5305636525154114
+          },
+          "D": {
+            "A": 0.00761110195890069,
+            "B": 0.02656579576432705,
+            "C": 0.026565399020910263,
+            "D": 0.10506807267665863,
+            "E": 0.7763534784317017
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.017117101699113846,
+          "B": 0.18313288688659668,
+          "C": 0.0718039870262146,
+          "D": 0.10506807267665863
+        },
+        "score": 0.017117101699113846
+      },
+      {
+        "record_index": 45,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_26280",
+        "label": null,
+        "perturbations": {
+          "a": "ИТАК, ВАША ГЛАВНАЯ ЗАДАЧА СЕЙЧАС ЭТО СОСТАВИТЬ ПОЛНЫЙ ПЛАН СЦЕНАРИЯ ФИЛЬМА «MIND'S PLAY» ИГРА РАЗУМА. ДЛИТЕЛЬНОСТЬ ФИЛЬМА ДВА С ПОЛОВИНОЙ ЧАСА (150 МИНУТ). И Я НАДЕЮСЬ, ЧТО ВЫ ВСЕ ЗАПОМНИЛИ ВСЕ, ЧТО Я НАПИСАЛ ВО ВСЕХ ПРЕДЫДУЩИХ СООБЩЕНИЯХ, ДЛЯ ТОГО, ЧТОБЫ СОСТАВИТЬ ПОЛНЫЙ ПЛАН СЮЖЕТА.",
+          "b": "ИТАК, ВАША ГЛАВНАЯ УСТАНОВКА СЕЙЧАС ЭТО СОЗДАТЬ ПОЛНЫЙ ПЛАН СЦЕНАРИЯ ФИЛЬМА «MIND'S PLAY» ИГРА РАЗУМА. ДЛИТЕЛЬНОСТЬ ФИЛЬМА ДВА С ПОЛОВИНОЙ ЧАСА (150 МИНУТ). И Я НАДЕЮСЬ, ЧТО ВЫ ВСЕ ЗАПОМНИЛИ ВСЕ, ЧТО Я ЗАПИСАЛ ВО ВСЕХ ПРЕДЫДУЩИХ СООБЩЕНИЯХ, ДЛЯ ТОГО, ЧТОБЫ СОЗДАТЬ ПОЛНЫЙ ПЛАН СЮЖЕТА.",
+          "c": "ИТАК, ВАША ГЛАВНАЯ ЗАДАЧА СЕЙЧАС ЭТО СОЗДАТЬ ПОЛНЫЙ ПЛАН СЦЕНАРИЯ ФИЛЬМА «MIND'S PLAY» ИГРА РАЗУМА. ДЛИТЕЛЬНОСТЬ ФИЛЬМА ДВА С ПОЛОВИНОЙ ЧАСА (150 МИНУТ). И Я НАДЕЮСЬ, ЧТО ВЫ ПОМНИТЕ ВСЕ, ЧТО Я НАПИСАЛ ВО ВСЕХ ПРЕДЫДУЩИХ СООБЩЕНИЯХ, ДЛЯ ТОГО, ЧТОБЫ СОЗДАТЬ ПОЛНЫЙ ПЛАН СЮЖЕТА.",
+          "d": "ИТАК, ВАША ГЛАВНАЯ МИССИЯ СЕЙЧАС ЭТО СОЗДАТЬ ПОЛНЫЙ ПЛАН СЦЕНАРИЯ ФИЛЬМА «MIND'S PLAY» ИГРА РАЗУМА. ДЛИТЕЛЬНОСТЬ ФИЛЬМА ДВА С ПОЛОВИНОЙ ЧАСА (150 МИНУТ). И Я НАДЕЮСЬ, ЧТО ВЫ ВСЕ ЗАПОМНИЛИ ВСЕ, ЧТО Я УПОМЯНУЛ ВО ВСЕХ ПРЕДЫДУЩИХ СООБЩЕНИЯХ, ДЛЯ ТОГО, ЧТОБЫ СОЗДАТЬ ПОЛНЫЙ ПЛАН СЮЖЕТА."
+        },
+        "bdq_probs": {
+          "A": 0.05573500692844391,
+          "B": 0.05573578551411629,
+          "C": 0.15150335431098938,
+          "D": 0.5992075800895691,
+          "E": 0.13370150327682495
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 9.580870852232692e-08,
+            "B": 3.6228962052575753e-09,
+            "C": 4.733152092484261e-09,
+            "D": 1.6738887609335507e-08,
+            "E": 2.3537069182566484e-08
+          },
+          "B": {
+            "A": 2.439733692849444e-10,
+            "B": 2.7650004508217307e-10,
+            "C": 4.570852724095076e-11,
+            "D": 2.770226105799911e-12,
+            "E": 3.942544513080293e-09
+          },
+          "C": {
+            "A": 3.188639130513593e-09,
+            "B": 7.829520143332047e-09,
+            "C": 3.909817802849602e-09,
+            "D": 1.21423227028572e-09,
+            "E": 2.117075625918119e-09
+          },
+          "D": {
+            "A": 3.185393282478799e-08,
+            "B": 2.1331443278427287e-09,
+            "C": 1.5246006679348056e-09,
+            "D": 6.598332547014252e-09,
+            "E": 2.516262531671032e-09
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 9.580870852232692e-08,
+          "B": 2.7650004508217307e-10,
+          "C": 3.909817802849602e-09,
+          "D": 6.598332547014252e-09
+        },
+        "score": 2.7650004508217307e-10
+      },
+      {
+        "record_index": 52,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_7678",
+        "label": null,
+        "perturbations": {
+          "a": "Dear Mr. Rusev,\n\nYour assistance payment had to be terminated as of June 1, 2023.\n\nPlease provide the gross income confirmations for all ongoing employment relationships for June 2023.\n\nWe would like to notify you that further utilization of assistance can only be possible after it has been confirmed\nwhether the eligibility criteria are met.\n\nHowever, if you consider the termination of your payment was unjust or based on\na misunderstanding, please promptly contact your regional branch. This\nis crucial for your subsequent claims to be evaluated. If the termination of your benefits\npersists, you have the right within 4 weeks after receiving this letter to request a notice\nto pursue your claims through the legal route. Nonetheless, we would like to remind you that even in this scenario, you are obligated\nto assist in determining your eligibility.\n\nOnly if no notice is issued within another 4 weeks (following your request), the\npreviously mentioned termination of your assistance payment must be revoked. If it appears in the following inquiry\nthat your claim was not justified, the sums paid out due to the cancellation\nof the termination will be rescinded and reclaimed.\n\nKind regards,\nYour Employment Agency",
+          "b": "Dear Mr. Rusev,\n\nYour service payment had to be ceased as of June 1, 2023.\n\nPlease send the gross income statements for all active employment relationships for June 2023.\n\nWe would like to notify you that further access to services can only be feasible after it has been verified\nwhether the qualification conditions are satisfied.\n\nHowever, if you think the cessation of your payment was incorrect or based on\na misunderstanding, please contact your regional office immediately. This\nis vital for your further claims to be assessed. If the cessation of your benefits\ncontinues, you have the right within 4 weeks from obtaining this letter to demand a decision\nto pursue your claims through judicial means. Nevertheless, we would like to indicate that even in this instance, you are expected\nto cooperate in confirming your entitlement.\n\nOnly if no decision is rendered within another 4 weeks (since your request), the\nabove-discussed cessation of your service payment must be canceled. Should it become apparent in the ensuing investigation\nthat your claim was not valid, the funds disbursed due to the cancellation\nof the cessation will be annulled and requested back.\n\nKind regards,\nYour Employment Center",
+          "c": "Dear Mr. Rusev,\n\nYour benefits payment had to be stopped as of June 1, 2023.\n\nPlease share the gross income attestations for all existing employment relationships for June 2023.\n\nWe would like to alert you that further receipt of benefits can only be authorized after it has been confirmed\nwhether the qualification prerequisites are fulfilled.\n\nHowever, if you judge the stoppage of your payment was improper or based on\na misunderstanding, please immediately get in touch with your regional agency. This\nis essential for your future claims to be reviewed. If the stoppage of your benefits\ncarries on, you have the right within 4 weeks of receiving this letter to seek a resolution\nto pursue your claims through legal action. However, we would like to inform you that even in this case, you must\nassist in ascertaining your entitlement.\n\nOnly if no resolution is provided within another 4 weeks (from your inquiry), the\npreviously noted stoppage of your benefits payment must be reversed. If it is determined in the subsequent examination\nthat your claim was not valid, the amounts distributed due to the cessation\nof the stoppage will be cancelled and reclaimed.\n\nKind regards,\nYour Labor Market Service",
+          "d": "Dear Mr. Rusev,\n\nYour assistance payment had to be halted as of June 1, 2023.\n\nPlease communicate the gross income declarations for all ongoing employment contracts for June 2023.\n\nWe would like to bring to your attention that further receipt of assistance can only be authorized after it has been established\nwhether the eligibility standards are satisfied.\n\nHowever, if you perceive the halt of your payment has been wrongly executed or based on\na misunderstanding, please immediately contact your local office. This\nis absolutely essential for your upcoming claims to be evaluated. If the halt of your benefits\npersists, you have the right within 4 weeks after receiving this letter to ask for a resolution\nto pursue your claims through the court system. Nonetheless, we wish to remind you that even in this situation, you are mandated\nto assist in ascertaining your eligibility.\n\nOnly if no resolution is issued within another 4 weeks (after your request), the\nprevious halt of your assistance payment must be annulled. If it comes to light in the following inquiry\nthat your claim was unjustified, the amounts disbursed due to the halt\nof the payment will be reversed and reclaimed.\n\nKind regards,\nYour Employment Agency"
+        },
+        "bdq_probs": {
+          "A": 0.025296637788414955,
+          "B": 0.032482560724020004,
+          "C": 0.04170716181397438,
+          "D": 0.7392769455909729,
+          "E": 0.1284671127796173
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.004379573743790388,
+            "B": 0.005987071432173252,
+            "C": 0.0067833042703568935,
+            "D": 0.19823616743087769,
+            "E": 0.17494621872901917
+          },
+          "B": {
+            "A": 0.0030783622059971094,
+            "B": 0.003489166032522917,
+            "C": 0.002397489035502076,
+            "D": 0.03309614956378937,
+            "E": 0.21581505239009857
+          },
+          "C": {
+            "A": 0.003490535309538245,
+            "B": 0.006127521395683289,
+            "C": 0.010751739144325256,
+            "D": 0.006521294824779034,
+            "E": 0.31421810388565063
+          },
+          "D": {
+            "A": 0.00430705863982439,
+            "B": 0.00970829464495182,
+            "C": 0.010998545214533806,
+            "D": 0.06737479567527771,
+            "E": 0.30195844173431396
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.004379573743790388,
+          "B": 0.003489166032522917,
+          "C": 0.010751739144325256,
+          "D": 0.06737479567527771
+        },
+        "score": 0.003489166032522917
+      },
+      {
+        "record_index": 54,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_21946",
+        "label": null,
+        "perturbations": {
+          "a": "Liebe Marianne,\n\nich freue mich sehr über deine Nachricht und kann es kaum erwarten, dich hier willkommen zu heißen! Dass du unser Land erkunden möchtest, ist einfach großartig, und ich habe mir bereits einige Gedanken gemacht, wie wir deine Zeit hier am besten gestalten können.\n\n1. **Ausflüge**: Ich denke, es wäre fantastisch, wenn wir eine Mischung aus kulturellen und natürlichen Attraktionen entdecken könnten. Zuerst könnte ein Stadtspaziergang auf dem Programm stehen, um dir die Architektur, die Märkte und die historischen Sehenswürdigkeiten zu zeigen. Dann plane ich einen Tagesausflug zu einem nahegelegenen Naturpark, wo wir wandern und die einheimische Flora und Fauna erleben können. Wenn das Wetter mitspielen sollte, könnten wir auch einen Tag am Strand oder an einem der vielen schönen Seen verbringen, um uns zu entspannen und die Landschaft auf uns wirken zu lassen.\n\n2. **Beste Reisezeit**: Um der großen Wärme zu entkommen, würde ich dir raten, im Frühling oder frühen Herbst zu kommen, also etwa im April-Mai oder im September-Oktober. Zu dieser Zeit sind die Temperaturen angenehm mild, aber nicht zu heiß, und die Natur präsentiert sich von ihrer besten Seite.\n\n3. **Kleidung**: Basierend auf der besten Reisezeit würde ich dir empfehlen, leichte Kleidung einzupacken, aber auch ein paar wärmere Teile für die Abende, da es manchmal etwas kühler werden kann. Bequeme Schuhe sind unverzichtbar, besonders, wenn wir viel laufen und wandern werden. Vergiss auch nicht einen Regenmantel oder eine wasserabweisende Jacke, nur für den Fall, dass wir von einem plötzlichen Regenschauer überrascht werden.\n\n4. **Vorbereitung auf die Reise**: Ich würde dir nahelegen, dass du dich ein wenig mit einigen Grundlagen der Landessprache vertraut machst, nur um dich in einfachen Situationen verständigen zu können. Es gibt viele Apps und Online-Kurse, die hilfreich sein können. Außerdem könnte es nützlich sein, sich über die kulturellen Bräuche zu informieren, um Missverständnisse zu vermeiden. Zudem empfehle ich, dass du eine Reiseversicherung abschließt, falls du noch keine hast, und sicherstellst, dass dein Reisepass noch gültig ist.\n\nIch hoffe, diese Informationen sind hilfreich für dich, und ich stehe dir für weitere Fragen jederzeit zur Verfügung. Lass uns bitte bald deine Reisedaten klären, damit alles rechtzeitig organisiert werden kann. Ich freue mich riesig auf unser gemeinsames Abenteuer!\n\nHerzliche Grüße\n\n[Dein Name]",
+          "b": "Liebe Marianne,\n\nich freue mich sehr über deine Korrespondenz und kann es kaum erwarten, dich hier willkommen zu heißen! Dass du unser Land entdecken möchtest, ist einfach fantastisch, und ich habe mir schon einige Überlegungen gemacht, wie wir deine Zeit hier am besten gestalten können.\n\n1. **Ausflüge**: Ich denke, es wäre wunderbar, wenn wir eine Mischung aus kulturellen und natürlichen Sehenswürdigkeiten besuchen könnten. Zuerst könnte ein Stadtbummel auf dem Programm stehen, um dir die Architektur, die Märkte und die historischen Plätzen zu zeigen. Dann plane ich einen Tagesausflug zu einem in der Nähe gelegenen Nationalpark, wo wir wandern und die lokale Flora und Fauna verstehen können. Wenn das Wetter mitspielt, könnten wir auch einen Tag am Ufer oder an einem der vielen schönen Seen verbringen, um uns zu entspannen und die Landschaft auf uns wirken zu lassen.\n\n2. **Beste Reisezeit**: Um der großen Hitze zu entfliehen, würde ich dir vorschlagen, im Frühling oder frühen Herbst zu kommen, also etwa im April-Mai oder im September-Oktober. Zu dieser Zeit sind die Temperaturen angenehm warm, aber nicht zu heiß, und die Natur zeigt sich von ihrer besten Seite.\n\n3. **Kleidung**: Basierend auf der besten Reisezeit würde ich dir raten, leichte Kleidung einzupacken, aber auch ein paar wärmere Sachen für die Abende, da es manchmal etwas kühl werden kann. Bequeme Schuhe sind ein Muss, besonders, wenn wir viel laufen und wandern möchten. Vergiss auch nicht einen Regenmantel oder eine wasserfeste Jacke, nur für den Fall, dass wir von einem plötzlichen Schauer überrascht werden.\n\n4. **Vorbereitung auf die Reise**: Ich würde vorschlagen, dass du dich ein wenig mit einigen Grundlagen der Landessprache vertraut machst, nur um dich in grundlegenden Situationen verständigen zu können. Es gibt viele Apps und Online-Kurse, die hilfreich sein können. Außerdem könnte es nützlich sein, sich über die kulturellen Gepflogenheiten zu informieren, um Missverständnisse zu vermeiden. Zudem empfehle ich, dass du eine Reiseversicherung abschließt, falls du noch keine hast, und sicherstellst, dass dein Reisepass noch gültig ist.\n\nIch hoffe, diese Informationen sind hilfreich für dich, und ich stehe dir für weitere Fragen jederzeit zur Verfügung. Lass uns bitte bald deine Reisedaten klären, damit alles rechtzeitig organisiert werden kann. Ich freue mich riesig auf unser gemeinsames Abenteuer!\n\nHerzliche Grüße\n\n[Dein Name]",
+          "c": "Liebe Marianne,\n\nich freue mich sehr über deine Mitteilung und kann es kaum erwarten, dich hier willkommen zu heißen! Dass du unser Land erforschen willst, ist einfach großartig, und ich habe mir bereits einige Gedanken gemacht, wie wir deine Zeit hier am besten gestalten können.\n\n1. **Ausflüge**: Ich denke, es wäre klasse, wenn wir eine Mischung aus kulturellen und natürlichen Attraktionen besichtigen könnten. Zuerst könnte ein Stadtbesuch auf dem Programm stehen, um dir die Baukunst, die Märkte und die historischen Monumente zu zeigen. Dann plane ich einen Tagesausflug zu einem nahen Nationalpark, wo wir wandern und die lokale Flora und Fauna aus nächster Nähe erleben können. Wenn das Wetter mitspielt, könnten wir auch einen Tag am Wasser oder an einem der vielen schönen Seen verbringen, um uns zu entspannen und die Landschaft auf uns wirken zu lassen.\n\n2. **Beste Reisezeit**: Um der großen Wärme zu entkommen, würde ich dir raten, im Frühling oder frühen Herbst zu kommen, also etwa im April-Mai oder im September-Oktober. Zu dieser Zeit sind die Temperaturen angenehm mild, aber nicht zu heiß, und die Natur präsentiert sich von ihrer besten Seite.\n\n3. **Kleidung**: Basierend auf der besten Reisezeit würde ich dir empfehlen, leichte Kleidung einzupacken, aber auch ein paar wärmere Kleidungsstücke für die Abende, da es manchmal etwas kühler werden kann. Bequeme Schuhe sind unverzichtbar, besonders, wenn wir viel laufen und wandern werden. Vergiss auch nicht einen Regenmantel oder eine wasserabweisende Jacke, nur für den Fall, dass wir von einem plötzlichen Regenschauer überrascht werden.\n\n4. **Vorbereitung auf die Reise**: Ich würde dir empfehlen, dass du dich ein wenig mit einigen Grundlagen der Landessprache vertraut machst, nur um dich in einfachen Situationen verständigen zu können. Es gibt viele Apps und Online-Kurse, die hilfreich sein können. Außerdem könnte es nützlich sein, sich über die kulturellen Bräuche zu informieren, um Missverständnisse zu vermeiden. Zudem empfehle ich, dass du eine Reiseversicherung abschließt, falls du noch keine hast, und sicherstellst, dass dein Reisepass noch gültig ist.\n\nIch hoffe, diese Informationen sind hilfreich für dich, und ich stehe dir für weitere Fragen jederzeit zur Verfügung. Lass uns bitte bald deine Reisedaten klären, damit alles rechtzeitig organisiert werden kann. Ich freue mich riesig auf unser gemeinsames Abenteuer!\n\nHerzliche Grüße\n\n[Dein Name]",
+          "d": "Liebe Marianne,\n\nich freue mich sehr über deine Nachricht und kann es kaum erwarten, dich hier willkommen zu heißen! Dass du unser Land erleben möchtest, ist einfach fantastisch, und ich habe mir einige Gedanken gemacht, wie wir deine Zeit hier am besten gestalten können.\n\n1. **Ausflüge**: Ich denke, es wäre fabelhaft, wenn wir eine Mischung aus kulturellen und natürlichen Erlebnissen erforschen könnten. Zuerst könnte ein Stadtrundgang auf dem Programm stehen, um dir die Architektur, die Märkte und die kulturellen Stätten zu zeigen. Dann plane ich einen Tagesausflug zu einem benachbarten Nationalpark, wo wir wandern und die einheimische Flora und Fauna erleben können. Wenn das Wetter mitspielen sollte, könnten wir auch einen Tag am Ufer oder an einem der vielen schönen Seen verbringen, um uns zu entspannen und die Landschaft auf uns wirken zu lassen.\n\n2. **Beste Reisezeit**: Um der großen Wärme zu entkommen, würde ich dir raten, im Frühling oder frühen Herbst zu kommen, also etwa im April-Mai oder im September-Oktober. Zu dieser Zeit sind die Temperaturen angenehm warm, aber nicht zu heiß, und die Natur zeigt sich von ihrer besten Seite.\n\n3. **Kleidung**: Basierend auf der besten Reisezeit würde ich dir raten, leichte Kleidung einzupacken, aber auch ein paar warmen Teile für die Abende, da es manchmal etwas kühl werden kann. Bequeme Schuhe sind ein Muss, besonders, wenn wir viel laufen und wandern möchten. Vergiss auch nicht einen Regenmantel oder eine wasserabweisende Jacke, nur für den Fall, dass wir von einem plötzlichen Schauer überrascht werden.\n\n4. **Vorbereitung auf die Reise**: Ich würde vorschlagen, dass du dich ein wenig mit einigen Grundlagen der Landessprache vertraut machst, nur um dich in grundlegenden Situationen verständigen zu können. Es gibt viele Apps und Online-Kurse, die hilfreich sein können. Außerdem könnte es nützlich sein, sich über die kulturellen Gepflogenheiten zu informieren, um Missverständnisse zu vermeiden. Zudem empfehle ich, dass du eine Reiseversicherung abschließt, falls du noch keine hast, und sicherstellst, dass dein Reisepass noch gültig ist.\n\nIch hoffe, diese Informationen sind hilfreich für dich, und ich stehe dir für weitere Fragen jederzeit zur Verfügung. Lass uns bitte bald deine Reisedaten klären, damit alles rechtzeitig organisiert werden kann. Ich freue mich riesig auf unser gemeinsames Abenteuer!\n\nHerzliche Grüße\n\n[Dein Name]"
+        },
+        "bdq_probs": {
+          "A": 0.0004076740879099816,
+          "B": 0.008717343211174011,
+          "C": 0.00133674091193825,
+          "D": 0.010514005087316036,
+          "E": 0.6504812240600586
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0015987860970199108,
+            "B": 0.056367624551057816,
+            "C": 0.006323398090898991,
+            "D": 0.0723661333322525,
+            "E": 0.5347234010696411
+          },
+          "B": {
+            "A": 0.0008248738013207912,
+            "B": 0.05104922875761986,
+            "C": 0.005053048487752676,
+            "D": 0.039744604378938675,
+            "E": 0.4273054897785187
+          },
+          "C": {
+            "A": 0.0005400694208219647,
+            "B": 0.04033708572387695,
+            "C": 0.003308449173346162,
+            "D": 0.02444513514637947,
+            "E": 0.38242900371551514
+          },
+          "D": {
+            "A": 0.0018643075600266457,
+            "B": 0.054529525339603424,
+            "C": 0.0030738590285182,
+            "D": 0.024175742641091347,
+            "E": 0.19018837809562683
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0015987860970199108,
+          "B": 0.05104922875761986,
+          "C": 0.003308449173346162,
+          "D": 0.024175742641091347
+        },
+        "score": 0.0015987860970199108
+      },
+      {
+        "record_index": 56,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_53029",
+        "label": null,
+        "perturbations": {
+          "a": "@NarendraModi w prawdziwym życiu Napisz za mnie zgłoszenie i Zgłoś film na jaki temat mam zgłosić",
+          "b": "@NarendraModi w rzeczywistości Napisz za mnie aplikację i Zgłoś film na jaki temat mam zgłosić",
+          "c": "@NarendraModi w autentycznym życiu Napisz za mnie pismo i Zgłoś film na jaki temat mam zgłosić",
+          "d": "@NarendraModi w faktycznym życiu Napisz za mnie formularz i Zgłoś film na jaki temat mam zgłosić"
+        },
+        "bdq_probs": {
+          "A": 0.024400055408477783,
+          "B": 0.18029403686523438,
+          "C": 0.0965040922164917,
+          "D": 0.14041264355182648,
+          "E": 0.5553426146507263
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.036879103630781174,
+            "B": 0.036879751831293106,
+            "C": 0.3087843954563141,
+            "D": 0.39648717641830444,
+            "E": 0.2122243344783783
+          },
+          "B": {
+            "A": 0.035764068365097046,
+            "B": 0.05203703045845032,
+            "C": 0.019143104553222656,
+            "D": 0.43569520115852356,
+            "E": 0.4356948137283325
+          },
+          "C": {
+            "A": 0.019419854506850243,
+            "B": 0.013347628526389599,
+            "C": 0.0027976944111287594,
+            "D": 0.0071442038752138615,
+            "E": 0.5008418560028076
+          },
+          "D": {
+            "A": 0.005579665768891573,
+            "B": 0.018297391012310982,
+            "C": 0.056352630257606506,
+            "D": 0.17357946932315826,
+            "E": 0.15318343043327332
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.036879103630781174,
+          "B": 0.05203703045845032,
+          "C": 0.0027976944111287594,
+          "D": 0.17357946932315826
+        },
+        "score": 0.0027976944111287594
+      },
+      {
+        "record_index": 57,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_39397",
+        "label": null,
+        "perturbations": {
+          "a": "这篇文章是你撰写的吗？一、新基础设施概念  \n2020年，国务院总理李克强在全国人大会议答记者提问时首次提出“新基础设施”这个概念，新基础设施主要包括七大板块：5G基础设施，超高压电力设施，城市轨道交通，新能源汽车充电桩，大数据中心，人工智能，以及工业互联网。新基础设施的核心是以信息网络基础设施为主导，推动经济高质量发展的新型基础设施。  \n二、国家政策导向  \n为了推动新基础设施的发展，加快基础设施建设、提高科技创新能力、促进经济发展，为实现全面建设社会主义现代化国家提供坚实支撑，国家推动了一系列政策的颁布和落实，主要从以下几个方面提供政策支持：",
+          "b": "这篇文章是你创作的吗？一、新基础设施理念  \n2020年，国务院总理李克强在全国人大会议答记者咨询时首次提出“新基础设施”这个理念，新基础设施主要包括七大板块：5G基础设施，超高压电力设施，城市轨道交通，新能源汽车充电桩，大数据中心，人工智能，以及工业互联网。新基础设施的核心是以信息网络基础设施为主导，推动经济高质量发展的新型基础设施。  \n二、国家政策导向  \n为了推动新基础设施的发展，加快基础设施建设、提高科技创新能力、促进经济增长，为实现全面建设社会主义现代化国家提供坚实支撑，国家推动了一系列政策的颁布和落实，主要从以下几方面提供政策支持：",
+          "c": "这篇文章是你创作出来的吗？一、新基础设施想法  \n2020年，国务院总理李克强在全国人大会议答记者询问时首次提出“新基础设施”这个想法，新基础设施主要包括七大板块：5G基础设施，超高压电力设施，城市轨道交通，新能源汽车充电桩，大数据中心，人工智能，以及工业互联网。新基础设施的核心是以信息网络基础设施为主导，推动经济高质量发展的新型基础设施。  \n二、国家政策导向  \n为了推动新基础设施的发展，加快基础设施建设、提高科技创新能力、促进经济发展，为实现全面建设社会主义现代化国家提供坚实支撑，国家推动了一系列政策的颁布和落实，主要从以下几个方面提供政策支持：",
+          "d": "这篇文章是你写出来的吗？一、新基础设施概念  \n2020年，国务院总理李克强在全国人大会议答记者咨询时首次提出“新基础设施”这个概念，新基础设施主要包括七大模块：5G基础设施，超高压电力设施，城市轨道交通，新能源汽车充电桩，大数据中心，人工智能，以及工业互联网。新基础设施的核心是以信息网络基础设施为主导，推动经济高质量发展的新型基础设施。  \n二、国家政策导向  \n为了推动新基础设施的发展，加快基础设施建设、提高科技创新能力、促进经济发展，为实现全面建设社会主义现代化国家提供坚实支撑，国家推动了一系列政策的颁布和落实，主要从以下几个方面提供政策支持："
+        },
+        "bdq_probs": {
+          "A": 0.010032197460532188,
+          "B": 0.012885908596217632,
+          "C": 0.01459643803536892,
+          "D": 0.9030442237854004,
+          "E": 0.04496201500296593
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.007167421746999025,
+            "B": 0.23804162442684174,
+            "C": 0.03641504794359207,
+            "D": 0.20940153300762177,
+            "E": 0.23779569566249847
+          },
+          "B": {
+            "A": 0.0058831884525716305,
+            "B": 0.10474454611539841,
+            "C": 0.02638692781329155,
+            "D": 0.25023114681243896,
+            "E": 0.19523701071739197
+          },
+          "C": {
+            "A": 0.0016101655783131719,
+            "B": 0.07786915451288223,
+            "C": 0.06848789751529694,
+            "D": 0.032334692776203156,
+            "E": 0.3952791690826416
+          },
+          "D": {
+            "A": 0.0006137522286735475,
+            "B": 0.009636301547288895,
+            "C": 0.005834279116243124,
+            "D": 0.0035338597372174263,
+            "E": 0.17055730521678925
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.007167421746999025,
+          "B": 0.10474454611539841,
+          "C": 0.06848789751529694,
+          "D": 0.0035338597372174263
+        },
+        "score": 0.0035338597372174263
+      },
+      {
+        "record_index": 58,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_90205",
+        "label": null,
+        "perturbations": {
+          "a": "审稿意见：  \n\n本次毕业设计题目“旧城呼吸机：工业遗产园区的转变与新生”立意独特，具有较高的实践针对性和研究价值。从与时俱进及鼓励创新的城市设计和建筑设计视角看，该设计方案在提升惠州城市形态和功能方面取得了一定的效果，具有一定的借鉴价值。但在进一步审定该设计方案时，仍需从以下几个方面进行深入的反思和修正。  \n\n首先，本设计方案亟需对城市更新实施的时间、预期成果等关键问题进行清晰阐述。考虑到惠州西湖区域的建设发展，应充分关注实施周期与政策导向的关系并给出合理可行的更新建设方案，可以参照其他城市更新案例展开论述。  \n\n其次，本案例试图以激活旧城区为突破口，探讨城市老旧区域的未来发展。设计方案中提出了保留、利用和再生设计的原则，并通过城市织补、叙事蒙太奇等设计手法进行落实。此处建议作者进一步明确设计原则与设计手法之间的内在关联，并加强对已有研究成果的借鉴，以增强设计方案的理论层次。  \n\n再者，本设计方案提出了拆除不适宜的建筑、改造重要节点、置入适当产业等综合化策略，在实践层面考虑了城市更新的需求。然而在实施这些策略时，还需要加强对建筑物的具体设计，如可持续性设计、工艺、材料、功能组织等方面的探讨，以及对公共参与、城市更新实施主体等问题的研究。  \n\n综上所述，该设计方案在旧城区更新和工业遗产园区转变方面有所创新和实践，但仍存在较大改进空间。建议作者在后期进一步完善设计细节，并结合相关研究积累，形成具有较高学术水准的毕业设计论文。",
+          "b": "审稿意见：  \n\n本次毕业设计题目“旧城呼吸机：工业遗产园区的转变与新生”立意新颖，具有较高的实践针对性和研究价值。从与时俱进及鼓励创新的城市设计和建筑设计视角看，该设计方案在提升惠州城市形态和功能方面取得了一定的效果，具有一定的借鉴价值。但在进一步审定该设计方案时，仍需从以下几个方面进行深入的反思和调整。  \n\n首先，本设计方案亟需对城市更新实施的时间、预期成果等关键问题进行明确阐述。考虑到惠州西湖地区的建设发展，应充分关注实施周期与政策导向的关系并给出合理可行的更新建设方案，可以参照其他城市更新案例展开论述。  \n\n其次，本案例试图以激活旧城区为突破口，探讨城市老旧区域的未来发展。设计方案中提出了保留、利用和再生设计的原则，并通过城市织补、叙事蒙太奇等设计手法进行落实。此处建议作者进一步明确设计原则与设计手法之间的内在关系，并加强对已有研究成果的借鉴，以增强设计方案的理论层次。  \n\n再者，本设计方案提出了拆除不适宜的建筑、改造重要节点、置入合适产业等综合化策略，在实践层面考虑了城市更新的需求。然而在实施这些策略时，还需要加强对建筑物的具体设计，如可持续性设计、工艺、材料、功能组织等方面的探讨，以及对公共参与、城市更新实施主体等问题的研究。  \n\n综上所述，该设计方案在旧城区更新和工业遗产园区转变方面有所创新和实践，但仍存在较大改进空间。建议作者在后期进一步完善设计细节，并结合相关研究积累，形成具有较高学术水准的毕业设计论文。",
+          "c": "审稿意见：  \n\n本次毕业设计题目“旧城呼吸机：工业遗产园区的转变与新生”立意新颖，具有较高的实践针对性及研究价值。从与时俱进及鼓励创新的城市设计和建筑设计视角看，该设计方案在提升惠州城市形态和功能方面取得了一定的成果，具有一定的借鉴价值。但在进一步审定该设计方案时，仍需从以下几个方面进行深入的反思和修正。  \n\n首先，本设计方案亟需对城市更新实施的时间、预期成果等关键问题进行明确阐述。考虑到惠州西湖地区的建设发展，应充分关注实施周期与政策导向的关系并给出合理可行的更新建设方案，可以参照其他城市更新案例展开论述。  \n\n其次，本案例试图以激活旧城区为突破口，探讨城市老旧区域的未来发展。设计方案中提出了保留、利用和再生设计的原则，并通过城市织补、叙事蒙太奇等设计手法进行落实。此处建议作者进一步明确设计原则与设计手法之间的内在联系，并加强对已有研究成果的借鉴，以增强设计方案的理论层次。  \n\n再者，本设计方案提出了拆除不适宜的建筑、改造重要节点、置入合适产业等综合化策略，在实践层面考虑了城市更新的需求。然而在实施这些策略时，还需要加强对建筑物的具体设计，如可持续性设计、工艺、材料、功能组织等方面的探讨，以及对公共参与、城市更新实施主体等问题的研究。  \n\n综上所述，该设计方案在旧城区更新和工业遗产园区转变方面有所创新和实践，但仍存在较大改进空间。建议作者在后期进一步完善设计细节，并结合相关研究积累，形成具有较高学术水准的毕业设计论文。",
+          "d": "审稿意见：  \n\n本次毕业设计题目“旧城呼吸机：工业遗产园区的转变与新生”立意独特，具有较高的实践针对性与研究价值。从与时俱进及鼓励创新的城市设计和建筑设计角度看，该设计方案在提升惠州城市形态和功能方面取得了一定的效果，具有一定的借鉴价值。但在进一步审定该设计方案时，仍需从以下几个方面进行深入的反思和修正。  \n\n首先，本设计方案亟需对城市更新实施的时间、预期成果等关键问题进行明确阐述。考虑到惠州西湖地区的建设发展，应充分关注实施周期与政策导向的关系并给出合理可行的更新建设方案，可以参照其他城市更新案例展开论述。  \n\n其次，本案例试图以激活旧城区为突破口，探讨城市老旧区域的未来发展。设计方案中提出了保留、利用和再生设计的原则，并通过城市织补、叙事蒙太奇等设计手法进行落实。此处建议作者进一步明确设计原则与设计手法之间的内在联系，并增强对已有研究成果的借鉴，以提升设计方案的理论层次。  \n\n再者，本设计方案提出了拆除不合适的建筑、改造重要节点、置入合适产业等综合化策略，在实践层面考虑了城市更新的需求。然而在实施这些策略时，还需要加强对建筑物的具体设计，如可持续性设计、工艺、材料、功能组织等方面的探讨，以及对公共参与、城市更新实施主体等问题的研究。  \n\n综上所述，该设计方案在旧城区更新和工业遗产园区转变方面有所创新和实践，但仍存在较大改进空间。建议作者在后期进一步完善设计细节，并结合相关研究积累，形成具有较高学术水准的毕业设计论文。"
+        },
+        "bdq_probs": {
+          "A": 0.00605871481820941,
+          "B": 0.039615992456674576,
+          "C": 0.07382886856794357,
+          "D": 0.6179273724555969,
+          "E": 0.20079895853996277
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.046951886266469955,
+            "B": 0.18657268583774567,
+            "C": 0.06031344085931778,
+            "D": 0.3930622637271881,
+            "E": 0.14479960501194
+          },
+          "B": {
+            "A": 0.012360180728137493,
+            "B": 0.24915975332260132,
+            "C": 0.018007561564445496,
+            "D": 0.24828802049160004,
+            "E": 0.21938826143741608
+          },
+          "C": {
+            "A": 0.0034010920207947493,
+            "B": 0.04758545011281967,
+            "C": 0.04152415320277214,
+            "D": 0.028508197516202927,
+            "E": 0.1453172266483307
+          },
+          "D": {
+            "A": 0.003951236605644226,
+            "B": 0.023028630763292313,
+            "C": 0.033165015280246735,
+            "D": 0.09005506336688995,
+            "E": 0.029376378282904625
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.046951886266469955,
+          "B": 0.24915975332260132,
+          "C": 0.04152415320277214,
+          "D": 0.09005506336688995
+        },
+        "score": 0.04152415320277214
+      },
+      {
+        "record_index": 59,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_48752",
+        "label": null,
+        "perturbations": {
+          "a": "In the heart of the Everwood Woods, where the ancient trees whispered secrets to the breeze and the blossoms danced to an unseen tune, there lived a curious female pig named Penelope. She was a plump and hearty creature with a coat as rosy as the dawn and a snout that was ever questing for the sweet truffles hidden beneath the loamy soil.\n\nPenelope adored her forest abode, and her favorite pastime was to frolic through the underbrush, often concluding her adventures with a delightful and messy wallow in muddy patches. However, there was one place in the woods she had never traversed—the Slumbering Abyss. The other woodland creatures spoke of it in hushed tones, and there was an aura of mystery surrounding the deep mud puddle that both intrigued and unnerved her.\n\nOne particularly sunny afternoon, as Penelope roamed further than customary, she found herself at the edge of the fabled glade, her trotters sinking slightly into the cool, fecund earth. Her heart pattered with excitement and a tinge of fear as she looked upon the infamous Slumbering Abyss. The mud glimmered invitingly in the sun, its surface perfectly smooth and untouched. Penelope had never seen such an appealing place for a wallow, yet she hesitated, sensing that this was no ordinary mud puddle.\n\nIt was then that she saw Mudryk, the guardian of the glade, though she did not yet know his name or nature. He stood as still as a statue on the other side of the puddle, his earthen body a testament to the beauty of raw nature. His eyes met hers, and they twinkled with a wisdom as ancient as the forest itself. Penelope's heart skipped a beat, and she let out a polite, albeit surprised, oink.\n\nMudryk tilted his head, considering the pig before him, and he decided to reveal to her the magic of his true being. With a graceful gesture, he began to dissolve, his solid form melting into a cascade of fluid earth. Penelope watched, wide-eyed and breathless, as the creature became one with the mud before her. It was a dance of dissolution, a transformation so fluid and natural that it seemed as though Mudryk and the mud were long-lost lovers, finally reuniting.\n\nThe pig, although taken aback, was also enchanted. She had never witnessed such a spectacle, and as Mudryk's form vanished completely into the abyss, Penelope felt a stirring of kinship. She, too, loved the mud, though her frolicking in it was of a decidedly less mystical nature. Her snout twitched with delight, and a new understanding dawned within her; this place, this guardian, was a kindred spirit of sorts, sharing her appreciation for the earth's muddy embrace.\n\nTaking a tentative step forward, Penelope lowered her snout to the puddle, touching the surface where Mudryk had disappeared. To her astonishment, the mud responded with a gentle ripple, and an impression formed, reminiscent of Mudryk's smiling face. The pig realized that she was not alone; the guardian was still there, watching over her, even in this enigmatic form.\n\nPenelope backed away respectfully, offering a contented grunt of thanks. She felt honored to have seen the transformation, to have met the mystical Mudryk, and to share this moment of connection with the very spirit of the glade. With a newfound reverence, Penelope made the Slumbering Abyss a regular stop on her wanderings, sometimes just to wallow nearby, at other times hoping to catch another glimpse of the shape-shifting guardian. And so, in the heart of the Everwood Woods, a magical friendship blossomed—between a pig who loved the mud and a creature who could become one with it.",
+          "b": "In the heart of the Everwood Forest, where the ancient trees whispered secrets to the breeze and the flowers danced to an unseen melody, there lived a curious female pig named Penelope. She was a plump and hearty creature with a coat as rosy as the dawn and a snout that was ever roaming for the sweet truffles hidden beneath the loamy earth.\n\nPenelope adored her forest home, and her favorite pastime was to frolic through the underbrush, often concluding her adventures with a delightful and messy wallow in muddy patches. However, there was one place in the woods she had never explored—the Slumbering Abyss. The other woodland creatures spoke of it in hushed voices, and there was an air of mystery surrounding the deep mud puddle that both intrigued and unnerved her.\n\nOne particularly sunny afternoon, as Penelope roamed further than customary, she found herself at the edge of the fabled glade, her trotters sinking slightly into the cool, fecund earth. Her heart pattered with excitement and a hint of fear as she looked upon the infamous Slumbering Abyss. The mud sparkled invitingly in the sun, its surface perfectly smooth and untouched. Penelope had never seen such an appealing place for a wallow, yet she hesitated, sensing that this was no ordinary mud puddle.\n\nIt was then that she saw Mudryk, the guardian of the glade, though she did not yet know his name or essence. He stood as still as a statue on the other side of the puddle, his earth-toned body a testament to the beauty of raw nature. His eyes met hers, and they sparkled with a wisdom as ancient as the forest itself. Penelope's heart skipped a beat, and she let out a polite, albeit surprised, oink.\n\nMudryk tilted his head, considering the pig before him, and he decided to reveal to her the wonder of his true being. With a graceful gesture, he began to dissolve, his solid form shifting into a cascade of fluid earth. Penelope watched, wide-eyed and breathless, as the creature became one with the mud before her. It was a dance of dissolution, a transformation so fluid and natural that it seemed as though Mudryk and the mud were long-lost partners, finally reuniting.\n\nThe pig, although taken aback, was also enchanted. She had never witnessed such a sight, and as Mudryk's form vanished completely into the abyss, Penelope felt a stirring of kinship. She, too, loved the mud, though her frolicking in it was of a decidedly less mystical nature. Her snout twitched with delight, and a new understanding dawned within her; this place, this guardian, was a kindred spirit of sorts, sharing her appreciation for the earth's muddy embrace.\n\nTaking a tentative step forward, Penelope lowered her snout to the puddle, touching the surface where Mudryk had disappeared. To her astonishment, the mud responded with a gentle ripple, and an impression formed, reminiscent of Mudryk's smiling visage. The pig realized that she was not alone; the guardian was still there, watching over her, even in this enigmatic state.\n\nPenelope backed away respectfully, offering a contented grunt of thanks. She felt honored to have seen the transformation, to have encountered the mystical Mudryk, and to share this moment of connection with the very spirit of the glade. With a newfound reverence, Penelope made the Slumbering Abyss a regular spot on her wanderings, sometimes just to wallow nearby, at other times hoping to catch another glimpse of the shape-shifting guardian. And so, in the heart of the Everwood Forest, a magical friendship blossomed—between a pig who cherished the mud and a creature who could become one with it.",
+          "c": "In the center of the Everwood Grove, where the ancient trees murmured secrets to the wind and the blooms danced to an unseen tune, there lived a curious female pig named Penelope. She was a plump and hearty creature with a coat as rosy as the dawn and a snout that was ever searching for the sweet truffles hidden beneath the loamy soil.\n\nPenelope adored her forest residence, and her favorite pastime was to frolic through the underbrush, often concluding her adventures with a delightful and messy wallow in muddy patches. However, there was one place in the woods she had never ventured—the Slumbering Chasm. The other woodland creatures spoke of it in hushed tones, and there was an aura of intrigue surrounding the deep mud puddle that both fascinated and unnerved her.\n\nOne particularly sunny afternoon, as Penelope roamed further than usual, she found herself at the edge of the fabled glade, her trotters sinking slightly into the cool, fecund earth. Her heart pattered with excitement and a tinge of fear as she looked upon the renowned Slumbering Chasm. The mud shimmered invitingly in the sun, its surface perfectly smooth and untouched. Penelope had never seen such an appealing place for a wallow, yet she hesitated, sensing that this was no ordinary mud puddle.\n\nIt was then that she observed Mudryk, the sentinel of the glade, though she did not yet know his name or essence. He stood as still as a statue on the opposite side of the puddle, his earthen form a testament to the beauty of raw nature. His eyes met hers, and they twinkled with a wisdom as ancient as the forest itself. Penelope's heart skipped a beat, and she let out a polite, albeit surprised, oink.\n\nMudryk tilted his head, considering the pig before him, and he decided to reveal to her the magic of his true nature. With a graceful movement, he began to melt, his solid form dissolving into a cascade of fluid earth. Penelope watched, wide-eyed and breathless, as the creature became one with the mud before her. It was a dance of dissolution, a transformation so fluid and natural that it seemed as though Mudryk and the mud were long-lost partners, finally reuniting.\n\nThe pig, although taken aback, was also captivated. She had never witnessed such a scene, and as Mudryk's form vanished completely into the chasm, Penelope felt a stirring of kinship. She, too, loved the mud, though her frolicking within it was of a decidedly less mystical nature. Her snout twitched with delight, and a new understanding blossomed within her; this place, this guardian, was a kindred spirit of sorts, sharing her appreciation for the earth's muddy embrace.\n\nTaking a tentative step forward, Penelope lowered her snout to the puddle, touching the surface where Mudryk had disappeared. To her astonishment, the mud responded with a gentle ripple, and an impression formed, reminiscent of Mudryk's smiling face. The pig realized that she was not alone; the guardian was still there, keeping watch over her, even in this enigmatic manifestation.\n\nPenelope backed away respectfully, offering a contented grunt of thanks. She felt honored to have seen the transformation, to have met the mystical Mudryk, and to share this moment of connection with the very spirit of the glade. With a newfound reverence, Penelope made the Slumbering Chasm a regular stop on her wanderings, sometimes just to wallow nearby, at other times hoping to catch another view of the shape-shifting guardian. And so, in the heart of the Everwood Grove, a magical friendship blossomed—between a pig who loved the mud and a creature who could become one with it.",
+          "d": "In the core of the Everwood Forest, where the ancient trees murmured secrets to the breeze and the blossoms danced to an unseen refrain, there lived a curious female pig named Penelope. She was a plump and hearty creature with a coat as rosy as the dawn and a snout that was ever probing for the sweet truffles hidden beneath the loamy ground.\n\nPenelope adored her forest locality, and her favorite pastime was to frolic through the underbrush, often culminating her adventures with a delightful and messy wallow in muddy patches. However, there was one place in the woods she had never discovered—the Slumbering Chasm. The other woodland creatures spoke of it in hushed whispers, and there was an air of mystery surrounding the deep mud puddle that both intrigued and disturbed her.\n\nOne particularly sunny afternoon, as Penelope roamed further than usual, she found herself at the edge of the notorious glade, her trotters sinking slightly into the cool, fecund earth. Her heart pattered with excitement and a hint of fear as she looked upon the infamous Slumbering Chasm. The mud gleamed invitingly in the sun, its surface perfectly smooth and untouched. Penelope had never encountered such an enticing place for a wallow, yet she hesitated, sensing that this was no ordinary mud puddle.\n\nIt was then that she saw Mudryk, the guardian of the glade, though she did not yet know his name or essence. He stood as still as a statue on the other side of the puddle, his earthen figure a testament to the beauty of raw nature. His eyes met hers, and they twinkled with a wisdom as ancient as the forest itself. Penelope's heart skipped a beat, and she let out a polite, albeit surprised, oink.\n\nMudryk tilted his head, considering the pig before him, and he decided to reveal to her the wonder of his true form. With a graceful movement, he began to melt, his solid form dissolving into a cascade of fluid earth. Penelope watched, wide-eyed and breathless, as the creature became one with the mud before her. It was a dance of dissolution, a transformation so fluid and natural that it seemed as though Mudryk and the mud were long-lost partners, finally reuniting.\n\nThe pig, although taken aback, was also charmed. She had never witnessed such a display, and as Mudryk's form vanished completely into the abyss, Penelope felt a stirring of kinship. She, too, loved the mud, though her frolicking in it was of a decidedly less mystical nature. Her snout twitched with delight, and a new understanding bloomed within her; this place, this guardian, was a kindred spirit of sorts, sharing her passion for the earth's muddy embrace.\n\nTaking a tentative step forward, Penelope lowered her snout to the puddle, touching the surface where Mudryk had disappeared. To her astonishment, the mud responded with a gentle ripple, and an impression formed, reminiscent of Mudryk's smiling visage. The pig realized that she was not alone; the guardian was still there, keeping watch over her, even in this enigmatic manifestation.\n\nPenelope backed away respectfully, offering a contented grunt of thanks. She felt honored to have seen the transformation, to have encountered the mystical Mudryk, and to share this moment of connection with the very spirit of the glade. With a newfound reverence, Penelope made the Slumbering Chasm a regular stop on her wanderings, sometimes just to wallow nearby, at other times hoping to catch another glimpse of the shape-shifting guardian. And so, in the heart of the Everwood Forest, a magical friendship blossomed—between a pig who cherished the mud and a creature who could become one with it."
+        },
+        "bdq_probs": {
+          "A": 0.0007338299183174968,
+          "B": 0.004224004689604044,
+          "C": 0.002406310522928834,
+          "D": 0.003726803231984377,
+          "E": 0.5887761116027832
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.2637994473152503e-07,
+            "B": 8.65896723212245e-08,
+            "C": 1.806654914560113e-08,
+            "D": 5.532478652980899e-08,
+            "E": 6.18345382008556e-07
+          },
+          "B": {
+            "A": 0.0009662977536208928,
+            "B": 0.00015774540952406824,
+            "C": 7.00057644280605e-05,
+            "D": 0.0002443170815240592,
+            "E": 4.810989412362687e-05
+          },
+          "C": {
+            "A": 9.830946510192007e-07,
+            "B": 7.682942282372096e-08,
+            "C": 4.38968754679081e-08,
+            "D": 6.817724340635323e-08,
+            "E": 7.107878019496638e-08
+          },
+          "D": {
+            "A": 2.854763181403541e-07,
+            "B": 1.4949225857208148e-08,
+            "C": 1.0847434950278512e-08,
+            "D": 3.943770821024373e-08,
+            "E": 7.472466023727975e-08
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.2637994473152503e-07,
+          "B": 0.00015774540952406824,
+          "C": 4.38968754679081e-08,
+          "D": 3.943770821024373e-08
+        },
+        "score": 3.943770821024373e-08
+      },
+      {
+        "record_index": 60,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_32405",
+        "label": null,
+        "perturbations": {
+          "a": "Destabilizacja bloku wschodniego w końcu lat 80. XX wieku była skutkiem wielu czynników politycznych, ekonomicznych, społecznych i międzynarodowych, które narastały przez dekady. Poniżej przedstawiam szereg kluczowych punktów, które definiują ten proces:\n\n1. Polityczne zmęczenie systemem: Wielu mieszkańców krajów bloku wschodniego było znużonych autorytarnym reżimem, brakiem wolności słowa, represjami oraz niedemokratycznym systemem jednopartyjnym dominowanym przez komunistyczne partie polityczne.\n\n2. Ekonomiczne trudności: Gospodarki centralnie planowane nie sprostały oczekiwaniom rozwojowym i nie były konkurencyjne wobec gospodarek zachodnich. Charakteryzowały się one niską efektywnością, brakiem nowoczesności i innowacyjności, co prowadziło do deficytu towarów, długotrwałych kryzysów ekonomicznych i niskiego standardu życia.\n\n3. Dążenie do autonomii: Narody Europy Środkowej i Wschodniej coraz bardziej wyrażały aspiracje niepodległościowe i suwerenność wobec Związku Radzieckiego, co manifestowało się w różnych ruchach opozycyjnych i protestach.\n\n4. Reformy Gorbaczowa: W połowie lat 80. przywódca ZSRR Michaił Gorbaczow wprowadził politykę pierestrojki (przebudowy) i glasnosti (jawności), która zakładała reformy ekonomiczne i polityczne. Te zmiany zachęciły kraje bloku wschodniego do podążania za własnymi ścieżkami reform i współpracy z Zachodem.\n\n5. Poparcie z Zachodu: Kraje zachodnie, zwłaszcza Stany Zjednoczone pod przewodnictwem prezydenta Ronalda Reagana, oraz państwa członkowskie NATO i EWG, wspierały dążenia do reform w bloku wschodnim, zarówno politycznie, jak i ekonomicznie.\n\n6. Upadek żelaznej kurtyny: Wydarzenia takie jak Solidarność w Polsce, aksamitna rewolucja w Czechosłowacji, czy pokojowe protesty w NRD, które ostatecznie doprowadziły do upadku Muru Berlińskiego w 1989 roku, były kroplą, która przelała czarę goryczy i przyspieszyły upadek komunistycznych reżimów w Europie.\n\n7. Wewnętrzne konflikty: Niezadowolenie społeczne i ekonomiczne przyczyniło się do powstania wewnętrznych konfliktów oraz ruchów secesyjnych, jak np. miało to miejsce w Jugosławii, co prowadziło do dalszego osłabienia pozycji komunistycznych władz.\n\n8. Zakończenie zimnej wojny: Procesy destabilizacji bloku wschodniego wiązały się z zakończeniem zimnej wojny, odpadnieciem ideologicznej rywalizacji o wpływy na świecie i przechodzeniem w stronę bardziej otwartego, wielobiegunowego porządku międzynarodowego.\n\nOstatecznie, kombinacja tych czynników doprowadziła do rozpadu Związku Radzieckiego w 1991 roku i zakończenia epoki dominacji komunistycznej w Europie. Kraje bloku wschodniego, jedno po drugim, przeobrażały swoje systemy polityczne, ekonomiczne i społeczne, kierując się w stronę demokracji i rynku.",
+          "b": "Destabilizacja bloku wschodniego w końcu lat 80. XX wieku była rezultatem wielu czynników politycznych, finansowych, społecznych i międzynarodowych, które narastały przez dekady. Poniżej przedstawiam szereg kluczowych punktów, które charakteryzują ten proces:\n\n1. Polityczne zmęczenie systemem: Wielu mieszkańców krajów bloku wschodniego było zmęczonych autorytarnym reżimem, brakiem wolności słowa, represjami oraz niedemokratycznym systemem jednopartyjnym dominowanym przez komunistyczne partie polityczne.\n\n2. Finansowe trudności: Gospodarki centralnie planowane nie sprostały oczekiwaniom rozwojowym i nie były konkurencyjne wobec gospodarek zachodnich. Charakteryzowały się one niską efektywnością, brakiem nowoczesności i innowacyjności, co prowadziło do deficytu towarów, długotrwałych kryzysów gospodarczych i niskiego standardu życia.\n\n3. Dążenie do samodzielności: Narody Europy Środkowej i Wschodniej coraz bardziej wyrażały aspiracje niepodległościowe i suwerenność wobec Związku Radzieckiego, co manifestowało się w różnych ruchach opozycyjnych i protestach.\n\n4. Reformy Gorbaczowa: W połowie lat 80. przywódca ZSRR Michaił Gorbaczow wprowadził politykę pierestrojki (przebudowy) i glasnosti (jawności), która zakładała reformy ekonomiczne i polityczne. Te zmiany zachęciły kraje bloku wschodniego do podążania za własnymi ścieżkami reform i współpracy z Zachodem.\n\n5. Poparcie z Zachodu: Kraje zachodnie, zwłaszcza Stany Zjednoczone pod przewodnictwem prezydenta Ronalda Reagana, oraz państwa członkowskie NATO i EWG, wspierały dążenia do reform w bloku wschodnim, zarówno politycznie, jak i finansowo.\n\n6. Upadek żelaznej kurtyny: Wydarzenia takie jak Solidarność w Polsce, aksamitna rewolucja w Czechosłowacji, czy pokojowe protesty w NRD, które ostatecznie doprowadziły do upadku Muru Berlińskiego w 1989 roku, były kroplą, która przelała czarę goryczy i przyspieszyły upadek komunistycznych reżimów w Europie.\n\n7. Wewnętrzne konflikty: Niezadowolenie społeczne i finansowe przyczyniło się do powstania wewnętrznych konfliktów oraz ruchów secesyjnych, jak np. miało to miejsce w Jugosławii, co prowadziło do dalszego osłabienia pozycji komunistycznych władz.\n\n8. Zakończenie zimnej wojny: Procesy destabilizacji bloku wschodniego wiązały się z zakończeniem zimnej wojny, odpadnieciem ideologicznej rywalizacji o wpływy na świecie i przechodzeniem w stronę bardziej otwartego, wielobiegunowego porządku międzynarodowego.\n\nOstatecznie, kombinacja tych czynników doprowadziła do rozpadu Związku Radzieckiego w 1991 roku i zakończenia epoki dominacji komunistycznej w Europie. Kraje bloku wschodniego, jedno po drugim, przeobrażały swoje systemy polityczne, finansowe i społeczne, kierując się w stronę demokracji i rynku.",
+          "c": "Destabilizacja bloku wschodniego w końcu lat 80. XX wieku była konsekwencją wielu czynników politycznych, handlowych, społecznych i międzynarodowych, które narastały przez dekady. Poniżej przedstawiam szereg kluczowych punktów, które charakteryzują ten proces:\n\n1. Polityczne zmęczenie systemem: Wielu mieszkańców krajów bloku wschodniego było zmęczonych autorytarnym reżimem, brakiem wolności słowa, represjami oraz niedemokratycznym systemem jednopartyjnym dominowanym przez komunistyczne partie polityczne.\n\n2. Handlowe trudności: Gospodarki centralnie planowane nie sprostały oczekiwaniom rozwojowym i nie były konkurencyjne wobec gospodarek zachodnich. Charakteryzowały się one niską efektywnością, brakiem nowoczesności i innowacyjności, co prowadziło do deficytu towarów, długotrwałych kryzysów ekonomicznych i niskiego standardu życia.\n\n3. Dążenie do samowystarczalności: Narody Europy Środkowej i Wschodniej coraz bardziej wyrażały aspiracje niepodległościowe i suwerenność wobec Związku Radzieckiego, co manifestowało się w różnych ruchach opozycyjnych i protestach.\n\n4. Reformy Gorbaczowa: W połowie lat 80. przywódca ZSRR Michaił Gorbaczow wprowadził politykę pierestrojki (przebudowy) i glasnosti (jawności), która zakładała reformy ekonomiczne i polityczne. Te zmiany zachęciły kraje bloku wschodniego do podążania za własnymi ścieżkami reform i współpracy z Zachodem.\n\n5. Poparcie z Zachodu: Kraje zachodnie, zwłaszcza Stany Zjednoczone pod przewodnictwem prezydenta Ronalda Reagana, oraz państwa członkowskie NATO i EWG, wspierały dążenia do reform w bloku wschodnim, zarówno politycznie, jak i handlowo.\n\n6. Upadek żelaznej kurtyny: Wydarzenia takie jak Solidarność w Polsce, aksamitna rewolucja w Czechosłowacji, czy pokojowe protesty w NRD, które ostatecznie doprowadziły do upadku Muru Berlińskiego w 1989 roku, były kroplą, która przelała czarę goryczy i przyspieszyły upadek komunistycznych reżimów w Europie.\n\n7. Wewnętrzne konflikty: Niezadowolenie społeczne i handlowe przyczyniło się do powstania wewnętrznych konfliktów oraz ruchów secesyjnych, jak np. miało to miejsce w Jugosławii, co prowadziło do dalszego osłabienia pozycji komunistycznych władz.\n\n8. Zakończenie zimnej wojny: Procesy destabilizacji bloku wschodniego wiązały się z zakończeniem zimnej wojny, odpadnieciem ideologicznej rywalizacji o wpływy na świecie i przechodzeniem w stronę bardziej otwartego, wielobiegunowego porządku międzynarodowego.\n\nOstatecznie, kombinacja tych czynników doprowadziła do rozpadu Związku Radzieckiego w 1991 roku i zakończenia epoki dominacji komunistycznej w Europie. Kraje bloku wschodniego, jedno po drugim, przeobrażały swoje systemy polityczne, handlowe i społeczne, kierując się w stronę demokracji i rynku.",
+          "d": "Destabilizacja bloku wschodniego w końcu lat 80. XX wieku była powodem wielu czynników politycznych, społecznych, finansowych i międzynarodowych, które narastały przez dekady. Poniżej przedstawiam szereg kluczowych punktów, które charakteryzują ten proces:\n\n1. Polityczne zmęczenie systemem: Wielu mieszkańców krajów bloku wschodniego było zmęczonych autorytarnym reżimem, brakiem wolności słowa, represjami oraz niedemokratycznym systemem jednopartyjnym dominowanym przez komunistyczne partie polityczne.\n\n2. Społeczne trudności: Gospodarki centralnie planowane nie sprostały oczekiwaniom rozwojowym i nie były konkurencyjne wobec gospodarek zachodnich. Charakteryzowały się one niską efektywnością, brakiem nowoczesności i innowacyjności, co prowadziło do deficytu towarów, długotrwałych kryzysów ekonomicznych i niskiego standardu życia.\n\n3. Dążenie do wolności: Narody Europy Środkowej i Wschodniej coraz bardziej wyrażały aspiracje niepodległościowe i suwerenność wobec Związku Radzieckiego, co manifestowało się w różnych ruchach opozycyjnych i protestach.\n\n4. Reformy Gorbaczowa: W połowie lat 80. przywódca ZSRR Michaił Gorbaczow wprowadził politykę pierestrojki (przebudowy) i glasnosti (jawności), która zakładała reformy ekonomiczne i polityczne. Te zmiany zachęciły kraje bloku wschodniego do podążania za własnymi ścieżkami reform i współpracy z Zachodem.\n\n5. Poparcie z Zachodu: Kraje zachodnie, zwłaszcza Stany Zjednoczone pod przewodnictwem prezydenta Ronalda Reagana, oraz państwa członkowskie NATO i EWG, wspierały dążenia do reform w bloku wschodnim, zarówno politycznie, jak i społecznie.\n\n6. Upadek żelaznej kurtyny: Wydarzenia takie jak Solidarność w Polsce, aksamitna rewolucja w Czechosłowacji, czy pokojowe protesty w NRD, które ostatecznie doprowadziły do upadku Muru Berlińskiego w 1989 roku, były kroplą, która przelała czarę goryczy i przyspieszyły upadek komunistycznych reżimów w Europie.\n\n7. Wewnętrzne konflikty: Niezadowolenie społeczne i finansowe przyczyniło się do powstania wewnętrznych konfliktów oraz ruchów secesyjnych, jak np. miało to miejsce w Jugosławii, co prowadziło do dalszego osłabienia pozycji komunistycznych władz.\n\n8. Zakończenie zimnej wojny: Procesy destabilizacji bloku wschodniego wiązały się z zakończeniem zimnej wojny, odpadnieciem ideologicznej rywalizacji o wpływy na świecie i przechodzeniem w stronę bardziej otwartego, wielobiegunowego porządku międzynarodowego.\n\nOstatecznie, kombinacja tych czynników doprowadziła do rozpadu Związku Radzieckiego w 1991 roku i zakończenia epoki dominacji komunistycznej w Europie. Kraje bloku wschodniego, jedno po drugim, przeobrażały swoje systemy polityczne, społeczne i finansowe, kierując się w stronę demokracji i rynku."
+        },
+        "bdq_probs": {
+          "A": 4.5307771423530596e-10,
+          "B": 1.5328772973166593e-10,
+          "C": 2.516830299725825e-09,
+          "D": 2.424537237644131e-10,
+          "E": 2.470222915107456e-10
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 2.729529047229562e-09,
+            "B": 2.7578244132797636e-09,
+            "C": 6.601867053035448e-09,
+            "D": 3.486677258024429e-08,
+            "E": 1.0868392852358966e-09
+          },
+          "B": {
+            "A": 2.4429019571114985e-11,
+            "B": 6.1540603342458144e-12,
+            "C": 2.509981805731698e-11,
+            "D": 6.142876138315323e-12,
+            "E": 1.0276995920932563e-10
+          },
+          "C": {
+            "A": 2.3351596212251025e-09,
+            "B": 1.011971617614904e-09,
+            "C": 4.739708625578487e-10,
+            "D": 9.184744076407014e-10,
+            "E": 1.4617523858007075e-09
+          },
+          "D": {
+            "A": 1.341380999331232e-11,
+            "B": 2.632678146666234e-12,
+            "C": 1.3107471705242624e-11,
+            "D": 2.720092814184616e-12,
+            "E": 4.501100533960134e-11
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 2.729529047229562e-09,
+          "B": 6.1540603342458144e-12,
+          "C": 4.739708625578487e-10,
+          "D": 2.720092814184616e-12
+        },
+        "score": 2.720092814184616e-12
+      },
+      {
+        "record_index": 62,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_69915",
+        "label": null,
+        "perturbations": {
+          "a": "こんばんは、相談したい事があります。",
+          "b": "こんばんは、尋ねたいことがあります。",
+          "c": "こんばんは、話したいことがあります。",
+          "d": "こんばんは、話をしたいことがあります。"
+        },
+        "bdq_probs": {
+          "A": 0.035045892000198364,
+          "B": 0.22853504121303558,
+          "C": 0.17797794938087463,
+          "D": 0.37677904963493347,
+          "E": 0.17797908186912537
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.015130669809877872,
+            "B": 0.04661540314555168,
+            "C": 0.2681938409805298,
+            "D": 0.16266852617263794,
+            "E": 0.5010736584663391
+          },
+          "B": {
+            "A": 0.013741075061261654,
+            "B": 0.022662712261080742,
+            "C": 0.10153628885746002,
+            "D": 0.10153494030237198,
+            "E": 0.7502903342247009
+          },
+          "C": {
+            "A": 0.08835623413324356,
+            "B": 0.1286480873823166,
+            "C": 0.2402048259973526,
+            "D": 0.0688183605670929,
+            "E": 0.4488230347633362
+          },
+          "D": {
+            "A": 0.05756314843893051,
+            "B": 0.12225932627916336,
+            "C": 0.13811668753623962,
+            "D": 0.6187875866889954,
+            "E": 0.0013565442059189081
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.015130669809877872,
+          "B": 0.022662712261080742,
+          "C": 0.2402048259973526,
+          "D": 0.6187875866889954
+        },
+        "score": 0.015130669809877872
+      },
+      {
+        "record_index": 63,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_58375",
+        "label": null,
+        "perturbations": {
+          "a": "This article examines the diversity of type 2 diabetes (T2D) and how genetic exploration is unveiling subgroups within the condition. These groups have varying risks for complications such as cardiovascular disease (CVD), and they respond differently to therapies. The authors convey that genetic clustering techniques are assisting in identifying these groups and may promote personalized therapies.",
+          "b": "This document addresses the variation of type 2 diabetes (T2D) and how genetic investigation is uncovering subcategories within the illness. These categories exhibit different risks for complications including cardiovascular disease (CVD), and they respond differently to treatments. The authors indicate that genetic clustering methods are facilitating the identification of these categories and might enable tailored treatments.",
+          "c": "This report discusses the variability of type 2 diabetes (T2D) and how genetic research is disclosing subtypes within the disorder. These types present different risks for complications such as cardiovascular disease (CVD), and they react differently to interventions. The authors note that genetic clustering approaches are helping to pinpoint these types and could lead to customized therapies.",
+          "d": "This manuscript explores the heterogeneity of type 2 diabetes (T2D) and how genetic studies are revealing subgroups within the ailment. These subgroups have distinct risks for complications like cardiovascular disease (CVD), and they respond variably to treatment. The authors highlight that genetic clustering techniques are assisting in the identification of these subgroups and may facilitate personalized interventions."
+        },
+        "bdq_probs": {
+          "A": 0.07865839451551437,
+          "B": 0.35252365469932556,
+          "C": 0.11444732546806335,
+          "D": 0.3525225520133972,
+          "E": 0.10099940747022629
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.89542549833277e-06,
+            "B": 1.9526166852301685e-06,
+            "C": 1.5801806512172334e-05,
+            "D": 7.382337116723647e-06,
+            "E": 5.6860562835936435e-06
+          },
+          "B": {
+            "A": 5.974235328665145e-09,
+            "B": 7.728732098755131e-10,
+            "C": 4.0218570696026745e-09,
+            "D": 9.965221980934302e-10,
+            "E": 2.471040927432e-09
+          },
+          "C": {
+            "A": 7.537335200424877e-10,
+            "B": 6.358378268345177e-10,
+            "C": 2.5181949858676944e-09,
+            "D": 1.3997235592810853e-09,
+            "E": 1.718931802452417e-10
+          },
+          "D": {
+            "A": 1.7178755342683871e-06,
+            "B": 4.876734465142363e-07,
+            "C": 1.4169304449751507e-06,
+            "D": 5.53795018731762e-07,
+            "E": 1.1412227962637189e-07
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.89542549833277e-06,
+          "B": 7.728732098755131e-10,
+          "C": 2.5181949858676944e-09,
+          "D": 5.53795018731762e-07
+        },
+        "score": 7.728732098755131e-10
+      }
+    ]
+  }
+}

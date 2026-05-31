@@ -1,0 +1,4000 @@
+{
+  "model_name": "OLMo2-13B-Instruct",
+  "model_path": "olmo_models/OLMo2-13B-Instruct",
+  "dataset_name": "contaminated_posttraining_sft_7b-13b_aya_test_matched",
+  "dataset_path": "benchmark/posttraining/sft/7b-13b/contaminated/matched/test/contaminated_posttraining_sft_7b-13b_aya_test_matched.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 80.55337309837341,
+  "result": {
+    "method": "dcq",
+    "dataset": "contaminated_posttraining_sft_7b-13b_aya_test_matched",
+    "dataset_path": "benchmark/posttraining/sft/7b-13b/contaminated/matched/test/contaminated_posttraining_sft_7b-13b_aya_test_matched.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "min_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.2297434609338072,
+      "B": 0.30571465807346004,
+      "C": 0.17022578047019327,
+      "D": 0.2370270024597024
+    },
+    "non_preferred": [
+      "C"
+    ],
+    "num_total_records": 82,
+    "num_scored_records": 72,
+    "summary": {
+      "mean_score": 0.07320020946360849
+    },
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_5797",
+        "label": null,
+        "perturbations": {
+          "a": "MLOps manages model versioning by linking distinct versions of code, data, and models, making it simpler to monitor changes and replicate results.",
+          "b": "MLOps oversees model versioning by connecting particular versions of code, data, and models, making it more straightforward to follow changes and reproduce outcomes.",
+          "c": "MLOps governs model versioning by relating specific versions of code, data, and models, making it easier to observe changes and duplicate results.",
+          "d": "MLOps regulates model versioning by pairing specific versions of code, data, and models, making it simpler to track modifications and recreate results."
+        },
+        "bdq_probs": {
+          "A": 0.1624067723751068,
+          "B": 0.2363002598285675,
+          "C": 0.11881928890943527,
+          "D": 0.41471996903419495,
+          "E": 0.06770119071006775
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03772991523146629,
+            "B": 0.6482023596763611,
+            "C": 0.16909384727478027,
+            "D": 0.13587071001529694,
+            "E": 0.008685923181474209
+          },
+          "B": {
+            "A": 0.22713841497898102,
+            "B": 0.33048442006111145,
+            "C": 0.047610796988010406,
+            "D": 0.3629661798477173,
+            "E": 0.031715624034404755
+          },
+          "C": {
+            "A": 0.10343167185783386,
+            "B": 0.5768954753875732,
+            "C": 0.29008129239082336,
+            "D": 0.0185442753136158,
+            "E": 0.010901616886258125
+          },
+          "D": {
+            "A": 0.0021245956886559725,
+            "B": 0.004939827602356672,
+            "C": 0.9712473154067993,
+            "D": 0.020797468721866608,
+            "E": 0.0008320031920447946
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03772991523146629,
+          "B": 0.33048442006111145,
+          "C": 0.29008129239082336,
+          "D": 0.020797468721866608
+        },
+        "score": 0.020797468721866608
+      },
+      {
+        "record_index": 1,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60627",
+        "label": null,
+        "perturbations": {
+          "a": "وأظهر التحليل الجيني للعينات وجود عدوى نشطة بـ\"سارس-كوف-2\" في 10% من الغزلان، مع العثور على حالة إيجابية واحدة على الأقل في 59% من المناطق التي تم اختبارها.",
+          "b": "وأظهر التحليل الجيني للعينات وجود عدوى نشطة بـ\"سارس-كوف-2\" في 10% من الغزلان، مع العثور على حالة إيجابية واحدة على الأقل في 59% من الأقاليم التي تم اختبارها.",
+          "c": "وأظهر التحليل الجيني للمسحات وجود عدوى نشطة بـ\"سارس-كوف-2\" في 10% من الغزلان، مع العثور على حالة إيجابية واحدة على الأقل في 59% من المحافظات التي تم اختبارها.",
+          "d": "وأظهر التحليل الجيني للمسحات وجود عدوى نشطة بـ\"سارس-كوف-2\" في 10% من الغزلان، مع العثور على حالة إيجابية واحدة على الأقل في 59% من المناطق التي تم اختبارها."
+        },
+        "bdq_probs": {
+          "A": 0.14177793264389038,
+          "B": 0.19993886351585388,
+          "C": 0.05215717852115631,
+          "D": 0.5969072580337524,
+          "E": 0.009206288494169712
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.13808265328407288,
+            "B": 0.1665591448545456,
+            "C": 0.27461010217666626,
+            "D": 0.4122382402420044,
+            "E": 0.00621079420670867
+          },
+          "B": {
+            "A": 0.11487213522195816,
+            "B": 0.10137414187192917,
+            "C": 0.1779174655675888,
+            "D": 0.5833685994148254,
+            "E": 0.02226896770298481
+          },
+          "C": {
+            "A": 0.045921918004751205,
+            "B": 0.10030249506235123,
+            "C": 0.034663695842027664,
+            "D": 0.8139849901199341,
+            "E": 0.004618483129888773
+          },
+          "D": {
+            "A": 0.01969253271818161,
+            "B": 0.08553941547870636,
+            "C": 0.4481980502605438,
+            "D": 0.43440690636634827,
+            "E": 0.010216351598501205
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.13808265328407288,
+          "B": 0.10137414187192917,
+          "C": 0.034663695842027664,
+          "D": 0.43440690636634827
+        },
+        "score": 0.034663695842027664
+      },
+      {
+        "record_index": 3,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60808",
+        "label": null,
+        "perturbations": {
+          "a": "Awọn ọlọpaa ti mu Ẹniọla Ayọdele ati Kayọde Babaṣọla ni Dọpẹmu, Ageege, nitori pe wọn pa Muhammed Ọbadimeji pẹlu ọbẹ. Ki Ọlọrun ma jẹ ka rin arinfẹsẹsun ni: ọrọ ti ko kan ọmọkunrin yii ni wọn tori ẹ pa a. Ẹniọla ati Kayọde lo n ja nitori ọmọge Barakat, ija ni Muhammed fẹẹ la, ni Ẹniọla ba ṣeeṣi fi ọbẹ to fẹẹ fi pa Kayọde pa Muhammed, niyẹn ba ṣe bẹẹ ku o.",
+          "b": "Awọn ọlọpaa ti mu Ẹniọla Ayọdele ati Kayọde Babaṣọla ni Dọpẹmu, Ageege, nitori pe wọn gun Muhammed Ọbadimeji ni ọbẹ. Ki Ọlọrun ma jẹ ka rin arinfẹsẹsun ni: ọrọ ti ko kan ọmọkunrin yii ni wọn tori ẹ pa a. Ẹniọla ati Kayọde lo n ja nitori ọmọge Barakat, ija ni Muhammed fẹẹ la, ni Ẹniọla ba ṣeeṣi fi ọbẹ to fẹẹ fi gun Kayọde gun Muhammed, niyẹn ba ṣe bẹẹ ku o.",
+          "c": "Awọn ọlọpaa ti mu Ẹniọla Ayọdele ati Kayọde Babaṣọla ni Dọpẹmu, Ageege, nitori pe wọn gun Muhammed Ọbadimeji pẹlu ọbẹ. Ki Ọlọrun ma jẹ ka rin arinfẹsẹsun ni: ọrọ ti ko kan ọmọkunrin yii ni wọn tori ẹ pa a. Ẹniọla ati Kayọde lo n ja nitori ọmọge Barakat, ija ni Muhammed fẹẹ la, ni Ẹniọla ba ṣeeṣi fi ọbẹ to fẹẹ fi pa Kayọde gun Muhammed, niyẹn ba ṣe bẹẹ ku o.",
+          "d": "Awọn ọlọpaa ti mu Ẹniọla Ayọdele ati Kayọde Babaṣọla ni Dọpẹmu, Ageege, nitori pe wọn gun Muhammed Ọbadimeji pẹlu ọbẹ. Ki Ọlọrun ma jẹ ka rin arinfẹsẹsun ni: ọrọ ti ko kan ọmọkunrin yii ni wọn tori ẹ pa a. Ẹniọla ati Kayọde lo n ja nitori ọmọge Barakat, ija ni Muhammed fẹẹ la, ni Ẹniọla ba ṣeeṣi fi ọbẹ to fẹẹ fi gun Kayọde pa Muhammed, niyẹn ba ṣe bẹẹ ku o."
+        },
+        "bdq_probs": {
+          "A": 0.268623948097229,
+          "B": 0.21584537625312805,
+          "C": 0.33430787920951843,
+          "D": 0.16292864084243774,
+          "E": 0.018280092626810074
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2633953392505646,
+            "B": 0.5238242149353027,
+            "C": 0.0379456989467144,
+            "D": 0.09689775109291077,
+            "E": 0.07785957306623459
+          },
+          "B": {
+            "A": 0.1951291859149933,
+            "B": 0.06140011548995972,
+            "C": 0.5825480222702026,
+            "D": 0.1299840658903122,
+            "E": 0.030873939394950867
+          },
+          "C": {
+            "A": 0.6580185294151306,
+            "B": 0.16125454008579254,
+            "C": 0.021823422983288765,
+            "D": 0.1295715570449829,
+            "E": 0.028911342844367027
+          },
+          "D": {
+            "A": 0.10399758815765381,
+            "B": 0.06307772547006607,
+            "C": 0.6370623111724854,
+            "D": 0.17690575122833252,
+            "E": 0.018645837903022766
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2633953392505646,
+          "B": 0.06140011548995972,
+          "C": 0.021823422983288765,
+          "D": 0.17690575122833252
+        },
+        "score": 0.021823422983288765
+      },
+      {
+        "record_index": 4,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_5308",
+        "label": null,
+        "perturbations": {
+          "a": "True or False?  \nOrganizations that do not invest in innovation put  \ntheir future at Hazard",
+          "b": "True or False?  \nEnterprises that do not invest in innovation put  \ntheir future at Danger",
+          "c": "True or False?  \nFirms that do not invest in innovation put  \ntheir future at Threat",
+          "d": "True or False?  \nBusinesses that do not invest in innovation put  \ntheir future at Peril"
+        },
+        "bdq_probs": {
+          "A": 0.31026747822761536,
+          "B": 0.3201163411140442,
+          "C": 0.146559938788414,
+          "D": 0.14205075800418854,
+          "E": 0.08093813061714172
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5671042203903198,
+            "B": 0.14793801307678223,
+            "C": 0.04655076563358307,
+            "D": 0.16247829794883728,
+            "E": 0.0720992237329483
+          },
+          "B": {
+            "A": 0.021032536402344704,
+            "B": 0.9227149486541748,
+            "C": 0.014231322333216667,
+            "D": 0.0030777370557188988,
+            "E": 0.030602188780903816
+          },
+          "C": {
+            "A": 0.030806714668869972,
+            "B": 0.05406741052865982,
+            "C": 0.8457573652267456,
+            "D": 0.0575544610619545,
+            "E": 0.005523336585611105
+          },
+          "D": {
+            "A": 0.009883821941912174,
+            "B": 0.02298043482005596,
+            "C": 0.09377525746822357,
+            "D": 0.8623365759849548,
+            "E": 0.00845410767942667
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5671042203903198,
+          "B": 0.9227149486541748,
+          "C": 0.8457573652267456,
+          "D": 0.8623365759849548
+        },
+        "score": 0.5671042203903198
+      },
+      {
+        "record_index": 5,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_52582",
+        "label": null,
+        "perturbations": {
+          "a": "The Colombo National Gallery is a treasure trove of Sri Lankan history and heritage. Established in 1877, it houses a vast collection of artifacts, including ancient manuscripts, royal regalia, and archaeological discoveries. The gallery is a testament to the nation's commitment to preserving and sharing its rich culture with future generations.",
+          "b": "The Colombo National Museum is a treasure chest of Sri Lankan history and culture. Established in 1877, it contains a vast collection of artifacts, including ancient texts, royal regalia, and archaeological discoveries. The museum is a testament to the nation's commitment to preserving and sharing its rich legacy with future generations.",
+          "c": "The Colombo National Museum is a repository of Sri Lankan history and culture. Established in 1877, it hosts a vast collection of artifacts, including ancient manuscripts, royal insignia, and archaeological finds. The museum is a testament to the nation's commitment to conserving and sharing its rich heritage with future generations.",
+          "d": "The Colombo National Museum is a vault of Sri Lankan history and culture. Established in 1877, it harbors a vast collection of artifacts, including ancient scripts, royal regalia, and archaeological finds. The museum is a testament to the nation's commitment to preserving and disseminating its rich heritage with future generations."
+        },
+        "bdq_probs": {
+          "A": 0.4029410481452942,
+          "B": 0.16280286014080048,
+          "C": 0.20261147618293762,
+          "D": 0.19637775421142578,
+          "E": 0.03520859777927399
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.19699101150035858,
+            "B": 0.12718698382377625,
+            "C": 0.503034770488739,
+            "D": 0.15341700613498688,
+            "E": 0.018904678523540497
+          },
+          "B": {
+            "A": 0.2240748405456543,
+            "B": 0.13172675669193268,
+            "C": 0.2104988992214203,
+            "D": 0.41862696409225464,
+            "E": 0.015012078918516636
+          },
+          "C": {
+            "A": 0.35135358572006226,
+            "B": 0.24148152768611908,
+            "C": 0.29128241539001465,
+            "D": 0.11055831611156464,
+            "E": 0.005252310074865818
+          },
+          "D": {
+            "A": 0.2511894106864929,
+            "B": 0.12630592286586761,
+            "C": 0.2936702072620392,
+            "D": 0.32253363728523254,
+            "E": 0.0061909109354019165
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.19699101150035858,
+          "B": 0.13172675669193268,
+          "C": 0.29128241539001465,
+          "D": 0.32253363728523254
+        },
+        "score": 0.13172675669193268
+      },
+      {
+        "record_index": 6,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_68596",
+        "label": null,
+        "perturbations": {
+          "a": "البارق وهي دابه من مخلوقات الله فالاسلام هي اللي كانت مخصصه باش تحمل الرسل. تذكرات فبعض الاحاديث النبويه فسيره النبي محمد صلى الله عليه وسلم وحسب هذه الاحاديث, حملات الرسول صلى الله عليه وسلم من مكه فالحجاز للمسجد الاقصى فبيت المقدس ليله الاسراء والمعراج. ولما وصل ربطها عند جدار معروف بحائط البارق. هاذ الدابه, فصحيح البخاري, موصوفه على انها بيضاء ما بين البغل والحمار ويقال ان التسميه ديال الحائط الغربي ديال المسجد الاقصى بحائط البارق لكون ان جبريل عليه السلام هو اللي ربط البارق على الحائط لما دخل النبي محمد صلى الله عليه وسلم للمسجد وصلى فيه مع باقي الرسل ورجع ليها باش يمشي للسماوات ومن بعد رجع بيها لمكه",
+          "b": "البراق وهي مخلوق من مخلوقات الله فالاسلام هي اللي كانت مخصصه باش تحمل الأنبياء. تذكرات فبعض الروايات النبويه فسيره النبي محمد صلى الله عليه وسلم وحسب هذه الروايات, حملات الرسول صلى الله عليه وسلم من مكه فالحجاز للمسجد الاقصى فبيت المقدس ليله الاسراء والمعراج. ولما وصل ربطها عند جدار معروف بحائط البراق. هاذ المخلوق, فصحيح البخاري, موصوفه على انها بيضاء ما بين البغل والحمار ويقال ان التسميه ديال الحائط الغربي ديال المسجد الاقصى بحائط البراق لكون ان جبريل عليه السلام هو اللي ربط البراق على الحائط لما دخل النبي محمد صلى الله عليه وسلم للمسجد وصلى فيه مع باقي الأنبياء ورجع ليها باش يمشي للسماوات ومن بعد رجع بيها لمكه",
+          "c": "البراق وهي دابه من مخلوقات الله فالاسلام هي اللي كانت مخصصه باش تحمل الرسل. تذكرات فبعض الأحاديث النبويه فسيره النبي محمد صلى الله عليه وسلم وحسب هذه الأحاديث, حملات الرسول صلى الله عليه وسلم من مكه فالحجاز للمسجد الاقصى فبيت المقدس ليله الاسراء والمعراج. ولما وصل ربطها عند جدار معروف بحائط البراق. هاذ الدابه, فصحيح البخاري, موصوفه على انها بيضاء ما بين البغل والحمار ويقال ان التسميه ديال الحائط الغربي ديال المسجد الاقصى بحائط البراق لكون ان جبريل عليه السلام هو اللي ربط البراق على الحائط لما دخل النبي محمد صلى الله عليه وسلم للمسجد وصلى فيه مع باقي الرسل ورجع ليها باش يمشي للسماوات ومن بعد رجع بيها لمكه",
+          "d": "البراق وهي دابه من مخلوقات الله فالاسلام هي اللي كانت مخصصه باش تحمل الأنبياء. تذكرات فبعض الاحاديث النبويه فسيره النبي محمد صلى الله عليه وسلم وحسب هذه الاحاديث, حملات الرسول صلى الله عليه وسلم من مكه فالحجاز للمسجد الاقصى فبيت المقدس ليله الاسراء والمعراج. ولما وصل ربطها عند جدار معروف بحائط البراق. هاذ الدابه, فصحيح البخاري, موصوفه على انها بيضاء ما بين البغل والحمار ويقال ان التسميه ديال الحائط الغربي ديال المسجد الاقصى بحائط البراق لكون ان جبريل عليه السلام هو اللي ربط البراق على الحائط لما دخل النبي محمد صلى الله عليه وسلم للمسجد وصلى فيه مع باقي الأنبياء ورجع ليها باش يمشي للسماوات ومن بعد رجع بيها لمكه"
+        },
+        "bdq_probs": {
+          "A": 0.42132890224456787,
+          "B": 0.17563599348068237,
+          "C": 0.28066566586494446,
+          "D": 0.077938012778759,
+          "E": 0.04440775141119957
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.21033728122711182,
+            "B": 0.16381056606769562,
+            "C": 0.1025102511048317,
+            "D": 0.4594188332557678,
+            "E": 0.05750299617648125
+          },
+          "B": {
+            "A": 0.3671647608280182,
+            "B": 0.0942956879734993,
+            "C": 0.059008777141571045,
+            "D": 0.30439046025276184,
+            "E": 0.16292846202850342
+          },
+          "C": {
+            "A": 0.1345190405845642,
+            "B": 0.22882433235645294,
+            "C": 0.047220628708601,
+            "D": 0.20193694531917572,
+            "E": 0.36566075682640076
+          },
+          "D": {
+            "A": 0.07171277701854706,
+            "B": 0.16160613298416138,
+            "C": 0.3641866147518158,
+            "D": 0.18893764913082123,
+            "E": 0.1471458226442337
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.21033728122711182,
+          "B": 0.0942956879734993,
+          "C": 0.047220628708601,
+          "D": 0.18893764913082123
+        },
+        "score": 0.047220628708601
+      },
+      {
+        "record_index": 7,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_51383",
+        "label": null,
+        "perturbations": {
+          "a": "كم عدد الألوان التي تنشأ منها قوس قزح وما هي؟",
+          "b": "كم عدد الألوان التي تتكون منها قوس قزح وما هي؟",
+          "c": "كم عدد الألوان التي تجتمع منها قوس قزح وما هي؟",
+          "d": "كم عدد الألوان التي تتشكل منها قوس قزح وما هي؟"
+        },
+        "bdq_probs": {
+          "A": 0.14138543605804443,
+          "B": 0.43549761176109314,
+          "C": 0.05041252076625824,
+          "D": 0.29931288957595825,
+          "E": 0.07334980368614197
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.947083055973053,
+            "B": 0.02158799208700657,
+            "C": 0.0021043617743998766,
+            "D": 0.020280061289668083,
+            "E": 0.005994780454784632
+          },
+          "B": {
+            "A": 0.7515678405761719,
+            "B": 0.20870305597782135,
+            "C": 0.004683459643274546,
+            "D": 0.014653262682259083,
+            "E": 0.005828664638102055
+          },
+          "C": {
+            "A": 0.1545252799987793,
+            "B": 0.6925345659255981,
+            "C": 0.045677684247493744,
+            "D": 0.08016687631607056,
+            "E": 0.002309978473931551
+          },
+          "D": {
+            "A": 0.002423828700557351,
+            "B": 0.01330921147018671,
+            "C": 0.046454645693302155,
+            "D": 0.9330564737319946,
+            "E": 0.002500770380720496
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.947083055973053,
+          "B": 0.20870305597782135,
+          "C": 0.045677684247493744,
+          "D": 0.9330564737319946
+        },
+        "score": 0.045677684247493744
+      },
+      {
+        "record_index": 9,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_8238",
+        "label": null,
+        "perturbations": {
+          "a": "Anton Bruckner, le compositeur autrichien, est renommé pour ses symphonies monumentales qui saisissent la grandeur et la profondeur spirituelle de l'époque romantique. Ses symphonies, souvent remarquables par leurs structures vastes et leurs mélodies captivantes, mettent en évidence son engagement aux thèmes sacrés et sa passion pour l'architecture. Les œuvres notables de Bruckner, telles que la \"Symphonie n° 4\" (surnommée \"Romantique\") et la \"Symphonie n° 8\", explorent l'interaction entre le monde terrestre et divin, invitant les auditeurs à entreprendre des voyages spirituels profonds à travers sa musique.",
+          "b": "Anton Bruckner, le compositeur autrichien, est célèbre pour ses symphonies imposantes qui saisissent la grandeur et la profondeur spirituelle de l'époque romantique. Ses symphonies, souvent remarquables par leurs structures étendues et leurs mélodies fascinantes, mettent en évidence son engagement aux thèmes sacrés et sa curiosité pour l'architecture. Les compositions notables de Bruckner, telles que la \"Symphonie n° 4\" (surnommée \"Romantique\") et la \"Symphonie n° 8\", explorent l'interaction entre le monde terrestre et divin, invitant les auditeurs à entreprendre des parcours spirituels profonds à travers sa musique.",
+          "c": "Anton Bruckner, le compositeur autrichien, est réputé pour ses symphonies majestueuses qui capturent la grandeur et la profondeur spirituelle de l'époque romantique. Ses symphonies, souvent remarquables par leurs structures larges et leurs mélodies enchanteresses, mettent en évidence son dévouement aux thèmes sacrés et sa passion pour l'architecture. Les créations marquantes de Bruckner, telles que la \"Symphonie n° 4\" (surnommée \"Romantique\") et la \"Symphonie n° 8\", explorent l'interaction entre le monde terrestre et divin, invitant les auditeurs à entreprendre des voyages spirituels profonds à travers sa musique.",
+          "d": "Anton Bruckner, le compositeur autrichien, est célèbre pour ses symphonies colossales qui saisissent la grandeur et la profondeur spirituelle de l'époque romantique. Ses symphonies, souvent remarquables par leurs structures vastes et leurs mélodies envoûtantes, mettent en évidence son engagement aux thèmes sacrés et sa fascination pour l'architecture. Les œuvres notables de Bruckner, telles que la \"Symphonie n° 4\" (surnommée \"Romantique\") et la \"Symphonie n° 8\", explorent l'interaction entre le monde terrestre et divin, invitant les auditeurs à entreprendre des voyages spirituels profonds à travers sa musique."
+        },
+        "bdq_probs": {
+          "A": 0.09562855958938599,
+          "B": 0.05281107500195503,
+          "C": 0.24419604241847992,
+          "D": 0.6043909192085266,
+          "E": 0.002956212032586336
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.14899355173110962,
+            "B": 0.18542543053627014,
+            "C": 0.26979270577430725,
+            "D": 0.39254578948020935,
+            "E": 0.0023709184024482965
+          },
+          "B": {
+            "A": 0.10550887137651443,
+            "B": 0.026676807552576065,
+            "C": 0.13130803406238556,
+            "D": 0.732376754283905,
+            "E": 0.0038431589491665363
+          },
+          "C": {
+            "A": 0.12503457069396973,
+            "B": 0.021059252321720123,
+            "C": 0.17632707953453064,
+            "D": 0.6759304404258728,
+            "E": 0.0014901882968842983
+          },
+          "D": {
+            "A": 0.10233083367347717,
+            "B": 0.007648126687854528,
+            "C": 0.8840036392211914,
+            "D": 0.00525647820904851,
+            "E": 0.0006277967477217317
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.14899355173110962,
+          "B": 0.026676807552576065,
+          "C": 0.17632707953453064,
+          "D": 0.00525647820904851
+        },
+        "score": 0.00525647820904851
+      },
+      {
+        "record_index": 10,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_73984",
+        "label": null,
+        "perturbations": {
+          "a": "La guerra di Cassino si svolse tra il gennaio e il maggio 1944 tra le forze unite e quelle tedesche durante la campagna d'Italia nella seconda guerra mondiale. Vero o falso?",
+          "b": "La battaglia di Cassino avvenne tra il gennaio e il maggio 1944 tra le forze alleate e quelle germaniche durante la campagna d'Italia nella seconda guerra mondiale. Vero o falso?",
+          "c": "La battaglia di Cassino si realizzò tra il gennaio e il maggio 1944 tra le forze alleate e quelle tedesche durante la campagna d'Italia nella seconda guerra mondiale. Vero o falso?",
+          "d": "La battaglia di Cassino si svolse tra il gennaio e il maggio 1944 tra le forze alleate e quelle naziste durante la campagna d'Italia nella seconda guerra mondiale. Vero o falso?"
+        },
+        "bdq_probs": {
+          "A": 0.17241591215133667,
+          "B": 0.2670428156852722,
+          "C": 0.5479363203048706,
+          "D": 0.00913770217448473,
+          "E": 0.0034412916284054518
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.9036660194396973,
+            "B": 0.012493519112467766,
+            "C": 0.08146795630455017,
+            "D": 0.0005237896693870425,
+            "E": 0.0018282061209902167
+          },
+          "B": {
+            "A": 0.6939073204994202,
+            "B": 0.28926360607147217,
+            "C": 0.012318330816924572,
+            "D": 0.0013606512220576406,
+            "E": 0.0030662748031318188
+          },
+          "C": {
+            "A": 0.2000119984149933,
+            "B": 0.7431346774101257,
+            "C": 0.05554132163524628,
+            "D": 0.0005661986651830375,
+            "E": 0.0007157422951422632
+          },
+          "D": {
+            "A": 0.03250842168927193,
+            "B": 0.023051900789141655,
+            "C": 0.7876067161560059,
+            "D": 0.15508896112442017,
+            "E": 0.0017228820361196995
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.9036660194396973,
+          "B": 0.28926360607147217,
+          "C": 0.05554132163524628,
+          "D": 0.15508896112442017
+        },
+        "score": 0.05554132163524628
+      },
+      {
+        "record_index": 11,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_471",
+        "label": null,
+        "perturbations": {
+          "a": "Maxay tahay faa'idooyinka qajaarka Iyo cabitaanka uu u leeyahay caafimaadka?",
+          "b": "Maxay tahay faa'iidada qajaarka Iyo cabitaankiisa ay u keenaan caafimaadka?",
+          "c": "Maxay tahay faa'idooyinka qajaarka Iyo cabitaankiisa ay u leeyihiin caafimaadka?",
+          "d": "Maxay tahay faaiidooyinka qajaarka Iyo cabitaankiisa ay u fidiyeen caafimaadka?"
+        },
+        "bdq_probs": {
+          "A": 0.07315181940793991,
+          "B": 0.15486179292201996,
+          "C": 0.3714946210384369,
+          "D": 0.36006486415863037,
+          "E": 0.04039818048477173
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03837515041232109,
+            "B": 0.003459617728367448,
+            "C": 0.3998771607875824,
+            "D": 0.546567440032959,
+            "E": 0.01170373521745205
+          },
+          "B": {
+            "A": 0.2767738401889801,
+            "B": 0.22239407896995544,
+            "C": 0.15284906327724457,
+            "D": 0.27677369117736816,
+            "E": 0.0678262934088707
+          },
+          "C": {
+            "A": 0.02461523376405239,
+            "B": 0.06691042333841324,
+            "C": 0.043201249092817307,
+            "D": 0.8410017490386963,
+            "E": 0.023857584223151207
+          },
+          "D": {
+            "A": 0.03576323762536049,
+            "B": 0.07338030636310577,
+            "C": 0.1653681844472885,
+            "D": 0.7183192372322083,
+            "E": 0.005152177065610886
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03837515041232109,
+          "B": 0.22239407896995544,
+          "C": 0.043201249092817307,
+          "D": 0.7183192372322083
+        },
+        "score": 0.03837515041232109
+      },
+      {
+        "record_index": 12,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_69210",
+        "label": null,
+        "perturbations": {
+          "a": "قارن وقارن بين الزواحف والبرمائيات.",
+          "b": "قارن وقارن بين الزواحف والبرمائيات.",
+          "c": "قارن وقارن بين الزواحف والبرمائيات.",
+          "d": "قارن وقارن بين الزواحف والبرمائيات."
+        },
+        "bdq_probs": {
+          "A": 0.11104229837656021,
+          "B": 0.45312172174453735,
+          "C": 0.02721206098794937,
+          "D": 0.20745421946048737,
+          "E": 0.20107172429561615
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.031100604683160782,
+            "B": 0.017720578238368034,
+            "C": 0.20923903584480286,
+            "D": 0.730316162109375,
+            "E": 0.011089267209172249
+          },
+          "B": {
+            "A": 0.10907640308141708,
+            "B": 0.10246774554252625,
+            "C": 0.0773467943072319,
+            "D": 0.6893842816352844,
+            "E": 0.021478425711393356
+          },
+          "C": {
+            "A": 0.2308957278728485,
+            "B": 0.3689703941345215,
+            "C": 0.04839843139052391,
+            "D": 0.3058874011039734,
+            "E": 0.0454661101102829
+          },
+          "D": {
+            "A": 0.05669853836297989,
+            "B": 0.14478462934494019,
+            "C": 0.406059205532074,
+            "D": 0.1918090134859085,
+            "E": 0.1918095350265503
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.031100604683160782,
+          "B": 0.10246774554252625,
+          "C": 0.04839843139052391,
+          "D": 0.1918090134859085
+        },
+        "score": 0.031100604683160782
+      },
+      {
+        "record_index": 13,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_19402",
+        "label": null,
+        "perturbations": {
+          "a": "Anna Sueangam-iam vượt qua 29 thí sinh đăng quang trong vòng chung kết tại True Icon Hall ở Bangkok tối 30/7. Cô nhận vương miện được thiết kế theo chủ đề \"Năng lực phục hồi\" của thương hiệu trang sức Mouawad, một triệu baht (642 triệu đồng), căn hộ và ô tô. Á hậu 1 thuộc về Nicolene Limsnukan, á hậu 2 là Kanyalak Nookaew. Tân hoa hậu sinh năm 1998 ở Bangkok, tốt nghiệp ngành Nghệ thuật và Khoa học, Đại học Kasetsart. Trong khuôn khổ cuộc thi, cô cho biết đã trải qua cuộc sống khó khăn, tuổi thơ gắn liền với bãi rác vì cả bố và mẹ đều làm công việc thu gom rác thải ở Bangkok. Đồ chơi của cô đều được bố mẹ nhặt về và sửa chữa lại. \"Tôi không thể thay đổi định mệnh khi sinh ra nhưng tôi nỗ lực để thay đổi số phận mình sau này,\" cô nói. Ngoài ra, cô là diễn viên của kênh Channel 8. Anna Sueangam-iam có nhiều kinh nghiệm tham gia thi sắc đẹp. Cô từng đăng quang Miss Mobile Thailand 2018, Á khôi 2 Miss Thin Thai Ngarm 2020. Người đẹp từng dự thi Hoa hậu Thái Lan 2020 nhưng không giành giải cao.",
+          "b": "Anna Sueangam-iam vượt 29 thí sinh đăng quang trong chung kết tại True Icon Hall ở Bangkok tối 30/7. Cô nhận vương miện được thiết kế theo chủ đề \"Sức mạnh phục hồi\" của thương hiệu chế tác trang sức Mouawad, một triệu baht (642 triệu đồng), căn hộ và xe hơi. Á hậu 1 thuộc về Nicolene Limsnukan, á hậu 2 là Kanyalak Nookaew. Tân hoa hậu sinh năm 1998 ở Bangkok, tốt nghiệp ngành Nghệ thuật và Khoa học, Đại học Kasetsart. Trong khuôn khổ cuộc thi, cô đã cho biết trải qua cuộc sống vất vả, tuổi thơ gắn liền với bãi rác vì cả bố và mẹ đều làm việc thu gom rác thải ở Bangkok. Đồ chơi của cô đều được cha mẹ nhặt về và sửa chữa. \"Tôi không thể thay đổi số phận khi sinh ra nhưng tôi cố gắng để thay đổi cuộc sống của mình sau này,\" cô nói. Ngoài ra, cô là diễn viên trên kênh Channel 8. Anna Sueangam-iam có nhiều kinh nghiệm trong các cuộc thi sắc đẹp. Cô từng đăng quang Miss Mobile Thailand 2018, Á khôi 2 Miss Thin Thai Ngarm 2020. Người đẹp trước đó đã thi Hoa hậu Thái Lan 2020 nhưng không đoạt giải cao.",
+          "c": "Anna Sueangam-iam vượt 29 thí sinh đoạt vương miện trong vòng chung kết tại True Icon Hall ở Bangkok tối 30/7. Cô nhận vương miện được thiết kế theo chủ đề \"Sức mạnh phục hồi\" của thương hiệu trang sức Mouawad, một triệu baht (642 triệu đồng), căn hộ và ô tô. Á hậu 1 thuộc về Nicolene Limsnukan, á hậu 2 là Kanyalak Nookaew. Tân hoa hậu sinh năm 1998 ở Bangkok, tốt nghiệp ngành Nghệ thuật và Khoa học, Đại học Kasetsart. Trong khuôn khổ cuộc thi, cô đã cho biết trải qua cuộc sống gian khó, tuổi thơ gắn liền bãi rác vì cả cha và mẹ đều làm việc thu gom rác thải ở Bangkok. Đồ chơi của cô đều được bố mẹ nhặt lại và sửa đổi. \"Tôi không thể thay đổi số phận khi sinh ra nhưng tôi nỗ lực để biến đổi cuộc sống của mình sau này,\" cô nói. Ngoài ra, cô là diễn viên của kênh Channel 8. Anna Sueangam-iam có nhiều kinh nghiệm trong các cuộc thi sắc đẹp. Cô từng đăng quang Miss Mobile Thailand 2018, Á khôi 2 Miss Thin Thai Ngarm 2020. Người đẹp đã thi Hoa hậu Thái Lan 2020 nhưng không giành giải cao.",
+          "d": "Anna Sueangam-iam vượt 29 thí sinh trở thành hoa hậu trong vòng chung kết tại True Icon Hall ở Bangkok tối 30/7. Cô nhận vương miện được thiết kế theo chủ đề \"Sức mạnh hồi phục\" của thương hiệu trang sức Mouawad, một triệu baht (642 triệu đồng), căn hộ và xe hơi. Á hậu 1 thuộc về Nicolene Limsnukan, á hậu 2 là Kanyalak Nookaew. Tân hoa hậu sinh năm 1998 ở Bangkok, tốt nghiệp ngành Nghệ thuật và Khoa học, Đại học Kasetsart. Trong khuôn khổ cuộc thi, cô cho biết trải qua cuộc sống vất vả, tuổi thơ gắn liền với bãi rác vì cả bố và mẹ đều có công việc thu gom rác thải ở Bangkok. Đồ chơi của cô đều được cha mẹ nhặt về và chỉnh sửa lại. \"Tôi không thể thay đổi số phận khi sinh ra nhưng tôi cống hiến để thay đổi quỹ đạo của mình sau này,\" cô nói. Ngoài ra, cô là diễn viên trên kênh Channel 8. Anna Sueangam-iam có nhiều kinh nghiệm thi sắc đẹp. Cô từng đăng quang Miss Mobile Thailand 2018, Á khôi 2 Miss Thin Thai Ngarm 2020. Người đẹp đã tham gia cuộc thi Hoa hậu Thái Lan 2020 nhưng không đạt giải cao."
+        },
+        "bdq_probs": {
+          "A": 0.10207690298557281,
+          "B": 0.47199875116348267,
+          "C": 0.0820210799574852,
+          "D": 0.3243997097015381,
+          "E": 0.0194817204028368
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2847018241882324,
+            "B": 0.26745253801345825,
+            "C": 0.22172603011131287,
+            "D": 0.22172598540782928,
+            "E": 0.004255949053913355
+          },
+          "B": {
+            "A": 0.15463918447494507,
+            "B": 0.0753650814294815,
+            "C": 0.49144259095191956,
+            "D": 0.2630500793457031,
+            "E": 0.014383687637746334
+          },
+          "C": {
+            "A": 0.06834476441144943,
+            "B": 0.14468581974506378,
+            "C": 0.05665984004735947,
+            "D": 0.71216881275177,
+            "E": 0.015249781310558319
+          },
+          "D": {
+            "A": 0.05306170508265495,
+            "B": 0.43061164021492004,
+            "C": 0.3150422275066376,
+            "D": 0.1634417474269867,
+            "E": 0.02668117545545101
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2847018241882324,
+          "B": 0.0753650814294815,
+          "C": 0.05665984004735947,
+          "D": 0.1634417474269867
+        },
+        "score": 0.05665984004735947
+      },
+      {
+        "record_index": 14,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_34127",
+        "label": null,
+        "perturbations": {
+          "a": "خَليلِيَّ هَل لي لَو ظَفِرتُ بِفِكْرَةٍ",
+          "b": "خَليلِيَّ هَل لي لَو ظَفِرتُ بِنِيَّةٍ",
+          "c": "خَليلِيَّ هَل لي لَو ظَفِرتُ بِمَقَامٍ",
+          "d": "خَليلِيَّ هَل لي لَو ظَفِرتُ بِمَسْمَىٍ"
+        },
+        "bdq_probs": {
+          "A": 0.11065802723169327,
+          "B": 0.46588754653930664,
+          "C": 0.12539196014404297,
+          "D": 0.2003757506608963,
+          "E": 0.09765539318323135
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.576069176197052,
+            "B": 0.28966575860977173,
+            "C": 0.047286637127399445,
+            "D": 0.020022423937916756,
+            "E": 0.06668486446142197
+          },
+          "B": {
+            "A": 0.2839256227016449,
+            "B": 0.376140296459198,
+            "C": 0.2077244222164154,
+            "D": 0.0813460648059845,
+            "E": 0.04933890327811241
+          },
+          "C": {
+            "A": 0.01726263388991356,
+            "B": 0.8188644051551819,
+            "C": 0.04619720205664635,
+            "D": 0.0890473946928978,
+            "E": 0.02551252767443657
+          },
+          "D": {
+            "A": 0.034732989966869354,
+            "B": 0.2195187658071518,
+            "C": 0.29081571102142334,
+            "D": 0.27319619059562683,
+            "E": 0.15566277503967285
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.576069176197052,
+          "B": 0.376140296459198,
+          "C": 0.04619720205664635,
+          "D": 0.27319619059562683
+        },
+        "score": 0.04619720205664635
+      },
+      {
+        "record_index": 15,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_56261",
+        "label": null,
+        "perturbations": {
+          "a": "Aarẹ Muhammadu Buhari ti kilọ fun oludari ijọ Ridiimu, Pasitọ Adeboye atawọn mi-in ti wọn n sọ pe, imudojuiwọn eto iṣejọba Naijiria lo dara ju lasiko yii pe ki won ṣọra won gidigdi o, ki won si yee fi ọrọ imudojuiwọn ijọba halẹ mọ oun, tabi ba oun lorukọ jẹ.",
+          "b": "Aarẹ Muhammadu Buhari ti kilọ fun olori ijọ Ridiimu, Pasitọ Adeboye atawọn mi-in ti wọn n sọ pe, atunṣe eto iṣejọba Naijiria lo dara ju lasiko yii pe ki won ṣọra won gidigdi o, ki won si yee fi ọrọ atunṣe ijọba halẹ mọ oun, tabi ba oun lorukọ jẹ.",
+          "c": "Aarẹ Muhammadu Buhari ti kilọ fun alakoso ijọ Ridiimu, Pasitọ Adeboye atawọn mi-in ti wọn n sọ pe, atunto eto iṣejọba Naijiria lo dara ju lasiko yii pe ki won ṣọra won gidigdi o, ki won si yee fi ọrọ atunto ijọba halẹ mọ oun, tabi ba oun lorukọ jẹ.",
+          "d": "Aarẹ Muhammadu Buhari ti kilọ fun oludari ijọ Ridiimu, Pasitọ Adeboye atawọn mi-in ti wọn n sọ pe, atunṣe eto iṣejọba Naijiria lo dara ju lasiko yii pe ki won ṣọra won gidigdi o, ki won si yee fi ọrọ atunṣe ijọba halẹ mọ oun, tabi ba oun lorukọ jẹ."
+        },
+        "bdq_probs": {
+          "A": 0.1754419505596161,
+          "B": 0.3714104890823364,
+          "C": 0.07785188406705856,
+          "D": 0.3714104890823364,
+          "E": 0.003876016940921545
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5289121270179749,
+            "B": 0.45240259170532227,
+            "C": 0.0026073185727000237,
+            "D": 0.004366436507552862,
+            "E": 0.011685192584991455
+          },
+          "B": {
+            "A": 0.013597454875707626,
+            "B": 0.005080996081233025,
+            "C": 0.578178346157074,
+            "D": 0.39737576246261597,
+            "E": 0.005757523700594902
+          },
+          "C": {
+            "A": 0.012935694307088852,
+            "B": 0.010074327699840069,
+            "C": 0.004134495742619038,
+            "D": 0.9653493165969849,
+            "E": 0.007486604154109955
+          },
+          "D": {
+            "A": 0.16748283803462982,
+            "B": 0.13884814083576202,
+            "C": 0.5322591066360474,
+            "D": 0.1524946689605713,
+            "E": 0.008338488638401031
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5289121270179749,
+          "B": 0.005080996081233025,
+          "C": 0.004134495742619038,
+          "D": 0.1524946689605713
+        },
+        "score": 0.004134495742619038
+      },
+      {
+        "record_index": 16,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_67882",
+        "label": null,
+        "perturbations": {
+          "a": "أريد إنشاء قصيدة شعرية دينية من بحر البسيط. هل يمكنك مساعدتي؟",
+          "b": "أرغب في تأليف قصيدة دينية من بحر السلس. هل يمكنك إعانتي؟",
+          "c": "أحتاج لصياغة قصيدة أدبية دينية من بحر الخفيف. هل يمكنك مساعدتي؟",
+          "d": "أرغب في كتابة قصيدة دينية من بحر الخفيف. هل يمكنك مساعدتي؟"
+        },
+        "bdq_probs": {
+          "A": 0.055191367864608765,
+          "B": 0.33808791637420654,
+          "C": 0.01581258326768875,
+          "D": 0.5574127435684204,
+          "E": 0.03347524628043175
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.34297293424606323,
+            "B": 0.04788973927497864,
+            "C": 0.041607338935136795,
+            "D": 0.5480692386627197,
+            "E": 0.0187538992613554
+          },
+          "B": {
+            "A": 0.47252506017684937,
+            "B": 0.31476956605911255,
+            "C": 0.0446438230574131,
+            "D": 0.15827606618404388,
+            "E": 0.007757931482046843
+          },
+          "C": {
+            "A": 0.3677581250667572,
+            "B": 0.24497969448566437,
+            "C": 0.16319172084331512,
+            "D": 0.20954227447509766,
+            "E": 0.012388894334435463
+          },
+          "D": {
+            "A": 0.2490776628255844,
+            "B": 0.2735581696033478,
+            "C": 0.0945393368601799,
+            "D": 0.32997462153434753,
+            "E": 0.04981867969036102
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.34297293424606323,
+          "B": 0.31476956605911255,
+          "C": 0.16319172084331512,
+          "D": 0.32997462153434753
+        },
+        "score": 0.16319172084331512
+      },
+      {
+        "record_index": 17,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_15510",
+        "label": null,
+        "perturbations": {
+          "a": "The occurrences of the French Revolution, which impacted individuals from other regions of Europe,",
+          "b": "The incidents of the French Revolution, which swayed persons from other areas of Europe,",
+          "c": "The happenings of the French Revolution, which affected folks from other sections of Europe,",
+          "d": "The occurrences of the French Revolution, which influenced citizens from other locales of Europe,"
+        },
+        "bdq_probs": {
+          "A": 0.12225482612848282,
+          "B": 0.13427051901817322,
+          "C": 0.07415127754211426,
+          "D": 0.6017589569091797,
+          "E": 0.067515529692173
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3734673857688904,
+            "B": 0.23370985686779022,
+            "C": 0.08870631456375122,
+            "D": 0.3000895082950592,
+            "E": 0.003837055526673794
+          },
+          "B": {
+            "A": 0.01702447235584259,
+            "B": 0.06130742281675339,
+            "C": 0.01959504745900631,
+            "D": 0.9009062647819519,
+            "E": 0.0010026232339441776
+          },
+          "C": {
+            "A": 0.18434369564056396,
+            "B": 0.501098096370697,
+            "C": 0.1307193785905838,
+            "D": 0.16268257796764374,
+            "E": 0.020682785660028458
+          },
+          "D": {
+            "A": 0.047934893518686295,
+            "B": 0.11863971501588821,
+            "C": 0.798188328742981,
+            "D": 0.020616499707102776,
+            "E": 0.01373369712382555
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3734673857688904,
+          "B": 0.06130742281675339,
+          "C": 0.1307193785905838,
+          "D": 0.020616499707102776
+        },
+        "score": 0.020616499707102776
+      },
+      {
+        "record_index": 18,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_46969",
+        "label": null,
+        "perturbations": {
+          "a": "Princess Osayomwanbor Peters jẹ́ akọrin ìhòhò àti òṣèré ni orílẹ̀ èdè Nàìjíríà.",
+          "b": "Princess Osayomwanbor Peters jẹ́ akọrin ìhìn àti òṣèré ni orílẹ̀ èdè Nàìjíríà.",
+          "c": "Princess Osayomwanbor Peters jẹ́ akọrin ìhihìnrere àti òṣèré ni orílẹ̀ èdè Nàìjíríà.",
+          "d": "Princess Osayomwanbor Peters jẹ́ akọrin ìgwà àti òṣèré ni orílẹ̀ èdè Nàìjíríà."
+        },
+        "bdq_probs": {
+          "A": 0.8496415615081787,
+          "B": 0.10469638556241989,
+          "C": 0.013733175583183765,
+          "D": 0.016826242208480835,
+          "E": 0.015082950703799725
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06198740750551224,
+            "B": 0.5881198644638062,
+            "C": 0.3351007401943207,
+            "D": 0.00965577457100153,
+            "E": 0.00508823711425066
+          },
+          "B": {
+            "A": 0.2305806577205658,
+            "B": 0.08221602439880371,
+            "C": 0.6672070622444153,
+            "D": 0.011126730591058731,
+            "E": 0.008801971562206745
+          },
+          "C": {
+            "A": 0.30044761300086975,
+            "B": 0.17662397027015686,
+            "C": 0.42369937896728516,
+            "D": 0.0759650245308876,
+            "E": 0.023168034851551056
+          },
+          "D": {
+            "A": 0.09495677053928375,
+            "B": 0.14254683256149292,
+            "C": 0.6800539493560791,
+            "D": 0.06526274979114532,
+            "E": 0.017024820670485497
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06198740750551224,
+          "B": 0.08221602439880371,
+          "C": 0.42369937896728516,
+          "D": 0.06526274979114532
+        },
+        "score": 0.06198740750551224
+      },
+      {
+        "record_index": 19,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_91007",
+        "label": null,
+        "perturbations": {
+          "a": "ليس لدي وقت لقراءة كل المقال التالي. إذا سمحت قم بتلخيصه: إياك واستخدام كلمات سر مثل \"password\" أو \"12345\". يُمكن لمخترقي كلمات سر تخطي تلك الكلمات الشائعة بسرعة وفعالية، مما يجعلها عديمة الفائدة. اختر كلمات سر آمنة ذات خليط من الأحرف والأرقام والرموز الخاصة. قم دائماً بتسجيل خروجك من أي موقع يطلب منك تسجيل دخول إليه. تتضمن تلك المواقع مواقع البريد الإلكتروني ومواقع التواصل الاجتماعي وأي مواقع أخرى. هذا الأمر أكثر أهمية إن كنت ترتاد تلك المواقع من جهاز كمبيوتر عام، ولكن لا بأس بأن تفعل ذلك على جهازك الخاص كذلك. إياك وكشف أي معلومات خاصة مثل اسمك الكامل أو عنوانك أو رقم هاتفك أو بريدك الإلكتروني أو رقم بطاقتك الائتمانية في أي مكان عبر الإنترنت، سواء كان ذلك في غرفة محادثة أو على فيسبوك أو تويتر. تحكم بإعدادات الخصوصية للتأكد من عدم ظهور منشوراتك لأي شخص غير مصرح له. إن تحقيق أمنك وسلامتك يستحق عناء إخفاء منشوراتك عن الأشخاص غير المخول لهم. إن طلب أحد الغرباء معلومات شخصية فأخبره بأنك لا تنشر تلك المعلومات عبر الإنترنت. قبل الاشتراك في أي موقع، عليك بقراءة الشروط والاتفاقيات بكل تفاصيلها للتأكد من عدم موافقتك على أي شروط لم تكن على دراية بها. قد تكون تلك العملية متعبة ولكنها خطوة أخرى في طريق تحقيق سلامتك.",
+          "b": "ليس لدي وقت لقراءة كل المقال التالي. إذا سمحت قم بتلخيصه: إياك واستخدام كلمات سر مثل \"password\" أو \"12345\". يُمكن لمخترقي كلمات سر تخطي تلك الكلمات الشائعة بسرعة وفعالية، مما يجعلها عديمة الفائدة. اختر كلمات سر آمنة ذات مزيج من الأحرف والأرقام والرموز الخاصة. قم دائماً بتسجيل خروجك من أي موقع يطلب منك تسجيل الدخول إليه. تتضمن تلك المواقع مواقع البريد الإلكتروني ومواقع التواصل الاجتماعي وأي مواقع أخرى. هذا الأمر أكثر أهمية إن كنت ترتاد تلك المواقع من جهاز كمبيوتر عمومي، ولكن لا بأس بأن تفعل ذلك على جهازك الخاص كذلك. إياك وكشف أي معلومات خاصة مثل اسمك الكامل أو عنوانك أو رقم هاتفك أو بريدك الإلكتروني أو رقم بطاقتك الائتمانية في أي مكان عبر الإنترنت، سواء كان ذلك في غرفة محادثة أو على فيسبوك أو تويتر. تحكم بإعدادات الخصوصية للتأكد من عدم ظهور منشوراتك لأي شخص غير مصرح له. إن تحقيق أمنك وسلامتك يستحق عناء إخفاء منشوراتك عن الأشخاص غير المخول لهم. إن طلب أحد الغرباء معلومات شخصية فأخبره بأنك لا تنشر تلك المعلومات عبر الإنترنت. قبل الاشتراك في أي موقع، عليك بقراءة القواعد والشروط بكل تفاصيلها للتأكد من عدم موافقتك على أي شروط لم تكن على دراية بها. قد تكون تلك العملية متعبة ولكنها خطوة أخرى في طريق تحقيق سلامتك.",
+          "c": "ليس لدي وقت لقراءة كل المقال التالي. إذا سمحت قم بتلخيصه: إياك واستخدام كلمات سر مثل \"password\" أو \"12345\". يُمكن لمخترقي كلمات سر تخطي تلك الكلمات الشائعة بسرعة وفعالية، مما يجعلها عديمة الفائدة. اختر كلمات سر آمنة ذات خليط من الأحرف والأرقام والرموز الخاصة. قم دائماً بتسجيل خروجك من أي موقع يطلب منك تسجيل الدخول إليه. تتضمن تلك المواقع مواقع البريد الإلكتروني ومواقع التواصل الاجتماعي وأي مواقع أخرى. هذا الأمر أكثر أهمية إن كنت ترتاد تلك المواقع من جهاز حاسوب عام، ولكن لا بأس بأن تفعل ذلك على جهازك الخاص كذلك. إياك وكشف أي معلومات خاصة مثل اسمك الكامل أو عنوانك أو رقم هاتفك أو بريدك الإلكتروني أو رقم بطاقتك الائتمانية في أي مكان عبر الإنترنت، سواء كان ذلك في غرفة محادثة أو على فيسبوك أو تويتر. تحكم بإعدادات الخصوصية للتأكد من عدم ظهور منشوراتك لأي شخص غير مصرح له. إن تحقيق أمنك وسلامتك يستحق عناء إخفاء منشوراتك عن الأشخاص غير المخول لهم. إن طلب أحد الغرباء معلومات شخصية فأخبره بأنك لا تنشر تلك المعلومات عبر الإنترنت. قبل الاشتراك في أي موقع، عليك بقراءة الشروط والأحكام بكل تفاصيلها للتأكد من عدم موافقتك على أي شروط لم تكن على دراية بها. قد تكون تلك العملية متعبة ولكنها خطوة أخرى في طريق تحقيق سلامتك.",
+          "d": "ليس لدي وقت لقراءة كل المقال التالي. إذا سمحت قم بتلخيصه: إياك واستخدام كلمات سر مثل \"password\" أو \"12345\". يُمكن لمخترقي كلمات سر تخطي تلك الكلمات الشائعة بسرعة وفعالية، مما يجعلها عديمة الفائدة. اختر كلمات سر آمنة ذات خليط من الأحرف والأرقام والرموز الخاصة. قم دائماً بتسجيل خروجك من أي موقع يطلب منك تسجيل الدخول إليه. تتضمن تلك المواقع مواقع البريد الإلكتروني ومواقع التواصل الاجتماعي وأي مواقع أخرى. هذا الأمر أكثر أهمية إن كنت ترتاد تلك المواقع من جهاز كمبيوتر عام، ولكن لا بأس بأن تفعل ذلك على جهازك الشخصي كذلك. إياك وكشف أي معلومات خاصة مثل اسمك الكامل أو عنوانك أو رقم هاتفك أو بريدك الإلكتروني أو رقم بطاقتك الائتمانية في أي مكان عبر الإنترنت، سواء كان ذلك في غرفة محادثة أو على فيسبوك أو تويتر. تحكم بإعدادات الخصوصية للتأكد من عدم ظهور منشوراتك لأي شخص غير مصرح له. إن تحقيق أمنك وسلامتك يستحق عناء إخفاء منشوراتك عن الأشخاص غير المخول لهم. إن طلب أحد الغرباء معلومات شخصية فأخبره بأنك لا تنشر تلك المعلومات عبر الإنترنت. قبل الاشتراك في أي موقع، عليك بقراءة الشروط والأحكام بكل تفاصيلها للتأكد من عدم موافقتك على أي شروط لم تكن على دراية بها. قد تكون تلك العملية متعبة ولكنها خطوة أخرى في طريق تحقيق سلامتك."
+        },
+        "bdq_probs": {
+          "A": 0.026036426424980164,
+          "B": 0.3026633858680725,
+          "C": 0.055987127125263214,
+          "D": 0.3026634454727173,
+          "E": 0.312271386384964
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0025722321588546038,
+            "B": 0.8403608202934265,
+            "C": 0.039304330945014954,
+            "D": 0.07342994958162308,
+            "E": 0.01827831380069256
+          },
+          "B": {
+            "A": 0.019796142354607582,
+            "B": 0.32452425360679626,
+            "C": 0.27758049964904785,
+            "D": 0.2863917946815491,
+            "E": 0.07018361985683441
+          },
+          "C": {
+            "A": 0.011512992903590202,
+            "B": 0.29231971502304077,
+            "C": 0.17184607684612274,
+            "D": 0.4671260714530945,
+            "E": 0.023256940767169
+          },
+          "D": {
+            "A": 0.03468223661184311,
+            "B": 0.35027197003364563,
+            "C": 0.11021866649389267,
+            "D": 0.29038527607917786,
+            "E": 0.07815805077552795
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0025722321588546038,
+          "B": 0.32452425360679626,
+          "C": 0.17184607684612274,
+          "D": 0.29038527607917786
+        },
+        "score": 0.0025722321588546038
+      },
+      {
+        "record_index": 20,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_32487",
+        "label": null,
+        "perturbations": {
+          "a": "في أي قارة توجد دوله لبنان؟",
+          "b": "في أي قارة تقع دولة لبنان؟",
+          "c": "في أي قارة تتواجد دولة لبنان؟",
+          "d": "في أي قارة يجلس دوله لبنان؟"
+        },
+        "bdq_probs": {
+          "A": 0.014354705810546875,
+          "B": 0.7596254348754883,
+          "C": 0.19206349551677704,
+          "D": 0.02810508944094181,
+          "E": 0.00562138669192791
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1059878021478653,
+            "B": 0.13609057664871216,
+            "C": 0.12391219288110733,
+            "D": 0.46038946509361267,
+            "E": 0.03335053473711014
+          },
+          "B": {
+            "A": 0.15063868463039398,
+            "B": 0.10681868344545364,
+            "C": 0.38466960191726685,
+            "D": 0.29958075284957886,
+            "E": 0.018562333658337593
+          },
+          "C": {
+            "A": 0.026782725006341934,
+            "B": 0.8331857919692993,
+            "C": 0.03230619058012962,
+            "D": 0.09060483425855637,
+            "E": 0.005441251210868359
+          },
+          "D": {
+            "A": 0.01613752357661724,
+            "B": 0.8022282719612122,
+            "C": 0.09581319987773895,
+            "D": 0.06585092097520828,
+            "E": 0.006319613661617041
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1059878021478653,
+          "B": 0.10681868344545364,
+          "C": 0.03230619058012962,
+          "D": 0.06585092097520828
+        },
+        "score": 0.03230619058012962
+      },
+      {
+        "record_index": 21,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_48802",
+        "label": null,
+        "perturbations": {
+          "a": "Ajọ eleto idibo orileede yii, INEC, ti kede pe ọjọ kẹrindinlogun, oṣu karun, ọdun 2022, ni idibo gomina yoo waye nipinlẹ Ọṣun.",
+          "b": "Ajọ eleto idibo orileede yii, INEC, ti kede pe ọjọ kẹrindinlogun, oṣu kerin, ọdun 2022, ni idibo gomina yoo waye nipinlẹ Ọṣun.",
+          "c": "Ajọ eleto idibo orileede yii, INEC, ti kede pe ọjọ kẹrindinlogun, oṣu kẹta, ọdun 2022, ni idibo gomina yoo waye nipinlẹ Ọṣun.",
+          "d": "Ajọ eleto idibo orileede yii, INEC, ti kede pe ọjọ kẹrindinlogun, oṣu kẹfa, ọdun 2022, ni idibo gomina yoo waye nipinlẹ Ọṣun."
+        },
+        "bdq_probs": {
+          "A": 0.6002882122993469,
+          "B": 0.2835560739040375,
+          "C": 0.0787406712770462,
+          "D": 0.030835293233394623,
+          "E": 0.006565215066075325
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.9194069504737854,
+            "B": 0.04722762107849121,
+            "C": 0.0011823202949017286,
+            "D": 0.010537909343838692,
+            "E": 0.02162238582968712
+          },
+          "B": {
+            "A": 0.5824752449989319,
+            "B": 0.37607431411743164,
+            "C": 0.006781252101063728,
+            "D": 0.025592176243662834,
+            "E": 0.008983700536191463
+          },
+          "C": {
+            "A": 0.6186284422874451,
+            "B": 0.22057878971099854,
+            "C": 0.13803468644618988,
+            "D": 0.018680959939956665,
+            "E": 0.003977406304329634
+          },
+          "D": {
+            "A": 0.25946521759033203,
+            "B": 0.023391498252749443,
+            "C": 0.6625675559043884,
+            "D": 0.05271362140774727,
+            "E": 0.0016682062996551394
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.9194069504737854,
+          "B": 0.37607431411743164,
+          "C": 0.13803468644618988,
+          "D": 0.05271362140774727
+        },
+        "score": 0.05271362140774727
+      },
+      {
+        "record_index": 22,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_17651",
+        "label": null,
+        "perturbations": {
+          "a": "Containers, like Docker, permit the bundling of applications and their dependencies into a uniform unit. They offer uniformity across different settings and promote effective deployment.",
+          "b": "Containers, including Docker, allow the grouping of applications and their dependencies into a consistent unit. They ensure consistency across various environments and aid efficient deployment.",
+          "c": "Containers, for example Docker, make possible the assembling of applications and their dependencies into a standardized unit. They deliver uniformity across various contexts and support efficient deployment.",
+          "d": "Containers, such as Docker, authorize the encapsulation of applications and their dependencies into a regulated unit. They furnish consistency across diverse environments and enhance efficient deployment."
+        },
+        "bdq_probs": {
+          "A": 0.11871739476919174,
+          "B": 0.28478777408599854,
+          "C": 0.4275173842906952,
+          "D": 0.13038527965545654,
+          "E": 0.03854186832904816
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06580642610788345,
+            "B": 0.3341923654079437,
+            "C": 0.4291119873523712,
+            "D": 0.16287244856357574,
+            "E": 0.007737624458968639
+          },
+          "B": {
+            "A": 0.09401945024728775,
+            "B": 0.11340907216072083,
+            "C": 0.6325451135635376,
+            "D": 0.1550118327140808,
+            "E": 0.004982849583029747
+          },
+          "C": {
+            "A": 0.01113887783139944,
+            "B": 0.9419398903846741,
+            "C": 0.04405512288212776,
+            "D": 0.0020285402424633503,
+            "E": 0.000512895523570478
+          },
+          "D": {
+            "A": 0.006750940810889006,
+            "B": 0.049882952123880386,
+            "C": 0.9412233233451843,
+            "D": 0.0017610829090699553,
+            "E": 0.00027007143944501877
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06580642610788345,
+          "B": 0.11340907216072083,
+          "C": 0.04405512288212776,
+          "D": 0.0017610829090699553
+        },
+        "score": 0.0017610829090699553
+      },
+      {
+        "record_index": 23,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_43051",
+        "label": null,
+        "perturbations": {
+          "a": "بافت جمعیتی استان هرمزگان تنوع زیادی دارد. از شرق با فرهنگ و سنن بلوچ‌ها آغاز می‌شود و پوشش مردم به‌خصوص زنان بسیار شبیه بلوچ‌ها است و در مرکز استان بیشتر از فرهنگ بومی خود و لباس آن‌ها بیشتر فرنگی است، زنان پوشش مشهور بندری، لباسی با پارچه‌های رنگی شاد قرمز سبز زرد و آبی و اکثراً زری‌بافی شده و برای مردها کپره، آف، لنگوته و سُواس با عنوان لباس محلی وجود دارد؛ ناخداها، ملوانان و صیادان نیز دو نوع پیراهن خاص مهمانی و کار داشتند، لباس مهمانی (پلوخوری) به‌طور معمول از رنگ سفید و حریر یا ململ نازک درجه یک انتخاب می‌کردند و برای کار نیز پیراهن بلند بود و ملوانان در هنگام زمستان برای کارکردن از پارچه‌های ضخیم رنگی و راه راه استفاده می‌کردند و در غرب و جزایر استان فرهنگ عربی و بومی (بندری) مشاهده می‌شود که مردان لباس عربی دشداشه یا همان کندوره همراه با چفیه و عقال یا به صورت دستار دیده می‌شود.",
+          "b": "بافت جمعیتی استان هرمزگان تنوع بسیار دارد. از شرق با فرهنگ و سنن بلوچ‌ها آغاز می‌شود و پوشش مردم به‌خصوص زنان بسیار شبیه بلوچ‌ها است و در مرکز استان بیشتر از فرهنگ بومی خود و لباس آن‌ها بیشتر فرنگی است، زنان پوشش مشهور بندری، لباسی با پارچه‌های رنگی شاد قرمز سبز زرد و آبی و اکثراً زری‌بافی شده و برای مردها کپره، آف، لنگوته و سُواس با عنوان لباس محلی وجود دارد؛ ناخداها، ملوانان و صیادان نیز دو نوع پیراهن ویژه مهمانی و کار داشتند، لباس مهمانی (پلوخوری) به‌طور معمول از رنگ سفید و حریر یا ململ نازک درجه یک انتخاب می‌کردند و برای کار نیز پیراهن بلند بود و ملوانان در هنگام زمستان برای کارکردن از پارچه‌های ضخیم رنگی و راه راه استفاده می‌کردند و در غرب و جزایر استان فرهنگ عربی و بومی (بندری) نمایان می‌شود که مردان لباس عربی دشداشه یا همان کندوره همراه با چفیه و عقال یا به صورت دستار دیده می‌شود.",
+          "c": "بافت جمعیتی استان هرمزگان تنوع زیادی دارد. از شرق با فرهنگ و سنن بلوچ‌ها آغاز می‌شود و پوشش مردم به‌خصوص زنان بسیار شبیه بلوچ‌ها است و در مرکز استان بیشتر از فرهنگ بومی خود و لباس آن‌ها بیشتر فرنگی است، زنان پوشش معروف بندری، لباسی با پارچه‌های رنگی شاد قرمز سبز زرد و آبی و اکثراً زری‌بافی شده و برای مردها کپره، آف، لنگوته و سُواس با عنوان لباس محلی وجود دارد؛ ناخداها، ملوانان و صیادان نیز دو نوع پیراهن خاص مهمانی و کار داشتند، لباس مهمانی (پلوخوری) به‌طور معمول از رنگ سفید و حریر یا ململ نازک درجه یک انتخاب می‌کردند و برای کار نیز پیراهن بلند بود و ملوانان در هنگام زمستان برای کارکردن از پارچه‌های ضخیم رنگی و راه راه استفاده می‌کردند و در غرب و جزایر استان فرهنگ عربی و بومی (بندری) به چشم می‌خورد که مردان لباس عربی دشداشه یا همان کندوره همراه با چفیه و عقال یا به صورت دستار دیده می‌شود.",
+          "d": "بافت جمعیتی استان هرمزگان تنوع فراوانی دارد. از شرق با فرهنگ و سنن بلوچ‌ها شروع می‌شود و پوشش مردم به‌خصوص زنان بسیار شبیه بلوچ‌ها است و در مرکز استان بیشتر از فرهنگ بومی خود و لباس آن‌ها بیشتر فرنگی است، زنان پوشش شناخته شده بندری، لباسی با پارچه‌های رنگی شاد قرمز سبز زرد و آبی و اکثراً زری‌بافی شده و برای مردها کپره، آف، لنگوته و سُواس با عنوان لباس محلی وجود دارد؛ ناخداها، ملوانان و صیادان نیز دو نوع پیراهن خاص مهمانی و کار داشتند، لباس مهمانی (پلوخوری) به‌طور معمول از رنگ سفید و حریر یا ململ نازک درجه یک انتخاب می‌کردند و برای کار نیز پیراهن بلند بود و ملوانان در هنگام زمستان برای کارکردن از پارچه‌های ضخیم رنگی و راه راه استفاده می‌کردند و در غرب و جزایر استان فرهنگ عربی و بومی (بندری) قابل مشاهده است که مردان لباس عربی دشداشه یا همان کندوره همراه با چفیه و عقال یا به صورت دستار دیده می‌شود."
+        },
+        "bdq_probs": {
+          "A": 0.14995405077934265,
+          "B": 0.359720915555954,
+          "C": 0.16992025077342987,
+          "D": 0.2715316414833069,
+          "E": 0.04868296533823013
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.11517694592475891,
+            "B": 0.2363273948431015,
+            "C": 0.5669204592704773,
+            "D": 0.06164976581931114,
+            "E": 0.008608248084783554
+          },
+          "B": {
+            "A": 0.3763527274131775,
+            "B": 0.2355153113603592,
+            "C": 0.2840861678123474,
+            "D": 0.0435660220682621,
+            "E": 0.02947828732430935
+          },
+          "C": {
+            "A": 0.2220022976398468,
+            "B": 0.3230108320713043,
+            "C": 0.2850566804409027,
+            "D": 0.11517322808504105,
+            "E": 0.032997775822877884
+          },
+          "D": {
+            "A": 0.1306343674659729,
+            "B": 0.11894345283508301,
+            "C": 0.5166683793067932,
+            "D": 0.1961050182580948,
+            "E": 0.030073773115873337
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.11517694592475891,
+          "B": 0.2355153113603592,
+          "C": 0.2850566804409027,
+          "D": 0.1961050182580948
+        },
+        "score": 0.11517694592475891
+      },
+      {
+        "record_index": 24,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_94635",
+        "label": null,
+        "perturbations": {
+          "a": "أريد أن أتعلم النثر. أكتب قصيدة عامة من بحر الكامل.",
+          "b": "أرغب في استيعاب الشعر. أؤلف قصيدة عامة من بحر الكامل.",
+          "c": "أتحمس لتعلم الأدب. أعد قصيدة عامة من بحر الكامل.",
+          "d": "أحتاج إلى دراسة الشعر. أكتب قصيدة عامة من بحر الكامل."
+        },
+        "bdq_probs": {
+          "A": 0.5948232412338257,
+          "B": 0.2055654078722,
+          "C": 0.10664592683315277,
+          "D": 0.06468401849269867,
+          "E": 0.028258372098207474
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.28226566314697266,
+            "B": 0.2001563310623169,
+            "C": 0.19399821758270264,
+            "D": 0.25700587034225464,
+            "E": 0.06200556829571724
+          },
+          "B": {
+            "A": 0.5485943555831909,
+            "B": 0.20822298526763916,
+            "C": 0.08680028468370438,
+            "D": 0.056925009936094284,
+            "E": 0.08412972092628479
+          },
+          "C": {
+            "A": 0.13341625034809113,
+            "B": 0.18235830962657928,
+            "C": 0.0760183334350586,
+            "D": 0.49570173025131226,
+            "E": 0.09460631757974625
+          },
+          "D": {
+            "A": 0.08113958686590195,
+            "B": 0.16136519610881805,
+            "C": 0.10097994655370712,
+            "D": 0.34161078929901123,
+            "E": 0.30147048830986023
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.28226566314697266,
+          "B": 0.20822298526763916,
+          "C": 0.0760183334350586,
+          "D": 0.34161078929901123
+        },
+        "score": 0.0760183334350586
+      },
+      {
+        "record_index": 25,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_42415",
+        "label": null,
+        "perturbations": {
+          "a": "Ààlọ́ oo!  \nÒjìji fìí, arógbá aṣọ má ba wà. Kíni o?  \nIgi Ọ̀pẹ ni o.",
+          "b": "Ààlọ́ oo!  \nÒjìji fìí, arógbá aṣọ má dá wà. Kíni o?  \nIgi Ọ̀pẹ ni o.",
+          "c": "Ààlọ́ oo!  \nÒjìji fìí, arógbá aṣọ má ṣe wà. Kíni o?  \nIgi Ọ̀pẹ ni o.",
+          "d": "Ààlọ́ oo!  \nÒjìji fìí, arógbá aṣọ má jẹ́ wà. Kíni o?  \nIgi Ọ̀pẹ ni o."
+        },
+        "bdq_probs": {
+          "A": 0.4844667613506317,
+          "B": 0.25133803486824036,
+          "C": 0.025277728214859962,
+          "D": 0.15728332102298737,
+          "E": 0.08159752190113068
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.8555508255958557,
+            "B": 0.06597299873828888,
+            "C": 0.009211894124746323,
+            "D": 0.02665550448000431,
+            "E": 0.024270111694931984
+          },
+          "B": {
+            "A": 0.6973575949668884,
+            "B": 0.10046389698982239,
+            "C": 0.03582150489091873,
+            "D": 0.04458058625459671,
+            "E": 0.03582150861620903
+          },
+          "C": {
+            "A": 0.5957141518592834,
+            "B": 0.19340009987354279,
+            "C": 0.08854503929615021,
+            "D": 0.08318038284778595,
+            "E": 0.009332578629255295
+          },
+          "D": {
+            "A": 0.3658793568611145,
+            "B": 0.05972821265459061,
+            "C": 0.06982950866222382,
+            "D": 0.12644512951374054,
+            "E": 0.052710045129060745
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.8555508255958557,
+          "B": 0.10046389698982239,
+          "C": 0.08854503929615021,
+          "D": 0.12644512951374054
+        },
+        "score": 0.08854503929615021
+      },
+      {
+        "record_index": 26,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_52559",
+        "label": null,
+        "perturbations": {
+          "a": "Burburkii dimoqraadiyada somaaliya  \n4-. INQILAABKII 25KII SARKAAL 21 OCT 1969.  \n\n21 oct 1969kii maalin talaado ah salaadii subaxnimo waxey dadka somaaliyeed ku indha qaadeen tangi,dabaabad,jiibab,askar hubeysan oo waddo walba taagan, dadku milateriga waxey ku ogaayeen xerooyin iyo xadka soomaalidu la leedahey dowladaha jaarka ah,taasi waxey dhalisey in qof waliba  \nku noqdo gurigiisa kuna boodaan raadiyaha, dadku waxey sugayeen una dhega taagayeen in baarlamaankooda ay soo doorteen uu madaxweyne kale doorto maadaama la diley madaxwereynihii hore si dimoqoradiyado meesheedii uga sii socoto.  \n\nMarkii waagu baryey dadku waxey ogaadeen in xildhibaanadii laga sugayey doorashada loo taxaabey xabsiga, wadankuna galey xaalad degdeg ah qof walbana waxa dhacaaya indhaha ayuu ka fiirinayey waayo shacabka wax gacantooda ku jirey ma jirin, shacabku wuu jeclaa xoogga dalka waayo guulo ayey ka soo hoyeen dagaalkii 1964tii lala galey itoobiya oo waagaa aheyd boqortooyo da weyn, laakiin shacabku kuma fikireyn in milateriga ku jiro damac xukun, in kastoo xiligaas socotey dabeeyl inqilaab oo ka dhacayey afrika,taasina wey ka baqayeen dadka indha indheya siyaasada in ey na soo gaarto.  \n\nSaacado kadib arintu wey iska cadaatey 25 sarkaal oo isugu jira booliis iyo milateri ayaa is magacaabey lana baxey golaha sare ee kacaanka waxeyna magacoowdeen madaxweyne in uu yahey maxamed siyaad barre oo ahaa abaan duulihii ciidamada xooga dalka soomaaliyeed halkaas waxaa ku  \ndhamaatey rajadii shacabku ey ka qabeen dowlad barlamaani ah waxaana bilaabantey wareegto shaqsi ah iyo koox yar oo awood ku qabsatey taladii dalka, halki dadku ey ku indha qaadeen talo barlamaani ah oo lawada leyahey markii ey qaateen xoriyada ey mudada sugayeen, hadana dadka qaarkood waxey is lahaayeen sanad ama laba sano ka dib gacanta shacabka ayaa  \nlagu soo celinayaa oo doorasho baarlamaan ayaa la sameynayaa laakiin rajadaas wey dhici weydey.",
+          "b": "Burburkii dimoqraadiyada somaaliya  \n4-. INQILAABKII 25KII SARKAAL 21 OCT 1969.  \n\n21 oct 1969kii maalin talaado ah salaadii subaxnimo waxey dadka somaaliyeed ku indha qaadeen tangi,dabaabad,jiibab,askar hubeysan oo jid walba taagan, dadku milateriga waxey ku ogaayeen xerooyin iyo xadka soomaalidu la leedahey dowladaha jaarka ah,taasi waxey dhalisey in qof waliba  \nku noqdo gurigiisa kuna boodaan raadiyaha, dadku waxey sugayeen una dhega taagayeen in baarlamaankooda ay soo doorteen uu madaxweyne kale doorto maadaama la diley madaxwereynihii hore si dimoqoradiyado meesheedii uga sii socoto.  \n\nMarkii waagu baryey dadku waxey ogaadeen in xildhibaanadii laga sugayey doorashada loo taxaabey xabsiga, wadankuna galey xaalad degdeg ah qof walbana waxa dhacaaya indhaha ayuu ka fiirinayey waayo shacabka wax gacantooda ku jirey ma jirin, shacabku wuu jeclaa xoogga dalka waayo guulo ayey ka soo hoyeen dagaalkii 1964tii lala galey itoobiya oo waagaa aheyd boqortooyo da weyn, laakiin shacabku kuma fikireyn in milateriga ku jiro damac xukun, in kastoo xiligaas socotey dabeeyl inqilaab oo ka dhacayey afrika,taasina wey ka baqayeen dadka indha indheya siyaasada in ey na soo gaarto.  \n\nSaacado kadib arintu wey iska cadaatey 25 sarkaal oo isugu jira booliis iyo milateri ayaa is magacaabey lana baxey golaha sare ee kacaanka waxeyna magacoowdeen madaxweyne in uu yahey maxamed siyaad barre oo ahaa abaan duulihii ciidamada xooga dalka soomaaliyeed halkaas waxaa ku  \ndhamaatey rajadii shacabku ey ka qabeen dowlad barlamaani ah waxaana bilaabantey wareegto shaqsi ah iyo koox yar oo awood ku qabsatey taladii dalka, halki dadku ey ku indha qaadeen talo barlamaani ah oo lawada leyahey markii ey qaateen xoriyada ey mudada sugayeen, hadana dadka qaarkood waxey is lahaayeen sanad ama laba sano ka dib gacanta shacabka ayaa  \nlagu soo celinayaa oo doorasho baarlamaan ayaa la sameynayaa laakiin rajadaas wey dhici weydey.",
+          "c": "Burburkii dimoqraadiyada somaaliya  \n4-. INQILAABKII 25KII SARKAAL 21 OCT 1969.  \n\n21 oct 1969kii maalin talaado ah salaadii subaxnimo waxey dadka somaaliyeed ku indha qaadeen tangi,dabaabad,jiibab,askar hubeysan oo waddo walba taagan, dadku milateriga waxey ku ogaayeen xerooyin iyo xadka soomaalidu la leedahey dowladaha jaarka ah,taasi waxey dhalisey in qof waliba  \nku noqdo gurigiisa kuna boodaan raadiyaha, dadku waxey sugayeen una dhega taagayeen in baarlamaankooda ay soo doorteen uu madaxweyne kale doorto maadaama la diley madaxwereynihii hore si dimoqoradiyado meesheedii uga sii socoto.  \n\nMarkii waagu baryey dadku waxey ogaadeen in xildhibaanadii laga sugayey doorashada loo taxaabey xabsiga, wadankuna galey xaalad degdeg ah qof walbana waxa dhacaaya indhaha ayuu ka fiirinayey waayo shacabka wax gacantooda ku jirey ma jirin, shacabku wuu jeclaa xoogga dalka waayo guulo ayey ka soo hoyeen dagaalkii 1964tii lala galey itoobiya oo waagaa aheyd boqortooyo da weyn, laakiin shacabku kuma fikireyn in milateriga ku jiro damac xukun, in kastoo xiligaas socotey dabeeyl inqilaab oo ka dhacayey afrika,taasina wey ka baqayeen dadka indha indheya siyaasada in ey na soo gaarto.  \n\nSaacado kadib arintu wey iska cadaatey 25 sarkaal oo isugu jira booliis iyo milateri ayaa is magacaabey lana baxey golaha sare ee kacaanka waxeyna magacoowdeen madaxweyne in uu yahey maxamed siyaad barre oo ahaa abaan duulihii ciidamada xooga dalka soomaaliyeed halkaas waxaa ku  \ndhamaatey rajadii shacabku ey ka qabeen dowlad barlamaani ah waxaana bilaabantey wareegto shaqsi ah iyo koox yar oo awood ku qabsatey taladii dalka, halki dadku ey ku indha qaadeen talo barlamaani ah oo lawada leyahey markii ey qaateen xoriyada ey mudada sugayeen, hadana dadka qaarkood waxey is lahaayeen sanad ama laba sano ka dib gacanta shacabka ayaa  \nlagu soo celinayaa oo doorasho baarlamaan ayaa la sameynayaa laakiin rajadaas wey dhici weydey.",
+          "d": "Burburkii dimoqraadiyada somaaliya  \n4-. INQILAABKII 25KII SARKAAL 21 OCT 1969.  \n\n21 oct 1969kii maalin talaado ah salaadii subaxnimo waxey dadka somaaliyeed ku indha qaadeen tangi,dabaabad,jiibab,askar hubeysan oo wado kasta taagan, dadku milateriga waxey ku ogaayeen xerooyin iyo xadka soomaalidu la leedahey dowladaha jaarka ah,taasi waxey dhalisey in qof waliba  \nku noqdo gurigiisa kuna boodaan raadiyaha, dadku waxey sugayeen una dhega taagayeen in baarlamaankooda ay soo doorteen uu madaxweyne kale doorto maadaama la diley madaxwereynihii hore si dimoqoradiyado meesheedii uga sii socoto.  \n\nMarkii waagu baryey dadku waxey ogaadeen in xildhibaanadii laga sugayey doorashada loo taxaabey xabsiga, wadankuna galey xaalad degdeg ah qof walbana waxa dhacaaya indhaha ayuu ka fiirinayey waayo shacabka wax gacantooda ku jirey ma jirin, shacabku wuu jeclaa xoogga dalka waayo guulo ayey ka soo hoyeen dagaalkii 1964tii lala galey itoobiya oo waagaa aheyd boqortooyo da weyn, laakiin shacabku kuma fikireyn in milateriga ku jiro damac xukun, in kastoo xiligaas socotey dabeeyl inqilaab oo ka dhacayey afrika,taasina wey ka baqayeen dadka indha indheya siyaasada in ey na soo gaarto.  \n\nSaacado kadib arintu wey iska cadaatey 25 sarkaal oo isugu jira booliis iyo milateri ayaa is magacaabey lana baxey golaha sare ee kacaanka waxeyna magacoowdeen madaxweyne in uu yahey maxamed siyaad barre oo ahaa abaan duulihii ciidamada xooga dalka soomaaliyeed halkaas waxaa ku  \ndhamaatey rajadii shacabku ey ka qabeen dowlad barlamaani ah waxaana bilaabantey wareegto shaqsi ah iyo koox yar oo awood ku qabsatey taladii dalka, halki dadku ey ku indha qaadeen talo barlamaani ah oo lawada leyahey markii ey qaateen xoriyada ey mudada sugayeen, hadana dadka qaarkood waxey is lahaayeen sanad ama laba sano ka dib gacanta shacabka ayaa  \nlagu soo celinayaa oo doorasho baarlamaan ayaa la sameynayaa laakiin rajadaas wey dhici weydey."
+        },
+        "bdq_probs": {
+          "A": 0.19833634793758392,
+          "B": 0.4469578266143799,
+          "C": 0.08530338108539581,
+          "D": 0.1696460247039795,
+          "E": 0.09972980618476868
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.009383012540638447,
+            "B": 0.9570930004119873,
+            "C": 0.010969852097332478,
+            "D": 0.018660344183444977,
+            "E": 0.0036744405515491962
+          },
+          "B": {
+            "A": 0.0020759706385433674,
+            "B": 0.9639630913734436,
+            "C": 0.014186672866344452,
+            "D": 0.018216051161289215,
+            "E": 0.0011111870408058167
+          },
+          "C": {
+            "A": 0.0034399114083498716,
+            "B": 0.9840682744979858,
+            "C": 0.0018412513891234994,
+            "D": 0.004851049743592739,
+            "E": 0.00172969582490623
+          },
+          "D": {
+            "A": 0.013736888766288757,
+            "B": 0.8498731255531311,
+            "C": 0.003935680724680424,
+            "D": 0.014622819609940052,
+            "E": 0.01005011796951294
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.009383012540638447,
+          "B": 0.9639630913734436,
+          "C": 0.0018412513891234994,
+          "D": 0.014622819609940052
+        },
+        "score": 0.0018412513891234994
+      },
+      {
+        "record_index": 27,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_50615",
+        "label": null,
+        "perturbations": {
+          "a": "\"... tra cui quello a Dorothy Dandridge che è stata la prima interprete afro-americana a ricevere la nomination come migliore interprete.\"",
+          "b": "\"... tra cui quello a Dorothy Dandridge che è stata la prima attrice di colore a ottenere la candidatura come miglior attrice.\"",
+          "c": "\"... tra cui quello a Dorothy Dandridge che è stata la prima artisti afro-americana a ricevere la candidatura come miglior interprete.\"",
+          "d": "\"... tra cui quello a Dorothy Dandridge che è stata la prima donna afro-americana a ottenere la nomination come migliore attrice.\""
+        },
+        "bdq_probs": {
+          "A": 0.1254683881998062,
+          "B": 0.5119890570640564,
+          "C": 0.010139393620193005,
+          "D": 0.34105828404426575,
+          "E": 0.01131131686270237
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06630360335111618,
+            "B": 0.18595299124717712,
+            "C": 0.01756870560348034,
+            "D": 0.7128307819366455,
+            "E": 0.01729632541537285
+          },
+          "B": {
+            "A": 0.05013127997517586,
+            "B": 0.03904227167367935,
+            "C": 0.013077524490654469,
+            "D": 0.8885981440544128,
+            "E": 0.009129583835601807
+          },
+          "C": {
+            "A": 0.09719397872686386,
+            "B": 0.37258243560791016,
+            "C": 0.04051646590232849,
+            "D": 0.4784053564071655,
+            "E": 0.011251016519963741
+          },
+          "D": {
+            "A": 0.00831625796854496,
+            "B": 0.6206154823303223,
+            "C": 0.03727087378501892,
+            "D": 0.3321915864944458,
+            "E": 0.001538352109491825
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06630360335111618,
+          "B": 0.03904227167367935,
+          "C": 0.04051646590232849,
+          "D": 0.3321915864944458
+        },
+        "score": 0.03904227167367935
+      },
+      {
+        "record_index": 28,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_89635",
+        "label": null,
+        "perturbations": {
+          "a": "Burburkii dimoqraadiyada soomaaliya  \n10- MAXAA LAGA DHAXLEY NIDAAMKII 21 OCT.  \n\ne) -GARSOOR AAN LAHEEYN DASTUUR.  \n\nGarsoorku waa hay'adda ugu sareeysa nidaam dowladnimo ama nidaam kasta oo jiri kara oo bulshada ka dhexeeya kuna heshiiyeen. Hadana garsoorku wuxuu u baahan yahay awood u gaar ah heshiiska ama dastuurka, hadii uusan jirin dastuur loo noqdo waxa imaanaya ra'yiga shaqsi oo aan bulshada u dhexeeyn Karin ama awood sheegato iney go'aanka leedahay.",
+          "b": "Burburkii dimoqraadiyada soomaaliya  \n10- MAXAA LAGA DHAXLEY NIDAAMKII 21 OCT.  \n\ne) -GARSOOR AAN LAHEEYN DASTUUR.  \n\nGarsoorku waa hay'adda ugu sareeya nidaam dowladnimo ama nidaam kasta oo jira oo bulshada ka dhexeeya kuna heshiiyeen. Hadana garsoorku wuxuu u baahan yahay awood u gaar ah heshiiska ama dastuurka, hadii uusan jirin dastuur loo noqdo waxa imaanaya ra'yiga shaqsi oo aan bulshada u dhexeeyn Karin ama awood sheegato iney go'aanka leedahay.",
+          "c": "Burburkii dimoqraadiyada soomaaliya  \n10- MAXAA LAGA DHAXLEY NIDAAMKII 21 OCT.  \n\ne) -GARSOOR AAN LAHEEYN DASTUUR.  \n\nGarsoorku waa hay'adda ugu sarraysaa nidaam dowladnimo ama nidaam kasta oo jira oo bulshada ka dhexeeya kuna heshiiyeen. Hadana garsoorku wuxuu u baahan yahay awood u gaar ah heshiiska ama dastuurka, hadii uusan jirin dastuur loo noqdo waxa imaanaya ra'yiga shaqsi oo aan bulshada u dhexeeyn Karin ama awood sheegato iney go'aanka leedahay.",
+          "d": "Burburkii dimoqraadiyada soomaaliya  \n10- MAXAA LAGA DHAXLEY NIDAAMKII 21 OCT.  \n\ne) -GARSOOR AAN LAHEEYN DASTUUR.  \n\nGarsoorku waa hay'adda ugu sareeysa nidaam dowladnimo ama nidaam kasta oo jira oo bulshada ka dhex shaqeeya kuna heshiiyeen. Hadana garsoorku wuxuu u baahan yahay awood u gaar ah heshiiska ama dastuurka, hadii uusan jirin dastuur loo noqdo waxa imaanaya ra'yiga shaqsi oo aan bulshada u dhexeyn Karin ama awood sheegato iney go'aanka leedahay."
+        },
+        "bdq_probs": {
+          "A": 0.16795070469379425,
+          "B": 0.3446124196052551,
+          "C": 0.15777502954006195,
+          "D": 0.236848384141922,
+          "E": 0.0927511602640152
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0968623012304306,
+            "B": 0.540254533290863,
+            "C": 0.16999858617782593,
+            "D": 0.016571179032325745,
+            "E": 0.17539486289024353
+          },
+          "B": {
+            "A": 0.03182721883058548,
+            "B": 0.6804965138435364,
+            "C": 0.12587884068489075,
+            "D": 0.04350252449512482,
+            "E": 0.11461388319730759
+          },
+          "C": {
+            "A": 0.09073220193386078,
+            "B": 0.7838071584701538,
+            "C": 0.05503181368112564,
+            "D": 0.010836400091648102,
+            "E": 0.05677865818142891
+          },
+          "D": {
+            "A": 0.1631947159767151,
+            "B": 0.5876898765563965,
+            "C": 0.052981093525886536,
+            "D": 0.14858925342559814,
+            "E": 0.036412931978702545
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0968623012304306,
+          "B": 0.6804965138435364,
+          "C": 0.05503181368112564,
+          "D": 0.14858925342559814
+        },
+        "score": 0.05503181368112564
+      },
+      {
+        "record_index": 29,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_26769",
+        "label": null,
+        "perturbations": {
+          "a": "Sri Lanka has made progress in advancing gender equality, with enhancements in education and labor force involvement for women. However, obstacles remain, such as gender-based violence. The administration and several organizations are striving towards legislative changes, awareness initiatives, and support services to improve women's rights and welfare.",
+          "b": "Sri Lanka has achieved advancements in fostering gender equality, with developments in education and employment participation for women. Nevertheless, difficulties endure, such as gender-based violence. The government and numerous organizations are aiming towards legislative modifications, awareness efforts, and support services to promote women's rights and wellness.",
+          "c": "Sri Lanka has accomplished progress in supporting gender equality, with enhancements in education and job participation for women. Yet, challenges continue, such as gender-based violence. The authorities and various groups are pursuing legislative reforms, awareness programs, and support services to strengthen women's rights and health.",
+          "d": "Sri Lanka has made advancements in enhancing gender equality, with improvements in education and workforce involvement for women. Still, challenges exist, such as gender-based violence. The government and numerous organizations are working towards legislative adjustments, awareness efforts, and support services to promote women's rights and welfare."
+        },
+        "bdq_probs": {
+          "A": 0.31220656633377075,
+          "B": 0.044977590441703796,
+          "C": 0.0422525517642498,
+          "D": 0.5479394793510437,
+          "E": 0.05258416011929512
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04750943183898926,
+            "B": 0.1879032999277115,
+            "C": 0.3977917432785034,
+            "D": 0.36219322681427,
+            "E": 0.004283103626221418
+          },
+          "B": {
+            "A": 0.03673548251390457,
+            "B": 0.0416267029941082,
+            "C": 0.0551464818418026,
+            "D": 0.8626355528831482,
+            "E": 0.0037235578056424856
+          },
+          "C": {
+            "A": 0.48270124197006226,
+            "B": 0.1890285313129425,
+            "C": 0.11112417280673981,
+            "D": 0.21419739723205566,
+            "E": 0.002870245836675167
+          },
+          "D": {
+            "A": 0.26893046498298645,
+            "B": 0.37925276160240173,
+            "C": 0.3047383427619934,
+            "D": 0.04529527202248573,
+            "E": 0.0015258893836289644
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04750943183898926,
+          "B": 0.0416267029941082,
+          "C": 0.11112417280673981,
+          "D": 0.04529527202248573
+        },
+        "score": 0.0416267029941082
+      },
+      {
+        "record_index": 30,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_84255",
+        "label": null,
+        "perturbations": {
+          "a": "ما هي المصادر الأساسية لتلوث الهواء؟",
+          "b": "تلوث الهواء يمكن أن يظهر من مصادر متنوعة، وتختلف هذه المصادر بحسب الموقع الجغرافي والنشاطات الاقتصادية والصناعية.",
+          "c": "ما هي الموارد الرئيسية لتلوث الهواء؟",
+          "d": "تلوث الهواء قد ينشأ من مصادر متنوعة، وتتنوع هذه المدخلات بحسب الموقع الجغرافي والنشاطات الاقتصادية والصناعية."
+        },
+        "bdq_probs": {
+          "A": 0.04556857421994209,
+          "B": 0.572760283946991,
+          "C": 0.1494135558605194,
+          "D": 0.21070677042007446,
+          "E": 0.0215250626206398
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5355179309844971,
+            "B": 0.34575629234313965,
+            "C": 0.018040332943201065,
+            "D": 0.06598875671625137,
+            "E": 0.032160382717847824
+          },
+          "B": {
+            "A": 0.3311942517757416,
+            "B": 0.36374571919441223,
+            "C": 0.017280545085668564,
+            "D": 0.27456966042518616,
+            "E": 0.006357155740261078
+          },
+          "C": {
+            "A": 0.15477962791919708,
+            "B": 0.19874058663845062,
+            "C": 0.5075039863586426,
+            "D": 0.12831681966781616,
+            "E": 0.0050537302158772945
+          },
+          "D": {
+            "A": 0.22661100327968597,
+            "B": 0.373617023229599,
+            "C": 0.1418112963438034,
+            "D": 0.20633171498775482,
+            "E": 0.015421069227159023
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5355179309844971,
+          "B": 0.36374571919441223,
+          "C": 0.5075039863586426,
+          "D": 0.20633171498775482
+        },
+        "score": 0.20633171498775482
+      },
+      {
+        "record_index": 31,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_81631",
+        "label": null,
+        "perturbations": {
+          "a": "وأوضح أن اللجنة تعمل على تحفيز المستثمرين على الاستثمار في الزراعة الحديثة، واستخدام الأساليب الجديدة التي تحافظ على المياه، مثل: الزراعة بتقنية الهيدروبونيك، والزراعة بالأنابيب الرأسية، والزراعة بالتقنية المائية الفائقة.",
+          "b": "وأكد أن اللجنة تعمل على تعزيز المستثمرين على الاستثمار في الزراعة العصرية، واستخدام التقنيات الحديثة التي تحافظ على المياه، مثل: الزراعة بتقنية الهيدروبونيك، والزراعة بأنابيب عمودية، والزراعة بالتقنية المائية الفائقة.",
+          "c": "وأشار أن اللجنة تعمل على دعم المستثمرين على الاستثمار في الزراعة المتطورة، واستخدام الوسائل الجديدة التي تحافظ على المياه، مثل: الزراعة بتقنية الهيدروبونيك، والزراعة عبر الأنابيب العمودية، والزراعة بالتقنية المائية الفائقة.",
+          "d": "بين أن اللجنة تعمل على تحفيز المستثمرين على الاستثمار في الزراعة العصرية، واستخدام الطرق الجديدة التي تحافظ على المياه، مثل: الزراعة بتقنية الهيدروبونيك، والزراعة بالأنابيب العمودية، والزراعة بالتقنية المائية الفائقة."
+        },
+        "bdq_probs": {
+          "A": 0.3759145140647888,
+          "B": 0.25836190581321716,
+          "C": 0.16681107878684998,
+          "D": 0.18902169167995453,
+          "E": 0.00986246857792139
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.18005457520484924,
+            "B": 0.609115719795227,
+            "C": 0.05491359159350395,
+            "D": 0.14467774331569672,
+            "E": 0.010645465925335884
+          },
+          "B": {
+            "A": 0.19052131474018097,
+            "B": 0.2686775028705597,
+            "C": 0.2860066890716553,
+            "D": 0.20924687385559082,
+            "E": 0.04318048804998398
+          },
+          "C": {
+            "A": 0.17349132895469666,
+            "B": 0.19659115374088287,
+            "C": 0.05459149181842804,
+            "D": 0.3450291156768799,
+            "E": 0.2298385500907898
+          },
+          "D": {
+            "A": 0.10466039180755615,
+            "B": 0.12624406814575195,
+            "C": 0.37689727544784546,
+            "D": 0.2510671615600586,
+            "E": 0.13865256309509277
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.18005457520484924,
+          "B": 0.2686775028705597,
+          "C": 0.05459149181842804,
+          "D": 0.2510671615600586
+        },
+        "score": 0.05459149181842804
+      },
+      {
+        "record_index": 32,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_37256",
+        "label": null,
+        "perturbations": {
+          "a": "Humambo hweSpain hwakagara kwemazana mana emakore, kubva pakasvika Columbus muAmerica muna 1492 kusvika pakurasikirwa kwenzvimbo dzayo dzekupedzisira dzemhiri kwemakungwa (Cuba, Puerto Rico nePhilippines) muna 1898. Munguva yacho yekupedzisira, kusvika pakati pezana ramakore rechi 19, gakava rakamuka iro, nanhasi, richiri kuunza matupu pamusoro petsanangudzo yenyika idzi, kufanana neValladolid, Barcelona kana Guadalajara.",
+          "b": "Humambo hweSpain hwakagara kwemazana mana emakore, kubva pakasvika Columbus muAmerica muna 1492 kusvika pakurasikirwa kwenzvimbo dzayo dzekupedzisira dzemhiri kwemakungwa (Cuba, Puerto Rico nePhilippines) muna 1898. Munguva yacho yekupedzisira, kusvika pakati pezana ramakore rechi 19, gakava rakamuka iro, nanhasi, richiri kuunza matupu pamusoro petsanangudzo yenzvimbo idzi, kufanana neValladolid, Barcelona kana Guadalajara.",
+          "c": "Humambo hweSpain hwakagara kwemazana mana emakore, kubva pakasvika Columbus muAmerica muna 1492 kusvika pakurasikirwa kwenzvimbo dzayo dzekupedzisira dzemhiri kwemakungwa (Cuba, Puerto Rico nePhilippines) muna 1898. Munguva yacho yekupedzisira, kusvika pakati pezana ramakore rechi 19, gakava rakamuka iro, nanhasi, richiri kuunza matupu pamusoro petsanangudzo yenyika idzi, kufanana neValladolid, Barcelona kana Guadelajara.",
+          "d": "Humambo hweSpain hwakagara kwemazana mana emakore, kubva pakasvika Columbus muAmerica muna 1492 kusvika pakurasikirwa kwenzvimbo dzayo dzekupedzisira dzemhiri kwemakungwa (Cuba, Puerto Rico nePhilippines) muna 1898. Munguva yacho yekupedzisira, kusvika pakati pezana ramakore rechi 19, gakava rakamuka iro, nanhasi, richiri kuunza matupu pamusoro petsanangudzo yenyika idzi, kufanana neValladolid, Bartholona kana Guadalajara."
+        },
+        "bdq_probs": {
+          "A": 0.06678999215364456,
+          "B": 0.5592256188392639,
+          "C": 0.2641594707965851,
+          "D": 0.09418895095586777,
+          "E": 0.01561806257814169
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1402561068534851,
+            "B": 0.30634742975234985,
+            "C": 0.5050814747810364,
+            "D": 0.015984097495675087,
+            "E": 0.032288774847984314
+          },
+          "B": {
+            "A": 0.1431974619626999,
+            "B": 0.1897057741880417,
+            "C": 0.12637124955654144,
+            "D": 0.401606947183609,
+            "E": 0.13879166543483734
+          },
+          "C": {
+            "A": 0.08224526792764664,
+            "B": 0.5708953142166138,
+            "C": 0.0875496193766594,
+            "D": 0.13559946417808533,
+            "E": 0.12346474826335907
+          },
+          "D": {
+            "A": 0.04503942281007767,
+            "B": 0.16219279170036316,
+            "C": 0.2591835856437683,
+            "D": 0.515446126461029,
+            "E": 0.017095008864998817
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1402561068534851,
+          "B": 0.1897057741880417,
+          "C": 0.0875496193766594,
+          "D": 0.515446126461029
+        },
+        "score": 0.0875496193766594
+      },
+      {
+        "record_index": 33,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_3989",
+        "label": null,
+        "perturbations": {
+          "a": "நம் கருணையிலேயே ஒளியைப் பார்ப்பதையே நோக்கமாகக் கொள்ள வேண்டும்",
+          "b": "நம் அடுக்குகளிலும் ஒளியைப் பார்ப்பதையே நோக்கமாகக் கொள்ள வேண்டும்",
+          "c": "நம் வெள்ளைக்காலங்களிலும் ஒளியைப் பார்ப்பதையே நோக்கமாகக் கொள்ள வேண்டும்",
+          "d": "நம் மந்த நிலையில் ஒளியைப் பார்ப்பதையே நோக்கமாகக் கொள்ள வேண்டும்"
+        },
+        "bdq_probs": {
+          "A": 0.6516289114952087,
+          "B": 0.15001347661018372,
+          "C": 0.013524124398827553,
+          "D": 0.1753835380077362,
+          "E": 0.009441360831260681
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.16285376250743866,
+            "B": 0.25223246216773987,
+            "C": 0.021361757069826126,
+            "D": 0.5509265661239624,
+            "E": 0.010910512879490852
+          },
+          "B": {
+            "A": 0.8673867583274841,
+            "B": 0.055450186133384705,
+            "C": 0.005490314681082964,
+            "D": 0.06283332407474518,
+            "E": 0.0033824844285845757
+          },
+          "C": {
+            "A": 0.43154770135879517,
+            "B": 0.046928636729717255,
+            "C": 0.01956278458237648,
+            "D": 0.4890079200267792,
+            "E": 0.0035074111074209213
+          },
+          "D": {
+            "A": 0.20989489555358887,
+            "B": 0.0640137568116188,
+            "C": 0.0242972020059824,
+            "D": 0.5529986619949341,
+            "E": 0.0166991725564003
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.16285376250743866,
+          "B": 0.055450186133384705,
+          "C": 0.01956278458237648,
+          "D": 0.5529986619949341
+        },
+        "score": 0.01956278458237648
+      },
+      {
+        "record_index": 35,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_59164",
+        "label": null,
+        "perturbations": {
+          "a": "التجارة الرقمية و حماية المعلومات",
+          "b": "التجارة الإلكترونية و أمان المعلومات",
+          "c": "التجارة الافتراضية و سلامة المعلومات",
+          "d": "التجارة الإلكترونية و خصوصية المعلومات"
+        },
+        "bdq_probs": {
+          "A": 0.005366522818803787,
+          "B": 0.771957516670227,
+          "C": 0.003254959126934409,
+          "D": 0.21436487138271332,
+          "E": 0.005041381344199181
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01772991009056568,
+            "B": 0.07464564591646194,
+            "C": 0.012971476651728153,
+            "D": 0.8279915452003479,
+            "E": 0.06587465852499008
+          },
+          "B": {
+            "A": 0.030360057950019836,
+            "B": 0.04702251777052879,
+            "C": 0.02291698195040226,
+            "D": 0.8078514933586121,
+            "E": 0.07998819649219513
+          },
+          "C": {
+            "A": 0.0034863257315009832,
+            "B": 0.08851924538612366,
+            "C": 0.004476542118936777,
+            "D": 0.8140090107917786,
+            "E": 0.05043718218803406
+          },
+          "D": {
+            "A": 0.001331865438260138,
+            "B": 0.9882652163505554,
+            "C": 0.001021176460199058,
+            "D": 0.004435770213603973,
+            "E": 0.0015092040412127972
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01772991009056568,
+          "B": 0.04702251777052879,
+          "C": 0.004476542118936777,
+          "D": 0.004435770213603973
+        },
+        "score": 0.004435770213603973
+      },
+      {
+        "record_index": 36,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_7041",
+        "label": null,
+        "perturbations": {
+          "a": "أرغب أن أتعلم النظم. أنشئ قصيدة قصيرة من بحر الطويل.",
+          "b": "أريد أن أدرس الشعر. أنشيء قصيدة قصيرة من بحر الطويل.",
+          "c": "أحتاج أن أتعلم الشعر. أؤلف قصيدة قصيرة من بحر الطويل.",
+          "d": "أريد أن أكتسب الشعر. أنشئ قصيدة قصيرة من بحر الطويل."
+        },
+        "bdq_probs": {
+          "A": 0.8200165033340454,
+          "B": 0.138113334774971,
+          "C": 0.015739910304546356,
+          "D": 0.012846540659666061,
+          "E": 0.013254339806735516
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.852155864238739,
+            "B": 0.11177854239940643,
+            "C": 0.012541204690933228,
+            "D": 0.018534699454903603,
+            "E": 0.004471705295145512
+          },
+          "B": {
+            "A": 0.5867254734039307,
+            "B": 0.3671635091304779,
+            "C": 0.025379259139299393,
+            "D": 0.016132036224007607,
+            "E": 0.0044102538377046585
+          },
+          "C": {
+            "A": 0.22380320727825165,
+            "B": 0.5896428227424622,
+            "C": 0.10246460139751434,
+            "D": 0.07265827059745789,
+            "E": 0.00802564900368452
+          },
+          "D": {
+            "A": 0.12497727572917938,
+            "B": 0.40978458523750305,
+            "C": 0.30932220816612244,
+            "D": 0.11029215157032013,
+            "E": 0.043191030621528625
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.852155864238739,
+          "B": 0.3671635091304779,
+          "C": 0.10246460139751434,
+          "D": 0.11029215157032013
+        },
+        "score": 0.10246460139751434
+      },
+      {
+        "record_index": 38,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_68737",
+        "label": null,
+        "perturbations": {
+          "a": "Victoria Macaulay (ti a bi ni ọjọ keje oṣu karun-un ọdun 1990) jẹ agbabọọlu inu agbọn ọmọ orilẹede Naijiria fun ẹgbẹ agbabọọlu inu agbon orilẹede Naijiria ati pe o jẹ aṣoju ọfẹ ti Ẹgbẹ bọọlu inu agbọn ti Orilẹ-ede Awọn obinrin (WNBA) ati . Ni ọdun 2015 ati 2019 o gba fun Chicago Sky ni Ẹgbẹ bọọlu inu agbọn ti Orilẹ-ede Awọn obinrin .\n\nLakoko rẹ ni ẹgbẹ Faranse Nice, o ni ami ayo 15.8, atungba 8.6 ati atungba 0.8.",
+          "b": "Victoria Macaulay (ti a bi ni ọjọ keje oṣu mẹta ọdun 1990) jẹ agbabọọlu inu agbọn ọmọ orilẹede Naijiria fun ẹgbẹ agbabọọlu inu agbon orilẹede Naijiria ati pe o jẹ aṣoju ọfẹ ti Ẹgbẹ bọọlu inu agbọn ti Orilẹ-ede Awọn obinrin (WNBA) ati . Ni ọdun 2015 ati 2019 o gba fun Chicago Sky ni Ẹgbẹ bọọlu inu agbọn ti Orilẹ-ede Awọn obinrin .\n\nLakoko rẹ ni ẹgbẹ Faranse Nice, o ni ami ayo 15.8, atungba 8.6 ati atungba 0.8.",
+          "c": "Victoria Macaulay (ti a bi ni ọjọ keje oṣu kẹsan ọdun 1990) jẹ agbabọọlu inu agbọn ọmọ orilẹede Naijiria fun ẹgbẹ agbabọọlu inu agbon orilẹede Naijiria ati pe o jẹ aṣoju ọfẹ ti Ẹgbẹ bọọlu inu agbọn ti Orilẹ-ede Awọn obinrin (WNBA) ati . Ni ọdun 2015 ati 2019 o gba fun Chicago Sky ni Ẹgbẹ bọọlu inu agbọn ti Orilẹ-ede Awọn obinrin .\n\nLakoko rẹ ni ẹgbẹ Faranse Nice, o ni ami ayo 15.8, atungba 8.6 ati atungba 0.8.",
+          "d": "Victoria Macaulay (ti a bi ni ọjọ keje oṣu keji ọdun 1990) jẹ agbabọọlu inu agbọn ọmọ orilẹede Naijiria fun ẹgbẹ agbabọọlu inu agbon orilẹede Naijiria ati pe o jẹ aṣoju ọfẹ ti Ẹgbẹ bọọlu inu agbọn ti Orilẹ-ede Awọn obinrin (WNBA) ati . Ni ọdun 2015 ati 2019 o gba fun Chicago Sky ni Ẹgbẹ bọọlu inu agbọn ti Orilẹ-ede Awọn obinrin .\n\nLakoko rẹ ni ẹgbẹ Faranse Nice, o ni ami ayo 15.8, atungba 8.6 ati atungba 0.8."
+        },
+        "bdq_probs": {
+          "A": 0.2509250044822693,
+          "B": 0.2284698188304901,
+          "C": 0.18358062207698822,
+          "D": 0.05259673669934273,
+          "E": 0.28433534502983093
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.32851189374923706,
+            "B": 0.1551780104637146,
+            "C": 0.1171344593167305,
+            "D": 0.08050528913736343,
+            "E": 0.31840479373931885
+          },
+          "B": {
+            "A": 0.40760093927383423,
+            "B": 0.14994801580905914,
+            "C": 0.04432453215122223,
+            "D": 0.02688419632613659,
+            "E": 0.37112492322921753
+          },
+          "C": {
+            "A": 0.43940281867980957,
+            "B": 0.2075592428445816,
+            "C": 0.09210382401943207,
+            "D": 0.025576306506991386,
+            "E": 0.23519545793533325
+          },
+          "D": {
+            "A": 0.33274105191230774,
+            "B": 0.3327411711215973,
+            "C": 0.22165337204933167,
+            "D": 0.08154163509607315,
+            "E": 0.030949780717492104
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.32851189374923706,
+          "B": 0.14994801580905914,
+          "C": 0.09210382401943207,
+          "D": 0.08154163509607315
+        },
+        "score": 0.08154163509607315
+      },
+      {
+        "record_index": 39,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_79915",
+        "label": null,
+        "perturbations": {
+          "a": "السؤال: من هو الصحابي العظيم الذي بصق النبي صلى الله عليه وسلم في عينه وقد كان يشتكي وجعًا فيهما فشفي؟",
+          "b": "السؤال: من هو الصحابي الكريم الذي بصق النبي صلى الله عليه وسلم في عينه وقد كان يشتكي ألمًا فيهما فشفي؟",
+          "c": "السؤال: من هو الصحابي الرفيع الذي بصق النبي صلى الله عليه وسلم في عينه وقد كان يشتكي وجعًا فيهما فشفا؟",
+          "d": "السؤال: من هو الصحابي الفاضل الذي بصق النبي صلى الله عليه وسلم في عينه وقد كان يشتكي ألمًا فيهما فشفا؟"
+        },
+        "bdq_probs": {
+          "A": 0.37243959307670593,
+          "B": 0.3286767303943634,
+          "C": 0.14136214554309845,
+          "D": 0.14136208593845367,
+          "E": 0.01611015945672989
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.7701641321182251,
+            "B": 0.06127389520406723,
+            "C": 0.04211290553212166,
+            "D": 0.09198307245969772,
+            "E": 0.028943749144673347
+          },
+          "B": {
+            "A": 0.4964839816093445,
+            "B": 0.2135351300239563,
+            "C": 0.10086693614721298,
+            "D": 0.09184038639068604,
+            "E": 0.06932472437620163
+          },
+          "C": {
+            "A": 0.2470053881406784,
+            "B": 0.09086818248033524,
+            "C": 0.20477484166622162,
+            "D": 0.337616890668869,
+            "E": 0.06859095394611359
+          },
+          "D": {
+            "A": 0.21559900045394897,
+            "B": 0.05802760273218155,
+            "C": 0.1349184364080429,
+            "D": 0.3554629981517792,
+            "E": 0.22244301438331604
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.7701641321182251,
+          "B": 0.2135351300239563,
+          "C": 0.20477484166622162,
+          "D": 0.3554629981517792
+        },
+        "score": 0.20477484166622162
+      },
+      {
+        "record_index": 40,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_78887",
+        "label": null,
+        "perturbations": {
+          "a": "How does the utilization of traditional Sinhalese architectural features, such as the \"Walawwa\" or residence, favorably reflect the historical and cultural magnificence of Sri Lanka?",
+          "b": "How does the employment of traditional Sinhalese architectural aspects, such as the \"Walawwa\" or estate, beneficially reflect the historical and cultural glory of Sri Lanka?",
+          "c": "How does the application of traditional Sinhalese architectural traits, such as the \"Walawwa\" or villa, advantageously reflect the historical and cultural splendor of Sri Lanka?",
+          "d": "How does the practice of traditional Sinhalese architectural components, such as the \"Walawwa\" or homestead, positively reflect the historical and cultural grandeur of Sri Lanka?"
+        },
+        "bdq_probs": {
+          "A": 0.5707515478134155,
+          "B": 0.13139444589614868,
+          "C": 0.07486631721258163,
+          "D": 0.1852959245443344,
+          "E": 0.03764516860246658
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.20004194974899292,
+            "B": 0.0040873694233596325,
+            "C": 0.0022928081452846527,
+            "D": 0.7911815643310547,
+            "E": 0.002222266048192978
+          },
+          "B": {
+            "A": 0.31448647379875183,
+            "B": 0.6452844142913818,
+            "C": 0.00995242316275835,
+            "D": 0.02278132177889347,
+            "E": 0.007281348574906588
+          },
+          "C": {
+            "A": 0.06368499994277954,
+            "B": 0.10176830738782883,
+            "C": 0.7064124345779419,
+            "D": 0.1227559745311737,
+            "E": 0.005309904459863901
+          },
+          "D": {
+            "A": 0.0371587909758091,
+            "B": 0.06126443296670914,
+            "C": 0.11093584448099136,
+            "D": 0.7233924269676208,
+            "E": 0.0652158260345459
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.20004194974899292,
+          "B": 0.6452844142913818,
+          "C": 0.7064124345779419,
+          "D": 0.7233924269676208
+        },
+        "score": 0.20004194974899292
+      },
+      {
+        "record_index": 41,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_72562",
+        "label": null,
+        "perturbations": {
+          "a": "Challenges encompass the requirement for labeled training data, computational assets, and model interpretability, while opportunities rest in advancements in model frameworks, varied data sources, and enhanced collaboration between GIS and machine learning communities.",
+          "b": "Challenges comprise the necessity for labeled training data, computational capabilities, and model interpretability, while opportunities reside in advancements in model designs, various data sources, and improved collaboration between GIS and machine learning communities.",
+          "c": "Challenges involve the demand for labeled training data, computational means, and model interpretability, while opportunities exist in advancements in model structures, multiple data sources, and amplified collaboration between GIS and machine learning communities.",
+          "d": "Challenges incorporate the need for labeled training data, computational resources, and model interpretability, while opportunities consist in advancements in model systems, diverse data sources, and bolstered collaboration between GIS and machine learning communities."
+        },
+        "bdq_probs": {
+          "A": 0.16629187762737274,
+          "B": 0.166291743516922,
+          "C": 0.2069535106420517,
+          "D": 0.38663995265960693,
+          "E": 0.07379154115915298
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.021310893818736076,
+            "B": 0.06772536784410477,
+            "C": 0.3230997920036316,
+            "D": 0.5850593447685242,
+            "E": 0.0023174481466412544
+          },
+          "B": {
+            "A": 0.24156226217746735,
+            "B": 0.06501557677984238,
+            "C": 0.5443687438964844,
+            "D": 0.14651493728160858,
+            "E": 0.0024054863024502993
+          },
+          "C": {
+            "A": 0.1681787669658661,
+            "B": 0.0928771123290062,
+            "C": 0.7080590128898621,
+            "D": 0.028325926512479782,
+            "E": 0.0024367189034819603
+          },
+          "D": {
+            "A": 0.019632114097476006,
+            "B": 0.031371962279081345,
+            "C": 0.9168248772621155,
+            "D": 0.030406823381781578,
+            "E": 0.0005440192180685699
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.021310893818736076,
+          "B": 0.06501557677984238,
+          "C": 0.7080590128898621,
+          "D": 0.030406823381781578
+        },
+        "score": 0.021310893818736076
+      },
+      {
+        "record_index": 42,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_67764",
+        "label": null,
+        "perturbations": {
+          "a": "عالم مصري معروف على مستوى العالم، وحائز على جائزة نوبل؛ فمن يكون؟",
+          "b": "عالم مصري مشهور على مستوى العالم، وحاصل على جائزة نوبل؛ فمن يكون؟",
+          "c": "عالم مصري بارز على مستوى العالم، وحائز على جائزة نوبل؛ فمن يكون؟",
+          "d": "عالم مصري متعارف عليه على مستوى العالم، وحاصل على جائزة نوبل؛ فمن يكون؟"
+        },
+        "bdq_probs": {
+          "A": 0.22310416400432587,
+          "B": 0.6064598560333252,
+          "C": 0.06004766374826431,
+          "D": 0.08468076586723328,
+          "E": 0.025425786152482033
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.7870354652404785,
+            "B": 0.1325584053993225,
+            "C": 0.007362488657236099,
+            "D": 0.051910649985075,
+            "E": 0.014872683212161064
+          },
+          "B": {
+            "A": 0.6687688231468201,
+            "B": 0.253836065530777,
+            "C": 0.017822086811065674,
+            "D": 0.04016270861029625,
+            "E": 0.015244058333337307
+          },
+          "C": {
+            "A": 0.20869052410125732,
+            "B": 0.7059907913208008,
+            "C": 0.018814023584127426,
+            "D": 0.056168317794799805,
+            "E": 0.0058283195830881596
+          },
+          "D": {
+            "A": 0.23487906157970428,
+            "B": 0.20090191066265106,
+            "C": 0.26615336537361145,
+            "D": 0.22765296697616577,
+            "E": 0.06729406118392944
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.7870354652404785,
+          "B": 0.253836065530777,
+          "C": 0.018814023584127426,
+          "D": 0.22765296697616577
+        },
+        "score": 0.018814023584127426
+      },
+      {
+        "record_index": 43,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_21818",
+        "label": null,
+        "perturbations": {
+          "a": "إنتاجية مرتفعة  \nوقال رجل الأعمال القطري ناصر الخلف، إنه يمثل إحدى المؤسسات القطرية التي تعمل في مجال تطوير الزراعة والإنتاج الزراعي باستخدام التقنيات المتقدمة لتوفير المياه وتحقيق الاستدامة، والحصول على إنتاجية مرتفعة من المحاصيل.",
+          "b": "إنتاجية فائقة  \nوقال رجل الأعمال القطري ناصر الخلف، إنه يمثل إحدى الشركات القطرية التي تعمل في مجال تطوير الزراعة والإنتاج الزراعي باستخدام التقنيات المتقدمة لتوفير المياه وتحقيق الاستدامة، والحصول على إنتاجية فائقة من المحاصيل.",
+          "c": "إنتاجية عظمى  \nوقال رجل الأعمال القطري ناصر الخلف، إنه يمثل إحدى الشركات القطرية التي تعمل في مجال تطوير الزراعة والإنتاج الزراعي باستخدام التقنيات الحديثة لتوفير المياه وتحقيق الاستدامة، والحصول على إنتاجية عظمى من المحاصيل.",
+          "d": "إنتاجية ممتازة  \nوقال رجل الأعمال القطري ناصر الخلف، إنه يمثل إحدى المؤسسات القطرية التي تعمل في مجال تطوير الزراعة والإنتاج الزراعي باستخدام التقنيات الحديثة لتوفير المياه وتحقيق الاستدامة، والحصول على إنتاجية ممتازة من المحاصيل."
+        },
+        "bdq_probs": {
+          "A": 0.8074714541435242,
+          "B": 0.05849303677678108,
+          "C": 0.036604005843400955,
+          "D": 0.0905958041548729,
+          "E": 0.006771062035113573
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4580230414867401,
+            "B": 0.13122576475143433,
+            "C": 0.33509671688079834,
+            "D": 0.05470304563641548,
+            "E": 0.02012416161596775
+          },
+          "B": {
+            "A": 0.3350881040096283,
+            "B": 0.06395266950130463,
+            "C": 0.33508822321891785,
+            "D": 0.24515578150749207,
+            "E": 0.0192020982503891
+          },
+          "C": {
+            "A": 0.21387851238250732,
+            "B": 0.05407694727182388,
+            "C": 0.03384051471948624,
+            "D": 0.6797049641609192,
+            "E": 0.01755623333156109
+          },
+          "D": {
+            "A": 0.03636625036597252,
+            "B": 0.052912354469299316,
+            "C": 0.45709478855133057,
+            "D": 0.4294002652168274,
+            "E": 0.022757429629564285
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4580230414867401,
+          "B": 0.06395266950130463,
+          "C": 0.03384051471948624,
+          "D": 0.4294002652168274
+        },
+        "score": 0.03384051471948624
+      },
+      {
+        "record_index": 44,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_24555",
+        "label": null,
+        "perturbations": {
+          "a": "كيفية لبس الكمامة الطبية وخلعها:",
+          "b": "كيفية استعمال الكمامة الطبية وخلعها:",
+          "c": "كيفية وضع الكمامة الطبية وخلعها:",
+          "d": "كيفية ارتداء القناع الطبي وخلعها:"
+        },
+        "bdq_probs": {
+          "A": 0.07632623612880707,
+          "B": 0.4126153290271759,
+          "C": 0.42571336030960083,
+          "D": 0.07397782802581787,
+          "E": 0.011344880796968937
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4179782569408417,
+            "B": 0.01302250474691391,
+            "C": 0.4449354112148285,
+            "D": 0.07731819897890091,
+            "E": 0.0413854755461216
+          },
+          "B": {
+            "A": 0.6926681399345398,
+            "B": 0.007116571068763733,
+            "C": 0.2548183798789978,
+            "D": 0.007006240077316761,
+            "E": 0.0030133468098938465
+          },
+          "C": {
+            "A": 0.3269832730293274,
+            "B": 0.10952560603618622,
+            "C": 0.19832532107830048,
+            "D": 0.3373628258705139,
+            "E": 0.007453317288309336
+          },
+          "D": {
+            "A": 0.097325898706913,
+            "B": 0.1818276047706604,
+            "C": 0.5428385734558105,
+            "D": 0.06483273953199387,
+            "E": 0.014694029465317726
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4179782569408417,
+          "B": 0.007116571068763733,
+          "C": 0.19832532107830048,
+          "D": 0.06483273953199387
+        },
+        "score": 0.007116571068763733
+      },
+      {
+        "record_index": 45,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_26154",
+        "label": null,
+        "perturbations": {
+          "a": "هل يمكنك مساعدتي في تأليف قصيدة قصيرة من بحر الطويل؟",
+          "b": "هل تستطيع مساعدتي في وضع قصيدة قصيرة من بحر الطويل؟",
+          "c": "هل يمكنك إرشادي في كتابة قصيدة قصيرة من بحر الطويل؟",
+          "d": "هل بإمكانك دعمي في إعداد قصيدة قصيرة من بحر الطويل؟"
+        },
+        "bdq_probs": {
+          "A": 0.2275731861591339,
+          "B": 0.3871147036552429,
+          "C": 0.21378512680530548,
+          "D": 0.15159624814987183,
+          "E": 0.019885122776031494
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.762406587600708,
+            "B": 0.09394693374633789,
+            "C": 0.0443773977458477,
+            "D": 0.07316597551107407,
+            "E": 0.023753521963953972
+          },
+          "B": {
+            "A": 0.5309296250343323,
+            "B": 0.4401562213897705,
+            "C": 0.01191448513418436,
+            "D": 0.008854089304804802,
+            "E": 0.0053702788427472115
+          },
+          "C": {
+            "A": 0.2565743923187256,
+            "B": 0.526456356048584,
+            "C": 0.1819387525320053,
+            "D": 0.026210729032754898,
+            "E": 0.00516120158135891
+          },
+          "D": {
+            "A": 0.09507668018341064,
+            "B": 0.302152544260025,
+            "C": 0.2076670080423355,
+            "D": 0.3644663989543915,
+            "E": 0.028996773064136505
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.762406587600708,
+          "B": 0.4401562213897705,
+          "C": 0.1819387525320053,
+          "D": 0.3644663989543915
+        },
+        "score": 0.1819387525320053
+      },
+      {
+        "record_index": 47,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_10963",
+        "label": null,
+        "perturbations": {
+          "a": "وُضِعت قوانين جيم كرو قيد التنفيذ للحد من حركة الأمريكيين من أصل أفريقي ومشاركتهم في المجتمع الذي يسيطر عليه البيض. كان على الرجال السود خلال هذا الوقت إثبات هويتهم الذاتية، والذي قد يبدو مستحيلًا بسبب كل القيود المفروضة عليهم. كافح العديد من الرجال السود، مثل بول دي، للعثور على قيمتهم في مجتمعهم وتحقيق أهدافهم بسبب «التعجيزات» التي حجزتهم في جزء معين من التسلسل الهرمي الاجتماعي.",
+          "b": "وُضِعت قوانين جيم كرو قيد التنفيذ للحد من حركة الأمريكيين من أصل أفريقي ومشاركتهم في المجتمع الذي يهيمن عليه البيض. كان على الرجال السود خلال هذا الوقت إثبات هويتهم الشخصية، والذي قد يبدو مستحيلًا بسبب كل القيود المفروضة عليهم. كافح العديد من الرجال السود، مثل بول دي، للعثور على قيمتهم في مجتمعهم وتحقيق أهدافهم بسبب «التعجيزات» التي احتجزتهم في جزء معين من التسلسل الهرمي الاجتماعي.",
+          "c": "وُضِعت قوانين جيم كرو قيد التنفيذ للحد من حركة الأمريكيين من أصل أفريقي ومشاركتهم في المجتمع الذي يهيمن عليه البيض. كان على الرجال السود خلال هذا الوقت إثبات هويتهم الذاتية، والذي قد يبدو مستحيلًا بسبب جميع القيود المفروضة عليهم. كافح العديد من الرجال السود، مثل بول دي، للعثور على قيمتهم في مجتمعهم وتحقيق أهدافهم بسبب «التعجيزات» التي حجبتهم في جزء معين من التسلسل الهرمي الاجتماعي.",
+          "d": "وُضِعت قوانين جيم كرو قيد التنفيذ للحد من حركة الأمريكيين من أصل أفريقي ومشاركتهم في المجتمع الذي يسيطر عليه البيض. كان على الرجال السود خلال هذا الوقت إثبات هويتهم الخاصة، والذي قد يبدو مستحيلًا بسبب كل القيود المفروضة عليهم. كافح العديد من الرجال السود، مثل بول دي، للعثور على قيمتهم في مجتمعهم وتحقيق أهدافهم بسبب «التعجيزات» التي حبستهم في جزء معين من التسلسل الهرمي الاجتماعي."
+        },
+        "bdq_probs": {
+          "A": 0.10912519693374634,
+          "B": 0.1491563767194748,
+          "C": 0.6086513996124268,
+          "D": 0.12365498393774033,
+          "E": 0.0093874242156744
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.11004254221916199,
+            "B": 0.27235761284828186,
+            "C": 0.21211248636245728,
+            "D": 0.39627811312675476,
+            "E": 0.00889281090348959
+          },
+          "B": {
+            "A": 0.16639715433120728,
+            "B": 0.14232689142227173,
+            "C": 0.3013063073158264,
+            "D": 0.3634447455406189,
+            "E": 0.02591969259083271
+          },
+          "C": {
+            "A": 0.2025335133075714,
+            "B": 0.17873507738113403,
+            "C": 0.12674236297607422,
+            "D": 0.4858528971672058,
+            "E": 0.00450964504852891
+          },
+          "D": {
+            "A": 0.00923625472933054,
+            "B": 0.007306428626179695,
+            "C": 0.9569558501243591,
+            "D": 0.023956933990120888,
+            "E": 0.0017766003729775548
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.11004254221916199,
+          "B": 0.14232689142227173,
+          "C": 0.12674236297607422,
+          "D": 0.023956933990120888
+        },
+        "score": 0.023956933990120888
+      },
+      {
+        "record_index": 48,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_90289",
+        "label": null,
+        "perturbations": {
+          "a": "Variations in global oil prices considerably affected India's trade balance and fiscal health. While decreased oil prices aided the economy by lowering the import bill and inflation, they created difficulties for oil-exporting nations. However, instability in oil prices also underscored the significance of diversifying energy sources and enhancing energy efficiency.",
+          "b": "Changes in international oil prices greatly impacted India's trade balance and fiscal health. While reduced oil prices supported the economy by cutting the import bill and inflation, they introduced challenges for oil-exporting countries. Nonetheless, fluctuations in oil prices also emphasized the necessity of diversifying energy sources and boosting energy efficiency.",
+          "c": "Shifts in world oil prices profoundly influenced India's trade balance and fiscal health. While diminished oil prices favored the economy by decreasing the import bill and inflation, they presented challenges for oil-exporting nations. Nevertheless, changes in oil prices also stressed the importance of diversifying energy sources and augmenting energy efficiency.",
+          "d": "Transformations in worldwide oil prices markedly affected India's trade balance and fiscal health. While lower oil prices benefited the economy by curtailing the import bill and inflation, they generated obstacles for oil-exporting countries. Still, variability in oil prices also highlighted the relevance of diversifying energy sources and upgrading energy efficiency."
+        },
+        "bdq_probs": {
+          "A": 0.13033407926559448,
+          "B": 0.31265491247177124,
+          "C": 0.27591726183891296,
+          "D": 0.2360042929649353,
+          "E": 0.04504222422838211
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03896023705601692,
+            "B": 0.6487451195716858,
+            "C": 0.20413725078105927,
+            "D": 0.10264642536640167,
+            "E": 0.005031256005167961
+          },
+          "B": {
+            "A": 0.22196535766124725,
+            "B": 0.662665843963623,
+            "C": 0.06984447687864304,
+            "D": 0.03738504648208618,
+            "E": 0.007959739305078983
+          },
+          "C": {
+            "A": 0.18540911376476288,
+            "B": 0.6471412777900696,
+            "C": 0.13995420932769775,
+            "D": 0.015702413395047188,
+            "E": 0.011669048108160496
+          },
+          "D": {
+            "A": 0.04776783287525177,
+            "B": 0.09207474440336227,
+            "C": 0.7954068779945374,
+            "D": 0.06133502721786499,
+            "E": 0.003301827935501933
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03896023705601692,
+          "B": 0.662665843963623,
+          "C": 0.13995420932769775,
+          "D": 0.06133502721786499
+        },
+        "score": 0.03896023705601692
+      },
+      {
+        "record_index": 50,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_36060",
+        "label": null,
+        "perturbations": {
+          "a": "Awọn olopaa mu mẹrin balẹ ninu awọn ajinigbe to da awọn arinrin-ajo lọna l’Ondo",
+          "b": "Awọn ẹjọ mu mẹrin balẹ ninu awọn ajinigbe to da awọn arinrin-ajo lọna l’Ondo",
+          "c": "Awọn ọlọpaa mu mẹrin balẹ ninu awọn ajinigbe to da awọn arinrin-ajo lọna l’Ondo",
+          "d": "Awọn ologun mu mẹrin balẹ ninu awọn ajinigbe to da awọn arinrin-ajo lọna l’Ondo"
+        },
+        "bdq_probs": {
+          "A": 0.1094377264380455,
+          "B": 0.2466212809085846,
+          "C": 0.5916140675544739,
+          "D": 0.04562036320567131,
+          "E": 0.006675741169601679
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.11715494841337204,
+            "B": 0.010236883535981178,
+            "C": 0.004542590118944645,
+            "D": 0.8656644225120544,
+            "E": 0.002393777249380946
+          },
+          "B": {
+            "A": 0.008131570182740688,
+            "B": 0.04002495855093002,
+            "C": 0.005416791886091232,
+            "D": 0.9398809671401978,
+            "E": 0.0065338993445038795
+          },
+          "C": {
+            "A": 0.041707828640937805,
+            "B": 0.920059859752655,
+            "C": 0.008742439560592175,
+            "D": 0.009019945748150349,
+            "E": 0.020326795056462288
+          },
+          "D": {
+            "A": 0.027052579447627068,
+            "B": 0.08870013058185577,
+            "C": 0.8156726360321045,
+            "D": 0.0537998266518116,
+            "E": 0.014480679295957088
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.11715494841337204,
+          "B": 0.04002495855093002,
+          "C": 0.008742439560592175,
+          "D": 0.0537998266518116
+        },
+        "score": 0.008742439560592175
+      },
+      {
+        "record_index": 51,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_63269",
+        "label": null,
+        "perturbations": {
+          "a": "\"Indray andro, nisy alika iray antsoina hoe Max izay nipetraka tao amin'ny toeram-piompiana kely iray niaraka tamin'ny fianakaviny. Indray andro, nanapa-kevitra i Max fa handeha ary hahita ny tontolo lehibe. Niampita ny fefy izy ary nandeha tany amin'ny tsy fantatra.\"\nManomeza tohiny ho an'ny tantara.",
+          "b": "\"Indray andro, nisy alika iray antsoina hoe Max izay nipetraka tao amin'ny toerana-piompiana kely iray niaraka tamin'ny fianakaviany. Indray andro, nanapa-kevitra i Max fa handeha ary hahita ny tontolo lehibe. Niampita ny fehy izy ary nandeha tany amin'ny tsy fantatra.\"\nManomeza tohiny ho an'ny tantara.",
+          "c": "\"Indray andro, nisy alika iray antsoina hoe Max izay nipetraka tao amin'ny toeram-piompiana kely iray niaraka tamin'ny fianakaviany. Indray andro, nanapa-kevitra i Max fa handeha ary hahita ny tontolo lehibe. Niampita ny fefy izy ary nandeha tany amin'ny tsy fantatra.\"\nManomeza tohiny ho an'ny tantara.",
+          "d": "\"Indray andro, nisy alika iray antsoina hoe Max izay nipetraka tao amin'ny toeram-piompiana kely iray niaraka tamin'ny fianakaviany. Indray andro, nanapa-kevitra i Max fa handeha ary hahita ny tontolo lehibe. Niampita ny fehy izy ary nandeha tany amin'ny mbola tsy fantatra.\"\nManomeza tohiny ho an'ny tantara."
+        },
+        "bdq_probs": {
+          "A": 0.28093746304512024,
+          "B": 0.12862251698970795,
+          "C": 0.5587108731269836,
+          "D": 0.026960741728544235,
+          "E": 0.004758854862302542
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.27612319588661194,
+            "B": 0.2761232256889343,
+            "C": 0.2939315736293793,
+            "D": 0.1264183074235916,
+            "E": 0.02733989618718624
+          },
+          "B": {
+            "A": 0.524839460849762,
+            "B": 0.31833162903785706,
+            "C": 0.0315190814435482,
+            "D": 0.02454705350100994,
+            "E": 0.09409856051206589
+          },
+          "C": {
+            "A": 0.3466549813747406,
+            "B": 0.4314192533493042,
+            "C": 0.11980119347572327,
+            "D": 0.05316118523478508,
+            "E": 0.04547123238444328
+          },
+          "D": {
+            "A": 0.05357651039958,
+            "B": 0.040441542863845825,
+            "C": 0.8921306133270264,
+            "D": 0.010549747385084629,
+            "E": 0.002752091269940138
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.27612319588661194,
+          "B": 0.31833162903785706,
+          "C": 0.11980119347572327,
+          "D": 0.010549747385084629
+        },
+        "score": 0.010549747385084629
+      },
+      {
+        "record_index": 52,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14982",
+        "label": null,
+        "perturbations": {
+          "a": "البحر الأبيض المتوسط نشأت حوله العديد من الحضارات الكبيرة، و اتسمى ذلك لأن قديماً كانوا يعتقدون أنه موجود في وسط الأرض و استمر الاسم هذا و انتقل لنا في العصر الحديث",
+          "b": "البحر الأبيض المتوسط تكونت حوله الكثير من الحضارات العظيمة، و اتسمى ذلك لأن قديماً كانوا يظنون أنه موجود في وسط الأرض و استمر المسمى هذا و انتقل إلينا في العصر الحديث",
+          "c": "البحر الأبيض المتوسط أُقيمت حوله العديد من الحضارات العريقة، و اتسمى ذلك لأن قديماً كانوا يؤمنون أنه موجود في وسط الأرض و استمر الاسم هذا و انتقل إلينا في العصر الحديث",
+          "d": "البحر الأبيض المتوسط برزت حوله العديد من الحضارات الكبيرة، و اتسمى ذلك لأن قديماً كانوا يعتقدون أنه يقع في وسط الأرض و استمر الاسم هذا و انتقل لنا في العصر الحديث"
+        },
+        "bdq_probs": {
+          "A": 0.23947030305862427,
+          "B": 0.407352477312088,
+          "C": 0.09377791732549667,
+          "D": 0.247071772813797,
+          "E": 0.01230098120868206
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.11776459962129593,
+            "B": 0.18818247318267822,
+            "C": 0.2914668917655945,
+            "D": 0.30072417855262756,
+            "E": 0.06923049688339233
+          },
+          "B": {
+            "A": 0.08936530351638794,
+            "B": 0.016530781984329224,
+            "C": 0.0595303438603878,
+            "D": 0.7029141783714294,
+            "E": 0.01118544489145279
+          },
+          "C": {
+            "A": 0.06185733899474144,
+            "B": 0.028320100158452988,
+            "C": 0.01772242970764637,
+            "D": 0.8539127707481384,
+            "E": 0.013588285073637962
+          },
+          "D": {
+            "A": 0.1269814372062683,
+            "B": 0.03995615243911743,
+            "C": 0.5690932869911194,
+            "D": 0.16822302341461182,
+            "E": 0.053768619894981384
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.11776459962129593,
+          "B": 0.016530781984329224,
+          "C": 0.01772242970764637,
+          "D": 0.16822302341461182
+        },
+        "score": 0.016530781984329224
+      },
+      {
+        "record_index": 53,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_32516",
+        "label": null,
+        "perturbations": {
+          "a": "How do conventional \"Koraweema\" farming techniques contribute to sustainability?",
+          "b": "How do customary \"Koraweema\" agricultural methods contribute to sustainability?",
+          "c": "How do classic \"Koraweema\" cultivation practices contribute to sustainability?",
+          "d": "How do traditional \"Koraweema\" agrarian methods contribute to sustainability?"
+        },
+        "bdq_probs": {
+          "A": 0.06813129782676697,
+          "B": 0.2453499436378479,
+          "C": 0.14423395693302155,
+          "D": 0.5194060802459717,
+          "E": 0.022821124643087387
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2101258933544159,
+            "B": 0.14441722631454468,
+            "C": 0.08489854633808136,
+            "D": 0.5536081790924072,
+            "E": 0.006860852707177401
+          },
+          "B": {
+            "A": 0.03380283713340759,
+            "B": 0.7004998326301575,
+            "C": 0.05932578444480896,
+            "D": 0.1945217251777649,
+            "E": 0.011500831693410873
+          },
+          "C": {
+            "A": 0.009659640491008759,
+            "B": 0.0498281754553318,
+            "C": 0.9112625122070312,
+            "D": 0.02143082395195961,
+            "E": 0.007641402538865805
+          },
+          "D": {
+            "A": 0.01864025741815567,
+            "B": 0.062081363052129745,
+            "C": 0.24553774297237396,
+            "D": 0.6270018815994263,
+            "E": 0.04542003571987152
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2101258933544159,
+          "B": 0.7004998326301575,
+          "C": 0.9112625122070312,
+          "D": 0.6270018815994263
+        },
+        "score": 0.2101258933544159
+      },
+      {
+        "record_index": 54,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_55629",
+        "label": null,
+        "perturbations": {
+          "a": "Deep learning is a form of machine learning that entails training artificial neural networks to learn patterns in data and make forecasts or decisions based on that data.",
+          "b": "Deep learning is a category of machine learning that includes training artificial neural networks to learn patterns in data and make inferences or decisions based on that data.",
+          "c": "Deep learning is a style of machine learning that comprises training artificial neural networks to learn patterns in data and make assumptions or decisions based on that data.",
+          "d": "Deep learning is a variation of machine learning that involves training artificial neural networks to learn patterns in data and make conclusions or decisions based on that data."
+        },
+        "bdq_probs": {
+          "A": 0.6295480132102966,
+          "B": 0.29737746715545654,
+          "C": 0.013692894019186497,
+          "D": 0.04705195128917694,
+          "E": 0.012274242006242275
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04762691631913185,
+            "B": 0.8986539244651794,
+            "C": 0.00478996429592371,
+            "D": 0.038269322365522385,
+            "E": 0.010300050489604473
+          },
+          "B": {
+            "A": 0.8107607960700989,
+            "B": 0.14997567236423492,
+            "C": 0.03346409276127815,
+            "D": 0.002746900776401162,
+            "E": 0.0030168809462338686
+          },
+          "C": {
+            "A": 0.4498540163040161,
+            "B": 0.03362174704670906,
+            "C": 0.5097513794898987,
+            "D": 0.006219398230314255,
+            "E": 0.0005185588961467147
+          },
+          "D": {
+            "A": 0.770740807056427,
+            "B": 0.024775419384241104,
+            "C": 0.0028234997298568487,
+            "D": 0.20105990767478943,
+            "E": 0.0005101961432956159
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04762691631913185,
+          "B": 0.14997567236423492,
+          "C": 0.5097513794898987,
+          "D": 0.20105990767478943
+        },
+        "score": 0.04762691631913185
+      },
+      {
+        "record_index": 55,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_10246",
+        "label": null,
+        "perturbations": {
+          "a": "Unsay ang kolor sa esmeralda?",
+          "b": "Unsa ang kulay sa esmeralda?",
+          "c": "Unsa ang tin-aw sa esmeralda?",
+          "d": "Unsa ang anino sa esmeralda?"
+        },
+        "bdq_probs": {
+          "A": 0.013958967290818691,
+          "B": 0.824061930179596,
+          "C": 0.1224859356880188,
+          "D": 0.03296662122011185,
+          "E": 0.006491521373391151
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.015318646095693111,
+            "B": 0.8629186153411865,
+            "C": 0.017909303307533264,
+            "D": 0.004671920090913773,
+            "E": 0.023725995793938637
+          },
+          "B": {
+            "A": 0.10280874371528625,
+            "B": 0.4465804696083069,
+            "C": 0.07065930962562561,
+            "D": 0.041538458317518234,
+            "E": 0.031354885548353195
+          },
+          "C": {
+            "A": 0.0015217250911518931,
+            "B": 0.6534969210624695,
+            "C": 0.32859936356544495,
+            "D": 0.005311297718435526,
+            "E": 0.0048360335640609264
+          },
+          "D": {
+            "A": 0.0072505297139286995,
+            "B": 0.65264493227005,
+            "C": 0.22555330395698547,
+            "D": 0.07097240537405014,
+            "E": 0.011229605413973331
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.015318646095693111,
+          "B": 0.4465804696083069,
+          "C": 0.32859936356544495,
+          "D": 0.07097240537405014
+        },
+        "score": 0.015318646095693111
+      },
+      {
+        "record_index": 57,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_64316",
+        "label": null,
+        "perturbations": {
+          "a": "How can travelers engage with local communities and contribute positively to sustainable tourism efforts in Sri Lanka?",
+          "b": "How can visitors engage with local communities and contribute positively to sustainable tourism projects in Sri Lanka?",
+          "c": "How can sightseers engage with local communities and contribute positively to sustainable tourism activities in Sri Lanka?",
+          "d": "How can explorers engage with local communities and contribute positively to sustainable tourism programs in Sri Lanka?"
+        },
+        "bdq_probs": {
+          "A": 0.06058727949857712,
+          "B": 0.6119097471237183,
+          "C": 0.09681817889213562,
+          "D": 0.03192724287509918,
+          "E": 0.19865812361240387
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.07422606647014618,
+            "B": 0.7734529972076416,
+            "C": 0.09833354502916336,
+            "D": 0.042292725294828415,
+            "E": 0.01156218908727169
+          },
+          "B": {
+            "A": 0.3506629467010498,
+            "B": 0.5603581070899963,
+            "C": 0.06287042051553726,
+            "D": 0.00964148435741663,
+            "E": 0.016146456822752953
+          },
+          "C": {
+            "A": 0.07631836831569672,
+            "B": 0.36409470438957214,
+            "C": 0.5297548770904541,
+            "D": 0.014339777640998363,
+            "E": 0.0145656056702137
+          },
+          "D": {
+            "A": 0.06786244362592697,
+            "B": 0.3668613135814667,
+            "C": 0.18447017669677734,
+            "D": 0.30413851141929626,
+            "E": 0.048121631145477295
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.07422606647014618,
+          "B": 0.5603581070899963,
+          "C": 0.5297548770904541,
+          "D": 0.30413851141929626
+        },
+        "score": 0.07422606647014618
+      },
+      {
+        "record_index": 58,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_19115",
+        "label": null,
+        "perturbations": {
+          "a": "Selection of materials for a machine component depends very much on its characteristics, price,  \naccessibility and such other considerations. It is therefore essential to have some knowledge of the  \nusual engineering materials and their characteristics before learning the specifics of design  \nprocess.",
+          "b": "Choice of substances for a machine part depends very much on its properties, expense,  \navailability and such other aspects. It is therefore crucial to have some understanding of the  \ncommon engineering substances and their properties before learning the details of design  \nmethod.",
+          "c": "Selection of substances for a machine element depends very much on its features, cost,  \navailability and such other factors. It is therefore vital to have some idea of the  \ntypical engineering materials and their properties before learning the intricacies of design  \nprocedure.",
+          "d": "Choice of materials for a machine component depends very much on its attributes, cost,  \navailability and such other issues. It is therefore important to have some idea of the  \ncommon engineering materials and their attributes before learning the details of design  \nprocess."
+        },
+        "bdq_probs": {
+          "A": 0.09959211200475693,
+          "B": 0.3265496790409088,
+          "C": 0.35864484310150146,
+          "D": 0.2043495923280716,
+          "E": 0.010830136016011238
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.22326207160949707,
+            "B": 0.06599611043930054,
+            "C": 0.5882170796394348,
+            "D": 0.11226324737071991,
+            "E": 0.010120837017893791
+          },
+          "B": {
+            "A": 0.18879592418670654,
+            "B": 0.24241864681243896,
+            "C": 0.48210716247558594,
+            "D": 0.08120009303092957,
+            "E": 0.005440066568553448
+          },
+          "C": {
+            "A": 0.029671594500541687,
+            "B": 0.9230561256408691,
+            "C": 0.010254227556288242,
+            "D": 0.03692689538002014,
+            "E": 8.34228121675551e-05
+          },
+          "D": {
+            "A": 0.003811630653217435,
+            "B": 0.15465259552001953,
+            "C": 0.8360441327095032,
+            "D": 0.005375259090214968,
+            "E": 9.941743337549269e-05
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.22326207160949707,
+          "B": 0.24241864681243896,
+          "C": 0.010254227556288242,
+          "D": 0.005375259090214968
+        },
+        "score": 0.005375259090214968
+      },
+      {
+        "record_index": 59,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_80886",
+        "label": null,
+        "perturbations": {
+          "a": "أكمل الفقرة التالية: كتب كريستوفر ستون، أستاذ الحقوق في جامعة جنوب كاليفورنيا، بشكل مكثف عن هذا الموضوع في مقاله الجذاب بعنوان «هل يجب للأشجار أن تحظى بمكانة؟»، الذي استُشهد به خلال جلسة نزاع في المحكمة العليا للولايات المتحدة ضمن قضية «سييرا كلوب ضد مورتون» لموقفه أن «القضايا البيئية يجب أن تُحلّ من قبل الطبيعة ذاتها». حسب وصف ستون وآخرين، تكشّفت الحقوق الإنسانية على نحو متزايد مع مرور الزمن وأصبحت «بديهية»، كما في إعلان الاستقلال الأمريكي، حتى وإن كانت هذه الحقوق غير موجودة بدايةً في القانون. إن نجاحات حركات حقوق الإنسان السابقة والحالية توفر دروسًا للحركة الحالية لتوسيع دائرة مجتمع الأرض لتشمل النظم الطبيعية والأنواع الحية ككيانات لها حقوق.",
+          "b": "أكمل الفقرة التالية: كتب كريستوفر ستون، أستاذ القانون في جامعة جنوب كاليفورنيا، بشكل مكثف عن هذا الموضوع في مقاله الجذاب بعنوان «هل يجب للأشجار أن تحظى بمكانة؟»، الذي استُشهد به خلال جلسة نزاع في المحكمة العليا للولايات المتحدة ضمن قضية «سييرا كلوب ضد مورتون» لموقفه أن «القضايا البيئية يجب أن تُحلّ من قبل الطبيعة ذاتها». حسب وصف ستون وآخرين، تكشّفت الحقوق الإنسانية على نحو متزايد مع مرور الوقت وأصبحت «بديهية»، كما في إعلان الاستقلال الأمريكي، حتى وإن كانت هذه الحقوق غير موجودة تمامًا في القانون. إن نجاحات حركات حقوق الإنسان السابقة والحالية توفر دروسًا للحركة الحالية لتوسيع دائرة مجتمع الأرض لتشمل النظم البيئية والأنواع الحية ككيانات لها حقوق.",
+          "c": "أكمل الفقرة التالية: كتب كريستوفر ستون، أستاذ القانون في جامعة جنوب كاليفورنيا، بشكل مكثف عن هذا الموضوع في مقاله الجذاب بعنوان «هل يجب للأشجار أن تحظى بمكانة؟»، الذي استُشهد به خلال جلسة نزاع في المحكمة العليا للولايات المتحدة ضمن قضية «سييرا كلوب ضد مورتون» لموقفه أن «القضايا البيئية يجب أن تُحلّ من قبل الطبيعة نفسها». حسب وصف ستون وآخرين، تكشّفت الحقوق الإنسانية على نحو متزايد مع مرور الوقت وأصبحت «بديهية»، كما في إعلان الاستقلال الأمريكي، حتى وإن كانت هذه الحقوق غير موجودة أصلاً في القانون. إن نجاحات حركات حقوق الإنسان السابقة والحالية تقدم دروسًا للحركة الحالية لتوسيع دائرة مجتمع الأرض لتشمل الأنظمة الطبيعية والأنواع الحية ككيانات لها حقوق.",
+          "d": "أكمل الفقرة التالية: كتب كريستوفر ستون، أستاذ القانون في جامعة جنوب كاليفورنيا، بشكل مكثف عن هذا الموضوع في مقاله المثير بعنوان «هل يجب للأشجار أن تحظى بمكانة؟»، الذي استُشهد به خلال جلسة نزاع في المحكمة العليا للولايات المتحدة ضمن قضية «سييرا كلوب ضد مورتون» لموقفه أن «القضايا البيئية يجب أن تُحلّ من قبل الطبيعة ذاتها». حسب وصف ستون وآخرين، تكشّفت الحقوق الإنسانية على نحو متزايد مع مرور الوقت وأصبحت «بديهية»، كما في إعلان الاستقلال الأمريكي، حتى وإن كانت هذه الحقوق غير موجودة أساسًا في القانون. إن نجاحات حركات حقوق الإنسان السابقة والحالية تتيح دروسًا للحركة الحالية لتوسيع دائرة مجتمع الأرض لتشمل النظم الطبيعية والأنواع الحية ككيانات لها حقوق."
+        },
+        "bdq_probs": {
+          "A": 0.03038267232477665,
+          "B": 0.16170057654380798,
+          "C": 0.11466293781995773,
+          "D": 0.6598396301269531,
+          "E": 0.032851509749889374
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03380376100540161,
+            "B": 0.21033333241939545,
+            "C": 0.23833951354026794,
+            "D": 0.5045641660690308,
+            "E": 0.008681531064212322
+          },
+          "B": {
+            "A": 0.034038759768009186,
+            "B": 0.02692682482302189,
+            "C": 0.45543307065963745,
+            "D": 0.45543333888053894,
+            "E": 0.02650943212211132
+          },
+          "C": {
+            "A": 0.012663590721786022,
+            "B": 0.0470508374273777,
+            "C": 0.04284036532044411,
+            "D": 0.8877851366996765,
+            "E": 0.00870355311781168
+          },
+          "D": {
+            "A": 0.003738562110811472,
+            "B": 0.020851651206612587,
+            "C": 0.6905170679092407,
+            "D": 0.2789939045906067,
+            "E": 0.005030784290283918
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03380376100540161,
+          "B": 0.02692682482302189,
+          "C": 0.04284036532044411,
+          "D": 0.2789939045906067
+        },
+        "score": 0.02692682482302189
+      },
+      {
+        "record_index": 60,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_1237",
+        "label": null,
+        "perturbations": {
+          "a": "What is regression evaluation?",
+          "b": "What is regression assessment?",
+          "c": "What is regression examination?",
+          "d": "What is regression analysis?"
+        },
+        "bdq_probs": {
+          "A": 0.0035368429962545633,
+          "B": 0.02398183010518551,
+          "C": 0.004367416258901358,
+          "D": 0.957951009273529,
+          "E": 0.01015455648303032
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.000552457058802247,
+            "B": 0.000247073796344921,
+            "C": 8.673110278323293e-05,
+            "D": 0.9988653063774109,
+            "E": 0.00020165588648524135
+          },
+          "B": {
+            "A": 8.987234468804672e-05,
+            "B": 0.0029328614473342896,
+            "C": 6.176830356707796e-05,
+            "D": 0.9963558912277222,
+            "E": 0.0003290589665994048
+          },
+          "C": {
+            "A": 0.0003320861724205315,
+            "B": 0.004141537938266993,
+            "C": 0.009935122914612293,
+            "D": 0.9822214841842651,
+            "E": 0.002846461720764637
+          },
+          "D": {
+            "A": 0.017367495223879814,
+            "B": 0.09388760477304459,
+            "C": 0.09686903655529022,
+            "D": 0.7384900450706482,
+            "E": 0.04298519343137741
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.000552457058802247,
+          "B": 0.0029328614473342896,
+          "C": 0.009935122914612293,
+          "D": 0.7384900450706482
+        },
+        "score": 0.000552457058802247
+      },
+      {
+        "record_index": 61,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_34644",
+        "label": null,
+        "perturbations": {
+          "a": "Chakula ni kitu chochote kinacho kuliwa na wanadamu. Kuna vikundi tatu vya chakula. Kuna vyakula vikuu au kabohidrati, vyakula kama mahindi, mchele, mihogo vipo katika kikundi hiki. Kikundi kingine ni vyakula vya kukuza au protini, katika kikundi hiki kuna vyakula kama nyama, samaki, njungu na mbegu. Kikundi cha tatu ni vyakula vilinzi au vitamini, matunda na mboga hupatikana katika kikundi hiki.",
+          "b": "Chakula ni kitu chochote kinacho fanywa na wanadamu. Kuna vikundi tatu vya chakula. Kuna vyakula vikuu au kabohidrati, vyakula kama mahindi, mchele, mihogo vipo katika kikundi hiki. Kikundi kingine ni vyakula vya kukuza au protini, katika kikundi hiki kuna vyakula kama nyama, samaki, njungu na mbegu. Kikundi cha tatu ni vyakula vilinzi au vitamini, matunda na mboga hupatikana katika kikundi hiki.",
+          "c": "Chakula ni kitu chochote kinacho ingizwa na wanadamu. Kuna vikundi tatu vya chakula. Kuna vyakula vikuu au kabohidrati, vyakula kama mahindi, mchele, mihogo vipo katika kikundi hiki. Kikundi kingine ni vyakula vya kukuza au protini, katika kikundi hiki kuna vyakula kama nyama, samaki, njungu na mbegu. Kikundi cha tatu ni vyakula vilinzi au vitamini, matunda na mboga hupatikana katika kikundi hiki.",
+          "d": "Chakula ni kitu chochote kinacho andaliwa na wanadamu. Kuna vikundi tatu vya chakula. Kuna vyakula vikuu au kabohidrati, vyakula kama mahindi, mchele, mihogo vipo katika kikundi hiki. Kikundi kingine ni vyakula vya kukuza au protini, katika kikundi hiki kuna vyakula kama nyama, samaki, njungu na mbegu. Kikundi cha tatu ni vyakula vilinzi au vitamini, matunda na mboga hupatikana katika kikundi hiki."
+        },
+        "bdq_probs": {
+          "A": 0.45518043637275696,
+          "B": 0.32277122139930725,
+          "C": 0.14777544140815735,
+          "D": 0.0676565170288086,
+          "E": 0.006595046725124121
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.34075936675071716,
+            "B": 0.4958019256591797,
+            "C": 0.07369436323642731,
+            "D": 0.07603366672992706,
+            "E": 0.013632087968289852
+          },
+          "B": {
+            "A": 0.6964566707611084,
+            "B": 0.08582030236721039,
+            "C": 0.024587929248809814,
+            "D": 0.18744878470897675,
+            "E": 0.005660463590174913
+          },
+          "C": {
+            "A": 0.5208094716072083,
+            "B": 0.27019235491752625,
+            "C": 0.024358585476875305,
+            "D": 0.17444927990436554,
+            "E": 0.010154169984161854
+          },
+          "D": {
+            "A": 0.12740817666053772,
+            "B": 0.04267631471157074,
+            "C": 0.7804681658744812,
+            "D": 0.025088101625442505,
+            "E": 0.024316279217600822
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.34075936675071716,
+          "B": 0.08582030236721039,
+          "C": 0.024358585476875305,
+          "D": 0.025088101625442505
+        },
+        "score": 0.024358585476875305
+      },
+      {
+        "record_index": 64,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_15166",
+        "label": null,
+        "perturbations": {
+          "a": "هل أحاسيس الجملة التالية سيئة جدا، سيئة، جيدة، جيدة جدا أم رائعة : جيد.",
+          "b": "هل مشاعر العبارة التالية سيئة جدا، سيئة، جيدة، جيدة جدا أم فائقة : جيد.",
+          "c": "هل انطباعات الجملة التالية سيئة جدا، سيئة، جيدة، جيدة جدا أم ممتازة : جيد.",
+          "d": "هل مشاعر الجملة التالية سيئة جدا، سيئة، طيبة، جيدة جدا أم ممتازة : جيد."
+        },
+        "bdq_probs": {
+          "A": 0.19304907321929932,
+          "B": 0.34956663846969604,
+          "C": 0.057065192610025406,
+          "D": 0.24025343358516693,
+          "E": 0.16004329919815063
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03296547755599022,
+            "B": 0.24358342587947845,
+            "C": 0.6220117211341858,
+            "D": 0.019379371777176857,
+            "E": 0.07908008992671967
+          },
+          "B": {
+            "A": 0.15350818634033203,
+            "B": 0.6668089628219604,
+            "C": 0.04262767359614372,
+            "D": 0.03118705004453659,
+            "E": 0.09911231696605682
+          },
+          "C": {
+            "A": 0.019156794995069504,
+            "B": 0.5776129961013794,
+            "C": 0.11734937131404877,
+            "D": 0.23337697982788086,
+            "E": 0.032586731016635895
+          },
+          "D": {
+            "A": 0.057365406304597855,
+            "B": 0.6363115310668945,
+            "C": 0.1464872509241104,
+            "D": 0.12927450239658356,
+            "E": 0.01279991865158081
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03296547755599022,
+          "B": 0.6668089628219604,
+          "C": 0.11734937131404877,
+          "D": 0.12927450239658356
+        },
+        "score": 0.03296547755599022
+      },
+      {
+        "record_index": 65,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_5167",
+        "label": null,
+        "perturbations": {
+          "a": "شحال كان السن ديال الرسول صلى الله عليه وسلم لما توفات الام ديالو ؟",
+          "b": "شحال كان العمر ديال النبي صلى الله عليه وسلم لما توفات الام ديالو ؟",
+          "c": "شحال كان السن ديال النبي صلى الله عليه وسلم لما توفات الام ديالو ؟",
+          "d": "شحال كان العمر ديال الرسول صلى الله عليه وسلم لما توفات الماما ديالو ؟"
+        },
+        "bdq_probs": {
+          "A": 0.28982317447662354,
+          "B": 0.24789868295192719,
+          "C": 0.33883753418922424,
+          "D": 0.1170990914106369,
+          "E": 0.006254701875150204
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1490178406238556,
+            "B": 0.08760295063257217,
+            "C": 0.1797497421503067,
+            "D": 0.553668200969696,
+            "E": 0.028888443484902382
+          },
+          "B": {
+            "A": 0.24478201568126678,
+            "B": 0.2605687975883484,
+            "C": 0.22995127737522125,
+            "D": 0.22995121777057648,
+            "E": 0.027896283194422722
+          },
+          "C": {
+            "A": 0.12646426260471344,
+            "B": 0.4554150402545929,
+            "C": 0.030037896707654,
+            "D": 0.3659365177154541,
+            "E": 0.018505822867155075
+          },
+          "D": {
+            "A": 0.0801749974489212,
+            "B": 0.25479406118392944,
+            "C": 0.5394003391265869,
+            "D": 0.06857702881097794,
+            "E": 0.04291505366563797
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1490178406238556,
+          "B": 0.2605687975883484,
+          "C": 0.030037896707654,
+          "D": 0.06857702881097794
+        },
+        "score": 0.030037896707654
+      },
+      {
+        "record_index": 66,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_8939",
+        "label": null,
+        "perturbations": {
+          "a": "Colombo's attempts to become a cultural and artistic center have positively influenced the local arts scene and tourism. The city hosts numerous art showcases, music festivals, and cultural gatherings that attract artists and devotees from around the globe. This artistic liveliness not only enriches the cultural fabric of Colombo but also positions it as a cultural destination. The favorable impact includes increased tourism, the promotion of local creators, and the nurturing of a dynamic and creative community spirit in the heart of Sri Lanka's capital.",
+          "b": "Colombo's endeavors to become a cultural and artistic nucleus have positively affected the local arts scene and tourism. The city organizes numerous art displays, music celebrations, and cultural functions that attract artists and fans from around the world. This artistic energy not only enhances the cultural fabric of Colombo but also positions it as a cultural destination. The beneficial impact includes increased tourism, the promotion of local makers, and the fostering of a dynamic and creative community spirit in the heart of Sri Lanka's capital.",
+          "c": "Colombo's initiatives to become a cultural and artistic focal point have positively influenced the local arts scene and tourism. The city presents numerous art demonstrations, music gatherings, and cultural occasions that draw artists and supporters from around the world. This artistic enthusiasm not only enriches the cultural fabric of Colombo but also positions it as a cultural destination. The advantageous impact includes increased tourism, the promotion of local artisans, and the encouragement of a dynamic and creative community spirit in the heart of Sri Lanka's capital.",
+          "d": "Colombo's movements to become a cultural and artistic stronghold have positively impacted the local arts scene and tourism. The city facilitates numerous art conventions, music parades, and cultural activities that attract artists and onlookers from around the world. This artistic dynamism not only enriches the cultural fabric of Colombo but also positions it as a cultural destination. The positive influence includes increased tourism, the promotion of local creatives, and the cultivation of a dynamic and creative community spirit in the heart of Sri Lanka's capital."
+        },
+        "bdq_probs": {
+          "A": 0.23958945274353027,
+          "B": 0.2322179526090622,
+          "C": 0.40755537152290344,
+          "D": 0.08025236427783966,
+          "E": 0.0403534397482872
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.21272921562194824,
+            "B": 0.596613883972168,
+            "C": 0.11386583000421524,
+            "D": 0.07351724803447723,
+            "E": 0.0028505732771009207
+          },
+          "B": {
+            "A": 0.508497416973114,
+            "B": 0.11346112936735153,
+            "C": 0.34948495030403137,
+            "D": 0.02453768625855446,
+            "E": 0.0038824263028800488
+          },
+          "C": {
+            "A": 0.5314298868179321,
+            "B": 0.3540087044239044,
+            "C": 0.11139378696680069,
+            "D": 0.0012968600494787097,
+            "E": 0.0014695352874696255
+          },
+          "D": {
+            "A": 0.20516546070575714,
+            "B": 0.09393160045146942,
+            "C": 0.6520150899887085,
+            "D": 0.04300500825047493,
+            "E": 0.005382710136473179
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.21272921562194824,
+          "B": 0.11346112936735153,
+          "C": 0.11139378696680069,
+          "D": 0.04300500825047493
+        },
+        "score": 0.04300500825047493
+      },
+      {
+        "record_index": 67,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_98091",
+        "label": null,
+        "perturbations": {
+          "a": "What was the primary goal of the French revolutionaries?",
+          "b": "What was the key objective of the French revolutionaries?",
+          "c": "What was the principal intention of the French revolutionaries?",
+          "d": "What was the chief purpose of the French revolutionaries?"
+        },
+        "bdq_probs": {
+          "A": 0.04750126227736473,
+          "B": 0.2412303239107132,
+          "C": 0.49497365951538086,
+          "D": 0.18787038326263428,
+          "E": 0.028364263474941254
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.14550714194774628,
+            "B": 0.1810862123966217,
+            "C": 0.17011484503746033,
+            "D": 0.47709929943084717,
+            "E": 0.02608800306916237
+          },
+          "B": {
+            "A": 0.04116104170680046,
+            "B": 0.5507285594940186,
+            "C": 0.04116101935505867,
+            "D": 0.31379562616348267,
+            "E": 0.05285185948014259
+          },
+          "C": {
+            "A": 0.01403019204735756,
+            "B": 0.04059765860438347,
+            "C": 0.8413105010986328,
+            "D": 0.07125113159418106,
+            "E": 0.03262118622660637
+          },
+          "D": {
+            "A": 0.028377167880535126,
+            "B": 0.05469834432005882,
+            "C": 0.6875170469284058,
+            "D": 0.0990465059876442,
+            "E": 0.12717889249324799
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.14550714194774628,
+          "B": 0.5507285594940186,
+          "C": 0.8413105010986328,
+          "D": 0.0990465059876442
+        },
+        "score": 0.0990465059876442
+      },
+      {
+        "record_index": 68,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_12034",
+        "label": null,
+        "perturbations": {
+          "a": "O ṣoju mi koro (Apa Keji)",
+          "b": "O ṣoju mi koro (Apa Keji)",
+          "c": "O ṣoju mi koro (Apa Keji)",
+          "d": "O ṣoju mi koro (Apa Keji)"
+        },
+        "bdq_probs": {
+          "A": 0.209651380777359,
+          "B": 0.1122182235121727,
+          "C": 0.2375660538673401,
+          "D": 0.3247142732143402,
+          "E": 0.1157805547118187
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 4.56942395032911e-09,
+            "B": 3.763601652551074e-10,
+            "C": 6.7253265456646e-11,
+            "D": 1.4992820873693802e-10,
+            "E": 5.937335623151796e-10
+          },
+          "B": {
+            "A": 5.127211988309455e-10,
+            "B": 2.029041795692521e-10,
+            "C": 2.0314121912390348e-11,
+            "D": 3.963288378039387e-11,
+            "E": 1.4312365181901043e-10
+          },
+          "C": {
+            "A": 0.0023011662997305393,
+            "B": 0.0004125862615182996,
+            "C": 1.073671910489793e-06,
+            "D": 1.757276913849637e-05,
+            "E": 5.497016172739677e-05
+          },
+          "D": {
+            "A": 2.521991291359882e-07,
+            "B": 8.286109505206696e-07,
+            "C": 5.636356936733478e-10,
+            "D": 1.8545517121992816e-08,
+            "E": 8.068367662872333e-08
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 4.56942395032911e-09,
+          "B": 2.029041795692521e-10,
+          "C": 1.073671910489793e-06,
+          "D": 1.8545517121992816e-08
+        },
+        "score": 2.029041795692521e-10
+      },
+      {
+        "record_index": 69,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_9810",
+        "label": null,
+        "perturbations": {
+          "a": "They were opposed to private ownership.",
+          "b": "They regarded it as the source of all societal problems.",
+          "c": "Individuals who possessed the property were focused on individual benefit only.",
+          "d": "Those who render property fruitful are overlooked by the proprietors of the property (any three)"
+        },
+        "bdq_probs": {
+          "A": 0.08927752822637558,
+          "B": 0.11110763996839523,
+          "C": 0.07636307924985886,
+          "D": 0.28372329473495483,
+          "E": 0.43943947553634644
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.08810753375291824,
+            "B": 0.3075254559516907,
+            "C": 0.19855336844921112,
+            "D": 0.3484721779823303,
+            "E": 0.05688649043440819
+          },
+          "B": {
+            "A": 0.10542960464954376,
+            "B": 0.40415292978286743,
+            "C": 0.04001656919717789,
+            "D": 0.3050706386566162,
+            "E": 0.14410516619682312
+          },
+          "C": {
+            "A": 0.18120449781417847,
+            "B": 0.6732565760612488,
+            "C": 0.040432240813970566,
+            "D": 0.06877748668193817,
+            "E": 0.02033058926463127
+          },
+          "D": {
+            "A": 0.20782238245010376,
+            "B": 0.4985412061214447,
+            "C": 0.0788814052939415,
+            "D": 0.09816860407590866,
+            "E": 0.0674702525138855
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.08810753375291824,
+          "B": 0.40415292978286743,
+          "C": 0.040432240813970566,
+          "D": 0.09816860407590866
+        },
+        "score": 0.040432240813970566
+      },
+      {
+        "record_index": 70,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_41690",
+        "label": null,
+        "perturbations": {
+          "a": "المتعجرفون",
+          "b": "المتعظمون",
+          "c": "المتفنون",
+          "d": "المتبجحون"
+        },
+        "bdq_probs": {
+          "A": 0.04039137065410614,
+          "B": 0.1500721126794815,
+          "C": 0.009012529626488686,
+          "D": 0.4622547924518585,
+          "E": 0.33819302916526794
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.13805651664733887,
+            "B": 0.24998800456523895,
+            "C": 0.09488479048013687,
+            "D": 0.4252440333366394,
+            "E": 0.08373551815748215
+          },
+          "B": {
+            "A": 0.05457241088151932,
+            "B": 0.06183858960866928,
+            "C": 0.022749172523617744,
+            "D": 0.6859318017959595,
+            "E": 0.16292321681976318
+          },
+          "C": {
+            "A": 0.032831382006406784,
+            "B": 0.156629279255867,
+            "C": 0.029893329367041588,
+            "D": 0.2664358913898468,
+            "E": 0.48245513439178467
+          },
+          "D": {
+            "A": 0.006388752721250057,
+            "B": 0.11502605676651001,
+            "C": 0.01877765543758869,
+            "D": 0.23601752519607544,
+            "E": 0.5318777561187744
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.13805651664733887,
+          "B": 0.06183858960866928,
+          "C": 0.029893329367041588,
+          "D": 0.23601752519607544
+        },
+        "score": 0.029893329367041588
+      },
+      {
+        "record_index": 71,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_83853",
+        "label": null,
+        "perturbations": {
+          "a": "الطائف هي مدينة سعودية تقع في الغرب من المملكة العربية السعودية، تابعة لـمنطقة مكة المكرمة على جانبي وادي «وج»، وتبعد عن مدينة مكة المكرمة 75 كم تقريباً وتحيط بها الجبال من كافة الجهات، وترتفع عن سطح البحر بمسافة تتدرج مابين 1700 م إلى 2500 م، مما أكسبها جواً لطيفاً، ومصيفاً قديماً للأهالي وللمدن القريبة كمكة المكرمة وجدة، وقد أكسبها الموقع مميزات عدة، حيث أنها تُعتبر البوابة الشرقية للحرمين الشريفين عبر مكة المكرمة، كما أنها نقطة التقاء الطرق المتصلة بجميع مناطق المملكة عبر مناطق ومدن أخرى، كما تضم الطائف ميقاتين من مواقيت الإحرام وهما: السيل الكبير، للقادمين من المنطقة الوسطى، ووادي محرم، للقادمين من الجنوب.",
+          "b": "الطائف هي مدينة عربية تقع في الغرب من المملكة العربية السعودية، تابعة لـمنطقة مكة المكرمة على جانبي وادي «وج»، وتبعد عن مدينة مكة المكرمة 75 كم تقريباً وتحيط بها الجبال من كافة الجهات، وترتفع عن سطح البحر بمسافة تتدرج مابين 1700 م إلى 2500 م، مما أكسبها جواً لطيفاً، ومصيفاً قديماً للأهالي وللمدن القريبة كمكة المكرمة وجدة، وقد أكسبها الموقع مميزات عدة، حيث أنها تُعتبر البوابة الشرقية للحرمين الشريفين عبر مكة المكرمة، كما أنها نقطة التقاء الطرق المتصلة بجميع مناطق المملكة عبر مناطق ومدن أخرى، كما تضم الطائف ميقاتين من مواقيت الإحرام وهما: السيل الكبير، للقادمين من المنطقة الوسطى، ووادي محرم، للقادمين من الجنوب.",
+          "c": "الطائف هي مدينة سعودية تقع في الغرب من المملكة العربية السعودية، تابعة لـمنطقة مكة المكرمة على جانب وادي «وج»، وتبعد عن مدينة مكة المكرمة 75 كم تقريباً وتحيط بها الجبال من كافة الجهات، وترتفع عن سطح البحر بمسافة تتدرج مابين 1700 م إلى 2500 م، مما أكسبها جواً لطيفاً، ومصيفاً قديماً للأهالي وللمدن القريبة كمكة المكرمة وجدة، وقد أكسبها الموقع مميزات عدة، حيث أنها تُعتبر البوابة الشرقية للحرمين الشريفين عبر مكة المكرمة، كما أنها نقطة التقاء الطرق المتصلة بجميع مناطق المملكة عبر مناطق ومدن أخرى، كما تضم الطائف ميقاتين من مواقيت الإحرام وهما: السيل الكبير، للقادمين من المنطقة الوسطى، ووادي محرم، للقادمين من الجنوب.",
+          "d": "الطائف هي مدينة سعودية تقع في الجنوب الغربي من المملكة العربية السعودية، تابعة لـمنطقة مكة المكرمة على جانبي وادي «وج»، وتبعد عن مدينة مكة المكرمة 75 كم تقريباً وتحيط بها الجبال من كافة الجهات، وترتفع عن سطح البحر بمسافة تتدرج مابين 1700 م إلى 2500 م، مما أكسبها جواً لطيفاً، ومصيفاً قديماً للأهالي وللمدن القريبة كمكة المكرمة وجدة، وقد أكسبها الموقع مميزات عدة، حيث أنها تُعتبر البوابة الشرقية للحرمين الشريفين عبر مكة المكرمة، كما أنها نقطة التقاء الطرق المتصلة بجميع مناطق المملكة عبر مناطق ومدن أخرى، كما تضم الطائف ميقاتين من مواقيت الإحرام وهما: السيل الكبير، للقادمين من المنطقة الوسطى، ووادي محرم، للقادمين من الجنوب."
+        },
+        "bdq_probs": {
+          "A": 0.21296213567256927,
+          "B": 0.2197222113609314,
+          "C": 0.5270863175392151,
+          "D": 0.028374454006552696,
+          "E": 0.011828235350549221
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.17323628067970276,
+            "B": 0.09272667020559311,
+            "C": 0.586050808429718,
+            "D": 0.056241586804389954,
+            "E": 0.08987381309270859
+          },
+          "B": {
+            "A": 0.30010414123535156,
+            "B": 0.03998500481247902,
+            "C": 0.5784658193588257,
+            "D": 0.0169307142496109,
+            "E": 0.060969866812229156
+          },
+          "C": {
+            "A": 0.9592293500900269,
+            "B": 0.012074916623532772,
+            "C": 0.0030056843534111977,
+            "D": 0.0021904329769313335,
+            "E": 0.004547457676380873
+          },
+          "D": {
+            "A": 0.051274240016937256,
+            "B": 0.024988947436213493,
+            "C": 0.908852756023407,
+            "D": 0.00641770102083683,
+            "E": 0.003079265123233199
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.17323628067970276,
+          "B": 0.03998500481247902,
+          "C": 0.0030056843534111977,
+          "D": 0.00641770102083683
+        },
+        "score": 0.0030056843534111977
+      },
+      {
+        "record_index": 72,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_50506",
+        "label": null,
+        "perturbations": {
+          "a": "آجال السداد والتسليم… العقد شريعة المتعاقدين.",
+          "b": "آجال الدفع والتسليم… الوثيقة شريعة المتعاطين.",
+          "c": "مواعيد الدفع والتسليم… العقد قاعدة المتعاملين.",
+          "d": "أوقات الدفع والتسليم… الاتفاق شريعة المتعاقدين."
+        },
+        "bdq_probs": {
+          "A": 0.463560551404953,
+          "B": 0.31860020756721497,
+          "C": 0.058935098350048065,
+          "D": 0.12872612476348877,
+          "E": 0.030101116746664047
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.6532027721405029,
+            "B": 0.023792903870344162,
+            "C": 0.28985682129859924,
+            "D": 0.023792922496795654,
+            "E": 0.006304500158876181
+          },
+          "B": {
+            "A": 0.49544525146484375,
+            "B": 0.2651927173137665,
+            "C": 0.08087924867868423,
+            "D": 0.11054885387420654,
+            "E": 0.03267816826701164
+          },
+          "C": {
+            "A": 0.20371323823928833,
+            "B": 0.3058099150657654,
+            "C": 0.03887943550944328,
+            "D": 0.36887770891189575,
+            "E": 0.034311018884181976
+          },
+          "D": {
+            "A": 0.18934492766857147,
+            "B": 0.10135024040937424,
+            "C": 0.043591275811195374,
+            "D": 0.092281773686409,
+            "E": 0.0422496534883976
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.6532027721405029,
+          "B": 0.2651927173137665,
+          "C": 0.03887943550944328,
+          "D": 0.092281773686409
+        },
+        "score": 0.03887943550944328
+      },
+      {
+        "record_index": 74,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_19606",
+        "label": null,
+        "perturbations": {
+          "a": "What is a neural mesh?",
+          "b": "What is a neural grid?",
+          "c": "What is a neural framework?",
+          "d": "What is a neural system?"
+        },
+        "bdq_probs": {
+          "A": 0.022244710475206375,
+          "B": 0.6106991171836853,
+          "C": 0.03445327654480934,
+          "D": 0.20455852150917053,
+          "E": 0.12800951302051544
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.7899549007415771,
+            "B": 0.0016233238857239485,
+            "C": 0.00037811556831002235,
+            "D": 0.2060721069574356,
+            "E": 0.0019277451792731881
+          },
+          "B": {
+            "A": 0.004817418288439512,
+            "B": 0.9926349520683289,
+            "C": 0.0009266312699764967,
+            "D": 0.0011442367685958743,
+            "E": 0.00046231361920945346
+          },
+          "C": {
+            "A": 0.0015296366764232516,
+            "B": 0.0013927483232691884,
+            "C": 0.9861211776733398,
+            "D": 0.010291097685694695,
+            "E": 0.0005715840379707515
+          },
+          "D": {
+            "A": 0.03144685924053192,
+            "B": 0.02161293849349022,
+            "C": 0.03244507685303688,
+            "D": 0.8907367587089539,
+            "E": 0.014397446997463703
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.7899549007415771,
+          "B": 0.9926349520683289,
+          "C": 0.9861211776733398,
+          "D": 0.8907367587089539
+        },
+        "score": 0.7899549007415771
+      },
+      {
+        "record_index": 75,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60234",
+        "label": null,
+        "perturbations": {
+          "a": "هل يمكنك مساعدتي في تأليف قصيدة هجاء من بحر البسيط؟",
+          "b": "هل يمكنك مساعدتي في كتابة قصيدة هجاء من بحر البسيط؟",
+          "c": "هل يمكنك مساعدتي في صياغة قصيدة هجاء من بحر البسيط؟",
+          "d": "هل يمكنك مساعدتي في إعداد قصيدة هجاء من بحر البسيط؟"
+        },
+        "bdq_probs": {
+          "A": 0.07920296490192413,
+          "B": 0.7999209761619568,
+          "C": 0.04956390708684921,
+          "D": 0.05794607102870941,
+          "E": 0.013339952565729618
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.6630937457084656,
+            "B": 0.0925886407494545,
+            "C": 0.016861645504832268,
+            "D": 0.05794049799442291,
+            "E": 0.16765640676021576
+          },
+          "B": {
+            "A": 0.37716710567474365,
+            "B": 0.4273863732814789,
+            "C": 0.03793269768357277,
+            "D": 0.04037914425134659,
+            "E": 0.10806022584438324
+          },
+          "C": {
+            "A": 0.10078604519367218,
+            "B": 0.5448440313339233,
+            "C": 0.227124884724617,
+            "D": 0.08894335478544235,
+            "E": 0.030738012865185738
+          },
+          "D": {
+            "A": 0.046628374606370926,
+            "B": 0.23312707245349884,
+            "C": 0.07335679233074188,
+            "D": 0.5420370697975159,
+            "E": 0.10344963520765305
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.6630937457084656,
+          "B": 0.4273863732814789,
+          "C": 0.227124884724617,
+          "D": 0.5420370697975159
+        },
+        "score": 0.227124884724617
+      },
+      {
+        "record_index": 76,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_92431",
+        "label": null,
+        "perturbations": {
+          "a": "آخر حدث كان في ريو دي جانيرو ، البرازيل في 2013 ؛ ؛ كراكوف ، بولندا في 2016 حضر البابا الحالي.",
+          "b": "آخر حدث كان في ريو دي جانيرو ، البرازيل في 2013 ؛ ؛ كراكوف ، بولندا في 2016 شهد البابا الحالي.",
+          "c": "آخر حدث كان في ريو دي جانيرو ، البرازيل في 2013 ؛ ؛ كراكوف ، بولندا في 2016 زار البابا الراهن.",
+          "d": "آخر حدث كان في ريو دي جانيرو ، البرازيل في 2013 ؛ ؛ كراكوف ، بولندا في 2016 حضر البابا الحاضر."
+        },
+        "bdq_probs": {
+          "A": 0.07825399190187454,
+          "B": 0.2061716616153717,
+          "C": 0.2336232215166092,
+          "D": 0.45032045245170593,
+          "E": 0.03161746636033058
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05839719623327255,
+            "B": 0.10410390794277191,
+            "C": 0.4813724458217621,
+            "D": 0.3413441777229309,
+            "E": 0.013870527036488056
+          },
+          "B": {
+            "A": 0.08529288321733475,
+            "B": 0.05506908893585205,
+            "C": 0.0936758741736412,
+            "D": 0.7602065801620483,
+            "E": 0.004887667950242758
+          },
+          "C": {
+            "A": 0.35335174202919006,
+            "B": 0.22112154960632324,
+            "C": 0.03964497521519661,
+            "D": 0.376140832901001,
+            "E": 0.009416497312486172
+          },
+          "D": {
+            "A": 0.1403365433216095,
+            "B": 0.10266975313425064,
+            "C": 0.48982757329940796,
+            "D": 0.23871783912181854,
+            "E": 0.02085944637656212
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05839719623327255,
+          "B": 0.05506908893585205,
+          "C": 0.03964497521519661,
+          "D": 0.23871783912181854
+        },
+        "score": 0.03964497521519661
+      },
+      {
+        "record_index": 77,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_62107",
+        "label": null,
+        "perturbations": {
+          "a": "வினா : இந்தியாவின் ஏவுகணை பெண் என்று கூறப்படுபவர் யார்?",
+          "b": "வினா : இந்தியாவின் ஏவுகணை மகள் என்று அழைக்கப்படுபவர் யார்?",
+          "c": "வினா : இந்தியாவின் ஏவுகணை பெண்மணி என்று அழைக்கப்படுபவர் யார்?",
+          "d": "வினா : இந்தியாவின் ஏவுகணை காது என்று அறியப்படுபவர் யார்?"
+        },
+        "bdq_probs": {
+          "A": 0.420730859041214,
+          "B": 0.37129366397857666,
+          "C": 0.12831564247608185,
+          "D": 0.06253604590892792,
+          "E": 0.01709640398621559
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5503546595573425,
+            "B": 0.018252702429890633,
+            "C": 0.0005867324653081596,
+            "D": 0.035183001309633255,
+            "E": 0.005229491274803877
+          },
+          "B": {
+            "A": 0.09812277555465698,
+            "B": 0.2667248845100403,
+            "C": 0.007566409185528755,
+            "D": 0.09812258183956146,
+            "E": 0.030875712633132935
+          },
+          "C": {
+            "A": 0.03196220472455025,
+            "B": 0.043686818331480026,
+            "C": 0.0954207256436348,
+            "D": 0.12641215324401855,
+            "E": 0.018789594992995262
+          },
+          "D": {
+            "A": 0.006803011521697044,
+            "B": 0.005639131646603346,
+            "C": 0.001494386000558734,
+            "D": 0.0457630380988121,
+            "E": 0.019686302170157433
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5503546595573425,
+          "B": 0.2667248845100403,
+          "C": 0.0954207256436348,
+          "D": 0.0457630380988121
+        },
+        "score": 0.0457630380988121
+      },
+      {
+        "record_index": 78,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_45648",
+        "label": null,
+        "perturbations": {
+          "a": "வினா : ஹோமோ சேபியன்ஸைத் தவிர, ‘ஹோமோ’ வகையின் கீழ் உள்ள மற்ற இரண்டு இனங்கள் யாவை?",
+          "b": "வினா : ஹோமோ சேபியன்ஸைத் தவிர, ‘ஹோமோ’ இனத்தின் கீழே உள்ள மற்ற இரண்டு இனங்கள் யாவை?",
+          "c": "வினா : ஹோமோ சேபியன்ஸைத் தவிர, ‘ஹோமோ’ இனத்திற்குச் கீழ் உள்ள மற்ற இரண்டு இனங்கள் யாவை?",
+          "d": "வினா : ஹோமோ சேபியன்ஸைத் தவிர, ‘ஹோமோ’ இனத்தின் கீழேயுள்ள மற்ற இரண்டு இனங்கள் யாவை?"
+        },
+        "bdq_probs": {
+          "A": 0.30750811100006104,
+          "B": 0.3273405432701111,
+          "C": 0.1595330685377121,
+          "D": 0.18651296198368073,
+          "E": 0.0190535020083189
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.626183032989502,
+            "B": 0.10546644777059555,
+            "C": 0.02353275939822197,
+            "D": 0.1633497178554535,
+            "E": 0.04261229932308197
+          },
+          "B": {
+            "A": 0.5590214729309082,
+            "B": 0.12869423627853394,
+            "C": 0.009322580881416798,
+            "D": 0.016361644491553307,
+            "E": 0.022363705560564995
+          },
+          "C": {
+            "A": 0.5047208070755005,
+            "B": 0.16906046867370605,
+            "C": 0.0823935866355896,
+            "D": 0.1025405153632164,
+            "E": 0.028474440798163414
+          },
+          "D": {
+            "A": 0.06177157163619995,
+            "B": 0.020054122433066368,
+            "C": 0.008359845727682114,
+            "D": 0.30405446887016296,
+            "E": 0.036315225064754486
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.626183032989502,
+          "B": 0.12869423627853394,
+          "C": 0.0823935866355896,
+          "D": 0.30405446887016296
+        },
+        "score": 0.0823935866355896
+      },
+      {
+        "record_index": 79,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_61127",
+        "label": null,
+        "perturbations": {
+          "a": "المراجعة السابقة تعبر عن تقييم جيد جداً.",
+          "b": "المراجعة السابقة تعبر عن تقييم عظيم.",
+          "c": "المراجعة السابقة تعبر عن تقييم مدهش.",
+          "d": "المراجعة السابقة تعبر عن تقييم رائع جداً."
+        },
+        "bdq_probs": {
+          "A": 0.0864448994398117,
+          "B": 0.18881294131278992,
+          "C": 0.0434672087430954,
+          "D": 0.5295391082763672,
+          "E": 0.15171556174755096
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06013830378651619,
+            "B": 0.018923331052064896,
+            "C": 0.0039050572086125612,
+            "D": 0.9117783308029175,
+            "E": 0.004494690801948309
+          },
+          "B": {
+            "A": 0.0836101546883583,
+            "B": 0.061170462518930435,
+            "C": 0.0051805698312819,
+            "D": 0.8444327116012573,
+            "E": 0.005180567502975464
+          },
+          "C": {
+            "A": 0.039515793323516846,
+            "B": 0.14230142533779144,
+            "C": 0.04619865119457245,
+            "D": 0.7456070184707642,
+            "E": 0.005347879603505135
+          },
+          "D": {
+            "A": 0.004399835132062435,
+            "B": 0.15269309282302856,
+            "C": 0.13475358486175537,
+            "D": 0.41506367921829224,
+            "E": 0.038607772439718246
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06013830378651619,
+          "B": 0.061170462518930435,
+          "C": 0.04619865119457245,
+          "D": 0.41506367921829224
+        },
+        "score": 0.04619865119457245
+      },
+      {
+        "record_index": 80,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_45478",
+        "label": null,
+        "perturbations": {
+          "a": "Iṣẹ́ ìlù lílú ni a n pe ni iṣẹ́ àyàn, àwọn ti o n sẹ iṣẹ́ yìí ni a n pe ni “Aláyàn tàbí ‘Àyàn’. Iṣe àtìrandíran ni èyí, nitori iṣẹ́ afilọmọlọwọ ni. Gbogbo ọmọ ti Onílù bá bí sí ìdi Àyàn Agalú ni o ni láti kọ ìlù lílù, paapaa akọbi onílù. Dandan ni ki àkọ́bí onílù kọ iṣẹ́ ìlù, kò sí maa ṣe e nitori àwọn onìlu ko fẹ ki iṣẹ́ náà parun.",
+          "b": "Iṣẹ́ ìlù lílú ni a n pe ni iṣẹ́ àyàn, àwọn ti o n sẹ iṣẹ́ yìí ni a n pe ni “Aláyàn tàbí ‘Àyàn’. Iṣe àtìrandíran ni èyí, nitori iṣẹ́ afilọmọpọlọ ni. Gbogbo ọmọ ti Onílù bá bí sí ìdi Àyàn Agalú ni o ni láti kọ ìlù lílù, paapaa akọbi onílù. Dandan ni ki àkọ́bí onílù kọ iṣẹ́ ìlù, kò sí maa ṣe e nitori àwọn onìlu ko fẹ ki iṣẹ́ náà parun.",
+          "c": "Iṣẹ́ ìlù lílú ni a n pe ni iṣẹ́ àyàn, àwọn ti o n sẹ iṣẹ́ yìí ni a n pe ni “Aláyàn tàbí ‘Àyàn’. Iṣe àtìrandíran ni èyí, nitori iṣẹ́ afilọmọsẹ ni. Gbogbo ọmọ ti Onílù bá bí sí ìdi Àyàn Agalú ni o ni láti kọ ìlù lílù, paapaa akọbi onílù. Dandan ni ki àkọ́bí onílù kọ iṣẹ́ ìlù, kò sí maa ṣe e nitori àwọn onìlu ko fẹ ki iṣẹ́ náà parun.",
+          "d": "Iṣẹ́ ìlù lílú ni a n pe ni iṣẹ́ àyàn, àwọn ti o n sẹ iṣẹ́ yìí ni a n pe ni “Aláyàn tàbí ‘Àyàn’. Iṣe àtìrandíran ni èyí, nitori iṣẹ́ afilọmọràn ni. Gbogbo ọmọ ti Onílù bá bí sí ìdi Àyàn Agalú ni o ni láti kọ ìlù lílù, paapaa akọbi onílù. Dandan ni ki àkọ́bí onílù kọ iṣẹ́ ìlù, kò sí maa ṣe e nitori àwọn onìlu ko fẹ ki iṣẹ́ náà parun."
+        },
+        "bdq_probs": {
+          "A": 0.3401864767074585,
+          "B": 0.3297199606895447,
+          "C": 0.1938323676586151,
+          "D": 0.07130695134401321,
+          "E": 0.06492573022842407
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.26762861013412476,
+            "B": 0.6834136247634888,
+            "C": 0.009748372249305248,
+            "D": 0.009157748892903328,
+            "E": 0.029103267937898636
+          },
+          "B": {
+            "A": 0.2801990211009979,
+            "B": 0.09385491907596588,
+            "C": 0.5234807133674622,
+            "D": 0.04164786636829376,
+            "E": 0.060597289353609085
+          },
+          "C": {
+            "A": 0.3444107174873352,
+            "B": 0.2088956981897354,
+            "C": 0.2945902645587921,
+            "D": 0.11536315083503723,
+            "E": 0.03630063310265541
+          },
+          "D": {
+            "A": 0.2753724753856659,
+            "B": 0.17779389023780823,
+            "C": 0.17232373356819153,
+            "D": 0.3321627080440521,
+            "E": 0.03967122733592987
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.26762861013412476,
+          "B": 0.09385491907596588,
+          "C": 0.2945902645587921,
+          "D": 0.3321627080440521
+        },
+        "score": 0.09385491907596588
+      },
+      {
+        "record_index": 81,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_59625",
+        "label": null,
+        "perturbations": {
+          "a": "GIS stands for geographical information systems, it can be defined as the shared foundation between information processing and the numerous fields using spatial analysis techniques.",
+          "b": "GIS stands for geospatial information systems, it can be defined as the mutual ground between information processing and the various fields using spatial analysis techniques.",
+          "c": "GIS stands for geo-information systems, it can be defined as the shared base between information processing and the distinct fields using spatial analysis techniques.",
+          "d": "GIS stands for geographic information systems, it can be defined as the common basis between information processing and the several fields using spatial analysis techniques."
+        },
+        "bdq_probs": {
+          "A": 0.021923229098320007,
+          "B": 0.010684523731470108,
+          "C": 0.0019457961898297071,
+          "D": 0.9617902040481567,
+          "E": 0.003635227447375655
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04193850979208946,
+            "B": 0.0013272104552015662,
+            "C": 0.0003600155177991837,
+            "D": 0.9545160531997681,
+            "E": 0.001731008873321116
+          },
+          "B": {
+            "A": 0.6384098529815674,
+            "B": 0.27457669377326965,
+            "C": 0.001251828856766224,
+            "D": 0.07162760198116302,
+            "E": 0.014104311354458332
+          },
+          "C": {
+            "A": 0.05509117618203163,
+            "B": 0.029488181695342064,
+            "C": 0.8891264796257019,
+            "D": 0.026023229584097862,
+            "E": 0.00025313737569376826
+          },
+          "D": {
+            "A": 0.004434958565980196,
+            "B": 0.023975130170583725,
+            "C": 0.008285588584840298,
+            "D": 0.9576836824417114,
+            "E": 0.005519391503185034
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04193850979208946,
+          "B": 0.27457669377326965,
+          "C": 0.8891264796257019,
+          "D": 0.9576836824417114
+        },
+        "score": 0.04193850979208946
+      }
+    ]
+  }
+}

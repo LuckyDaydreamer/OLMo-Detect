@@ -1,0 +1,2242 @@
+{
+  "model_name": "OLMo2-1B-Instruct",
+  "model_path": "olmo_models/OLMo2-1B-Instruct",
+  "dataset_name": "contaminated_posttraining_rlvr_gsm8k_no_cot_test",
+  "dataset_path": "benchmark/posttraining/rlvr/contaminated/test/contaminated_posttraining_rlvr_gsm8k_no_cot_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 55.87413287162781,
+  "result": {
+    "method": "dcq",
+    "dataset": "contaminated_posttraining_rlvr_gsm8k_no_cot_test",
+    "dataset_path": "benchmark/posttraining/rlvr/contaminated/test/contaminated_posttraining_rlvr_gsm8k_no_cot_test.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "min_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.034704045159742236,
+      "B": 0.18117460180073977,
+      "C": 0.06973348893225192,
+      "D": 0.28385305823758245
+    },
+    "non_preferred": [
+      "A",
+      "B",
+      "C"
+    ],
+    "num_total_records": 88,
+    "num_scored_records": 40,
+    "summary": {
+      "mean_score": 0.036696285038487986
+    },
+    "samples": [
+      {
+        "record_index": 1,
+        "sample_id": "sample_1",
+        "label": null,
+        "perturbations": {
+          "a": "There are 12 additional green apples than red apples in a bowl. There are 16 red apples. How many apples are there in the bowl?",
+          "b": "There are 12 extra green apples than red apples in a bowl. There are 16 red apples. How many apples are there in the bowl?",
+          "c": "There are 12 further green apples than red apples in a bowl. There are 16 red apples. How many apples are there in the bowl?",
+          "d": "There are 12 more verdant apples than red apples in a bowl. There are 16 red apples. How many apples are there in the bowl?"
+        },
+        "bdq_probs": {
+          "A": 0.08054514229297638,
+          "B": 0.24809853732585907,
+          "C": 0.06272868812084198,
+          "D": 0.19321800768375397,
+          "E": 0.4090422987937927
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06075279414653778,
+            "B": 0.21204951405525208,
+            "C": 0.14573851227760315,
+            "D": 0.5086775422096252,
+            "E": 0.06884200125932693
+          },
+          "B": {
+            "A": 0.06632000207901001,
+            "B": 0.23148198425769806,
+            "C": 0.10934336483478546,
+            "D": 0.3816460072994232,
+            "E": 0.20428024232387543
+          },
+          "C": {
+            "A": 0.04486147686839104,
+            "B": 0.1565839648246765,
+            "C": 0.0576033890247345,
+            "D": 0.1076173335313797,
+            "E": 0.6192942261695862
+          },
+          "D": {
+            "A": 0.05323175713419914,
+            "B": 0.2385740727186203,
+            "C": 0.0877646803855896,
+            "D": 0.27033448219299316,
+            "E": 0.30632850527763367
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06075279414653778,
+          "B": 0.23148198425769806,
+          "C": 0.0576033890247345,
+          "D": 0.27033448219299316
+        },
+        "score": 0.0576033890247345
+      },
+      {
+        "record_index": 2,
+        "sample_id": "sample_2",
+        "label": null,
+        "perturbations": {
+          "a": "Rylee is uninterested and chooses to tally the quantity of leaves dropping off the tree in her backyard. 7 leaves descend in the first hour. For the second and third hour, the leaves drop at a rate of 4 per hour. What is the mean number of leaves which dropped per hour?",
+          "b": "Rylee is weary and opts to count the number of leaves falling away from the tree in her backyard. 7 leaves drop in the first hour. For the second and third hour, the leaves fall at a pace of 4 per hour. What is the typical number of leaves that fell per hour?",
+          "c": "Rylee is disinterested and resolves to count the amount of leaves coming off the tree in her backyard. 7 leaves fall in the initial hour. For the second and third hour, the leaves drop at a speed of 4 per hour. What is the average amount of leaves which fell per hour?",
+          "d": "Rylee is uninterested and decides to count the number of leaves detaching from the tree in her backyard. 7 leaves descend in the first hour. For the second and third hour, the leaves fall at a rate of 4 per hour. What is the standard number of leaves which fell per hour?"
+        },
+        "bdq_probs": {
+          "A": 0.02923918515443802,
+          "B": 0.3143533766269684,
+          "C": 0.10205487906932831,
+          "D": 0.1906636506319046,
+          "E": 0.35620638728141785
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.023411903530359268,
+            "B": 0.32319363951683044,
+            "C": 0.15266495943069458,
+            "D": 0.32319176197052,
+            "E": 0.1729920357465744
+          },
+          "B": {
+            "A": 0.031300291419029236,
+            "B": 0.2969716191291809,
+            "C": 0.2041037678718567,
+            "D": 0.1237952783703804,
+            "E": 0.3365101218223572
+          },
+          "C": {
+            "A": 0.024077540263533592,
+            "B": 0.2933275103569031,
+            "C": 0.1385568529367447,
+            "D": 0.1079082041978836,
+            "E": 0.4267849028110504
+          },
+          "D": {
+            "A": 0.0318051315844059,
+            "B": 0.3419420123100281,
+            "C": 0.07629670947790146,
+            "D": 0.3419383466243744,
+            "E": 0.18302622437477112
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.023411903530359268,
+          "B": 0.2969716191291809,
+          "C": 0.1385568529367447,
+          "D": 0.3419383466243744
+        },
+        "score": 0.023411903530359268
+      },
+      {
+        "record_index": 3,
+        "sample_id": "sample_3",
+        "label": null,
+        "perturbations": {
+          "a": "Borgnine desires to observe 1100 legs at the zoo. He has already observed 12 chimps, 8 lions, and 5 lizards. He is next going to see the tarantulas. How many tarantulas does he need to observe to meet his goal?",
+          "b": "Borgnine wishes to view 1100 legs at the zoo. He has already viewed 12 chimps, 8 lions, and 5 lizards. He is next proceeding to see the tarantulas. How many tarantulas does he need to view to meet his goal?",
+          "c": "Borgnine intends to watch 1100 legs at the zoo. He has already watched 12 chimps, 8 lions, and 5 lizards. He is next set to see the tarantulas. How many tarantulas does he need to watch to meet his goal?",
+          "d": "Borgnine aims to glimpse 1100 legs at the zoo. He has already glimpsed 12 chimps, 8 lions, and 5 lizards. He is next planning to see the tarantulas. How many tarantulas does he need to glimpse to meet his goal?"
+        },
+        "bdq_probs": {
+          "A": 0.005898988805711269,
+          "B": 0.2508334219455719,
+          "C": 0.02995755523443222,
+          "D": 0.10456211864948273,
+          "E": 0.6017133593559265
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.014032780192792416,
+            "B": 0.19371959567070007,
+            "C": 0.09150528907775879,
+            "D": 0.4647022783756256,
+            "E": 0.21950992941856384
+          },
+          "B": {
+            "A": 0.025080740451812744,
+            "B": 0.2696479558944702,
+            "C": 0.14432980120182037,
+            "D": 0.3055463433265686,
+            "E": 0.23795971274375916
+          },
+          "C": {
+            "A": 0.012009227648377419,
+            "B": 0.1657843440771103,
+            "C": 0.06098794937133789,
+            "D": 0.35096147656440735,
+            "E": 0.3976912796497345
+          },
+          "D": {
+            "A": 0.034039463847875595,
+            "B": 0.2219768464565277,
+            "C": 0.08165673166513443,
+            "D": 0.41468745470046997,
+            "E": 0.15255489945411682
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.014032780192792416,
+          "B": 0.2696479558944702,
+          "C": 0.06098794937133789,
+          "D": 0.41468745470046997
+        },
+        "score": 0.014032780192792416
+      },
+      {
+        "record_index": 6,
+        "sample_id": "sample_6",
+        "label": null,
+        "perturbations": {
+          "a": "There are 920 elk in a park. 10% of the elk have 8 antlers, and a quarter of that number also have albino fur. How many albino 8-antlered elk are there?",
+          "b": "There are 920 deer in a reserve. 10% of the deer have 8 antlers, and a quarter of that amount also have albino fur. How many albino 8-antlered deer are there?",
+          "c": "There are 920 deer in a park. 10% of the deer possess 8 antlers, and a quarter of that figure also have albino fur. How many albino 8-antlered deer are there?",
+          "d": "There are 920 deer in a park. 10% of the deer have 8 antlers, and a fourth of that count also have albino fur. How many albino 8-antlered deer are there?"
+        },
+        "bdq_probs": {
+          "A": 0.01734970137476921,
+          "B": 0.239507794380188,
+          "C": 0.12819813191890717,
+          "D": 0.34847837686538696,
+          "E": 0.23950554430484772
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.017583634704351425,
+            "B": 0.5470166206359863,
+            "C": 0.07402997463941574,
+            "D": 0.12205477803945541,
+            "E": 0.22802837193012238
+          },
+          "B": {
+            "A": 0.013747612945735455,
+            "B": 0.16748252511024475,
+            "C": 0.11510761827230453,
+            "D": 0.16748064756393433,
+            "E": 0.5158761143684387
+          },
+          "C": {
+            "A": 0.003956185653805733,
+            "B": 0.07464870810508728,
+            "C": 0.017730431631207466,
+            "D": 0.07464791089296341,
+            "E": 0.8025395274162292
+          },
+          "D": {
+            "A": 0.029930612072348595,
+            "B": 0.38816186785697937,
+            "C": 0.059524551033973694,
+            "D": 0.1427920013666153,
+            "E": 0.16180425882339478
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.017583634704351425,
+          "B": 0.16748252511024475,
+          "C": 0.017730431631207466,
+          "D": 0.1427920013666153
+        },
+        "score": 0.017583634704351425
+      },
+      {
+        "record_index": 9,
+        "sample_id": "sample_9",
+        "label": null,
+        "perturbations": {
+          "a": "John has 10 relatives of his family on his father's side. His mother's side is 30% bigger. How many individuals are there in total?",
+          "b": "John has 10 members of his household on his father's side. His mother's side is 30% larger. How many persons are there in total?",
+          "c": "John has 10 members of his clan on his father's side. His mother's side is 30% greater. How many folks are there in total?",
+          "d": "John has 10 constituents of his family on his father's side. His mother's side is 30% larger. How many humans are there in total?"
+        },
+        "bdq_probs": {
+          "A": 0.02437351830303669,
+          "B": 0.20407921075820923,
+          "C": 0.045535795390605927,
+          "D": 0.5547391772270203,
+          "E": 0.15893547236919403
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.012179424986243248,
+            "B": 0.2950844168663025,
+            "C": 0.0274468082934618,
+            "D": 0.6246860027313232,
+            "E": 0.03524238243699074
+          },
+          "B": {
+            "A": 0.03209424763917923,
+            "B": 0.23715053498744965,
+            "C": 0.06794372200965881,
+            "D": 0.568885326385498,
+            "E": 0.07699023932218552
+          },
+          "C": {
+            "A": 0.021014565601944923,
+            "B": 0.17595623433589935,
+            "C": 0.04448796808719635,
+            "D": 0.541973888874054,
+            "E": 0.1993810087442398
+          },
+          "D": {
+            "A": 0.0459565594792366,
+            "B": 0.2333974689245224,
+            "C": 0.05207602679729462,
+            "D": 0.559869110584259,
+            "E": 0.03579132258892059
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.012179424986243248,
+          "B": 0.23715053498744965,
+          "C": 0.04448796808719635,
+          "D": 0.559869110584259
+        },
+        "score": 0.012179424986243248
+      },
+      {
+        "record_index": 11,
+        "sample_id": "sample_11",
+        "label": null,
+        "perturbations": {
+          "a": "Jogging for 2 hours, Jonah consumed 30 calories each hour. How many additional calories would he have shed if he would have jogged for five hours?",
+          "b": "Sprinting for 2 hours, Jonah expended 30 calories per hour. How many extra calories would he have burned if he would have sprinted for five hours?",
+          "c": "Running for 2 hours, Jonah wasted 30 calories every hour. How many further calories would he have lost if he would have run for five hours?",
+          "d": "Trotting for 2 hours, Jonah expended 30 calories hourly. How many additional calories would he have discarded if he would have trotted for five hours?"
+        },
+        "bdq_probs": {
+          "A": 0.006607002578675747,
+          "B": 0.06268595159053802,
+          "C": 0.012343519367277622,
+          "D": 0.04308309778571129,
+          "E": 0.8653466105461121
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.003305769059807062,
+            "B": 0.4329729974269867,
+            "C": 0.035540398210287094,
+            "D": 0.14056496322155,
+            "E": 0.3820950388908386
+          },
+          "B": {
+            "A": 0.007043781224638224,
+            "B": 0.09723731875419617,
+            "C": 0.045931290835142136,
+            "D": 0.20584961771965027,
+            "E": 0.6340609788894653
+          },
+          "C": {
+            "A": 0.004896541591733694,
+            "B": 0.040998563170433044,
+            "C": 0.010365990921854973,
+            "D": 0.1114448606967926,
+            "E": 0.8234716653823853
+          },
+          "D": {
+            "A": 0.011437082663178444,
+            "B": 0.0745805874466896,
+            "C": 0.02743622660636902,
+            "D": 0.551070511341095,
+            "E": 0.29496657848358154
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.003305769059807062,
+          "B": 0.09723731875419617,
+          "C": 0.010365990921854973,
+          "D": 0.551070511341095
+        },
+        "score": 0.003305769059807062
+      },
+      {
+        "record_index": 13,
+        "sample_id": "sample_13",
+        "label": null,
+        "perturbations": {
+          "a": "At the Greene Greenhouse, there are 1491 crimson roses, 3025 golden carnations, and 1768 pale roses. How many blooms are at the Greene Greenhouse in total?",
+          "b": "At the Greene Nursery, there are 1491 scarlet roses, 3025 lemon carnations, and 1768 ivory roses. How many flowers are at the Greene Nursery in total?",
+          "c": "At the Greene Nursery, there are 1491 ruby roses, 3025 yellowish carnations, and 1768 off-white roses. How many blossoms are at the Greene Nursery in total?",
+          "d": "At the Greene Nursery, there are 1491 cherry roses, 3025 canary carnations, and 1768 cream roses. How many plants are at the Greene Nursery in total?"
+        },
+        "bdq_probs": {
+          "A": 0.013996271416544914,
+          "B": 0.04311247169971466,
+          "C": 0.023075982928276062,
+          "D": 0.0912674143910408,
+          "E": 0.7641714811325073
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.019420873373746872,
+            "B": 0.08704297989606857,
+            "C": 0.03628316894173622,
+            "D": 0.1435033082962036,
+            "E": 0.3442464768886566
+          },
+          "B": {
+            "A": 0.024539770558476448,
+            "B": 0.06670749932527542,
+            "C": 0.051950834691524506,
+            "D": 0.1246238648891449,
+            "E": 0.6328909397125244
+          },
+          "C": {
+            "A": 0.007074981927871704,
+            "B": 0.021793432533740997,
+            "C": 0.024694213643670082,
+            "D": 0.016972096636891365,
+            "E": 0.8177581429481506
+          },
+          "D": {
+            "A": 0.015578475780785084,
+            "B": 0.054377928376197815,
+            "C": 0.013748052529990673,
+            "D": 0.14780664443969727,
+            "E": 0.5158905982971191
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.019420873373746872,
+          "B": 0.06670749932527542,
+          "C": 0.024694213643670082,
+          "D": 0.14780664443969727
+        },
+        "score": 0.019420873373746872
+      },
+      {
+        "record_index": 14,
+        "sample_id": "sample_14",
+        "label": null,
+        "perturbations": {
+          "a": "In a shop, an Uno Giant Family Card costs $12. When Ivan purchased ten units, he was given a rebate of $2 each. How much did Ivan spend in total?",
+          "b": "In a marketplace, an Uno Giant Family Card costs $12. When Ivan acquired ten items, he was given a markdown of $2 each. How much did Ivan remit in all?",
+          "c": "In a retail outlet, an Uno Giant Family Card costs $12. When Ivan obtained ten cards, he was given a reduction of $2 each. How much did Ivan disburse in total?",
+          "d": "In a boutique, an Uno Giant Family Card costs $12. When Ivan secured ten cards, he was given a price cut of $2 each. How much did Ivan pay overall?"
+        },
+        "bdq_probs": {
+          "A": 0.02585757151246071,
+          "B": 0.07964780926704407,
+          "C": 0.054740533232688904,
+          "D": 0.31501007080078125,
+          "E": 0.5193634033203125
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.019591419026255608,
+            "B": 0.18588007986545563,
+            "C": 0.0878027081489563,
+            "D": 0.3935045599937439,
+            "E": 0.3064614236354828
+          },
+          "B": {
+            "A": 0.0102079464122653,
+            "B": 0.058743223547935486,
+            "C": 0.05184027552604675,
+            "D": 0.3830508589744568,
+            "E": 0.4918465316295624
+          },
+          "C": {
+            "A": 0.010263840667903423,
+            "B": 0.05906498804688454,
+            "C": 0.021728575229644775,
+            "D": 0.3398922085762024,
+            "E": 0.5603867769241333
+          },
+          "D": {
+            "A": 0.024443479254841805,
+            "B": 0.10955057293176651,
+            "C": 0.03138609975576401,
+            "D": 0.29778343439102173,
+            "E": 0.4909607470035553
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.019591419026255608,
+          "B": 0.058743223547935486,
+          "C": 0.021728575229644775,
+          "D": 0.29778343439102173
+        },
+        "score": 0.019591419026255608
+      },
+      {
+        "record_index": 15,
+        "sample_id": "sample_15",
+        "label": null,
+        "perturbations": {
+          "a": "Stefan, Vail, and Aiguo gathered seashells. Stefan had 16 additional seashells than Vail. Vail had 5 fewer than Aiguo. Aiguo had 20 seashells. How many seashells did the 3 children possess in total?",
+          "b": "Stefan, Vail, and Aiguo amassed seashells. Stefan had 16 extra seashells than Vail. Vail had 5 smaller than Aiguo. Aiguo had 20 seashells. How many seashells did the 3 children own in total?",
+          "c": "Stefan, Vail, and Aiguo harvested seashells. Stefan had 16 more shells than Vail. Vail had 5 less than Aiguo. Aiguo had 20 seashells. How many seashells did the 3 children accumulate in total?",
+          "d": "Stefan, Vail, and Aiguo collected shellfish. Stefan had 16 more shells than Vail. Vail had 5 fewer than Aiguo. Aiguo had 20 seashells. How many seashells did the 3 children have altogether?"
+        },
+        "bdq_probs": {
+          "A": 0.08267126977443695,
+          "B": 0.08267306536436081,
+          "C": 0.09367900341749191,
+          "D": 0.6108648777008057,
+          "E": 0.09367900341749191
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.10104595124721527,
+            "B": 0.12974746525287628,
+            "C": 0.1010461300611496,
+            "D": 0.5814806818962097,
+            "E": 0.06944791972637177
+          },
+          "B": {
+            "A": 0.09891009330749512,
+            "B": 0.11208252608776093,
+            "C": 0.12700341641902924,
+            "D": 0.44328635931015015,
+            "E": 0.18478871881961823
+          },
+          "C": {
+            "A": 0.09780402481555939,
+            "B": 0.1108291819691658,
+            "C": 0.1612519919872284,
+            "D": 0.3868246078491211,
+            "E": 0.18272238969802856
+          },
+          "D": {
+            "A": 0.13993817567825317,
+            "B": 0.12350020557641983,
+            "C": 0.12349572032690048,
+            "D": 0.431045264005661,
+            "E": 0.031224580481648445
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.10104595124721527,
+          "B": 0.11208252608776093,
+          "C": 0.1612519919872284,
+          "D": 0.431045264005661
+        },
+        "score": 0.10104595124721527
+      },
+      {
+        "record_index": 19,
+        "sample_id": "sample_19",
+        "label": null,
+        "perturbations": {
+          "a": "Winston possesses 14 quarters. He then expends half a dollar on sweets. How many cents does he have remaining?",
+          "b": "Winston holds 14 quarters. He then uses half a dollar on confections. How many cents does he have still?",
+          "c": "Winston owns 14 quarters. He then spends fifty cents on treats. How many cents does he have afterward?",
+          "d": "Winston has 14 quarters. He then pays half a dollar for candy. How many cents does he have afterward?"
+        },
+        "bdq_probs": {
+          "A": 0.04253656789660454,
+          "B": 0.16823610663414001,
+          "C": 0.11562645435333252,
+          "D": 0.13102194666862488,
+          "E": 0.5182018280029297
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.02030877396464348,
+            "B": 0.24741297960281372,
+            "C": 0.0625554770231247,
+            "D": 0.407912939786911,
+            "E": 0.21834005415439606
+          },
+          "B": {
+            "A": 0.03486434742808342,
+            "B": 0.12168937921524048,
+            "C": 0.08363527059555054,
+            "D": 0.48128801584243774,
+            "E": 0.2576148211956024
+          },
+          "C": {
+            "A": 0.018541762605309486,
+            "B": 0.07333465665578842,
+            "C": 0.0346405990421772,
+            "D": 0.22588516771793365,
+            "E": 0.614018976688385
+          },
+          "D": {
+            "A": 0.008699767291545868,
+            "B": 0.03440980613231659,
+            "C": 0.02364855445921421,
+            "D": 0.04150451719760895,
+            "E": 0.34751054644584656
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.02030877396464348,
+          "B": 0.12168937921524048,
+          "C": 0.0346405990421772,
+          "D": 0.04150451719760895
+        },
+        "score": 0.02030877396464348
+      },
+      {
+        "record_index": 20,
+        "sample_id": "sample_20",
+        "label": null,
+        "perturbations": {
+          "a": "Terez has 44 cattle on his farm.  50 percent of the cattle are female, and 50 percent of the females are expecting.  How many expecting female cattle does Terez have?",
+          "b": "Terez possesses 44 cows on his farm.  50 percent of the cows are women, and 50 percent of the women are pregnant.  How many pregnant women cows does Terez have?",
+          "c": "Terez has 44 cows on his ranch.  50 percent of the cows are female, and 50 percent of the females are in a state of pregnancy.  How many in a state of pregnancy female cows does Terez have?",
+          "d": "Terez maintains 44 cows on his farm.  50 percent of the cows are female, and 50 percent of the females are in the condition of pregnancy.  How many in the condition of pregnancy female cows does Terez have?"
+        },
+        "bdq_probs": {
+          "A": 0.021913670003414154,
+          "B": 0.12610554695129395,
+          "C": 0.1428951770067215,
+          "D": 0.3025090992450714,
+          "E": 0.3884294629096985
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04568147659301758,
+            "B": 0.3824896216392517,
+            "C": 0.18067386746406555,
+            "D": 0.29788094758987427,
+            "E": 0.0853443592786789
+          },
+          "B": {
+            "A": 0.02856726199388504,
+            "B": 0.2110876441001892,
+            "C": 0.12802976369857788,
+            "D": 0.30712756514549255,
+            "E": 0.3071274161338806
+          },
+          "C": {
+            "A": 0.015138592571020126,
+            "B": 0.08711766451597214,
+            "C": 0.06784655153751373,
+            "D": 0.16275550425052643,
+            "E": 0.6437098979949951
+          },
+          "D": {
+            "A": 0.040243130177259445,
+            "B": 0.23158955574035645,
+            "C": 0.05855363607406616,
+            "D": 0.33695295453071594,
+            "E": 0.20437213778495789
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04568147659301758,
+          "B": 0.2110876441001892,
+          "C": 0.06784655153751373,
+          "D": 0.33695295453071594
+        },
+        "score": 0.04568147659301758
+      },
+      {
+        "record_index": 21,
+        "sample_id": "sample_21",
+        "label": null,
+        "perturbations": {
+          "a": "The dimension of a restroom is 96 sq ft. If the breadth of the restroom is 8 feet and the proprietor wants to enlarge it by 2 feet on each side, what is the new space of the restroom?",
+          "b": "The magnitude of a washroom is 96 sq ft. If the width of the washroom is 8 feet and the owner desires to increase it by 2 feet on each side, what is the new area of the washroom?",
+          "c": "The extent of a lavatory is 96 sq ft. If the width of the lavatory is 8 feet and the possessor wants to extend it by 2 feet on each side, what is the new measurement of the lavatory?",
+          "d": "The volume of a toilet is 96 sq ft. If the width of the toilet is 8 feet and the possessor wishes to expand it by 2 feet on each side, what is the new area of the toilet?"
+        },
+        "bdq_probs": {
+          "A": 0.01221969723701477,
+          "B": 0.2454417645931244,
+          "C": 0.054764945060014725,
+          "D": 0.278119295835495,
+          "E": 0.40466102957725525
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.006147466134279966,
+            "B": 0.19124558568000793,
+            "C": 0.0483536571264267,
+            "D": 0.21670609712600708,
+            "E": 0.5198502540588379
+          },
+          "B": {
+            "A": 0.005192157346755266,
+            "B": 0.07167692482471466,
+            "C": 0.06325356662273407,
+            "D": 0.25017285346984863,
+            "E": 0.600132405757904
+          },
+          "C": {
+            "A": 0.003953475970774889,
+            "B": 0.12299173325300217,
+            "C": 0.03992877155542374,
+            "D": 0.10853774100542068,
+            "E": 0.7077534794807434
+          },
+          "D": {
+            "A": 0.016616445034742355,
+            "B": 0.2945499122142792,
+            "C": 0.057997483760118484,
+            "D": 0.428546667098999,
+            "E": 0.10835330188274384
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.006147466134279966,
+          "B": 0.07167692482471466,
+          "C": 0.03992877155542374,
+          "D": 0.428546667098999
+        },
+        "score": 0.006147466134279966
+      },
+      {
+        "record_index": 22,
+        "sample_id": "sample_22",
+        "label": null,
+        "perturbations": {
+          "a": "At the conclusion of a circus performance, there are 12 canines on stage. Half of the canines are standing on their back legs and the other half are standing on all 4 legs. How many canine paws are on the ground?",
+          "b": "At the finish of a circus routine, there are 12 pooches on stage. Half of the pooches are standing on their back legs and the other half are standing on all 4 legs. How many pup paws are on the ground?",
+          "c": "At the termination of a circus show, there are 12 hounds on stage. Half of the hounds are standing on their back limbs and the other half are standing on all 4 limbs. How many dog feet are on the ground?",
+          "d": "At the close of a circus display, there are 12 pups on stage. Half of the pups are standing on their rear legs and the other half are standing on all 4 legs. How many puppy paws are on the ground?"
+        },
+        "bdq_probs": {
+          "A": 0.05021648108959198,
+          "B": 0.17527659237384796,
+          "C": 0.04431600123643875,
+          "D": 0.3274535536766052,
+          "E": 0.3274533748626709
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04226447641849518,
+            "B": 0.3122997283935547,
+            "C": 0.061494529247283936,
+            "D": 0.35387688875198364,
+            "E": 0.1894165277481079
+          },
+          "B": {
+            "A": 0.04495396465063095,
+            "B": 0.20147988200187683,
+            "C": 0.09516794234514236,
+            "D": 0.20147153735160828,
+            "E": 0.3321687877178192
+          },
+          "C": {
+            "A": 0.016335535794496536,
+            "B": 0.12070754170417786,
+            "C": 0.044404733926057816,
+            "D": 0.17562441527843475,
+            "E": 0.5409598350524902
+          },
+          "D": {
+            "A": 0.03706661984324455,
+            "B": 0.1293865442276001,
+            "C": 0.0254758819937706,
+            "D": 0.27389270067214966,
+            "E": 0.10075883567333221
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04226447641849518,
+          "B": 0.20147988200187683,
+          "C": 0.044404733926057816,
+          "D": 0.27389270067214966
+        },
+        "score": 0.04226447641849518
+      },
+      {
+        "record_index": 25,
+        "sample_id": "sample_25",
+        "label": null,
+        "perturbations": {
+          "a": "For every 5 individuals that attend a poetry class, the instructor gives one of the pupils a lollipop. If 45 individuals show up for class, then another 15 arrive in a while later, how many lollipops did the instructor distribute?",
+          "b": "For every 5 persons that attend a poetry class, the educator gives one of the scholars a lollipop. If 45 persons show up for class, then another 15 arrive in a while later, how many lollipops did the educator hand out?",
+          "c": "For every 5 attendees that participate in a poetry class, the teacher gives one of the students a lollipop. If 45 attendees show up for class, then another 15 come in a little while later, how many lollipops did the teacher provide?",
+          "d": "For every 5 participants that join a poetry class, the tutor gives one of the learners a lollipop. If 45 participants show up for class, then another 15 come in shortly thereafter, how many lollipops did the tutor give out?"
+        },
+        "bdq_probs": {
+          "A": 0.009815670549869537,
+          "B": 0.25315311551094055,
+          "C": 0.07252863794565201,
+          "D": 0.1739872694015503,
+          "E": 0.47294580936431885
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010156872682273388,
+            "B": 0.4893903136253357,
+            "C": 0.07504978775978088,
+            "D": 0.18003514409065247,
+            "E": 0.23116953670978546
+          },
+          "B": {
+            "A": 0.009388742968440056,
+            "B": 0.11438019573688507,
+            "C": 0.12960781157016754,
+            "D": 0.2136872559785843,
+            "E": 0.512608528137207
+          },
+          "C": {
+            "A": 0.006257242523133755,
+            "B": 0.14241623878479004,
+            "C": 0.05239134281873703,
+            "D": 0.20721189677715302,
+            "E": 0.563259482383728
+          },
+          "D": {
+            "A": 0.020983600988984108,
+            "B": 0.17569959163665771,
+            "C": 0.08299204707145691,
+            "D": 0.4775870740413666,
+            "E": 0.10656382143497467
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010156872682273388,
+          "B": 0.11438019573688507,
+          "C": 0.05239134281873703,
+          "D": 0.4775870740413666
+        },
+        "score": 0.010156872682273388
+      },
+      {
+        "record_index": 27,
+        "sample_id": "sample_27",
+        "label": null,
+        "perturbations": {
+          "a": "In Canada, for every elk there are two castors, and for every castor there are 19 individuals.  If there are 38 million inhabitants in Canada, what is the elk population of Canada, in millions?",
+          "b": "In Canada, for every moose there are two rodents, and for every rodent there are 19 people.  If there are 38 million residents in Canada, what is the moose population of Canada, in millions?",
+          "c": "In Canada, for every moose there are two beavers, and for every beaver there are 19 citizens.  If there are 38 million folks in Canada, what is the moose population of Canada, in millions?",
+          "d": "In Canada, for every moose there are two beavers, and for every beaver there are 19 mankind.  If there are 38 million persons in Canada, what is the moose population of Canada, in millions?"
+        },
+        "bdq_probs": {
+          "A": 0.019729318097233772,
+          "B": 0.060770921409130096,
+          "C": 0.047328196465969086,
+          "D": 0.34971070289611816,
+          "E": 0.5088258385658264
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.011800767853856087,
+            "B": 0.1268710196018219,
+            "C": 0.08719661086797714,
+            "D": 0.34486910700798035,
+            "E": 0.3907877802848816
+          },
+          "B": {
+            "A": 0.011378752999007702,
+            "B": 0.07419946789741516,
+            "C": 0.10795870423316956,
+            "D": 0.2285485565662384,
+            "E": 0.5482590794563293
+          },
+          "C": {
+            "A": 0.010537715628743172,
+            "B": 0.060640957206487656,
+            "C": 0.04167751222848892,
+            "D": 0.44807541370391846,
+            "E": 0.39542484283447266
+          },
+          "D": {
+            "A": 0.026733962818980217,
+            "B": 0.1743311733007431,
+            "C": 0.0726705864071846,
+            "D": 0.5369670391082764,
+            "E": 0.09331070631742477
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.011800767853856087,
+          "B": 0.07419946789741516,
+          "C": 0.04167751222848892,
+          "D": 0.5369670391082764
+        },
+        "score": 0.011800767853856087
+      },
+      {
+        "record_index": 28,
+        "sample_id": "sample_28",
+        "label": null,
+        "perturbations": {
+          "a": "In a unit of flats, there are 120 condominiums. 85% of them have at least 1 tenant, while 60% of the condominiums have at least two tenants. How many condominiums have only one tenant?",
+          "b": "In a block of apartments, there are 120 flats. 85% of them have at least 1 occupant, while 60% of the flats have at least two occupants. How many flats have only one occupant?",
+          "c": "In a complex of flats, there are 120 units. 85% of them have at least 1 dweller, while 60% of the units have at least two dwellers. How many units have only one dweller?",
+          "d": "In a set of apartments, there are 120 residences. 85% of them have at least 1 inhabitant, while 60% of the residences have at least two inhabitants. How many residences have only one inhabitant?"
+        },
+        "bdq_probs": {
+          "A": 0.03348932042717934,
+          "B": 0.1324547976255417,
+          "C": 0.04300117492675781,
+          "D": 0.5238617062568665,
+          "E": 0.1927179992198944
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.023749105632305145,
+            "B": 0.28932708501815796,
+            "C": 0.04436920955777168,
+            "D": 0.3278467655181885,
+            "E": 0.2553272545337677
+          },
+          "B": {
+            "A": 0.037886664271354675,
+            "B": 0.11670242249965668,
+            "C": 0.11669932305812836,
+            "D": 0.169796884059906,
+            "E": 0.4615551233291626
+          },
+          "C": {
+            "A": 0.020930984988808632,
+            "B": 0.08278598636388779,
+            "C": 0.06447210907936096,
+            "D": 0.1546608954668045,
+            "E": 0.5398184657096863
+          },
+          "D": {
+            "A": 0.04411860927939415,
+            "B": 0.17450252175331116,
+            "C": 0.03435976430773735,
+            "D": 0.22405490279197693,
+            "E": 0.1977270245552063
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.023749105632305145,
+          "B": 0.11670242249965668,
+          "C": 0.06447210907936096,
+          "D": 0.22405490279197693
+        },
+        "score": 0.023749105632305145
+      },
+      {
+        "record_index": 29,
+        "sample_id": "sample_29",
+        "label": null,
+        "perturbations": {
+          "a": "The trainer of a soccer squad requested his athletes to do six circuits of the field. The field is in the form of a rectangle of length 100 m and width 50 m. What is the distance each athlete will run, in meters?",
+          "b": "The instructor of a football group asked his players to do six rounds of the field. The field is in the configuration of a rectangle of length 100 m and width 50 m. What is the distance each player will run, in meters?",
+          "c": "The mentor of a soccer team requested his members to do six laps of the field. The field is in the design of a rectangle of length 100 m and width 50 m. What is the distance each member will run, in meters?",
+          "d": "The coach of a soccer team demanded his players to do six loops of the field. The field is in the outline of a rectangle of length 100 m and width 50 m. What is the distance each player will run, in meters?"
+        },
+        "bdq_probs": {
+          "A": 0.03179142251610756,
+          "B": 0.14248013496398926,
+          "C": 0.03602444380521774,
+          "D": 0.5635169148445129,
+          "E": 0.20730622112751007
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.02091401070356369,
+            "B": 0.12035289406776428,
+            "C": 0.05685025826096535,
+            "D": 0.4760012924671173,
+            "E": 0.28870925307273865
+          },
+          "B": {
+            "A": 0.026754340156912804,
+            "B": 0.0824100598692894,
+            "C": 0.038927409797906876,
+            "D": 0.6089268922805786,
+            "E": 0.22401151061058044
+          },
+          "C": {
+            "A": 0.01791914738714695,
+            "B": 0.103118397295475,
+            "C": 0.04298585280776024,
+            "D": 0.46214139461517334,
+            "E": 0.3599158227443695
+          },
+          "D": {
+            "A": 0.029921187087893486,
+            "B": 0.07177911698818207,
+            "C": 0.038419753313064575,
+            "D": 0.6810057163238525,
+            "E": 0.10443532466888428
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.02091401070356369,
+          "B": 0.0824100598692894,
+          "C": 0.04298585280776024,
+          "D": 0.6810057163238525
+        },
+        "score": 0.02091401070356369
+      },
+      {
+        "record_index": 32,
+        "sample_id": "sample_32",
+        "label": null,
+        "perturbations": {
+          "a": "Adam possesses 50 spheres. 20 spheres are crimson, 10 are azure, and the remainder are either rose or tangerine. If there are 3 times as numerous rose as tangerine spheres, how many tangerine spheres are there?",
+          "b": "Adam holds 50 orbs. 20 orbs are scarlet, 10 are cerulean, and the others are either fuchsia or mandarin. If there are 3 times as many fuchsia as mandarin orbs, how many mandarin orbs are there?",
+          "c": "Adam owns 50 balls. 20 balls are ruby, 10 are cobalt, and the left are either blush or peach. If there are 3 times as plenty blush as peach balls, how many peach balls are there?",
+          "d": "Adam has 50 pellets. 20 pellets are cherry, 10 are navy, and the rest are either magenta or apricot. If there are 3 times as abundant magenta as apricot pellets, how many apricot pellets are there?"
+        },
+        "bdq_probs": {
+          "A": 0.06769810616970062,
+          "B": 0.06769862771034241,
+          "C": 0.05974341556429863,
+          "D": 0.3895760774612427,
+          "E": 0.3437996804714203
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.12034635990858078,
+            "B": 0.19841918349266052,
+            "C": 0.06441687792539597,
+            "D": 0.5393558740615845,
+            "E": 0.05684768781065941
+          },
+          "B": {
+            "A": 0.0869031473994255,
+            "B": 0.126444473862648,
+            "C": 0.07669185101985931,
+            "D": 0.5000938773155212,
+            "E": 0.18397416174411774
+          },
+          "C": {
+            "A": 0.05513955280184746,
+            "B": 0.10301507264375687,
+            "C": 0.13227304816246033,
+            "D": 0.11673063784837723,
+            "E": 0.5231500864028931
+          },
+          "D": {
+            "A": 0.06098906695842743,
+            "B": 0.1878621131181717,
+            "C": 0.047498442232608795,
+            "D": 0.5786497592926025,
+            "E": 0.06910983473062515
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.12034635990858078,
+          "B": 0.126444473862648,
+          "C": 0.13227304816246033,
+          "D": 0.5786497592926025
+        },
+        "score": 0.12034635990858078
+      },
+      {
+        "record_index": 33,
+        "sample_id": "sample_33",
+        "label": null,
+        "perturbations": {
+          "a": "Melody sowed sunflowers from two assorted seed packets. She discovered that the sunflowers from Packet A were 20% greater than the sunflowers from Packet B. If the sunflowers from Packet A were 192 inches high, how high were the sunflowers from Packet B?",
+          "b": "Melody seeded sunflowers from two distinct seed packets. She realized that the sunflowers from Packet A were 20% taller than the sunflowers from Packet B. If the sunflowers from Packet A were 192 inches elevated, how elevated were the sunflowers from Packet B?",
+          "c": "Melody cultivated sunflowers from two various seed packets. She ascertained that the sunflowers from Packet A were 20% taller than the sunflowers from Packet B. If the sunflowers from Packet A were 192 inches tall, how tall were the sunflowers from Packet B?",
+          "d": "Melody grew sunflowers from two separate seed packets. She found that the sunflowers from Packet A were 20% taller than the sunflowers from Packet B. If the sunflowers from Packet A were 192 inches tall, how tall were the sunflowers from Packet B?"
+        },
+        "bdq_probs": {
+          "A": 0.08319811522960663,
+          "B": 0.1995832622051239,
+          "C": 0.09427588433027267,
+          "D": 0.32905516028404236,
+          "E": 0.2903899848461151
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04224858433008194,
+            "B": 0.4008472263813019,
+            "C": 0.11484365910291672,
+            "D": 0.24312405288219452,
+            "E": 0.1893451064825058
+          },
+          "B": {
+            "A": 0.07919745147228241,
+            "B": 0.16766244173049927,
+            "C": 0.189984992146492,
+            "D": 0.3132323920726776,
+            "E": 0.24394536018371582
+          },
+          "C": {
+            "A": 0.05002785474061966,
+            "B": 0.15409786999225616,
+            "C": 0.0934644266963005,
+            "D": 0.3262229561805725,
+            "E": 0.3696586787700653
+          },
+          "D": {
+            "A": 0.06746827065944672,
+            "B": 0.23549219965934753,
+            "C": 0.09816592186689377,
+            "D": 0.49852776527404785,
+            "E": 0.0674683153629303
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04224858433008194,
+          "B": 0.16766244173049927,
+          "C": 0.0934644266963005,
+          "D": 0.49852776527404785
+        },
+        "score": 0.04224858433008194
+      },
+      {
+        "record_index": 37,
+        "sample_id": "sample_37",
+        "label": null,
+        "perturbations": {
+          "a": "There is a greatly large chamber that has 4 desks, 1 couch and 2 seats that have 4 legs each. There are also 3 desks with 3 legs each, 1 desk with 1 leg, and 1 rocking seat with 2 legs. How many legs are there in the chamber?",
+          "b": "There exists a very big room that has 4 tables, 1 loveseat and 2 stools that have 4 legs each. There are also 3 tables with 3 legs each, 1 table with 1 leg, and 1 rocking stool with 2 legs. How many legs are there in the room?",
+          "c": "There is a really spacious area that has 4 surfaces, 1 settee and 2 armchairs that have 4 legs each. There are also 3 surfaces with 3 legs each, 1 surface with 1 leg, and 1 rocking armchair with 2 legs. How many legs are there in the area?",
+          "d": "There is a very enormous room that has 4 tables, 1 divan and 2 chairs that have 4 legs each. There are also 3 tables with 3 legs each, 1 table with 1 leg, and 1 rocking chair with 2 legs. How many legs are there in the room?"
+        },
+        "bdq_probs": {
+          "A": 0.02489355579018593,
+          "B": 0.09845751523971558,
+          "C": 0.024893587455153465,
+          "D": 0.2676314115524292,
+          "E": 0.5665754079818726
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.026058655232191086,
+            "B": 0.14996129274368286,
+            "C": 0.04296351969242096,
+            "D": 0.46190184354782104,
+            "E": 0.28015780448913574
+          },
+          "B": {
+            "A": 0.03734881058335304,
+            "B": 0.1673906147480011,
+            "C": 0.05434230715036392,
+            "D": 0.4015389680862427,
+            "E": 0.31271860003471375
+          },
+          "C": {
+            "A": 0.027682902291417122,
+            "B": 0.12406928092241287,
+            "C": 0.09662298858165741,
+            "D": 0.23178692162036896,
+            "E": 0.4906923472881317
+          },
+          "D": {
+            "A": 0.05391184985637665,
+            "B": 0.11414352804422379,
+            "C": 0.047577500343322754,
+            "D": 0.5115131139755249,
+            "E": 0.10072194784879684
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.026058655232191086,
+          "B": 0.1673906147480011,
+          "C": 0.09662298858165741,
+          "D": 0.5115131139755249
+        },
+        "score": 0.026058655232191086
+      },
+      {
+        "record_index": 38,
+        "sample_id": "sample_38",
+        "label": null,
+        "perturbations": {
+          "a": "Mary traveled to the shop to purchase fruit. Apples price $1, oranges price $2, and bananas price $3. For every 5 fruits that patrons buy, the shop provides a $1 reduction. Mary purchases 5 apples, 3 oranges, and 2 bananas. How much will she spend?",
+          "b": "Mary went to the market to obtain fruit. Apples cost $1, oranges cost $2, and bananas cost $3. For each 5 fruits that customers buy, the market presents a $1 discount. Mary acquires 5 apples, 3 oranges, and 2 bananas. How much will she owe?",
+          "c": "Mary proceeded to the store to procure fruit. Apples cost $1, oranges cost $2, and bananas cost $3. For every 5 fruits that clients buy, the store grants a $1 rebate. Mary secures 5 apples, 3 oranges, and 2 bananas. How much will she expend?",
+          "d": "Mary visited the boutique to get fruit. Apples cost $1, oranges cost $2, and bananas cost $3. For every 5 fruits that shoppers buy, the boutique offers a $1 markdown. Mary buys 5 apples, 3 oranges, and 2 bananas. How much will she disburse?"
+        },
+        "bdq_probs": {
+          "A": 0.015802815556526184,
+          "B": 0.11676943302154541,
+          "C": 0.02029123343527317,
+          "D": 0.08025340735912323,
+          "E": 0.761422336101532
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01054366584867239,
+            "B": 0.3491637110710144,
+            "C": 0.02866067737340927,
+            "D": 0.145550936460495,
+            "E": 0.4483281970024109
+          },
+          "B": {
+            "A": 0.013442275114357471,
+            "B": 0.12753881514072418,
+            "C": 0.036539942026138306,
+            "D": 0.163760706782341,
+            "E": 0.6476852893829346
+          },
+          "C": {
+            "A": 0.009259294718503952,
+            "B": 0.053284432739019394,
+            "C": 0.022211920469999313,
+            "D": 0.1641252040863037,
+            "E": 0.735556960105896
+          },
+          "D": {
+            "A": 0.033946432173252106,
+            "B": 0.11848927289247513,
+            "C": 0.018170267343521118,
+            "D": 0.22135958075523376,
+            "E": 0.5310120582580566
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01054366584867239,
+          "B": 0.12753881514072418,
+          "C": 0.022211920469999313,
+          "D": 0.22135958075523376
+        },
+        "score": 0.01054366584867239
+      },
+      {
+        "record_index": 40,
+        "sample_id": "sample_40",
+        "label": null,
+        "perturbations": {
+          "a": "Carmela possesses $7 and each of her four relatives possesses $2. How much will Carmela have to donate to each of her relatives so that she and her relatives will have the same amount of funds?",
+          "b": "Carmela holds $7 and each of her four family members holds $2. How much will Carmela have to provide to each of her family members so that she and her family members will have the same amount of cash?",
+          "c": "Carmela owns $7 and each of her four cousins owns $2. How much will Carmela have to transfer to each of her cousins so that she and her cousins will have the same amount of resources?",
+          "d": "Carmela carries $7 and each of her four kin carries $2. How much will Carmela have to share with each of her kin so that she and her kin will have the same amount of wealth?"
+        },
+        "bdq_probs": {
+          "A": 0.022627240046858788,
+          "B": 0.24326789379119873,
+          "C": 0.24326586723327637,
+          "D": 0.24326588213443756,
+          "E": 0.24326588213443756
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.021874219179153442,
+            "B": 0.2664856016635895,
+            "C": 0.2664826512336731,
+            "D": 0.3421705365180969,
+            "E": 0.09803351759910583
+          },
+          "B": {
+            "A": 0.012590441852807999,
+            "B": 0.10541991889476776,
+            "C": 0.25288596749305725,
+            "D": 0.2528861165046692,
+            "E": 0.36794692277908325
+          },
+          "C": {
+            "A": 0.009881187230348587,
+            "B": 0.1545698344707489,
+            "C": 0.1751483529806137,
+            "D": 0.17514841258525848,
+            "E": 0.4761025905609131
+          },
+          "D": {
+            "A": 0.019014108926057816,
+            "B": 0.15920749306678772,
+            "C": 0.20442107319831848,
+            "D": 0.49038100242614746,
+            "E": 0.09656189382076263
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.021874219179153442,
+          "B": 0.10541991889476776,
+          "C": 0.1751483529806137,
+          "D": 0.49038100242614746
+        },
+        "score": 0.021874219179153442
+      },
+      {
+        "record_index": 41,
+        "sample_id": "sample_41",
+        "label": null,
+        "perturbations": {
+          "a": "A bustling port has 4 cruise liners and twice as numerous freight ships. The quantity of sailboats is 6 more than the cargo ships and seven times more than fishing vessels. How many crafts are there on the water?",
+          "b": "A thriving port has 4 cruise vessels and twice as many cargo liners. The count of sailboats is 6 more than the cargo ships and seven times more than fishing boats. How many ships are there on the water?",
+          "c": "A lively port has 4 cruise ships and twice as numerous freight vessels. The total of sailboats is 6 more than the cargo liners and seven times more than fishing crafts. How many vessels are there on the water?",
+          "d": "A crowded port has 4 cruise liners and twice as many freight ships. The figure of sailboats is 6 more than the cargo vessels and seven times more than fishing boats. How many vessels are there on the water?"
+        },
+        "bdq_probs": {
+          "A": 0.08252763003110886,
+          "B": 0.13606876134872437,
+          "C": 0.08252765983343124,
+          "D": 0.4749145209789276,
+          "E": 0.13606539368629456
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.14038904011249542,
+            "B": 0.2622887194156647,
+            "C": 0.15908154845237732,
+            "D": 0.33677616715431213,
+            "E": 0.03549613803625107
+          },
+          "B": {
+            "A": 0.16550195217132568,
+            "B": 0.16551083326339722,
+            "C": 0.16550208628177643,
+            "D": 0.2728680968284607,
+            "E": 0.12889385223388672
+          },
+          "C": {
+            "A": 0.10821754485368729,
+            "B": 0.17843064665794373,
+            "C": 0.12262668460607529,
+            "D": 0.2941674590110779,
+            "E": 0.17842146754264832
+          },
+          "D": {
+            "A": 0.08093298226594925,
+            "B": 0.15121783316135406,
+            "C": 0.07142328470945358,
+            "D": 0.4110148549079895,
+            "E": 0.04908885434269905
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.14038904011249542,
+          "B": 0.16551083326339722,
+          "C": 0.12262668460607529,
+          "D": 0.4110148549079895
+        },
+        "score": 0.12262668460607529
+      },
+      {
+        "record_index": 42,
+        "sample_id": "sample_42",
+        "label": null,
+        "perturbations": {
+          "a": "John has 54 sticks of gum, Cole has 45 sticks of gum and Aubrey has no sticks of gum. They decide to distribute the gum equally among the 3 of them. How many sticks of gum will each one receive?",
+          "b": "John has 54 pieces of candy, Cole has 45 pieces of candy and Aubrey has no pieces of candy. They decide to divide the candy equally between the 3 of them. How many pieces of candy will each one obtain?",
+          "c": "John has 54 handfuls of gum, Cole has 45 handfuls of gum and Aubrey has no handfuls of gum. They decide to allocate the gum evenly among the 3 of them. How many handfuls of gum will each one acquire?",
+          "d": "John has 54 portions of gum, Cole has 45 portions of gum and Aubrey has no portions of gum. They decide to share the portions equally among the 3 of them. How many portions of gum will each one get?"
+        },
+        "bdq_probs": {
+          "A": 0.026678351685404778,
+          "B": 0.07252103090286255,
+          "C": 0.043985266238451004,
+          "D": 0.2233758121728897,
+          "E": 0.5358502864837646
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.045322615653276443,
+            "B": 0.1792629361152649,
+            "C": 0.05819566920399666,
+            "D": 0.1792561113834381,
+            "E": 0.26081568002700806
+          },
+          "B": {
+            "A": 0.021349620074033737,
+            "B": 0.157759428024292,
+            "C": 0.06576176732778549,
+            "D": 0.07451807707548141,
+            "E": 0.5506155490875244
+          },
+          "C": {
+            "A": 0.01674855314195156,
+            "B": 0.05846017599105835,
+            "C": 0.05158942565321922,
+            "D": 0.07506252080202103,
+            "E": 0.7121690511703491
+          },
+          "D": {
+            "A": 0.028128698468208313,
+            "B": 0.12607510387897491,
+            "C": 0.019332721829414368,
+            "D": 0.266882061958313,
+            "E": 0.3426797091960907
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.045322615653276443,
+          "B": 0.157759428024292,
+          "C": 0.05158942565321922,
+          "D": 0.266882061958313
+        },
+        "score": 0.045322615653276443
+      },
+      {
+        "record_index": 46,
+        "sample_id": "sample_46",
+        "label": null,
+        "perturbations": {
+          "a": "There are numerous cookies in the jar. Taking 1 cookie away would leave half as many in the jar as if 5 were included. How many cookies are in the jar?",
+          "b": "There are various cookies in the jar. Taking 1 cookie away would leave half as many in the jar as if 5 were inserted. How many cookies are in the jar?",
+          "c": "There are multiple cookies in the jar. Taking 1 cookie away would leave half as many in the jar as if 5 were supplied. How many cookies are in the jar?",
+          "d": "There are several biscuits in the jar. Taking 1 cookie away would leave half as many in the jar as if 5 were furnished. How many cookies are in the jar?"
+        },
+        "bdq_probs": {
+          "A": 0.05551716685295105,
+          "B": 0.2195771187543869,
+          "C": 0.1710050255060196,
+          "D": 0.28193965554237366,
+          "E": 0.24881091713905334
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0762842670083046,
+            "B": 0.3874092996120453,
+            "C": 0.16149403154850006,
+            "D": 0.30171069502830505,
+            "E": 0.04626884311437607
+          },
+          "B": {
+            "A": 0.07085742056369781,
+            "B": 0.24732066690921783,
+            "C": 0.24731697142124176,
+            "D": 0.24731703102588654,
+            "E": 0.15000535547733307
+          },
+          "C": {
+            "A": 0.054527100175619125,
+            "B": 0.27691763639450073,
+            "C": 0.2156592309474945,
+            "D": 0.14822036027908325,
+            "E": 0.21565937995910645
+          },
+          "D": {
+            "A": 0.059592388570308685,
+            "B": 0.302644819021225,
+            "C": 0.1113336905837059,
+            "D": 0.3026359975337982,
+            "E": 0.07651837170124054
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0762842670083046,
+          "B": 0.24732066690921783,
+          "C": 0.2156592309474945,
+          "D": 0.3026359975337982
+        },
+        "score": 0.0762842670083046
+      },
+      {
+        "record_index": 47,
+        "sample_id": "sample_47",
+        "label": null,
+        "perturbations": {
+          "a": "If an automobile is operated 12 miles on Monday, 18 miles on Tuesday, and 21 miles on Wednesday. What is the mean distance covered per day?",
+          "b": "If a car is driven 12 miles on Monday, 18 miles on Tuesday, and 21 miles on Wednesday. What is the typical distance traveled per day?",
+          "c": "If a vehicle is maneuvered 12 miles on Monday, 18 miles on Tuesday, and 21 miles on Wednesday. What is the average distance journeyed per day?",
+          "d": "If an automobile is driven 12 miles on Monday, 18 miles on Tuesday, and 21 miles on Wednesday. What is the average distance traveled each day?"
+        },
+        "bdq_probs": {
+          "A": 0.012690587900578976,
+          "B": 0.28883764147758484,
+          "C": 0.05019228532910347,
+          "D": 0.42025479674339294,
+          "E": 0.22494614124298096
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.012399301864206791,
+            "B": 0.3197837173938751,
+            "C": 0.029744397848844528,
+            "D": 0.5974321961402893,
+            "E": 0.03819255903363228
+          },
+          "B": {
+            "A": 0.014482938684523106,
+            "B": 0.08334387838840485,
+            "C": 0.057281170040369034,
+            "D": 0.6158307790756226,
+            "E": 0.2265513688325882
+          },
+          "C": {
+            "A": 0.007721916772425175,
+            "B": 0.15509958565235138,
+            "C": 0.020990364253520966,
+            "D": 0.6134284138679504,
+            "E": 0.1991509050130844
+          },
+          "D": {
+            "A": 0.015195261687040329,
+            "B": 0.4440750777721405,
+            "C": 0.036451611667871475,
+            "D": 0.3458433151245117,
+            "E": 0.14416873455047607
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.012399301864206791,
+          "B": 0.08334387838840485,
+          "C": 0.020990364253520966,
+          "D": 0.3458433151245117
+        },
+        "score": 0.012399301864206791
+      },
+      {
+        "record_index": 48,
+        "sample_id": "sample_48",
+        "label": null,
+        "perturbations": {
+          "a": "A container contains 2 dozen pastries. If the household consumed 8 pastries, how many pastries remain?",
+          "b": "A receptacle carries 2 dozen treats. If the family devoured 8 treats, how many treats are left?",
+          "c": "A casket retains 2 dozen confections. If the clan munched on 8 confections, how many confections are left?",
+          "d": "A crate comprises 2 dozen sweets. If the kin feasted on 8 sweets, how many sweets are remaining?"
+        },
+        "bdq_probs": {
+          "A": 0.06139928847551346,
+          "B": 0.08933603763580322,
+          "C": 0.06957453489303589,
+          "D": 0.18912318348884583,
+          "E": 0.5825403332710266
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.09728050976991653,
+            "B": 0.38475415110588074,
+            "C": 0.09728055447340012,
+            "D": 0.29964515566825867,
+            "E": 0.11023330688476562
+          },
+          "B": {
+            "A": 0.08760246634483337,
+            "B": 0.14443331956863403,
+            "C": 0.09926670044660568,
+            "D": 0.3464747369289398,
+            "E": 0.30576270818710327
+          },
+          "C": {
+            "A": 0.10760215669870377,
+            "B": 0.1565624624490738,
+            "C": 0.08380080759525299,
+            "D": 0.2924933433532715,
+            "E": 0.3314381539821625
+          },
+          "D": {
+            "A": 0.05773906409740448,
+            "B": 0.13851207494735718,
+            "C": 0.035020604729652405,
+            "D": 0.4834441542625427,
+            "E": 0.2015296220779419
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.09728050976991653,
+          "B": 0.14443331956863403,
+          "C": 0.08380080759525299,
+          "D": 0.4834441542625427
+        },
+        "score": 0.08380080759525299
+      },
+      {
+        "record_index": 49,
+        "sample_id": "sample_49",
+        "label": null,
+        "perturbations": {
+          "a": "To occupy himself busy in class, Michael constructs rubber-band spheres. He constructs two dimensions, large and small. A small sphere employs 50 rubber bands. A large sphere necessitates 300 rubber bands. Michael brought a 5,000 bundle to class and already made 22 small spheres. How many large spheres can he create with the remaining rubber bands?",
+          "b": "To keep himself engaged in class, Michael creates rubber-band globes. He creates two sizes, large and minor. A minor globe utilizes 50 rubber bands. A large globe demands 300 rubber bands. Michael brought a 5,000 set to class and already made 22 minor globes. How many large globes can he produce with the leftover rubber bands?",
+          "c": "To remain himself occupied in class, Michael crafts rubber-band balls. He crafts two dimensions, large and tiny. A tiny ball consumes 50 rubber bands. A large ball calls for 300 rubber bands. Michael brought a 5,000 package to class and already made 22 tiny balls. How many large balls can he form with the leftover rubber bands?",
+          "d": "To maintain himself busy in class, Michael manufactures rubber-band orbs. He manufactures two sizes, large and petite. A petite orb requires 50 rubber bands. A large orb needs 300 rubber bands. Michael brought a 5,000 collection to class and already made 22 petite orbs. How many large orbs can he assemble with the remaining rubber bands?"
+        },
+        "bdq_probs": {
+          "A": 0.07582652568817139,
+          "B": 0.16052798926830292,
+          "C": 0.07582662254571915,
+          "D": 0.3398318886756897,
+          "E": 0.3398312032222748
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04914100468158722,
+            "B": 0.15136705338954926,
+            "C": 0.10403162986040115,
+            "D": 0.220235213637352,
+            "E": 0.466237336397171
+          },
+          "B": {
+            "A": 0.029256856068968773,
+            "B": 0.11571503430604935,
+            "C": 0.0701836496591568,
+            "D": 0.19077910482883453,
+            "E": 0.5876400470733643
+          },
+          "C": {
+            "A": 0.024482905864715576,
+            "B": 0.06655276566743851,
+            "C": 0.08545389026403427,
+            "D": 0.18090631067752838,
+            "E": 0.6314231157302856
+          },
+          "D": {
+            "A": 0.05892565846443176,
+            "B": 0.11009299755096436,
+            "C": 0.07566232234239578,
+            "D": 0.4933824837207794,
+            "E": 0.20567137002944946
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04914100468158722,
+          "B": 0.11571503430604935,
+          "C": 0.08545389026403427,
+          "D": 0.4933824837207794
+        },
+        "score": 0.04914100468158722
+      },
+      {
+        "record_index": 55,
+        "sample_id": "sample_55",
+        "label": null,
+        "perturbations": {
+          "a": "Gilbert, the bearded dragon, consumes 4 crickets per week when the temperature averages 90 degrees F per day, but he consumes twice as many crickets per week when the temperature averages 100 degrees F.  How many crickets will he consume over 15 weeks if the temperature averages 90 degrees F for 80% of the time, and 100 degrees F for the remainder of the time?",
+          "b": "Gilbert, the bearded dragon, devours 4 crickets per week when the temperature averages 90 degrees F per day, but he devours twice as many crickets per week when the temperature averages 100 degrees F.  How many crickets will he devour over 15 weeks if the temperature averages 90 degrees F for 80% of the time, and 100 degrees F for the remainder of the time?",
+          "c": "Gilbert, the bearded dragon, ingests 4 crickets per week when the temperature averages 90 degrees F per day, but he ingests twice as many crickets per week when the temperature averages 100 degrees F.  How many crickets will he ingest over 15 weeks if the temperature averages 90 degrees F for 80% of the time, and 100 degrees F for the remainder of the time?",
+          "d": "Gilbert, the bearded dragon, takes in 4 crickets per week when the temperature averages 90 degrees F per day, but he takes in twice as many crickets per week when the temperature averages 100 degrees F.  How many crickets will he take in over 15 weeks if the temperature averages 90 degrees F for 80% of the time, and 100 degrees F for the remainder of the time?"
+        },
+        "bdq_probs": {
+          "A": 0.019902177155017853,
+          "B": 0.24246147274971008,
+          "C": 0.14705833792686462,
+          "D": 0.3527749180793762,
+          "E": 0.21396870911121368
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.017801348119974136,
+            "B": 0.27846357226371765,
+            "C": 0.13153520226478577,
+            "D": 0.4051573872566223,
+            "E": 0.14904898405075073
+          },
+          "B": {
+            "A": 0.029961945489048958,
+            "B": 0.15216216444969177,
+            "C": 0.15215939283370972,
+            "D": 0.2842716872692108,
+            "E": 0.36501163244247437
+          },
+          "C": {
+            "A": 0.020732281729578972,
+            "B": 0.135194331407547,
+            "C": 0.15319211781024933,
+            "D": 0.2525715231895447,
+            "E": 0.4164193570613861
+          },
+          "D": {
+            "A": 0.03486429154872894,
+            "B": 0.156256303191185,
+            "C": 0.1562509983778,
+            "D": 0.5453711152076721,
+            "E": 0.0651351809501648
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.017801348119974136,
+          "B": 0.15216216444969177,
+          "C": 0.15319211781024933,
+          "D": 0.5453711152076721
+        },
+        "score": 0.017801348119974136
+      },
+      {
+        "record_index": 58,
+        "sample_id": "sample_58",
+        "label": null,
+        "perturbations": {
+          "a": "A 10 m lengthy and 8 m broad rectangular floor is to be covered with a square rug with 4 m sides. How many square meters of the floor are exposed?",
+          "b": "A 10 m extensive and 8 m wide rectangular ground is to be covered with a square mat with 4 m sides. How many square meters of the floor are bare?",
+          "c": "A 10 m long and 8 m ample rectangular surface is to be covered with a square carpet with 4 m sides. How many square meters of the floor are vacant?",
+          "d": "A 10 m long and 8 m spacious rectangular area is to be covered with a square rug with 4 m sides. How many square meters of the floor are unobstructed?"
+        },
+        "bdq_probs": {
+          "A": 0.03329363465309143,
+          "B": 0.062201447784900665,
+          "C": 0.029381560161709785,
+          "D": 0.19159184396266937,
+          "E": 0.6687210202217102
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04985443875193596,
+            "B": 0.17401234805583954,
+            "C": 0.0725378766655922,
+            "D": 0.25318220257759094,
+            "E": 0.4174266457557678
+          },
+          "B": {
+            "A": 0.019684918224811554,
+            "B": 0.04722253978252411,
+            "C": 0.02864142507314682,
+            "D": 0.23981186747550964,
+            "E": 0.651875376701355
+          },
+          "C": {
+            "A": 0.03377749025821686,
+            "B": 0.08102989196777344,
+            "C": 0.043371230363845825,
+            "D": 0.13359296321868896,
+            "E": 0.6784395575523376
+          },
+          "D": {
+            "A": 0.06250761449337006,
+            "B": 0.3174535036087036,
+            "C": 0.09094828367233276,
+            "D": 0.28014087677001953,
+            "E": 0.14994843304157257
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04985443875193596,
+          "B": 0.04722253978252411,
+          "C": 0.043371230363845825,
+          "D": 0.28014087677001953
+        },
+        "score": 0.043371230363845825
+      },
+      {
+        "record_index": 61,
+        "sample_id": "sample_61",
+        "label": null,
+        "perturbations": {
+          "a": "Baking in groups of 65 cupcakes, Carla made 45 groups of cupcakes for her daughter's birthday celebration. She then took 5 cupcakes from each group, and fed them to her dogs. If Carla's daughter had 19 friends and they shared the remaining cupcakes equally among them, including the daughter, compute the number of cupcakes that each of Carla's daughter's friends consumed.",
+          "b": "Baking in sets of 65 cupcakes, Carla made 45 sets of cupcakes for her daughter's birthday gathering. She then took 5 cupcakes from each set, and fed them to her dogs. If Carla's daughter had 19 friends and they shared the remaining cupcakes equally among them, including the daughter, determine the number of cupcakes that each of Carla's daughter's friends devoured.",
+          "c": "Baking in batches of 65 cupcakes, Carla created 45 batches of cupcakes for her daughter's birthday occasion. She then took 5 cupcakes from each batch, and fed them to her dogs. If Carla's daughter had 19 friends and they shared the remaining cupcakes equally among them, including the daughter, find the number of cupcakes that each of Carla's daughter's friends ingested.",
+          "d": "Baking in portions of 65 cupcakes, Carla produced 45 portions of cupcakes for her daughter's birthday affair. She then took 5 cupcakes from each portion, and fed them to her dogs. If Carla's daughter had 19 friends and they shared the remaining cupcakes equally among them, including the daughter, ascertain the number of cupcakes that each of Carla's daughter's friends consumed."
+        },
+        "bdq_probs": {
+          "A": 0.008283463306725025,
+          "B": 0.3991319239139557,
+          "C": 0.14682821929454803,
+          "D": 0.24207912385463715,
+          "E": 0.1295754760503769
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01161802839487791,
+            "B": 0.14154161512851715,
+            "C": 0.2644256353378296,
+            "D": 0.26442578434944153,
+            "E": 0.264425665140152
+          },
+          "B": {
+            "A": 0.016269570216536522,
+            "B": 0.37030747532844543,
+            "C": 0.1543617844581604,
+            "D": 0.25449973344802856,
+            "E": 0.13622386753559113
+          },
+          "C": {
+            "A": 0.01050354540348053,
+            "B": 0.506110429763794,
+            "C": 0.1449974626302719,
+            "D": 0.12796004116535187,
+            "E": 0.11292417347431183
+          },
+          "D": {
+            "A": 0.01238263864070177,
+            "B": 0.24872927367687225,
+            "C": 0.11748413741588593,
+            "D": 0.41006025671958923,
+            "E": 0.01238272711634636
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01161802839487791,
+          "B": 0.37030747532844543,
+          "C": 0.1449974626302719,
+          "D": 0.41006025671958923
+        },
+        "score": 0.01161802839487791
+      },
+      {
+        "record_index": 65,
+        "sample_id": "sample_65",
+        "label": null,
+        "perturbations": {
+          "a": "It requires 3 beehives to produce enough wax to produce 12 candles. How many hives does it require to produce 96 candles?",
+          "b": "It takes 3 hives to create enough wax to create 12 candles. How many beehives does it take to create 96 candles?",
+          "c": "It needs 3 beehives to generate enough wax to generate 12 candles. How many hives does it need to generate 96 candles?",
+          "d": "It consumes 3 beehives to yield enough wax to yield 12 candles. How many hives does it consume to yield 96 candles?"
+        },
+        "bdq_probs": {
+          "A": 0.010131916962563992,
+          "B": 0.48818540573120117,
+          "C": 0.05830519273877144,
+          "D": 0.17959263920783997,
+          "E": 0.26130566000938416
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.008453384973108768,
+            "B": 0.6715388894081116,
+            "C": 0.04292985424399376,
+            "D": 0.21801578998565674,
+            "E": 0.055123019963502884
+          },
+          "B": {
+            "A": 0.012418809346854687,
+            "B": 0.1512933373451233,
+            "C": 0.17143656313419342,
+            "D": 0.1942630559206009,
+            "E": 0.46601253747940063
+          },
+          "C": {
+            "A": 0.0095303263515234,
+            "B": 0.40524277091026306,
+            "C": 0.04839903488755226,
+            "D": 0.21690942347049713,
+            "E": 0.3156011402606964
+          },
+          "D": {
+            "A": 0.013159564696252346,
+            "B": 0.4357910752296448,
+            "C": 0.04593146592378616,
+            "D": 0.4357853829860687,
+            "E": 0.05897708982229233
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.008453384973108768,
+          "B": 0.1512933373451233,
+          "C": 0.04839903488755226,
+          "D": 0.4357853829860687
+        },
+        "score": 0.008453384973108768
+      },
+      {
+        "record_index": 70,
+        "sample_id": "sample_70",
+        "label": null,
+        "perturbations": {
+          "a": "A kid is forming a 5-level pyramid by piling some blocks. In the initial row, he has 9 blocks. For the subsequent rows, he has 2 fewer than the blocks he has from its bottom row. How many blocks did he utilize in all?",
+          "b": "A youngster is constructing a 5-level pyramid by stacking some blocks. In the primary row, he has 9 blocks. For the following rows, he has 2 less than the blocks he has from its base row. How many blocks did he employ in total?",
+          "c": "A little one is creating a 5-level pyramid by layering some blocks. In the foremost row, he has 9 blocks. For the next rows, he has 2 fewer than the blocks he has from its bottommost row. How many blocks did he expend in total?",
+          "d": "An offspring is building a 5-level pyramid by accumulating some blocks. In the opening row, he has 9 blocks. For the subsequent rows, he has 2 less than the blocks he has from its lowermost row. How many blocks did he apply in all?"
+        },
+        "bdq_probs": {
+          "A": 0.0995086133480072,
+          "B": 0.18590980768203735,
+          "C": 0.11275824159383774,
+          "D": 0.44596827030181885,
+          "E": 0.12777182459831238
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.061676762998104095,
+            "B": 0.276419997215271,
+            "C": 0.07919464260339737,
+            "D": 0.5164145231246948,
+            "E": 0.048033975064754486
+          },
+          "B": {
+            "A": 0.11755722761154175,
+            "B": 0.15094944834709167,
+            "C": 0.19381947815418243,
+            "D": 0.3195551335811615,
+            "E": 0.19381938874721527
+          },
+          "C": {
+            "A": 0.07166425883769989,
+            "B": 0.19480706751346588,
+            "C": 0.13388670980930328,
+            "D": 0.3211781084537506,
+            "E": 0.250133216381073
+          },
+          "D": {
+            "A": 0.11103767901659012,
+            "B": 0.1615656614303589,
+            "C": 0.11103812605142593,
+            "D": 0.38756316900253296,
+            "E": 0.05245071277022362
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.061676762998104095,
+          "B": 0.15094944834709167,
+          "C": 0.13388670980930328,
+          "D": 0.38756316900253296
+        },
+        "score": 0.061676762998104095
+      },
+      {
+        "record_index": 72,
+        "sample_id": "sample_72",
+        "label": null,
+        "perturbations": {
+          "a": "A factory chooses to cease producing cars and commence producing motorcycles instead. When it produced cars, per month, it cost $100 for resources, they could produce 4 cars, and they sold each car for $50. Now that they produce motorcycles it costs $250 for resources, but they sell 8 of them for $50 each. How much more profit do they earn per month selling motorcycles instead of cars?",
+          "b": "A factory opts to halt manufacturing cars and initiate manufacturing motorcycles instead. When it manufactured cars, per month, it cost $100 for supplies, they could manufacture 4 cars, and they sold each car for $50. Now that they manufacture motorcycles it costs $250 for supplies, but they sell 8 of them for $50 each. How much more profit do they gain per month selling motorcycles instead of cars?",
+          "c": "A factory decides to discontinue making cars and begin making motorcycles instead. When it made cars, per month, it cost $100 for components, they could make 4 cars, and they sold each car for $50. Now that they make motorcycles it costs $250 for components, but they sell 8 of them for $50 each. How much more profit do they receive per month selling motorcycles instead of cars?",
+          "d": "A factory resolves to stop producing cars and start producing motorcycles instead. When it produced cars, per month, it cost $100 for materials, they could produce 4 cars, and they sold each car for $50. Now that they produce motorcycles it costs $250 for materials, but they sell 8 of them for $50 each. How much more profit do they obtain per month selling motorcycles instead of cars?"
+        },
+        "bdq_probs": {
+          "A": 0.012683280743658543,
+          "B": 0.17508848011493683,
+          "C": 0.04426901787519455,
+          "D": 0.22481665015220642,
+          "E": 0.5393069386482239
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.013559896498918533,
+            "B": 0.14578384160995483,
+            "C": 0.05363047122955322,
+            "D": 0.27235808968544006,
+            "E": 0.5088315606117249
+          },
+          "B": {
+            "A": 0.010792458429932594,
+            "B": 0.09036517143249512,
+            "C": 0.05480867624282837,
+            "D": 0.16882267594337463,
+            "E": 0.6677061319351196
+          },
+          "C": {
+            "A": 0.014460291713476181,
+            "B": 0.12107571214437485,
+            "C": 0.06480659544467926,
+            "D": 0.17616264522075653,
+            "E": 0.6148675680160522
+          },
+          "D": {
+            "A": 0.0154433473944664,
+            "B": 0.12930747866630554,
+            "C": 0.07842786610126495,
+            "D": 0.4513215720653534,
+            "E": 0.31018826365470886
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.013559896498918533,
+          "B": 0.09036517143249512,
+          "C": 0.06480659544467926,
+          "D": 0.4513215720653534
+        },
+        "score": 0.013559896498918533
+      },
+      {
+        "record_index": 75,
+        "sample_id": "sample_75",
+        "label": null,
+        "perturbations": {
+          "a": "At a CD shop, 40% of the discs cost $10 each, and the remainder cost $5 each. Prince purchased half the discs sold at $10 each, and all of the discs sold at $5 each. If the total number of discs was 200, how much cash did Prince spend on buying the discs?",
+          "b": "At a CD outlet, 40% of the albums cost $10 each, and the others cost $5 each. Prince acquired half the albums sold at $10 each, and all of the albums sold at $5 each. If the total number of albums was 200, how much money did Prince spend on purchasing the albums?",
+          "c": "At a CD retailer, 40% of the records cost $10 each, and the rest cost $5 each. Prince bought half the records sold at $10 each, and all of the records sold at $5 each. If the total number of records was 200, how much currency did Prince spend on acquiring the records?",
+          "d": "At a CD emporium, 40% of the CDs cost $10 each, and the remaining cost $5 each. Prince took half the CDs sold at $10 each, and all of the CDs sold at $5 each. If the total number of CDs was 200, how much funds did Prince spend on obtaining the CDs?"
+        },
+        "bdq_probs": {
+          "A": 0.03700108081102371,
+          "B": 0.05383783578872681,
+          "C": 0.0419277586042881,
+          "D": 0.18790754675865173,
+          "E": 0.6558604836463928
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.10089948028326035,
+            "B": 0.166359543800354,
+            "C": 0.1008995845913887,
+            "D": 0.24204587936401367,
+            "E": 0.35217422246932983
+          },
+          "B": {
+            "A": 0.08028627932071686,
+            "B": 0.1168191209435463,
+            "C": 0.11681599915027618,
+            "D": 0.247299924492836,
+            "E": 0.4077278673648834
+          },
+          "C": {
+            "A": 0.03939994052052498,
+            "B": 0.06496068090200424,
+            "C": 0.07360885292291641,
+            "D": 0.2569204568862915,
+            "E": 0.5438998341560364
+          },
+          "D": {
+            "A": 0.0608597993850708,
+            "B": 0.10034789144992828,
+            "C": 0.03257600590586662,
+            "D": 0.4497010409832001,
+            "E": 0.24070605635643005
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.10089948028326035,
+          "B": 0.1168191209435463,
+          "C": 0.07360885292291641,
+          "D": 0.4497010409832001
+        },
+        "score": 0.07360885292291641
+      },
+      {
+        "record_index": 77,
+        "sample_id": "sample_77",
+        "label": null,
+        "perturbations": {
+          "a": "It requires Jason 30 minutes to trim 1 lawn in his vicinity. If he trims 8 yards on both Saturday and Sunday, how many hours does he spend trimming grass?",
+          "b": "It takes Jason 30 minutes to mow 1 lawn in his area. If he mows 8 yards on both Saturday and Sunday, how many hours does he spend mowing grass?",
+          "c": "It consumes Jason 30 minutes to clip 1 lawn in his neighborhood. If he clips 8 yards on both Saturday and Sunday, how many hours does he spend clipping grass?",
+          "d": "It lasts Jason 30 minutes to shear 1 lawn in his locality. If he shears 8 yards on both Saturday and Sunday, how many hours does he spend shearing grass?"
+        },
+        "bdq_probs": {
+          "A": 0.012807827442884445,
+          "B": 0.10723906010389328,
+          "C": 0.009974752552807331,
+          "D": 0.15603135526180267,
+          "E": 0.6992838978767395
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0031627353746443987,
+            "B": 0.08156834542751312,
+            "C": 0.0035838529001921415,
+            "D": 0.41423672437667847,
+            "E": 0.32260793447494507
+          },
+          "B": {
+            "A": 0.008576162159442902,
+            "B": 0.04636252298951149,
+            "C": 0.017055753618478775,
+            "D": 0.3425739109516144,
+            "E": 0.5648086071014404
+          },
+          "C": {
+            "A": 0.004820654634386301,
+            "B": 0.029530208557844162,
+            "C": 0.004820659290999174,
+            "D": 0.4619286060333252,
+            "E": 0.46192851662635803
+          },
+          "D": {
+            "A": 0.005769575946033001,
+            "B": 0.029300540685653687,
+            "C": 0.003287411294877529,
+            "D": 0.6668729186058044,
+            "E": 0.062028903514146805
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0031627353746443987,
+          "B": 0.04636252298951149,
+          "C": 0.004820659290999174,
+          "D": 0.6668729186058044
+        },
+        "score": 0.0031627353746443987
+      },
+      {
+        "record_index": 81,
+        "sample_id": "sample_81",
+        "label": null,
+        "perturbations": {
+          "a": "A vocalist is intending on issuing 3 tracks in a month. If he labored on one track for 10 hours a day, and each track took 10 days to be finished, compute the total number of hours he spent to finalize the 3 tracks.",
+          "b": "A performer is planning on releasing 3 tunes in a month. If he worked on one tune for 10 hours a day, and each tune took 10 days to be accomplished, calculate the total number of hours he used to complete the 3 tunes.",
+          "c": "An artist is preparing to launch 3 melodies in a month. If he worked on one melody for 10 hours a day, and each melody took 10 days to be achieved, determine the total number of hours he devoted to finishing the 3 melodies.",
+          "d": "A musician is set on delivering 3 pieces in a month. If he toiled on one piece for 10 hours a day, and each piece took 10 days to be realized, ascertain the total number of hours he occupied to wrap up the 3 pieces."
+        },
+        "bdq_probs": {
+          "A": 0.01934884861111641,
+          "B": 0.05959969013929367,
+          "C": 0.036148469895124435,
+          "D": 0.30266764760017395,
+          "E": 0.565456748008728
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.08031479269266129,
+            "B": 0.1926688551902771,
+            "C": 0.09100870788097382,
+            "D": 0.4078730344772339,
+            "E": 0.19266532361507416
+          },
+          "B": {
+            "A": 0.05548332259058952,
+            "B": 0.11746159940958023,
+            "C": 0.09147671610116959,
+            "D": 0.46455779671669006,
+            "E": 0.24865923821926117
+          },
+          "C": {
+            "A": 0.03561021387577057,
+            "B": 0.12429501861333847,
+            "C": 0.08542465418577194,
+            "D": 0.43382254242897034,
+            "E": 0.29816102981567383
+          },
+          "D": {
+            "A": 0.02848733589053154,
+            "B": 0.06031130254268646,
+            "C": 0.02514019049704075,
+            "D": 0.7347074747085571,
+            "E": 0.04144907742738724
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.08031479269266129,
+          "B": 0.11746159940958023,
+          "C": 0.08542465418577194,
+          "D": 0.7347074747085571
+        },
+        "score": 0.08031479269266129
+      },
+      {
+        "record_index": 83,
+        "sample_id": "sample_83",
+        "label": null,
+        "perturbations": {
+          "a": "Avery possesses 20 hens on his farm. Each hen lays 6 eggs. He wants to complete egg cartons with eggs. If each egg carton can accommodate a dozen (12 eggs), how many egg cartons can Avery complete?",
+          "b": "Avery owns 20 chickens on his farm. Each chicken produces 6 eggs. He wants to fill egg cartons with eggs. If every egg carton can contain a dozen (12 eggs), how many egg cartons can Avery fill?",
+          "c": "Avery has 20 birds on his farm. Each bird lays 6 eggs. He wants to stock egg cartons with eggs. If each egg carton can carry a dozen (12 eggs), how many egg cartons can Avery stock?",
+          "d": "Avery keeps 20 fowls on his farm. Each fowl lays 6 eggs. He wants to load egg cartons with eggs. If every egg carton can hold a dozen (12 eggs), how many egg cartons can Avery load?"
+        },
+        "bdq_probs": {
+          "A": 0.05041130632162094,
+          "B": 0.17595385015010834,
+          "C": 0.03464718908071518,
+          "D": 0.2560100257396698,
+          "E": 0.47828933596611023
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.031021209433674812,
+            "B": 0.6230809092521667,
+            "C": 0.045135628432035446,
+            "D": 0.15753883123397827,
+            "E": 0.13902747631072998
+          },
+          "B": {
+            "A": 0.05026915669441223,
+            "B": 0.06454744189977646,
+            "C": 0.03914971649646759,
+            "D": 0.22529122233390808,
+            "E": 0.6124039888381958
+          },
+          "C": {
+            "A": 0.02994181588292122,
+            "B": 0.10450825840234756,
+            "C": 0.029941853135824203,
+            "D": 0.22124217450618744,
+            "E": 0.6013976335525513
+          },
+          "D": {
+            "A": 0.055395420640707016,
+            "B": 0.1706329584121704,
+            "C": 0.03807276859879494,
+            "D": 0.4638214707374573,
+            "E": 0.21909327805042267
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.031021209433674812,
+          "B": 0.06454744189977646,
+          "C": 0.029941853135824203,
+          "D": 0.4638214707374573
+        },
+        "score": 0.029941853135824203
+      },
+      {
+        "record_index": 85,
+        "sample_id": "sample_85",
+        "label": null,
+        "perturbations": {
+          "a": "Jake possesses 3 serpents. Each of them deposits 2 eggs. Most of the juvenile serpents fetch $250 but one exceptionally rare one costs 4 times as much. How much did he obtain from selling the serpents?",
+          "b": "Jake owns 3 reptiles. Each of them lays 2 eggs. Most of the young reptiles sell for $250 but one particularly rare one costs 4 times as much. How much did he receive from selling the reptiles?",
+          "c": "Jake has 3 reptiles. Each of them produces 2 eggs. Most of the baby reptiles sell for $250 but one incredibly rare one costs 4 times as much. How much did he earn from selling the reptiles?",
+          "d": "Jake has 3 snakes. Each of them lays 2 eggs. Most of the offspring snakes sell for $250 but one extremely rare one costs 4 times as much. How much did he gain from selling the snakes?"
+        },
+        "bdq_probs": {
+          "A": 0.02012699283659458,
+          "B": 0.14872078597545624,
+          "C": 0.04828217625617981,
+          "D": 0.3148393929004669,
+          "E": 0.45808833837509155
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0240605641156435,
+            "B": 0.3321492671966553,
+            "C": 0.0509362518787384,
+            "D": 0.37637075781822205,
+            "E": 0.20145666599273682
+          },
+          "B": {
+            "A": 0.022377336397767067,
+            "B": 0.14592063426971436,
+            "C": 0.06892712414264679,
+            "D": 0.24057936668395996,
+            "E": 0.5093057751655579
+          },
+          "C": {
+            "A": 0.009049475193023682,
+            "B": 0.05207684636116028,
+            "C": 0.02787436917424202,
+            "D": 0.33957943320274353,
+            "E": 0.5598710775375366
+          },
+          "D": {
+            "A": 0.04672270268201828,
+            "B": 0.12700970470905304,
+            "C": 0.041232723742723465,
+            "D": 0.5023182034492493,
+            "E": 0.18479211628437042
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0240605641156435,
+          "B": 0.14592063426971436,
+          "C": 0.02787436917424202,
+          "D": 0.5023182034492493
+        },
+        "score": 0.0240605641156435
+      },
+      {
+        "record_index": 87,
+        "sample_id": "sample_87",
+        "label": null,
+        "perturbations": {
+          "a": "A man aims to finish a voyage of 24 km in 8 hours. If he moves at a pace of 4km/hr for the initial four hours, at what velocity does he need to go for the rest of the trip to be right on time?",
+          "b": "A man plans to conclude a trek of 24 km in 8 hours. If he progresses at a rate of 4km/hr for the first four hours, at what speed does he need to proceed for the remaining part of the journey to be right on time?",
+          "c": "A man desires to complete a trip of 24 km in 8 hours. If he travels at a speed of 4km/hr for the first four hours, at what tempo does he need to move for the leftover distance to be right on time?",
+          "d": "A man wishes to finish a journey of 24 km in 8 hours. If he travels at a velocity of 4km/hr for the first four hours, at what rate does he need to travel for the rest of the route to be right on time?"
+        },
+        "bdq_probs": {
+          "A": 0.02755248174071312,
+          "B": 0.6270983815193176,
+          "C": 0.03537813946604729,
+          "D": 0.1585538387298584,
+          "E": 0.13992320001125336
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.040437690913677216,
+            "B": 0.812224268913269,
+            "C": 0.02452673949301243,
+            "D": 0.0755477026104927,
+            "E": 0.035686202347278595
+          },
+          "B": {
+            "A": 0.10053768754005432,
+            "B": 0.3509226441383362,
+            "C": 0.0887245386838913,
+            "D": 0.3509131669998169,
+            "E": 0.06097948178648949
+          },
+          "C": {
+            "A": 0.037830814719200134,
+            "B": 0.35893601179122925,
+            "C": 0.04286802187561989,
+            "D": 0.27953505516052246,
+            "E": 0.24668841063976288
+          },
+          "D": {
+            "A": 0.04412434250116348,
+            "B": 0.36946743726730347,
+            "C": 0.030326399952173233,
+            "D": 0.4186435043811798,
+            "E": 0.03032638132572174
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.040437690913677216,
+          "B": 0.3509226441383362,
+          "C": 0.04286802187561989,
+          "D": 0.4186435043811798
+        },
+        "score": 0.040437690913677216
+      }
+    ]
+  }
+}

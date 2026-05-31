@@ -1,0 +1,868 @@
+{
+  "model_name": "OLMo2-1B-Instruct",
+  "model_path": "olmo_models/OLMo2-1B-Instruct",
+  "dataset_name": "contaminated_posttraining_sft_1b-32b_aya_test_shifted",
+  "dataset_path": "benchmark/posttraining/sft/1b-32b/contaminated/shifted/test/contaminated_posttraining_sft_1b-32b_aya_test_shifted.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "pac",
+  "elapsed_seconds": 19.40336799621582,
+  "result": {
+    "method": "pac",
+    "dataset": "contaminated_posttraining_sft_1b-32b_aya_test_shifted",
+    "dataset_path": "benchmark/posttraining/sft/1b-32b/contaminated/shifted/test/contaminated_posttraining_sft_1b-32b_aya_test_shifted.jsonl",
+    "dataset_data_type": "paragraph",
+    "max_tokens": 1024,
+    "n_aug": 5,
+    "alpha": 0.3,
+    "ratio_local": 0.3,
+    "ratio_far": 0.1,
+    "num_total_records": 140,
+    "num_scored_records": 140,
+    "num_skipped_records": 0,
+    "summary": {
+      "mean_pac_score": 1.7859730147549013
+    },
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60600",
+        "text": "<|user|>\nਟਿਸ਼ੂ ਕਲਚਰ ਜਾਂ ਸੂਖਮ ਪ੍ਰਜਣਨ ਕੀ ਹੈ ?\n<|assistant|>\nਟਿਸ਼ੂ ਕਲਚਰ ਜਾਂ ਸੂਖਮ ਪ੍ਰਜਣਨ-ਇਸ ਵਿਧੀ ਵਿੱਚ ਪੌਦੇ ਦੀ ਟਹਿਣੀ ਦੇ ਸਿਖਰਲੇ ਨੁਕੀਲੇ ਭਾਗ ਵਿੱਚੋਂ ਟਿਸ਼ੂਆਂ ਦਾ ਕੁੱਝ ਪੰਜ ਲਿਆ ਜਾਂਦਾ ਹੈ ਕਿਉਂਕਿ ਇਸ ਵਿੱਚ ਤੇਜ਼ੀ ਨਾਲ ਵਿਭਾਜਿਤ ਹੋ ਰਹੇ ਘੱਟ ਵਿਕਸਿਤ ਅਤੇ ਅਣਵਿਭੇਦਿਤ ਸੈੱਲ ਹੁੰਦੇ ਹਨ । ਇਸ ਪੁੰਜ ਨੂੰ ਜ਼ਰੂਰੀ ਪੋਸ਼ਕਾਂ ਅਤੇ ਹਾਰਮੋਨਯੁਕਤ ਮਾਧਿਅਮ ਵਿੱਚ ਰੱਖਿਆ ਜਾਂਦਾ ਹੈ । ਇਹ ਟਿਸ਼ੂ ਇੱਕ ਅਣਵਿਭੇਦਿਤ ਪੁੰਜ ਵਿੱਚ ਵਿਕਸਿਤ ਹੋ ਜਾਂਦਾ ਹੈ । ਇਨ੍ਹਾਂ ਟਿਸ਼ੂਆਂ ਦਾ ਕੁੱਝ ਭਾਗ ਕਿਸੇ ਮਾਧਿਅਮ ਵਿਚ ਉਦੋਂ ਤੱਕ ਰੱਖਿਆ ਜਾਂਦਾ ਹੈ ਜਦੋਂ ਤੱਕ ਇਹ ਪੁੰਗਰਣ ਲੱਗ ਜਾਣ । ਇਨ੍ਹਾਂ ਪੁੰਗਰਾਂ (ਛੋਟੇ ਪੌਦਿਆਂ) ਨੂੰ ਗਿੱਲੀ ਮਿੱਟੀ ਵਿੱਚ ਉਗਾ ਲਿਆ ਜਾਂਦਾ ਹੈ । ਇਸ ਵਿਧੀ ਨੂੰ ਸੂਖਮ ਪ੍ਰਸਾਰ ਵੀ ਆਖਦੇ ਹਨ ।",
+        "pac_score": 1.3722445490625175
+      },
+      {
+        "record_index": 1,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60601",
+        "text": "<|user|>\nNapisz program w pythonie, który wypisuje na ekran cyfry of 21 do 30?\n<|assistant|>\nProszę, oto taki program:\n\n```python\nfor i in range(21,31):\n  print(i)\n```",
+        "pac_score": 2.9244577248891197
+      },
+      {
+        "record_index": 2,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60602",
+        "text": "<|user|>\nጥያቄ፡- የማህተማ ጋንዲ ልደት በየትኛው ሀገር ብሄራዊ በዓል ነው? መልስ፡- \n<|assistant|>\nህንድ",
+        "pac_score": -0.0713609519757723
+      },
+      {
+        "record_index": 3,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60603",
+        "text": "<|user|>\nమనిషి మృగము ఒకటేనా ? కాదా ? చర్చించండి .\n<|assistant|>\nమనిషీ, మృగమూ ఒక్కటికానేకాదు. మనిషికి ఆలోచనాశక్తి వుంది. భావాలను తెలుపగలిగే భాష ఉంది. కానీ మృగానికి ఆలోచనాశక్తీ, భావాలను తెలిపే భాష లేవు. కనుక మనిషి మృగమూ ఒకటికాదు. ఆలోచనాశక్తి నశించి మానవత్వం మరిచిపోతే మనిషినే మృగం అనవచ్చు.",
+        "pac_score": 0.5838917471692451
+      },
+      {
+        "record_index": 4,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60604",
+        "text": "<|user|>\nඅයුක්තිසහගත යන වචනයට අදහසක් ගෙන දෙන වචනය ලියා  දක්වන්න.\n\n<|assistant|>\nඅයුක්තිසහගත යන්නට විරුද්ධ අර්ථයක් ඇති පදය යුක්තිසහගත වේ.",
+        "pac_score": 0.5294111350226021
+      },
+      {
+        "record_index": 5,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60605",
+        "text": "<|user|>\n வினா : திருதராட்டிரன் தம்பிகள் யாவர்   ?\n<|assistant|>\nவிடை: திருதராட்டிரன் தம்பிகள் பாண்டு மற்றும்  விதுரன் ஆவர்.",
+        "pac_score": 0.44350138969910446
+      },
+      {
+        "record_index": 6,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60606",
+        "text": "<|user|>\nالسؤال: ما أنواع المحبة؟\n\n<|assistant|>\nالإجابة: محبة الله، المحبة في الله، المحبة مع الله، محبة طبيعية",
+        "pac_score": 0.7951577300117139
+      },
+      {
+        "record_index": 7,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60607",
+        "text": "<|user|>\nAwọn agbebọn ji dẹrẹba ati ero mẹrin gbe loju ọna Ayetoro s’Abẹokuta\n<|assistant|>\nAwakọ kan ti wọn pe orukọ ẹ ni Kamọrudeen Ọlatẹju, ti di awati bayii, bẹẹ si ni awọn mẹrin ninu ero ọkọ to n wa loju ọna to lọ si Abẹokuta lati Ayetoro naa. Awọn agbebọn kan ni wọn ya bo wọn ni nnkan bii aago marun-un ku iṣẹju marun-un idaji ọjọ Satide, ogunjọ, oṣu keji yii.\n\nBo tilẹ jẹ pe eeyan mẹrin lawọn ẹbi ti eeyan wọn di awati sọ pe awọn n wa, Alukoro ọlọpaa nipinlẹ Ogun, DSP Abimbọla Oyeyẹmi, sọ pe eeyan meji ni wọn ji gbe, o si ni ọwọ ti ba ẹni kan ninu awọn ajinigbe naa.\n\nObinrin kan ti wọn tun darukọ ẹ pe o wa ninu awọn ti wọn ji gbe ni Saidat Adediran. ALAROYE gbọ pe teṣan ọlọpaa Imala ni awọn ẹbi awọn eeyan naa mu ẹjọ lọ. Ọgbẹni Abubakar Ọlatẹju ati Kẹhinde Adediran lo lọọ fi to wọn leti nibẹ pe awọn kan ji awọn eeyan awọn gbe, awọn ko si ti i ri wọn.\n\nTiti ta a fi pari iroyin yii, wọn ko ti i ri awakọ ti inagijẹ n jẹ Charger naa, bẹẹ ni wọn ko ti i ri awọn mẹta yooku pẹlu.\n\nBẹ o ba gbagbe, ọsẹ to kọja lọhun-un lawọn kan da iya kan ti wọn pe orukọ ẹ ni Ajọkẹ Iṣọla duro lori ọkada to wa, lagbegbe Igbo-Ori, ni Yewa, ti wọn gbe e wọgbo lọ.\n\nỌjọ keji lẹyin ti wọn gbe e lọ naa ni wọn ri oku ẹ ninu igbo ti wọn pa a si.  Ọkọ ọmọ iya yii lo n gbe e lọ lori ọkada ti wọn fi ko wọn lọna, ọkunrin naa si sọ pe Fulani lawọn eeyan to ko awọn lọna ti wọn fipa da awọn duro ọhun.\n\nO ni wọn yinbọn soun, ibọn naa ko ran oun, oun si pada rọna sa lọ mọ wọn lọwọ, ṣugbọn niṣe ni wọn gbe iya iyawo oun wọgbo lọ, ko too di pe awọn pada ri oku iya naa ninu igbo.",
+        "pac_score": 4.822851030579436
+      },
+      {
+        "record_index": 8,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60608",
+        "text": "<|user|>\nNyora zvimwe zvinwiwa zvecitrus-based.\n<|assistant|>\nZvimwe zvinwiwa zvecitrus-based zvinosanganisira muto weorenji, muto wegrapefruit, lemonade, Mountain Dew, mimosas.",
+        "pac_score": 1.1025175652308778
+      },
+      {
+        "record_index": 9,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60609",
+        "text": "<|user|>\nකෙටි විවරණ සපයන්න\n1.ආක්‍රෝශ බෙණෙමින්\n2.ලදපස්මල්\n3.බාලාර්ක මණ්ඩලය සේ\n\n<|assistant|>\n1 නරක වචන කියා පරිභව කෙරෙමින්. \n2 ඊතන සුනුසහල් අබ සමන්පිච්ච කැකුලු විලද (ලාජාපංචමං). \n3 ලහිරු මන්ඩලක් වැනි",
+        "pac_score": 0.2129022501517035
+      },
+      {
+        "record_index": 10,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60610",
+        "text": "<|user|>\nලොව ප්‍රථම ජංගම දුරකථනය නිපදවූයේ කවුරුන්ද?\n<|assistant|>\nමාර්ටින් කූපර් (1973)",
+        "pac_score": 0.28075295463602856
+      },
+      {
+        "record_index": 11,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60611",
+        "text": "<|user|>\nThimbu mooy gëblag man réew?\n\n<|assistant|>\nThimbu mooy péeyu réewum Bhoutan.",
+        "pac_score": 0.41528963031190713
+      },
+      {
+        "record_index": 12,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60612",
+        "text": "<|user|>\nỌwọ tẹ Sọdiq atawọn ẹgbẹ rẹ to pa Aishat sinu oko niluu Esiẹ\n<|assistant|>\nAfurasi mẹrin; Adams Sodiq, ọmọ ọdun mọkandinlogun; Rasaq Rasheed, ọmọ ọdun mẹrindinlogun; Lukman Quadri, ẹni ọdun mẹẹẹdogun ati Billiamine Qayum, ọmọ ọdun mẹrindinlogun, lọwọ ajọ aabo ẹni laabo ilu, NSCDC, nipinlẹ Kwara, tẹ fẹsun pe wọn pa obinrin kan, Aishat Sanni, sinu oko niluu Esiẹ, nijọba ibilẹ Irẹpọdun, nipinlẹ Kwara.\n\nAtẹjade lati ọwọ Alukoro NSCDC ni Kwara, Babawale Zaid Afọlabi, ni ọjọ keji, oṣu kẹrin, ọdun 2021, ni Alhaji Musa Waziri to jẹ akọwe awọn ẹya Fulani ati Bororo niluu Esiẹ fi iṣẹlẹ naa to ajọ naa leti.\n\nLasiko iwadii nipa bi Aishat ṣe dawati ni wọn ri oku rẹ ninu oko ti wọn pa a si lọjọ kẹta, oṣu kẹrin, ọdun yii, gbogbo ara rẹ ni wọn ṣa yannayanna to si tun wa nihooho.\n\nO ṣalaye siwaju pe, lasiko tawọn fọrọ wa wọn lẹnu wo, ohun ti wọn sọ ni pe ọkan lara awọn obinrin Bororo naa ji eeṣo kaṣu ninu oko, Sodiq Adams si gbiyanju lati mu un, ṣugbọn o pada sa lọ.\n\nEyi ni wọn lo mu ki Sọdiq atawọn afurasi mẹta yooku lepa Bororo keji (Aishat) titi ti wọn fi mu u balẹ.\n\nAtẹjade naa ni nigba ti Sọdiq n gbiyanju lati fipa ba obinrin naa laṣepọ niyẹn di eyin mọ apa ati ọrun rẹ, to si ge e jẹ yannayanna.\n\nO ni lasiko tọwọ tẹ Sọdiq, ẹjẹ wa ni gbogbo ara aṣọ to wọ lọjọ iṣẹlẹ naa.\n\nO ni awọn ti gbe ẹjọ naa le ileeṣẹ ọlọpaa lọwọ lati gbe igbesẹ to ba tun yẹ lori ẹ.",
+        "pac_score": 4.533367111159592
+      },
+      {
+        "record_index": 13,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60613",
+        "text": "<|user|>\nما هو المعدن الذي يحوي على موصلة حرارية؟\n<|assistant|>\n الماس",
+        "pac_score": 0.6359565064762567
+      },
+      {
+        "record_index": 14,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60614",
+        "text": "<|user|>\nTAMBAYA: Shin yaya za a rubuta ɗari uku da hamsin a matsayin lamba?\n<|assistant|>\nAmsa: 350",
+        "pac_score": 1.1595560017304543
+      },
+      {
+        "record_index": 15,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60615",
+        "text": "<|user|>\nParagrafta hangi önemli olay konu alınmıştır?: 2015 yılında kabul edilen Paris Anlaşması, iklim değişikliğini sınırlamak ve küresel sıcaklık artışını 2°C'nin altında tutmak amacıyla uluslararası bir çaba olarak ortaya çıktı. Ülkeler, sera gazı emisyonlarını azaltma taahhütlerinde bulunuyorlar.\n<|assistant|>\nParagrafta, Paris Anlaşması ve ortaya çıkış nedenleri & amaçlarından bahsedilmektedir.",
+        "pac_score": 2.63148457845052
+      },
+      {
+        "record_index": 16,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60616",
+        "text": "<|user|>\nBerikan satu contoh ayat untuk peribahasa \"bagai enau dalam belukar, melepaskan pucuk masing-masing\". Apakah maksud peribahasa tersebut.\n<|assistant|>\nContoh ayat: Setelah tiga hari bekalan air terputus, penduduk di taman itu bertolak-tolakan apbila melihat lori yang membekalkan air tiba. Sikap mereka itu bagai enau dalam belukar, melepaskan pucuk masing-masing. Ia bermaksud tiada permuafakatan dalam masyarakat atau sesuatu perbincangan.",
+        "pac_score": 3.277602662477779
+      },
+      {
+        "record_index": 17,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60617",
+        "text": "<|user|>\nОйчул адамдардын улуу сөздөрүнөн жазып бере аласыңбы?\n<|assistant|>\nКемчилигибизди бетке айткандарга ыраазы болушубуз керек, чынында...\n(Паскаль Блез)",
+        "pac_score": 0.7373113107681277
+      },
+      {
+        "record_index": 18,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60618",
+        "text": "<|user|>\nBu metin hangi önemli olayla ilgilidir: Körfez Savaşı sırasında, hem Kanada hem de Suudi kuvvetleri, Kuveyt'in işgalini ve Irak ordusunun ilerlemesini bastırmak için koalisyon güçleriyle işbirliği yaptı. Şubat 1991'de Kanada, hem koalisyon hem de Irak askerlerini tedavi etmek için Suudi Arabistan'da kuzeydoğudaki Kaysume köyünde bir sahra hastanesi açtı.\n<|assistant|>\nKörfez Savaşı",
+        "pac_score": 1.747865055931939
+      },
+      {
+        "record_index": 19,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60619",
+        "text": "<|user|>\nਬੱਚੇ ਨੇ ਫਰਸ਼ 'ਤੇ ਟੁਕੜੇ ਛੱਡ ਦਿੱਤੇ। | ਨਤੀਜੇ ਵਜੋਂ ਕੀ ਹੋਇਆ? \nਚੋਣ 1 : ਟੁਕੜਿਆਂ ’ਤੇ ਕੀੜੀਆਂ ਚੜ੍ਹ ਗਈਆ। \nਚੋਣ 2 : ਬੱਚੇ ਨੇ ਬ੍ਰੈਡ ਦੂਰ ਰੱਖ ਦਿੱਤਾ। \n\n<|assistant|>\nਚੋਣ 1 : ਟੁਕੜਿਆਂ ’ਤੇ ਕੀੜੀਆਂ ਚੜ੍ਹ ਗਈਆ।",
+        "pac_score": 1.4011491921960975
+      },
+      {
+        "record_index": 20,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60620",
+        "text": "<|user|>\nAiza no misy an'i Kaomoro eo amin'ny sarintany?\n<|assistant|>\nny misy an'i Kaomoro eo amin'ny sarintany dia ao any amin’ny ranomasimbe Indianina.",
+        "pac_score": 2.1062384863460775
+      },
+      {
+        "record_index": 21,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60621",
+        "text": "<|user|>\nГамада деген эмне ?\n<|assistant|>\nГамада-ар кандай кумдуу чөлдөрдүн арапча аталышы.",
+        "pac_score": 0.20995239790748066
+      },
+      {
+        "record_index": 22,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60622",
+        "text": "<|user|>\nSheeg asxaabigii soo islaamiyey tolkiisa (Qabiil) oo idil?\n<|assistant|>\nWuxu ahaa Abuu Darr Al Qafaari RC.",
+        "pac_score": 1.4633331961858822
+      },
+      {
+        "record_index": 23,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60623",
+        "text": "<|user|>\n麻雀で唯一、１３面待ちの形がある役満は国士無双ですが、９面待ちの形がある役満は何でしょう？\n<|assistant|>\n九蓮宝燈（ちゅうれんぽうとう）です。",
+        "pac_score": -0.0
+      },
+      {
+        "record_index": 24,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60624",
+        "text": "<|user|>\nQual a categoria da pergunta a seguir: Qual é a idade do técnico do Pittsburgh Pirates?.\n<|assistant|>\nA categoria da pergunta é Esportes",
+        "pac_score": 1.521185000737507
+      },
+      {
+        "record_index": 25,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60625",
+        "text": "<|user|>\nகேள்வி : விவசாய உற்பத்தியில் முன்னணியில் நிற்கும் மாநிலம் எது ? \n\n<|assistant|>\nபதில் : பஞ்சாப்",
+        "pac_score": 1.0090602377922293
+      },
+      {
+        "record_index": 26,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60626",
+        "text": "<|user|>\nChakudya chokhazikika ku Malawi\n<|assistant|>\nNsima ndi chakudya chambiri ku Malawi. Ndi phala wandiweyani wopangidwa ndi ufa wa chimanga ndi madzi. Nthawi zambiri, nsima imadyedwa ndi ndiwo zamasamba komanso zomanga thupi monga nsomba, nyemba, kapena nyama. Itha kung'ambika ndi manja ndikuviika m'zakudya zam'mbali kapena zosangalatsa.",
+        "pac_score": 1.4223503714516044
+      },
+      {
+        "record_index": 27,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60627",
+        "text": "<|user|>\nاكمل الفقرة التالية:\n\nوأظهر التحليل الجيني للمسحات وجود عدوى نشطة بـ\"سارس-كوف-2\" في 10% من الغزلان، مع العثور على حالة إيجابية واحدة على الأقل في 59% من المقاطعات التي تم اختبارها.\n\nكما جمع الباحثون عينات\n<|assistant|>\nدم عدد من الغزلان للبحث عن أدلة على إصابات سابقة، ودلت العينات على وجود أجسام مضادة محددة. وبناءً على تلك النتائج، يقدر الباحثون أن ما يقرب من 24% من الغزلان في ولاية أوهايو قد أصيبت بفيروس \"سارس-كوف-2\" في مرحلة ما.",
+        "pac_score": 1.674510250196188
+      },
+      {
+        "record_index": 28,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60628",
+        "text": "<|user|>\n请回答以下问题：\n\n问题：\n什么是民主制度，它的优点和缺点分别是什么？\n\n\n<|assistant|>\n答案：\n民主制度是一种政治体制，强调人民的参与和政府的责任向人民负责。其优点包括保障公民的基本权利和自由、促进政府的合法性和透明度、提供平等的参与机会以及平衡不同利益的冲突。然而，民主制度也存在一些缺点，如决策过程相对缓慢、权力分散导致政策难以实施、政治利益集团的影响以及可能出现选举和政治腐败等问题。",
+        "pac_score": -0.0
+      },
+      {
+        "record_index": 29,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60629",
+        "text": "<|user|>\n¿Qué es la alegoría en la literatura universal?\n<|assistant|>\nUna alegoría es una narración en la que los personajes, eventos o elementos representan conceptos abstractos o morales. Por ejemplo, \"La alegoría de la caverna\" de Platón es una representación de la búsqueda del conocimiento.",
+        "pac_score": 3.8335627514506463
+      },
+      {
+        "record_index": 30,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60630",
+        "text": "<|user|>\nعبارت زیر را کامل کنید:\n نوه‌ی جوان ادوارد، موسوم به ریچارد دوم، با بحران‌های سیاسی و اقتصادی بسیاری مواجه شد که میراث مرگ سیاه بودند. از جمله‌ی این بحران‌ها می‌توان به\n<|assistant|>\nشورش دهقانان در سال ۱۳۸۱ اشاره داشت که سراسر جنوب انگلستان را در بر می‌گرفت. در طی دهه‌های بعد، ریچارد و گروهی از نجیب‌زادگان، توان سیاسی خود را معطوف به اعمال قدرت و تسلط بر فرانسه نمودند و این شیوه تا زمان به قدرت رسیدن هنری بولینگبروک به سال ۱۳۹۹ و تحت حمایت پارلمان ادامه داشت. بولینگبروک که اکنون با نام هنری چهارم سلطنت می‌نمود، قدرت را از طریق یک شورای سلطنتی مرکب و پارلمان به اجرا می‌گذاشت و در همین حال تلاش بسیاری برای برانگیختگی سیاسی و مذهبی مبذول داشت. فرزند او مشهور به هنری پنجم، موضوع جنگ با فرانسه را که برای مدت کوتاهی به محاق فراموشی سپرده شده بود به جریان انداخت و چیزی نمانده بود که در مدت زمان کوتاهی قبل از مرگش به سال ۱۴۲۲، به موفقیت استراتژیک دست یابد. پس از وی، هنری ششم، زمانی به پادشاهی رسید که ۹ ماه بیشتر نداشت و در همین زمان دو موضوع پیچیده‌ی نظام سیاسی انگلستان از طرفی، و وضعیت نظامی فرانسه از طرف دیگر رو به تجزیه و تحلیل گذاشتند.",
+        "pac_score": 1.794369641744737
+      },
+      {
+        "record_index": 31,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60631",
+        "text": "<|user|>\nමාළු නිදාගන්නවාද?\n\n<|assistant|>\nගොඩබිම ක්ෂීරපායින් නිදාගන්නා ආකාරයට මසුන් නිදා නොගත්තද, බොහෝ මසුන් විවේක ගනී. මත්ස්‍යයන් අනතුරුදායක බව ගැන විමසිල්ලෙන් සිටින අතරම ඔවුන්ගේ ක්‍රියාකාරීත්වය සහ පරිවෘත්තීය ක්‍රියාවලිය අඩු කළ හැකි බව පර්යේෂණවලින් පෙනී යයි. සමහර මත්ස්‍යයන් තැනින් තැන පාවෙන අතර සමහරක් මඩ හෝ කොරල්පරවල ආරක්ෂිත ස්ථානයකට ඇතුල් වන අතර සමහරක් සුදුසු කූඩුවක් පවා සොයා ගනී.",
+        "pac_score": 0.6560123060100675
+      },
+      {
+        "record_index": 32,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60632",
+        "text": "<|user|>\nМага дүйнөдөгү кызыктардан жазып бере аласыңбы?\n<|assistant|>\nАвстралияга келген европалыктар жергиликтүү элден “Мына бул секирип-секирип жүргөн жаныбар эмне?” деп сурашкан. Алар болсо “Кенгуру” деп жооп беришкен. Бирок, бул сөз австралия тилинде “Түшүнбөйбүз”, деген маанини билдирет.",
+        "pac_score": 1.240363298146451
+      },
+      {
+        "record_index": 33,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60633",
+        "text": "<|user|>\nTính 2 biểu thức toán học dưới đây:\n\na) 0,25 * 12:\n\nb) 0,125 * 14 * 36.\n<|assistant|>\nLời giải:\n\na) 0,25 * 12\n\n= 0,25 * 4 * 3\n\n= (0,25 * 4) * 3\n\n= 1 * 3\n\n= 3\n\nb) 0,125 * 14 * 36.\n\n= 0,125 * 7 * 2 * 4 * 9\n\n= 0,125 * 7 * (2 * 4) * 9\n\n= 0,125 * 7 * 8 * 9\n\n= 0,125 * 8 * 7 * 9\n\n= 1 * 7 * 9\n\n= 63",
+        "pac_score": 3.9780982445546975
+      },
+      {
+        "record_index": 34,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60634",
+        "text": "<|user|>\nUSithole waphumela phandle, wamemeza uDumazile. Kwathi angavela emnyango\nwendlu yakhe, wamtshela ukuba athathe zonke izimpahla zakhe azifake emotweni.\nKwathi cosololo kuMaNzimande ukubona ukuthi intando yakhe iyenzeka ngempela.\nUDumazile wayifunda ivaliwe, wenza njengoba kuthiwa makenze. Yasuka-ke imoto\nseyiphikelele esitolo. Kuthe besesendleleni, uSithole wathi:\n'UMaNzimande unezimpawana zokungakhululeki ngobukhona bakho phakathi komuzi\nwakhe. Manje ngibona kungcono ukuba wena uyohlala kule ndlu yami engemuva\nkwasesitolo.'\nKumethuse lokho uDumazile.\n\n1. Qhathanisa uthando lwabalingiswa uMoloi kanye noSithole ekuthandeni\nkwabo uDumazile. Impendulo yakho mayibe ngamaphuzu AMATHATHU.\n<|assistant|>\nBobabili bebenothando olungefani ngoDumazile, uSithole walimela iqiniso\nkuDumazile kodwa uMoloi wakhombisa ukuba iqili.\nUMoloi wakhulelisa uDumazile akangamseka, wanquma ukubaleka esikoleni\nayefundisa kuso waphindela eGoli kwakhe kanti uSithole wakukhulelisa\nuDumazile wameseka ngokumhlawula waze wamthengela nendlu eMafezini.",
+        "pac_score": 0.791011474624514
+      },
+      {
+        "record_index": 35,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60635",
+        "text": "<|user|>\nශ්‍රී ලංකාවේ සම්ප්‍රදායික සහලක් වන කුරුළු තුඩ ගැන කියන්න.\n<|assistant|>\nශ්‍රී ලංකාවේ සම්ප්‍රදායික සහලක් වන කුරුළු තුඩ ප්‍රෝටීන් හා මේදයන්ගෙන් සපිරි මනෝහර හා පොෂ්‍යදායි රතු සහල් විශේෂයකි. ඉතා කදිම රසයකින් හෙබි මෙම සහල් පිත්තාශ ක්‍රියාකාරීත්වය වර්ධනය කිරීමේ, පුරුෂ කාම ශක්තිය වැඩි කිරීමේ සහ බෙලහිනතාවය මඟහැරවීමේ හැකියාවන්ගෙන් යුක්ත වේ.",
+        "pac_score": 0.6828711904971203
+      },
+      {
+        "record_index": 36,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60636",
+        "text": "<|user|>\nWaxaad Sheegtaa  maalintii bishii iyo sanadkii la aasaasay Ciidanka Xoogga Dalka Soomaaliyeed?\n<|assistant|>\nWaxaa la aasaasay 12/04/1960kii.",
+        "pac_score": 1.4788778877258304
+      },
+      {
+        "record_index": 37,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60637",
+        "text": "<|user|>\nகவர்ந்து செல்லப்பட்ட ஆநிரைகளை மீட்பது …………………….\nஅ) வெட்சி\nஆ) வஞ்சி\nஇ) கரந்தை\nஈ) உழிஞை\n<|assistant|>\nஇ) கரந்தை",
+        "pac_score": 0.9926023590926478
+      },
+      {
+        "record_index": 38,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60638",
+        "text": "<|user|>\n— السؤال: ما عدد علامات السجدة التي وردت في القرآن الكريم؟\n<|assistant|>\nالجواب: 15 سجدة.",
+        "pac_score": 1.9495999402470057
+      },
+      {
+        "record_index": 39,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60639",
+        "text": "<|user|>\n‘కర్త’ ఆధారంగా రూపొందిన వాక్యాలు కర్తరి వాక్యాలని, ‘కర్మ’ ప్రధానంగా రూపొందించిన వాక్యాలను కర్మణి వాక్యాలని అంటారు.\nఉదా:\nరామకృష్ణారావు ఆమోదముద్ర వేశారు. (కర్తరి వాక్యం)\nరామకృష్ణారావుచే ఆమోదముద్ర వేయబడింది. (కర్మణి వాక్యం)\n\nవివరణ :\n(ఆమోదముద్రవేయడం – కర్తకు సంబంధించిన క్రియ.\nఆమోదముద్ర వేయబడటం – కర్మకు సంబంధించిన క్రియ.)\n\nఇచ్చిన కర్తరి వాక్యాన్ని కర్మణి వాక్యంగా మార్చండి.\nసుగ్రీవుడు వాలిని యుద్ధానికి ఆహ్వానించాడు. \n<|assistant|>\nసుగ్రీవునిచే వాలి యుద్ధానికి ఆహ్వానించబడ్డాడు.",
+        "pac_score": 0.8151999212304752
+      },
+      {
+        "record_index": 40,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60640",
+        "text": "<|user|>\ninona no teny mitovy hevitra amin'ny hoe tezitra?\n<|assistant|>\nny teny mitovy hevitra amin'ny hoe tezitra dia sorena",
+        "pac_score": 1.2632888909224622
+      },
+      {
+        "record_index": 41,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60641",
+        "text": "<|user|>\n📚 Чыңгыз Айтматовдун \"Биринчи мугалим\" -чыгармасындагы Дүйшөн ким болгон?\n<|assistant|>\nДүйшөн өзүнүн турмуштагы ысымы да Дүйшөн экен. Атүгүл чыгармада айтылгандай Таштанбектин баласы эмес, анын Качканак деген бир тууганынын баласы болуптур, Таштанбек багып алып, өз атына каттатып алган. Дүйшөн агай 1911-жылы 11-сентябрда туулган, 7-классты бүтүп эле мугалим болгон. Кийин-кийин педагогикалык инситутутта окуган. Уулунун аты – Барпыгул. Кызынын аты – Бардакүл. Кызы Фрунзе шаарындагы кыз-келиндер педагогика институтунун математика факультетин бүтүрүп, соңку мезгилде Манас районундагы Исак Отунбаев атындагы мектепте иштеп жүрүптүр.",
+        "pac_score": 1.0942724515091289
+      },
+      {
+        "record_index": 42,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60642",
+        "text": "<|user|>\nபாரதியாரின் மேற்கோள் ஒன்றினை தரவும்.\n<|assistant|>\nகவலையும், பயமும் எனக்கு பகைவர். நான் இப்பகைவரை வென்று தீர்த்தேன். அதனால் மரணத்தை வென்றேன். நான் அமரன்.",
+        "pac_score": 0.7020930363285918
+      },
+      {
+        "record_index": 43,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60643",
+        "text": "<|user|>\nالسؤال: كم حديث روى البخاري عن السيدة حفصة بنت عمر رضي الله عنها؟\n\n\n<|assistant|>\nالإجابة: 60 حديثًا",
+        "pac_score": 1.654838099933806
+      },
+      {
+        "record_index": 44,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60644",
+        "text": "<|user|>\nMB faiz karari saat kaçta?\n<|assistant|>\nMerkez Bankası faiz kararı bugün (22 Kasım 2023 Perşembe) saat 14.00'te açıklandı.",
+        "pac_score": 2.2567455037434883
+      },
+      {
+        "record_index": 45,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60645",
+        "text": "<|user|>\nكمل الحكي:\n\n\"ما في مشكلة. أنا بدبرها.\"\n\n\"طيب ماشي أنا موافق. رح يكون أحلى عيد ميلاد.\"\n<|assistant|>\n\"رح أخبرهم وأقولك عشان تجهز حالك.\"",
+        "pac_score": 0.2021025481047456
+      },
+      {
+        "record_index": 46,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60646",
+        "text": "<|user|>\n\"ඝටය \"කියන වචනයේ අක්ෂර වින්‍යාසය නිවැරදිද ?\n<|assistant|>\nනිවැරදියි\nඝටය=කළය\nපුන්කලස= පූර්ණ ඝටය",
+        "pac_score": 0.08074017745591888
+      },
+      {
+        "record_index": 47,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60647",
+        "text": "<|user|>\nサッカーで、ゴールキーパーが手を使うことができる、ゴールエリアを含む地域を何というでしょう？\n<|assistant|>\nペナルティエリア",
+        "pac_score": -0.0
+      },
+      {
+        "record_index": 48,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60648",
+        "text": "<|user|>\nティーンエイジャーといったら何歳から何歳までのことを言うでしょう？\n<|assistant|>\n１３から１９です。",
+        "pac_score": -0.0
+      },
+      {
+        "record_index": 49,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60649",
+        "text": "<|user|>\n“ਪੰਜਾਬ” ਸ਼ਬਦ ਦਾ ਕੀ ਅਰਥ ਹੈ ?\n<|assistant|>\n“ਪੰਜਾਬ” ਸ਼ਬਦ ਦਾ ਅਰਥ ਹੈ-ਪੰਜ ਆਬ, ਮਤਲਬ ਪੰਜ ਦਰਿਆਵਾਂ ਦੀ ਧਰਤੀ।\nਪੰਜ ਪਾਣੀਆਂ ਦੀ ਧਰਤੀ ।",
+        "pac_score": 1.773978391566697
+      },
+      {
+        "record_index": 50,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60650",
+        "text": "<|user|>\nهل هروب هي عاصمة السعودية؟\n<|assistant|>\nلا، عاصمة المملكة العربية السعودية هي الرياض.",
+        "pac_score": 2.219943798570073
+      },
+      {
+        "record_index": 51,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60651",
+        "text": "<|user|>\nInona no fampifangaroana loko matetika mifandray amin'ny angovo sy ny famoronana?\na) volondavenina sy mainty\nb) Mavo sy volomboasary\nd) Manga sy volomparasy\ne) Mena sy maitso\n<|assistant|>\nb) Mavo sy volomboasary  no fampifangaroana loko matetika mifandray amin'ny angovo sy ny famoronana",
+        "pac_score": 2.2134244929872944
+      },
+      {
+        "record_index": 52,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60652",
+        "text": "<|user|>\nاذكر ثلاث مطربين عرب مصريين\n<|assistant|>\nبالتأكيد، ثلاث مطربين عرب:\n- فريد ألأطرش\n- عمرو دياب\n-شيرين",
+        "pac_score": 0.6287112712860106
+      },
+      {
+        "record_index": 53,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60653",
+        "text": "<|user|>\nਮਨੋਵਿਗਿਆਨ ਦੀ ਕਿਹੜੀ ਸ਼ਾਖਾ ਸਮਾਜ ਸ਼ਾਸਤਰ ਨਾਲ ਸੰਬੰਧਿਤ ਹੈ ?\n(a) ਸਮਾਜਿਕ ਮਨੋਵਿਗਿਆਨ\n(b) ਆਰਥਿਕ ਮਨੋਵਿਗਿਆਨ\n(c) ਸੰਰਚਨਾਤਮਕ ਵਿਗਿਆਨ\n(d) ਸੰਸਕ੍ਰਿਤਿਕ ਵਿਗਿਆਨ ।\n<|assistant|>\n(a) ਸਮਾਜਿਕ ਮਨੋਵਿਗਿਆਨ ।",
+        "pac_score": 1.299344859197519
+      },
+      {
+        "record_index": 54,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60654",
+        "text": "<|user|>\nഇനിപ്പറയുന്ന വാചകം പൂർത്തിയാക്കുക: റോമും ഗ്രീസുമായി വ്യാപാരം നടത്തിയ ഒരു തുറമുഖം ആയ ഈ പട്ടണം നാഗപട്ടണം എന്ന വലിയ നഗരത്തിൻറെമുമ്പിൽ ഈ ചെറിയ വാണിജ്യ കേന്ദ്രത്തിന് ക്രമേണ അതിന്റെ പ്രാധാന്യം നഷ്ടപ്പെട്ടു. ഈ പട്ടണത്തെ വേദരണ്യവുമായി ബന്ധിപ്പിക്കുന്നതിന് നിർമ്മിച്ച കനാൽ ഇപ്പോഴും പടിഞ്ഞാറ് ഭാഗത്താണ്. കാവേരി നദിയുടെ ഒരു ചെറിയ ശാഖയായ വെല്ലയാർ പട്ടണത്തിന്റെ തെക്ക് ഭാഗത്തേക്ക് കടന്ന് കടലിലേക്ക് ഒഴുകുന്നു. 2004-ലെ\n<|assistant|>\nഇന്ത്യൻ മഹാസമുദ്ര ഭൂകമ്പത്തിൽ ഉണ്ടായ സുനാമിയിൽ ഏറ്റവും കൂടുതൽ നാശനഷ്ടമുണ്ടായത് ഈ പട്ടണത്തിനാണ്.",
+        "pac_score": 0.4950037413390391
+      },
+      {
+        "record_index": 55,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60655",
+        "text": "<|user|>\nFaaidooyinka caanaha Geela iyo cudurrada ay Jirka Ka difaacaan.\n<|assistant|>\nWaxaan qoraalkan uga hadlaynaa faaidooyinka caanaha geela iyo cudurrada looga hortago, haddii aadan caanaha geela cabin ogoow in ay kaa maqan tahay faa’idooyin aan la soo koobi karin, waxayna kugu tahay ceeb sababtoo ah geela ugu badan dunida ee la dhaqdo waxaa laga helaa dhulkaaga.\nWaxaa la isku raacsan yahay in caanaha geela ay yihiin kuwa ugu waxtarka iyo caafimaadka badan marka laga soo tago caanaha hooyada.\nCaanaha geelu waa kuwo nafaqo badan oo lagu noolaan karo kaliigood, waxaa ku jiro inta badan nafaqadii u jirku u baahnaa. waxa ay geli karaan beddelka cuntada iyo cabitaannada.\n\nCaanaha geelu waxa ay hodan ku yihiin fitamiin B3, fitamiin C, xadiid, calcium, potassium, copper, magnesium iyo zinc, waxaa kaloo ka buuxa barootiin badan iyo maadooyinka sun-saarista. waxaa ku yar sonkorta “lactose” marka la barbardhigo noocyada kale ee caanaha xoolaha, taas oo fududeynaysa in dadka qaba cillada u dulqaadasho la’aanta laktoos (lactose intolerance) ay calooshoodu shiido.\nfaaidooyinka caanaha geela:\nKa hortagga dhiig yarida:\n\n1. Caanaha geela waxaa ka buuxo xadiid (iron) oo ah nafaqo lagama maarmaan u ah dhismaha iyo helidda dhiig caafimaad leh. Marka ay dumarku umulaan, waxay lumiyaan dhiig badan iyo nafaqooyin, sidaas darteed waxaa lagula dardaarmaa inay cabbaan caanaha geela.\n2. Dawaynta sonkorowga:\n\nCaanaha geelu waxa ay caawiyaan dheelitirka insulin-ta waxayna ku ilaaliyaan in heerkeeda dabiiciga ah aysan dhaafin. Tani waxa ay dhigan tahay in caanaha geelu ay xal dabiici u noqon karaan cudurka sonkorowga. Cabbista caanaha geela oo la joogteeyo waxa ay caawinaysaa in laga hortago cudurka sonkorowga.\n\n3. Kobcinta Koriimada:\n\nWaxaa caanaha geela ku badan barootiinno, kuwaas oo qaarkood aan laga helin caanaha ariga iyo kuwa lo’oda. Barootiinnadani waxa ay dhiirrageliyaan koriimada iyo koboca lafaha iyo habdhiska unugyada. Barootiintu waa dhagaxa aas-aaska u ah dhismaha timaha, maqaarka, ciddiyaha, muruqyada iyo carjawaha, waxayna si weyn u xoojisaa caafimaadka guud.\n4. Caafimaadka lafaha iyo dedejinta kabniinka\n\nBarootiinnada ay hodanka ku yihiin caanaha geelu waxa ay kobciyaan difaaca jirka gaar ahaan kuwa u qaabilsan bogsashada dhaawacyada iyo jabniinka lafaha. Macdanta kalsiyaam iyo fitamiinnada ku jira caanaha geela waxa ay muhiim u yihiin kabniinka lafaha, cabbista caanaha geela waxa ay adkeysaa lafaha, qofka joogteeyana lafihiisu si fudud uma jabaan.\n5. Dawaynta cillada awtisimka:\nAwtisim waa cillad naafonimo garaadka ah taas oo curyaamisa awooda maskaxda caruurta. Caruurta qaba cilladaan waxay ka naafoobaan maskaxda ayagoo ay ku adag tahay inay hadlaan ama bulshada ay ku dhex noolyihiin la xiriiraan. Sida lagu arkay daraasaad badan, caanaha geela oo si joogto ah loo siiyo caruurta waxa ay hoos u dhigtaa astaamaha cillada awtisimka.\n6. Xoojinta difaaca jirka:\nBarootiinnada iyo walxaha kale ee dabiiciga ee laga helo caanaha geela waxa ay awood siiyaan difaaca jirka, waxayna la dagaallamaan infekshannada.\n7. Ka hortagga calaamadaha duqnimada:\nCaanaha geella waxaa ku jirto maaddo la yiraahdo “alpha-hydroxyl acid” taas oo caawisa dib u dhigista astaamaha gabowga sida in maqaarku uu yeesho laalaab.",
+        "pac_score": 3.1460817192991586
+      },
+      {
+        "record_index": 56,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60656",
+        "text": "<|user|>\nਜਲ੍ਹਿਆਂਵਾਲਾ ਬਾਗ਼ ਦੀ ਦੁਰਘਟਨਾ ਦੇ ਕੀ ਕਾਰਨ ਸਨ ?\n<|assistant|>\nਜਲ੍ਹਿਆਂਵਾਲਾ ਬਾਗ਼ ਦੀ ਦੁਰਘਟਨਾ ਹੇਠ ਲਿਖੇ ਕਾਰਨਾਂ ਕਰਕੇ ਹੋਈ-\n\n* ਰੌਲਟ ਬਿੱਲ – 1919 ਵਿਚ ਅੰਗਰੇਜ਼ੀ ਸਰਕਾਰ ਨੇ ‘ਰੌਲਟ ਬਿੱਲ’ ਪਾਸ ਕੀਤਾ । ਇਸ ਦੇ ਅਨੁਸਾਰ ਪੁਲਿਸ ਨੂੰ ਜਨਤਾ ‘ਤੇ ਜਬਰ ਲਈ ਕਈ ਵਿਸ਼ੇਸ਼ ਸ਼ਕਤੀਆਂ ਦਿੱਤੀਆਂ ਗਈਆਂ । ਇਸ ਲਈ ਲੋਕਾਂ ਨੇ ਇਨ੍ਹਾਂ ਦਾ ਵਿਰੋਧ ਕੀਤਾ ।\n\n* ਡਾ: ਸਤਪਾਲ ਅਤੇ ਡਾ: ਕਿਚਲੂ ਦੀ ਗ੍ਰਿਫ਼ਤਾਰੀ – ਰੌਲਟ ਬਿੱਲਾਂ ਦੇ ਵਿਰੋਧ ਵਿਚ ਪੰਜਾਬ ਅਤੇ ਹੋਰ ਸਥਾਨਾਂ ‘ਤੇ ਹੜਤਾਲ ਹੋਈ । ਕੁਝ ਸ਼ਹਿਰਾਂ ਵਿਚ ਦੰਗੇ ਵੀ ਹੋਏ । ਇਸ ਲਈ ਸਰਕਾਰ ਨੇ ਪੰਜਾਬ ਦੇ ਦੋ ਲੋਕਪ੍ਰਿਆ ਨੇਤਾਵਾਂ ਡਾ: ਸਤਪਾਲ ਅਤੇ ਡਾ: ਕਿਚਲੂ ਨੂੰ ਗ੍ਰਿਫ਼ਤਾਰ ਕਰ ਲਿਆ । ਇਸ ਨਾਲ ਜਨਤਾ ਹੋਰ ਵੀ ਭੜਕ ਉੱਠੀ ।\n\n* ਅੰਗਰੇਜ਼ਾਂ ਦਾ ਕਤਲ – ਭੜਕੇ ਹੋਏ ਲੋਕਾਂ ਉੱਤੇ ਅੰਮ੍ਰਿਤਸਰ ਵਿਚ ਗੋਲੀ ਚਲਾਈ ਗਈ । ਜਵਾਬ ਵਿਚ ਲੋਕਾਂ ਨੇ ਪੰਜ ਅੰਗਰੇਜ਼ਾਂ ਨੂੰ ਮਾਰ ਦਿੱਤਾ | ਇਸ ਲਈ ਸ਼ਹਿਰ ਦਾ ਪ੍ਰਬੰਧ ਜਨਰਲ ਡਾਇਰ ਨੂੰ ਸੌਂਪ ਦਿੱਤਾ ਗਿਆ ।\n\nਇਨ੍ਹਾਂ ਸਾਰੀਆਂ ਘਟਨਾਵਾਂ ਦੇ ਵਿਰੋਧ ਵਿਚ ਅੰਮ੍ਰਿਤਸਰ ਦੇ ਜਲ੍ਹਿਆਂਵਾਲਾ ਬਾਗ਼ ਵਿਚ ਇਕ ਆਮ ਸਭਾ ਹੋਈ ਜਿੱਥੇ ਭਿਆਨਕ ਕਤਲਕਾਂਡ ਹੋਇਆ ।",
+        "pac_score": 1.3949023780140446
+      },
+      {
+        "record_index": 57,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60657",
+        "text": "<|user|>\nA cikin wanne nau'in ra'ayi za ku rarraba tweet mai zuwa? Mai kyau, Marar kyau, ko tsaka tsaki?\nmu da muke sallah wani wanke hannu zaa nuna mana\n<|assistant|>\nZan rarraba tweet ɗin da aka bayar a matsayin: Marar kyau",
+        "pac_score": 0.7654520756648147
+      },
+      {
+        "record_index": 58,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60658",
+        "text": "<|user|>\nලොව විශාලතම 'ප්‍රජාතන්ත්‍රවාදය' නම් කරන්න?\n<|assistant|>\nලෝකයේ විශාලතම ප්‍රජාතන්ත්‍රවාදය ඉන්දියාවයි. මෙය තීරණය වන්නේ එහි ජනගහන ප්‍රමාණය අනුව වේ.",
+        "pac_score": 0.5078702323921189
+      },
+      {
+        "record_index": 59,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60659",
+        "text": "<|user|>\nનીચેના ગુજરાતી ઉખાણાં નો જવાબ આપો:\n\n\"હાથી ઘોડા ફર્યા કરે પણ, \nપગ એમના ચાલે ના સવાર પીઠે ઘૂમ્યા કરે, \nને ફરવાની મજા લીધા કરે\"\n<|assistant|>\n\"ચકડોળ\"\n\nઉખાણામાં કહેવામાં આવ્યું છે કે હાથી અને ઘોડા ફર્યા કરે છે, પણ તેમના પગ ચાલતા નથી. આનો અર્થ એ છે કે તેઓ એક ચક્રમાં ફરે છે. \n\nઉખાણામાં વધુમાં કહેવામાં આવ્યું છે કે સવાર પીઠે ઘૂમ્યા કરે છે. આનો અર્થ એ છે કે ચકડોળમાં સવાર બેઠા હોય છે. \n\nછેલ્લે, ઉખાણામાં કહેવામાં આવ્યું છે કે લોકો ફરવાની મજા લે છે, આનો અર્થ એ છે કે ચકડોળ એક મનોરંજક પ્રવૃત્તિ છે.\n\nઉખાણામાં આપેલા બધા સંકેતો ચકડોળ સાથે સુસંગત છે. તેથી, ઉખાણાનો જવાબ \"ચકડોળ\" છે.",
+        "pac_score": 1.5622573189255347
+      },
+      {
+        "record_index": 60,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60660",
+        "text": "<|user|>\nSlutför den här frasen: En av Schalke 04:s största spelare genom tiderna då han var nyckelspelare i Schalkes storlag under 1930-talet. Szepan var även landslagskapten och var med när Tyskland spelade sitt första\n<|assistant|>\nVM-slutspel 1934 och då tog brons.",
+        "pac_score": 0.7078732445126494
+      },
+      {
+        "record_index": 61,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60661",
+        "text": "<|user|>\nOm du är i Australien och beställer \"flake\", vad får du äta då?\n<|assistant|>\n\"Flake\" är en term som används i Australien för att indikera köttet av någon av flera hajarter, särskilt gummihajen. Begreppet uppstod troligen i slutet av 1920-talet när det storskaliga kommersiella hajfisket utanför Victorias kust etablerades.",
+        "pac_score": 2.7231331401967767
+      },
+      {
+        "record_index": 62,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60662",
+        "text": "<|user|>\nWọn ti mu Emir, ọmọ ẹgbẹ okunkun to n jale l’Ọbada-Oko\n<|assistant|>\nFatai Ibrahim lorukọ ẹ, ṣugbọn Emir lawọn eeyan to n da laamu l’Ọbada-Oko, nipinlẹ Ogun, mọ ọn si. Ọwọ awọn ọlọpaa ti tẹ ẹ bayii, nitori wọn ni ọmọ ẹgbẹ okunkun Ẹyẹ ni, bẹẹ lo n jale, to tun lọwọ si wahala END SARS lọdun to kọja.\n\nLori eyi ti wọn fi mu un lọjọ kẹwaa, oṣu keji yii, DSP Abimbọla Oyeyẹmi, Alukoro ọlọpaa nipinlẹ Ogun, ṣalaye pe Emir da Tijani Sọdiq lọna, lọjọ karun-un, oṣu keji, ọdun 2021, lopopona Ararọmi, l’Ọbada-Oko.\n\nO ni ẹgbẹrun lọna ọgọfa naira (120,000) lo gba lọwọ Tijani pẹlu nnkan ija, to tun ṣe e leṣe, bẹẹ lo gba irẹsi apo meji tiyẹn n gbe lọ lọwọ ẹ.\n\nỌjọ karun-un lẹyin iṣẹlẹ naa ni Tijani kofiri Emir l’Obada, lo ba sare lọọ sọ fun wọn ni teṣan ọlọpaa, bi wọn ṣe wa Emir ri niyẹn, ti wọn mu un ṣinkun.\n\nAwọn ọlọpaa sọ pe iwadii fi han pe ọmọ ẹgbẹ okunkun Ẹyẹ ni, wọn ni oun lo ko awọn janduku lẹyin lasiko End SARS, ti wọn lọọ ba teṣan ọlọpaa Ọbada-Oko jẹ lọjọ kọkanlelogun, oṣu kẹwaa, ọdun 2020.\n\nBẹẹ ni wọn lo ti jẹwọ pe oun mọ nipa awọn idaluru oriṣiiriṣii to n ti ọwọ awọn ọmọ ẹgbẹ okunkun waye l’Ọbada.\n\nNi bayii, wọn ti taari afurasi naa lọ sẹka itọpinpin to lọọrin, nibẹ ni yoo gba dele-ẹjọ.",
+        "pac_score": 4.139010987058501
+      },
+      {
+        "record_index": 63,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60663",
+        "text": "<|user|>\nඔන්චිල්ලා වාරම් කවියක් කියන්න \n<|assistant|>\nප දි නා ලෙස තරුණන් ඔන්චි ල්ලා\nඅ ඳු නා වත තද කර ඇඳග ල්ලා\nප ඳි නා වැල් දෙක බුරුල නොදෙ ල්ලා\nසොඳිනා ගී කියමින් පැද ප ල්ලා",
+        "pac_score": 0.7232389948941487
+      },
+      {
+        "record_index": 64,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60664",
+        "text": "<|user|>\nලෝකයේ විශාලතම කාන්තාර 10,\n<|assistant|>\nසහරා - උතුරු අප්‍රිකාව\nඅරාබි - නිරිතදිග ආසියාව\nගෝබි - මොන්ගෝලියාව/චීනය\nපැටගෝනියන් - ආජෙන්ටිනාව\nග්‍රේට් බේසින් - නිරිතදිග අප්‍රිකාව\nචිහුවහුමන් - මෙක්සිකෝව\nග්‍රේට් සැන්ඩි - වයඹ දිග ඕස්ට්‍රේලියාව\nසොනොරන් - නිරිතදිග ඇමරිකාව\nකිසිල් ගුම් - කසකස්ථනය/ උස්බෙකිස්ථානය\nතකල් මාකන් - උතුරු චීනය",
+        "pac_score": 0.9810355017932559
+      },
+      {
+        "record_index": 65,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60665",
+        "text": "<|user|>\nBir kişinin üst soyu kimlerdir?\n<|assistant|>\nAltsoy – üstsoy hısımlığı, birbirinin soyundan gelen kişiler arasında doğum yoluyla oluşur. Kişinin annesi, babası, dedesi, büyük annesi ve onların anne babaları üst soyu oluşturur. Kişinin altsoyunu ise kendisinden üreyen kişiler oluşturmaktadır. Altsoy – üstsoy hısımlığı sınırsızdır.",
+        "pac_score": 1.871307534437915
+      },
+      {
+        "record_index": 66,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60666",
+        "text": "<|user|>\n지구온난화가 심해지면 빙하기가 온다던데 찐인가요?\n<|assistant|>\n지구온난화로 인해 빙하기(빙하 및 빙산)의 변화가 발생하는 것은 학계에서 많이 논의되는 주제 중 하나입니다. 지구온난화는 기후 변화를 가속화시키는 원인 중 하나로, 빙하기의 녹음과 변화에 영향을 미칠 수 있습니다. 그러나 이에 대한 영향은 복잡하며, 여러 가지 요인들이 함께 작용하기 때문에 단순한 예측은 어렵습니다.\n\n일반적으로 지구온난화는 기온 상승을 의미하며, 이로 인해 빙하기의 녹음과 변화가 가속화될 수 있습니다. 빙하기는 해빙과 육빙으로 나눌 수 있는데, 해빙은 바다 위의 얼음을 의미하며, 육빙은 육지 위의 빙하나 빙산을 말합니다.\n\n지구온난화로 인해 바다와 대기 온도가 상승하면 해빙이 녹을 가능성이 높아지며, 빙하기의 녹음으로 바다 수면 상승과 바다 수온 상승 등이 발생할 수 있습니다. 육지의 빙하기도 빠르게 녹을 수 있어 지형 변화와 연관된 문제가 발생할 수 있습니다.\n\n다만, 빙하기의 변화는 여러 요인의 조합에 의해 결정되며, 예를 들어 해양 흐름, 바람, 해수면 온도, 대기 중 이산화탄소 농도 등이 모두 관련이 있습니다. 또한 빙하기의 변화가 지역에 따라 다를 수 있기 때문에 정확한 예측이 어려울 수 있습니다.\n\n요약하자면, 지구온난화로 인해 빙하기의 녹음과 변화가 가속화될 가능성이 있으나, 이는 여러 요인에 의해 복잡하게 영향을 받으며 예측이 어렵습니다. 이에 대한 연구는 지속적으로 진행되고 있으며, 기후 변화와 관련된 과학적 연구 및 모델링을 통해 더 많은 정보가 나오고 있습니다.",
+        "pac_score": 3.9134316279957737
+      },
+      {
+        "record_index": 67,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60667",
+        "text": "<|user|>\nالسؤال: ماذا كان يعمل الرسول صلى الله عليه وسلم ؟\n\n<|assistant|>\nالإجابة: عمل في رأي الأغنام وفي التجارة مع عمه أبي طالب",
+        "pac_score": 2.8407548199097317
+      },
+      {
+        "record_index": 68,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60668",
+        "text": "<|user|>\nFan mooy gëblag réewum Italie?\n\n<|assistant|>\nGëblag réewum Italie mu ngi tudu Rome.",
+        "pac_score": 2.148411773912832
+      },
+      {
+        "record_index": 69,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60669",
+        "text": "<|user|>\nQue língua é falada no país Chipre?\n<|assistant|>\ngrego\nturco",
+        "pac_score": 0.37265799386160836
+      },
+      {
+        "record_index": 70,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60670",
+        "text": "<|user|>\nNy ambiroa dia fanahy izay inoan' ny Ntaolo malagasy fa maharitra aorian' ny fahafatesana. Marina izany sa diso?\n<|assistant|>\nMarina. Ny ambiroa, araka ny finoan-drazana malagasy, dia singa ara-panahy izay inoan' ny Ntaolo malagasy fa maharitra aorian' ny fahafatesana. Mety hialan' ny ambiroany vetivety ny olona iray ka hanjary ho verivery hevitra na verivery tadidy. Miverina ao amin' ny olombelona ihany ny ambiroa rehefa avy niala tao. Ny tsy fiverenan' ny ambiroa dia miteraka fahafatesana. Azo atao araka izany ny manala ambiroa na mampody ambiroa ny olona iray.",
+        "pac_score": 2.013693671041029
+      },
+      {
+        "record_index": 71,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60671",
+        "text": "<|user|>\nWer gewann mehr Grammys, Britney Spears oder Beyonce?\nKlassifizieren Sie die vorherige Frage in eine der folgenden Kategorien: Film, Musik, Geschichte, Wissenschaft, Sport\n<|assistant|>\nDie richtige Kategorie ist Musik.",
+        "pac_score": 2.3265343983968094
+      },
+      {
+        "record_index": 72,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60672",
+        "text": "<|user|>\nনিম্নলিখিত প্রশ্নের উত্তর দিতে একটি নিবন্ধ লিখুন |\n\nপ্রশ্ন :\nঅবিভক্ত বাংলা কত সালে বিভক্ত হয় ? \n<|assistant|>\n১৯৪৭ সালের বাঙলা বিভক্তির পূর্বে,১৯০৫ সালে প্রশাসনিক কার্যক্রমকে সহজতর করার লক্ষ্যে পূর্ব এবং পশ্চিম বাংলায় বিভক্ত করা হয় যা বঙ্গ ভঙ্গ হিসেবে পরিচিত।[1] সে সময় পশ্চিমবাংলা ছিল হিন্দু অধ্যুসিত এবং মুসলিমরা সেখানে সংখ্যালঘু, অন্যদিকে পূর্ববাংলা ছিল মুসলিম অধ্যুসিত এবং হিন্দুরা ছিল সংখ্যালঘু। মুসলিম অধ্যুসিত পূর্ববাংলার মানুষ এই বঙ্গ ভঙ্গের প্রতি জোরালো সমর্থন জানিয়েছিল, কেননা তারা উপলব্ধি করেছিল যে এই বিভক্তির মাধ্যমে তারা তাদের নিজস্ব একটি প্রদেশ পেতে পারে। কিন্তু হিন্দুরা এই বিভক্তির বিপক্ষে শক্ত অবস্থান নেয়। এই বিতর্ক পরবর্তীকালে প্রতিবাদ এবং সন্ত্রাসের জন্ম দেয় এবং ১৯১১ সালে বঙ্গ ভঙ্গ রদের মাধ্যমে এর নিষ্পত্তি করা হয়।",
+        "pac_score": 1.1024485603511645
+      },
+      {
+        "record_index": 73,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60673",
+        "text": "<|user|>\nКого Шевченко називає \"Фастівський полковник\"?\n<|assistant|>\nУ творі Тараса Шевченка 'Їржавець' фігурує персонаж, названий 'Фастівський полковник'. Це Семен Пилипович Палій (нар. в 40-х роках XVII ст., пом. 1710 р.), справжнє прізвище Гурко, який був полковником Білоцерківського (Фастівського) полку і одним із лідерів визвольного руху на Правобережній Україні проти польсько-шляхетського панування у кінці XVII – на початку XVIII ст. Палій опиралася зрадницькій політиці гетьмана Івана Мазепи, за що останній сприяв його засланню до Сибіру. Однак, після розкриття зради Мазепи, Петро І звільнив Палія з заслання, і той взяв участь у Полтавській битві.",
+        "pac_score": 1.6972040647268294
+      },
+      {
+        "record_index": 74,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60674",
+        "text": "<|user|>\nwaxaan ahay arday kucusub barashada programmingka, luqadee ayaad iigula talin lahayd inaan kalibilaawo barashada codingka?\n<|assistant|>\nhaddii aad tahay qof kucusub programmingka, waxaad ogaataa iney jiraan luqado programming oo badan. mar haddii aad hal luqad barato, tan kale way kuufududaanee.\n\nluqada ugu fudud sidookalena ku haboon ardada kucusb programmingka waa Python.",
+        "pac_score": 1.4364554654634905
+      },
+      {
+        "record_index": 75,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60675",
+        "text": "<|user|>\nĐặt tiêu đề cho đoạn văn sau: \n\nĐại dương ngầm rộng lớn của Europa, một trong nhiều mặt trăng của sao Mộc, đang chứa carbon, thành phần thiết yếu của sự sống trên trái đất.\n\nCác quan sát do kính viễn vọng không gian James Webb thực hiện cho thấy băng CO2 trên bề mặt Europa bắt nguồn từ đại dương muối nằm bên dưới lớp băng dày trên bề mặt thiên thể này.\n\nDù phát hiện vẫn chưa mang đến câu trả lời chính xác về sự tồn tại của sự sống ngoài hành tinh trong lòng Europa, đồng tác giả báo cáo, tiến sĩ Christopher Glein của Viện Nghiên cứu Tây Nam (Mỹ) cho hay khám phá đã củng cố quan điểm rằng đại dương Europa là địa điểm nên tập trung nghiên cứu nếu muốn tìm thấy sự sống ngoài trái đất trong hệ mặt trời.\n\nVới đường kính 3.100 km, Europa chỉ nhỏ hơn một ít so với mặt trăng của trái đất. Sự sống nếu có trên mặt trăng sao Mộc được cho phải có những đặc điểm cho phép thích ứng với điều kiện khắc nghiệt trên thiên thể này, chẳng hạn như nhiệt độ dưới ngưỡng -140 độ C và liên tục hứng chịu bức xạ đổ bộ từ sao Mộc.\n<|assistant|>\nĐại dương dưới bề mặt của Europa: Khám phá tiềm năng cho sự sống ngoài hành tinh",
+        "pac_score": 2.9476826338596203
+      },
+      {
+        "record_index": 76,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60676",
+        "text": "<|user|>\nQual é o maior animal do mundo?\n<|assistant|>\nA baleia-azul é o maior animal do mundo e pode chegar a 30 metros de comprimento, além de pesar até 180 toneladas.",
+        "pac_score": 4.796106974283853
+      },
+      {
+        "record_index": 77,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60677",
+        "text": "<|user|>\n中央銀行が市中銀行に対して適用する金利のことを何というでしょう？\n<|assistant|>\n公定歩合",
+        "pac_score": -0.0
+      },
+      {
+        "record_index": 78,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60678",
+        "text": "<|user|>\nالسؤال: ما هي السورة التي تحدثت عن تقسيم الغنائم؟\n\n<|assistant|>\nالإجابة: سورة الأنفال",
+        "pac_score": 1.356369632396822
+      },
+      {
+        "record_index": 79,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60679",
+        "text": "<|user|>\nWaa maxay gabay?\n<|assistant|>\nGabay: waa nooc maansada ka mid ah oo leh qaafiyad, luuq iwm oo aan muusig loo tumin.",
+        "pac_score": 1.6940665690104177
+      },
+      {
+        "record_index": 80,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60680",
+        "text": "<|user|>\nTaxanaha caafimaadka ka faideysi wacan\n<|assistant|>\nTaxanaha Caafimaadka \n1. Marka jirkaaga difaaciisu yaraado, hargabku kugu soo noqnoqdo,  jirkaaga waxaa ku yar difaaca waxaana kugu badan macaanka. Cab caanaha geela habeen kasta hal galaas. Caanaha geela waxay xoojiyaan difaaca jirka waxayna jirka ka yareeyaan halis sokorta iyi macaanku gaystaan\n2. Wadne garaac, kicista oo ku dhibto gaar ahaan subaxdii iyo marka qoraxdu soo kululaato inaad dareento inaad roonaanaanayso, waxaa sabab u ah jirkaaga oo macdanta qaarkeed ku yar tahay . Cunista kalluunka ayaa daawo u ah astaamaha aan kor kusoo xusnay madama macdan muhiim u ah xididada iyo wadnaha ay kaluunku ku jirto\n3. Marka caato zaaid ah aad tahay ama aad doonayso in aad cayisho uma baahnid cunto badan in aad cunto kaliya hal shay samee bil gudaheed waad ku cayili doonta. Yaree socod boobsiiska oo tartiib u soco. Socod boobsiisku wuxuu ridaa miisaanka qofka waxaana socod boobsiiska loogu talagalay dadka cayilan si miisaankoodu u yaraado.\n4. Cunug aan qoorta ceshan karin, maskaxiyan aan caafimaad qabin, dhakhaatiirtu ka sheegaan neerfo, hadalkana uu dhibaayo waxaa sabab u ah hooyada oo aan cabin caanaha geela inta ay uurka lahayd. Caanaha geela waxaa ku jirta macdan kobcisa maskaxda, fahanka, xidida, lafaha  iyo caqliga ilmaha uurka ku jira\n5. Kilya xanuun, kaadida oo ku gubta, infakshan kugu soo laalaabta, dhabar xanuun zaaid ah waxaa intaba sabab u ah digaaga oo si xad dhaaf ah loo cuno iyo biyo cabistaada oo yar sidaa darteed yaree cunista digaaga iskuna day inaad cabto maalintii 5 galaas oo biyo ah salaad kastana marka dukato kadib cab hal galaas biyo ah.",
+        "pac_score": 2.0164500274806434
+      },
+      {
+        "record_index": 81,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60681",
+        "text": "<|user|>\nBeqil ma mbind mii:\n- Ñu ne: \"Laajal nu sa Boroom mu leeral nu nu mu mel, ndax nag yi dañoo bari ci nun. Te bu soobe Yàlla dananu gindiku [Jëfe ndigalam]\".\n<|assistant|>\nMbind mi jub a ngi nii:\n- Ñu ne: \"Laajal nu sa Boroom mu leeral nu nu mu mel, ndàx nag yi da ñoo bàri ci nun. Te bu soobe Yàlla da na nu gindiku [Jëfe ndigalam]\".",
+        "pac_score": 1.5802820432753784
+      },
+      {
+        "record_index": 82,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60682",
+        "text": "<|user|>\nவினா : தமிழகத்தில் முதன்முதலில் தொடங்கப்பட்ட இரயில் நிலையம்?\n\n<|assistant|>\nவிடை : ராயபுரம்",
+        "pac_score": 1.317854695320129
+      },
+      {
+        "record_index": 83,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60683",
+        "text": "<|user|>\nప్రశ్న : అశోకుడు తన సైన్యాన్ని యుద్ధం కోసం కాకుండా ప్రజాసేవకు వినియోగించాడు. ప్రస్తుత కాలంలో భారత సైన్యం యుద్ధాలలోనే కాకుండా పాల్గొనే ఇతర సహాయ కార్యక్రమాలేవి?\n\n<|assistant|>\nభారత సైన్యం చేపడుతున్న సహాయ కార్యక్రమాలు :\n\nప్రకృతి విలయాల సందర్భంలో, తుఫానులు, భూకంపాలు, వరదలు మొ||న ప్రకృతి భీభత్సాలలో సాధారణ పౌరులను ఆదుకోవటానికి సైన్యం ఎంతో సహాయం చేస్తుంది.\nపర్వతలోయల్లో, కొండల్లో ఎవరైనా అపాయంలో ఉన్నా, ప్రమాదాలు జరిగిన సైన్యం వారికి సహాయం అందిస్తుంది.\nNCC (National Cadet Corps) లాంటి వానిద్వారా విద్యార్థులలో దేశభక్తిని, సైనిక శిక్షణను అందిస్తుంది.\n‘ఆపరేషన్ సద్భావన’ కార్యక్రమం ద్వారా భరత సైన్యం పౌరులకు అనేక రకాలుగా సేవలు అందిస్తుంది.\nఅంతర్గత కలహాలు, బాంబు ప్రేలుళ్ళు, హైజాకింగ్ మొ||న సందర్భాలలో సైన్యం ఎంతో ముఖ్య పాత్ర పోషిస్తుంది.",
+        "pac_score": 0.9854660113336435
+      },
+      {
+        "record_index": 84,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60684",
+        "text": "<|user|>\nМакал: Чакырылбаган конок шыпырылбаган жерге отурат. Макалды түшүндүрүп бер\n<|assistant|>\nБирөөнүн үйүнө айтпай бастырып бара бербе, өзүң шыпырылбаган жерге отуруп калып ыңгайсыз болбо.",
+        "pac_score": 0.641344152745746
+      },
+      {
+        "record_index": 85,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60685",
+        "text": "<|user|>\nDavido \n<|assistant|>\nDavid Adédèjì Adélékè tí orúkọ ìnagijẹ rẹ̀ ń jẹ́ Davido tí wọ́n bí ní Ọjọ́ kọkànlélógún oṣù kọkànlá ọdún 1992 (November 21st, 1992) jẹ́ gbajúmọ̀ olórin ìgbàlódé ọmọ bíbí ìlú Ẹdẹ ní ìpínlẹ̀ Ọ̀ṣun lórílẹ̀ èdè Nàìjíríà.\n\nDavido gba àmì ẹ̀yẹ Next rated Award ni ọdun 2012 ni à kó jo “The Headies ní èyìn ìgbà tí o kọ Orin “Dami Duro”, tí ó jẹ́ orin kejì ní nú àkópo orin rẹ̀ “Omo Baba Olowo” 2012. Láàrin Ọdún 2013 àti 2015, ó ṣe àkójáde oríṣiríṣi orin tí ó jẹ́ ìlú mọ̀ọ́nká ní ọdún 2016 ó ki ọwọ́ bọ̀wé pẹ̀lú ará ilé-iṣẹ́ olórin àgbáyé Sony Music. Ní ẹ̀yìn ìgbà náà ó dá ilé- iṣẹ́ orin ti ẹ̀ sílẹ̀ Davido Music Worldwide (DMW), pẹ̀lu àwọn olórin bíi Dremo, Mayorkun, Peruzzi pẹ̀lú Liya tí wón wà lá bẹ̀ ẹ̀. Ní ọdun 2016, Davido tún ki ọwọ́ bọ̀wé pẹ̀lú ilé-iṣẹ́ olórin Sony RCA Records. Ní oṣù kẹwàá ọdún 2016 óṣe orin pélébé aláwo márùn-ún sí ta “Son of Mercy”, pẹ̀lú àwọn orin ọlọ́kan-ò-jọ̀ kan bíi \"Gbàgbé Òṣì \", \"How Long\" and \"Coolest Kid in Africa\". Ní Oṣù kẹrin 2017, Davido tún dúnàá-dúrà pẹ̀lú ìkọwọ́ bọ̀wé pẹ̀lú Sony nítorí à\n\natè íeni ágbaró loàwọn won orií ó i oọiṣá úají ọi ́n oáà, ó sìosún tọuo oriárùn-ún run bi \"If\" and \"Fall\". \"If\" generated worldwide social media activity while \"Fall\" became the longest-charting Nigerian pop song in Billboard history. Davido has been famously referred to as 'The king of modern-day afrobeats'.\n\nDavido se ase sita akojo orin keji A Good Time ni osu kokanla odun 2019, pelu Orin bi \"Blow My Mind\" pelu ohun korin ilu moka Amerika Chris Brown . Davido je okan pataki ti won tokasi larin awon “Top 100 most influential Africans” ti o mo yan New African magasin in 2019.",
+        "pac_score": 3.5148128724883874
+      },
+      {
+        "record_index": 86,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60686",
+        "text": "<|user|>\nاكمل الفقرة التالية:\n\nكيف تحصل على المساعدة؟\nوعن كيفية الحصول على المساعدة إذا كنت تعاني من شعورك بالهلاك الوشيك؟  نشر\n<|assistant|>\nموقع \"فري ول مايند\" إذا كنت تشعر بالهلاك الوشيك أو تواجه تحديات نفسية، من الضروري أن تبحث عن الدعم اللازم. قم بالتحدث مع أحد الأشخاص المقربين، حيث يمكن أن يكون لديهم تأثير إيجابي على حالتك. كما يمكنك البحث عن مساعدة احترافية من الأطباء أو المستشارين النفسيين الذين يقدمون التوجيه والدعم. في حالات الطوارئ، لا تتردد في الاتصال بخدمات الطوارئ في بلدك. يمكنك أيضًا التواصل مع خطوط المساعدة النفسية المتاحة عبر الهاتف أو الإنترنت. بحثًا عن مجتمع دعم، انضم إلى مجموعات عبر الإنترنت أو المجتمع المحلي حيث يمكنك مشاركة تجاربك واستفادة من تجارب الآخرين. لا تتردد في طلب المساعدة، حيث يلعب الدعم النفسي دورًا هامًا في تعزيز الصحة العقلية.",
+        "pac_score": 3.1083376030652037
+      },
+      {
+        "record_index": 87,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60687",
+        "text": "<|user|>\nSkriv en fortsättning på den här paragrafen - Säsongen hade han kontrakt med BRM men körde för partnerstallet Reg Parnell. Säsongen blev han befordrad till fabriksstallet och blev där stallkamrat med Jackie Stewart. Spences bästa resultat var hans femteplats i Belgien, där Stewart kom tvåa. 1967 var Spence\n<|assistant|>\nen av förarna som vann sportvagnsloppet BOAC 1000 km i en Chaparral på Brands Hatch och såg fram mot säsongen då han skulle få köra den nya BRM P126 V12. Spence visade sin potential både i Race of Champions och i BRDC International Trophy men tvingades sedan bryta i Sydafrikas Grand Prix 1968.",
+        "pac_score": 3.778294707579521
+      },
+      {
+        "record_index": 88,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60688",
+        "text": "<|user|>\nماذا نعني الموضوعية في التدقيق الداخلي؟ \n<|assistant|>\nالموضوعية هي موقف عقلي غير متحيز يسمح للمدققين الداخليين بإصدار أحكام مهنية، والوفاء بمسؤولياتهم، وتحقيق الغرض من التدقيق الداخلي دون تنازلات أو تحيز.",
+        "pac_score": 1.797921368810865
+      },
+      {
+        "record_index": 89,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60689",
+        "text": "<|user|>\n\"लोकमान्य टिळक\" यांच्याविषयी माहिती सांगा.\n<|assistant|>\nभारताला खूप थोर पुरुष लाभले आहेत आणि त्यामधले एक थोर पुरुष म्हणजे लोकमान्य टिळक.लोकमान्य टिळकांनी भारताला स्वातंत्र्य मिळवून देण्यासाठी आणि स्वराज्य स्थापित करण्यासाठी खूप कष्ट केले, खूप चळवळी केल्या ज्यामुळे त्यांना तुरुंगात सुद्धा जावे लागले होते.\n\nकेशव गंगाधर टिळक यांना बाळ गंगाधर टिळक या नावाने ओळखले जायचे. त्यांचा जन्म महाराष्ट्रामधील रत्नागिरीमध्ये चिखली या गावात २३ जुलै १८५६ मध्ये झाला होता.\n\nबाळ गंगाधर टिळक हे लहान पणापासूनच अत्यंत हुशार व्यक्ती होते. त्यांचे शिक्षण त्यांनी पुण्यात घेतले होते. टिळकांचे लग्न वयाच्या १६ वर्षी तापी बाई यांच्याशी झाले होते. शिक्षण पूर्ण झाल्यानंतर लोकमान्य टिळक एका शाळेमध्ये शिक्षक म्हणून विद्यार्थ्यांना शिकवत असे.\n\nलोकमान्य टिळक यांना शाळेमध्ये इंग्रजांच्या शिक्षण पद्धती आणि त्यांचा व्यवहार योग्य वाटला नाही. म्हणून त्यांनी ते काम सोडून दिले आणि पत्रकार बनायचा निर्णय घेतला, आणि मग ते लोककार्या मध्ये सहभागी होऊ लागले.\n\nटिळकांनी इंग्रजांचा दूरव्यवहार अनुभवला होता, ते भारतीयांन बरोबर दूरव्यवहार करत असे म्हणून लोकमान्य टिळकांनी आपल्या काही मित्रांबरोबर मिळून शाळा आणि कॉलेजची निर्मिती केली. त्यांनी शाळेमध्ये नवीन शिक्षण पद्धती लघु केल्या आणि मुलांच्या मनात देशभक्ती निर्माण केली.\n\nकेशव गंगाधर टिळक यांनी भारताला इंग्रजांच्या तावडीतून स्वतंत्र करण्याच्या विडा उचलला आणि ते भारताला स्वतंत्र करण्यासाठी चळवळी करू लागले.\n\nटिळकांनी इंग्रजांच्या अत्याचाराला विरोध केला, आणि इंग्रजांना ठणकावून सांगितले \"स्वराज्य हा माझा जन्मसिद्ध हक्क आहे आणि तो मी मिळवणारच\". लोकमान्य टिळकांन पुढे इंग्रज सरकार सुद्धा नमवले होते. त्यांनी \"केसरी\" व \"मराठा\" या वर्तमानपत्राला सुरुवात केली आणि त्यामधून लोकांना जागृत केले. लोकमान्य टिळक यांनी गणेश उत्सव ह्या सार्वजनिक सणाची सुरुवात केली जेणेकरून लोक एकत्र येतील, असा त्यांचा त्यामागे विचार होता आणि ते तसे झाले सुद्धा.\n\nकेशव गंगाधर टिळक यांनी आपले संपूर्ण आयुष्य भारताच्या स्वतंत्र साठी झोकून टाकले. त्यांनी आपल्या लोकांसाठी फार काही केले होते आणि म्हणून त्यांना \"लोकमान्य टिळक\" असे म्हटले जाते. इंग्रजांनी त्यांना \"फादर ऑफ इंडियन अनरेस्ट\" ही उपाधी दिली आहे, कारण भारताला स्वातंत्र्य देण्यासाठी त्यांनी प्रथम चळवळी सुरू केल्या होत्या.\n\nलोकमान्य टिळक यांनी आपल्यासाठी अनेक कष्ट सोसले, त्यांना तुरुंगात सुद्धा जावे लागले होते. लोकमान्य टिळक यांनी अखेर श्वास १ ऑगस्ट १९२० ला घेतला आणि ते महापुरुष स्वर्गवासी झाले.",
+        "pac_score": 1.5604497863511981
+      },
+      {
+        "record_index": 90,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60690",
+        "text": "<|user|>\nYang mana dari dua ayat berikut tidak masuk akal? Pilihan: - Ayat A: \"pergi ke hospital dan minta doktor datang ke sini\" - Ayat B: \"pergi ke hospital dan minta polis datang ke sini\" \n<|assistant|>\nHospital bukan tempat untuk mencari polis. Jawapannya ialah Ayat B.",
+        "pac_score": 3.4873737670077896
+      },
+      {
+        "record_index": 91,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60691",
+        "text": "<|user|>\nAmsterdam moy péeyu ban réw?\n\n<|assistant|>\nAmsterdam moy péeyu réwum Pays-Bas",
+        "pac_score": 1.3010856628417962
+      },
+      {
+        "record_index": 92,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60692",
+        "text": "<|user|>\nKalimah 1: Jumlah titik seuneu anu dilaporkeun dina awal Pébruari nyaéta 73 kalayan 26 di luar kontrol, jeung diperkirakeun waktosna pikeun ngendalikeun seuneu anu sanés sasasih. \nKalimah 2: Jumlah kahuruan anu dilaporkeun dina awal Pébruari nyaéta 73 kalayan 26 di luar tina kontrol sareng diperkirakeun waktos keur ngendalikeun kahuruan anu sanés sasasih. \nPananya: Naha Kalimah 1 jeung Kalimah 2 sarua hartina? \n<|assistant|>\nKalimah 1 jeung Kalimah 2 miboga harti nu sarua.",
+        "pac_score": 1.2483584696497978
+      },
+      {
+        "record_index": 93,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60693",
+        "text": "<|user|>\ncual es el tema principal de esta pregunta: ¿Cuál es el título del libro que ganó el primer Premio Hugo como mejor novela?\n<|assistant|>\nEl tema principales de la categoria: Libros",
+        "pac_score": 3.070235252380373
+      },
+      {
+        "record_index": 94,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60694",
+        "text": "<|user|>\nE devlet şifresi ile internet bankacılığına giriş yapılır mı?\n<|assistant|>\n​e-Devlet Kapısı'na internet bankacılığı ile giriş yapmak artık çok kolay! e-Devlet Kapısı İşCep ve İnternet Şubesi ile çok yakınınızda! e-Devlet Kapısı'na giriş yapmak için artık ayrıca e-Devlet Şifresi almanıza gerek yok.",
+        "pac_score": 1.9497900685397074
+      },
+      {
+        "record_index": 95,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60695",
+        "text": "<|user|>\nΤο Αζερμπαϊτζάν κέρδισε για πρώτη φορά στην ιστορία του τον διαγωνισμό της Eurovision (συμμετέχει από το 2008), χάρη στο ζευγάρι Ell &amp; Nikki και το τραγούδι Running Scared, που συγκέντρωσαν συνολικά 221 βαθμούς, στον φετινό διαγωνισμό που διεξήχθη στο Ντίσελντορφ της Γερμανίας. \n\nΠαρακαλώ, δώσε μου έναν ταιριαστό τίτλο στο παραπάνω άρθρο\n<|assistant|>\nΕυχαρίστως. Ένας ταιριαστός τίτλος για το άρθρο είναι: \"Το Αζερμπαϊτζάν κέρδισε τον διαγωνισμό Eurovision 2011\".",
+        "pac_score": 1.389188389486173
+      },
+      {
+        "record_index": 96,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60696",
+        "text": "<|user|>\nસમગ્ર શ્રેણીમાં કયા પાત્રમાં સૌથી નોંધપાત્ર ભૌતિક પરિવર્તન થયું છે?\n<|assistant|>\nલેક્સી ગ્રે, જેણે એક નિર્દોષ અને આદર્શવાદી ઇન્ટર્ન તરીકે શરૂઆત કરી હતી અને તેના દુ:ખદ મૃત્યુ પહેલા આત્મવિશ્વાસ અને દયાળુ સર્જનમાં પરિવર્તિત થઈ હતી.",
+        "pac_score": 1.030616198525284
+      },
+      {
+        "record_index": 97,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60697",
+        "text": "<|user|>\nLos padres de Alice tienen tres hijas: Amy, Jessy, y _____. ¿Cuál es el nombre de la tercera hija?\n<|assistant|>\nEl nombre de la tercera hija es Alice.",
+        "pac_score": 3.949344603220622
+      },
+      {
+        "record_index": 98,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60698",
+        "text": "<|user|>\nIk wil een aankoop doen van een NAS voor een klant die fotograaf is. Voorkeur heeft voor minimaal 4 bays maar mag ook meer.\n\nIk wil een nas hebben die snel communicatie met de pc heeft. Dit om vanaf de nas beelden te kunnen inladen op de pc en dit moet snel kunnen.\n\nIk zie dan qnap hiermee adverteert mede door dat de nas een snelle thunderbolt aansluiting heeft of dat 2 netwerk aansluitingen gecombineerd kunnen worden voor hogere data snelheid.\n\nWie heeft er hier mee ervaringen mee of zit in de zelfde sector?\n\nBedankt voor het lezen van deze topic en voor jou reactie!\n<|assistant|>\nHoeveel capaciteit is er nodig ? Veel mensen een 4 bay kopen en er vervolgens 8TB schijven in doen. Dan liever een 2-bay met 2x 18TB.",
+        "pac_score": 2.2788736490102934
+      },
+      {
+        "record_index": 99,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60699",
+        "text": "<|user|>\nWho was the first woman Prime Minister of India?\n<|assistant|>\nThe first woman Prime Minister of India was Indira Gandhi. She served as Prime Minister from 1966 to 1977 and then again from 1980 until her assassination in 1984. Indira Gandhi was not only the first female Prime Minister of India but also the second-longest-serving Prime Minister in Indian history. She was the daughter of Jawaharlal Nehru, the first Prime Minister of India, and played a pivotal role in the Indian National Congress and the political landscape of India during her tenure. Her leadership was marked by significant events and policies that shaped modern India, but it was also controversial, particularly due to her declaration of Emergency from 1975 to 1977.",
+        "pac_score": 6.147746245755373
+      },
+      {
+        "record_index": 100,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60700",
+        "text": "<|user|>\nமுதலாம் உலகப் போர் என்பது வரலாற்றின் உலகளாவிய சண்டைகளில் அதிக உயிரிழப்பை ஏற்படுத்திய போர்களில் ஒன்றாகும். \nமுதல் உலகப் போர் யாருக்கு இடையே நடந்தது?\n<|assistant|>\nஇது நேச நாடுகள் மற்றும் மத்திய சக்திகள் ஆகிய இரு கூட்டணிகளுக்கு இடையே சண்டையிட்டது. பெரும்பாலான ஐரோப்பா, உருசியப் பேரரசு, அமெரிக்க ஐக்கிய நாடுகள் மற்றும் உதுமானியப் பேரரசு ஆகியவை இதில் கலந்து கொண்டன. ஐரோப்பா முழுவதும், மத்திய கிழக்கு, ஆப்பிரிக்கா, பசிபிக் மற்றும் ஆசியாவின் பகுதிகளில் சண்டைகள் நடைபெற்றன. சண்டைகளில் தொண்ணூறு இலட்சம் இராணுவ வீரர்கள் கொல்லப்பட்டதாக மதிப்பிடப்பட்டுள்ளது. மேலும் 2.3 கோடி இராணுவ வீரர்கள் காயம் அடைந்தனர். அதே நேரத்தில் இராணுவ நடவடிக்கை, பட்டினி, மற்றும் நோய் ஆகியவற்றின் விளைவாக ஐம்பது இலட்சம் குடிமக்கள் இறந்தனர். உதுமானியப் பேரரசுக்குள் நடைபெற்ற இனப்படுகொலைகள் மற்றும் 1918 இன்புளுவென்சா தொற்றுப் பரவல் ஆகியவற்றின் காரணமாகத் தசம இலட்சங்களில் மேலும் பலர் இறந்தனர். போரின் போது இராணுவ வீரர்களின் பயணம் காரணமாக நோய்த் தொற்றானது கடுமையானது.",
+        "pac_score": 1.4017309394721287
+      },
+      {
+        "record_index": 101,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60701",
+        "text": "<|user|>\nఇచ్చిన దత్తాంశం యొక్క ఆరోహణ ఓజీవ్ వక్రం, అవరోహణ ఓజీవ్ వక్రాల ఖండన బిందువు (42, 18) అయిన మధ్యగతం ఎంత ?\n<|assistant|>\nమధ్యగతము = 42",
+        "pac_score": 0.41307961997531706
+      },
+      {
+        "record_index": 102,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60702",
+        "text": "<|user|>\nક્રિકેટર ગૌતમ ગંભીર વિષે જણાવો\n<|assistant|>\nગૌતમ ગંભીર ભારત દેશના આંતરરાષ્ટ્રીય ક્રિકેટ રમતા ખેલાડી છે. તેનો જન્મ ઓક્ટોબર ૧૪, ૧૯૮૧ નાં દિવસે ભારત દેશનાં દિલ્લી ખાતે થયો હતો. ભારતીય ક્રિકેટ ટીમ આ ખેલાડી એકદિવસીય ક્રિકેટ સ્પર્ધા તેમજ પાંચ દિવસની ટેસ્ટ ક્રિકેટ સ્પર્ધામાં બેટીંગમાં ઘણીવાર પોતાની કાબેલિયત પુરવાર કરી ચુક્યા છે. ગૌતમ ગંભીરે પોતાની પ્રથમ વનડે ક્રિકેટ માં એપ્રિલ ૧૧, ૨૦૦૩ નાં દિવસે બાંગ્લાદેશ સામે અને પ્રથમ ટેસ્ટ ક્રિકેટ માં નવેમ્બર ૩, ૨૦૦૪ નાં દિવસે ઓસ્ટ્રેલિયા સામે આંતરરાષ્ટ્રીય ક્રિકેટ માં પ્રવેશ કર્યો હતો.",
+        "pac_score": 1.5098535066398036
+      },
+      {
+        "record_index": 103,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60703",
+        "text": "<|user|>\nRaha ny heviitrao tsara ve ny nahandro malagasy ?\n<|assistant|>\nNy nahandro mlagasy dia tena tsara amiko.",
+        "pac_score": 0.26739516185991796
+      },
+      {
+        "record_index": 104,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60704",
+        "text": "<|user|>\n英和辞典で、普通、見出し語の数が最も多いアルファベットは何でしょう？\n<|assistant|>\nＳです。",
+        "pac_score": -0.0
+      },
+      {
+        "record_index": 105,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60705",
+        "text": "<|user|>\nساعدني في إنشاء قصيدة قصيره من بحر الطويل؟\n<|assistant|>\nبالطبع، تفضل هذه القصيدة: وَمُهتَزَّةِ العِرنينِ رَقراقَةِ السَنا\nتُناسِبُ مُستَنَّ البُروقِ اللَوامِعِ\nأَفاضَ عَلى أَعطافِها القَينُ حُلَّةً\nتُفَضفَضُ في مِثلِ النُجومِ الطَوالِعِ\nفَجاءَت بِجِسمٍ يَملَأُ العَينَ بَهجَةً\nإِذا ما اِجتَلاها حاسِرٌ مِثلُ دارِعِ\nيُحَيّا بِها مَن لَم تُحَيَّ يَمينُهُ\nبِغَيرِ العَوالي وَالسُيوفِ القَواطِعِ\nأَحَدُّ مِنَ العَذلِ المُطِلِّ عَلى الهَوى\nوَأَرهَفُ مِن غَربِ النَوى في المَقاطِعِ.",
+        "pac_score": 1.8197878319538794
+      },
+      {
+        "record_index": 106,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60706",
+        "text": "<|user|>\nQuem inventou as bebidas gasosas feitas pelo homem?\n<|assistant|>\nJoseph Priestley foi o inventor das bebidas gasosas.",
+        "pac_score": 3.2557845052083323
+      },
+      {
+        "record_index": 107,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60707",
+        "text": "<|user|>\nமாநில அளவில் நடைபெற்ற “மரம் இயற்கையின் வரம்” எனும் தலைப்பிலான கட்டுரைப் போட்டியில் வெற்றி பெற்று முதல் பரிசு பெற்ற தோழனை வாழ்த்தி மடல் எழுதுக.\n<|assistant|>\nபாரதியார் நகர்,\n\nவிருதுநகர்.\n\n10/10/2021.\n\nஅன்பு நண்பனே!\n\nமுதலில் உமக்கு எம் வாழ்த்துகள்! சென்ற வாரம் நடந்த மாநில அளவிலான கட்டுரைப் போட்டியில் 'மரம் இயற்கையின் வரம்' என்னும் தலைப்பில் கட்டுரை எழுதி முதல் பரிசு பெற்றமமையைக் கண்டு வியந்தேன். பாராட்டுகள்!\n\nபள்ளியில் நடைபெறும் கட்டுரைப் போட்டியிலேயே பொருள் பொதிந்த உன் கட்டுரையும், அதில் உன் மொழிநடையையும் பற்றி நம் ஆசிரியர்கள் வியந்ததை கூறியதை எண்ணி இப்போதும் நான் நினைத்துப் பார்த்து மகிழ்கிறேன். உன் கையெழுத்து உன் தலையெழுத்தை மாற்றும் என்று முன்பு நான் நினைத்ததை இந்த ஒரு நிகழ்விலேயே நிரூபித்து விட்டாய்! விளையும் பயிர் முளையிலேயே தெரியும் என்பதையும் நீ மெய்ப்பித்துவிட்டாய்!\n\nநீ உன் முயற்சிக்கு தகுந்த பரிசினை, இப்போது பெற்றுள்ளதைப் போலவே இன்னும் பல நிலைகளில், பல பரிசுகளைப் பெற நான் மனதார வாழ்த்துகிறேன். உன் இக்கட்டுரைப் பணி தொடரட்டும்!\n\nஎன்றும் அன்புடன்\n\nமுத்து\n\nபெறுநர்\nக. நவீன்குமார்,\n5. காளையார் கோவில்\nமுத்தமிழ் நகர்,\nஈரோடு – 638 001.",
+        "pac_score": 1.2175209206270754
+      },
+      {
+        "record_index": 108,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60708",
+        "text": "<|user|>\nMikä antaa pilvelle muodon?\n<|assistant|>\nAlempana ilmakehässä olevat pilvet koostuvat pienen pienistä vesipisaroista. Sumu on itse asiassa maahan ulottuvaa pilveä. Pilvet näyttävät valkoisilta. Mikäli pilvi on paksu. esim. ukkospilvi, se näyttää tummalta paksuutensa vuoksi.\n\nKumpupilvet syntyvät auringon lämmityksen aiheuttamista nousevista ilmavirtauksista, ja ne antavat pilville kumpumaisen muodon. Voimakas tuuli saa pilvet hajoamaan ja muuttumaan repaleisiksi. Laajan alueen kerrospilvet kuten sadepilvet liittyvät laaja-alaiseen nousevaan liikkeeseen esimerkiksi. säärintamien yhteydessä. Ylempänä olevat harsomaiset pilvet koostuvat jääkiteistä, mikä antaa niille kuitumaisen rakenteen.",
+        "pac_score": 2.716184488932292
+      },
+      {
+        "record_index": 109,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60709",
+        "text": "<|user|>\nMuotoile tämä lause uudelleen: Ehkä rahojen keräämiseksi.\n<|assistant|>\nMahdollisesti kerätäkseen enemmän varoja.",
+        "pac_score": 0.5969595373244516
+      },
+      {
+        "record_index": 110,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60710",
+        "text": "<|user|>\nQui commence les chaînes alimentaires ?\n<|assistant|>\nLes producteurs, également appelés autotrophes, sont les organismes à l’origine des chaînes alimentaires. Les producteurs sont capables de synthétiser leur propre nourriture par photosynthèse ou chimiosynthèse, en utilisant respectivement l’énergie du soleil ou des composés inorganiques. Ils servent de fondement aux chaînes alimentaires en convertissant l’énergie du soleil ou d’autres sources en matière organique pouvant être consommée par d’autres organismes.",
+        "pac_score": 5.92680110014402
+      },
+      {
+        "record_index": 111,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60711",
+        "text": "<|user|>\n\"La coupe n'entre pas dans la valise marron, car ... est trop petite.\" \nRemplace les \"...\" dans la phrase ci-dessus par la bonne option : \n- \"La coupe\" \n- \"la valise\"\n<|assistant|>\nLa bonne option est \"la valise\".",
+        "pac_score": 2.544963944753013
+      },
+      {
+        "record_index": 112,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60712",
+        "text": "<|user|>\nInona no renivohitr'i Afrika Atsimo?\na) Kairo\nb) Johannesburg\nc) Cape Town\nd) Pretoria\n<|assistant|>\nI \"Cape Town\" no renivohitr'i Afrika Atsimo.",
+        "pac_score": 3.209759524538627
+      },
+      {
+        "record_index": 113,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60713",
+        "text": "<|user|>\nJawab soalan teka-teki ini: Setiap manusia memerlukan saya. Nama saya bermula dengan O.\n<|assistant|>\nJawapannya ialah oksigen. Oksigen ialah unsur kimia dengan nombor atom 8 dan simbol kimia O. Oksigen merupakan salah satu daripada kalangan unsur kalkogen dalam jadual berkala unsur dan bertindak balas dengan hampir kesemua unsur kimia, terutamanya menjadi oksida. Gas oksigen memenuhi 20.9% daripada isi padu atmosfera Bumi dan merupakan unsur paling banyak wujud dalam kerak Bumi, di mana oksigen memenuhi lebih kurang separuh daripada jisim kerak Bumi. Dalam alam semesta, oksigen merupakan unsur ketiga paling banyak, selepas hidrogen dan helium.",
+        "pac_score": 3.536468178264556
+      },
+      {
+        "record_index": 114,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60714",
+        "text": "<|user|>\nMa ku hadlo, mana aqriyo, amase ma qoro luuqada Ingiriiska. Ma ku codsan karaa luuqado kale? Ma heli karaa turjumaan?\n\n<|assistant|>\nWaxaad ku turjuman kartaa arjiga codsashada ilaa 60 luuqadood adiga oo isticmaalaya hannaan ku sameysan turjumaada boga Google. Waxaad xataa soo wici kartaa 612-342-1975 si aad u qabsato balan aad ku timaado xafiiskeena anaga ayaa ku sameyneyna ama siineyna turjumaan bilaash ah.",
+        "pac_score": 1.8675512631734206
+      },
+      {
+        "record_index": 115,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60715",
+        "text": "<|user|>\nSlutför den här frasen: Holzapfel spelade juniorhockey för Moose Jaw Warriors i Western Hockey League (WHL). Han draftades av Atlanta Thrashers som 43:e spelare totalt i NHL Entry Draft 2006. Den 6 september 2007 skrev Holzapfel ett treårigt ingångskontrakt med Thrashers. År 2008 spelade han för Kanada i Junior-VM\n<|assistant|>\ndär Kanada till slut vann guld efter att ha besegrat Sverige i finalen med 3-2.",
+        "pac_score": 3.87650614689558
+      },
+      {
+        "record_index": 116,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60716",
+        "text": "<|user|>\nviết đoạn văn ngắn từ 15-20 dòng nêu cảm nhận của em về sông Hương \n<|assistant|>\nVẻ đẹp của sông Hương được cảm nhận dưới nhiều góc độ khác nhau. Sông Hương ở vùng thượng nguồn toát lên vẻ đẹp kì bí, hùng vĩ và đầy cá tính. Vẻ đẹp của dòng sông lúc này khiến Hoàng Phủ Ngọc Tường liên tưởng đến cô gái Di gan phóng khoáng, mê dại, đầy sức hút. Người đọc không khỏi cảm thán trước vẻ đẹp lúc mãnh liệt, lúc dịu êm của sông Hương, tựa như cô gái di gan phóng khoáng và hoang dại với bản lĩnh gan dạ, tâm hồn tự do và trong sáng. Khi chảy về thành phố Huế, sông Hương lại như “người tình dịu dàng và chung thủy của cố đô”. Giữa cánh đồng Châu Hóa đầy hoa dại, sông Hương như “cô gái đẹp ngủ mơ màng”, và sông hương bỗng “chuyển dòng liên tục” “ôm lấy chân đồi Thiên Mụ”, “trôi giữa hai dãy đồi sừng sững như thành quách”. Đặc biệt nhất là khi sông Hương chảy trong lòng thành phố Huế, tác giả cứ ngỡ rằng sông Hương tìm thấy chính mình khi gặp thành phố thân yêu nên tươi vui hẳn lên. Sông Hương đã góp phần tạo nên nét đẹp của vùng đất cố đô, ẩn mình trong trầm tích của nét văn hóa hàng nghìn năm lịch sử.",
+        "pac_score": 2.706105647172306
+      },
+      {
+        "record_index": 117,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60717",
+        "text": "<|user|>\nỌlọpaa n wa awọn to fibọn gba ogun miliọnu lọwọ awọn oṣiṣẹ ijọba Ekiti\n<|assistant|>\nIleeṣẹ ọlọpaa ipinlẹ Ekiti ti bẹrẹ iwadii lori iṣẹlẹ idigunjale kan to waye l’Ọjọruu, Wẹsidee, ọsẹ yii, niluu Ado-Ekiti, nibi tawọn agbebọn ti gba miliọnu lọna ogun lọwọ awọn oṣiṣẹ ijọba Ekiti kan ti wọn lọọ gbowo ni banki.\n\nGẹgẹ bi ẹnikan tiṣẹlẹ naa ṣoju ẹ ṣe sọ, awọn meji ni wọn lọọ gbowo ọhun ni banki lati ẹka kan ninu ile ijọba, agbegbe Bank Road, si ni ileefowopamọ naa wa. Bi wọn ṣe gba a tan ti wọn jade niṣẹlẹ ọhun ṣẹlẹ.\n\nALAROYE gbọ pe bi wọn ṣe rin diẹ sọna ile ijọba lawọn kan fi mọto dabuu ọkọ tiwọn, bi wọn si ṣe gba owo naa tan ni wọn lọri pada sọna GRA, eyi ti wọn le gba lọ siluu Ilawẹ-Ekiti.\n\nNitori bi wọn ṣe ni awọn agbebọn ọhun yinbọn soke lasiko iṣẹlẹ naa, ko sẹni to le duro, o si pẹ diẹ kawọn eeyan too mọ ohun to n ṣẹlẹ gan-an.\n\nIroyin iṣẹlẹ naa lo fa ibẹru nla lẹyin tawọn agbẹbọn ọhun lọ, awọn kan si n pariwo pe awọn ole ti ya bo banki l’Ado-Ekiti.",
+        "pac_score": 4.021106683124195
+      },
+      {
+        "record_index": 118,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60718",
+        "text": "<|user|>\nأريد إنشاء قصيدة قصيره من بحر الكامل. هل يمكنك مساعدتي؟\n<|assistant|>\nرَيحانَةُ الإِفضال عاجلها الرَدى\nوَلِفَقدِها مَس الزَمان زُكامُ\nما كانَت الأَيّام إِلّا مُقلة\nوَلها اِبن فَرفور ضياً وَمَنامُ\nحَيتهُ أَرواح الرضى مِن رَبِهِ\nوَهمى عَلَيهِ مِن الهبات غَمام",
+        "pac_score": 1.091206199119651
+      },
+      {
+        "record_index": 119,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60719",
+        "text": "<|user|>\nNo anime Fairy Tail, quem é Happy?\n<|assistant|>\nHappy é um Exceed, uma espécie de gato alado, e é o fiel companheiro de Natsu Dragneel. Ele é conhecido por sua alegria, amor por peixes e sua habilidade de voar com suas asas. Happy é parte fundamental da equipe de Natsu.",
+        "pac_score": 4.064971053481102
+      },
+      {
+        "record_index": 120,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60720",
+        "text": "<|user|>\nDécrivez les grandes étapes historiques du cinéma scandinave.\n<|assistant|>\nAu cours et au lendemain de la Première Guerre mondiale, c'est d'abord dans les pays scandinaves, restés neutres, que se dévoilent de nouveaux génies. Les Suédois Victor Sjöström ([1879-1960] les Proscrits, 1917 ; la Charrette fantôme, 1921) et Mauritz Stiller ([1883-1928] le Trésor d'Arne, 1919), de même que le Danois Carl Theodor Dreyer ([1889-1968] le Président, 1920 ; Feuillets arrachés au livre de Satan, 1921) s'attachent à dépeindre les travers de la nature humaine et utilisent des décors symboliques pour créer l'atmosphère et transmettre l'émotion. Dreyer s'expatriera en France pour tourner son chef-d'œuvre, la Passion de Jeanne d'Arc (1928), tandis que Sjöström et Stiller (qui découvrira Greta Garbo [1905-1990]) poursuivront leur carrière aux États-Unis.",
+        "pac_score": 4.250605802902784
+      },
+      {
+        "record_index": 121,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60721",
+        "text": "<|user|>\nالسؤال: من أول نبي قال أما بعد ؟\n\n<|assistant|>\nالإجابة : نبي الله داود عليه السلام .",
+        "pac_score": 1.2835043144226068
+      },
+      {
+        "record_index": 122,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60722",
+        "text": "<|user|>\nنبي من الأنبياء اشتهر بالصبر الشديد على قضاء الله عز وجل؟\n<|assistant|>\nالإجابة: هو سيدنا أيوب عليه السلام.",
+        "pac_score": 0.8939342083869048
+      },
+      {
+        "record_index": 123,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60723",
+        "text": "<|user|>\nFrase 1: La capilla metodista abandonada es uno de los pocos edificios de ladrillo de Upsall.\nFrase 2: La capilla metodista construida es uno de los pocos edificios en ladrillo abandonados de Upsall.\nPregunta: ¿Podemos reescribir la frase 1 a la frase 2?\n<|assistant|>\nNo, las frases 1 y 2 no son intercambiables ni pueden reescribirse una a la otra, ya que tienen significados opuestos.\n\nFrase 1: \"La capilla metodista abandonada es uno de los pocos edificios de ladrillo de Upsall.\"\nFrase 2: \"La capilla metodista construida es uno de los pocos edificios en ladrillo abandonados de Upsall.\"\n\nEn la frase 1 se menciona que la capilla metodista está abandonada, mientras que en la frase 2 se dice que la capilla metodista está construida, pero abandonada. Por lo tanto, las frases tienen significados diferentes y no pueden reemplazarse entre sí.",
+        "pac_score": 5.797883800719235
+      },
+      {
+        "record_index": 124,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60724",
+        "text": "<|user|>\nNapisz ciąg dalszy: \"Był kapitanem brytyjskiej drużyny piłki wodnej na igrzyskach olimpijskich w 1912 w Sztokholmie i ponownie zdobył z nią złoty medal. Odpadł w ćwierćfinale wyścigu...\n<|assistant|>\n... pływackiego na 100 m stylem dowolnym.",
+        "pac_score": 1.5229440400094694
+      },
+      {
+        "record_index": 125,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60725",
+        "text": "<|user|>\n請回答這個問題：\n什麼是語言學中的「語言接觸」？\n\n\n<|assistant|>\n答案：語言接觸是指不同語言和語言使用者之間的相互影響和交流。它涉及不同語言之間的語言借詞、語言轉移和語言變體等現象，以及語言共同體之間的語言接觸和語言變化。",
+        "pac_score": -0.0
+      },
+      {
+        "record_index": 126,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60726",
+        "text": "<|user|>\nපහත යෙදුමේ තේරුම කුමක්ද?(කිතුල් කර්මාන්තය හා  සම්බන්ධවේ)\nඅග කැපීම\n<|assistant|>\nමල මැදීමේදී මලේ අග කොටසක් කපා ඉවත්කරණා අතර එය අග කැපීමයි.",
+        "pac_score": 0.37886926874969973
+      },
+      {
+        "record_index": 127,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60727",
+        "text": "<|user|>\nSheeg qeybaha ay u kala baxo nafaqo xumada, nuucyadeeda iyo sida loo maareeyo.?\n<|assistant|>\nNafaqo xumada waxaa loo kala qeybiyaa laba nuuc oo kala ah mid waqti yar heysay qofka (Acute malnutrition) iyo mid waqti dheer soo\nheysay qofka",
+        "pac_score": 1.3282785597155167
+      },
+      {
+        "record_index": 128,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60728",
+        "text": "<|user|>\n莎士比亞的四大愛情劇是？\n<|assistant|>\n《李爾王》、《哈姆雷特》、《奧賽羅》、《麥克白》",
+        "pac_score": -0.0
+      },
+      {
+        "record_index": 129,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60729",
+        "text": "<|user|>\nఉదయం 9 గంటల సమయంలో 18 మీ. పొడవు గల చెట్టు 9 మీ. పొడవు గల నీడను ఏర్పరచిన, అదే సమయ 40 మీ. ఎత్తుగల సెల్ టవరు నీడ పొడవు ఎంత?\n<|assistant|>\n18/9=40/x (x సెల్ టవరు నీడ పొడవు)\n2 = 40/x ⇒ x = 40/2 = 20",
+        "pac_score": 1.2779351354719282
+      },
+      {
+        "record_index": 130,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60730",
+        "text": "<|user|>\nÀjẹsára àrùn onígbáméjì\n<|assistant|>\nÀwọn àjẹsára àrùn onígbáméjì jẹ́ àwọn àjẹsára tó ní agbára láti dènà àrùn onígbáméjì. Ìwọ̀n agbára wọn tó bíi 85% ní oṣù mẹ́fà àkọ́kọ́ lẹ́yìn tí ènìyàn gbà wọ́n, àti 50–60% lẹ́yìn ọdún kan. Ìwọ̀n agbára wọn a má a dínkù sí ìwọ̀n tó kéré sí 50% lẹ́yìn ọdún méjì. Bí a bá ti fún iye àwọn ènìyàn tó pọ̀ púpọ̀ láàárín àwùjọ kan ní àjẹsára náà, ànfàní tó wà nínú ààbò lọ́wọ́ àrùn tí ọ̀pọ̀lọpọ̀ ènìyàn àwùjọ kan ní lè wáyé láti dáàbò bo àwọn tí kò tíì gba àjẹsára náà. Àjọ Ìlera Àgbáyé gba ni nímọ̀ràn láti lò wọ́n pẹ̀lú àwọn ìgbésẹ̀ mìíràn tí a lè gbé fún àwọn tó wà lábẹ́ ewu ńlá láti kò àrùn náà. Ìwọ̀n egbògi náà méjì tàbí mẹ́ẹ̀ta, tí à ń gba ẹnu lò, ni a má a ń sábà dámọ̀ràn. Àwọn oríṣi tí a lè fún ni bí abẹ́rẹ́ náà wà ní àwọn agbègbè kan ní àgbáyé ṣùgbọ́n wọn kò fi bẹ́ẹ̀ wọ́pọ̀.\n\nÀwọn oríṣi àjẹsára náà méjèèjì tó wà, tí à ń gba ẹnu lò, ni a lè lò láìséwu. Inú-rírun tàbí ìgbẹ́-yíyà tí kò fi bẹ́ẹ̀ ní ipá lè wáyé. Wọ́n ṣeé lò láìséwu bí ènìyàn bá ní oyún, bẹ́ẹ̀ sì ni àwọn tí agbára àti kojú àìsàn wọn kò múnádóko náà tún lè lò ó. A fún ni ní ìwé-àṣẹ láti lò wọ́n ní àwọn orílẹ̀-èdè tó ju 60 lọ. Ìmúlò rẹ̀ ní àwọn orílẹ̀-èdè tí àrùn náà ti wọ́pọ̀ a má a mú àbájáde tí a lérò wáyé.\n\nÀwọn àjẹsára àkọ́kọ́ tí a lò láti kojú àrùn onígbáméjì ni a ṣe àgbéjáde wọn ní ìparí àwọn ọdún 1800. Àwọn ló jẹ́ àjẹsára àkọ́kọ́ tí a lò káàkiri júlọ, tí a ṣe àgbéjáde rẹ̀ ní yàrá tí a tí ń ṣe àgbéjáde àwọn egbògi. A ṣe àgbéjáde àwọn àjẹsára tí à ń gba ẹnu lò ní àwọn ọdún 1990. Ó wà lórí Àkójọ Àwọn Egbògi Kòṣeémáàní ti Àjọ Ìlera Àgbáyé (World Health Organization), àwọn òògùn tó ṣe pàtàkì jùlọ tí a nílò fún ètò ìlera ìbẹ̀rẹ̀pẹ̀pẹ̀ yòówù. Iye owó tí a nílò láti dáàbò bo ara ẹni lọ́wọ́ àrùn onígbáméjì jẹ́ láàárín 0.1 sí 4.0 USD.",
+        "pac_score": 2.8867284196322083
+      },
+      {
+        "record_index": 131,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60731",
+        "text": "<|user|>\nTamin'ny taona firy no nahavitan'ny olona nisaoty tamin'ny elon'aina (parachute) voalohany ? \n<|assistant|>\nTamin'ny taona 1797 no nahavitan'ny olona nisaoty tamin'ny elon'aina voalohany.",
+        "pac_score": 1.8534691174825033
+      },
+      {
+        "record_index": 132,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60732",
+        "text": "<|user|>\nQual país tem a maior linha costeira do mundo?\n<|assistant|>\nCanadá. Sua costa tem uma extensão de 243.042 km.",
+        "pac_score": 3.360871101148202
+      },
+      {
+        "record_index": 133,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60733",
+        "text": "<|user|>\nQuelle est une astuce pour mieux dormir la nuit ?\n<|assistant|>\nIl faut dormir tôt, boire de l'eau et avoir un bon matelas. Il faut eégalement faire du sport pour éviter les courbatures.",
+        "pac_score": 3.4029331835578454
+      },
+      {
+        "record_index": 134,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60734",
+        "text": "<|user|>\nGịnị bụ Ịmụ ọrụ?\n<|assistant|>\nỊmụ oru bụ usoro maka ịzụ ọgbọra ọhụrụ nke ndị na-amu ọrụ ahịa ma ọ bụ ọrụ nwere ọzụzụ ọrụ na mgbe ụfọdụ ọmụmụ ihe na-esote (ọrụ klas na ịgụ akwụkwọ). \n\nIkuzi nkuzi nwekwara ike ime ka ndị na-eme ya nweta ikike ịme n'ọrụ ahaziri ahazi. A na-eme ọtụtụ n'ime ọzụzụ ha mgbe ha na-arụ ọrụ maka onye were ha n'ọrụ na-enyere ndị na-amụ akwụkwọ aka ịmụta ọrụ ha , n'ọnọdụ maka ọrụ ha na-aga n'ihu maka oge ekwekọrịtara mgbe ha nwetachara ikike pụrụ iche.",
+        "pac_score": 1.10617541383814
+      },
+      {
+        "record_index": 135,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60735",
+        "text": "<|user|>\nኢትዮጵያ የመጀመሪያው የመሬት ምልክታ ሳተላይቷን መቼ አመጠቀች?\n<|assistant|>\nታኅሣሥ ወር 2012 ዓ.ም",
+        "pac_score": 0.20879605855697125
+      },
+      {
+        "record_index": 136,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60736",
+        "text": "<|user|>\nSlutför den här frasen: Arley Dinas spelade 29 landskamper för det colombianska landslaget. Han deltog\n<|assistant|>\nbland annat i Concacaf Gold Cup 2000 och Copa América 2004.",
+        "pac_score": 0.3349033779568149
+      },
+      {
+        "record_index": 137,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60737",
+        "text": "<|user|>\nDolly a été la toute première créature vivante à être clonée. Quel type d'animal était-elle ?\n<|assistant|>\nDolly la brebis a été la toute première créature vivante à être clonée avec succès. Elle a été clonée à l’aide d’une technique appelée transfert nucléaire de cellules somatiques. Dolly est née le 5 juillet 1996 au Roslin Institute en Écosse. Elle n’était pas le premier animal à être cloné, mais elle a acquis une large reconnaissance en raison de la complexité du processus de clonage et du fait qu’elle était un mammifère. Cependant, son décès le 14 février 2003 a laissé la communauté perplexe quant à la reussite du processus de clonage.",
+        "pac_score": 6.701277263959248
+      },
+      {
+        "record_index": 138,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60738",
+        "text": "<|user|>\nMahlathi ke mantšu a mohuta mang?\n<|assistant|>\nMahlathi ke mantšu ao a hlathago modiro, a hlaloša ka botlalo ka ga madiri gore modiro o direga neng, kae, le bjang ka mabakeng a mangwe gakae.",
+        "pac_score": 0.5173991034759222
+      },
+      {
+        "record_index": 139,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_60739",
+        "text": "<|user|>\nకింద ఇచ్చిన పద్యానికి భావం రాయండి:\nక. దాని విడిపింప ద్రోణుఁడు\nదానపుడు సమర్థుఁడయ్యుఁ దడయక పనిచెన్\n“దీని విడిపింపు” డని నృప\nసూనులు శరసజ్యచాపశోభితకరులన్.\n<|assistant|>\nఆ మొసలిని విడిపించటానికి ద్రోణుడపుడు తాను సమర్థుడై కూడా ఆలస్యం లేకుండా దీన్ని విడిపించండని ధనుర్భాణా చేత ధరించి ఉన్న రాకుమారులను ఆజ్ఞాపించాడు",
+        "pac_score": 0.5245753629085339
+      }
+    ]
+  }
+}

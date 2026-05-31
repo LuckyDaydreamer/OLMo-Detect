@@ -1,0 +1,1305 @@
+{
+  "model_name": "OLMo2-32B-Instruct",
+  "model_path": "olmo_models/OLMo2-32B-Instruct",
+  "dataset_name": "uncontaminated_midtraining_stackexchange_math_test",
+  "dataset_path": "benchmark/midtraining/stackexchange/uncontaminated/test/uncontaminated_midtraining_stackexchange_math_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 57.0997097492218,
+  "result": {
+    "method": "dcq",
+    "dataset": "uncontaminated_midtraining_stackexchange_math_test",
+    "dataset_path": "benchmark/midtraining/stackexchange/uncontaminated/test/uncontaminated_midtraining_stackexchange_math_test.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "mean_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.34166659188011417,
+      "B": 0.28866470653725707,
+      "C": 0.25880312012589496,
+      "D": 0.10469040987284287
+    },
+    "non_preferred": [
+      "D"
+    ],
+    "num_total_records": 35,
+    "num_scored_records": 23,
+    "summary": {
+      "mean_score": 0.3349080958363155
+    },
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "sample_0",
+        "label": null,
+        "perturbations": {
+          "a": "Problem: Demonstrate that\n$$\\frac {1} {r-1} = \\frac {1} {r+1} + \\frac {2} {r^2+1} + \\frac {4} {r^4+1} +\\cdots $$\nfor all $r > 1$, with a clue given that $\\displaystyle\\frac {1} {r-1} - \\frac {1} {r+1} = \\frac {2} {r^2-1}$.\n\nThoughts :\nI am struggling to notice a relation from the clue to the problem. Any suggestions appreciated.",
+          "b": "Problem: Illustrate that\n$$\\frac {1} {r-1} = \\frac {1} {r+1} + \\frac {2} {r^2+1} + \\frac {4} {r^4+1} +\\cdots $$\nfor all $r > 1$, with a tip given that $\\displaystyle\\frac {1} {r-1} - \\frac {1} {r+1} = \\frac {2} {r^2-1}$.\n\nThoughts :\nI am facing trouble identifying a correlation from the tip to the problem. Any guidance appreciated.",
+          "c": "Problem: Verify that\n$$\\frac {1} {r-1} = \\frac {1} {r+1} + \\frac {2} {r^2+1} + \\frac {4} {r^4+1} +\\cdots $$\nfor all $r > 1$, with an indication given that $\\displaystyle\\frac {1} {r-1} - \\frac {1} {r+1} = \\frac {2} {r^2-1}$.\n\nThoughts :\nI am encountering difficulty recognizing a link from the indication to the problem. Any help appreciated.",
+          "d": "Problem: Establish that\n$$\\frac {1} {r-1} = \\frac {1} {r+1} + \\frac {2} {r^2+1} + \\frac {4} {r^4+1} +\\cdots $$\nfor all $r > 1$, with a suggestion given that $\\displaystyle\\frac {1} {r-1} - \\frac {1} {r+1} = \\frac {2} {r^2-1}$.\n\nThoughts :\nI am having trouble finding a connection from the suggestion to the problem. Any ideas appreciated."
+        },
+        "bdq_probs": {
+          "A": 0.45178690552711487,
+          "B": 0.16620635986328125,
+          "C": 0.2740257680416107,
+          "D": 0.10730920732021332,
+          "E": 0.00046682643005624413
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4341244697570801,
+            "B": 0.1500329077243805,
+            "C": 0.2802947163581848,
+            "D": 0.1324014812707901,
+            "E": 0.0029251088853925467
+          },
+          "B": {
+            "A": 0.4361930191516876,
+            "B": 0.20604759454727173,
+            "C": 0.219334214925766,
+            "D": 0.13303273916244507,
+            "E": 0.005158186890184879
+          },
+          "C": {
+            "A": 0.42334648966789246,
+            "B": 0.19997957348823547,
+            "C": 0.25677689909935,
+            "D": 0.11394315958023071,
+            "E": 0.005672838538885117
+          },
+          "D": {
+            "A": 0.3707505762577057,
+            "B": 0.18643255531787872,
+            "C": 0.25481635332107544,
+            "D": 0.1864279955625534,
+            "E": 0.0009782561101019382
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4341244697570801,
+          "B": 0.20604759454727173,
+          "C": 0.25677689909935,
+          "D": 0.1864279955625534
+        },
+        "score": 0.2708442397415638
+      },
+      {
+        "record_index": 1,
+        "sample_id": "sample_1",
+        "label": null,
+        "perturbations": {
+          "a": "If $H$ is a homotopy from $f$ to $g$, and $H'$ is a homotopy of $g$ to $j$, then\n\n$F\\left(x,t\\right) = \\left\\{\n     \\begin{array}{lr}\n       H(x,2t) &,\\text{ if } 0 \\le t \\le \\frac{1}{2}\\\\\n       H'(x,2t-1) &, \\text{ if } \\frac{1}{2} \\le t \\le 1\n     \\end{array}\n   \\right.\\\\$\n\nis a homotopy from $f$ to $j$.\n\nI can observe that this is a transitive characteristic, but I can't seem to discover a way to demonstrate that this mapping is continuous.\n\nI know to demonstrate continuity I must demonstrate that $V \\in T' \\Rightarrow F^{-1}(V) \\in T$, but I can't see how to demonstrate that $F^{-1}(V) \\in T.$\n\nAnyone have any thoughts?\n\n\nThis follows from the pasting lemma.  If the domain of $F$ is $X\\times[0,1]$, the limitation of $F$ to $X\\times[0,1/2]$ is clearly continuous, since it is acquired by composing the continuous functions $H$ and $(x,t)\\mapsto (x,2t)$.  Similarly, the limitation of $F$ to $X\\times[1/2,1]$ is also continuous.  Since these sets are closed, by the pasting lemma $F$ is also continuous on their union, which is all of $X\\times[0,1]$.",
+          "b": "If $H$ is a homotopy from $f$ to $g$, and $H'$ is a homotopy of $g$ to $j$, then\n\n$F\\left(x,t\\right) = \\left\\{\n     \\begin{array}{lr}\n       H(x,2t) &,\\text{ if } 0 \\le t \\le \\frac{1}{2}\\\\\n       H'(x,2t-1) &, \\text{ if } \\frac{1}{2} \\le t \\le 1\n     \\end{array}\n   \\right.\\\\$\n\nis a homotopy from $f$ to $j$.\n\nI can perceive that this is a transitive property, but I can't seem to locate a way to illustrate that this mapping is continuous.\n\nI know to illustrate continuity I must illustrate that $V \\in T' \\Rightarrow F^{-1}(V) \\in T$, but I can't see how to illustrate that $F^{-1}(V) \\in T.$\n\nAnyone have any suggestions?\n\n\nThis follows from the pasting lemma.  If the domain of $F$ is $X\\times[0,1]$, the restriction of $F$ to $X\\times[0,1/2]$ is clearly continuous, since it is achieved by composing the continuous functions $H$ and $(x,t)\\mapsto (x,2t)$.  Similarly, the restriction of $F$ to $X\\times[1/2,1]$ is also continuous.  Since these sets are closed, by the pasting lemma $F$ is also continuous on their union, which is all of $X\\times[0,1]$.",
+          "c": "If $H$ is a homotopy from $f$ to $g$, and $H'$ is a homotopy of $g$ to $j$, then\n\n$F\\left(x,t\\right) = \\left\\{\n     \\begin{array}{lr}\n       H(x,2t) &,\\text{ if } 0 \\le t \\le \\frac{1}{2}\\\\\n       H'(x,2t-1) &, \\text{ if } \\frac{1}{2} \\le t \\le 1\n     \\end{array}\n   \\right.\\\\$\n\nis a homotopy from $f$ to $j$.\n\nI can notice that this is a transitive feature, but I can't seem to find a way to indicate that this mapping is continuous.\n\nI know to indicate continuity I must indicate that $V \\in T' \\Rightarrow F^{-1}(V) \\in T$, but I can't see how to indicate that $F^{-1}(V) \\in T.$\n\nAnyone have any recommendations?\n\n\nThis follows from the pasting lemma.  If the domain of $F$ is $X\\times[0,1]$, the constraining of $F$ to $X\\times[0,1/2]$ is clearly continuous, since it is derived by composing the continuous functions $H$ and $(x,t)\\mapsto (x,2t)$.  Similarly, the constraining of $F$ to $X\\times[1/2,1]$ is also continuous.  Since these sets are closed, by the pasting lemma $F$ is also continuous on their union, which is all of $X\\times[0,1]$.",
+          "d": "If $H$ is a homotopy from $f$ to $g$, and $H'$ is a homotopy of $g$ to $j$, then\n\n$F\\left(x,t\\right) = \\left\\{\n     \\begin{array}{lr}\n       H(x,2t) &,\\text{ if } 0 \\le t \\le \\frac{1}{2}\\\\\n       H'(x,2t-1) &, \\text{ if } \\frac{1}{2} \\le t \\le 1\n     \\end{array}\n   \\right.\\\\$\n\nis a homotopy from $f$ to $j$.\n\nI can realize that this is a transitive aspect, but I can't seem to determine a way to reveal that this mapping is continuous.\n\nI know to reveal continuity I must reveal that $V \\in T' \\Rightarrow F^{-1}(V) \\in T$, but I can't see how to reveal that $F^{-1}(V) \\in T.$\n\nAnyone have any proposals?\n\n\nThis follows from the pasting lemma.  If the domain of $F$ is $X\\times[0,1]$, the restriction of $F$ to $X\\times[0,1/2]$ is clearly continuous, since it is formulated by composing the continuous functions $H$ and $(x,t)\\mapsto (x,2t)$.  Similarly, the restriction of $F$ to $X\\times[1/2,1]$ is also continuous.  Since these sets are closed, by the pasting lemma $F$ is also continuous on their union, which is all of $X\\times[0,1]$."
+        },
+        "bdq_probs": {
+          "A": 0.4621064066886902,
+          "B": 0.24735136330127716,
+          "C": 0.2050604224205017,
+          "D": 0.07086687535047531,
+          "E": 0.014397491700947285
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.47434118390083313,
+            "B": 0.22406631708145142,
+            "C": 0.21048986911773682,
+            "D": 0.0774347260594368,
+            "E": 0.01345614530146122
+          },
+          "B": {
+            "A": 0.49387314915657043,
+            "B": 0.23329319059848785,
+            "C": 0.19340570271015167,
+            "D": 0.06683897227048874,
+            "E": 0.012364006601274014
+          },
+          "C": {
+            "A": 0.48025673627853394,
+            "B": 0.2268608957529068,
+            "C": 0.20020286738872528,
+            "D": 0.07840043306350708,
+            "E": 0.014056430198252201
+          },
+          "D": {
+            "A": 0.44808876514434814,
+            "B": 0.2398480474948883,
+            "C": 0.21166417002677917,
+            "D": 0.08823459595441818,
+            "E": 0.011941271834075451
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.47434118390083313,
+          "B": 0.23329319059848785,
+          "C": 0.20020286738872528,
+          "D": 0.08823459595441818
+        },
+        "score": 0.2490179594606161
+      },
+      {
+        "record_index": 2,
+        "sample_id": "sample_2",
+        "label": null,
+        "perturbations": {
+          "a": "I can't appear to determine the inequality choice, I replaced n=2 for the response piece is there any refined method of obtaining it?",
+          "b": "I can't appear to resolve the inequality selection, I exchanged n=2 for the reply segment is there any sophisticated manner of acquiring it?",
+          "c": "I can't seem to solve the inequality alternative, I switched n=2 for the result portion is there any graceful technique of receiving it?",
+          "d": "I can't appear to conclude the inequality option, I substituted n=2 for the outcome part is there any polished approach of achieving it?"
+        },
+        "bdq_probs": {
+          "A": 0.19086983799934387,
+          "B": 0.24508662521839142,
+          "C": 0.45788145065307617,
+          "D": 0.1021636351943016,
+          "E": 0.0032840766943991184
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0952359214425087,
+            "B": 0.06149083375930786,
+            "C": 0.7973942160606384,
+            "D": 0.04360074922442436,
+            "E": 0.001915698521770537
+          },
+          "B": {
+            "A": 0.16719166934490204,
+            "B": 0.5149989128112793,
+            "C": 0.27565672993659973,
+            "D": 0.03730538487434387,
+            "E": 0.004185506608337164
+          },
+          "C": {
+            "A": 0.12472992390394211,
+            "B": 0.1413404941558838,
+            "C": 0.7177738547325134,
+            "D": 0.014896392822265625,
+            "E": 0.0008145463070832193
+          },
+          "D": {
+            "A": 0.19039428234100342,
+            "B": 0.20267915725708008,
+            "C": 0.45673927664756775,
+            "D": 0.14827653765678406,
+            "E": 0.001030792249366641
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0952359214425087,
+          "B": 0.5149989128112793,
+          "C": 0.7177738547325134,
+          "D": 0.14827653765678406
+        },
+        "score": 0.36907130666077137
+      },
+      {
+        "record_index": 3,
+        "sample_id": "sample_3",
+        "label": null,
+        "perturbations": {
+          "a": "Pleasant day! I faced this issue yesterday and I ultimately resolved the issue accurately.",
+          "b": "Wonderful day! I stumbled upon this challenge yesterday and I finally replied to the challenge correctly.",
+          "c": "Nice day! I came across this dilemma yesterday and I ultimately solved the dilemma correctly.",
+          "d": "Fine day! I encountered this situation yesterday and I eventually addressed the situation accurately."
+        },
+        "bdq_probs": {
+          "A": 0.30111533403396606,
+          "B": 0.05570327490568161,
+          "C": 0.34120380878448486,
+          "D": 0.30110928416252136,
+          "E": 0.0003752996271941811
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.343435674905777,
+            "B": 0.19569331407546997,
+            "C": 0.30308398604393005,
+            "D": 0.15240156650543213,
+            "E": 0.0046020494773983955
+          },
+          "B": {
+            "A": 0.551245391368866,
+            "B": 0.2298034280538559,
+            "C": 0.17896762490272522,
+            "D": 0.03109988011419773,
+            "E": 0.008370179682970047
+          },
+          "C": {
+            "A": 0.3356398344039917,
+            "B": 0.14894361793994904,
+            "C": 0.4309763014316559,
+            "D": 0.07972083240747452,
+            "E": 0.004359178710728884
+          },
+          "D": {
+            "A": 0.24226807057857513,
+            "B": 0.1886834055185318,
+            "C": 0.3752354085445404,
+            "D": 0.1886776089668274,
+            "E": 0.0044372715055942535
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.343435674905777,
+          "B": 0.2298034280538559,
+          "C": 0.4309763014316559,
+          "D": 0.1886776089668274
+        },
+        "score": 0.29822325333952904
+      },
+      {
+        "record_index": 4,
+        "sample_id": "sample_4",
+        "label": null,
+        "perturbations": {
+          "a": "Perhaps a strange inquiry, but something I frequently contemplate hypothetically.",
+          "b": "Perhaps an unusual question, but something I regularly ponder hypothetically.",
+          "c": "Perhaps an unusual inquiry, but something I commonly muse hypothetically.",
+          "d": "Perhaps a peculiar question, but something I often speculate hypothetically."
+        },
+        "bdq_probs": {
+          "A": 0.42601069808006287,
+          "B": 0.3317908048629761,
+          "C": 0.1890507936477661,
+          "D": 0.050880707800388336,
+          "E": 0.001536447904072702
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4386777877807617,
+            "B": 0.19467471539974213,
+            "C": 0.08114785701036453,
+            "D": 0.2832426130771637,
+            "E": 0.0016841768519952893
+          },
+          "B": {
+            "A": 0.27420052886009216,
+            "B": 0.4246940314769745,
+            "C": 0.24198496341705322,
+            "D": 0.04204951226711273,
+            "E": 0.016466818749904633
+          },
+          "C": {
+            "A": 0.18250831961631775,
+            "B": 0.3629622757434845,
+            "C": 0.18250972032546997,
+            "D": 0.24945467710494995,
+            "E": 0.02179744280874729
+          },
+          "D": {
+            "A": 0.23766998946666718,
+            "B": 0.4440295994281769,
+            "C": 0.17389015853405,
+            "D": 0.12721548974514008,
+            "E": 0.016173677518963814
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4386777877807617,
+          "B": 0.4246940314769745,
+          "C": 0.18250972032546997,
+          "D": 0.12721548974514008
+        },
+        "score": 0.29327425733208656
+      },
+      {
+        "record_index": 6,
+        "sample_id": "sample_6",
+        "label": null,
+        "perturbations": {
+          "a": "Let $(X, \\mathcal{A}, \\mu)$ be a measure space, $S:X\\rightarrow X$ a nonsingular transformation, and $f\\in L^\\infty$ . The operator $U:L^\\infty \\rightarrow L^\\infty$ stipulated by\n\n$\nUf(x) = f(S(x))\n$\n\nis termed the Koopman operator with regard to $S$ .\n\nThis is the definition of the Koopman operator according to reference [1] and comparable definitions can be located also in other textbooks/papers.\n\nBut, why do we require functions defined on $L^\\infty$ and not on other spaces like $L^1$ ?\n\n[1]: Andrzej Lasota, Michael C. Mackey-Probabilistic characteristics of deterministic systems-Cambridge University Press (1985)\n\nOne possible explanation is that on $L^\\infty$ you acquire an isometry. That's not the situation on $L^1$ . You can still characterize the operator, of course.\n\nSay you take $L^1[0,1]$ with Lebesgue measure, and $S(x)=x^2$ . Then, with $f(t)=t$ , you possess $$\n\\|f\\|_1=\\tfrac12,\\ \\ \\ \\|Uf\\|_1=\\int_0^1 t^2\\,dt=\\tfrac13.\n$$ In fact, we can advance the example and demonstrate that in $L^1$ the operator $U$ is not even bounded. Take $S$ as above and $f_n(t)=n\\,1_{[0,1/n]}$ . Then $$\n\\|f_n\\|_1=1, \\ \\ \\ \\|Uf_n\\|_1=n^2\\int_0^11_{[0,1/n]},\\,dt=n\n$$",
+          "b": "Let $(X, \\mathcal{A}, \\mu)$ be a measure space, $S:X\\rightarrow X$ a nonsingular transformation, and $f\\in L^\\infty$ . The operator $U:L^\\infty \\rightarrow L^\\infty$ described by\n\n$\nUf(x) = f(S(x))\n$\n\nis designated the Koopman operator with relation to $S$ .\n\nThis is the definition of the Koopman operator according to reference [1] and analogous definitions can be found also in additional textbooks/papers.\n\nBut, why do we need functions specified on $L^\\infty$ and not on other spaces like $L^1$ ?\n\n[1]: Andrzej Lasota, Michael C. Mackey-Probabilistic attributes of deterministic systems-Cambridge University Press (1985)\n\nOne possible rationale is that on $L^\\infty$ you receive an isometry. That's not the instance on $L^1$ . You can still define the operator, of course.\n\nSay you take $L^1[0,1]$ with Lebesgue measure, and $S(x)=x^2$ . Then, with $f(t)=t$ , you have $$\n\\|f\\|_1=\\tfrac12,\\ \\ \\ \\|Uf\\|_1=\\int_0^1 t^2\\,dt=\\tfrac13.\n$$ In fact, we can extend the example and exhibit that in $L^1$ the operator $U$ is not even bounded. Take $S$ as above and $f_n(t)=n\\,1_{[0,1/n]}$ . Then $$\n\\|f_n\\|_1=1, \\ \\ \\ \\|Uf_n\\|_1=n^2\\int_0^11_{[0,1/n]},\\,dt=n\n$$",
+          "c": "Let $(X, \\mathcal{A}, \\mu)$ be a measure space, $S:X\\rightarrow X$ a nonsingular transformation, and $f\\in L^\\infty$ . The operator $U:L^\\infty \\rightarrow L^\\infty$ established by\n\n$\nUf(x) = f(S(x))\n$\n\nis baptized the Koopman operator in connection with $S$ .\n\nThis is the definition of the Koopman operator according to reference [1] and parallel definitions can be discovered also in various textbooks/papers.\n\nBut, why do we require functions delineated on $L^\\infty$ and not on other spaces like $L^1$ ?\n\n[1]: Andrzej Lasota, Michael C. Mackey-Probabilistic features of deterministic systems-Cambridge University Press (1985)\n\nOne possible cause is that on $L^\\infty$ you receive an isometry. That's not the circumstance on $L^1$ . You can still indicate the operator, of course.\n\nSay you take $L^1[0,1]$ with Lebesgue measure, and $S(x)=x^2$ . Then, with $f(t)=t$ , you contain $$\n\\|f\\|_1=\\tfrac12,\\ \\ \\ \\|Uf\\|_1=\\int_0^1 t^2\\,dt=\\tfrac13.\n$$ In fact, we can push the example and demonstrate that in $L^1$ the operator $U$ is not even bounded. Take $S$ as above and $f_n(t)=n\\,1_{[0,1/n]}$ . Then $$\n\\|f_n\\|_1=1, \\ \\ \\ \\|Uf_n\\|_1=n^2\\int_0^11_{[0,1/n]},\\,dt=n\n$$",
+          "d": "Let $(X, \\mathcal{A}, \\mu)$ be a measure space, $S:X\\rightarrow X$ a nonsingular transformation, and $f\\in L^\\infty$ . The operator $U:L^\\infty \\rightarrow L^\\infty$ outlined by\n\n$\nUf(x) = f(S(x))\n$\n\nis referred to as the Koopman operator with respect to $S$ .\n\nThis is the definition of the Koopman operator according to reference [1] and similar definitions can be encountered also in diverse textbooks/papers.\n\nBut, why do we necessitate functions defined on $L^\\infty$ and not on other spaces like $L^1$ ?\n\n[1]: Andrzej Lasota, Michael C. Mackey-Probabilistic aspects of deterministic systems-Cambridge University Press (1985)\n\nOne possible justification is that on $L^\\infty$ you obtain an isometry. That's not the scenario on $L^1$ . You can still outline the operator, of course.\n\nSay you take $L^1[0,1]$ with Lebesgue measure, and $S(x)=x^2$ . Then, with $f(t)=t$ , you own $$\n\\|f\\|_1=\\tfrac12,\\ \\ \\ \\|Uf\\|_1=\\int_0^1 t^2\\,dt=\\tfrac13.\n$$ In fact, we can extend the example and prove that in $L^1$ the operator $U$ is not even bounded. Take $S$ as above and $f_n(t)=n\\,1_{[0,1/n]}$ . Then $$\n\\|f_n\\|_1=1, \\ \\ \\ \\|Uf_n\\|_1=n^2\\int_0^11_{[0,1/n]},\\,dt=n\n$$"
+        },
+        "bdq_probs": {
+          "A": 0.4992271363735199,
+          "B": 0.19550302624702454,
+          "C": 0.18365725874900818,
+          "D": 0.11139427870512009,
+          "E": 0.010042473673820496
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5179529786109924,
+            "B": 0.19054646790027618,
+            "C": 0.1905456781387329,
+            "D": 0.09000769257545471,
+            "E": 0.010749852284789085
+          },
+          "B": {
+            "A": 0.5618135333061218,
+            "B": 0.20668314397335052,
+            "C": 0.16096390783786774,
+            "D": 0.06710008531808853,
+            "E": 0.0032379222102463245
+          },
+          "C": {
+            "A": 0.4824179708957672,
+            "B": 0.2140742987394333,
+            "C": 0.18891945481300354,
+            "D": 0.10112167149782181,
+            "E": 0.013264265842735767
+          },
+          "D": {
+            "A": 0.5414518713951111,
+            "B": 0.16513647139072418,
+            "C": 0.16513541340827942,
+            "D": 0.12081646174192429,
+            "E": 0.007255560718476772
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5179529786109924,
+          "B": 0.20668314397335052,
+          "C": 0.18891945481300354,
+          "D": 0.12081646174192429
+        },
+        "score": 0.2585930097848177
+      },
+      {
+        "record_index": 9,
+        "sample_id": "sample_9",
+        "label": null,
+        "perturbations": {
+          "a": "In the piece regarding metric space on wikipedia:  \n\nIf $X$ is a thorough subset of the metric space $M$, then $X$ is shut in $M$. Indeed, a space is thorough if it is shut in any containing metric space.  \n\nDo the second statements express that:  \n\nIn a metric space, a subset is thorough if and only if the subset is shut in the metric space.  \n\nIf not, what is the connection between completeness and shutness for a subset in a metric space?  \n\nThanks and respects!  \n\nNotice: A subset is thorough iff it is shut in any metric space in which it is a subspace.  \n\nA shut subspace of a thorough metric space is thorough. On the contrary, a shut subspace of a metric space need not be thorough. Take the space $(0,1)$ which is shut in itself. But it is not thorough. So shutness is not sufficient for thoroughness.  \n\nHowever a compact metric space is always thorough. Compactness is the correct property.  \n\nFor this and more, try out G. F. Simmons, \"Introduction to Topology and Modern Analysis\".",
+          "b": "In the document concerning metric space on wikipedia:  \n\nIf $X$ is a entire subset of the metric space $M$, then $X$ is confined in $M$. Indeed, a space is entire if it is confined in any containing metric space.  \n\nDo the subsequent sentences convey that:  \n\nIn a metric space, a subset is entire if and only if the subset is confined in the metric space.  \n\nIf not, what is the linkage between completeness and confinement for a subset in a metric space?  \n\nThanks and best regards!  \n\nNotice: A subset is entire iff it is confined in any metric space in which it is a subspace.  \n\nA confined subspace of a entire metric space is entire. Conversely, a confined subspace of a metric space need not be entire. Take the space $(0,1)$ which is confined in itself. But it is not entire. So confinement is not enough for entirety.  \n\nHowever a compact metric space is always entire. Compactness is the proper attribute.  \n\nFor this and more, try out G. F. Simmons, \"Introduction to Topology and Modern Analysis\".",
+          "c": "In the essay about metric space on wikipedia:  \n\nIf $X$ is a full subset of the metric space $M$, then $X$ is closed up in $M$. Indeed, a space is full if it is closed up in any containing metric space.  \n\nDo the following statements assert that:  \n\nIn a metric space, a subset is full if and only if the subset is closed up in the metric space.  \n\nIf not, what is the association between completeness and closedness for a subset in a metric space?  \n\nThanks and sincere regards!  \n\nNotice: A subset is full iff it is closed up in any metric space in which it is a subspace.  \n\nA closed up subspace of a full metric space is full. Conversely, a closed up subspace of a metric space need not be full. Take the space $(0,1)$ which is closed up in itself. But it is not full. So closedness is not adequate for fullness.  \n\nHowever a compact metric space is always full. Compactness is the suitable property.  \n\nFor this and more, try out G. F. Simmons, \"Introduction to Topology and Modern Analysis\".",
+          "d": "In the report about metric space on wikipedia:  \n\nIf $X$ is a total subset of the metric space $M$, then $X$ is sealed in $M$. Indeed, a space is total if it is sealed in any containing metric space.  \n\nDo the next sentences indicate that:  \n\nIn a metric space, a subset is total if and only if the subset is sealed in the metric space.  \n\nIf not, what is the relationship between completeness and sealedness for a subset in a metric space?  \n\nThanks and warm regards!  \n\nNotice: A subset is total iff it is sealed in any metric space in which it is a subspace.  \n\nA sealed subspace of a total metric space is total. On the flip side, a sealed subspace of a metric space need not be total. Take the space $(0,1)$ which is sealed in itself. But it is not total. So sealedness is not sufficient for totality.  \n\nHowever a compact metric space is always total. Compactness is the right characteristic.  \n\nFor this and more, try out G. F. Simmons, \"Introduction to Topology and Modern Analysis\"."
+        },
+        "bdq_probs": {
+          "A": 0.44959840178489685,
+          "B": 0.226075679063797,
+          "C": 0.21237802505493164,
+          "D": 0.09424174576997757,
+          "E": 0.017432894557714462
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.535359799861908,
+            "B": 0.1738099753856659,
+            "C": 0.19695042073726654,
+            "D": 0.08210117369890213,
+            "E": 0.011463789269328117
+          },
+          "B": {
+            "A": 0.39934206008911133,
+            "B": 0.2921695411205292,
+            "C": 0.22754113376140594,
+            "D": 0.06939588487148285,
+            "E": 0.011328542605042458
+          },
+          "C": {
+            "A": 0.46152547001838684,
+            "B": 0.14983826875686646,
+            "C": 0.35943901538848877,
+            "D": 0.028596706688404083,
+            "E": 0.0003772502241190523
+          },
+          "D": {
+            "A": 0.3335535228252411,
+            "B": 0.20231398940086365,
+            "C": 0.2943614721298218,
+            "D": 0.16772255301475525,
+            "E": 0.0018632151186466217
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.535359799861908,
+          "B": 0.2921695411205292,
+          "C": 0.35943901538848877,
+          "D": 0.16772255301475525
+        },
+        "score": 0.3386727273464203
+      },
+      {
+        "record_index": 10,
+        "sample_id": "sample_10",
+        "label": null,
+        "perturbations": {
+          "a": "I possess the subsequent renowned exercise in cardinal computations:",
+          "b": "I hold the ensuing famous exercise in cardinal calculations:",
+          "c": "I have the upcoming notable exercise in cardinal arithmetic:",
+          "d": "I carry the following distinguished exercise in cardinal figures:"
+        },
+        "bdq_probs": {
+          "A": 0.2836124300956726,
+          "B": 0.2503015995025635,
+          "C": 0.26644378900527954,
+          "D": 0.1949271708726883,
+          "E": 0.003570270724594593
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5256752967834473,
+            "B": 0.2058611512184143,
+            "C": 0.1706634759902954,
+            "D": 0.016897963359951973,
+            "E": 0.08061573654413223
+          },
+          "B": {
+            "A": 0.4571290910243988,
+            "B": 0.2772682309150696,
+            "C": 0.19056159257888794,
+            "D": 0.0200850497931242,
+            "E": 0.05459689348936081
+          },
+          "C": {
+            "A": 0.3677888810634613,
+            "B": 0.19686828553676605,
+            "C": 0.3245766758918762,
+            "D": 0.09299231320619583,
+            "E": 0.017201920971274376
+          },
+          "D": {
+            "A": 0.29073232412338257,
+            "B": 0.25658130645751953,
+            "C": 0.256579726934433,
+            "D": 0.1656574159860611,
+            "E": 0.02878721058368683
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5256752967834473,
+          "B": 0.2772682309150696,
+          "C": 0.3245766758918762,
+          "D": 0.1656574159860611
+        },
+        "score": 0.32329440489411354
+      },
+      {
+        "record_index": 12,
+        "sample_id": "sample_12",
+        "label": null,
+        "perturbations": {
+          "a": "We can effortlessly observe that if a series of inner functions converges then certainly the limit is still inner (using the fact that a countable union of measure zero sets still has measure zero). This indicates that the collection of inner functions is closed in $H^2$.",
+          "b": "We can readily witness that if a sequence of internal functions converges then certainly the limit is still internal (using the fact that a countable union of measure zero sets still has measure zero). This signifies that the set of inner functions is closed in $H^2$.",
+          "c": "We can straightforwardly notice that if a succession of inner functions converges then certainly the limit is still inner (using the fact that a countable union of measure zero sets still has measure zero). This denoted that the set of inner functions is closed in $H^2$.",
+          "d": "We can simply discern that if a string of inner functions converges then certainly the limit is still inner (using the fact that a countable union of measure zero sets still has measure zero). This suggests that the group of inner functions is closed in $H^2$."
+        },
+        "bdq_probs": {
+          "A": 0.3271620273590088,
+          "B": 0.5067224502563477,
+          "C": 0.09977902472019196,
+          "D": 0.06442276388406754,
+          "E": 0.0014684258494526148
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.38402360677719116,
+            "B": 0.170420303940773,
+            "C": 0.3183736205101013,
+            "D": 0.12467513233423233,
+            "E": 0.002079158090054989
+          },
+          "B": {
+            "A": 0.21160025894641876,
+            "B": 0.6122866272926331,
+            "C": 0.1132606640458107,
+            "D": 0.04435361921787262,
+            "E": 0.017920607700943947
+          },
+          "C": {
+            "A": 0.28627893328666687,
+            "B": 0.23733985424041748,
+            "C": 0.443406879901886,
+            "D": 0.030173126608133316,
+            "E": 0.002400570083409548
+          },
+          "D": {
+            "A": 0.32835036516189575,
+            "B": 0.3283635973930359,
+            "C": 0.12858660519123077,
+            "D": 0.2120060920715332,
+            "E": 0.001892370404675603
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.38402360677719116,
+          "B": 0.6122866272926331,
+          "C": 0.443406879901886,
+          "D": 0.2120060920715332
+        },
+        "score": 0.41293080151081085
+      },
+      {
+        "record_index": 13,
+        "sample_id": "sample_13",
+        "label": null,
+        "perturbations": {
+          "a": "It is asserted in some logic texts that the compactness proposition of first-order logic can be demonstrated using Tychnoff's principle from topology.",
+          "b": "It is stated in some logic writings that the compactness theorem of first-order logic can be shown using Tychnoff's concept from topology.",
+          "c": "It is maintained in some logic literature that the compactness theorem of first-order logic can be established using Tychnoff's theorem from topology.",
+          "d": "It is professed in some logic manuals that the compactness theorem of first-order logic can be verified using Tychnoff's theorem from topology."
+        },
+        "bdq_probs": {
+          "A": 0.06127814203500748,
+          "B": 0.05756772682070732,
+          "C": 0.8459011912345886,
+          "D": 0.033838510513305664,
+          "E": 0.000945080304518342
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.027103282511234283,
+            "B": 0.02710399590432644,
+            "C": 0.9260146617889404,
+            "D": 0.014967190101742744,
+            "E": 0.004494145978242159
+          },
+          "B": {
+            "A": 0.18283163011074066,
+            "B": 0.49698758125305176,
+            "C": 0.28317445516586304,
+            "D": 0.03381969779729843,
+            "E": 0.002776107285171747
+          },
+          "C": {
+            "A": 0.10593799501657486,
+            "B": 0.07281186431646347,
+            "C": 0.7827805280685425,
+            "D": 0.03660963848233223,
+            "E": 0.0015590626280754805
+          },
+          "D": {
+            "A": 0.06020931527018547,
+            "B": 0.06409325450658798,
+            "C": 0.7807719111442566,
+            "D": 0.09324465692043304,
+            "E": 0.001173824886791408
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.027103282511234283,
+          "B": 0.49698758125305176,
+          "C": 0.7827805280685425,
+          "D": 0.09324465692043304
+        },
+        "score": 0.3500290121883154
+      },
+      {
+        "record_index": 14,
+        "sample_id": "sample_14",
+        "label": null,
+        "perturbations": {
+          "a": "This is a dilemma in baby Rudin. Chapter 4, dilemma 15. I'm just examining examples at the moment. It states that any continuous open function is monotone. Recall, an open function $f: X \\to Y$ is such that any open collection $U$ in $X$ will have its image, $f(U)$ open in $Y$.",
+          "b": "This is an issue in baby Rudin. Chapter 4, issue 15. I'm just reviewing examples at the moment. It indicates that any continuous open map is monotonic. Recall, an open map $f: X \\to Y$ is such that any open set $U$ in $X$ will possess its image, $f(U)$ open in $Y$.",
+          "c": "This is a concern in baby Rudin. Chapter 4, concern 15. I'm just observing examples at the moment. It expresses that any continuous open mapping is monotone. Recall, an open mapping $f: X \\to Y$ is such that any open group $U$ in $X$ will contain its image, $f(U)$ open in $Y$.",
+          "d": "This is a challenge in baby Rudin. Chapter 4, challenge 15. I'm just considering examples at the moment. It claims that any continuous open operator is monotonic. Recall, an open operator $f: X \\to Y$ is such that any open subset $U$ in $X$ will carry its image, $f(U)$ open in $Y$."
+        },
+        "bdq_probs": {
+          "A": 0.23622341454029083,
+          "B": 0.6032161712646484,
+          "C": 0.11158358305692673,
+          "D": 0.04651525616645813,
+          "E": 0.0021755152847617865
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.36191853880882263,
+            "B": 0.2647929787635803,
+            "C": 0.2195187509059906,
+            "D": 0.11749985814094543,
+            "E": 0.035835158079862595
+          },
+          "B": {
+            "A": 0.15365499258041382,
+            "B": 0.6469132304191589,
+            "C": 0.13559994101524353,
+            "D": 0.04135533422231674,
+            "E": 0.022135961800813675
+          },
+          "C": {
+            "A": 0.20431482791900635,
+            "B": 0.5217416286468506,
+            "C": 0.16938428580760956,
+            "D": 0.06633182615041733,
+            "E": 0.037794649600982666
+          },
+          "D": {
+            "A": 0.20563672482967377,
+            "B": 0.595038115978241,
+            "C": 0.12472625821828842,
+            "D": 0.05891687795519829,
+            "E": 0.01489629689604044
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.36191853880882263,
+          "B": 0.6469132304191589,
+          "C": 0.16938428580760956,
+          "D": 0.05891687795519829
+        },
+        "score": 0.30928323324769735
+      },
+      {
+        "record_index": 15,
+        "sample_id": "sample_15",
+        "label": null,
+        "perturbations": {
+          "a": "Ramanujan delivered this double inequality without demonstrating a proof, namely:  \n$$\\sqrt\\pi \\left(\\frac{x}{e}\\right)^{x}\\left(8x^3+4x^2+x+\\frac{1}{100} \\right)^{1/6}<\\Gamma(x+1)<\\sqrt\\pi \\left(\\frac{x}{e}\\right)^{x}\\left(8x^3+4x^2+x+\\frac{1}{30} \\right)^{1/6}, \\space x \\ge 0$$  \nI wonder if there is a pleasant proof for it. Could you assist here? Thanks.  \n  \nIt is likely stated in this paper or its references.  \n  \nhttp://arxiv.org/pdf/1112.1896",
+          "b": "Ramanujan submitted this double inequality without providing a proof, namely:  \n$$\\sqrt\\pi \\left(\\frac{x}{e}\\right)^{x}\\left(8x^3+4x^2+x+\\frac{1}{100} \\right)^{1/6}<\\Gamma(x+1)<\\sqrt\\pi \\left(\\frac{x}{e}\\right)^{x}\\left(8x^3+4x^2+x+\\frac{1}{30} \\right)^{1/6}, \\space x \\ge 0$$  \nI wonder if there is a fine proof for it. Could you aid here? Thanks.  \n  \nIt is probably detailed in this paper or its references.  \n  \nhttp://arxiv.org/pdf/1112.1896",
+          "c": "Ramanujan introduced this double inequality without exhibiting a proof, namely:  \n$$\\sqrt\\pi \\left(\\frac{x}{e}\\right)^{x}\\left(8x^3+4x^2+x+\\frac{1}{100} \\right)^{1/6}<\\Gamma(x+1)<\\sqrt\\pi \\left(\\frac{x}{e}\\right)^{x}\\left(8x^3+4x^2+x+\\frac{1}{30} \\right)^{1/6}, \\space x \\ge 0$$  \nI wonder if there is a lovely proof for it. Could you support here? Thanks.  \n  \nIt is potentially covered in this paper or its references.  \n  \nhttp://arxiv.org/pdf/1112.1896",
+          "d": "Ramanujan revealed this double inequality without supplying a proof, namely:  \n$$\\sqrt\\pi \\left(\\frac{x}{e}\\right)^{x}\\left(8x^3+4x^2+x+\\frac{1}{100} \\right)^{1/6}<\\Gamma(x+1)<\\sqrt\\pi \\left(\\frac{x}{e}\\right)^{x}\\left(8x^3+4x^2+x+\\frac{1}{30} \\right)^{1/6}, \\space x \\ge 0$$  \nI wonder if there is a delightful proof for it. Could you help out here? Thanks.  \n  \nIt is likely mentioned in this paper or its references.  \n  \nhttp://arxiv.org/pdf/1112.1896"
+        },
+        "bdq_probs": {
+          "A": 0.303835391998291,
+          "B": 0.34429308772087097,
+          "C": 0.2366298884153366,
+          "D": 0.10500327497720718,
+          "E": 0.009766768664121628
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.435933917760849,
+            "B": 0.2192058265209198,
+            "C": 0.2059239000082016,
+            "D": 0.1248990148305893,
+            "E": 0.013582024723291397
+          },
+          "B": {
+            "A": 0.4109218120574951,
+            "B": 0.30064278841018677,
+            "C": 0.1941094696521759,
+            "D": 0.08613506704568863,
+            "E": 0.007526332512497902
+          },
+          "C": {
+            "A": 0.3225749433040619,
+            "B": 0.3433828353881836,
+            "C": 0.2217063307762146,
+            "D": 0.10472523421049118,
+            "E": 0.0069073461927473545
+          },
+          "D": {
+            "A": 0.2351277768611908,
+            "B": 0.34211182594299316,
+            "C": 0.23513011634349823,
+            "D": 0.18311892449855804,
+            "E": 0.00392112834379077
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.435933917760849,
+          "B": 0.30064278841018677,
+          "C": 0.2217063307762146,
+          "D": 0.18311892449855804
+        },
+        "score": 0.2853504903614521
+      },
+      {
+        "record_index": 16,
+        "sample_id": "sample_16",
+        "label": null,
+        "perturbations": {
+          "a": "Michael Artin in Proposition 2.6 declares:\n\nLet $a,b$ be integers not both nonzero, and let $d$ be the positive integer which constructs the subgroup $a \\mathbb Z +b \\mathbb Z$ then\n\n* $d$ can be expressed in the form of $ar+bs$\n\n* $d$ divides both $a,b$\n\n* If an integer $e$ divides $a$ and $b$, it moreover divides $d$\n\nMy inquiries:\n\n1. How does the second proposition stand true for $a=2,b=7 , d=9$?\n\n2. How do we demonstrate this? (a slight clue may be sufficient)\n\n\nQuestion 1: It doesn't, but these three numbers don't fulfill the assumptions because $2\\mathbb{Z}+7\\mathbb{Z}$ isn't generated by $9$. (As pointed out slightly quicker by Julian).\n\nQuestion 2: This follows from the fact that $\\{a,b\\}\\subset a\\mathbb{Z}+b\\mathbb{Z}$. (Here I have interpreted your second question to mean \"how do we demonstrate the second proposition?\").",
+          "b": "Michael Artin in Proposition 2.6 asserts:\n\nLet $a,b$ be integers not both null, and let $d$ be the positive integer which forms the subgroup $a \\mathbb Z +b \\mathbb Z$ then\n\n* $d$ can be stated in the form of $ar+bs$\n\n* $d$ divides both $a,b$\n\n* If an integer $e$ divides $a$ and $b$, it additionally divides $d$\n\nMy queries:\n\n1. How does the second proposition remain true for $a=2,b=7 , d=9$?\n\n2. How do we validate this? (a slight nudge may be sufficient)\n\n\nQuestion 1: It doesn't, but these three numbers don't meet the assumptions because $2\\mathbb{Z}+7\\mathbb{Z}$ isn't generated by $9$. (As pointed out slightly more quickly by Julian).\n\nQuestion 2: This follows from the fact that $\\{a,b\\}\\subset a\\mathbb{Z}+b\\mathbb{Z}$. (Here I have taken your second question to suggest \"how do we validate the second proposition?\").",
+          "c": "Michael Artin in Proposition 2.6 mentions:\n\nLet $a,b$ be integers not both nil, and let $d$ be the positive integer which establishes the subgroup $a \\mathbb Z +b \\mathbb Z$ then\n\n* $d$ can be represented in the form of $ar+bs$\n\n* $d$ divides both $a,b$\n\n* If an integer $e$ divides $a$ and $b$, it consequently divides $d$\n\nMy questions:\n\n1. How does the second proposition remain valid for $a=2,b=7 , d=9$?\n\n2. How do we substantiate this? (a slight prompt may be sufficient)\n\n\nQuestion 1: It doesn't, but these three numbers don't fulfill the assumptions because $2\\mathbb{Z}+7\\mathbb{Z}$ isn't generated by $9$. (As pointed out slightly faster by Julian).\n\nQuestion 2: This follows from the fact that $\\{a,b\\}\\subset a\\mathbb{Z}+b\\mathbb{Z}$. (Here I have interpreted your second question to mean \"how do we substantiate the second proposition?\").",
+          "d": "Michael Artin in Proposition 2.6 proclaims:\n\nLet $a,b$ be integers not both void, and let $d$ be the positive integer which generates the subgroup $a \\mathbb Z +b \\mathbb Z$ then\n\n* $d$ can be formulated in the form of $ar+bs$\n\n* $d$ divides both $a,b$\n\n* If an integer $e$ divides $a$ and $b$, it similarly divides $d$\n\nMy inquiries:\n\n1. How does the second proposition apply for $a=2,b=7 , d=9$?\n\n2. How do we confirm this? (a slight nudge may be sufficient)\n\n\nQuestion 1: It doesn't, but these three numbers don't satisfy the assumptions because $2\\mathbb{Z}+7\\mathbb{Z}$ isn't generated by $9$. (As pointed out somewhat quicker by Julian).\n\nQuestion 2: This follows from the fact that $\\{a,b\\}\\subset a\\mathbb{Z}+b\\mathbb{Z}$. (Here I have understood your second question to imply \"how do we confirm the second proposition?\")."
+        },
+        "bdq_probs": {
+          "A": 0.42070266604423523,
+          "B": 0.22518904507160187,
+          "C": 0.19872769713401794,
+          "D": 0.12830859422683716,
+          "E": 0.02689483016729355
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4619583785533905,
+            "B": 0.2182166576385498,
+            "C": 0.1925744116306305,
+            "D": 0.10972603410482407,
+            "E": 0.017361080273985863
+          },
+          "B": {
+            "A": 0.45422738790512085,
+            "B": 0.22840340435504913,
+            "C": 0.18935175240039825,
+            "D": 0.10788959264755249,
+            "E": 0.019957447424530983
+          },
+          "C": {
+            "A": 0.4583267569541931,
+            "B": 0.23046451807022095,
+            "C": 0.19106115400791168,
+            "D": 0.10886352509260178,
+            "E": 0.011121022514998913
+          },
+          "D": {
+            "A": 0.42213964462280273,
+            "B": 0.21226856112480164,
+            "C": 0.21226656436920166,
+            "D": 0.1458892524242401,
+            "E": 0.007263339590281248
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4619583785533905,
+          "B": 0.22840340435504913,
+          "C": 0.19106115400791168,
+          "D": 0.1458892524242401
+        },
+        "score": 0.25682804733514786
+      },
+      {
+        "record_index": 17,
+        "sample_id": "sample_17",
+        "label": null,
+        "perturbations": {
+          "a": "This is the inspiring query for the rather ambiguous question here: when is the area bounded by a Jordan curve \"slender\"?",
+          "b": "This is the stimulating inquiry for the rather indistinct question here: when is the zone bounded by a Jordan curve \"thin\"?",
+          "c": "This is the encouraging question for the rather unclear question here: when is the space bounded by a Jordan curve \"narrow\"?",
+          "d": "This is the prompting question for the rather nebulous question here: when is the region bounded by a Jordan curve \"lean\"?"
+        },
+        "bdq_probs": {
+          "A": 0.6636993885040283,
+          "B": 0.10835248231887817,
+          "C": 0.1017843633890152,
+          "D": 0.122776098549366,
+          "E": 0.0029790252447128296
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.572841465473175,
+            "B": 0.22433538734912872,
+            "C": 0.12007629871368408,
+            "D": 0.07283065468072891,
+            "E": 0.009553194046020508
+          },
+          "B": {
+            "A": 0.6069355010986328,
+            "B": 0.22328577935695648,
+            "C": 0.11951560527086258,
+            "D": 0.03318820893764496,
+            "E": 0.016687793657183647
+          },
+          "C": {
+            "A": 0.5432558655738831,
+            "B": 0.1763744056224823,
+            "C": 0.22646954655647278,
+            "D": 0.04189203679561615,
+            "E": 0.011632898822426796
+          },
+          "D": {
+            "A": 0.328571081161499,
+            "B": 0.24039509892463684,
+            "C": 0.17587509751319885,
+            "D": 0.2258266657590866,
+            "E": 0.028710609301924706
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.572841465473175,
+          "B": 0.22328577935695648,
+          "C": 0.22646954655647278,
+          "D": 0.2258266657590866
+        },
+        "score": 0.31210586428642273
+      },
+      {
+        "record_index": 18,
+        "sample_id": "sample_18",
+        "label": null,
+        "perturbations": {
+          "a": "Determine the limit: $\\lim_{n\\to+\\infty}\\sum_{k=1}^n\\frac{\\sin{\\frac{k\\pi}n}}{n}$ Using specific integral between the interval $[0,1]$.",
+          "b": "Compute the limit: $\\lim_{n\\to+\\infty}\\sum_{k=1}^n\\frac{\\sin{\\frac{k\\pi}n}}{n}$ Utilizing clear integral between the interval $[0,1]$.",
+          "c": "Evaluate the limit: $\\lim_{n\\to+\\infty}\\sum_{k=1}^n\\frac{\\sin{\\frac{k\\pi}n}}{n}$ Employing exact integral between the interval $[0,1]$.",
+          "d": "Find the limit: $\\lim_{n\\to+\\infty}\\sum_{k=1}^n\\frac{\\sin{\\frac{k\\pi}n}}{n}$ Applying precise integral between the interval $[0,1]$."
+        },
+        "bdq_probs": {
+          "A": 0.3153519630432129,
+          "B": 0.23072549700737,
+          "C": 0.33569788932800293,
+          "D": 0.11601217091083527,
+          "E": 0.001761511666700244
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.28803569078445435,
+            "B": 0.17472101747989655,
+            "C": 0.47490403056144714,
+            "D": 0.06037528067827225,
+            "E": 0.0013338387943804264
+          },
+          "B": {
+            "A": 0.11093941330909729,
+            "B": 0.6795986890792847,
+            "C": 0.15163370966911316,
+            "D": 0.05578276142477989,
+            "E": 0.0013964412501081824
+          },
+          "C": {
+            "A": 0.046672094613313675,
+            "B": 0.04968484491109848,
+            "C": 0.8806232810020447,
+            "D": 0.02204497531056404,
+            "E": 0.0005874875350855291
+          },
+          "D": {
+            "A": 0.14783284068107605,
+            "B": 0.2020719349384308,
+            "C": 0.3546271324157715,
+            "D": 0.29399624466896057,
+            "E": 0.0006430982029996812
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.28803569078445435,
+          "B": 0.6795986890792847,
+          "C": 0.8806232810020447,
+          "D": 0.29399624466896057
+        },
+        "score": 0.5355634763836861
+      },
+      {
+        "record_index": 21,
+        "sample_id": "sample_21",
+        "label": null,
+        "perturbations": {
+          "a": "Utilize induction and Newton's binomial theorem to demonstrate that:\n\n$ i)$ $ \\binom{n}{0}+\\binom{n}{1}+\\cdots+\\binom{n}{n}=2^n, \\forall n\\in \\mathbb N$\n\n$ ii)$ $\\binom{n}{0}-\\binom{n}{1}+\\binom{n}{3}-\\cdots+(-1)^n\\binom{n}{n}=0, \\forall n\\in \\mathbb N$\n\n$ iii)$ $\\binom{n}{1}+2\\binom{n}{2}+3\\binom{n}{3}+\\cdots+n\\binom{n}{n}=n(2^{n-1}), \\forall n\\in \\mathbb N$\n\n$ iv)$ $1\\cdot 2\\binom{n}{2}+2\\cdot 3\\binom{n}{3}+\\cdots+(n-1)\\cdot n\\binom{n}{n}=n(n-1)2^{n-2}, \\forall n\\in \\mathbb N$\n\nI truly don't understand how I can begin with this.",
+          "b": "Employ induction and Newton's binomial principle to exhibit that:\n\n$ i)$ $ \\binom{n}{0}+\\binom{n}{1}+\\cdots+\\binom{n}{n}=2^n, \\forall n\\in \\mathbb N$\n\n$ ii)$ $\\binom{n}{0}-\\binom{n}{1}+\\binom{n}{3}-\\cdots+(-1)^n\\binom{n}{n}=0, \\forall n\\in \\mathbb N$\n\n$ iii)$ $\\binom{n}{1}+2\\binom{n}{2}+3\\binom{n}{3}+\\cdots+n\\binom{n}{n}=n(2^{n-1}), \\forall n\\in \\mathbb N$\n\n$ iv)$ $1\\cdot 2\\binom{n}{2}+2\\cdot 3\\binom{n}{3}+\\cdots+(n-1)\\cdot n\\binom{n}{n}=n(n-1)2^{n-2}, \\forall n\\in \\mathbb N$\n\nI honestly don't comprehend how I can start with this.",
+          "c": "Apply induction and Newton's binomial law to illustrate that:\n\n$ i)$ $ \\binom{n}{0}+\\binom{n}{1}+\\cdots+\\binom{n}{n}=2^n, \\forall n\\in \\mathbb N$\n\n$ ii)$ $\\binom{n}{0}-\\binom{n}{1}+\\binom{n}{3}-\\cdots+(-1)^n\\binom{n}{n}=0, \\forall n\\in \\mathbb N$\n\n$ iii)$ $\\binom{n}{1}+2\\binom{n}{2}+3\\binom{n}{3}+\\cdots+n\\binom{n}{n}=n(2^{n-1}), \\forall n\\in \\mathbb N$\n\n$ iv)$ $1\\cdot 2\\binom{n}{2}+2\\cdot 3\\binom{n}{3}+\\cdots+(n-1)\\cdot n\\binom{n}{n}=n(n-1)2^{n-2}, \\forall n\\in \\mathbb N$\n\nI severely don't know how I can commence with this.",
+          "d": "Implement induction and Newton's binomial equation to showcase that:\n\n$ i)$ $ \\binom{n}{0}+\\binom{n}{1}+\\cdots+\\binom{n}{n}=2^n, \\forall n\\in \\mathbb N$\n\n$ ii)$ $\\binom{n}{0}-\\binom{n}{1}+\\binom{n}{3}-\\cdots+(-1)^n\\binom{n}{n}=0, \\forall n\\in \\mathbb N$\n\n$ iii)$ $\\binom{n}{1}+2\\binom{n}{2}+3\\binom{n}{3}+\\cdots+n\\binom{n}{n}=n(2^{n-1}), \\forall n\\in \\mathbb N$\n\n$ iv)$ $1\\cdot 2\\binom{n}{2}+2\\cdot 3\\binom{n}{3}+\\cdots+(n-1)\\cdot n\\binom{n}{n}=n(n-1)2^{n-2}, \\forall n\\in \\mathbb N$\n\nI completely don't grasp how I can initiate with this."
+        },
+        "bdq_probs": {
+          "A": 0.4685688018798828,
+          "B": 0.17237919569015503,
+          "C": 0.19532965123653412,
+          "D": 0.14290668070316315,
+          "E": 0.020587513223290443
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.33455130457878113,
+            "B": 0.2952468693256378,
+            "C": 0.21600407361984253,
+            "D": 0.1310131847858429,
+            "E": 0.02276661805808544
+          },
+          "B": {
+            "A": 0.35590696334838867,
+            "B": 0.31409186124801636,
+            "C": 0.20279119908809662,
+            "D": 0.09579186141490936,
+            "E": 0.031099047511816025
+          },
+          "C": {
+            "A": 0.2684881091117859,
+            "B": 0.3669838607311249,
+            "C": 0.20910048484802246,
+            "D": 0.08716581016778946,
+            "E": 0.06788503378629684
+          },
+          "D": {
+            "A": 0.25641030073165894,
+            "B": 0.3092931807041168,
+            "C": 0.22628234326839447,
+            "D": 0.16555222868919373,
+            "E": 0.041858140379190445
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.33455130457878113,
+          "B": 0.31409186124801636,
+          "C": 0.20910048484802246,
+          "D": 0.16555222868919373
+        },
+        "score": 0.2558239698410034
+      },
+      {
+        "record_index": 22,
+        "sample_id": "sample_22",
+        "label": null,
+        "perturbations": {
+          "a": "I desire to derive $$\\pi \\cot(\\pi z) = \\sum_{-\\infty}^{\\infty}\\frac{1}{z-n} + \\frac{1}{n}$$ without taking derivatives.",
+          "b": "I wish to derive $$\\pi \\cot(\\pi z) = \\sum_{-\\infty}^{\\infty}\\frac{1}{z-n} + \\frac{1}{n}$$ without taking derivatives.",
+          "c": "I aim to derive $$\\pi \\cot(\\pi z) = \\sum_{-\\infty}^{\\infty}\\frac{1}{z-n} + \\frac{1}{n}$$ without taking derivatives.",
+          "d": "I intend to derive $$\\pi \\cot(\\pi z) = \\sum_{-\\infty}^{\\infty}\\frac{1}{z-n} + \\frac{1}{n}$$ without taking derivatives."
+        },
+        "bdq_probs": {
+          "A": 0.13678471744060516,
+          "B": 0.6130220293998718,
+          "C": 0.17563582956790924,
+          "D": 0.0732128918170929,
+          "E": 0.0006535114953294396
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.22157901525497437,
+            "B": 0.09833142161369324,
+            "C": 0.5658195614814758,
+            "D": 0.11141247302293777,
+            "E": 0.002539681037887931
+          },
+          "B": {
+            "A": 0.10825394839048386,
+            "B": 0.4851429760456085,
+            "C": 0.10824321955442429,
+            "D": 0.294236958026886,
+            "E": 0.0033727260306477547
+          },
+          "C": {
+            "A": 0.16319860517978668,
+            "B": 0.41674724221229553,
+            "C": 0.34549471735954285,
+            "D": 0.06802835315465927,
+            "E": 0.0057615675032138824
+          },
+          "D": {
+            "A": 0.1549992859363556,
+            "B": 0.5082231163978577,
+            "C": 0.22552521526813507,
+            "D": 0.10652552545070648,
+            "E": 0.0037607778795063496
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.22157901525497437,
+          "B": 0.4851429760456085,
+          "C": 0.34549471735954285,
+          "D": 0.10652552545070648
+        },
+        "score": 0.28968555852770805
+      },
+      {
+        "record_index": 23,
+        "sample_id": "sample_23",
+        "label": null,
+        "perturbations": {
+          "a": "How do you decompose  \n\n$$x^4+2x^2+4 $$  \n\nso it can be expressed as  \n\n$$ (x^2+2x+2)(x^2-2x+2) $$  \n\nI'm thinking you possess a slight error in there. In any case, you can reformulate this as  \n\n$$(x^4+4x^2+4)-2x^2=(x^2+2)^2-(x\\sqrt2)^2$$  \n\nfrom which point it can be considered as the difference of $2$ squares to derive  \n\n$$(x^2+x\\sqrt2+2)(x^2-x\\sqrt2+2)$$",
+          "b": "How do you divide  \n\n$$x^4+2x^2+4 $$  \n\nso it can be presented as  \n\n$$ (x^2+2x+2)(x^2-2x+2) $$  \n\nI'm thinking you possess a minor error in there. In any case, you can translate this as  \n\n$$(x^4+4x^2+4)-2x^2=(x^2+2)^2-(x\\sqrt2)^2$$  \n\nfrom which point it can be regarded as the difference of $2$ squares to yield  \n\n$$(x^2+x\\sqrt2+2)(x^2-x\\sqrt2+2)$$",
+          "c": "How do you arrange  \n\n$$x^4+2x^2+4 $$  \n\nso it can be noted as  \n\n$$ (x^2+2x+2)(x^2-2x+2) $$  \n\nI'm thinking you have a small oversight in there. In any case, you can alter this as  \n\n$$(x^4+4x^2+4)-2x^2=(x^2+2)^2-(x\\sqrt2)^2$$  \n\nfrom which point it can be viewed as the difference of $2$ squares to achieve  \n\n$$(x^2+x\\sqrt2+2)(x^2-x\\sqrt2+2)$$",
+          "d": "How do you break down  \n\n$$x^4+2x^2+4 $$  \n\nso it can be shown as  \n\n$$ (x^2+2x+2)(x^2-2x+2) $$  \n\nI'm thinking you possess a minor mistake in there. In any case, you can revise this as  \n\n$$(x^4+4x^2+4)-2x^2=(x^2+2)^2-(x\\sqrt2)^2$$  \n\nfrom which point it can be approached as the difference of $2$ squares to result in  \n\n$$(x^2+x\\sqrt2+2)(x^2-x\\sqrt2+2)$$"
+        },
+        "bdq_probs": {
+          "A": 0.29405173659324646,
+          "B": 0.2940599024295807,
+          "C": 0.2940554916858673,
+          "D": 0.11515235155820847,
+          "E": 0.002316378755494952
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3486368954181671,
+            "B": 0.2890377640724182,
+            "C": 0.25507283210754395,
+            "D": 0.09988651424646378,
+            "E": 0.007013173308223486
+          },
+          "B": {
+            "A": 0.24766932427883148,
+            "B": 0.4083426594734192,
+            "C": 0.28064611554145813,
+            "D": 0.0626193955540657,
+            "E": 0.00039635668508708477
+          },
+          "C": {
+            "A": 0.31224045157432556,
+            "B": 0.25886499881744385,
+            "C": 0.3538227081298828,
+            "D": 0.0741625726222992,
+            "E": 0.0005662328912876546
+          },
+          "D": {
+            "A": 0.23753340542316437,
+            "B": 0.2528607249259949,
+            "C": 0.3456084132194519,
+            "D": 0.16325150430202484,
+            "E": 0.0003461179439909756
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3486368954181671,
+          "B": 0.4083426594734192,
+          "C": 0.3538227081298828,
+          "D": 0.16325150430202484
+        },
+        "score": 0.3185134418308735
+      },
+      {
+        "record_index": 27,
+        "sample_id": "sample_27",
+        "label": null,
+        "perturbations": {
+          "a": "Let $f(0) = 0$ and $0 $$\\int_0^x{f(t)^3 dt \\leq \\left( \\int_0^x f(t) dt\\right)^2} :\\forall x>0$$ The clue I was provided was \"differentiate, factor and differentiate again\" but I'm uncertain where to begin",
+          "b": "Let $f(0) = 0$ and $0 $$\\int_0^x{f(t)^3 dt \\leq \\left( \\int_0^x f(t) dt\\right)^2} :\\forall x>0$$ The suggestion I was given was \"differentiate, factor and differentiate again\" but I'm not clear where to start",
+          "c": "Let $f(0) = 0$ and $0 $$\\int_0^x{f(t)^3 dt \\leq \\left( \\int_0^x f(t) dt\\right)^2} :\\forall x>0$$ The recommendation I was supplied was \"differentiate, factor and differentiate again\" but I'm unsure where to initiate",
+          "d": "Let $f(0) = 0$ and $0 $$\\int_0^x{f(t)^3 dt \\leq \\left( \\int_0^x f(t) dt\\right)^2} :\\forall x>0$$ The indication I was given was \"differentiate, factor and differentiate again\" but I'm not confident where to commence"
+        },
+        "bdq_probs": {
+          "A": 0.37680310010910034,
+          "B": 0.3768131136894226,
+          "C": 0.16720931231975555,
+          "D": 0.07419794797897339,
+          "E": 0.004455905873328447
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5506287813186646,
+            "B": 0.11542341113090515,
+            "C": 0.215633824467659,
+            "D": 0.11542010307312012,
+            "E": 0.002471490064635873
+          },
+          "B": {
+            "A": 0.3630589544773102,
+            "B": 0.4962478280067444,
+            "C": 0.10401903092861176,
+            "D": 0.03484167903661728,
+            "E": 0.001483730971813202
+          },
+          "C": {
+            "A": 0.2641183137893677,
+            "B": 0.2641236186027527,
+            "C": 0.43546411395072937,
+            "D": 0.03357814624905586,
+            "E": 0.0024324143305420876
+          },
+          "D": {
+            "A": 0.3211674988269806,
+            "B": 0.3874059319496155,
+            "C": 0.11815138161182404,
+            "D": 0.1719089150428772,
+            "E": 0.0009907502681016922
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5506287813186646,
+          "B": 0.4962478280067444,
+          "C": 0.43546411395072937,
+          "D": 0.1719089150428772
+        },
+        "score": 0.4135624095797539
+      },
+      {
+        "record_index": 28,
+        "sample_id": "sample_28",
+        "label": null,
+        "perturbations": {
+          "a": "In Bredon's volume, at page 118-119, there is a small chapter about the Thom-Pontrjagin formation, and I'm attempting to follow the rationale depicted there.",
+          "b": "In Bredon's manuscript, at page 118-119, there is a minor chapter about the Thom-Pontrjagin assembly, and I'm working to follow the logic depicted there.",
+          "c": "In Bredon's text, at page 118-119, there is a brief chapter about the Thom-Pontrjagin creation, and I'm striving to follow the reasoning depicted there.",
+          "d": "In Bredon's publication, at page 118-119, there is a tiny chapter about the Thom-Pontrjagin fabrication, and I'm aiming to follow the explanation depicted there."
+        },
+        "bdq_probs": {
+          "A": 0.45080268383026123,
+          "B": 0.37373754382133484,
+          "C": 0.09449457377195358,
+          "D": 0.07833951711654663,
+          "E": 0.0022222695406526327
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5071986317634583,
+            "B": 0.19862580299377441,
+            "C": 0.17528463900089264,
+            "D": 0.10631627589464188,
+            "E": 0.012306899763643742
+          },
+          "B": {
+            "A": 0.28297650814056396,
+            "B": 0.5286749601364136,
+            "C": 0.15146690607070923,
+            "D": 0.020498935133218765,
+            "E": 0.015964431688189507
+          },
+          "C": {
+            "A": 0.2414654940366745,
+            "B": 0.20018576085567474,
+            "C": 0.48021790385246277,
+            "D": 0.05061371624469757,
+            "E": 0.027091698721051216
+          },
+          "D": {
+            "A": 0.2463487684726715,
+            "B": 0.2971625328063965,
+            "C": 0.20423252880573273,
+            "D": 0.24635523557662964,
+            "E": 0.005112783517688513
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5071986317634583,
+          "B": 0.5286749601364136,
+          "C": 0.48021790385246277,
+          "D": 0.24635523557662964
+        },
+        "score": 0.44061168283224106
+      },
+      {
+        "record_index": 29,
+        "sample_id": "sample_29",
+        "label": null,
+        "perturbations": {
+          "a": "Questions\n\nIs the asymptotic association correct? How do I ascertain $c_1$ and $\\kappa$? As, $|s| \\to 0$\n\n$$ \\sum_{r=1}^\\infty s^r \\ln(r) \\sim c_1 \\sqrt{s} + (\\kappa - 1 + \\frac{\\ln(2 \\pi)}{2} )s$$\n\nIs it feasible to discover $A_r$ utilizing this association (for any of the r's)? Where,\n\n$$ \\sum_{r=1}^\\infty A_r(s) \\ln(p_r) \\sim c_1 \\sqrt{s} + (\\kappa - 1 + \\frac{\\ln(2 \\pi)}{2} )s$$",
+          "b": "Questions\n\nIs the asymptotic connection correct? How do I identify $c_1$ and $\\kappa$? As, $|s| \\to 0$\n\n$$ \\sum_{r=1}^\\infty s^r \\ln(r) \\sim c_1 \\sqrt{s} + (\\kappa - 1 + \\frac{\\ln(2 \\pi)}{2} )s$$\n\nIs it achievable to find $A_r$ by means of this connection (for any of the r's)? Where,\n\n$$ \\sum_{r=1}^\\infty A_r(s) \\ln(p_r) \\sim c_1 \\sqrt{s} + (\\kappa - 1 + \\frac{\\ln(2 \\pi)}{2} )s$$",
+          "c": "Questions\n\nIs the asymptotic relation correct? How do I figure out $c_1$ and $\\kappa$? As, $|s| \\to 0$\n\n$$ \\sum_{r=1}^\\infty s^r \\ln(r) \\sim c_1 \\sqrt{s} + (\\kappa - 1 + \\frac{\\ln(2 \\pi)}{2} )s$$\n\nIs it plausible to locate $A_r$ using this relation (for any of the r's)? Where,\n\n$$ \\sum_{r=1}^\\infty A_r(s) \\ln(p_r) \\sim c_1 \\sqrt{s} + (\\kappa - 1 + \\frac{\\ln(2 \\pi)}{2} )s$$",
+          "d": "Questions\n\nIs the asymptotic correlation correct? How do I determine $c_1$ and $\\kappa$? As, $|s| \\to 0$\n\n$$ \\sum_{r=1}^\\infty s^r \\ln(r) \\sim c_1 \\sqrt{s} + (\\kappa - 1 + \\frac{\\ln(2 \\pi)}{2} )s$$\n\nIs it possible to retrieve $A_r$ using this correlation (for any of the r's)? Where,\n\n$$ \\sum_{r=1}^\\infty A_r(s) \\ln(p_r) \\sim c_1 \\sqrt{s} + (\\kappa - 1 + \\frac{\\ln(2 \\pi)}{2} )s$$"
+        },
+        "bdq_probs": {
+          "A": 0.2599949240684509,
+          "B": 0.20248694717884064,
+          "C": 0.45631012320518494,
+          "D": 0.07929356396198273,
+          "E": 0.0016456774901598692
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2328343391418457,
+            "B": 0.1930285543203354,
+            "C": 0.4086384177207947,
+            "D": 0.109982930123806,
+            "E": 0.05530320107936859
+          },
+          "B": {
+            "A": 0.22261886298656464,
+            "B": 0.3907119631767273,
+            "C": 0.22261996567249298,
+            "D": 0.08189711719751358,
+            "E": 0.08189757168292999
+          },
+          "C": {
+            "A": 0.1981615573167801,
+            "B": 0.23903143405914307,
+            "C": 0.41951194405555725,
+            "D": 0.08260591328144073,
+            "E": 0.06043647602200508
+          },
+          "D": {
+            "A": 0.2609904408454895,
+            "B": 0.23032911121845245,
+            "C": 0.3351241946220398,
+            "D": 0.1396992951631546,
+            "E": 0.0331815667450428
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2328343391418457,
+          "B": 0.3907119631767273,
+          "C": 0.41951194405555725,
+          "D": 0.1396992951631546
+        },
+        "score": 0.2956893853843212
+      },
+      {
+        "record_index": 32,
+        "sample_id": "sample_32",
+        "label": null,
+        "perturbations": {
+          "a": "I would prefer to compute the fundamental group $\\Pi_1$ of $S^2 - \\{N,S\\}$, where $N,S$ are the northern respectively southern pole of $S^2$, but do not observe yet how to do this.  \nUsing a stereographic projection indicates that $S^2\\setminus\\{N,S\\}$ is homeomorphic to $\\mathbb{R}^2\\setminus\\{0\\}$. What is the fundamental group of this area?",
+          "b": "I would like to determine the fundamental group $\\Pi_1$ of $S^2 - \\{N,S\\}$, where $N,S$ are the northward respectively southward pole of $S^2$, but do not perceive yet how to do this.  \nUsing a stereographic projection reveals that $S^2\\setminus\\{N,S\\}$ is homeomorphic to $\\mathbb{R}^2\\setminus\\{0\\}$. What is the fundamental group of this region?",
+          "c": "I would like to evaluate the fundamental group $\\Pi_1$ of $S^2 - \\{N,S\\}$, where $N,S$ are the upper respectively lower pole of $S^2$, but do not recognize yet how to do this.  \nUsing a stereographic projection suggests that $S^2\\setminus\\{N,S\\}$ is homeomorphic to $\\mathbb{R}^2\\setminus\\{0\\}$. What is the fundamental group of this space?",
+          "d": "I would like to assess the fundamental group $\\Pi_1$ of $S^2 - \\{N,S\\}$, where $N,S$ are the zenith respectively nadir pole of $S^2$, but do not find yet how to do this.  \nUsing a stereographic projection demonstrates that $S^2\\setminus\\{N,S\\}$ is homeomorphic to $\\mathbb{R}^2\\setminus\\{0\\}$. What is the fundamental group of this place?"
+        },
+        "bdq_probs": {
+          "A": 0.27455008029937744,
+          "B": 0.3525351881980896,
+          "C": 0.29226163029670715,
+          "D": 0.07865985482931137,
+          "E": 0.0015822966815903783
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4580652415752411,
+            "B": 0.23033717274665833,
+            "C": 0.2303343564271927,
+            "D": 0.07960078120231628,
+            "E": 0.0012086527422070503
+          },
+          "B": {
+            "A": 0.23864775896072388,
+            "B": 0.6487133502960205,
+            "C": 0.08247498422861099,
+            "D": 0.028502479195594788,
+            "E": 0.0011764278169721365
+          },
+          "C": {
+            "A": 0.17272546887397766,
+            "B": 0.16226314008235931,
+            "C": 0.6417562961578369,
+            "D": 0.02195916883647442,
+            "E": 0.0009954480919986963
+          },
+          "D": {
+            "A": 0.2352825254201889,
+            "B": 0.22103354334831238,
+            "C": 0.32159531116485596,
+            "D": 0.22102726995944977,
+            "E": 0.0006818303954787552
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4580652415752411,
+          "B": 0.6487133502960205,
+          "C": 0.6417562961578369,
+          "D": 0.22102726995944977
+        },
+        "score": 0.49239053949713707
+      },
+      {
+        "record_index": 33,
+        "sample_id": "sample_33",
+        "label": null,
+        "perturbations": {
+          "a": "Does anyone know how I can chart in MATLAB the cone of positive semidefinite matrices as depicted in the figure below? Thanks.",
+          "b": "Does someone know how I can graph in MATLAB the cone of positive semidefinite matrices as illustrated in the figure below? Thanks.",
+          "c": "Does anybody realize how I can plot in MATLAB the cone of positive semidefinite matrices as represented in the figure below? Thanks.",
+          "d": "Does anyone understand how I can display in MATLAB the cone of positive semidefinite matrices as shown in the figure below? Thanks."
+        },
+        "bdq_probs": {
+          "A": 0.20419542491436005,
+          "B": 0.46016913652420044,
+          "C": 0.2173701971769333,
+          "D": 0.1163470447063446,
+          "E": 0.0013335312251001596
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.29910844564437866,
+            "B": 0.18142850697040558,
+            "C": 0.43521013855934143,
+            "D": 0.08050327748060226,
+            "E": 0.003428272670134902
+          },
+          "B": {
+            "A": 0.1661442667245865,
+            "B": 0.579891562461853,
+            "C": 0.1882619708776474,
+            "D": 0.053937602788209915,
+            "E": 0.011306012980639935
+          },
+          "C": {
+            "A": 0.15735524892807007,
+            "B": 0.5159398913383484,
+            "C": 0.2939772307872772,
+            "D": 0.027343573048710823,
+            "E": 0.004902421496808529
+          },
+          "D": {
+            "A": 0.11789746582508087,
+            "B": 0.496345192193985,
+            "C": 0.22024883329868317,
+            "D": 0.16113129258155823,
+            "E": 0.0033441355917602777
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.29910844564437866,
+          "B": 0.579891562461853,
+          "C": 0.2939772307872772,
+          "D": 0.16113129258155823
+        },
+        "score": 0.3335271328687668
+      }
+    ]
+  }
+}

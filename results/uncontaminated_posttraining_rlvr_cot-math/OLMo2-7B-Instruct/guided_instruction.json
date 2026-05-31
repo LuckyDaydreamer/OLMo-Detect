@@ -1,0 +1,33 @@
+{
+  "model_name": "OLMo2-7B-Instruct",
+  "model_path": "olmo_models/OLMo2-7B-Instruct",
+  "dataset_name": "uncontaminated_posttraining_rlvr_cot-math",
+  "dataset_path": "benchmark/posttraining/rlvr/uncontaminated/test/uncontaminated_posttraining_rlvr_cot-math_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "guided_instruction",
+  "elapsed_seconds": 1183.3180356025696,
+  "result": {
+    "method": "guided_instruction",
+    "dataset": "uncontaminated_posttraining_rlvr_cot-math",
+    "dataset_path": "benchmark/posttraining/rlvr/uncontaminated/test/uncontaminated_posttraining_rlvr_cot-math_test.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "rouge_delta",
+    "min_p_used": 40.0,
+    "max_p_used": 70.0,
+    "max_new_tokens": 256,
+    "max_tokens": 4096,
+    "seed": 42,
+    "source_hint": "OLMo2 RLVR training data",
+    "judge_model": null,
+    "num_total_records": 0,
+    "num_scored_records": 0,
+    "num_skipped_records": 0,
+    "summary": {
+      "mean_score": -0.026766359762027767,
+      "mean_rouge_guided": 0.16598904891241656,
+      "mean_rouge_general": 0.19275540867444446,
+      "mean_gpt4_icl": null
+    },
+    "samples": []
+  }
+}

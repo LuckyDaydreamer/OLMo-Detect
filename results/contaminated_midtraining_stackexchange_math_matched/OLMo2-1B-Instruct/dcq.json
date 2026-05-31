@@ -1,0 +1,1528 @@
+{
+  "model_name": "OLMo2-1B-Instruct",
+  "model_path": "olmo_models/OLMo2-1B-Instruct",
+  "dataset_name": "contaminated_midtraining_stackexchange_math_test_matched",
+  "dataset_path": "benchmark/midtraining/stackexchange/contaminated/matched/test/contaminated_midtraining_stackexchange_math_test_matched.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 5.890741586685181,
+  "result": {
+    "method": "dcq",
+    "dataset": "contaminated_midtraining_stackexchange_math_test_matched",
+    "dataset_path": "benchmark/midtraining/stackexchange/contaminated/matched/test/contaminated_midtraining_stackexchange_math_test_matched.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "min_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.016659286644965136,
+      "B": 0.18177821256082366,
+      "C": 0.06205861937659965,
+      "D": 0.1789800776341171
+    },
+    "non_preferred": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "num_total_records": 35,
+    "num_scored_records": 27,
+    "summary": {
+      "mean_score": 0.016524885326227243
+    },
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "math_stackexchange_com-174029-174130",
+        "label": null,
+        "perturbations": {
+          "a": "Being second countable is invariant under perfect mapping",
+          "b": "Being second countable is constant under perfect mapping",
+          "c": "Being second countable is unchanging under perfect mapping",
+          "d": "Being second countable is stable under perfect mapping"
+        },
+        "bdq_probs": {
+          "A": 0.009193435311317444,
+          "B": 0.059948988258838654,
+          "C": 0.05290455371141434,
+          "D": 0.30444464087486267,
+          "E": 0.568777322769165
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0031180651858448982,
+            "B": 0.01910110004246235,
+            "C": 0.037985660135746,
+            "D": 0.17023983597755432,
+            "E": 0.762962281703949
+          },
+          "B": {
+            "A": 0.004052729811519384,
+            "B": 0.01602954976260662,
+            "C": 0.024825911968946457,
+            "D": 0.12607626616954803,
+            "E": 0.822118878364563
+          },
+          "C": {
+            "A": 0.0021403541322797537,
+            "B": 0.013957683928310871,
+            "C": 0.027756432071328163,
+            "D": 0.024495059624314308,
+            "E": 0.9191627502441406
+          },
+          "D": {
+            "A": 0.006381187122315168,
+            "B": 0.1752055138349533,
+            "C": 0.08275192975997925,
+            "D": 0.42024895548820496,
+            "E": 0.12040377408266068
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0031180651858448982,
+          "B": 0.01602954976260662,
+          "C": 0.027756432071328163,
+          "D": 0.42024895548820496
+        },
+        "score": 0.0031180651858448982
+      },
+      {
+        "record_index": 1,
+        "sample_id": "math_stackexchange_com-3706326-3706331",
+        "label": null,
+        "perturbations": {
+          "a": "Resolving \"Square\" PDE",
+          "b": "Determining \"Square\" PDE",
+          "c": "Finding \"Square\" PDE",
+          "d": "Solving \"Square\" PDE"
+        },
+        "bdq_probs": {
+          "A": 0.015422257594764233,
+          "B": 0.1291297972202301,
+          "C": 0.08874896168708801,
+          "D": 0.30976423621177673,
+          "E": 0.45070430636405945
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.007681609131395817,
+            "B": 0.05676073208451271,
+            "C": 0.2882499694824219,
+            "D": 0.419401079416275,
+            "E": 0.2244895100593567
+          },
+          "B": {
+            "A": 0.006940590683370829,
+            "B": 0.024225419387221336,
+            "C": 0.03994031995534897,
+            "D": 0.8022217750549316,
+            "E": 0.12302481383085251
+          },
+          "C": {
+            "A": 0.0024839898105710745,
+            "B": 0.007651421241462231,
+            "C": 0.008669980801641941,
+            "D": 0.09321104735136032,
+            "E": 0.8843607902526855
+          },
+          "D": {
+            "A": 0.03447721153497696,
+            "B": 0.15452195703983307,
+            "C": 0.12033743411302567,
+            "D": 0.25475412607192993,
+            "E": 0.42001834511756897
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.007681609131395817,
+          "B": 0.024225419387221336,
+          "C": 0.008669980801641941,
+          "D": 0.25475412607192993
+        },
+        "score": 0.007681609131395817
+      },
+      {
+        "record_index": 2,
+        "sample_id": "math_stackexchange_com-1482702-1482723",
+        "label": null,
+        "perturbations": {
+          "a": "How to resolve $x= \\sin(k- x)$?\n\n\nIs there a method to resolve $x = \\sin (k-x)$ without a computer, that is with a handheld calculator or pencil and paper?\n\n\nEquations that combine polynomial and trigonometric terms do not exhibit analytical solutions (this is already the instance of $x=\\cos(x)$) and numerical approach (such as Newton) ought to be employed.\n\nLet us examine the scenario of the root of $$f(x)=x-\\sin(k-x)$$ assuming $0 <k <\\pi$. We can observe that $f(0)=-\\sin(k) <0$ and $f(k)=k>0$. Conversely, since $\\sin(\\theta)<1$, we can limit the range between $0$ and $1$.\n\nSo, let us apply Newton approach starting at $x_0=1$. The iterative formula would be $$x_{n+1}=x_n-\\frac{x_n-\\sin (k-x_n)}{1+\\cos (k-x_n)}$$ Let us utilize $k=3$ as in your remark; then the successive approximations will be $$x_1=0.844648$$ $$x_2=0.820794$$ $$x_3=0.820243$$ which is the answer for six significant figures.\n\nEvidently, you can effortlessly do it using a standard pocket calculator.",
+          "b": "How to determine $x= \\sin(k- x)$?\n\n\nIs there a technique to determine $x = \\sin (k-x)$ without a computer, that is with a portable calculator or pencil and paper?\n\n\nEquations that mix polynomial and trigonometric terms do not present analytical solutions (this is already the case of $x=\\cos(x)$) and numerical strategy (such as Newton) should be adopted.\n\nLet us consider the situation of the root of $$f(x)=x-\\sin(k-x)$$ allowing $0 <k <\\pi$. We can see that $f(0)=-\\sin(k) <0$ and $f(k)=k>0$. Alternatively, since $\\sin(\\theta)<1$, we can restrict the range between $0$ and $1$.\n\nSo, let us implement Newton method starting at $x_0=1$. The iterative process would be $$x_{n+1}=x_n-\\frac{x_n-\\sin (k-x_n)}{1+\\cos (k-x_n)}$$ Let us employ $k=3$ as in your observation; then the successive estimates will be $$x_1=0.844648$$ $$x_2=0.820794$$ $$x_3=0.820243$$ which is the solution for six significant figures.\n\nClearly, you can readily do it using a basic pocket calculator.",
+          "c": "How to tackle $x= \\sin(k- x)$?\n\n\nIs there a means to tackle $x = \\sin (k-x)$ without a computer, that is with a mobile calculator or pencil and paper?\n\n\nEquations that intertwine polynomial and trigonometric terms do not provide analytical solutions (this is already the instance of $x=\\cos(x)$) and numerical technique (such as Newton) should be employed.\n\nLet us analyze the case of the root of $$f(x)=x-\\sin(k-x)$$ possessing $0 <k <\\pi$. We can notice that $f(0)=-\\sin(k) <0$ and $f(k)=k>0$. On the contrary, since $\\sin(\\theta)<1$, we can confine the range between $0$ and $1$.\n\nSo, let us adopt Newton technique starting at $x_0=1$. The iterative expression would be $$x_{n+1}=x_n-\\frac{x_n-\\sin (k-x_n)}{1+\\cos (k-x_n)}$$ Let us apply $k=3$ as in your explanation; then the successive calculations will be $$x_1=0.844648$$ $$x_2=0.820794$$ $$x_3=0.820243$$ which is the resolution for six significant figures.\n\nCertainly, you can effortlessly do it using a straightforward pocket calculator.",
+          "d": "How to figure out $x= \\sin(k- x)$?\n\n\nIs there a procedure to figure out $x = \\sin (k-x)$ without a computer, that is with a compact calculator or pencil and paper?\n\n\nEquations which blend polynomial and trigonometric terms do not reveal analytical solutions (this is already the case of $x=\\cos(x)$) and numerical method (such as Newton) must be utilized.\n\nLet us scrutinize the case of the zero of $$f(x)=x-\\sin(k-x)$$ allowing $0 <k <\\pi$. We can observe that $f(0)=-\\sin(k) <0$ and $f(k)=k>0$. On the flip side, since $\\sin(\\theta)<1$, we can narrow the range between $0$ and $1$.\n\nSo, let us engage Newton method starting at $x_0=1$. The iterative procedure would be $$x_{n+1}=x_n-\\frac{x_n-\\sin (k-x_n)}{1+\\cos (k-x_n)}$$ Let us leverage $k=3$ as in your note; then the successive results will be $$x_1=0.844648$$ $$x_2=0.820794$$ $$x_3=0.820243$$ which is the solution for six significant figures.\n\nUndoubtedly, you can simply do it using a simple pocket calculator."
+        },
+        "bdq_probs": {
+          "A": 0.005488862749189138,
+          "B": 0.017999285832047462,
+          "C": 0.04892204329371452,
+          "D": 0.28152838349342346,
+          "E": 0.595992922782898
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.005906512960791588,
+            "B": 0.015084680169820786,
+            "C": 0.03193052485585213,
+            "D": 0.23593729734420776,
+            "E": 0.6413422226905823
+          },
+          "B": {
+            "A": 0.004793377593159676,
+            "B": 0.014766739681363106,
+            "C": 0.04013466089963913,
+            "D": 0.2617124915122986,
+            "E": 0.6278148889541626
+          },
+          "C": {
+            "A": 0.005314270965754986,
+            "B": 0.016371021047234535,
+            "C": 0.050420697778463364,
+            "D": 0.32878562808036804,
+            "E": 0.5420743823051453
+          },
+          "D": {
+            "A": 0.004397331736981869,
+            "B": 0.017393359914422035,
+            "C": 0.041720930486917496,
+            "D": 0.24008852243423462,
+            "E": 0.6526244878768921
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.005906512960791588,
+          "B": 0.014766739681363106,
+          "C": 0.050420697778463364,
+          "D": 0.24008852243423462
+        },
+        "score": 0.005906512960791588
+      },
+      {
+        "record_index": 3,
+        "sample_id": "math_stackexchange_com-1453771-1453802",
+        "label": null,
+        "perturbations": {
+          "a": "Risk Neutral Valuation",
+          "b": "Risk Neutral Evaluation",
+          "c": "Risk Neutral Assessment",
+          "d": "Risk Neutral Appraisal"
+        },
+        "bdq_probs": {
+          "A": 0.011834943667054176,
+          "B": 0.2867359519004822,
+          "C": 0.15347781777381897,
+          "D": 0.25304198265075684,
+          "E": 0.28673431277275085
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.008799335919320583,
+            "B": 0.012803456746041775,
+            "C": 0.20027081668376923,
+            "D": 0.2913922667503357,
+            "E": 0.48042571544647217
+          },
+          "B": {
+            "A": 0.00970492884516716,
+            "B": 0.008045850321650505,
+            "C": 0.014120560139417648,
+            "D": 0.6004199981689453,
+            "E": 0.36417365074157715
+          },
+          "C": {
+            "A": 0.011685849167406559,
+            "B": 0.012440398335456848,
+            "C": 0.01809932105243206,
+            "D": 0.021831950172781944,
+            "E": 0.9283140897750854
+          },
+          "D": {
+            "A": 0.03337528184056282,
+            "B": 0.11649715900421143,
+            "C": 0.13200120627880096,
+            "D": 0.09072321653366089,
+            "E": 0.5915905237197876
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.008799335919320583,
+          "B": 0.008045850321650505,
+          "C": 0.01809932105243206,
+          "D": 0.09072321653366089
+        },
+        "score": 0.008045850321650505
+      },
+      {
+        "record_index": 4,
+        "sample_id": "math_stackexchange_com-790379-790392",
+        "label": null,
+        "perturbations": {
+          "a": "Resolve: $(\\cos x+i\\sin x)(\\cos 2x+i\\sin 2x)(\\cos 5x+i\\sin 5x)={i+1\\over \\sqrt 2 }$",
+          "b": "Rectify: $(\\cos x+i\\sin x)(\\cos 2x+i\\sin 2x)(\\cos 5x+i\\sin 5x)={i+1\\over \\sqrt 2 }$",
+          "c": "Determine: $(\\cos x+i\\sin x)(\\cos 2x+i\\sin 2x)(\\cos 5x+i\\sin 5x)={i+1\\over \\sqrt 2 }$",
+          "d": "Figure out: $(\\cos x+i\\sin x)(\\cos 2x+i\\sin 2x)(\\cos 5x+i\\sin 5x)={i+1\\over \\sqrt 2 }$"
+        },
+        "bdq_probs": {
+          "A": 0.0034944708459079266,
+          "B": 0.06593635678291321,
+          "C": 0.014712272211909294,
+          "D": 0.004776384681463242,
+          "E": 0.910215437412262
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.007981491275131702,
+            "B": 0.040535278618335724,
+            "C": 0.18165747821331024,
+            "D": 0.04053371027112007,
+            "E": 0.7184697389602661
+          },
+          "B": {
+            "A": 0.021324602887034416,
+            "B": 0.1785564422607422,
+            "C": 0.10829520225524902,
+            "D": 0.057966671884059906,
+            "E": 0.6231957674026489
+          },
+          "C": {
+            "A": 0.03030248172581196,
+            "B": 0.153893381357193,
+            "C": 0.05661255493760109,
+            "D": 0.0641506016254425,
+            "E": 0.6896812319755554
+          },
+          "D": {
+            "A": 0.12706725299358368,
+            "B": 0.5025723576545715,
+            "C": 0.184881791472435,
+            "D": 0.08733214437961578,
+            "E": 0.08733197301626205
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.007981491275131702,
+          "B": 0.1785564422607422,
+          "C": 0.05661255493760109,
+          "D": 0.08733214437961578
+        },
+        "score": 0.007981491275131702
+      },
+      {
+        "record_index": 5,
+        "sample_id": "math_stackexchange_com-1227134-1227148",
+        "label": null,
+        "perturbations": {
+          "a": "issues on arrangement",
+          "b": "challenges on arrangement",
+          "c": "difficulties on arrangement",
+          "d": "concerns on arrangement"
+        },
+        "bdq_probs": {
+          "A": 0.019177556037902832,
+          "B": 0.38519391417503357,
+          "C": 0.11035921424627304,
+          "D": 0.18195153772830963,
+          "E": 0.29998746514320374
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0058130910620093346,
+            "B": 0.12429364770650864,
+            "C": 0.14083848893642426,
+            "D": 0.058710239827632904,
+            "E": 0.631194531917572
+          },
+          "B": {
+            "A": 0.006307216826826334,
+            "B": 0.026555513963103294,
+            "C": 0.07218247652053833,
+            "D": 0.05621587485074997,
+            "E": 0.6848474740982056
+          },
+          "C": {
+            "A": 0.0034946126397699118,
+            "B": 0.014713704586029053,
+            "C": 0.005761662498116493,
+            "D": 0.0037200343795120716,
+            "E": 0.8032969236373901
+          },
+          "D": {
+            "A": 0.00922464020550251,
+            "B": 0.03219880163669586,
+            "C": 0.01045291405171156,
+            "D": 0.002642928622663021,
+            "E": 0.2695842683315277
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0058130910620093346,
+          "B": 0.026555513963103294,
+          "C": 0.005761662498116493,
+          "D": 0.002642928622663021
+        },
+        "score": 0.002642928622663021
+      },
+      {
+        "record_index": 6,
+        "sample_id": "math_stackexchange_com-313581-313596",
+        "label": null,
+        "perturbations": {
+          "a": "If $a,b,c$ are positive whole numbers, and $\\cfrac{a}{b}+\\cfrac{b}{c}+\\cfrac{c}{a}$ and $\\cfrac{b}{a}+\\cfrac{c}{b}+\\cfrac{a}{c}$ are whole numbers then $a=b=c$",
+          "b": "Let $a,b,c$ be positive whole numbers, and $\\cfrac{a}{b}+\\cfrac{b}{c}+\\cfrac{c}{a}$ and $\\cfrac{b}{a}+\\cfrac{c}{b}+\\cfrac{a}{c}$ are whole numbers, how to demonstrate $a=b=c$?",
+          "c": "If they are not all identical, there must be some prime $p$ such that $a = p^i A$, $b = p^j B$, $c = p^k C$ where $A,B,C$ are each coprime to $p$ and $i,j,k$ are nonnegative whole numbers that are not all identical. Without loss of generality $i \\le j \\le k$ (otherwise permute $a$, $b$, $c$ suitably) and $i < k$.",
+          "d": "Then $ b/a + c/b + a/c$ has $p^{k-i}$ in its denominator, and cannot be a whole number."
+        },
+        "bdq_probs": {
+          "A": 0.09160064905881882,
+          "B": 0.1939210742712021,
+          "C": 0.08083732426166534,
+          "D": 0.2197386473417282,
+          "E": 0.4105258584022522
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.023905837908387184,
+            "B": 0.039415616542100906,
+            "C": 0.027088886126875877,
+            "D": 0.1071387231349945,
+            "E": 0.7916524410247803
+          },
+          "B": {
+            "A": 0.050544753670692444,
+            "B": 0.05054599791765213,
+            "C": 0.03936434164643288,
+            "D": 0.15568900108337402,
+            "E": 0.6977491974830627
+          },
+          "C": {
+            "A": 0.030385293066501617,
+            "B": 0.06432682275772095,
+            "C": 0.03443106636404991,
+            "D": 0.17485547065734863,
+            "E": 0.6915662288665771
+          },
+          "D": {
+            "A": 0.04035530984401703,
+            "B": 0.07539547234773636,
+            "C": 0.06653471291065216,
+            "D": 0.18086011707782745,
+            "E": 0.6312637329101562
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.023905837908387184,
+          "B": 0.05054599791765213,
+          "C": 0.03443106636404991,
+          "D": 0.18086011707782745
+        },
+        "score": 0.023905837908387184
+      },
+      {
+        "record_index": 8,
+        "sample_id": "math_stackexchange_com-150664-150683",
+        "label": null,
+        "perturbations": {
+          "a": "Principal primary ideals are minimal among prime ideals in a UFD",
+          "b": "Primary prime ideals are minimal among prime ideals in a UFD",
+          "c": "Principal prime ideals are minimal amid prime ideals in a UFD",
+          "d": "Principal prime ideals are minimal amongst prime ideals in a UFD"
+        },
+        "bdq_probs": {
+          "A": 0.02579818293452263,
+          "B": 0.1682259440422058,
+          "C": 0.09004449099302292,
+          "D": 0.35613277554512024,
+          "E": 0.3561328053474426
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010120312683284283,
+            "B": 0.03117319568991661,
+            "C": 0.06599263101816177,
+            "D": 0.3351379930973053,
+            "E": 0.5525492429733276
+          },
+          "B": {
+            "A": 0.006408849731087685,
+            "B": 0.015374230220913887,
+            "C": 0.015374023467302322,
+            "D": 0.4492943584918976,
+            "E": 0.5091171860694885
+          },
+          "C": {
+            "A": 0.010434257797896862,
+            "B": 0.036420173943042755,
+            "C": 0.0600447878241539,
+            "D": 0.1440400779247284,
+            "E": 0.7314956784248352
+          },
+          "D": {
+            "A": 0.05666842311620712,
+            "B": 0.32611143589019775,
+            "C": 0.1058703362941742,
+            "D": 0.4187251329421997,
+            "E": 0.05000966042280197
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010120312683284283,
+          "B": 0.015374230220913887,
+          "C": 0.0600447878241539,
+          "D": 0.4187251329421997
+        },
+        "score": 0.010120312683284283
+      },
+      {
+        "record_index": 9,
+        "sample_id": "math_stackexchange_com-2238243-2238301",
+        "label": null,
+        "perturbations": {
+          "a": "Does this collection related differential equation always possess non-trivial solutions?",
+          "b": "Does this package related differential equation always have non-zero solutions?",
+          "c": "Does this group related differential equation always offer non-trivial solutions?",
+          "d": "Does this set related differential equation always yield non-trivial solutions?"
+        },
+        "bdq_probs": {
+          "A": 0.010486649349331856,
+          "B": 0.05669109895825386,
+          "C": 0.05002901330590248,
+          "D": 0.07279178500175476,
+          "E": 0.7825846076011658
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.011037464253604412,
+            "B": 0.017098842188715935,
+            "C": 0.05966830626130104,
+            "D": 0.03619041666388512,
+            "E": 0.823687732219696
+          },
+          "B": {
+            "A": 0.024920735508203506,
+            "B": 0.04374337196350098,
+            "C": 0.07211128622293472,
+            "D": 0.1729845553636551,
+            "E": 0.6037753224372864
+          },
+          "C": {
+            "A": 0.006021203938871622,
+            "B": 0.011975971050560474,
+            "C": 0.013569033704698086,
+            "D": 0.04449108615517616,
+            "E": 0.8936201333999634
+          },
+          "D": {
+            "A": 0.002575918799266219,
+            "B": 0.008991559967398643,
+            "C": 0.009570690803229809,
+            "D": 0.00617931829765439,
+            "E": 0.9170843958854675
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.011037464253604412,
+          "B": 0.04374337196350098,
+          "C": 0.013569033704698086,
+          "D": 0.00617931829765439
+        },
+        "score": 0.00617931829765439
+      },
+      {
+        "record_index": 11,
+        "sample_id": "math_stackexchange_com-418909-418915",
+        "label": null,
+        "perturbations": {
+          "a": "Using Fermat's Little Theorem, discover the least positive residue of $3^{999999999}\\mod 7$",
+          "b": "Utilizing Fermat's Little Theorem, determine the least positive residue of $3^{999999999}\\mod 7$",
+          "c": "Employing Fermat's Little Theorem, ascertain the least positive residue of $3^{999999999}\\mod 7$",
+          "d": "Applying Fermat's Little Theorem, find the least positive residue of $3^{999999999}\\mod 7$"
+        },
+        "bdq_probs": {
+          "A": 0.006369405891746283,
+          "B": 0.27083712816238403,
+          "C": 0.02366526797413826,
+          "D": 0.04153382405638695,
+          "E": 0.6496968865394592
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01609220542013645,
+            "B": 0.08173184841871262,
+            "C": 0.13473932445049286,
+            "D": 0.15267978608608246,
+            "E": 0.6038557887077332
+          },
+          "B": {
+            "A": 0.02191946655511856,
+            "B": 0.2670590281486511,
+            "C": 0.06751739233732224,
+            "D": 0.388534814119339,
+            "E": 0.23565718531608582
+          },
+          "C": {
+            "A": 0.01720128394663334,
+            "B": 0.09300331026315689,
+            "C": 0.04977435618638992,
+            "D": 0.0439256988465786,
+            "E": 0.7785903811454773
+          },
+          "D": {
+            "A": 0.06299057602882385,
+            "B": 0.15113823115825653,
+            "C": 0.10385564714670181,
+            "D": 0.362495094537735,
+            "E": 0.24913272261619568
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01609220542013645,
+          "B": 0.2670590281486511,
+          "C": 0.04977435618638992,
+          "D": 0.362495094537735
+        },
+        "score": 0.01609220542013645
+      },
+      {
+        "record_index": 12,
+        "sample_id": "math_stackexchange_com-2872201-2872266",
+        "label": null,
+        "perturbations": {
+          "a": "What if someone arrives with a demonstration of consistency of arithmetic under the following circumstances?",
+          "b": "What if someone presents a confirmation of consistency of arithmetic under the following terms?",
+          "c": "What if someone invents a verification of consistency of arithmetic under the following parameters?",
+          "d": "What if someone develops a validation of consistency of arithmetic under the following conditions?"
+        },
+        "bdq_probs": {
+          "A": 0.008566148579120636,
+          "B": 0.17205822467803955,
+          "C": 0.049294859170913696,
+          "D": 0.15183867514133453,
+          "E": 0.600533127784729
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01600703038275242,
+            "B": 0.04351354017853737,
+            "C": 0.03388694301247597,
+            "D": 0.10437887161970139,
+            "E": 0.7712606191635132
+          },
+          "B": {
+            "A": 0.03136391192674637,
+            "B": 0.07524117827415466,
+            "C": 0.10947111248970032,
+            "D": 0.262607216835022,
+            "E": 0.49061429500579834
+          },
+          "C": {
+            "A": 0.004548059776425362,
+            "B": 0.009045543149113655,
+            "C": 0.014912569895386696,
+            "D": 0.027860289439558983,
+            "E": 0.9226014614105225
+          },
+          "D": {
+            "A": 0.04330168291926384,
+            "B": 0.13338348269462585,
+            "C": 0.10387541353702545,
+            "D": 0.2491837590932846,
+            "E": 0.41083478927612305
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01600703038275242,
+          "B": 0.07524117827415466,
+          "C": 0.014912569895386696,
+          "D": 0.2491837590932846
+        },
+        "score": 0.014912569895386696
+      },
+      {
+        "record_index": 13,
+        "sample_id": "math_stackexchange_com-270961-270980",
+        "label": null,
+        "perturbations": {
+          "a": "Resolve equation $\\tfrac 1x (e^x-1) = \\alpha$",
+          "b": "Address equation $\\tfrac 1x (e^x-1) = \\alpha$",
+          "c": "Manage equation $\\tfrac 1x (e^x-1) = \\alpha$",
+          "d": "Determine equation $\\tfrac 1x (e^x-1) = \\alpha$"
+        },
+        "bdq_probs": {
+          "A": 0.012370179407298565,
+          "B": 0.29970574378967285,
+          "C": 0.03579433262348175,
+          "D": 0.08586610853672028,
+          "E": 0.5599170923233032
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.013026396743953228,
+            "B": 0.02757927216589451,
+            "C": 0.0661536380648613,
+            "D": 0.07496199011802673,
+            "E": 0.8059148192405701
+          },
+          "B": {
+            "A": 0.015324768610298634,
+            "B": 0.053492188453674316,
+            "C": 0.017365310341119766,
+            "D": 0.16475746035575867,
+            "E": 0.738388180732727
+          },
+          "C": {
+            "A": 0.002389963949099183,
+            "B": 0.0073624891228973866,
+            "C": 0.008879800327122211,
+            "D": 0.004465090110898018,
+            "E": 0.9641739130020142
+          },
+          "D": {
+            "A": 0.04751395061612129,
+            "B": 0.1879376769065857,
+            "C": 0.12915658950805664,
+            "D": 0.39783036708831787,
+            "E": 0.18792162835597992
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.013026396743953228,
+          "B": 0.053492188453674316,
+          "C": 0.008879800327122211,
+          "D": 0.39783036708831787
+        },
+        "score": 0.008879800327122211
+      },
+      {
+        "record_index": 14,
+        "sample_id": "math_stackexchange_com-1764329-1764333",
+        "label": null,
+        "perturbations": {
+          "a": "Assess $$\\int \\sin(3x) \\cos(4x) \\; \\mathrm{d}x$$ I do not understand how to resolve this completely. I attempted all the substitutions available to me.",
+          "b": "Calculate $$\\int \\sin(3x) \\cos(4x) \\; \\mathrm{d}x$$ I do not comprehend how to tackle this entirely. I tried all the substitutions familiar to me.",
+          "c": "Examine $$\\int \\sin(3x) \\cos(4x) \\; \\mathrm{d}x$$ I do not grasp how to manage this as a total. I endeavored all the substitutions known to me.",
+          "d": "Analyze $$\\int \\sin(3x) \\cos(4x) \\; \\mathrm{d}x$$ I do not recognize how to navigate this as a whole. I worked through all the substitutions apparent to me."
+        },
+        "bdq_probs": {
+          "A": 0.0009583584032952785,
+          "B": 0.004572119563817978,
+          "C": 0.0015800673281773925,
+          "D": 0.0026050913147628307,
+          "E": 0.9872923493385315
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03325880318880081,
+            "B": 0.14906106889247894,
+            "C": 0.09040696173906326,
+            "D": 0.13154149055480957,
+            "E": 0.5895265936851501
+          },
+          "B": {
+            "A": 0.01784169115126133,
+            "B": 0.3162671625614166,
+            "C": 0.04849901422858238,
+            "D": 0.09060805290937424,
+            "E": 0.5214110016822815
+          },
+          "C": {
+            "A": 0.005252971779555082,
+            "B": 0.014279675669968128,
+            "C": 0.17395514249801636,
+            "D": 0.023542294278740883,
+            "E": 0.7796109914779663
+          },
+          "D": {
+            "A": 0.0062700374983251095,
+            "B": 0.01704442873597145,
+            "C": 0.040885888040065765,
+            "D": 0.20763613283634186,
+            "E": 0.7247192859649658
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03325880318880081,
+          "B": 0.3162671625614166,
+          "C": 0.17395514249801636,
+          "D": 0.20763613283634186
+        },
+        "score": 0.03325880318880081
+      },
+      {
+        "record_index": 16,
+        "sample_id": "math_stackexchange_com-1268652-1268672",
+        "label": null,
+        "perturbations": {
+          "a": "If $A = \\{a,b,c,d\\}$, what does $\\{\\{a\\}\\}$ signify?",
+          "b": "If $A = \\{a,b,c,d\\}$, what does $\\{\\{a\\}\\}$ represent?",
+          "c": "If $A = \\{a,b,c,d\\}$, what does $\\{\\{a\\}\\}$ denote?",
+          "d": "If $A = \\{a,b,c,d\\}$, what does $\\{\\{a\\}\\}$ indicate?"
+        },
+        "bdq_probs": {
+          "A": 0.011696313507854939,
+          "B": 0.07165096700191498,
+          "C": 0.09199855476617813,
+          "D": 0.11812860518693924,
+          "E": 0.6797821521759033
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.028494326397776604,
+            "B": 0.046986039727926254,
+            "C": 0.18580538034439087,
+            "D": 0.14470668137073517,
+            "E": 0.5723170638084412
+          },
+          "B": {
+            "A": 0.030282074585556984,
+            "B": 0.13572755455970764,
+            "C": 0.05657433345913887,
+            "D": 0.2873087525367737,
+            "E": 0.47368767857551575
+          },
+          "C": {
+            "A": 0.010276895016431808,
+            "B": 0.05219883844256401,
+            "C": 0.08604773879051208,
+            "D": 0.016944028437137604,
+            "E": 0.8163852691650391
+          },
+          "D": {
+            "A": 0.030861787497997284,
+            "B": 0.20126168429851532,
+            "C": 0.2584020495414734,
+            "D": 0.33179524540901184,
+            "E": 0.15672838687896729
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.028494326397776604,
+          "B": 0.13572755455970764,
+          "C": 0.08604773879051208,
+          "D": 0.33179524540901184
+        },
+        "score": 0.028494326397776604
+      },
+      {
+        "record_index": 18,
+        "sample_id": "math_stackexchange_com-437425-437428",
+        "label": null,
+        "perturbations": {
+          "a": "If $f$ possesses a pole at $z_0$, then $1/f$ has a removable discontinuity",
+          "b": "If $f$ bears a pole at $z_0$, then $1/f$ has a removable anomaly",
+          "c": "If $f$ maintains a pole at $z_0$, then $1/f$ has a removable singularity",
+          "d": "If $f$ holds a pole at $z_0$, then $1/f$ has a removable feature"
+        },
+        "bdq_probs": {
+          "A": 0.017088182270526886,
+          "B": 0.23589634895324707,
+          "C": 0.09833572059869766,
+          "D": 0.3028952181339264,
+          "E": 0.34322530031204224
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0034488430246710777,
+            "B": 0.02248954400420189,
+            "C": 0.4517093002796173,
+            "D": 0.06927187740802765,
+            "E": 0.45170918107032776
+          },
+          "B": {
+            "A": 0.014072387479245663,
+            "B": 0.466016560792923,
+            "C": 0.06306806951761246,
+            "D": 0.36293157935142517,
+            "E": 0.09176348894834518
+          },
+          "C": {
+            "A": 0.00883531291037798,
+            "B": 0.08382820338010788,
+            "C": 0.027214711531996727,
+            "D": 0.5466213226318359,
+            "E": 0.33154258131980896
+          },
+          "D": {
+            "A": 0.051289405673742294,
+            "B": 0.4294469356536865,
+            "C": 0.12303691357374191,
+            "D": 0.3344488739967346,
+            "E": 0.05811852589249611
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0034488430246710777,
+          "B": 0.466016560792923,
+          "C": 0.027214711531996727,
+          "D": 0.3344488739967346
+        },
+        "score": 0.0034488430246710777
+      },
+      {
+        "record_index": 20,
+        "sample_id": "math_stackexchange_com-1935308-3958950",
+        "label": null,
+        "perturbations": {
+          "a": "Is the class of sheaves of elements from an abelian class abelian?",
+          "b": "Is the type of sheaves of items from an abelian group abelian?",
+          "c": "Is the division of sheaves of entities from an abelian category abelian?",
+          "d": "Is the section of sheaves of objects from an abelian category abelian?"
+        },
+        "bdq_probs": {
+          "A": 0.008590515702962875,
+          "B": 0.023351570591330528,
+          "C": 0.02335144393146038,
+          "D": 0.06347580999135971,
+          "E": 0.876255989074707
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.007748370058834553,
+            "B": 0.012775352224707603,
+            "C": 0.03934953361749649,
+            "D": 0.03472583368420601,
+            "E": 0.8955915570259094
+          },
+          "B": {
+            "A": 0.012635423801839352,
+            "B": 0.025129742920398712,
+            "C": 0.041430044919252396,
+            "D": 0.07740158587694168,
+            "E": 0.8321441411972046
+          },
+          "C": {
+            "A": 0.01014086976647377,
+            "B": 0.05482504516839981,
+            "C": 0.1024193987250328,
+            "D": 0.05482129380106926,
+            "E": 0.7567838430404663
+          },
+          "D": {
+            "A": 0.016143525019288063,
+            "B": 0.12699328362941742,
+            "C": 0.0988914892077446,
+            "D": 0.4432000517845154,
+            "E": 0.08727220445871353
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.007748370058834553,
+          "B": 0.025129742920398712,
+          "C": 0.1024193987250328,
+          "D": 0.4432000517845154
+        },
+        "score": 0.007748370058834553
+      },
+      {
+        "record_index": 23,
+        "sample_id": "math_stackexchange_com-94766-94768",
+        "label": null,
+        "perturbations": {
+          "a": "How to ascertain function based on input and output",
+          "b": "How to establish function based on input and output",
+          "c": "How to identify function based on input and output",
+          "d": "How to evaluate function based on input and output"
+        },
+        "bdq_probs": {
+          "A": 0.005145077593624592,
+          "B": 0.5946928262710571,
+          "C": 0.04585758224129677,
+          "D": 0.10334165394306183,
+          "E": 0.24790367484092712
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.031059375032782555,
+            "B": 0.05802808329463005,
+            "C": 0.22949901223182678,
+            "D": 0.2946828007698059,
+            "E": 0.37838077545166016
+          },
+          "B": {
+            "A": 0.029402144253253937,
+            "B": 0.11629052460193634,
+            "C": 0.04277986288070679,
+            "D": 0.5211652517318726,
+            "E": 0.27895984053611755
+          },
+          "C": {
+            "A": 0.022343754768371582,
+            "B": 0.060738638043403625,
+            "C": 0.041743699461221695,
+            "D": 0.11347121000289917,
+            "E": 0.7399237155914307
+          },
+          "D": {
+            "A": 0.06782325357198715,
+            "B": 0.23674240708351135,
+            "C": 0.09868253767490387,
+            "D": 0.30396366119384766,
+            "E": 0.12671087682247162
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.031059375032782555,
+          "B": 0.11629052460193634,
+          "C": 0.041743699461221695,
+          "D": 0.30396366119384766
+        },
+        "score": 0.031059375032782555
+      },
+      {
+        "record_index": 24,
+        "sample_id": "math_stackexchange_com-2735821-2736110",
+        "label": null,
+        "perturbations": {
+          "a": "How can I comprehend maps out of a limit or into a colimit?",
+          "b": "How can I grasp maps out of a limit or into a colimit?",
+          "c": "How can I interpret maps out of a limit or into a colimit?",
+          "d": "How can I perceive maps out of a limit or into a colimit?"
+        },
+        "bdq_probs": {
+          "A": 0.00471740635111928,
+          "B": 0.2419579029083252,
+          "C": 0.05398786813020706,
+          "D": 0.11429230123758316,
+          "E": 0.5804239511489868
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.050294868648052216,
+            "B": 0.03456995636224747,
+            "C": 0.19891983270645142,
+            "D": 0.1989196389913559,
+            "E": 0.47718414664268494
+          },
+          "B": {
+            "A": 0.08639267086982727,
+            "B": 0.16141633689403534,
+            "C": 0.11093046516180038,
+            "D": 0.26610836386680603,
+            "E": 0.3416900932788849
+          },
+          "C": {
+            "A": 0.027455894276499748,
+            "B": 0.09584204852581024,
+            "C": 0.15799811482429504,
+            "D": 0.2028730809688568,
+            "E": 0.4294821619987488
+          },
+          "D": {
+            "A": 0.03981797397136688,
+            "B": 0.22915208339691162,
+            "C": 0.15748339891433716,
+            "D": 0.3333910405635834,
+            "E": 0.10823673009872437
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.050294868648052216,
+          "B": 0.16141633689403534,
+          "C": 0.15799811482429504,
+          "D": 0.3333910405635834
+        },
+        "score": 0.050294868648052216
+      },
+      {
+        "record_index": 25,
+        "sample_id": "math_stackexchange_com-330613-330622",
+        "label": null,
+        "perturbations": {
+          "a": "How to distinguish $F(y) = \\left(\\frac{1}{y^2}-(\\frac{-2}{y^4})\\right)\\cdot\\left(y+5y^{3}\\right)$",
+          "b": "How to tell apart $F(y) = \\left(\\frac{1}{y^2}-(\\frac{-2}{y^4})\\right)\\cdot\\left(y+5y^{3}\\right)$",
+          "c": "How to discern $F(y) = \\left(\\frac{1}{y^2}-(\\frac{-2}{y^4})\\right)\\cdot\\left(y+5y^{3}\\right)$",
+          "d": "How to identify $F(y) = \\left(\\frac{1}{y^2}-(\\frac{-2}{y^4})\\right)\\cdot\\left(y+5y^{3}\\right)$"
+        },
+        "bdq_probs": {
+          "A": 0.024697106331586838,
+          "B": 0.18249057233333588,
+          "C": 0.06713373959064484,
+          "D": 0.08620145916938782,
+          "E": 0.6369467973709106
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05127048119902611,
+            "B": 0.08453510701656342,
+            "C": 0.1229916587471962,
+            "D": 0.10854004323482513,
+            "E": 0.6246030926704407
+          },
+          "B": {
+            "A": 0.06274611502885818,
+            "B": 0.21901267766952515,
+            "C": 0.10345109552145004,
+            "D": 0.24816638231277466,
+            "E": 0.3610793352127075
+          },
+          "C": {
+            "A": 0.05574849992990494,
+            "B": 0.24985283613204956,
+            "C": 0.08111374080181122,
+            "D": 0.0811137855052948,
+            "E": 0.5289273858070374
+          },
+          "D": {
+            "A": 0.08966980129480362,
+            "B": 0.5160269141197205,
+            "C": 0.13046897947788239,
+            "D": 0.1898314207792282,
+            "E": 0.06983499228954315
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05127048119902611,
+          "B": 0.21901267766952515,
+          "C": 0.08111374080181122,
+          "D": 0.1898314207792282
+        },
+        "score": 0.05127048119902611
+      },
+      {
+        "record_index": 26,
+        "sample_id": "math_stackexchange_com-205058-205061",
+        "label": null,
+        "perturbations": {
+          "a": "Bounded collection has finite outer extent\n\nThe definition of outer extent is as follows: $$m^*(E) = \\inf \\left\\{ \\sum\\limits_{k=1}^{\\infty} l(I_k) : A \\subset \\bigcup\\limits_{k=1}^{\\infty} I_k \\right\\}$$\n\nIf a collection is bounded then for some $p\\in E$ every $e \\in E$, $d(e, p) \\leq M$.\n\nIn my mind I interpret this as indicating that every point has a finite distance less than or equal to M. However, I'm not sure how to convert that to the definition of outer extent. My first idea was that the intervals $I_k$ are the lengths between a fixed $p$ and $e$. Since they would all clearly be less than $M$, then they are all finite. Thus the outer extent must be finite.\n\n\nLet $p\\in E$ be arbitrary, $I_1=[p-M,p+M]$. Then $E\\subseteq I_1$, hence $m^*(E)\\le l(I_1)$.",
+          "b": "Bounded set has limited outer measure\n\nThe definition of outer measure is as follows: $$m^*(E) = \\inf \\left\\{ \\sum\\limits_{k=1}^{\\infty} l(I_k) : A \\subset \\bigcup\\limits_{k=1}^{\\infty} I_k \\right\\}$$\n\nIf a set is bounded then for some $p\\in E$ every $e \\in E$, $d(e, p) \\leq M$.\n\nIn my mind I interpret this as expressing that every point has a limited distance less than or equal to M. However, I'm not sure how to shift that to the definition of outer measure. My first notion was that the intervals $I_k$ are the lengths between a fixed $p$ and $e$. Since they would all clearly be less than $M$, then they are all limited. Thus the outer measure must be limited.\n\n\nLet $p\\in E$ be arbitrary, $I_1=[p-M,p+M]$. Then $E\\subseteq I_1$, hence $m^*(E)\\le l(I_1)$.",
+          "c": "Bounded set has finite external measure\n\nThe definition of external measure is as follows: $$m^*(E) = \\inf \\left\\{ \\sum\\limits_{k=1}^{\\infty} l(I_k) : A \\subset \\bigcup\\limits_{k=1}^{\\infty} I_k \\right\\}$$\n\nIf a set is bounded then for some $p\\in E$ every $e \\in E$, $d(e, p) \\leq M$.\n\nIn my mind I interpret this as stating that every point has a finite distance less than or equal to M. However, I'm not sure how to express that to the definition of external measure. My first thought was that the intervals $I_k$ are the lengths between a fixed $p$ and $e$. Since they would all clearly be less than $M$, then they are all finite. Thus the external measure must be finite.\n\n\nLet $p\\in E$ be arbitrary, $I_1=[p-M,p+M]$. Then $E\\subseteq I_1$, hence $m^*(E)\\le l(I_1)$.",
+          "d": "Bounded set has finite outer dimension\n\nThe definition of outer dimension is as follows: $$m^*(E) = \\inf \\left\\{ \\sum\\limits_{k=1}^{\\infty} l(I_k) : A \\subset \\bigcup\\limits_{k=1}^{\\infty} I_k \\right\\}$$\n\nIf a set is bounded then for some $p\\in E$ every $e \\in E$, $d(e, p) \\leq M$.\n\nIn my mind I interpret this as implying that every point has a finite distance less than or equal to M. However, I'm not sure how to relate that to the definition of outer dimension. My first perception was that the intervals $I_k$ are the lengths between a fixed $p$ and $e$. Since they would all clearly be less than $M$, then they are all finite. Thus the outer dimension must be finite.\n\n\nLet $p\\in E$ be arbitrary, $I_1=[p-M,p+M]$. Then $E\\subseteq I_1$, hence $m^*(E)\\le l(I_1)$."
+        },
+        "bdq_probs": {
+          "A": 0.06849696487188339,
+          "B": 0.08795379102230072,
+          "C": 0.08795200288295746,
+          "D": 0.3941739797592163,
+          "E": 0.3478568196296692
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06389257311820984,
+            "B": 0.09296513348817825,
+            "C": 0.09296328574419022,
+            "D": 0.3676774501800537,
+            "E": 0.3676769435405731
+          },
+          "B": {
+            "A": 0.06307715177536011,
+            "B": 0.09177855402231216,
+            "C": 0.10399679839611053,
+            "D": 0.3629850745201111,
+            "E": 0.36298447847366333
+          },
+          "C": {
+            "A": 0.05457008630037308,
+            "B": 0.10195240378379822,
+            "C": 0.11552499234676361,
+            "D": 0.35584262013435364,
+            "E": 0.35584211349487305
+          },
+          "D": {
+            "A": 0.058808691799640656,
+            "B": 0.0855678990483284,
+            "C": 0.08556624501943588,
+            "D": 0.49240049719810486,
+            "E": 0.2635626196861267
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06389257311820984,
+          "B": 0.09177855402231216,
+          "C": 0.11552499234676361,
+          "D": 0.49240049719810486
+        },
+        "score": 0.06389257311820984
+      },
+      {
+        "record_index": 27,
+        "sample_id": "math_stackexchange_com-2593877-2593901",
+        "label": null,
+        "perturbations": {
+          "a": "Definition of the producing set of a ring",
+          "b": "Definition of the generating collection of a ring",
+          "c": "Definition of the forming set of a ring",
+          "d": "Definition of the originating set of a ring"
+        },
+        "bdq_probs": {
+          "A": 0.01069150771945715,
+          "B": 0.37689051032066345,
+          "C": 0.07421375811100006,
+          "D": 0.15711049735546112,
+          "E": 0.37688854336738586
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0022117458283901215,
+            "B": 0.004984430503100157,
+            "C": 0.020984424278140068,
+            "D": 0.0732429102063179,
+            "E": 0.892279326915741
+          },
+          "B": {
+            "A": 0.0019074126612395048,
+            "B": 0.005185028538107872,
+            "C": 0.011684293858706951,
+            "D": 0.10414116829633713,
+            "E": 0.8719610571861267
+          },
+          "C": {
+            "A": 0.000884197885170579,
+            "B": 0.0032853276934474707,
+            "C": 0.008930019102990627,
+            "D": 0.0065333847887814045,
+            "E": 0.9696331024169922
+          },
+          "D": {
+            "A": 0.09996529668569565,
+            "B": 0.1283675581216812,
+            "C": 0.06870504468679428,
+            "D": 0.5076681971549988,
+            "E": 0.12835833430290222
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0022117458283901215,
+          "B": 0.005185028538107872,
+          "C": 0.008930019102990627,
+          "D": 0.5076681971549988
+        },
+        "score": 0.0022117458283901215
+      },
+      {
+        "record_index": 28,
+        "sample_id": "math_stackexchange_com-672755-672759",
+        "label": null,
+        "perturbations": {
+          "a": "Proof that a matrix is invertible",
+          "b": "Proof that a matrix is non-degenerate",
+          "c": "Proof that a matrix is non-singular",
+          "d": "Proof that a matrix is nonsingular"
+        },
+        "bdq_probs": {
+          "A": 0.00234488514252007,
+          "B": 0.030409010127186775,
+          "C": 0.07294720411300659,
+          "D": 0.6921034455299377,
+          "E": 0.1982910931110382
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.002132589928805828,
+            "B": 0.00699258130043745,
+            "C": 0.4326099455356598,
+            "D": 0.12394483387470245,
+            "E": 0.4326101541519165
+          },
+          "B": {
+            "A": 0.003528563305735588,
+            "B": 0.014855992048978806,
+            "C": 0.009010499343276024,
+            "D": 0.6316840052604675,
+            "E": 0.33811619877815247
+          },
+          "C": {
+            "A": 0.005481474567204714,
+            "B": 0.010241272859275341,
+            "C": 0.035743795335292816,
+            "D": 0.021679682657122612,
+            "E": 0.9218395948410034
+          },
+          "D": {
+            "A": 0.024941015988588333,
+            "B": 0.1435282826423645,
+            "C": 0.11177784949541092,
+            "D": 0.4420897662639618,
+            "E": 0.2681412398815155
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.002132589928805828,
+          "B": 0.014855992048978806,
+          "C": 0.035743795335292816,
+          "D": 0.4420897662639618
+        },
+        "score": 0.002132589928805828
+      },
+      {
+        "record_index": 29,
+        "sample_id": "math_stackexchange_com-49396-49400",
+        "label": null,
+        "perturbations": {
+          "a": "injectiveness of a group action",
+          "b": "injectivity of a group operation",
+          "c": "injectivity of a group interaction",
+          "d": "injection of a group action"
+        },
+        "bdq_probs": {
+          "A": 0.009348173625767231,
+          "B": 0.29081493616104126,
+          "C": 0.06488916277885437,
+          "D": 0.25664156675338745,
+          "E": 0.37341129779815674
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.019166599959135056,
+            "B": 0.06689862906932831,
+            "C": 0.14162302017211914,
+            "D": 0.3849712014198303,
+            "E": 0.3849712610244751
+          },
+          "B": {
+            "A": 0.020205505192279816,
+            "B": 0.07052478939294815,
+            "C": 0.03774883970618248,
+            "D": 0.590490996837616,
+            "E": 0.2789282500743866
+          },
+          "C": {
+            "A": 0.026360493153333664,
+            "B": 0.08119788765907288,
+            "C": 0.11813961714506149,
+            "D": 0.09200720489025116,
+            "E": 0.6798458099365234
+          },
+          "D": {
+            "A": 0.06010308116674423,
+            "B": 0.30523383617401123,
+            "C": 0.11228737980127335,
+            "D": 0.3919210433959961,
+            "E": 0.12723812460899353
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.019166599959135056,
+          "B": 0.07052478939294815,
+          "C": 0.11813961714506149,
+          "D": 0.3919210433959961
+        },
+        "score": 0.019166599959135056
+      },
+      {
+        "record_index": 30,
+        "sample_id": "math_stackexchange_com-4495286-4495322",
+        "label": null,
+        "perturbations": {
+          "a": "Evaluate integral $\\int_{0}^{2\\pi} e^{-\\sin^{2}{x}} \\cos(6x - \\frac{\\sin{2x}}{2}) dx$\n\nI possess such an integral: $$ \\int_{0}^{2\\pi} e^{-\\sin^{2}{x}} \\cos\\left(6x - \\frac{\\sin{2x}}{2}\\right) dx $$ I believe, it ought to be resolved somehow by partial fraction and with polar coordinates, but I truly don't understand first steps.\n\nRewrite the integral as $$I= \\int_{0}^{2\\pi} e^{-\\sin^{2}{x}} \\cos(6x - \\frac12{\\sin{2x}}) dx =e^{-\\frac12}J_{3}(\\frac12) $$ where $J_n(a)=\\int_0^{2\\pi}e^{a\\cos t}\\cos (a\\sin t-n t)dt $. It is straightforward to ascertain $J_n’(a)= J_{n-1}(a) $, and $$J_{-1}(a)= \\int_{0}^{2\\pi}e^{a\\cos t}\\cos(t+a\\sin t)dt=\\frac1a e^{a\\cos t}\\sin(a\\sin t)\\bigg|_{0}^{2\\pi} =0$$ Then, $J_{0}(a) = J_0(0)=2\\pi$ and \\begin{align} &J_{1}(a) =\\int_0^a J_{0}(s)ds=2\\pi a\\\\ &J_{2}(a) =\\int_0^a J_{1}(s)ds=\\pi a^2\\\\ &J_{3}(a) =\\int_0^a J_{2}(s)ds=\\frac{\\pi a^3}3\\\\ \\end{align} As a consequence $$I= e^{-\\frac12}J_{3}(\\frac12)= \\frac{\\pi}{24} e^{-\\frac12} $$",
+          "b": "Assess integral $\\int_{0}^{2\\pi} e^{-\\sin^{2}{x}} \\cos(6x - \\frac{\\sin{2x}}{2}) dx$\n\nI have such an integral: $$ \\int_{0}^{2\\pi} e^{-\\sin^{2}{x}} \\cos\\left(6x - \\frac{\\sin{2x}}{2}\\right) dx $$ I think, it ought to be solved somehow by partial fraction and with polar coordinates, but I really don't know initial steps.\n\nRewrite the integral as $$I= \\int_{0}^{2\\pi} e^{-\\sin^{2}{x}} \\cos(6x - \\frac12{\\sin{2x}}) dx =e^{-\\frac12}J_{3}(\\frac12) $$ where $J_n(a)=\\int_0^{2\\pi}e^{a\\cos t}\\cos (a\\sin t-n t)dt $. It is straightforward to determine $J_n’(a)= J_{n-1}(a) $, and $$J_{-1}(a)= \\int_{0}^{2\\pi}e^{a\\cos t}\\cos(t+a\\sin t)dt=\\frac1a e^{a\\cos t}\\sin(a\\sin t)\\bigg|_{0}^{2\\pi} =0$$ Then, $J_{0}(a) = J_0(0)=2\\pi$ and \\begin{align} &J_{1}(a) =\\int_0^a J_{0}(s)ds=2\\pi a\\\\ &J_{2}(a) =\\int_0^a J_{1}(s)ds=\\pi a^2\\\\ &J_{3}(a) =\\int_0^a J_{2}(s)ds=\\frac{\\pi a^3}3\\\\ \\end{align} As a result $$I= e^{-\\frac12}J_{3}(\\frac12)= \\frac{\\pi}{24} e^{-\\frac12} $$",
+          "c": "Analyze integral $\\int_{0}^{2\\pi} e^{-\\sin^{2}{x}} \\cos(6x - \\frac{\\sin{2x}}{2}) dx$\n\nI have such an integral: $$ \\int_{0}^{2\\pi} e^{-\\sin^{2}{x}} \\cos\\left(6x - \\frac{\\sin{2x}}{2}\\right) dx $$ I think, it ought to be determined somehow by partial fraction and with polar coordinates, but I really don't know primary steps.\n\nRewrite the integral as $$I= \\int_{0}^{2\\pi} e^{-\\sin^{2}{x}} \\cos(6x - \\frac12{\\sin{2x}}) dx =e^{-\\frac12}J_{3}(\\frac12) $$ where $J_n(a)=\\int_0^{2\\pi}e^{a\\cos t}\\cos (a\\sin t-n t)dt $. It is straightforward to conclude $J_n’(a)= J_{n-1}(a) $, and $$J_{-1}(a)= \\int_{0}^{2\\pi}e^{a\\cos t}\\cos(t+a\\sin t)dt=\\frac1a e^{a\\cos t}\\sin(a\\sin t)\\bigg|_{0}^{2\\pi} =0$$ Then, $J_{0}(a) = J_0(0)=2\\pi$ and \\begin{align} &J_{1}(a) =\\int_0^a J_{0}(s)ds=2\\pi a\\\\ &J_{2}(a) =\\int_0^a J_{1}(s)ds=\\pi a^2\\\\ &J_{3}(a) =\\int_0^a J_{2}(s)ds=\\frac{\\pi a^3}3\\\\ \\end{align} As an outcome $$I= e^{-\\frac12}J_{3}(\\frac12)= \\frac{\\pi}{24} e^{-\\frac12} $$",
+          "d": "Compute integral $\\int_{0}^{2\\pi} e^{-\\sin^{2}{x}} \\cos(6x - \\frac{\\sin{2x}}{2}) dx$\n\nI have such an integral: $$ \\int_{0}^{2\\pi} e^{-\\sin^{2}{x}} \\cos\\left(6x - \\frac{\\sin{2x}}{2}\\right) dx $$ I think, it should be resolved somehow by partial fraction and with polar coordinates, but I really don't know commencing steps.\n\nRewrite the integral as $$I= \\int_{0}^{2\\pi} e^{-\\sin^{2}{x}} \\cos(6x - \\frac12{\\sin{2x}}) dx =e^{-\\frac12}J_{3}(\\frac12) $$ where $J_n(a)=\\int_0^{2\\pi}e^{a\\cos t}\\cos (a\\sin t-n t)dt $. It is straightforward to verify $J_n’(a)= J_{n-1}(a) $, and $$J_{-1}(a)= \\int_{0}^{2\\pi}e^{a\\cos t}\\cos(t+a\\sin t)dt=\\frac1a e^{a\\cos t}\\sin(a\\sin t)\\bigg|_{0}^{2\\pi} =0$$ Then, $J_{0}(a) = J_0(0)=2\\pi$ and \\begin{align} &J_{1}(a) =\\int_0^a J_{0}(s)ds=2\\pi a\\\\ &J_{2}(a) =\\int_0^a J_{1}(s)ds=\\pi a^2\\\\ &J_{3}(a) =\\int_0^a J_{2}(s)ds=\\frac{\\pi a^3}3\\\\ \\end{align} As a result $$I= e^{-\\frac12}J_{3}(\\frac12)= \\frac{\\pi}{24} e^{-\\frac12} $$"
+        },
+        "bdq_probs": {
+          "A": 0.0011687491787597537,
+          "B": 0.0013251407071948051,
+          "C": 0.0007546181441284716,
+          "D": 0.008636151440441608,
+          "E": 0.9376980662345886
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0011012511095032096,
+            "B": 0.0014148333575576544,
+            "C": 0.0007110369042493403,
+            "D": 0.007644407916814089,
+            "E": 0.9405267834663391
+          },
+          "B": {
+            "A": 0.0012424850137904286,
+            "B": 0.0014995274832472205,
+            "C": 0.0009090411476790905,
+            "D": 0.008624791167676449,
+            "E": 0.9364598989486694
+          },
+          "C": {
+            "A": 0.0010394281707704067,
+            "B": 0.0011071304325014353,
+            "C": 0.0006711227470077574,
+            "D": 0.006778103299438953,
+            "E": 0.9449766278266907
+          },
+          "D": {
+            "A": 0.0013272437499836087,
+            "B": 0.0017050513997673988,
+            "C": 0.0009710529702715576,
+            "D": 0.011829936876893044,
+            "E": 0.9397364258766174
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0011012511095032096,
+          "B": 0.0014995274832472205,
+          "C": 0.0006711227470077574,
+          "D": 0.011829936876893044
+        },
+        "score": 0.0006711227470077574
+      },
+      {
+        "record_index": 32,
+        "sample_id": "math_stackexchange_com-79272-79274",
+        "label": null,
+        "perturbations": {
+          "a": "What is an instance of positive integer that cannot be expressed as $p+a^2$, with $p$ prime or 1 and $a \\geq 0$?",
+          "b": "What is an illustration of positive integer that cannot be represented as $p+a^2$, with $p$ prime or 1 and $a \\geq 0$?",
+          "c": "What is a case of positive integer that cannot be formulated as $p+a^2$, with $p$ prime or 1 and $a \\geq 0$?",
+          "d": "What is a sample of positive integer that cannot be indicated as $p+a^2$, with $p$ prime or 1 and $a \\geq 0$?"
+        },
+        "bdq_probs": {
+          "A": 0.05573267489671707,
+          "B": 0.19452784955501556,
+          "C": 0.10412238538265228,
+          "D": 0.22042720019817352,
+          "E": 0.411811888217926
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.030175654217600822,
+            "B": 0.06388361006975174,
+            "C": 0.043905407190322876,
+            "D": 0.07238784432411194,
+            "E": 0.778240442276001
+          },
+          "B": {
+            "A": 0.057391148060560226,
+            "B": 0.17678120732307434,
+            "C": 0.07369182258844376,
+            "D": 0.20031529664993286,
+            "E": 0.4805302023887634
+          },
+          "C": {
+            "A": 0.03487778827548027,
+            "B": 0.10743541270494461,
+            "C": 0.09480803459882736,
+            "D": 0.04478420317173004,
+            "E": 0.7005396485328674
+          },
+          "D": {
+            "A": 0.07007746398448944,
+            "B": 0.24459856748580933,
+            "C": 0.14835421741008759,
+            "D": 0.35588353872299194,
+            "E": 0.16810719668865204
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.030175654217600822,
+          "B": 0.17678120732307434,
+          "C": 0.09480803459882736,
+          "D": 0.35588353872299194
+        },
+        "score": 0.030175654217600822
+      },
+      {
+        "record_index": 33,
+        "sample_id": "math_stackexchange_com-994431-994834",
+        "label": null,
+        "perturbations": {
+          "a": "Determine the anticipated number of steps necessary until every point has been visited at least once.",
+          "b": "Calculate the predicted number of steps required until every point has been visited at least once.",
+          "c": "Ascertain the estimated number of steps needed until every point has been visited at least once.",
+          "d": "Evaluate the expected number of steps demanded until every point has been visited at least once."
+        },
+        "bdq_probs": {
+          "A": 0.005454647820442915,
+          "B": 0.38240450620651245,
+          "C": 0.07529918849468231,
+          "D": 0.040304724127054214,
+          "E": 0.4910118579864502
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.003996992018073797,
+            "B": 0.0277455672621727,
+            "C": 0.024484602734446526,
+            "D": 0.20500703155994415,
+            "E": 0.7155447006225586
+          },
+          "B": {
+            "A": 0.0035487704444676638,
+            "B": 0.029714051634073257,
+            "C": 0.026222093030810356,
+            "D": 0.4647971987724304,
+            "E": 0.4647972881793976
+          },
+          "C": {
+            "A": 0.0025673711206763983,
+            "B": 0.006159048993140459,
+            "C": 0.005105842836201191,
+            "D": 0.058433253318071365,
+            "E": 0.9140475392341614
+          },
+          "D": {
+            "A": 0.025732997804880142,
+            "B": 0.04807884991168976,
+            "C": 0.07926364243030548,
+            "D": 0.13068407773971558,
+            "E": 0.5168646574020386
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.003996992018073797,
+          "B": 0.029714051634073257,
+          "C": 0.005105842836201191,
+          "D": 0.13068407773971558
+        },
+        "score": 0.003996992018073797
+      },
+      {
+        "record_index": 34,
+        "sample_id": "math_stackexchange_com-1766157-1766168",
+        "label": null,
+        "perturbations": {
+          "a": "Demonstrate $\\int_0^1 \\frac{\\log(1-x)}{x}dx=-\\frac{\\pi^2}{6}$",
+          "b": "Reveal $\\int_0^1 \\frac{\\log(1-x)}{x}dx=-\\frac{\\pi^2}{6}$",
+          "c": "Exhibit $\\int_0^1 \\frac{\\log(1-x)}{x}dx=-\\frac{\\pi^2}{6}$",
+          "d": "Present $\\int_0^1 \\frac{\\log(1-x)}{x}dx=-\\frac{\\pi^2}{6}$"
+        },
+        "bdq_probs": {
+          "A": 0.0038674345705658197,
+          "B": 0.08269017934799194,
+          "C": 0.01436927542090416,
+          "D": 0.008715410716831684,
+          "E": 0.8889946937561035
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0028830564115196466,
+            "B": 0.022678324952721596,
+            "C": 0.07915008068084717,
+            "D": 0.03738798573613167,
+            "E": 0.8509436845779419
+          },
+          "B": {
+            "A": 0.00892391987144947,
+            "B": 0.029263149946928024,
+            "C": 0.13959358632564545,
+            "D": 0.2607950270175934,
+            "E": 0.5521030426025391
+          },
+          "C": {
+            "A": 0.005555351264774799,
+            "B": 0.017114438116550446,
+            "C": 0.014186196029186249,
+            "D": 0.12643922865390778,
+            "E": 0.8244838714599609
+          },
+          "D": {
+            "A": 0.018832586705684662,
+            "B": 0.1787167191505432,
+            "C": 0.0844021588563919,
+            "D": 0.12280473113059998,
+            "E": 0.5503683090209961
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0028830564115196466,
+          "B": 0.029263149946928024,
+          "C": 0.014186196029186249,
+          "D": 0.12280473113059998
+        },
+        "score": 0.0028830564115196466
+      }
+    ]
+  }
+}

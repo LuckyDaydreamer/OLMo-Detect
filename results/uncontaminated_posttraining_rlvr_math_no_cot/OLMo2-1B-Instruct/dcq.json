@@ -1,0 +1,3013 @@
+{
+  "model_name": "OLMo2-1B-Instruct",
+  "model_path": "olmo_models/OLMo2-1B-Instruct",
+  "dataset_name": "uncontaminated_posttraining_rlvr_math_no_cot_test",
+  "dataset_path": "benchmark/posttraining/rlvr/uncontaminated/test/uncontaminated_posttraining_rlvr_math_no_cot_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 71.1077299118042,
+  "result": {
+    "method": "dcq",
+    "dataset": "uncontaminated_posttraining_rlvr_math_no_cot_test",
+    "dataset_path": "benchmark/posttraining/rlvr/uncontaminated/test/uncontaminated_posttraining_rlvr_math_no_cot_test.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "min_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.022790314245934563,
+      "B": 0.145684782381135,
+      "C": 0.06548178789240343,
+      "D": 0.19305357761267158
+    },
+    "non_preferred": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "num_total_records": 93,
+    "num_scored_records": 54,
+    "summary": {
+      "mean_score": 0.02659377211670357
+    },
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "MATH_train_test_question_7847",
+        "label": null,
+        "perturbations": {
+          "a": "Expand the factor $(x+1)^2 \\cdot x$.",
+          "b": "Expand the expression $(x+1)^2 \\cdot x$.",
+          "c": "Expand the term $(x+1)^2 \\cdot x$.",
+          "d": "Expand the polynomial $(x+1)^2 \\cdot x$."
+        },
+        "bdq_probs": {
+          "A": 0.005781050771474838,
+          "B": 0.2785526216030121,
+          "C": 0.14909544587135315,
+          "D": 0.1024717390537262,
+          "E": 0.4592459499835968
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.002930160379037261,
+            "B": 0.5583978891372681,
+            "C": 0.024533968418836594,
+            "D": 0.027800632640719414,
+            "E": 0.3837753236293793
+          },
+          "B": {
+            "A": 0.004586209077388048,
+            "B": 0.028094258159399033,
+            "C": 0.14267292618751526,
+            "D": 0.09805760532617569,
+            "E": 0.7245522737503052
+          },
+          "C": {
+            "A": 0.0026636188849806786,
+            "B": 0.12056584656238556,
+            "C": 0.015328086912631989,
+            "D": 0.07312621921300888,
+            "E": 0.786179780960083
+          },
+          "D": {
+            "A": 0.004168722312897444,
+            "B": 0.11444875597953796,
+            "C": 0.017551014199852943,
+            "D": 0.012840604409575462,
+            "E": 0.8456532955169678
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.002930160379037261,
+          "B": 0.028094258159399033,
+          "C": 0.015328086912631989,
+          "D": 0.012840604409575462
+        },
+        "score": 0.002930160379037261
+      },
+      {
+        "record_index": 2,
+        "sample_id": "MATH_train_test_question_7891",
+        "label": null,
+        "perturbations": {
+          "a": "Zeno had to color a $15^\\prime \\times 15^\\prime$ square surface. He decided that each day he would color half of the uncolored part from the previous day until there was only one square foot or less remaining, in which case he would stay and complete the task that day. Using this method, how many days did it take Zeno to color the entire surface?",
+          "b": "Zeno had to decorate a $15^\\prime \\times 15^\\prime$ square ground. He decided that each day he would decorate half of the undecorated part from the previous day until there was only one square foot or less left, in which case he would remain and finish the task that day. Using this approach, how many days did it take Zeno to decorate the entire ground?",
+          "c": "Zeno had to cover a $15^\\prime \\times 15^\\prime$ square area. He decided that each day he would cover half of the uncovered part from the previous day until there was only one square foot or less remaining, in which case he would stay and complete the job that day. Using this plan, how many days did it take Zeno to cover the entire area?",
+          "d": "Zeno had to finish a $15^\\prime \\times 15^\\prime$ square floor. He decided that each day he would finish half of the unfinished part from the previous day until there was only one square foot or less remaining, in which case he would stay and finalize the job that day. Using this strategy, how many days did it take Zeno to finish the entire floor?"
+        },
+        "bdq_probs": {
+          "A": 0.025716682896018028,
+          "B": 0.061693236231803894,
+          "C": 0.022694960236549377,
+          "D": 0.45584195852279663,
+          "E": 0.3550085723400116
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03946332260966301,
+            "B": 0.1768663078546524,
+            "C": 0.03946338966488838,
+            "D": 0.37441927194595337,
+            "E": 0.2573337256908417
+          },
+          "B": {
+            "A": 0.030636431649327278,
+            "B": 0.1069355309009552,
+            "C": 0.03471575304865837,
+            "D": 0.4229256212711334,
+            "E": 0.32937344908714294
+          },
+          "C": {
+            "A": 0.021188756451010704,
+            "B": 0.0652688518166542,
+            "C": 0.08380348235368729,
+            "D": 0.227802574634552,
+            "E": 0.4822551906108856
+          },
+          "D": {
+            "A": 0.03833073005080223,
+            "B": 0.07161745429039001,
+            "C": 0.02051715925335884,
+            "D": 0.46697327494621277,
+            "E": 0.08114653080701828
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03946332260966301,
+          "B": 0.1069355309009552,
+          "C": 0.08380348235368729,
+          "D": 0.46697327494621277
+        },
+        "score": 0.03946332260966301
+      },
+      {
+        "record_index": 3,
+        "sample_id": "MATH_train_test_question_7918",
+        "label": null,
+        "perturbations": {
+          "a": "At her athletics event, Alice dashed at a velocity of $9\\ \\text{m/s}$ for $12$ seconds. How many meters did she cover?",
+          "b": "At her running competition, Alice sprinted at a pace of $9\\ \\text{m/s}$ for $12$ seconds. How many meters did she traverse?",
+          "c": "At her sports gathering, Alice raced at a speed of $9\\ \\text{m/s}$ for $12$ seconds. How many meters did she journey?",
+          "d": "At her track competition, Alice jogged at a rate of $9\\ \\text{m/s}$ for $12$ seconds. How many meters did she move?"
+        },
+        "bdq_probs": {
+          "A": 0.10839735716581345,
+          "B": 0.20251548290252686,
+          "C": 0.051203470677137375,
+          "D": 0.3338894844055176,
+          "E": 0.26003196835517883
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.09698197990655899,
+            "B": 0.4346461296081543,
+            "C": 0.05191079154610634,
+            "D": 0.2636250853538513,
+            "E": 0.14110802114009857
+          },
+          "B": {
+            "A": 0.18984346091747284,
+            "B": 0.2437668740749359,
+            "C": 0.061633337289094925,
+            "D": 0.1675373762845993,
+            "E": 0.3129991292953491
+          },
+          "C": {
+            "A": 0.10565098375082016,
+            "B": 0.13566015660762787,
+            "C": 0.06408073008060455,
+            "D": 0.13565923273563385,
+            "E": 0.5365402698516846
+          },
+          "D": {
+            "A": 0.07067660242319107,
+            "B": 0.14962489902973175,
+            "C": 0.0800873264670372,
+            "D": 0.5222374796867371,
+            "E": 0.11652613431215286
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.09698197990655899,
+          "B": 0.2437668740749359,
+          "C": 0.06408073008060455,
+          "D": 0.5222374796867371
+        },
+        "score": 0.06408073008060455
+      },
+      {
+        "record_index": 6,
+        "sample_id": "MATH_train_test_question_8147",
+        "label": null,
+        "perturbations": {
+          "a": "Express $\\left(\\frac{16}{625}\\right)^{\\frac14}$ a standard fraction.",
+          "b": "Express $\\left(\\frac{16}{625}\\right)^{\\frac14}$ a typical fraction.",
+          "c": "Express $\\left(\\frac{16}{625}\\right)^{\\frac14}$ a regular fraction.",
+          "d": "Express $\\left(\\frac{16}{625}\\right)^{\\frac14}$ a conventional fraction."
+        },
+        "bdq_probs": {
+          "A": 0.003345597768202424,
+          "B": 0.05930376425385475,
+          "C": 0.052334077656269073,
+          "D": 0.05930231884121895,
+          "E": 0.818641185760498
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.014188204891979694,
+            "B": 0.172856867313385,
+            "C": 0.19586299359798431,
+            "D": 0.09251929074525833,
+            "E": 0.4698503017425537
+          },
+          "B": {
+            "A": 0.00968937762081623,
+            "B": 0.049208108335733414,
+            "C": 0.24989305436611176,
+            "D": 0.08112839609384537,
+            "E": 0.5994614362716675
+          },
+          "C": {
+            "A": 0.007665661163628101,
+            "B": 0.08241521567106247,
+            "C": 0.0389295369386673,
+            "D": 0.2538524866104126,
+            "E": 0.6089591979980469
+          },
+          "D": {
+            "A": 0.011647327803075314,
+            "B": 0.30039626359939575,
+            "C": 0.09752212464809418,
+            "D": 0.14189386367797852,
+            "E": 0.43706321716308594
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.014188204891979694,
+          "B": 0.049208108335733414,
+          "C": 0.0389295369386673,
+          "D": 0.14189386367797852
+        },
+        "score": 0.014188204891979694
+      },
+      {
+        "record_index": 8,
+        "sample_id": "MATH_train_test_question_8170",
+        "label": null,
+        "perturbations": {
+          "a": "Heisenberg's Inaccuracy Principle says that the product of the mistake in the measurement of a particle's momentum and the mistake in the measurement of a particle's position must be at least Planck's constant divided by $4\\pi$. Suppose the mistake in the measurement of the momentum of a particle is halved. By how many percent does the minimum mistake in the measurement of its position increase?",
+          "b": "Heisenberg's Uncertainty Rule states that the product of the error in the assessment of a particle's momentum and the error in the assessment of a particle's position must be at least Planck's constant divided by $4\\pi$. Suppose the error in the assessment of the momentum of a particle is halved. By how many percent does the minimum error in the assessment of its position increase?",
+          "c": "Heisenberg's Ambiguity Principle states that the product of the mistake in the evaluation of a particle's momentum and the mistake in the evaluation of a particle's position must be at least Planck's constant divided by $4\\pi$. Suppose the mistake in the evaluation of the momentum of a particle is halved. By how many percent does the minimum mistake in the evaluation of its position increase?",
+          "d": "Heisenberg's Indeterminacy Principle articulates that the product of the error in the calculation of a particle's momentum and the error in the calculation of a particle's position must be at least Planck's constant divided by $4\\pi$. Suppose the error in the calculation of the momentum of a particle is halved. By how many percent does the minimum error in the calculation of its position increase?"
+        },
+        "bdq_probs": {
+          "A": 0.027677712962031364,
+          "B": 0.12404948472976685,
+          "C": 0.10946812480688095,
+          "D": 0.3820818364620209,
+          "E": 0.2975648045539856
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04815507307648659,
+            "B": 0.16808351874351501,
+            "C": 0.13089945912361145,
+            "D": 0.24455291032791138,
+            "E": 0.3558218479156494
+          },
+          "B": {
+            "A": 0.03120378591120243,
+            "B": 0.1398535519838333,
+            "C": 0.09611508250236511,
+            "D": 0.23056870698928833,
+            "E": 0.430756539106369
+          },
+          "C": {
+            "A": 0.042089056223630905,
+            "B": 0.188643679022789,
+            "C": 0.18863163888454437,
+            "D": 0.2137485295534134,
+            "E": 0.27445653080940247
+          },
+          "D": {
+            "A": 0.03779641166329384,
+            "B": 0.13194820284843445,
+            "C": 0.07061392813920975,
+            "D": 0.460469126701355,
+            "E": 0.010828966274857521
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04815507307648659,
+          "B": 0.1398535519838333,
+          "C": 0.18863163888454437,
+          "D": 0.460469126701355
+        },
+        "score": 0.04815507307648659
+      },
+      {
+        "record_index": 12,
+        "sample_id": "MATH_train_test_question_8307",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Which of the following coordinates is farthest from the origin: $(1,4)$, $(3,5)$, $(-6,0)$, $(-4,-2)?$",
+          "b": "Question: Which of the following locations is farthest from the origin: $(1,4)$, $(3,5)$, $(-6,0)$, $(-4,-2)?$",
+          "c": "Question: Which of the following points is most distant from the origin: $(1,4)$, $(3,5)$, $(-6,0)$, $(-4,-2)?$",
+          "d": "Question: Which of the following spots is farthest away from the origin: $(1,4)$, $(3,5)$, $(-6,0)$, $(-4,-2)?"
+        },
+        "bdq_probs": {
+          "A": 0.006485177204012871,
+          "B": 0.06972290575504303,
+          "C": 0.022635504603385925,
+          "D": 0.14760199189186096,
+          "E": 0.749584436416626
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.015488565899431705,
+            "B": 0.11444702744483948,
+            "C": 0.042102307081222534,
+            "D": 0.24228206276893616,
+            "E": 0.5812042355537415
+          },
+          "B": {
+            "A": 0.0109013132750988,
+            "B": 0.07108701765537262,
+            "C": 0.043115563690662384,
+            "D": 0.19323047995567322,
+            "E": 0.6744400858879089
+          },
+          "C": {
+            "A": 0.009966347366571426,
+            "B": 0.07364340871572495,
+            "C": 0.030698556452989578,
+            "D": 0.17665787041187286,
+            "E": 0.6986947655677795
+          },
+          "D": {
+            "A": 0.014210766181349754,
+            "B": 0.09266795963048935,
+            "C": 0.023429634049534798,
+            "D": 0.25189208984375,
+            "E": 0.6042572855949402
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.015488565899431705,
+          "B": 0.07108701765537262,
+          "C": 0.030698556452989578,
+          "D": 0.25189208984375
+        },
+        "score": 0.015488565899431705
+      },
+      {
+        "record_index": 13,
+        "sample_id": "MATH_train_test_question_8348",
+        "label": null,
+        "perturbations": {
+          "a": "Two matching blue containers collectively weigh the same as three matching red containers collectively. Each red container weighs 15.2 ounces. How much does one blue container weigh in ounces?",
+          "b": "Two equal blue boxes combined weigh the same as three equal red boxes combined. Each red box weighs 15.2 ounces. How much does one blue box weigh in ounces?",
+          "c": "Two similar blue boxes together weigh the same as three similar red boxes together. Each red box weighs 15.2 ounces. How much does one blue box weigh in ounces?",
+          "d": "Two corresponding blue boxes together weigh the same as three corresponding red boxes together. Each red box weighs 15.2 ounces. How much does one blue box weigh in ounces?"
+        },
+        "bdq_probs": {
+          "A": 0.06648818403482437,
+          "B": 0.2047993540763855,
+          "C": 0.12421631067991257,
+          "D": 0.29797956347465515,
+          "E": 0.2979796230792999
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.040477506816387177,
+            "B": 0.4351778030395508,
+            "C": 0.07562197744846344,
+            "D": 0.2639467120170593,
+            "E": 0.11002947390079498
+          },
+          "B": {
+            "A": 0.06850578635931015,
+            "B": 0.2709479331970215,
+            "C": 0.12798576056957245,
+            "D": 0.23910902440547943,
+            "E": 0.27094611525535583
+          },
+          "C": {
+            "A": 0.04828958585858345,
+            "B": 0.24523675441741943,
+            "C": 0.10222912579774857,
+            "D": 0.27788761258125305,
+            "E": 0.314888060092926
+          },
+          "D": {
+            "A": 0.05769503861665726,
+            "B": 0.25857454538345337,
+            "C": 0.10778863728046417,
+            "D": 0.42631253600120544,
+            "E": 0.12214064598083496
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.040477506816387177,
+          "B": 0.2709479331970215,
+          "C": 0.10222912579774857,
+          "D": 0.42631253600120544
+        },
+        "score": 0.040477506816387177
+      },
+      {
+        "record_index": 16,
+        "sample_id": "MATH_train_test_question_8485",
+        "label": null,
+        "perturbations": {
+          "a": "It's a widely-recognized physics equation that force equals mass times acceleration. Jen wants to toss a softball with the same force as Jack tosses a baseball. If the softball has a mass of $200$ g and the baseball has a mass of $150$ g, what is the ratio of acceleration of Jen's ball to Jack's? Answer as a fraction in simplest terms.",
+          "b": "It's a commonly-acknowledged physics formula that force equals weight times acceleration. Jen wants to hurl a softball with the same force as Jack hurls a baseball. If the softball has a weight of $200$ g and the baseball has a weight of $150$ g, what is the ratio of acceleration of Jen's ball to Jack's? Answer as a fraction in most reduced terms.",
+          "c": "It's a famous physics equation that force equals mass multiplied by acceleration. Jen wants to fling a softball with the identical force as Jack flings a baseball. If the softball has a mass of $200$ g and the baseball has a mass of $150$ g, what is the proportion of acceleration of Jen's ball to Jack's? Answer as a fraction in minimal terms.",
+          "d": "It's a notable physics expression that force equals mass times acceleration. Jen wants to pitch a softball with the same force as Jack pitches a baseball. If the softball has a mass of $200$ g and the baseball has a mass of $150$ g, what is the ratio of acceleration of Jen's ball to Jack's? Answer as a fraction in lowest form."
+        },
+        "bdq_probs": {
+          "A": 0.027522370219230652,
+          "B": 0.2611342966556549,
+          "C": 0.051418792456388474,
+          "D": 0.3799375295639038,
+          "E": 0.13977065682411194
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.009631931781768799,
+            "B": 0.09139201045036316,
+            "C": 0.10355375707149506,
+            "D": 0.21922548115253448,
+            "E": 0.21922439336776733
+          },
+          "B": {
+            "A": 0.021011343225836754,
+            "B": 0.17594757676124573,
+            "C": 0.0941675528883934,
+            "D": 0.22590011358261108,
+            "E": 0.19935457408428192
+          },
+          "C": {
+            "A": 0.02291024476289749,
+            "B": 0.21738888323307037,
+            "C": 0.11634907126426697,
+            "D": 0.2173725664615631,
+            "E": 0.13184131681919098
+          },
+          "D": {
+            "A": 0.016921252012252808,
+            "B": 0.14171141386032104,
+            "C": 0.059062641113996506,
+            "D": 0.2647130787372589,
+            "E": 0.04059363529086113
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.009631931781768799,
+          "B": 0.17594757676124573,
+          "C": 0.11634907126426697,
+          "D": 0.2647130787372589
+        },
+        "score": 0.009631931781768799
+      },
+      {
+        "record_index": 19,
+        "sample_id": "MATH_train_test_question_8576",
+        "label": null,
+        "perturbations": {
+          "a": "The two equations $y = 2x - 13$ and $3x+y = 92$ converge. What is the value of $x$ at the location of convergence?",
+          "b": "The two segments $y = 2x - 13$ and $3x+y = 92$ meet. What is the value of $x$ at the point of meeting?",
+          "c": "The two formulas $y = 2x - 13$ and $3x+y = 92$ cross. What is the value of $x$ at the point of crossing?",
+          "d": "The two expressions $y = 2x - 13$ and $3x+y = 92$ join. What is the value of $x$ at the spot of joining?"
+        },
+        "bdq_probs": {
+          "A": 0.06424427032470703,
+          "B": 0.22423864901065826,
+          "C": 0.12002420425415039,
+          "D": 0.287923663854599,
+          "E": 0.28792324662208557
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.024383103474974632,
+            "B": 0.29705438017845154,
+            "C": 0.09643715620040894,
+            "D": 0.23134134709835052,
+            "E": 0.29704755544662476
+          },
+          "B": {
+            "A": 0.04731696844100952,
+            "B": 0.2403026819229126,
+            "C": 0.12862110137939453,
+            "D": 0.27229219675064087,
+            "E": 0.2722909450531006
+          },
+          "C": {
+            "A": 0.011276581324636936,
+            "B": 0.09442072361707687,
+            "C": 0.06489235162734985,
+            "D": 0.10698982328176498,
+            "E": 0.6976580619812012
+          },
+          "D": {
+            "A": 0.02299772948026657,
+            "B": 0.19257129728794098,
+            "C": 0.020295526832342148,
+            "D": 0.1925603151321411,
+            "E": 0.4619233012199402
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.024383103474974632,
+          "B": 0.2403026819229126,
+          "C": 0.06489235162734985,
+          "D": 0.1925603151321411
+        },
+        "score": 0.024383103474974632
+      },
+      {
+        "record_index": 20,
+        "sample_id": "MATH_train_test_question_8621",
+        "label": null,
+        "perturbations": {
+          "a": "Factor $32x^3-4x^2+20x$.",
+          "b": "Determine $32x^3-4x^2+20x$.",
+          "c": "Solve $32x^3-4x^2+20x$.",
+          "d": "Compute $32x^3-4x^2+20x$."
+        },
+        "bdq_probs": {
+          "A": 0.016905812546610832,
+          "B": 0.07576745748519897,
+          "C": 0.08585485070943832,
+          "D": 0.18175473809242249,
+          "E": 0.6343861222267151
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03431667014956474,
+            "B": 0.25357192754745483,
+            "C": 0.09328246861696243,
+            "D": 0.28733029961586,
+            "E": 0.32558780908584595
+          },
+          "B": {
+            "A": 0.04268335923552513,
+            "B": 0.11602716892957687,
+            "C": 0.13147419691085815,
+            "D": 0.2456260621547699,
+            "E": 0.4588896632194519
+          },
+          "C": {
+            "A": 0.018513204529881477,
+            "B": 0.13679644465446472,
+            "C": 0.04441090673208237,
+            "D": 0.2555670738220215,
+            "E": 0.5410352945327759
+          },
+          "D": {
+            "A": 0.04393661022186279,
+            "B": 0.1737760752439499,
+            "C": 0.07243935763835907,
+            "D": 0.2865033745765686,
+            "E": 0.41685935854911804
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03431667014956474,
+          "B": 0.11602716892957687,
+          "C": 0.04441090673208237,
+          "D": 0.2865033745765686
+        },
+        "score": 0.03431667014956474
+      },
+      {
+        "record_index": 21,
+        "sample_id": "MATH_train_test_question_8646",
+        "label": null,
+        "perturbations": {
+          "a": "Jo has provided Aiden at least one toy vehicle every birthday. The amount of vehicles has related to Aiden's age (one vehicle for his first birthday, two vehicles for his second birthday, and so forth). After obtaining the vehicles for his 12th birthday, how many total toy vehicles will Aiden have received from Jo?",
+          "b": "Jo has supplied Aiden at least one toy automobile every birthday. The quantity of automobiles has connected to Aiden's age (one automobile for his first birthday, two automobiles for his second birthday, and so on). After getting the automobiles for his 12th birthday, how many total toy automobiles will Aiden have received from Jo?",
+          "c": "Jo has handed Aiden at least one toy car every birthday. The total of cars has matched Aiden's age (one car for his first birthday, two cars for his second birthday, and likewise). After acquiring the cars for his 12th birthday, how many total toy cars will Aiden have received from Jo?",
+          "d": "Jo has delivered Aiden at least one toy car every birthday. The count of cars has correlated to Aiden's age (one car for his first birthday, two cars for his second birthday, and similarly). After collecting the cars for his 12th birthday, how many total toy cars will Aiden have received from Jo?"
+        },
+        "bdq_probs": {
+          "A": 0.06877143681049347,
+          "B": 0.1284838169813156,
+          "C": 0.028668252751231194,
+          "D": 0.18694067001342773,
+          "E": 0.575816810131073
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05776752531528473,
+            "B": 0.3324349522590637,
+            "C": 0.08405139297246933,
+            "D": 0.13857759535312653,
+            "E": 0.3766922056674957
+          },
+          "B": {
+            "A": 0.03732234239578247,
+            "B": 0.31250303983688354,
+            "C": 0.14761307835578918,
+            "D": 0.2147759050130844,
+            "E": 0.27577731013298035
+          },
+          "C": {
+            "A": 0.03753230720758438,
+            "B": 0.14844587445259094,
+            "C": 0.16820843517780304,
+            "D": 0.35609787702560425,
+            "E": 0.2773287296295166
+          },
+          "D": {
+            "A": 0.09204644709825516,
+            "B": 0.19487081468105316,
+            "C": 0.09204674512147903,
+            "D": 0.529695451259613,
+            "E": 0.02327306568622589
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05776752531528473,
+          "B": 0.31250303983688354,
+          "C": 0.16820843517780304,
+          "D": 0.529695451259613
+        },
+        "score": 0.05776752531528473
+      },
+      {
+        "record_index": 22,
+        "sample_id": "MATH_train_test_question_8850",
+        "label": null,
+        "perturbations": {
+          "a": "Sarah desires to request a pizza with 2 distinct toppings. She has 9 varied toppings to select from. How many varied pizzas could she request?",
+          "b": "Sarah wishes to order a pizza with 2 unique toppings. She has 9 assorted toppings to pick from. How many assorted pizzas could she order?",
+          "c": "Sarah intends to make an order for a pizza with 2 different toppings. She has 9 diverse toppings to choose from. How many diverse pizzas could she make an order for?",
+          "d": "Sarah seeks to order a pizza with 2 various toppings. She has 9 multiple toppings to choose from. How many multiple pizzas could she order?"
+        },
+        "bdq_probs": {
+          "A": 0.05777401104569435,
+          "B": 0.13859568536281586,
+          "C": 0.25892582535743713,
+          "D": 0.15704651176929474,
+          "E": 0.37673431634902954
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04291476309299469,
+            "B": 0.16973811388015747,
+            "C": 0.5228108167648315,
+            "D": 0.1029476523399353,
+            "E": 0.14978745579719543
+          },
+          "B": {
+            "A": 0.09289249777793884,
+            "B": 0.1966600865125656,
+            "C": 0.36739903688430786,
+            "D": 0.1351587027311325,
+            "E": 0.19665376842021942
+          },
+          "C": {
+            "A": 0.04986504837870598,
+            "B": 0.09316422045230865,
+            "C": 0.22348132729530334,
+            "D": 0.08221428096294403,
+            "E": 0.5361006259918213
+          },
+          "D": {
+            "A": 0.03909941762685776,
+            "B": 0.08278293907642365,
+            "C": 0.175234854221344,
+            "D": 0.5397622585296631,
+            "E": 0.10628337413072586
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04291476309299469,
+          "B": 0.1966600865125656,
+          "C": 0.22348132729530334,
+          "D": 0.5397622585296631
+        },
+        "score": 0.04291476309299469
+      },
+      {
+        "record_index": 24,
+        "sample_id": "MATH_train_test_question_9047",
+        "label": null,
+        "perturbations": {
+          "a": "A blue aircraft, a red aircraft and a white aircraft are waiting to depart from an airport that has two runways. Aircraft must depart from the airport one at a time, but can depart from either runway. In how many ways can the three departures be scheduled? (One such way is the blue aircraft on runway A, followed by the red aircraft on runway B, followed by the white aircraft on runway B.)",
+          "b": "A blue jet, a red jet and a white jet are waiting to take off from an airport that has two runways. Jets must take off from the airport one at a time, but can take off from either runway. In how many ways can the three takeoffs be arranged? (One such way is the blue jet on runway A, followed by the red jet on runway B, followed by the white jet on runway B.)",
+          "c": "A blue plane, a crimson plane and a white plane are waiting to take off from an airport that has two runways. Planes must take off from the airport one at a time, but can take off from either runway. In how many ways can the three departures be scheduled? (One such way is the blue plane on runway A, followed by the crimson plane on runway B, followed by the white plane on runway B.)",
+          "d": "A blue airplane, a red airplane and a white airplane are waiting to take off from an airport that has two runways. Airplanes must take off from the airport one at a time, but can take off from either runway. In how many ways can the three takeoffs be organized? (One such way is the blue airplane on runway A, followed by the red airplane on runway B, followed by the white airplane on runway B.)"
+        },
+        "bdq_probs": {
+          "A": 0.037723034620285034,
+          "B": 0.13167183101177216,
+          "C": 0.07985979318618774,
+          "D": 0.40556249022483826,
+          "E": 0.3158518970012665
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.08333525061607361,
+            "B": 0.22654536366462708,
+            "C": 0.0944315642118454,
+            "D": 0.37348610162734985,
+            "E": 0.13739719986915588
+          },
+          "B": {
+            "A": 0.0847577303647995,
+            "B": 0.23040775954723358,
+            "C": 0.10883147269487381,
+            "D": 0.43043872714042664,
+            "E": 0.10883145779371262
+          },
+          "C": {
+            "A": 0.08618903905153275,
+            "B": 0.23429706692695618,
+            "C": 0.14210225641727448,
+            "D": 0.2654828429222107,
+            "E": 0.23428688943386078
+          },
+          "D": {
+            "A": 0.07327476888895035,
+            "B": 0.13690505921840668,
+            "C": 0.06466518342494965,
+            "D": 0.6135282516479492,
+            "E": 0.06466508656740189
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.08333525061607361,
+          "B": 0.23040775954723358,
+          "C": 0.14210225641727448,
+          "D": 0.6135282516479492
+        },
+        "score": 0.08333525061607361
+      },
+      {
+        "record_index": 25,
+        "sample_id": "MATH_train_test_question_9058",
+        "label": null,
+        "perturbations": {
+          "a": "A deli sub consists of one kind of bread, one kind of meat, and one kind of sauce. The deli offers wheat, rye, and white bread; ham, turkey, roast beef, and tuna; ranch and southwest chipotle sauce. Javier is allergic to rye bread, tuna, and southwest chipotle sauce. He tells the server to create a random deli sub. What is the probability that Javier will experience an allergic reaction?",
+          "b": "A deli sandwich is made up of one kind of bread, one kind of meat, and one kind of sauce. The deli provides wheat, rye, and white bread; ham, turkey, roast beef, and tuna; ranch and southwest chipotle sauce. Javier is allergic to rye bread, tuna, and southwest chipotle sauce. He tells the server to construct a random deli sandwich. What is the probability that Javier will incur an allergic reaction?",
+          "c": "A deli sandwich comprises one type of bread, one type of meat, and one type of sauce. The deli supplies wheat, rye, and white bread; ham, turkey, roast beef, and tuna; ranch and southwest chipotle sauce. Javier is allergic to rye bread, tuna, and southwest chipotle sauce. He tells the server to build a random deli sandwich. What is the probability that Javier will face an allergic reaction?",
+          "d": "A deli sandwich consists of one sort of bread, one sort of meat, and one sort of sauce. The deli offers wheat, rye, and white bread; ham, turkey, roast beef, and tuna; ranch and southwest chipotle sauce. Javier is allergic to rye bread, tuna, and southwest chipotle sauce. He tells the server to prepare a random deli sandwich. What is the probability that Javier will sustain an allergic reaction?"
+        },
+        "bdq_probs": {
+          "A": 0.05200257897377014,
+          "B": 0.2992571294307709,
+          "C": 0.07566336542367935,
+          "D": 0.2640911638736725,
+          "E": 0.2992543876171112
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05291670933365822,
+            "B": 0.26873570680618286,
+            "C": 0.08724495768547058,
+            "D": 0.3450606167316437,
+            "E": 0.23715634644031525
+          },
+          "B": {
+            "A": 0.04952092841267586,
+            "B": 0.17284712195396423,
+            "C": 0.1525353044271469,
+            "D": 0.2514883279800415,
+            "E": 0.36591312289237976
+          },
+          "C": {
+            "A": 0.04925185441970825,
+            "B": 0.17190775275230408,
+            "C": 0.11814914643764496,
+            "D": 0.2834252715110779,
+            "E": 0.36392489075660706
+          },
+          "D": {
+            "A": 0.045860134065151215,
+            "B": 0.20553478598594666,
+            "C": 0.12466101348400116,
+            "D": 0.3839830756187439,
+            "E": 0.20553109049797058
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05291670933365822,
+          "B": 0.17284712195396423,
+          "C": 0.11814914643764496,
+          "D": 0.3839830756187439
+        },
+        "score": 0.05291670933365822
+      },
+      {
+        "record_index": 27,
+        "sample_id": "MATH_train_test_question_9252",
+        "label": null,
+        "perturbations": {
+          "a": "Determine $\\cos 60^\\circ$.",
+          "b": "Calculate $\\cos 60^\\circ$.",
+          "c": "Evaluate $\\cos 60^\\circ$.",
+          "d": "Find $\\cos 60^\\circ$."
+        },
+        "bdq_probs": {
+          "A": 0.0019488545367494226,
+          "B": 0.6518092155456543,
+          "C": 0.07784681767225266,
+          "D": 0.07784683257341385,
+          "E": 0.18674476444721222
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.002885919064283371,
+            "B": 0.7517096996307373,
+            "C": 0.04240827262401581,
+            "D": 0.048054903745651245,
+            "E": 0.14801952242851257
+          },
+          "B": {
+            "A": 0.005036117974668741,
+            "B": 0.14717788994312286,
+            "C": 0.16677339375019073,
+            "D": 0.2749629020690918,
+            "E": 0.4000685214996338
+          },
+          "C": {
+            "A": 0.0007427151431329548,
+            "B": 0.5958943963050842,
+            "C": 0.009631684049963951,
+            "D": 0.02966768480837345,
+            "E": 0.3614260256290436
+          },
+          "D": {
+            "A": 0.001218404620885849,
+            "B": 0.8626859784126282,
+            "C": 0.02298961766064167,
+            "D": 0.04295029863715172,
+            "E": 0.0624922513961792
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.002885919064283371,
+          "B": 0.14717788994312286,
+          "C": 0.009631684049963951,
+          "D": 0.04295029863715172
+        },
+        "score": 0.002885919064283371
+      },
+      {
+        "record_index": 32,
+        "sample_id": "MATH_train_test_question_9533",
+        "label": null,
+        "perturbations": {
+          "a": "The illustration below comprises four semicircles and the 16-cm radius of the largest semicircle. What is the total count of square cm in the area of the two shaded areas? Use 3.14 as an approximation for $\\pi$, and express your response as a decimal to the closest tenth.",
+          "b": "The diagram below contains four semicircles and the 16-cm diameter of the largest semicircle. What is the combined number of square cm in the area of the two shaded zones? Use 3.14 as an approximation for $\\pi$, and express your solution as a decimal to the nearest tenth.",
+          "c": "The image below consists of four semicircles and the 16-cm diameter of the largest semicircle. What is the overall number of square cm in the area of the two shaded regions? Use 3.14 as an approximation for $\\pi$, and express your answer as a decimal to the nearest tenth.",
+          "d": "The graphic below consists of four semicircles and the 16-cm diameter of the largest semicircle. What is the total amount of square cm in the area of the two shaded sections? Use 3.14 as an approximation for $\\pi$, and express your answer as a decimal to the nearest tenth."
+        },
+        "bdq_probs": {
+          "A": 0.007609270047396421,
+          "B": 0.2089209407567978,
+          "C": 0.02201838605105877,
+          "D": 0.07685230672359467,
+          "E": 0.34442567825317383
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.002262116875499487,
+            "B": 0.035389889031648636,
+            "C": 0.01475096121430397,
+            "D": 0.0514862984418869,
+            "E": 0.6272258758544922
+          },
+          "B": {
+            "A": 0.003546105232089758,
+            "B": 0.07583693414926529,
+            "C": 0.0521106980741024,
+            "D": 0.06691218912601471,
+            "E": 0.5602421164512634
+          },
+          "C": {
+            "A": 0.0033220318146049976,
+            "B": 0.05197484418749809,
+            "C": 0.06672554463148117,
+            "D": 0.03151958808302879,
+            "E": 0.5586892366409302
+          },
+          "D": {
+            "A": 0.016529904678463936,
+            "B": 0.09517713636159897,
+            "C": 0.027254020795226097,
+            "D": 0.25859546661376953,
+            "E": 0.06538022309541702
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.002262116875499487,
+          "B": 0.07583693414926529,
+          "C": 0.06672554463148117,
+          "D": 0.25859546661376953
+        },
+        "score": 0.002262116875499487
+      },
+      {
+        "record_index": 33,
+        "sample_id": "MATH_train_test_question_9607",
+        "label": null,
+        "perturbations": {
+          "a": "If the capacity of a 2-cm-by-2cm-by-2cm cube is augmented by 19 cubic centimeters to form a larger cube, what is the length in centimeters of one edge of the new cube?",
+          "b": "If the amount of a 2-cm-by-2cm-by-2cm cube is heightened by 19 cubic centimeters to form a larger cube, what is the length in centimeters of one edge of the new cube?",
+          "c": "If the bulk of a 2-cm-by-2cm-by-2cm cube is raised by 19 cubic centimeters to form a larger cube, what is the length in centimeters of one edge of the new cube?",
+          "d": "If the measure of a 2-cm-by-2cm-by-2cm cube is expanded by 19 cubic centimeters to form a larger cube, what is the length in centimeters of one edge of the new cube?"
+        },
+        "bdq_probs": {
+          "A": 0.0392073318362236,
+          "B": 0.37199148535728455,
+          "C": 0.07324899733066559,
+          "D": 0.37198925018310547,
+          "E": 0.136847123503685
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.023255012929439545,
+            "B": 0.412208616733551,
+            "C": 0.07163053005933762,
+            "D": 0.22063761949539185,
+            "E": 0.25001513957977295
+          },
+          "B": {
+            "A": 0.05991923063993454,
+            "B": 0.3042997419834137,
+            "C": 0.1268491894006729,
+            "D": 0.23698575794696808,
+            "E": 0.236985445022583
+          },
+          "C": {
+            "A": 0.03961241617798805,
+            "B": 0.29270219802856445,
+            "C": 0.08385961502790451,
+            "D": 0.2583060562610626,
+            "E": 0.2926986813545227
+          },
+          "D": {
+            "A": 0.09930703043937683,
+            "B": 0.3466256856918335,
+            "C": 0.08763841539621353,
+            "D": 0.23822593688964844,
+            "E": 0.08763837069272995
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.023255012929439545,
+          "B": 0.3042997419834137,
+          "C": 0.08385961502790451,
+          "D": 0.23822593688964844
+        },
+        "score": 0.023255012929439545
+      },
+      {
+        "record_index": 34,
+        "sample_id": "MATH_train_test_question_9769",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Resolve $2z + i = iz + 3.$  Articulate your answer in the form $x + yi.$",
+          "b": "Question: Determine $2z + i = iz + 3.$  Present your answer in the form $x + yi.$",
+          "c": "Question: Solve $2z + i = iz + 3.$  State your answer in the form $x + yi.$",
+          "d": "Question: Figure out $2z + i = iz + 3.$  Convey your answer in the form $x + yi.$"
+        },
+        "bdq_probs": {
+          "A": 0.02263489179313183,
+          "B": 0.11495361477136612,
+          "C": 0.07900360971689224,
+          "D": 0.1672513335943222,
+          "E": 0.5837616920471191
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.014262933284044266,
+            "B": 0.1440562754869461,
+            "C": 0.11218675225973129,
+            "D": 0.1121874526143074,
+            "E": 0.5697309374809265
+          },
+          "B": {
+            "A": 0.015890227630734444,
+            "B": 0.09144880622625351,
+            "C": 0.17083638906478882,
+            "D": 0.1174151822924614,
+            "E": 0.5262117981910706
+          },
+          "C": {
+            "A": 0.015624160878360271,
+            "B": 0.1229030042886734,
+            "C": 0.15779849886894226,
+            "D": 0.05805173143744469,
+            "E": 0.5507700443267822
+          },
+          "D": {
+            "A": 0.045509979128837585,
+            "B": 0.2039928436279297,
+            "C": 0.12370966374874115,
+            "D": 0.2618993818759918,
+            "E": 0.15884657204151154
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.014262933284044266,
+          "B": 0.09144880622625351,
+          "C": 0.15779849886894226,
+          "D": 0.2618993818759918
+        },
+        "score": 0.014262933284044266
+      },
+      {
+        "record_index": 35,
+        "sample_id": "MATH_train_test_question_10006",
+        "label": null,
+        "perturbations": {
+          "a": "Assess $|1-4i|$.",
+          "b": "Appraise $|1-4i|$.",
+          "c": "Review $|1-4i|$.",
+          "d": "Analyze $|1-4i|$."
+        },
+        "bdq_probs": {
+          "A": 0.006727457977831364,
+          "B": 0.22278480231761932,
+          "C": 0.056328337639570236,
+          "D": 0.10523517429828644,
+          "E": 0.6055864691734314
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.005231597926467657,
+            "B": 0.4156027138233185,
+            "C": 0.01107531413435936,
+            "D": 0.09273239970207214,
+            "E": 0.4709341526031494
+          },
+          "B": {
+            "A": 0.0033721469808369875,
+            "B": 0.019405528903007507,
+            "C": 0.01608763262629509,
+            "D": 0.024917010217905045,
+            "E": 0.9350032806396484
+          },
+          "C": {
+            "A": 0.0007491954602301121,
+            "B": 0.026410384103655815,
+            "C": 0.00405012397095561,
+            "D": 0.036098312586545944,
+            "E": 0.9309865236282349
+          },
+          "D": {
+            "A": 0.002379459096118808,
+            "B": 0.21419581770896912,
+            "C": 0.013692881911993027,
+            "D": 0.3116481900215149,
+            "E": 0.4534447491168976
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.005231597926467657,
+          "B": 0.019405528903007507,
+          "C": 0.00405012397095561,
+          "D": 0.3116481900215149
+        },
+        "score": 0.00405012397095561
+      },
+      {
+        "record_index": 36,
+        "sample_id": "MATH_train_test_question_10305",
+        "label": null,
+        "perturbations": {
+          "a": "Assess $|\\sqrt5+2i|$.",
+          "b": "Calculate $|\\sqrt5+2i|$.",
+          "c": "Determine $|\\sqrt5+2i|$.",
+          "d": "Review $|\\sqrt5+2i|$."
+        },
+        "bdq_probs": {
+          "A": 0.008037492632865906,
+          "B": 0.2206631898880005,
+          "C": 0.055791351944208145,
+          "D": 0.029862964525818825,
+          "E": 0.6796767711639404
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0035469268914312124,
+            "B": 0.2817729115486145,
+            "C": 0.014028407633304596,
+            "D": 0.02041120082139969,
+            "E": 0.6759250164031982
+          },
+          "B": {
+            "A": 0.00551073532551527,
+            "B": 0.026290634647011757,
+            "C": 0.06306713074445724,
+            "D": 0.13351303339004517,
+            "E": 0.7683138251304626
+          },
+          "C": {
+            "A": 0.0020810675341635942,
+            "B": 0.05042042210698128,
+            "C": 0.007263656705617905,
+            "D": 0.044495269656181335,
+            "E": 0.8937097191810608
+          },
+          "D": {
+            "A": 0.006491473410278559,
+            "B": 0.13039016723632812,
+            "C": 0.02265768125653267,
+            "D": 0.16741816699504852,
+            "E": 0.6621479392051697
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0035469268914312124,
+          "B": 0.026290634647011757,
+          "C": 0.007263656705617905,
+          "D": 0.16741816699504852
+        },
+        "score": 0.0035469268914312124
+      },
+      {
+        "record_index": 37,
+        "sample_id": "MATH_train_test_question_10347",
+        "label": null,
+        "perturbations": {
+          "a": "What is the extreme conjugate of $\\sqrt{11}-1$?",
+          "b": "What is the fundamental conjugate of $\\sqrt{11}-1$?",
+          "c": "What is the revolutionary conjugate of $\\sqrt{11}-1$?",
+          "d": "What is the drastic conjugate of $\\sqrt{11}-1$?"
+        },
+        "bdq_probs": {
+          "A": 0.016549143940210342,
+          "B": 0.2588750123977661,
+          "C": 0.07416818290948868,
+          "D": 0.15701402723789215,
+          "E": 0.4836369752883911
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06657171249389648,
+            "B": 0.49191227555274963,
+            "C": 0.09686142951250076,
+            "D": 0.20505571365356445,
+            "E": 0.12437254935503006
+          },
+          "B": {
+            "A": 0.13420875370502472,
+            "B": 0.19527752697467804,
+            "C": 0.25073546171188354,
+            "D": 0.09224043786525726,
+            "E": 0.32195043563842773
+          },
+          "C": {
+            "A": 0.037511300295591354,
+            "B": 0.3140871524810791,
+            "C": 0.19049863517284393,
+            "D": 0.1309276521205902,
+            "E": 0.31407859921455383
+          },
+          "D": {
+            "A": 0.06256716698408127,
+            "B": 0.36006733775138855,
+            "C": 0.0803382620215416,
+            "D": 0.28040775656700134,
+            "E": 0.17007562518119812
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06657171249389648,
+          "B": 0.19527752697467804,
+          "C": 0.19049863517284393,
+          "D": 0.28040775656700134
+        },
+        "score": 0.06657171249389648
+      },
+      {
+        "record_index": 38,
+        "sample_id": "MATH_train_test_question_10360",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Locate the total of the quotient and remainder when $6x^3+9x^2-17x+11$ is divided by $2x^2+5x-1$.",
+          "b": "Question: Compute the aggregate of the quotient and remainder when $6x^3+9x^2-17x+11$ is divided by $2x^2+5x-1$.",
+          "c": "Question: Identify the sum of the quotient and remainder when $6x^3+9x^2-17x+11$ is divided by $2x^2+5x-1$.",
+          "d": "Question: Determine the total of the quotient and remainder when $6x^3+9x^2-17x+11$ is divided by $2x^2+5x-1$."
+        },
+        "bdq_probs": {
+          "A": 0.026998033747076988,
+          "B": 0.17605242133140564,
+          "C": 0.07338832318782806,
+          "D": 0.09423252940177917,
+          "E": 0.6144729256629944
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06024976819753647,
+            "B": 0.23829831182956696,
+            "C": 0.14453180134296417,
+            "D": 0.14453206956386566,
+            "E": 0.39287838339805603
+          },
+          "B": {
+            "A": 0.027386968955397606,
+            "B": 0.17859041690826416,
+            "C": 0.1227400153875351,
+            "D": 0.10831785947084427,
+            "E": 0.5500825047492981
+          },
+          "C": {
+            "A": 0.02294258214533329,
+            "B": 0.1496080905199051,
+            "C": 0.10282163321971893,
+            "D": 0.11651229858398438,
+            "E": 0.5916973352432251
+          },
+          "D": {
+            "A": 0.04361707344651222,
+            "B": 0.1954866200685501,
+            "C": 0.08148757368326187,
+            "D": 0.17250986397266388,
+            "E": 0.46892863512039185
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06024976819753647,
+          "B": 0.17859041690826416,
+          "C": 0.10282163321971893,
+          "D": 0.17250986397266388
+        },
+        "score": 0.06024976819753647
+      },
+      {
+        "record_index": 39,
+        "sample_id": "MATH_train_test_question_10462",
+        "label": null,
+        "perturbations": {
+          "a": "Question: What is the spacing in the intricate plane between $5+6i$ and $-2+2i$?",
+          "b": "Question: What is the interval in the complicated plane between $5+6i$ and $-2+2i$?",
+          "c": "Question: What is the separation in the elaborate plane between $5+6i$ and $-2+2i$?",
+          "d": "Question: What is the extent in the convoluted plane between $5+6i$ and $-2+2i$?"
+        },
+        "bdq_probs": {
+          "A": 0.004206170327961445,
+          "B": 0.08448410779237747,
+          "C": 0.05806445702910423,
+          "D": 0.13928930461406708,
+          "E": 0.7073691487312317
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0042648110538721085,
+            "B": 0.05887437239289284,
+            "C": 0.027810094878077507,
+            "D": 0.08566118776798248,
+            "E": 0.8127294182777405
+          },
+          "B": {
+            "A": 0.0032367079984396696,
+            "B": 0.08886048197746277,
+            "C": 0.02884853072464466,
+            "D": 0.12929008901119232,
+            "E": 0.7440119385719299
+          },
+          "C": {
+            "A": 0.0026651055086404085,
+            "B": 0.028652912005782127,
+            "C": 0.022314701229333878,
+            "D": 0.1000075414776802,
+            "E": 0.8373512029647827
+          },
+          "D": {
+            "A": 0.0023355691228061914,
+            "B": 0.018370890989899635,
+            "C": 0.007658061105757952,
+            "D": 0.07265768200159073,
+            "E": 0.8851487040519714
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0042648110538721085,
+          "B": 0.08886048197746277,
+          "C": 0.022314701229333878,
+          "D": 0.07265768200159073
+        },
+        "score": 0.0042648110538721085
+      },
+      {
+        "record_index": 40,
+        "sample_id": "MATH_train_test_question_10503",
+        "label": null,
+        "perturbations": {
+          "a": "Question: What is the worth of the following expression: $100 - 99 +98 - 97 + 96 - 95 + \\cdots + 4 - 3 +2 - 1$?",
+          "b": "Question: What is the significance of the following expression: $100 - 99 +98 - 97 + 96 - 95 + \\cdots + 4 - 3 +2 - 1$?",
+          "c": "Question: What is the merit of the following expression: $100 - 99 +98 - 97 + 96 - 95 + \\cdots + 4 - 3 +2 - 1$?",
+          "d": "Question: What is the importance of the following expression: $100 - 99 +98 - 97 + 96 - 95 + \\cdots + 4 - 3 +2 - 1$?"
+        },
+        "bdq_probs": {
+          "A": 0.017344223335385323,
+          "B": 0.07773277163505554,
+          "C": 0.06859776377677917,
+          "D": 0.16455750167369843,
+          "E": 0.6508371829986572
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05183018743991852,
+            "B": 0.14089326560497284,
+            "C": 0.10972452908754349,
+            "D": 0.18090547621250153,
+            "E": 0.4917518198490143
+          },
+          "B": {
+            "A": 0.02593885362148285,
+            "B": 0.10259298980236053,
+            "C": 0.09053560346364975,
+            "D": 0.16914287209510803,
+            "E": 0.5903657674789429
+          },
+          "C": {
+            "A": 0.020374629646539688,
+            "B": 0.0711163654923439,
+            "C": 0.07111448794603348,
+            "D": 0.1328594833612442,
+            "E": 0.6747152805328369
+          },
+          "D": {
+            "A": 0.036235228180885315,
+            "B": 0.11161544173955917,
+            "C": 0.05974189192056656,
+            "D": 0.23628395795822144,
+            "E": 0.5002123117446899
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05183018743991852,
+          "B": 0.10259298980236053,
+          "C": 0.07111448794603348,
+          "D": 0.23628395795822144
+        },
+        "score": 0.05183018743991852
+      },
+      {
+        "record_index": 42,
+        "sample_id": "MATH_train_test_question_10676",
+        "label": null,
+        "perturbations": {
+          "a": "Question: How many figures does the decimal equal to $\\frac{54317}{80000}$ have to the right of the decimal point?",
+          "b": "Question: How many numbers does the decimal equal to $\\frac{54317}{80000}$ have to the right of the decimal point?",
+          "c": "Question: How many symbols does the decimal equal to $\\frac{54317}{80000}$ have to the right of the decimal point?",
+          "d": "Question: How many characters does the decimal equal to $\\frac{54317}{80000}$ have to the right of the decimal point?"
+        },
+        "bdq_probs": {
+          "A": 0.008570224046707153,
+          "B": 0.06332707405090332,
+          "C": 0.01814320497214794,
+          "D": 0.11830859631299973,
+          "E": 0.7714677453041077
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.009482134133577347,
+            "B": 0.07939609885215759,
+            "C": 0.02274656482040882,
+            "D": 0.1019434854388237,
+            "E": 0.7532614469528198
+          },
+          "B": {
+            "A": 0.013424861244857311,
+            "B": 0.07725750654935837,
+            "C": 0.03220473974943161,
+            "D": 0.12737241387367249,
+            "E": 0.7329737544059753
+          },
+          "C": {
+            "A": 0.008326701819896698,
+            "B": 0.042287882417440414,
+            "C": 0.02564820647239685,
+            "D": 0.1475955843925476,
+            "E": 0.7495473027229309
+          },
+          "D": {
+            "A": 0.0054800366051495075,
+            "B": 0.038040708750486374,
+            "C": 0.006209757644683123,
+            "D": 0.1931813806295395,
+            "E": 0.6742587089538574
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.009482134133577347,
+          "B": 0.07725750654935837,
+          "C": 0.02564820647239685,
+          "D": 0.1931813806295395
+        },
+        "score": 0.009482134133577347
+      },
+      {
+        "record_index": 43,
+        "sample_id": "MATH_train_test_question_10717",
+        "label": null,
+        "perturbations": {
+          "a": "Question: What is $2121_3 - 212_3?$ Express your response in base 3.",
+          "b": "Question: What is $2121_3 - 212_3?$ Express your solution in base 3.",
+          "c": "Question: What is $2121_3 - 212_3?$ Express your answer in base three.",
+          "d": "Question: What is $2121_3 - 212_3?$ Express your output in base 3."
+        },
+        "bdq_probs": {
+          "A": 0.016159318387508392,
+          "B": 0.13530483841896057,
+          "C": 0.0929906889796257,
+          "D": 0.10537251085042953,
+          "E": 0.6063751578330994
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01650284230709076,
+            "B": 0.24251683056354523,
+            "C": 0.11455222219228745,
+            "D": 0.08921391516923904,
+            "E": 0.39982783794403076
+          },
+          "B": {
+            "A": 0.010030357167124748,
+            "B": 0.12219936400651932,
+            "C": 0.13846485316753387,
+            "D": 0.0839836522936821,
+            "E": 0.4832914173603058
+          },
+          "C": {
+            "A": 0.005637831054627895,
+            "B": 0.08819400519132614,
+            "C": 0.04720478132367134,
+            "D": 0.060612648725509644,
+            "E": 0.3078152537345886
+          },
+          "D": {
+            "A": 0.0018104023765772581,
+            "B": 0.014240504242479801,
+            "C": 0.009786921553313732,
+            "D": 0.004623106215149164,
+            "E": 0.030146049335598946
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01650284230709076,
+          "B": 0.12219936400651932,
+          "C": 0.04720478132367134,
+          "D": 0.004623106215149164
+        },
+        "score": 0.004623106215149164
+      },
+      {
+        "record_index": 44,
+        "sample_id": "MATH_train_test_question_10729",
+        "label": null,
+        "perturbations": {
+          "a": "Transform $222_{10}$ to base $13$.  Utilize digits A, B, and C if needed.",
+          "b": "Change $222_{10}$ to base $13$.  Employ digits A, B, and C if required.",
+          "c": "Alter $222_{10}$ to base $13$.  Use figures A, B, and C if essential.",
+          "d": "Convert $222_{10}$ to base $13$.  Apply digits A, B, and C if obligatory."
+        },
+        "bdq_probs": {
+          "A": 0.017195289954543114,
+          "B": 0.09895315021276474,
+          "C": 0.01948484405875206,
+          "D": 0.03212510049343109,
+          "E": 0.8285157084465027
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03655074164271355,
+            "B": 0.5045740008354187,
+            "C": 0.0993553102016449,
+            "D": 0.14456121623516083,
+            "E": 0.21033518016338348
+          },
+          "B": {
+            "A": 0.03551342710852623,
+            "B": 0.20436887443065643,
+            "C": 0.08519241213798523,
+            "D": 0.18035262823104858,
+            "E": 0.4902481734752655
+          },
+          "C": {
+            "A": 0.01624923385679722,
+            "B": 0.17469865083694458,
+            "C": 0.0500512570142746,
+            "D": 0.06426715105772018,
+            "E": 0.6909353733062744
+          },
+          "D": {
+            "A": 0.05874091386795044,
+            "B": 0.43405255675315857,
+            "C": 0.07542499154806137,
+            "D": 0.12435508519411087,
+            "E": 0.2983115315437317
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03655074164271355,
+          "B": 0.20436887443065643,
+          "C": 0.0500512570142746,
+          "D": 0.12435508519411087
+        },
+        "score": 0.03655074164271355
+      },
+      {
+        "record_index": 45,
+        "sample_id": "MATH_train_test_question_10842",
+        "label": null,
+        "perturbations": {
+          "a": "Calculate $58_9 - 18_9.$ Present your answer in base $9.$",
+          "b": "Evaluate $58_9 - 18_9.$ State your answer in base $9.$",
+          "c": "Determine $58_9 - 18_9.$ Show your answer in base $9.$",
+          "d": "Find $58_9 - 18_9.$ Convey your answer in base $9.$"
+        },
+        "bdq_probs": {
+          "A": 0.004200529772788286,
+          "B": 0.02133343555033207,
+          "C": 0.03103797324001789,
+          "D": 0.007847745902836323,
+          "E": 0.8004812002182007
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.02725856937468052,
+            "B": 0.2586463689804077,
+            "C": 0.10781010240316391,
+            "D": 0.04494259133934975,
+            "E": 0.22823594510555267
+          },
+          "B": {
+            "A": 0.029731355607509613,
+            "B": 0.10379107296466827,
+            "C": 0.09157990664243698,
+            "D": 0.02973265014588833,
+            "E": 0.13325142860412598
+          },
+          "C": {
+            "A": 0.022860758006572723,
+            "B": 0.11610953509807587,
+            "C": 0.054840486496686935,
+            "D": 0.054841578006744385,
+            "E": 0.16892223060131073
+          },
+          "D": {
+            "A": 0.010991549119353294,
+            "B": 0.026374710723757744,
+            "C": 0.007554425857961178,
+            "D": 0.0045824502594769,
+            "E": 0.005884096957743168
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.02725856937468052,
+          "B": 0.10379107296466827,
+          "C": 0.054840486496686935,
+          "D": 0.0045824502594769
+        },
+        "score": 0.0045824502594769
+      },
+      {
+        "record_index": 46,
+        "sample_id": "MATH_train_test_question_10894",
+        "label": null,
+        "perturbations": {
+          "a": "Alice, Bailey, Cindy, and Daniel strolled around their neighborhoods vending pens. Alice acquired $\\$25.67$, Bailey acquired $\\$17.21$, Cindy acquired $\\$39.17$, and Daniel acquired $\\$26.32$. After the sale, they gathered their money together and went to the bank to change the coins into dollars. How many cents in change did they have remaining after they exchanged as many of the coins into bills as they could?",
+          "b": "Alice, Bailey, Cindy, and Daniel ambled around their neighborhoods selling pens. Alice gained $\\$25.67$, Bailey gained $\\$17.21$, Cindy gained $\\$39.17$, and Daniel gained $\\$26.32$. After the sale, they combined their money together and went to the bank to transform the coins into dollars. How many cents in change did they have remaining after they converted as many of the coins into bills as they could?",
+          "c": "Alice, Bailey, Cindy, and Daniel meandered around their neighborhoods merchandising pens. Alice collected $\\$25.67$, Bailey collected $\\$17.21$, Cindy collected $\\$39.17$, and Daniel collected $\\$26.32$. After the sale, they pooled their money together and went to the bank to change the coins into dollars. How many cents in change did they have remaining after they transformed as many of the coins into bills as they could?",
+          "d": "Alice, Bailey, Cindy, and Daniel traversed around their neighborhoods trading pens. Alice secured $\\$25.67$, Bailey secured $\\$17.21$, Cindy secured $\\$39.17$, and Daniel secured $\\$26.32$. After the sale, they consolidated their money together and went to the bank to convert the coins into dollars. How many cents in change did they have left after they changed as many of the coins into bills as they could?"
+        },
+        "bdq_probs": {
+          "A": 0.0224887914955616,
+          "B": 0.12942688167095184,
+          "C": 0.1294146478176117,
+          "D": 0.2133694589138031,
+          "E": 0.31045085191726685
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.014682766050100327,
+            "B": 0.06580690294504166,
+            "C": 0.12293752282857895,
+            "D": 0.1578550636768341,
+            "E": 0.42909401655197144
+          },
+          "B": {
+            "A": 0.0270727276802063,
+            "B": 0.09450069069862366,
+            "C": 0.13748717308044434,
+            "D": 0.15579399466514587,
+            "E": 0.47987738251686096
+          },
+          "C": {
+            "A": 0.02367457188665867,
+            "B": 0.13624870777130127,
+            "C": 0.12022993713617325,
+            "D": 0.10610294342041016,
+            "E": 0.47551754117012024
+          },
+          "D": {
+            "A": 0.02948819287121296,
+            "B": 0.149774432182312,
+            "C": 0.14975443482398987,
+            "D": 0.21789279580116272,
+            "E": 0.14975428581237793
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.014682766050100327,
+          "B": 0.09450069069862366,
+          "C": 0.12022993713617325,
+          "D": 0.21789279580116272
+        },
+        "score": 0.014682766050100327
+      },
+      {
+        "record_index": 48,
+        "sample_id": "MATH_train_test_question_10951",
+        "label": null,
+        "perturbations": {
+          "a": "Transform $634_7$ to a decimal integer.",
+          "b": "Change $634_7$ to a base 10 numeral.",
+          "c": "Alter $634_7$ to a base 10 figure.",
+          "d": "Convert $634_7$ to a base ten integer."
+        },
+        "bdq_probs": {
+          "A": 0.008742867037653923,
+          "B": 0.04440025985240936,
+          "C": 0.05031174421310425,
+          "D": 0.19898684322834015,
+          "E": 0.694532036781311
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0041871583089232445,
+            "B": 0.17804570496082306,
+            "C": 0.030939176678657532,
+            "D": 0.6214302182197571,
+            "E": 0.15712231397628784
+          },
+          "B": {
+            "A": 0.004860967397689819,
+            "B": 0.021785611286759377,
+            "C": 0.06710365414619446,
+            "D": 0.5618520975112915,
+            "E": 0.34078067541122437
+          },
+          "C": {
+            "A": 0.0010577475186437368,
+            "B": 0.017613155767321587,
+            "C": 0.006479491945356131,
+            "D": 0.6609259843826294,
+            "E": 0.31219935417175293
+          },
+          "D": {
+            "A": 0.017773479223251343,
+            "B": 0.2165292203426361,
+            "C": 0.07965528964996338,
+            "D": 0.3150431215763092,
+            "E": 0.356990784406662
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0041871583089232445,
+          "B": 0.021785611286759377,
+          "C": 0.006479491945356131,
+          "D": 0.3150431215763092
+        },
+        "score": 0.0041871583089232445
+      },
+      {
+        "record_index": 49,
+        "sample_id": "MATH_train_test_question_11016",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Given that $m > 1$, what is the smallest positive integer $m$ whose positive divisors have a product of $m^6$?",
+          "b": "Question: Considering that $k > 1$, what is the smallest positive integer $k$ whose positive divisors have a product of $k^6$?",
+          "c": "Question: Assuming that $p > 1$, what is the smallest positive integer $p$ whose positive divisors have a product of $p^6$?",
+          "d": "Question: Provided that $x > 1$, what is the smallest positive integer $x$ whose positive divisors have a product of $x^6$?"
+        },
+        "bdq_probs": {
+          "A": 0.02759391814470291,
+          "B": 0.05841778218746185,
+          "C": 0.045494742691516876,
+          "D": 0.20389340817928314,
+          "E": 0.6280350685119629
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04095911979675293,
+            "B": 0.06753191351890564,
+            "C": 0.05959521234035492,
+            "D": 0.18356645107269287,
+            "E": 0.5654229521751404
+          },
+          "B": {
+            "A": 0.018009396269917488,
+            "B": 0.0432034470140934,
+            "C": 0.06285903602838516,
+            "D": 0.150791198015213,
+            "E": 0.6757973432540894
+          },
+          "C": {
+            "A": 0.019690046086907387,
+            "B": 0.04168509319424629,
+            "C": 0.053523145616054535,
+            "D": 0.16486316919326782,
+            "E": 0.6520444750785828
+          },
+          "D": {
+            "A": 0.04388919845223427,
+            "B": 0.0638609528541565,
+            "C": 0.04388927295804024,
+            "D": 0.22288882732391357,
+            "E": 0.47185349464416504
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04095911979675293,
+          "B": 0.0432034470140934,
+          "C": 0.053523145616054535,
+          "D": 0.22288882732391357
+        },
+        "score": 0.04095911979675293
+      },
+      {
+        "record_index": 53,
+        "sample_id": "MATH_train_test_question_11119",
+        "label": null,
+        "perturbations": {
+          "a": "Assess $\\sqrt{5625}$.",
+          "b": "Appraise $\\sqrt{5625}$.",
+          "c": "Estimate $\\sqrt{5625}$.",
+          "d": "Calculate $\\sqrt{5625}$."
+        },
+        "bdq_probs": {
+          "A": 0.004995942115783691,
+          "B": 0.11370927095413208,
+          "C": 0.11370721459388733,
+          "D": 0.30908820033073425,
+          "E": 0.44972044229507446
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.013441387563943863,
+            "B": 0.3466639816761017,
+            "C": 0.08764907717704773,
+            "D": 0.09931933879852295,
+            "E": 0.44511809945106506
+          },
+          "B": {
+            "A": 0.015227732248604298,
+            "B": 0.06022786721587181,
+            "C": 0.08762974292039871,
+            "D": 0.0992974266409874,
+            "E": 0.7337136268615723
+          },
+          "C": {
+            "A": 0.0031143464148044586,
+            "B": 0.051859300583601,
+            "C": 0.010211571119725704,
+            "D": 0.2984255850315094,
+            "E": 0.6317662000656128
+          },
+          "D": {
+            "A": 0.018455449491739273,
+            "B": 0.37069833278656006,
+            "C": 0.05684709548950195,
+            "D": 0.0644160807132721,
+            "E": 0.47597232460975647
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.013441387563943863,
+          "B": 0.06022786721587181,
+          "C": 0.010211571119725704,
+          "D": 0.0644160807132721
+        },
+        "score": 0.010211571119725704
+      },
+      {
+        "record_index": 54,
+        "sample_id": "MATH_train_test_question_11162",
+        "label": null,
+        "perturbations": {
+          "a": "Simplify $\\sqrt{27^2}$.",
+          "b": "Simplify $\\sqrt{729}$.",
+          "c": "Simplify $\\sqrt{3^6}$.",
+          "d": "Simplify $\\sqrt{81^1.5}$."
+        },
+        "bdq_probs": {
+          "A": 0.01832462102174759,
+          "B": 0.32481688261032104,
+          "C": 0.08212532103061676,
+          "D": 0.0930601954460144,
+          "E": 0.4725984036922455
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0966954156756401,
+            "B": 0.4910672605037689,
+            "C": 0.0664578378200531,
+            "D": 0.040308691561222076,
+            "E": 0.2978431284427643
+          },
+          "B": {
+            "A": 0.10695649683475494,
+            "B": 0.19982267916202545,
+            "C": 0.07351013273000717,
+            "D": 0.1373349279165268,
+            "E": 0.4793458878993988
+          },
+          "C": {
+            "A": 0.037618719041347504,
+            "B": 0.13130375742912292,
+            "C": 0.07028109580278397,
+            "D": 0.09024268388748169,
+            "E": 0.6668077111244202
+          },
+          "D": {
+            "A": 0.17701169848442078,
+            "B": 0.2272927463054657,
+            "C": 0.06511921435594559,
+            "D": 0.08361463248729706,
+            "E": 0.4246293604373932
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0966954156756401,
+          "B": 0.19982267916202545,
+          "C": 0.07028109580278397,
+          "D": 0.08361463248729706
+        },
+        "score": 0.07028109580278397
+      },
+      {
+        "record_index": 55,
+        "sample_id": "MATH_train_test_question_11165",
+        "label": null,
+        "perturbations": {
+          "a": "What is one fraction of $\\dfrac{1}{100}$ of $9000$?",
+          "b": "What is one part of $\\dfrac{1}{100}$ of $9000$?",
+          "c": "What is one portion of $\\dfrac{1}{100}$ of $9000$?",
+          "d": "What is one segment of $\\dfrac{1}{100}$ of $9000$?"
+        },
+        "bdq_probs": {
+          "A": 0.0201726071536541,
+          "B": 0.1689053773880005,
+          "C": 0.11608553677797318,
+          "D": 0.2784746587276459,
+          "E": 0.4051782488822937
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.02914053201675415,
+            "B": 0.3550126254558563,
+            "C": 0.11525335907936096,
+            "D": 0.31329137086868286,
+            "E": 0.16769294440746307
+          },
+          "B": {
+            "A": 0.030005084350705147,
+            "B": 0.28468403220176697,
+            "C": 0.10472820699214935,
+            "D": 0.2512298822402954,
+            "E": 0.32258540391921997
+          },
+          "C": {
+            "A": 0.018135055899620056,
+            "B": 0.22093307971954346,
+            "C": 0.07172568887472153,
+            "D": 0.15184326469898224,
+            "E": 0.5299847722053528
+          },
+          "D": {
+            "A": 0.03516532853245735,
+            "B": 0.6233299374580383,
+            "C": 0.04515326768159866,
+            "D": 0.2023628205060959,
+            "E": 0.08435738831758499
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.02914053201675415,
+          "B": 0.28468403220176697,
+          "C": 0.07172568887472153,
+          "D": 0.2023628205060959
+        },
+        "score": 0.02914053201675415
+      },
+      {
+        "record_index": 56,
+        "sample_id": "MATH_train_test_question_11170",
+        "label": null,
+        "perturbations": {
+          "a": "Question: How many positive whole numbers are factors of 120 and also factors of 40?",
+          "b": "Question: How many positive integers are divisors of 120 and also divisors of 40?",
+          "c": "Question: How many positive integers are multiples of 120 and also multiples of 40?",
+          "d": "Question: How many positive integers are factors of 120 and likewise factors of 40?"
+        },
+        "bdq_probs": {
+          "A": 0.01745518110692501,
+          "B": 0.07822982221841812,
+          "C": 0.04187283664941788,
+          "D": 0.4501754641532898,
+          "E": 0.39727848768234253
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.024229632690548897,
+            "B": 0.13943417370319366,
+            "C": 0.05812389403581619,
+            "D": 0.33448031544685364,
+            "E": 0.42948102951049805
+          },
+          "B": {
+            "A": 0.012095064856112003,
+            "B": 0.04783778637647629,
+            "C": 0.029014598578214645,
+            "D": 0.3119364082813263,
+            "E": 0.5827731490135193
+          },
+          "C": {
+            "A": 0.00940762273967266,
+            "B": 0.04216286912560463,
+            "C": 0.047775931656360626,
+            "D": 0.21411706507205963,
+            "E": 0.6595258116722107
+          },
+          "D": {
+            "A": 0.01700529269874096,
+            "B": 0.1256576031446457,
+            "C": 0.06725747138261795,
+            "D": 0.3014279007911682,
+            "E": 0.4385734498500824
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.024229632690548897,
+          "B": 0.04783778637647629,
+          "C": 0.047775931656360626,
+          "D": 0.3014279007911682
+        },
+        "score": 0.024229632690548897
+      },
+      {
+        "record_index": 57,
+        "sample_id": "MATH_train_test_question_11174",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Clarify the following expression. $$[(1\\cdot2)+(3\\cdot4)-(5\\cdot6)+(7\\cdot8)]\\cdot(9\\cdot0)$$",
+          "b": "Question: Reduce the following expression. $$[(1\\cdot2)+(3\\cdot4)-(5\\cdot6)+(7\\cdot8)]\\cdot(9\\cdot0)$$",
+          "c": "Question: Condense the following expression. $$[(1\\cdot2)+(3\\cdot4)-(5\\cdot6)+(7\\cdot8)]\\cdot(9\\cdot0)$$",
+          "d": "Question: Streamline the following expression. $$[(1\\cdot2)+(3\\cdot4)-(5\\cdot6)+(7\\cdot8)]\\cdot(9\\cdot0)$$"
+        },
+        "bdq_probs": {
+          "A": 0.019249118864536285,
+          "B": 0.09775815159082413,
+          "C": 0.046176277101039886,
+          "D": 0.07613196969032288,
+          "E": 0.7223183512687683
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.044767603278160095,
+            "B": 0.12169547379016876,
+            "C": 0.08363693207502365,
+            "D": 0.07380961626768112,
+            "E": 0.6179980039596558
+          },
+          "B": {
+            "A": 0.03883159160614014,
+            "B": 0.13554300367832184,
+            "C": 0.11960989236831665,
+            "D": 0.1196102574467659,
+            "E": 0.5360543727874756
+          },
+          "C": {
+            "A": 0.02043829672038555,
+            "B": 0.0713406577706337,
+            "C": 0.07133674621582031,
+            "D": 0.09159848839044571,
+            "E": 0.6768240928649902
+          },
+          "D": {
+            "A": 0.04338023439049721,
+            "B": 0.11792883276939392,
+            "C": 0.04915640130639076,
+            "D": 0.17157377302646637,
+            "E": 0.5284807085990906
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.044767603278160095,
+          "B": 0.13554300367832184,
+          "C": 0.07133674621582031,
+          "D": 0.17157377302646637
+        },
+        "score": 0.044767603278160095
+      },
+      {
+        "record_index": 59,
+        "sample_id": "MATH_train_test_question_11176",
+        "label": null,
+        "perturbations": {
+          "a": "The information in the stem and leaf plot displayed are the long jump distances, in centimeters, that the girls squad of Pseudo H.S. made at rehearsal today. $(51|1$ signifies $511$ centimeters$.)$ What is the total of the median and mode of the information?",
+          "b": "The details in the stem and leaf plot presented are the long jump distances, in centimeters, that the girls team of Pseudo H.S. achieved at practice today. $(51|1$ indicates $511$ centimeters$.)$ What is the sum of the median and mode of the details?",
+          "c": "The figures in the stem and leaf plot illustrated are the long jump distances, in centimeters, that the girls group of Pseudo H.S. recorded at practice today. $(51|1$ represents $511$ centimeters$.)$ What is the aggregate of the median and mode of the figures?",
+          "d": "The statistics in the stem and leaf plot shown are the long jump distances, in centimeters, that the girls team of Pseudo H.S. performed at practice today. $(51|1$ denotes $511$ centimeters$.)$ What is the total of the median and mode of the statistics?"
+        },
+        "bdq_probs": {
+          "A": 0.0038790220860391855,
+          "B": 0.009305663406848907,
+          "C": 0.01353914849460125,
+          "D": 0.015341897495090961,
+          "E": 0.9491679072380066
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03356311842799187,
+            "B": 0.0912431851029396,
+            "C": 0.1704481989145279,
+            "D": 0.19314424693584442,
+            "E": 0.46332791447639465
+          },
+          "B": {
+            "A": 0.02009311318397522,
+            "B": 0.04820524528622627,
+            "C": 0.10204174369573593,
+            "D": 0.13102518022060394,
+            "E": 0.6653962135314941
+          },
+          "C": {
+            "A": 0.021053576841950417,
+            "B": 0.05050945281982422,
+            "C": 0.15556690096855164,
+            "D": 0.0270336102694273,
+            "E": 0.6972034573554993
+          },
+          "D": {
+            "A": 0.0768103078007698,
+            "B": 0.12666305899620056,
+            "C": 0.16260917484760284,
+            "D": 0.44202300906181335,
+            "E": 0.09862789511680603
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03356311842799187,
+          "B": 0.04820524528622627,
+          "C": 0.15556690096855164,
+          "D": 0.44202300906181335
+        },
+        "score": 0.03356311842799187
+      },
+      {
+        "record_index": 60,
+        "sample_id": "MATH_train_test_question_11228",
+        "label": null,
+        "perturbations": {
+          "a": "Forty-eight identical parallelograms with edges of length 62 feet and 20 feet are positioned in a chevron arrangement forming hexagon $ABCDEF$, as illustrated. What is the circumference of hexagon $\\allowbreak ABCDEF$?",
+          "b": "Forty-eight uniform parallelograms with sides of length 62 feet and 20 feet are arranged in a chevron design forming hexagon $ABCDEF$, as depicted. What is the boundary of hexagon $\\allowbreak ABCDEF$?",
+          "c": "Forty-eight similar parallelograms with dimensions of length 62 feet and 20 feet are situated in a chevron formation creating hexagon $ABCDEF$, as represented. What is the outer length of hexagon $\\allowbreak ABCDEF$?",
+          "d": "Forty-eight congruous parallelograms with lengths of sides 62 feet and 20 feet are laid out in a chevron style forming hexagon $ABCDEF$, as shown. What is the perimeter of hexagon $\\allowbreak ABCDEF$?"
+        },
+        "bdq_probs": {
+          "A": 0.05177813023328781,
+          "B": 0.12421217560768127,
+          "C": 0.05177830532193184,
+          "D": 0.2629530131816864,
+          "E": 0.49125829339027405
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.018199404701590538,
+            "B": 0.056060727685689926,
+            "C": 0.049471329897642136,
+            "D": 0.4142220616340637,
+            "E": 0.41421857476234436
+          },
+          "B": {
+            "A": 0.009866820648312569,
+            "B": 0.02682202123105526,
+            "C": 0.08261425793170929,
+            "D": 0.28835588693618774,
+            "E": 0.5387128591537476
+          },
+          "C": {
+            "A": 0.011331220157444477,
+            "B": 0.021171029657125473,
+            "C": 0.03080190345644951,
+            "D": 0.4252301752567291,
+            "E": 0.2275979071855545
+          },
+          "D": {
+            "A": 0.007089297287166119,
+            "B": 0.007091180421411991,
+            "C": 0.046230074018239975,
+            "D": 0.07623282074928284,
+            "E": 0.07622291147708893
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.018199404701590538,
+          "B": 0.02682202123105526,
+          "C": 0.03080190345644951,
+          "D": 0.07623282074928284
+        },
+        "score": 0.018199404701590538
+      },
+      {
+        "record_index": 65,
+        "sample_id": "MATH_train_test_question_11294",
+        "label": null,
+        "perturbations": {
+          "a": "In how many methods can you arrange 7 distinct colored hats in a row?",
+          "b": "In how many manners can you organize 7 various colored hats in a row?",
+          "c": "In how many fashions can you position 7 unique colored hats in a row?",
+          "d": "In how many styles can you sequence 7 different colored hats in a row?"
+        },
+        "bdq_probs": {
+          "A": 0.01127269770950079,
+          "B": 0.19981499016284943,
+          "C": 0.12119302153587341,
+          "D": 0.37330082058906555,
+          "E": 0.29072684049606323
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.015310963615775108,
+            "B": 0.34848007559776306,
+            "C": 0.09984022378921509,
+            "D": 0.4474527835845947,
+            "E": 0.07775556296110153
+          },
+          "B": {
+            "A": 0.034202124923467636,
+            "B": 0.04391762614250183,
+            "C": 0.223026841878891,
+            "D": 0.5350152254104614,
+            "E": 0.15328358113765717
+          },
+          "C": {
+            "A": 0.01437482051551342,
+            "B": 0.1363873928785324,
+            "C": 0.1062169075012207,
+            "D": 0.25480151176452637,
+            "E": 0.4760293662548065
+          },
+          "D": {
+            "A": 0.03319763392210007,
+            "B": 0.277975469827652,
+            "C": 0.10225780308246613,
+            "D": 0.45828524231910706,
+            "E": 0.09024094045162201
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.015310963615775108,
+          "B": 0.04391762614250183,
+          "C": 0.1062169075012207,
+          "D": 0.45828524231910706
+        },
+        "score": 0.015310963615775108
+      },
+      {
+        "record_index": 66,
+        "sample_id": "MATH_train_test_question_11310",
+        "label": null,
+        "perturbations": {
+          "a": "The five highest structures in Los Angeles in 1985 had a mean elevation of 733 feet. The highest of the five structures has a height of 858 feet, the shortest of the five 625 feet. If a new structure were erected with a height of 885 feet, by how many feet would it raise the mean elevation of the five highest structures of the city?",
+          "b": "The five tallest edifices in Los Angeles in 1985 had a mean height of 733 feet. The tallest of the five edifices has a height of 858 feet, the shortest of the five 625 feet. If a new edifice were built with a height of 885 feet, by how many feet would it elevate the mean height of the five tallest edifices of the city?",
+          "c": "The five tallest constructions in Los Angeles in 1985 had a mean stature of 733 feet. The tallest of the five constructions has a height of 858 feet, the shortest of the five 625 feet. If a new construction were formed with a height of 885 feet, by how many feet would it enhance the mean stature of the five tallest constructions of the city?",
+          "d": "The five tallest facilities in Los Angeles in 1985 had a mean size of 733 feet. The tallest of the five facilities has a height of 858 feet, the shortest of the five 625 feet. If a new facility were created with a height of 885 feet, by how many feet would it boost the mean size of the five tallest facilities of the city?"
+        },
+        "bdq_probs": {
+          "A": 0.034454166889190674,
+          "B": 0.15441931784152985,
+          "C": 0.06436911225318909,
+          "D": 0.4756280481815338,
+          "E": 0.22466988861560822
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0061194514855742455,
+            "B": 0.11546831578016281,
+            "C": 0.04247753322124481,
+            "D": 0.21571896970272064,
+            "E": 0.586383581161499
+          },
+          "B": {
+            "A": 0.031456924974918365,
+            "B": 0.12442047894001007,
+            "C": 0.09689454734325409,
+            "D": 0.26338738203048706,
+            "E": 0.43425077199935913
+          },
+          "C": {
+            "A": 0.02348329685628414,
+            "B": 0.10525017976760864,
+            "C": 0.08196519315242767,
+            "D": 0.2228057086467743,
+            "E": 0.4716757833957672
+          },
+          "D": {
+            "A": 0.03581107780337334,
+            "B": 0.12501555681228638,
+            "C": 0.06690527498722076,
+            "D": 0.3850218653678894,
+            "E": 0.08590773493051529
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0061194514855742455,
+          "B": 0.12442047894001007,
+          "C": 0.08196519315242767,
+          "D": 0.3850218653678894
+        },
+        "score": 0.0061194514855742455
+      },
+      {
+        "record_index": 67,
+        "sample_id": "MATH_train_test_question_11340",
+        "label": null,
+        "perturbations": {
+          "a": "Question: What is the reduced value of $\\frac{\\sqrt{24}}{\\sqrt{30}}\\div\\frac{\\sqrt{20}}{3\\sqrt{25}}$?",
+          "b": "Question: What is the uncomplicated value of $\\frac{\\sqrt{24}}{\\sqrt{30}}\\div\\frac{\\sqrt{20}}{3\\sqrt{25}}$?",
+          "c": "Question: What is the clarified value of $\\frac{\\sqrt{24}}{\\sqrt{30}}\\div\\frac{\\sqrt{20}}{3\\sqrt{25}}$?",
+          "d": "Question: What is the condensed value of $\\frac{\\sqrt{24}}{\\sqrt{30}}\\div\\frac{\\sqrt{20}}{3\\sqrt{25}}$?"
+        },
+        "bdq_probs": {
+          "A": 0.019221460446715355,
+          "B": 0.1823701560497284,
+          "C": 0.05920632556080818,
+          "D": 0.23416553437709808,
+          "E": 0.49572813510894775
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.030786672607064247,
+            "B": 0.1771688312292099,
+            "C": 0.05751717835664749,
+            "D": 0.22748494148254395,
+            "E": 0.4815850555896759
+          },
+          "B": {
+            "A": 0.02252022735774517,
+            "B": 0.12959785759449005,
+            "C": 0.06936734169721603,
+            "D": 0.24211570620536804,
+            "E": 0.5125583410263062
+          },
+          "C": {
+            "A": 0.011334880255162716,
+            "B": 0.0837559625506401,
+            "C": 0.034913960844278336,
+            "D": 0.22766752541065216,
+            "E": 0.6188637018203735
+          },
+          "D": {
+            "A": 0.017945952713489532,
+            "B": 0.10327482223510742,
+            "C": 0.029587944969534874,
+            "D": 0.13260407745838165,
+            "E": 0.673417329788208
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.030786672607064247,
+          "B": 0.12959785759449005,
+          "C": 0.034913960844278336,
+          "D": 0.13260407745838165
+        },
+        "score": 0.030786672607064247
+      },
+      {
+        "record_index": 68,
+        "sample_id": "MATH_train_test_question_11412",
+        "label": null,
+        "perturbations": {
+          "a": "All 50 regions as well as the District of Columbia and Puerto Rico, have unique two-letter postal abbreviations. If a two-letter combination of letters (such as CO or EE) is selected at random, what is the likelihood that it is a postal abbreviation for one of the 50 regions, the District of Columbia, or Puerto Rico? Express your answer as a common fraction.",
+          "b": "All 50 territories as well as the District of Columbia and Puerto Rico, have separate two-letter postal abbreviations. If a two-letter string of letters (such as CO or EE) is picked at random, what is the chance that it is a postal abbreviation for one of the 50 territories, the District of Columbia, or Puerto Rico? Express your answer as a common fraction.",
+          "c": "All 50 states as well as the District of Columbia and Puerto Rico, have individual two-letter postal abbreviations. If a two-letter pair of letters (such as CO or EE) is determined at random, what is the odds that it is a postal abbreviation for one of the 50 states, the District of Columbia, or Puerto Rico? Express your answer as a common fraction.",
+          "d": "All 50 states as well as the District of Columbia and Puerto Rico, have distinct two-letter postal codes. If a two-letter set of letters (such as CO or EE) is elected at random, what is the probability that it is a postal abbreviation for one of the 50 states, the District of Columbia, or Puerto Rico? Express your answer as a common fraction."
+        },
+        "bdq_probs": {
+          "A": 0.0010471021523699164,
+          "B": 0.0068281604908406734,
+          "C": 0.01637948304414749,
+          "D": 0.018560465425252914,
+          "E": 0.8942878842353821
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0033131600357592106,
+            "B": 0.01580704003572464,
+            "C": 0.04296590015292168,
+            "D": 0.04868727922439575,
+            "E": 0.7615875601768494
+          },
+          "B": {
+            "A": 0.008256004191935062,
+            "B": 0.041931409388780594,
+            "C": 0.061004653573036194,
+            "D": 0.0691286027431488,
+            "E": 0.6558589935302734
+          },
+          "C": {
+            "A": 0.0034018480218946934,
+            "B": 0.014324033632874489,
+            "C": 0.08242020756006241,
+            "D": 0.034358832985162735,
+            "E": 0.6090022921562195
+          },
+          "D": {
+            "A": 0.0037316959351301193,
+            "B": 0.013869009912014008,
+            "C": 0.042708929628133774,
+            "D": 0.14908745884895325,
+            "E": 0.40520036220550537
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0033131600357592106,
+          "B": 0.041931409388780594,
+          "C": 0.08242020756006241,
+          "D": 0.14908745884895325
+        },
+        "score": 0.0033131600357592106
+      },
+      {
+        "record_index": 69,
+        "sample_id": "MATH_train_test_question_11485",
+        "label": null,
+        "perturbations": {
+          "a": "Round $6287215$ to the closest ten thousand.",
+          "b": "Round $6287215$ to the nearest tens of thousands.",
+          "c": "Round $6287215$ to the approximate ten thousand.",
+          "d": "Round $6287215$ to the nearest myriad."
+        },
+        "bdq_probs": {
+          "A": 0.005789141170680523,
+          "B": 0.025945588946342468,
+          "C": 0.029399683699011803,
+          "D": 0.07052620500326157,
+          "E": 0.859184205532074
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01948964223265648,
+            "B": 0.3914669454097748,
+            "C": 0.07708311825990677,
+            "D": 0.09897664189338684,
+            "E": 0.39146026968955994
+          },
+          "B": {
+            "A": 0.012651878409087658,
+            "B": 0.05003978684544563,
+            "C": 0.10593301802873611,
+            "D": 0.044159434735774994,
+            "E": 0.7827442288398743
+          },
+          "C": {
+            "A": 0.005327979568392038,
+            "B": 0.039369117468595505,
+            "C": 0.023878369480371475,
+            "D": 0.13741044700145721,
+            "E": 0.7907422780990601
+          },
+          "D": {
+            "A": 0.012669435702264309,
+            "B": 0.17489773035049438,
+            "C": 0.023669643327593803,
+            "D": 0.1748962700366974,
+            "E": 0.6104477643966675
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01948964223265648,
+          "B": 0.05003978684544563,
+          "C": 0.023878369480371475,
+          "D": 0.1748962700366974
+        },
+        "score": 0.01948964223265648
+      },
+      {
+        "record_index": 70,
+        "sample_id": "MATH_train_test_question_11496",
+        "label": null,
+        "perturbations": {
+          "a": "Question: What is $\\frac{-5}{9}\\cdot \\frac{8}{17}$?",
+          "b": "Question: What is $\\frac{-5}{9}\\cdot \\frac{8}{17}$?",
+          "c": "Question: What is $\\frac{-5}{9}\\cdot \\frac{8}{17}$?",
+          "d": "Question: What is $\\frac{-5}{9}\\cdot \\frac{8}{17}$?"
+        },
+        "bdq_probs": {
+          "A": 0.011005965992808342,
+          "B": 0.1340814232826233,
+          "C": 0.029917355626821518,
+          "D": 0.049325380474328995,
+          "E": 0.7715779542922974
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.008019055239856243,
+            "B": 0.2655579447746277,
+            "C": 0.02320394292473793,
+            "D": 0.05925335735082626,
+            "E": 0.637032687664032
+          },
+          "B": {
+            "A": 0.006776189431548119,
+            "B": 0.03663228079676628,
+            "C": 0.1278575360774994,
+            "D": 0.087875135242939,
+            "E": 0.7357682585716248
+          },
+          "C": {
+            "A": 0.0041529154404997826,
+            "B": 0.06915320456027985,
+            "C": 0.00935876090079546,
+            "D": 0.06915239244699478,
+            "E": 0.84244704246521
+          },
+          "D": {
+            "A": 0.014729967340826988,
+            "B": 0.1910257637500763,
+            "C": 0.029294146224856377,
+            "D": 0.07962975651025772,
+            "E": 0.6667296290397644
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.008019055239856243,
+          "B": 0.03663228079676628,
+          "C": 0.00935876090079546,
+          "D": 0.07962975651025772
+        },
+        "score": 0.008019055239856243
+      },
+      {
+        "record_index": 73,
+        "sample_id": "MATH_train_test_question_11529",
+        "label": null,
+        "perturbations": {
+          "a": "Question: How many affirmative and negative integers is $12$ a multiple of?",
+          "b": "Question: How many positive and adverse integers is $12$ a multiple of?",
+          "c": "Question: How many positive and minus integers is $12$ a multiple of?",
+          "d": "Question: How many positive and detrimental integers is $12$ a multiple of?"
+        },
+        "bdq_probs": {
+          "A": 0.01912069134414196,
+          "B": 0.0756247341632843,
+          "C": 0.04586818814277649,
+          "D": 0.20556694269180298,
+          "E": 0.6331905126571655
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.021372709423303604,
+            "B": 0.1789540797472,
+            "C": 0.0512705072760582,
+            "D": 0.2297784686088562,
+            "E": 0.4864408075809479
+          },
+          "B": {
+            "A": 0.020222485065460205,
+            "B": 0.07058469206094742,
+            "C": 0.10269836336374283,
+            "D": 0.19186587631702423,
+            "E": 0.5909879207611084
+          },
+          "C": {
+            "A": 0.015870913863182068,
+            "B": 0.06277206540107727,
+            "C": 0.0627707690000534,
+            "D": 0.21909162402153015,
+            "E": 0.5955519676208496
+          },
+          "D": {
+            "A": 0.018867047503590584,
+            "B": 0.09581775218248367,
+            "C": 0.04525979980826378,
+            "D": 0.2951313853263855,
+            "E": 0.4865879714488983
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.021372709423303604,
+          "B": 0.07058469206094742,
+          "C": 0.0627707690000534,
+          "D": 0.2951313853263855
+        },
+        "score": 0.021372709423303604
+      },
+      {
+        "record_index": 74,
+        "sample_id": "MATH_train_test_question_11621",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Round $563.5097$ to the closest integer.",
+          "b": "Question: Round $563.5097$ to the nearest whole number.",
+          "c": "Question: Round $563.5097$ to the closest whole number.",
+          "d": "Question: Round $563.5097$ to the nearest numeral."
+        },
+        "bdq_probs": {
+          "A": 0.006565561518073082,
+          "B": 0.04851369187235832,
+          "C": 0.07998498529195786,
+          "D": 0.1918739527463913,
+          "E": 0.6697055101394653
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.006098814308643341,
+            "B": 0.0954020768404007,
+            "C": 0.04506450518965721,
+            "D": 0.2288564145565033,
+            "E": 0.6220959424972534
+          },
+          "B": {
+            "A": 0.004894058685749769,
+            "B": 0.03616272285580635,
+            "C": 0.04643359035253525,
+            "D": 0.18364836275577545,
+            "E": 0.7263428568840027
+          },
+          "C": {
+            "A": 0.0030820274259895086,
+            "B": 0.037546973675489426,
+            "C": 0.013812697492539883,
+            "D": 0.2774354815483093,
+            "E": 0.6655325293540955
+          },
+          "D": {
+            "A": 0.0037559347692877054,
+            "B": 0.0518493577837944,
+            "C": 0.02161393314599991,
+            "D": 0.2050672471523285,
+            "E": 0.7157544493675232
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.006098814308643341,
+          "B": 0.03616272285580635,
+          "C": 0.013812697492539883,
+          "D": 0.2050672471523285
+        },
+        "score": 0.006098814308643341
+      },
+      {
+        "record_index": 77,
+        "sample_id": "MATH_train_test_question_11664",
+        "label": null,
+        "perturbations": {
+          "a": "The chart displays some of the outcomes of a poll by radio station KAMC. What percentage of the men surveyed tune into the station? [asy]  \nsize(3inch, 1.5inch);  \ndraw((0,0)--(7,0)--(7,2.5)--(0,2.5)--cycle);  \n\nlabel(scale(.75)*\"Listen\", (2.5, 2), N);  \nlabel(scale(.75)*\"Don't Listen\", (4.5, 2), N);  \nlabel(scale(.75)*\"Total\", (6.35, 2), N);  \nlabel(scale(.75)*\"Male\", (1, 1.33), N);  \nlabel(scale(.75)*\"Female\", (1, .66), N);  \nlabel(scale(.75)*\"Total\", (1, 0), N);  \ndraw((1.75,0)--(1.75,2.5));  \ndraw((3.25,0)--(3.25,2.5));  \ndraw((5.75,0)--(5.75,2.5));  \ndraw((0,.6)--(7,.6));  \ndraw((0,1.2)--(7,1.2));  \ndraw((0,1.8)--(7,1.8));  \nlabel(scale(.75)*\"?\", (2.5, 1.33), N);  \nlabel(scale(.75)*\"58\", (2.5, .66), N);  \nlabel(scale(.75)*\"136\", (2.5, 0), N);  \n\nlabel(scale(.75)*\"26\", (4.5, 1.33), N);  \nlabel(scale(.75)*\"?\", (4.5, .66), N);  \nlabel(scale(.75)*\"64\", (4.5, 0), N);  \n\nlabel(scale(.75)*\"?\", (6.35, 1.33), N);  \nlabel(scale(.75)*\"96\", (6.35, .66), N);  \nlabel(scale(.75)*\"200\", (6.35, 0), N);  \n[/asy]",
+          "b": "The table reveals some of the findings of a survey by radio station KAMC. What percentage of the men surveyed listen to the station? [asy]  \nsize(3inch, 1.5inch);  \ndraw((0,0)--(7,0)--(7,2.5)--(0,2.5)--cycle);  \n\nlabel(scale(.75)*\"Listen\", (2.5, 2), N);  \nlabel(scale(.75)*\"Don't Listen\", (4.5, 2), N);  \nlabel(scale(.75)*\"Total\", (6.35, 2), N);  \nlabel(scale(.75)*\"Male\", (1, 1.33), N);  \nlabel(scale(.75)*\"Female\", (1, .66), N);  \nlabel(scale(.75)*\"Total\", (1, 0), N);  \ndraw((1.75,0)--(1.75,2.5));  \ndraw((3.25,0)--(3.25,2.5));  \ndraw((5.75,0)--(5.75,2.5));  \ndraw((0,.6)--(7,.6));  \ndraw((0,1.2)--(7,1.2));  \ndraw((0,1.8)--(7,1.8));  \nlabel(scale(.75)*\"?\", (2.5, 1.33), N);  \nlabel(scale(.75)*\"58\", (2.5, .66), N);  \nlabel(scale(.75)*\"136\", (2.5, 0), N);  \n\nlabel(scale(.75)*\"26\", (4.5, 1.33), N);  \nlabel(scale(.75)*\"?\", (4.5, .66), N);  \nlabel(scale(.75)*\"64\", (4.5, 0), N);  \n\nlabel(scale(.75)*\"?\", (6.35, 1.33), N);  \nlabel(scale(.75)*\"96\", (6.35, .66), N);  \nlabel(scale(.75)*\"200\", (6.35, 0), N);  \n[/asy]",
+          "c": "The matrix displays some of the consequences of a survey by radio station KAMC. What percentage of the males surveyed tune into the station? [asy]  \nsize(3inch, 1.5inch);  \ndraw((0,0)--(7,0)--(7,2.5)--(0,2.5)--cycle);  \n\nlabel(scale(.75)*\"Listen\", (2.5, 2), N);  \nlabel(scale(.75)*\"Don't Listen\", (4.5, 2), N);  \nlabel(scale(.75)*\"Total\", (6.35, 2), N);  \nlabel(scale(.75)*\"Male\", (1, 1.33), N);  \nlabel(scale(.75)*\"Female\", (1, .66), N);  \nlabel(scale(.75)*\"Total\", (1, 0), N);  \ndraw((1.75,0)--(1.75,2.5));  \ndraw((3.25,0)--(3.25,2.5));  \ndraw((5.75,0)--(5.75,2.5));  \ndraw((0,.6)--(7,.6));  \ndraw((0,1.2)--(7,1.2));  \ndraw((0,1.8)--(7,1.8));  \nlabel(scale(.75)*\"?\", (2.5, 1.33), N);  \nlabel(scale(.75)*\"58\", (2.5, .66), N);  \nlabel(scale(.75)*\"136\", (2.5, 0), N);  \n\nlabel(scale(.75)*\"26\", (4.5, 1.33), N);  \nlabel(scale(.75)*\"?\", (4.5, .66), N);  \nlabel(scale(.75)*\"64\", (4.5, 0), N);  \n\nlabel(scale(.75)*\"?\", (6.35, 1.33), N);  \nlabel(scale(.75)*\"96\", (6.35, .66), N);  \nlabel(scale(.75)*\"200\", (6.35, 0), N);  \n[/asy]",
+          "d": "The list illustrates some of the outcomes of a survey by radio station KAMC. What percentage of the males surveyed attend the station? [asy]  \nsize(3inch, 1.5inch);  \ndraw((0,0)--(7,0)--(7,2.5)--(0,2.5)--cycle);  \n\nlabel(scale(.75)*\"Listen\", (2.5, 2), N);  \nlabel(scale(.75)*\"Don't Listen\", (4.5, 2), N);  \nlabel(scale(.75)*\"Total\", (6.35, 2), N);  \nlabel(scale(.75)*\"Male\", (1, 1.33), N);  \nlabel(scale(.75)*\"Female\", (1, .66), N);  \nlabel(scale(.75)*\"Total\", (1, 0), N);  \ndraw((1.75,0)--(1.75,2.5));  \ndraw((3.25,0)--(3.25,2.5));  \ndraw((5.75,0)--(5.75,2.5));  \ndraw((0,.6)--(7,.6));  \ndraw((0,1.2)--(7,1.2));  \ndraw((0,1.8)--(7,1.8));  \nlabel(scale(.75)*\"?\", (2.5, 1.33), N);  \nlabel(scale(.75)*\"58\", (2.5, .66), N);  \nlabel(scale(.75)*\"136\", (2.5, 0), N);  \n\nlabel(scale(.75)*\"26\", (4.5, 1.33), N);  \nlabel(scale(.75)*\"?\", (4.5, .66), N);  \nlabel(scale(.75)*\"64\", (4.5, 0), N);  \n\nlabel(scale(.75)*\"?\", (6.35, 1.33), N);  \nlabel(scale(.75)*\"96\", (6.35, .66), N);  \nlabel(scale(.75)*\"200\", (6.35, 0), N);  \n[/asy]"
+        },
+        "bdq_probs": {
+          "A": 0.007310532499104738,
+          "B": 0.005033234599977732,
+          "C": 0.013659334741532803,
+          "D": 0.05403367802500725,
+          "E": 0.06937035918235779
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0070368568412959576,
+            "B": 0.004014570266008377,
+            "C": 0.015859834849834442,
+            "D": 0.05536087974905968,
+            "E": 0.19320815801620483
+          },
+          "B": {
+            "A": 0.007073652930557728,
+            "B": 0.0042961095459759235,
+            "C": 0.01095708180218935,
+            "D": 0.055650774389505386,
+            "E": 0.15125273168087006
+          },
+          "C": {
+            "A": 0.006814891006797552,
+            "B": 0.008757509291172028,
+            "C": 0.026955025270581245,
+            "D": 0.08304179459810257,
+            "E": 0.15511921048164368
+          },
+          "D": {
+            "A": 0.009019511751830578,
+            "B": 0.010887780226767063,
+            "C": 0.01583065465092659,
+            "D": 0.08040101081132889,
+            "E": 0.24762918055057526
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0070368568412959576,
+          "B": 0.0042961095459759235,
+          "C": 0.026955025270581245,
+          "D": 0.08040101081132889
+        },
+        "score": 0.0042961095459759235
+      },
+      {
+        "record_index": 78,
+        "sample_id": "MATH_train_test_question_11686",
+        "label": null,
+        "perturbations": {
+          "a": "Question: What is the largest multiple of 99 that is beneath 0?",
+          "b": "Question: What is the highest multiple of 99 that is under 0?",
+          "c": "Question: What is the utmost multiple of 99 that is below 0?",
+          "d": "Question: What is the peak multiple of 99 that is lesser than 0?"
+        },
+        "bdq_probs": {
+          "A": 0.023113321512937546,
+          "B": 0.09141580015420914,
+          "C": 0.055446017533540726,
+          "D": 0.21929320693016052,
+          "E": 0.5961004495620728
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.020685449242591858,
+            "B": 0.11903782933950424,
+            "C": 0.043791137635707855,
+            "D": 0.19625817239284515,
+            "E": 0.60451740026474
+          },
+          "B": {
+            "A": 0.021715383976697922,
+            "B": 0.06688877195119858,
+            "C": 0.059028591960668564,
+            "D": 0.20602989196777344,
+            "E": 0.634616494178772
+          },
+          "C": {
+            "A": 0.022998493164777756,
+            "B": 0.08027341961860657,
+            "C": 0.04296688735485077,
+            "D": 0.24725720286369324,
+            "E": 0.5931388139724731
+          },
+          "D": {
+            "A": 0.019753990694880486,
+            "B": 0.08853253722190857,
+            "C": 0.03256887570023537,
+            "D": 0.18742085993289948,
+            "E": 0.6541621685028076
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.020685449242591858,
+          "B": 0.06688877195119858,
+          "C": 0.04296688735485077,
+          "D": 0.18742085993289948
+        },
+        "score": 0.020685449242591858
+      },
+      {
+        "record_index": 81,
+        "sample_id": "MATH_train_test_question_11747",
+        "label": null,
+        "perturbations": {
+          "a": "Question: Let $n$ be the multiplication of the two smallest 3-digit prime integers.  Find the total of the digits of $n$.",
+          "b": "Question: Let $n$ be the multiplication of the two least 3-digit prime numbers.  Find the sum of the figures of $n$.",
+          "c": "Question: Let $n$ be the product of the two tiniest 3-digit prime numbers.  Find the addition of the digits of $n$.",
+          "d": "Question: Let $n$ be the product of the two earliest 3-digit prime numbers.  Find the sum of the numerals of $n$."
+        },
+        "bdq_probs": {
+          "A": 0.04862163960933685,
+          "B": 0.10293371230363846,
+          "C": 0.062431465834379196,
+          "D": 0.21790730953216553,
+          "E": 0.5227323174476624
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04465721175074577,
+            "B": 0.12139317393302917,
+            "C": 0.0736273005604744,
+            "D": 0.20013998448848724,
+            "E": 0.4801103174686432
+          },
+          "B": {
+            "A": 0.03531668707728386,
+            "B": 0.09600332379341125,
+            "C": 0.06598030775785446,
+            "D": 0.20323394238948822,
+            "E": 0.5524463057518005
+          },
+          "C": {
+            "A": 0.032363373786211014,
+            "B": 0.06851576268672943,
+            "C": 0.06046280264854431,
+            "D": 0.12800008058547974,
+            "E": 0.6500359773635864
+          },
+          "D": {
+            "A": 0.05739698186516762,
+            "B": 0.10723477602005005,
+            "C": 0.03481307998299599,
+            "D": 0.37427711486816406,
+            "E": 0.33029717206954956
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04465721175074577,
+          "B": 0.09600332379341125,
+          "C": 0.06046280264854431,
+          "D": 0.37427711486816406
+        },
+        "score": 0.04465721175074577
+      },
+      {
+        "record_index": 83,
+        "sample_id": "MATH_train_test_question_11792",
+        "label": null,
+        "perturbations": {
+          "a": "Question: How many digits are in the collection $25, 26, 27, \\ldots, 99, 100 ?$",
+          "b": "Question: How many figures are in the series $25, 26, 27, \\ldots, 99, 100 ?$",
+          "c": "Question: How many values are in the roster $25, 26, 27, \\ldots, 99, 100 ?$",
+          "d": "Question: How many integers are in the lineup $25, 26, 27, \\ldots, 99, 100 ?$"
+        },
+        "bdq_probs": {
+          "A": 0.011546829715371132,
+          "B": 0.05864054337143898,
+          "C": 0.0517493337392807,
+          "D": 0.23192442953586578,
+          "E": 0.630435585975647
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.012732209637761116,
+            "B": 0.04444044083356857,
+            "C": 0.0570618212223053,
+            "D": 0.3283683955669403,
+            "E": 0.5413873791694641
+          },
+          "B": {
+            "A": 0.011011911556124687,
+            "B": 0.04355354234576225,
+            "C": 0.08136770129203796,
+            "D": 0.3218156695365906,
+            "E": 0.5305837392807007
+          },
+          "C": {
+            "A": 0.006117400713264942,
+            "B": 0.01662917248904705,
+            "C": 0.045201901346445084,
+            "D": 0.20258097350597382,
+            "E": 0.7070751786231995
+          },
+          "D": {
+            "A": 0.006292967591434717,
+            "B": 0.015096780844032764,
+            "C": 0.024889381602406502,
+            "D": 0.18391062319278717,
+            "E": 0.6419022679328918
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.012732209637761116,
+          "B": 0.04355354234576225,
+          "C": 0.045201901346445084,
+          "D": 0.18391062319278717
+        },
+        "score": 0.012732209637761116
+      },
+      {
+        "record_index": 84,
+        "sample_id": "MATH_train_test_question_11801",
+        "label": null,
+        "perturbations": {
+          "a": "The extent of a rectangle is twice its breadth. Given the extent of the diagonal is $5\\sqrt{5}$, discover the area of the rectangle.",
+          "b": "The measurement of a rectangle is twice its width. Given the measurement of the diagonal is $5\\sqrt{5}$, determine the area of the rectangle.",
+          "c": "The size of a rectangle is twice its width. Given the size of the diagonal is $5\\sqrt{5}$, calculate the area of the rectangle.",
+          "d": "The dimension of a rectangle is twice its width. Given the dimension of the diagonal is $5\\sqrt{5}$, find the area of the rectangle."
+        },
+        "bdq_probs": {
+          "A": 0.02822970226407051,
+          "B": 0.3439103662967682,
+          "C": 0.11165069788694382,
+          "D": 0.343908429145813,
+          "E": 0.16245080530643463
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.049364812672138214,
+            "B": 0.46836596727371216,
+            "C": 0.11842013150453568,
+            "D": 0.25069552659988403,
+            "E": 0.06338577717542648
+          },
+          "B": {
+            "A": 0.030342357233166695,
+            "B": 0.22420358657836914,
+            "C": 0.28788048028945923,
+            "D": 0.2878805696964264,
+            "E": 0.15409135818481445
+          },
+          "C": {
+            "A": 0.02927691675722599,
+            "B": 0.45797181129455566,
+            "C": 0.061979278922080994,
+            "D": 0.3566661477088928,
+            "E": 0.07958296686410904
+          },
+          "D": {
+            "A": 0.037674278020858765,
+            "B": 0.4589732587337494,
+            "C": 0.09037600457668304,
+            "D": 0.3574441969394684,
+            "E": 0.025893181562423706
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.049364812672138214,
+          "B": 0.22420358657836914,
+          "C": 0.061979278922080994,
+          "D": 0.3574441969394684
+        },
+        "score": 0.049364812672138214
+      },
+      {
+        "record_index": 90,
+        "sample_id": "MATH_train_test_question_11953",
+        "label": null,
+        "perturbations": {
+          "a": "What is the highest common factor of $518$ and $294$?",
+          "b": "What is the largest common divisor of $518$ and $294$?",
+          "c": "What is the most significant common factor of $518$ and $294$?",
+          "d": "What is the utmost common divisor of $518$ and $294$?"
+        },
+        "bdq_probs": {
+          "A": 0.015917591750621796,
+          "B": 0.24899694323539734,
+          "C": 0.0432685986161232,
+          "D": 0.24899359047412872,
+          "E": 0.4105205833911896
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03750133514404297,
+            "B": 0.6647535562515259,
+            "C": 0.03309493511915207,
+            "D": 0.08996184915304184,
+            "E": 0.10193968564271927
+          },
+          "B": {
+            "A": 0.036208949983119965,
+            "B": 0.2675541341304779,
+            "C": 0.03620903939008713,
+            "D": 0.23611293733119965,
+            "E": 0.38928356766700745
+          },
+          "C": {
+            "A": 0.015526949428021908,
+            "B": 0.13000743091106415,
+            "C": 0.01759438030421734,
+            "D": 0.35339266061782837,
+            "E": 0.4537643790245056
+          },
+          "D": {
+            "A": 0.03641824796795845,
+            "B": 0.34554818272590637,
+            "C": 0.025030052289366722,
+            "D": 0.12711423635482788,
+            "E": 0.3455283045768738
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03750133514404297,
+          "B": 0.2675541341304779,
+          "C": 0.01759438030421734,
+          "D": 0.12711423635482788
+        },
+        "score": 0.01759438030421734
+      },
+      {
+        "record_index": 91,
+        "sample_id": "MATH_train_test_question_12028",
+        "label": null,
+        "perturbations": {
+          "a": "A jet traverses the coordinates $(-5,0,0),$ $(0,2,0),$ and $(0,0,-7).$  Determine the length from the origin to this jet.",
+          "b": "An aircraft travels through the locations $(-5,0,0),$ $(0,2,0),$ and $(0,0,-7).$  Calculate the distance from the origin to this aircraft.",
+          "c": "A vessel moves across the points $(-5,0,0),$ $(0,2,0),$ and $(0,0,-7).$  Ascertain the gap from the origin to this vessel.",
+          "d": "A craft navigates through the positions $(-5,0,0),$ $(0,2,0),$ and $(0,0,-7).$  Find the interval from the origin to this craft."
+        },
+        "bdq_probs": {
+          "A": 0.023997655138373375,
+          "B": 0.057568054646253586,
+          "C": 0.018689414486289024,
+          "D": 0.07391813397407532,
+          "E": 0.7946935892105103
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06792233139276505,
+            "B": 0.16293907165527344,
+            "C": 0.08721408247947693,
+            "D": 0.07696633785963058,
+            "E": 0.5687069296836853
+          },
+          "B": {
+            "A": 0.06319135427474976,
+            "B": 0.08114074915647507,
+            "C": 0.06319145113229752,
+            "D": 0.08113957941532135,
+            "E": 0.6793714761734009
+          },
+          "C": {
+            "A": 0.04157321900129318,
+            "B": 0.09973108768463135,
+            "C": 0.06048879399895668,
+            "D": 0.08801087737083435,
+            "E": 0.6503149271011353
+          },
+          "D": {
+            "A": 0.05236586555838585,
+            "B": 0.1613048017024994,
+            "C": 0.03599068522453308,
+            "D": 0.18277648091316223,
+            "E": 0.43845465779304504
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06792233139276505,
+          "B": 0.08114074915647507,
+          "C": 0.06048879399895668,
+          "D": 0.18277648091316223
+        },
+        "score": 0.06048879399895668
+      },
+      {
+        "record_index": 92,
+        "sample_id": "MATH_train_test_question_12046",
+        "label": null,
+        "perturbations": {
+          "a": "Calculate $\\arctan \\left( -\\frac{1}{\\sqrt{3}} \\right).$  State your response in radians.",
+          "b": "Determine $\\arctan \\left( -\\frac{1}{\\sqrt{3}} \\right).$  Present your solution in radians.",
+          "c": "Evaluate $\\arctan \\left( -\\frac{1}{\\sqrt{3}} \\right).$  Provide your answer in radians.",
+          "d": "Find $\\arctan \\left( -\\frac{1}{\\sqrt{3}} \\right).$  Express your solution in radians."
+        },
+        "bdq_probs": {
+          "A": 0.0025592006277292967,
+          "B": 0.014727488160133362,
+          "C": 0.010121836327016354,
+          "D": 0.02428111620247364,
+          "E": 0.9111377596855164
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.007044794037938118,
+            "B": 0.2995600700378418,
+            "C": 0.08582310378551483,
+            "D": 0.058985646814107895,
+            "E": 0.4358454942703247
+          },
+          "B": {
+            "A": 0.0049105556681752205,
+            "B": 0.05279562622308731,
+            "C": 0.1266450434923172,
+            "D": 0.032021068036556244,
+            "E": 0.7287909388542175
+          },
+          "C": {
+            "A": 0.0030166420619934797,
+            "B": 0.06059304252266884,
+            "C": 0.02525809220969677,
+            "D": 0.022290322929620743,
+            "E": 0.8364302515983582
+          },
+          "D": {
+            "A": 0.0026648957282304764,
+            "B": 0.05698079243302345,
+            "C": 0.010539917275309563,
+            "D": 0.2553597092628479,
+            "E": 0.4210127294063568
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.007044794037938118,
+          "B": 0.05279562622308731,
+          "C": 0.02525809220969677,
+          "D": 0.2553597092628479
+        },
+        "score": 0.007044794037938118
+      }
+    ]
+  }
+}

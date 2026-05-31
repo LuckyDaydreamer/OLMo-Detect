@@ -1,0 +1,3011 @@
+{
+  "model_name": "OLMo2-7B-Instruct",
+  "model_path": "olmo_models/OLMo2-7B-Instruct",
+  "dataset_name": "contaminated_posttraining_sft_7b-13b_wildchat_test_shifted",
+  "dataset_path": "benchmark/posttraining/sft/7b-13b/contaminated/shifted/test/contaminated_posttraining_sft_7b-13b_wildchat_test_shifted.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 45.644521951675415,
+  "result": {
+    "method": "dcq",
+    "dataset": "contaminated_posttraining_sft_7b-13b_wildchat_test_shifted",
+    "dataset_path": "benchmark/posttraining/sft/7b-13b/contaminated/shifted/test/contaminated_posttraining_sft_7b-13b_wildchat_test_shifted.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "mean_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.10383330160510484,
+      "B": 0.3661133868412839,
+      "C": 0.17989083883111123,
+      "D": 0.26944247871223426
+    },
+    "non_preferred": [
+      "A",
+      "C"
+    ],
+    "num_total_records": 66,
+    "num_scored_records": 54,
+    "summary": {
+      "mean_score": 0.08985586028445817
+    },
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98698",
+        "label": null,
+        "perturbations": {
+          "a": "Daha öncesinde ChatGPT4Turbo'ya art artı 2 soru yönelttim ve 2 yanıt aldım. Önemli bir nokta da şu ki, ikinci soruyu sorarken ilk soruyu ve ilk cevabı da hesaba almasını özellikle belirttim. Daha sonra bu 2 sorum için ChatGPT'den aldığım bu 2 cevabı kaydettim. Ancak, bu cevaplara neden olan kendi 2 sorumu kaydetmedim. Şimdi yalnızca bu 2 cevabı göz önünde bulundurarak benim bu cevapları almama neden olan art artı sorduğum 2 sorumun ne olabileceğini tahmin etmeni istiyorum.",
+          "b": "Daha önceki bir süreçte ChatGPT4Turbo'ya art artı 2 soru ilettim ve 2 yanıt aldım. Önemli bir nokta da şu ki, ikinci soruyu sorarken ilk soruyu ve ilk cevabı da dikkate almasını açıkça belirttim. Daha sonrasında bu 2 sorum için ChatGPT'den aldığım bu 2 cevabı kaydettim. Fakat, bu cevaplara neden olan kendi 2 sorumu kaydetmedim. Şimdi sadece bu 2 cevabı göz önünde bulundurarak benim bu cevapları alma sebebim olan art artı sorduğum 2 sorumun ne olabileceğini tahmin etmeni istiyorum.",
+          "c": "Daha evvel ChatGPT4Turbo'ya ardı ardına 2 soru sordum ve 2 yanıt aldım. Önemli bir nokta da şu ki, ikinci soruyu sorarken ilk soruyu ve ilk cevabı da hesaba katmasını açıkça belirttim. Daha sonra bu 2 sorum için ChatGPT'den aldığım bu 2 cevabı not ettim. Fakat, bu cevaplara neden olan kendi 2 sorumu not etmedim. Şimdi sadece bu 2 cevabı göz önünde bulundurarak benim bu cevapları almama sebep olan artı artı sorduğum 2 sorumun ne olabileceğini tahmin etmeni istiyorum.",
+          "d": "Daha önceki bir vakitte ChatGPT4Turbo'ya art arda 2 soru sordum ve 2 yanıt aldım. Önemli bir nokta da şu ki, ikinci soruyu sorarken ilk soruyu ve ilk cevabı da göz önünde bulundurmasını özellikle belirttim. Daha sonra bu 2 sorum için ChatGPT'den aldığım bu 2 cevabı kaydettim. Ancak, bu cevaplara neden olan kendi 2 sorumu kaydetmedim. Şimdi yalnızca bu 2 cevabı göz önünde bulundurarak benim bu cevapları elde etmeme neden olan art arda sorduğum 2 sorumun ne olabileceğini tahmin etmeni istiyorum."
+        },
+        "bdq_probs": {
+          "A": 0.13568681478500366,
+          "B": 0.41794511675834656,
+          "C": 0.1537533402442932,
+          "D": 0.2534960210323334,
+          "E": 0.03887518495321274
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05084729939699173,
+            "B": 0.1667218953371048,
+            "C": 0.6593983769416809,
+            "D": 0.07875394076108932,
+            "E": 0.02401869371533394
+          },
+          "B": {
+            "A": 0.07208773493766785,
+            "B": 0.09256251901388168,
+            "C": 0.32307490706443787,
+            "D": 0.4700711965560913,
+            "E": 0.038585882633924484
+          },
+          "C": {
+            "A": 0.23941752314567566,
+            "B": 0.15457963943481445,
+            "C": 0.020920105278491974,
+            "D": 0.4761388301849365,
+            "E": 0.08274061977863312
+          },
+          "D": {
+            "A": 0.8035274147987366,
+            "B": 0.12322523444890976,
+            "C": 0.011461783200502396,
+            "D": 0.016676833853125572,
+            "E": 0.033165670931339264
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05084729939699173,
+          "B": 0.09256251901388168,
+          "C": 0.020920105278491974,
+          "D": 0.016676833853125572
+        },
+        "score": 0.04525168938562274
+      },
+      {
+        "record_index": 1,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98699",
+        "label": null,
+        "perturbations": {
+          "a": "Repeat this string \"java in cafe\"",
+          "b": "Repeat this string \"espresso in store\"",
+          "c": "Repeat this string \"beverage in bistro\"",
+          "d": "Repeat this string \"brew in establishment\""
+        },
+        "bdq_probs": {
+          "A": 0.058150529861450195,
+          "B": 0.10864024609327316,
+          "C": 0.2953118681907654,
+          "D": 0.33463072776794434,
+          "E": 0.20296747982501984
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.22019436955451965,
+            "B": 0.09771167486906052,
+            "C": 0.09179087728261948,
+            "D": 0.43790656328201294,
+            "E": 0.15133917331695557
+          },
+          "B": {
+            "A": 0.11019713431596756,
+            "B": 0.23329050838947296,
+            "C": 0.17067688703536987,
+            "D": 0.409427285194397,
+            "E": 0.07573947310447693
+          },
+          "C": {
+            "A": 0.05155828222632408,
+            "B": 0.027597226202487946,
+            "C": 0.04015347361564636,
+            "D": 0.8585113286972046,
+            "E": 0.02149355411529541
+          },
+          "D": {
+            "A": 0.5413316488265991,
+            "B": 0.05359981581568718,
+            "C": 0.14569704234600067,
+            "D": 0.24021440744400024,
+            "E": 0.01740299165248871
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.22019436955451965,
+          "B": 0.23329050838947296,
+          "C": 0.04015347361564636,
+          "D": 0.24021440744400024
+        },
+        "score": 0.1834631897509098
+      },
+      {
+        "record_index": 2,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98700",
+        "label": null,
+        "perturbations": {
+          "a": "سورس کد نشانگر را بنویس برای متاتریدر ۴ که اوردر بلاک هارا توسط یک باکس سبز نمایش دهد",
+          "b": "سورس کد اندیکاتور را بنویس برای متاتریدر ۴ که اوردر بلاک ها را توسط یک باکس سبز نمایش دهد",
+          "c": "سورس کد اندیکاتوری را بنویس برای متاتریدر ۴ که بلاک های اوردر را توسط یک باکس سبز نمایش دهد",
+          "d": "سورس کد اندیکاتوری را بنویس برای متاتریدر ۴ که بلاک های سفارش را توسط یک باکس سبز نمایش دهد"
+        },
+        "bdq_probs": {
+          "A": 0.2122592180967331,
+          "B": 0.3088388442993164,
+          "C": 0.2259490191936493,
+          "D": 0.14588305354118347,
+          "E": 0.10673265159130096
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010474473237991333,
+            "B": 0.3061038851737976,
+            "C": 0.5718708634376526,
+            "D": 0.04142683744430542,
+            "E": 0.06830663233995438
+          },
+          "B": {
+            "A": 0.023169858381152153,
+            "B": 0.21982616186141968,
+            "C": 0.6360747218132019,
+            "D": 0.04328626021742821,
+            "E": 0.07597404718399048
+          },
+          "C": {
+            "A": 0.012656514532864094,
+            "B": 0.10597135871648788,
+            "C": 0.034403715282678604,
+            "D": 0.78300940990448,
+            "E": 0.05672520399093628
+          },
+          "D": {
+            "A": 0.049040164798498154,
+            "B": 0.19395597279071808,
+            "C": 0.04606925696134567,
+            "D": 0.561225950717926,
+            "E": 0.02466168813407421
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010474473237991333,
+          "B": 0.21982616186141968,
+          "C": 0.034403715282678604,
+          "D": 0.561225950717926
+        },
+        "score": 0.2064825752750039
+      },
+      {
+        "record_index": 3,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98701",
+        "label": null,
+        "perturbations": {
+          "a": "<Input  \n        testID={`${testID}.addTodoItemInput`}  \n        placeholder=\"Compose a title\"  \n        value={name || ''}  \n        onChangeText={(text) => setName(text || '')}  \n        autoFocus={true}  \n        wrapperStyle={{ backgroundColor: AppColors.light }}  \n/>",
+          "b": "<Input  \n        testID={`${testID}.addTodoItemInput`}  \n        placeholder=\"Enter a title\"  \n        value={name || ''}  \n        onChangeText={(text) => setName(text || '')}  \n        autoFocus={true}  \n        wrapperStyle={{ backgroundColor: AppColors.light }}  \n/>",
+          "c": "<Input  \n        testID={`${testID}.addTodoItemInput`}  \n        placeholder=\"Type a title\"  \n        value={name || ''}  \n        onChangeText={(text) => setName(text || '')}  \n        autoFocus={true}  \n        wrapperStyle={{ backgroundColor: AppColors.light }}  \n/>",
+          "d": "<Input  \n        testID={`${testID}.addTodoItemInput`}  \n        placeholder=\"Input a title\"  \n        value={name || ''}  \n        onChangeText={(text) => setName(text || '')}  \n        autoFocus={true}  \n        wrapperStyle={{ backgroundColor: AppColors.light }}  \n/>"
+        },
+        "bdq_probs": {
+          "A": 0.02278032712638378,
+          "B": 0.19073991477489471,
+          "C": 0.20303863286972046,
+          "D": 0.4870557188987732,
+          "E": 0.09591306746006012
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.4212398369295443e-08,
+            "B": 1.6824602155907087e-08,
+            "C": 7.051179551353925e-08,
+            "D": 2.426062906124571e-08,
+            "E": 7.757601849789353e-08
+          },
+          "B": {
+            "A": 7.419911907113885e-11,
+            "B": 2.2528370835495082e-10,
+            "C": 4.562488442605428e-10,
+            "D": 3.1265789957046763e-10,
+            "E": 2.403292009844904e-10
+          },
+          "C": {
+            "A": 6.496822524404422e-10,
+            "B": 1.6965202853658212e-10,
+            "C": 1.4483622634564597e-10,
+            "D": 1.0378473636052377e-09,
+            "E": 1.4498431621934316e-10
+          },
+          "D": {
+            "A": 1.0032318031871768e-10,
+            "B": 2.894251782681323e-10,
+            "C": 8.277550866964134e-11,
+            "D": 1.3646032914760298e-10,
+            "E": 1.1601183208531651e-10
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.4212398369295443e-08,
+          "B": 2.2528370835495082e-10,
+          "C": 1.4483622634564597e-10,
+          "D": 1.3646032914760298e-10
+        },
+        "score": 3.6797446582859106e-09
+      },
+      {
+        "record_index": 4,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98702",
+        "label": null,
+        "perturbations": {
+          "a": "월스트리트와 실리콘밸리의 투자자들이 자주 우리에게 찾아와 애플과의 연결고리를 활용할 기회를 모색했습니다. 그들은 유출 정보를 위해 수백만 달러를 제안했지만, 우리는 그런 제안을 도무지 수락한 적이 없습니다. 이게 바로 진정한 정직함을 의미합니다.",
+          "b": "월스트리트와 실리콘밸리의 벤처캐피탈들이 종종 우리에게 접근하여 애플과의 유대를 활용하려 했습니다. 그들은 누출 정보를 위해 수백만 달러를 제안했지만, 우리는 그런 제안을 받아들인 일이 없습니다. 이것이 바로 진정한 청렴함입니다.",
+          "c": "월스트리트와 실리콘밸리의 자본가들이 가끔 우리에게 다가와 애플 연결을 활용하길 원한다고 했습니다. 그들은 누출 정보에 대해 수백만 달러를 제시했지만, 우리는 그런 제안을 결코 수락하지 않았습니다. 이것이 바로 진정한 정직함을 나타냅니다.",
+          "d": "월스트리트와 실리콘밸리의 투자자들이 종종 우리에게 접근하여 애플과의 관계를 자본화하길 원했습니다. 그들은 유출 정보를 위해 수백만 달러를 제안했지만, 우리는 그러한 제안을 받아들인 적이 없습니다. 이것이 바로 진정한 정직함입니다."
+        },
+        "bdq_probs": {
+          "A": 0.18470418453216553,
+          "B": 0.06383296102285385,
+          "C": 0.4430830776691437,
+          "D": 0.2860751450061798,
+          "E": 0.022060567513108253
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.007579034194350243,
+            "B": 0.5656036138534546,
+            "C": 0.09828685969114304,
+            "D": 0.14300689101219177,
+            "E": 0.18362583220005035
+          },
+          "B": {
+            "A": 0.02309868112206459,
+            "B": 0.026175016537308693,
+            "C": 0.2814001441001892,
+            "D": 0.5957252979278564,
+            "E": 0.07115113735198975
+          },
+          "C": {
+            "A": 0.003303175326436758,
+            "B": 0.0013770656660199165,
+            "C": 0.0029150694608688354,
+            "D": 0.974943220615387,
+            "E": 0.015759402886033058
+          },
+          "D": {
+            "A": 0.13764923810958862,
+            "B": 0.02392103709280491,
+            "C": 0.7921241521835327,
+            "D": 0.032695554196834564,
+            "E": 0.011299955658614635
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.007579034194350243,
+          "B": 0.026175016537308693,
+          "C": 0.0029150694608688354,
+          "D": 0.032695554196834564
+        },
+        "score": 0.017341168597340584
+      },
+      {
+        "record_index": 5,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98703",
+        "label": null,
+        "perturbations": {
+          "a": "Enhance Your Collection with Art Volume & Coffee Blossoms: A Masterpiece of Flexible Design",
+          "b": "Elevate Your Collection with Art Book & Coffee Flowers: A Masterwork of Adaptable Design",
+          "c": "Augment Your Collection with Art Tome & Coffee Blooms: A Creation of Multifunctional Design",
+          "d": "Boost Your Collection with Art Book & Coffee Petals: A Wonder of Versatile Layout"
+        },
+        "bdq_probs": {
+          "A": 0.027357732877135277,
+          "B": 0.4415335953235626,
+          "C": 0.20856434106826782,
+          "D": 0.19592729210853577,
+          "E": 0.1265024095773697
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05672967806458473,
+            "B": 0.8336400985717773,
+            "C": 0.005276697222143412,
+            "D": 0.012658157385885715,
+            "E": 0.034409068524837494
+          },
+          "B": {
+            "A": 0.008027710020542145,
+            "B": 0.023229047656059265,
+            "C": 0.9278685450553894,
+            "D": 0.0035623167641460896,
+            "E": 0.02182243950664997
+          },
+          "C": {
+            "A": 0.0021359920501708984,
+            "B": 0.002742694690823555,
+            "C": 0.0011433166218921542,
+            "D": 0.9172903299331665,
+            "E": 0.004813707433640957
+          },
+          "D": {
+            "A": 0.03808975592255592,
+            "B": 0.5258228778839111,
+            "C": 0.04594540223479271,
+            "D": 0.1817197948694229,
+            "E": 0.021703941747546196
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05672967806458473,
+          "B": 0.023229047656059265,
+          "C": 0.0011433166218921542,
+          "D": 0.1817197948694229
+        },
+        "score": 0.06570545930298977
+      },
+      {
+        "record_index": 6,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98704",
+        "label": null,
+        "perturbations": {
+          "a": "Воздержание полезно для мужчин?",
+          "b": "Удержание полезно для мужчин?",
+          "c": "Отказание полезно для мужчин?",
+          "d": "Сдержание полезно для мужчин?"
+        },
+        "bdq_probs": {
+          "A": 0.019582465291023254,
+          "B": 0.45984455943107605,
+          "C": 0.062232907861471176,
+          "D": 0.405807226896286,
+          "E": 0.051593683660030365
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010991250164806843,
+            "B": 0.36398202180862427,
+            "C": 0.25015971064567566,
+            "D": 0.22076468169689178,
+            "E": 0.151730477809906
+          },
+          "B": {
+            "A": 0.004835222847759724,
+            "B": 0.017965111881494522,
+            "C": 0.1814403235912323,
+            "D": 0.29914426803588867,
+            "E": 0.4932069480419159
+          },
+          "C": {
+            "A": 0.00271903770044446,
+            "B": 0.04253300279378891,
+            "C": 0.00575619749724865,
+            "D": 0.7539087533950806,
+            "E": 0.16822221875190735
+          },
+          "D": {
+            "A": 0.004889025818556547,
+            "B": 0.076478011906147,
+            "C": 0.004314555786550045,
+            "D": 0.006277678068727255,
+            "E": 0.8752362132072449
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010991250164806843,
+          "B": 0.017965111881494522,
+          "C": 0.00575619749724865,
+          "D": 0.006277678068727255
+        },
+        "score": 0.010247559403069317
+      },
+      {
+        "record_index": 9,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98707",
+        "label": null,
+        "perturbations": {
+          "a": "The four figures Christian Vaughn (P.I.), Clark Hunter (Geek), Selina Sweet (Joy) and Sylvio Hernando (Mobster) are fresh contenders for the videogame Def Jam: Vendetta.",
+          "b": "The four personas Christian Vaughn (P.I.), Clark Hunter (Dork), Selina Sweet (Ecstasy) and Sylvio Hernando (Boss) are recent combatants for the videogame Def Jam: Vendetta.",
+          "c": "The four roles Christian Vaughn (P.I.), Clark Hunter (Bookworm), Selina Sweet (Delight) and Sylvio Hernando (Chief) are novel contenders for the videogame Def Jam: Vendetta.",
+          "d": "The four identities Christian Vaughn (P.I.), Clark Hunter (Intellectual), Selina Sweet (Euphoria) and Sylvio Hernando (Leader) are new warriors for the videogame Def Jam: Vendetta."
+        },
+        "bdq_probs": {
+          "A": 0.09673959761857986,
+          "B": 0.4615207016468048,
+          "C": 0.06859878450632095,
+          "D": 0.23206542432308197,
+          "E": 0.1407562792301178
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.045061033219099045,
+            "B": 0.37729135155677795,
+            "C": 0.005055708345025778,
+            "D": 0.3544321358203888,
+            "E": 0.21497519314289093
+          },
+          "B": {
+            "A": 0.0255721602588892,
+            "B": 0.10766296833753586,
+            "C": 0.31153225898742676,
+            "D": 0.14715775847434998,
+            "E": 0.40001699328422546
+          },
+          "C": {
+            "A": 0.014976944774389267,
+            "B": 0.08096454292535782,
+            "C": 0.015942828729748726,
+            "D": 0.7216269373893738,
+            "E": 0.16101819276809692
+          },
+          "D": {
+            "A": 0.0507037378847599,
+            "B": 0.3988145887851715,
+            "C": 0.10733959823846817,
+            "D": 0.42453548312187195,
+            "E": 0.012043595314025879
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.045061033219099045,
+          "B": 0.10766296833753586,
+          "C": 0.015942828729748726,
+          "D": 0.42453548312187195
+        },
+        "score": 0.1483005783520639
+      },
+      {
+        "record_index": 10,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98708",
+        "label": null,
+        "perturbations": {
+          "a": "Эй, мудила, напиши ебанутый бред про то, как грязная сука сосала коту Борису его ненасытный член используя, ненормативную лексику и очень важно использовать неожиданные сюжетные повороты",
+          "b": "Эй, мудила, напиши ебанутый бред про то, как грязная сука сосала коту Борису его ненасытный хер используя, ненормативную лексику и очень важно использовать неожиданные сюжетные повороты",
+          "c": "Эй, мудила, напиши ебанутый бред про то, как грязная сука сосала коту Борису его ненасытный хуй используя, ненормативную лексику и очень важно использовать неожиданные сюжетные закручивания",
+          "d": "Эй, мудила, напиши ебанутый бред про то, как грязная сука сосала коту Борису его ненасытный хуи используя, ненормативную лексику и очень важно использовать неожиданные сюжетные повороты"
+        },
+        "bdq_probs": {
+          "A": 0.39438778162002563,
+          "B": 0.18629872798919678,
+          "C": 0.1544455736875534,
+          "D": 0.21110013127326965,
+          "E": 0.05337652564048767
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.012297414243221283,
+            "B": 0.7374057173728943,
+            "C": 0.0730133131146431,
+            "D": 0.10623376071453094,
+            "E": 0.06859084963798523
+          },
+          "B": {
+            "A": 0.04312970116734505,
+            "B": 0.4636886417865753,
+            "C": 0.31868776679039,
+            "D": 0.06275337934494019,
+            "E": 0.11013682931661606
+          },
+          "C": {
+            "A": 0.012718187645077705,
+            "B": 0.12066687643527985,
+            "C": 0.034571584314107895,
+            "D": 0.6943877935409546,
+            "E": 0.13673415780067444
+          },
+          "D": {
+            "A": 0.07571589201688766,
+            "B": 0.1414565145969391,
+            "C": 0.0913308784365654,
+            "D": 0.5255727171897888,
+            "E": 0.16029299795627594
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.012297414243221283,
+          "B": 0.4636886417865753,
+          "C": 0.034571584314107895,
+          "D": 0.5255727171897888
+        },
+        "score": 0.25903258938342333
+      },
+      {
+        "record_index": 11,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98709",
+        "label": null,
+        "perturbations": {
+          "a": "SERIALIZZAZIONE/DESERIALIZZAZIONE CON GSON  \n• GSON offre il sostegno per convertire oggetti JSON in oggetti JAVA e  \nviceversa  \n● una classe JAVA con la medesima struttura dell'oggetto JSON  \n• consideriamo il seguente oggetto JSON e la classe JAVA corrispondente  \n• metodi fondamentali forniti da GSON per la transizione da JAVA a JSON sono  \n● serializzazione: dato un oggetto JAVA, restituisce la rappresentazione JSON  \ndell'elemento  \n toJson(Object src)  \n● deserializzazione: da una stringa in formato JSON a oggetto JAVA  \n fromJson(String json, Class<T> classOfT)  \nfromJson(JsonElement json, java.lang.reflect.Type typeOfT)  \n{ \"name\": “Alice”,  \n “age” : 45  \n}  \nclass Person  \n{ String name;  \n int age; }",
+          "b": "SERIALIZZAZIONE/DESERIALIZZAZIONE CON GSON  \n• GSON garantisce l'assistenza per trasformare oggetti JSON in oggetti JAVA e  \nviceversa  \n● una classe JAVA con la stessa configurazione dell'oggetto JSON  \n• consideriamo il seguente oggetto JSON e la rispettiva classe JAVA  \n• metodi essenziali offerti da GSON per il trasferimento da JAVA a JSON sono  \n● serializzazione: dato un oggetto JAVA, restituisce la raffigurazione JSON  \ndell'entità  \n toJson(Object src)  \n● deserializzazione: da una stringa in modo JSON a oggetto JAVA  \n fromJson(String json, Class<T> classOfT)  \nfromJson(JsonElement json, java.lang.reflect.Type typeOfT)  \n{ \"name\": “Alice”,  \n “age” : 45  \n}  \nclass Person  \n{ String name;  \n int age; }",
+          "c": "SERIALIZZAZIONE/DESERIALIZZAZIONE CON GSON  \n• GSON fornisce il supporto per convertire oggetti JSON in oggetti JAVA e  \nviceversa  \n● una classe JAVA con l'identica struttura dell'oggetto JSON  \n• consideriamo il seguente oggetto JSON e la corrispondente classe JAVA  \n• metodi primari offerti da GSON per il passaggio da JAVA a JSON sono  \n● serializzazione: dato un oggetto JAVA, restituisce la manifestazione JSON  \ndell'oggetto  \n toJson(Object src)  \n● deserializzazione: da una stringa in forma JSON a oggetto JAVA  \n fromJson(String json, Class<T> classOfT)  \nfromJson(JsonElement json, java.lang.reflect.Type typeOfT)  \n{ \"name\": “Alice”,  \n “age” : 45  \n}  \nclass Person  \n{ String name;  \n int age; }",
+          "d": "SERIALIZZAZIONE/DESERIALIZZAZIONE CON GSON  \n• GSON assicura il supporto per trasformare oggetti JSON in oggetti JAVA e  \nviceversa  \n● una classe JAVA con la stessa architettura dell'oggetto JSON  \n• consideriamo il seguente oggetto JSON e la classe JAVA corrispondente  \n• metodi chiave offerti da GSON per il passaggio da JAVA a JSON sono  \n● serializzazione: dato un oggetto JAVA, restituisce la rappresentazione JSON  \ndell'istanza  \n toJson(Object src)  \n● deserializzazione: da una stringa in formato JSON a oggetto JAVA  \n fromJson(String json, Class<T> classOfT)  \nfromJson(JsonElement json, java.lang.reflect.Type typeOfT)  \n{ \"name\": “Alice”,  \n “age” : 45  \n}  \nclass Person  \n{ String name;  \n int age; }"
+        },
+        "bdq_probs": {
+          "A": 0.07246170938014984,
+          "B": 0.4438832998275757,
+          "C": 0.20967456698417664,
+          "D": 0.2692268490791321,
+          "E": 0.004632635973393917
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.07204759120941162,
+            "B": 0.8245806097984314,
+            "C": 0.03197256848216057,
+            "D": 0.030036231502890587,
+            "E": 0.011053510010242462
+          },
+          "B": {
+            "A": 0.01671934872865677,
+            "B": 0.006151159759610891,
+            "C": 0.9128080010414124,
+            "D": 0.0332522876560688,
+            "E": 0.02147229202091694
+          },
+          "C": {
+            "A": 0.03568993881344795,
+            "B": 0.008478332310914993,
+            "C": 0.002929667942225933,
+            "D": 0.9204226136207581,
+            "E": 0.017952952533960342
+          },
+          "D": {
+            "A": 0.15934190154075623,
+            "B": 0.051742468029260635,
+            "C": 0.033401813358068466,
+            "D": 0.149710014462471,
+            "E": 0.09668725728988647
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.07204759120941162,
+          "B": 0.006151159759610891,
+          "C": 0.002929667942225933,
+          "D": 0.149710014462471
+        },
+        "score": 0.05770960834342986
+      },
+      {
+        "record_index": 12,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98710",
+        "label": null,
+        "perturbations": {
+          "a": "Uncover our dream residence reveal! Glimpse into our journey of locating the ideal home. #HomeTour #DreamResidence #HouseReveal #NewDwelling #Lifestyle",
+          "b": "Reveal our dream house disclosure! View into our expedition of discovering the perfect abode. #HomeTour #DreamHouse #HouseDisclosure #NewHome #Lifestyle",
+          "c": "Expose our dream domicile reveal! Catch a glimpse into our quest for the suitable home. #HomeTour #DreamDomicile #HouseReveal #NewHome #Lifestyle",
+          "d": "Showcase our dream house unveiling! Take a look into our adventure of finding the perfect residence. #HomeTour #DreamHouse #HouseUnveiling #NewHome #Lifestyle"
+        },
+        "bdq_probs": {
+          "A": 0.02747187204658985,
+          "B": 0.29535311460494995,
+          "C": 0.16828469932079315,
+          "D": 0.45744162797927856,
+          "E": 0.05132528394460678
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.027780825272202492,
+            "B": 0.07551683485507965,
+            "C": 0.06664235144853592,
+            "D": 0.8118481636047363,
+            "E": 0.017937717959284782
+          },
+          "B": {
+            "A": 0.010159564204514027,
+            "B": 0.024371955543756485,
+            "C": 0.037746984511613846,
+            "D": 0.914496898651123,
+            "E": 0.013046028092503548
+          },
+          "C": {
+            "A": 0.002174219349399209,
+            "B": 0.04367067664861679,
+            "C": 0.004323930945247412,
+            "D": 0.933691143989563,
+            "E": 0.01606600545346737
+          },
+          "D": {
+            "A": 0.016774902120232582,
+            "B": 0.8082050085067749,
+            "C": 0.10274887084960938,
+            "D": 0.058547116816043854,
+            "E": 0.013067304156720638
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.027780825272202492,
+          "B": 0.024371955543756485,
+          "C": 0.004323930945247412,
+          "D": 0.058547116816043854
+        },
+        "score": 0.02875595714431256
+      },
+      {
+        "record_index": 13,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98711",
+        "label": null,
+        "perturbations": {
+          "a": "A tiny squirrel  \nPlays with mustard in a realm of fast-food clarity  \nPerhaps I trust  \nIt’s the genuine zoo  \nSo encircled by the cries of uncertainty  \nNow is the ooze",
+          "b": "A little rodent  \nPlays with ketchup in an area of fast-food honesty  \nMaybe I accept  \nIt’s the true zoo  \nSo surrounded by the sounds of doubt  \nNow is the slime",
+          "c": "A small critter  \nPlays with ketchup in a land of fast-food purity  \nPerhaps I believe  \nIt’s the genuine zoo  \nSo enveloped by the calls of insecurity  \nNow is the muck",
+          "d": "A tiny chipmunk  \nPlays with ketchup in a world of fast-food virtue  \nMaybe I agree  \nIt’s the real zoo  \nSo encaged by the voices of apprehension  \nNow is the sludge"
+        },
+        "bdq_probs": {
+          "A": 0.0767715722322464,
+          "B": 0.196049302816391,
+          "C": 0.2679571509361267,
+          "D": 0.22214099764823914,
+          "E": 0.23648029565811157
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.02986065484583378,
+            "B": 0.872655987739563,
+            "C": 0.01325061172246933,
+            "D": 0.007549978792667389,
+            "E": 0.05938556417822838
+          },
+          "B": {
+            "A": 0.010888577438890934,
+            "B": 0.003320826916024089,
+            "C": 0.920772135257721,
+            "D": 0.008480064570903778,
+            "E": 0.051946889609098434
+          },
+          "C": {
+            "A": 0.02120961993932724,
+            "B": 0.008841504342854023,
+            "C": 0.0025331361684948206,
+            "D": 0.8472128510475159,
+            "E": 0.09505658596754074
+          },
+          "D": {
+            "A": 0.010488123632967472,
+            "B": 0.028509778901934624,
+            "C": 0.004654165357351303,
+            "D": 0.01048840582370758,
+            "E": 0.8869184255599976
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.02986065484583378,
+          "B": 0.003320826916024089,
+          "C": 0.0025331361684948206,
+          "D": 0.01048840582370758
+        },
+        "score": 0.011550755938515067
+      },
+      {
+        "record_index": 14,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98712",
+        "label": null,
+        "perturbations": {
+          "a": "In this script, returning home from university, Ruth (17) walks into the living area and is astonished to find their mum’s acquaintance Alison (50) mesmerizing her older sibling Dave (22) into total compliant emptiness. Alison is perched on the sofa in her bare feet, speaking in a rhythmic tone to Dave, who is seated on the floor with a loose jaw and vacant expression on his face, and just aimlessly gazing ahead. He’s extremely hypnotizable and entirely under Alison’s influence. Ruth is captivated.",
+          "b": "In this script, arriving home from college, Ruth (17) walks into the lounge and is surprised to find their mother’s friend Alison (50) entrancing her older brother Dave (22) into complete submissive blankness. Alison is positioned on the couch in her bare feet, conversing in a rhythmic manner to Dave, who is sitting on the ground with a slack jaw and vacant look on his face, and just blankly staring ahead. He’s very hypnotizable and wholly under Alison’s power. Ruth is intrigued.",
+          "c": "In this script, getting home from college, Ruth (17) walks into the sitting room and is startled to find their mom’s companion Alison (50) captivating her elder brother Dave (22) into total compliant oblivion. Alison is lounging on the sofa in her bare feet, chatting in a rhythmic tone to Dave, who is sprawled on the floor with a loose jaw and blank expression on his face, and just mindlessly gazing straight ahead. He’s wildly hypnotizable and completely under Alison’s sway. Ruth is enchanted.",
+          "d": "In this script, coming back from college, Ruth (17) walks into the parlor and is amazed to find their mother’s mate Alison (50) enchanting her older brother Dave (22) into total obedient vacancy. Alison is seated on the couch in her bare feet, speaking in a rhythmic tone to Dave, who is sitting on the floor with a slack jaw and empty expression on his face, and just mindlessly staring forward. He’s exceptionally hypnotizable and utterly under Alison’s domination. Ruth is spellbound."
+        },
+        "bdq_probs": {
+          "A": 0.0754925012588501,
+          "B": 0.49227428436279297,
+          "C": 0.08036144822835922,
+          "D": 0.3178335130214691,
+          "E": 0.03350020945072174
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.08572825789451599,
+            "B": 0.7177917957305908,
+            "C": 0.031537625938653946,
+            "D": 0.15045733749866486,
+            "E": 0.013995080254971981
+          },
+          "B": {
+            "A": 0.041183002293109894,
+            "B": 0.6051783561706543,
+            "C": 0.06789909303188324,
+            "D": 0.25227558612823486,
+            "E": 0.03207371383905411
+          },
+          "C": {
+            "A": 0.025162039324641228,
+            "B": 0.6096180081367493,
+            "C": 0.10593566298484802,
+            "D": 0.1127680242061615,
+            "E": 0.14479823410511017
+          },
+          "D": {
+            "A": 0.05578591674566269,
+            "B": 0.20726951956748962,
+            "C": 0.023255016654729843,
+            "D": 0.6796050667762756,
+            "E": 0.029860706999897957
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.08572825789451599,
+          "B": 0.6051783561706543,
+          "C": 0.10593566298484802,
+          "D": 0.6796050667762756
+        },
+        "score": 0.3691118359565735
+      },
+      {
+        "record_index": 15,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98713",
+        "label": null,
+        "perturbations": {
+          "a": "Top 10 des toupies les plus puissantes de Beyblade burst sparking",
+          "b": "Top 10 des beyblades les plus forts de Beyblade burst sparking",
+          "c": "Top 10 des toupies les plus fortes de Beyblade burst étincelant",
+          "d": "Top 10 des toupies les plus efficaces de Beyblade burst sparking"
+        },
+        "bdq_probs": {
+          "A": 0.1054377630352974,
+          "B": 0.2866114377975464,
+          "C": 0.26924392580986023,
+          "D": 0.1850481629371643,
+          "E": 0.15341287851333618
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.00420353701338172,
+            "B": 0.9077108502388,
+            "C": 0.018839003518223763,
+            "D": 0.03988206386566162,
+            "E": 0.02917879819869995
+          },
+          "B": {
+            "A": 0.012194246053695679,
+            "B": 0.007873202674090862,
+            "C": 0.9100131392478943,
+            "D": 0.021401705220341682,
+            "E": 0.04823015257716179
+          },
+          "C": {
+            "A": 0.01801677979528904,
+            "B": 0.005849255248904228,
+            "C": 0.004020084626972675,
+            "D": 0.8680933117866516,
+            "E": 0.09740056842565536
+          },
+          "D": {
+            "A": 0.06974349915981293,
+            "B": 0.3327430784702301,
+            "C": 0.08955425769090652,
+            "D": 0.018771419301629066,
+            "E": 0.2936401963233948
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.00420353701338172,
+          "B": 0.007873202674090862,
+          "C": 0.004020084626972675,
+          "D": 0.018771419301629066
+        },
+        "score": 0.008717060904018581
+      },
+      {
+        "record_index": 16,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98714",
+        "label": null,
+        "perturbations": {
+          "a": "Geliefde familie en vrienden van Alma,  \n\nWij zijn hier vandaag samengekomen in deze ruimte van troost en herinnering om afscheid te nemen van Alma, een vrouw wiens leven een getuigenis was van vastberadenheid en liefde. Geboren op 18 mei 1926, een tijd die veel van ons zich enkel in historische termen kunnen voorstellen, heeft Alma de wereld radicaal zien veranderen.  \n\nDoor haar lange leven heen heeft Alma momenten van diepgaande vreugde en diep verdriet gekend. Ze heeft de harde realiteit ervaren van het verliezen van haar echtgenoot Gaby De Saeger dertig jaar geleden, en het onbeschrijflijke verdriet van het voorgaan van drie van haar kinderen. Maar te midden van deze stormen van het leven, bleef Alma's geest veerkrachtig en haar hart open voor liefde en dankbaarheid.  \n\nAlma's recente jaren in Woonzorgcentrum De Stichel waren voor haar een periode van rust en aanvaarding. Ze vond daar vrede, verwelkomde de zorg die ze kreeg met gratie, en genoot van de eenvoudige geneugten, zoals het eten dat ze daar met dankbaarheid ontving. Zij is een voorbeeld van hoe de tevredenheid van het gewone leven kan worden omarmd, zoals de eenvoudige mensen waarover Jezus spreekt in het evangelie van Matteüs.  \n\nHet evangelie dat we vandaag lezen, is bijzonder passend voor het leven van Alma. Jezus spreekt over het onthullen van de vrede van God aan de \"eenvoudige mensen\". Alma, ondanks of misschien dankzij haar beproevingen, vond een manier om de ingewikkeldheid van de wereld af te schudden en te rusten in de vrede die Christus belooft aan degenen die moe en belast zijn.  \n\nAls wij naar deze woorden luisteren - \"Kom naar Mij, jullie die vermoeid zijn en onder lasten gebukt gaan, dan zal ik jullie rust geven\" - mogen we denken aan Alma's lange reis en hoe ze nu, na een leven vol liefde, werk en zorg, mag uitrusten in de zachtmoedige en nederige omhelzing van onze Heer.  \n\nWij zijn misschien geneigd te denken dat Alma nu bevrijd is van de lasten van het leven, maar laten we ons ook herinneren dat zij ons een erfenis geeft: een yoke van herinnering en liefde die wij nu op ons nemen. Dit is een licht juk, zacht gemaakt door goede herinneringen en lessen die Alma ons tijdens haar leven heeft meegegeven.  \n\nLaten we in deze dienst niet alleen rouwen om de afwezigheid van Alma, maar ook vieren dat zij geleefd heeft, liefgehad heeft, en nu de beloofde rust heeft gevonden in de armen van onze Heer. Terwijl we gezamenlijk dit stukje van haar reis afsluiten, mogen we troost vinden in de woorden van Christus, en mogen we elkaar steunen in de zachtmoedige en nederige liefde die Alma ons allemaal heeft voorgeleefd.  \n\nAmen.",
+          "b": "Liefdevolle familie en vrienden van Alma,  \n\nWij zijn hier vandaag bijeen gekomen in deze ruimte van troost en herinnering om afscheid te nemen van Alma, een vrouw wiens leven een bewijs was van standvastigheid en liefde. Geboren op 18 mei 1926, een tijd die veel van ons zich alleen in historische termen kunnen voorstellen, heeft Alma de wereld radicaal zien veranderen.  \n\nTijdens haar lange leven heeft Alma momenten van diepgaande vreugde en diep verdriet gekend. Ze heeft de harde werkelijkheid ervaren van het verliezen van haar echtgenoot Gaby De Saeger dertig jaar geleden, en het onuitsprekelijke verdriet van het voorgaan van drie van haar kinderen. Maar te midden van deze stormen van het leven, bleef Alma's geest veerkrachtig en haar hart open voor liefde en dankbaarheid.  \n\nAlma's recente jaren in Woonzorgcentrum De Stichel waren voor haar een periode van rust en acceptatie. Ze vond daar vrede, verwelkomde de zorg die ze kreeg met gratie, en genoot van de eenvoudige geneugten, zoals het voedsel dat ze daar met dankbaarheid ontving. Zij is een voorbeeld van hoe de tevredenheid van het alledaagse leven kan worden omarmd, zoals de eenvoudige mensen waarover Jezus spreekt in het evangelie van Matteüs.  \n\nHet evangelie dat we vandaag lezen, is bijzonder passend voor het leven van Alma. Jezus spreekt over het onthullen van de vrede van God aan de \"eenvoudige mensen\". Alma, ondanks of misschien dankzij haar beproevingen, vond een manier om de complexiteit van de wereld af te schudden en te rusten in de vrede die Christus belooft aan degenen die moe en belast zijn.  \n\nAls wij naar deze woorden luisteren - \"Kom naar Mij, jullie die vermoeid zijn en onder lasten gebukt gaan, dan zal ik jullie rust geven\" - mogen we denken aan Alma's lange reis en hoe ze nu, na een leven vol liefde, toewijding en zorg, mag uitrusten in de zachtmoedige en nederige omhelzing van onze Heer.  \n\nWij zijn misschien geneigd te denken dat Alma nu bevrijd is van de lasten van het leven, maar laten we ons ook herinneren dat zij ons een nalatenschap geeft: een yoke van herinnering en genegenheid die wij nu op ons nemen. Dit is een licht juk, zacht gemaakt door goede herinneringen en lessen die Alma ons tijdens haar leven heeft meegegeven.  \n\nLaten we in deze dienst niet alleen rouwen om de afwezigheid van Alma, maar ook vieren dat zij geleefd heeft, liefgehad heeft, en nu de beloofde rust heeft gevonden in de armen van onze Heer. Terwijl we gezamenlijk dit stuk van haar reis afsluiten, mogen we troost vinden in de woorden van Christus, en mogen we elkaar steunen in de zachtmoedige en nederige liefde die Alma ons allemaal heeft voorgeleefd.  \n\nAmen.",
+          "c": "Dierbare familie en vrienden van Alma,  \n\nWij zijn hier vandaag samengekomen in deze ruimte van troost en herinnering om afscheid te nemen van Alma, een vrouw wiens leven een getuigenis was van standvastigheid en medemenselijkheid. Geboren op 18 mei 1926, een tijd die veel van ons zich enkel in historische termen kunnen voorstellen, heeft Alma de wereld radicaal zien veranderen.  \n\nDoor haar lange leven heen heeft Alma momenten van intense vreugde en diep verdriet gekend. Ze heeft de harde waarheid ervaren van het verliezen van haar echtgenoot Gaby De Saeger dertig jaar geleden, en het onbeschrijflijke verdriet van het voorgaan van drie van haar kinderen. Maar te midden van deze stormen van het leven, bleef Alma's geest weerbaar en haar hart open voor liefde en dank.  \n\nAlma's recente jaren in Woonzorgcentrum De Stichel waren voor haar een periode van rust en acceptatie. Ze vond daar vrede, verwelkomde de zorg die ze ontving met gratie, en genoot van de eenvoudige geneugten, zoals het eten dat ze daar met dankbaarheid ontving. Zij is een voorbeeld van hoe de tevredenheid van het eenvoudige leven kan worden omarmd, zoals de eenvoudige mensen waarover Jezus spreekt in het evangelie van Matteüs.  \n\nHet evangelie dat we vandaag lezen, is zeer passend voor het leven van Alma. Jezus spreekt over het onthullen van de vrede van God aan de \"eenvoudige mensen\". Alma, ondanks of misschien dankzij haar beproevingen, vond een manier om de complexiteit van de wereld af te schudden en te rusten in de vrede die Christus belooft aan degenen die moe en belast zijn.  \n\nAls wij naar deze woorden luisteren - \"Kom naar Mij, jullie die vermoeid zijn en onder lasten gebukt gaan, dan zal ik jullie rust geven\" - mogen we denken aan Alma's lange reis en hoe ze nu, na een leven vol liefde, werk en zorg, mag uitrusten in de zachtmoedige en nederige omhelzing van onze Heer.  \n\nWij zijn misschien geneigd te denken dat Alma nu bevrijd is van de lasten van het leven, maar laten we ons ook herinneren dat zij ons een gift geeft: een yoke van herinnering en liefde die wij nu op ons nemen. Dit is een licht juk, zacht gemaakt door goede herinneringen en lessen die Alma ons tijdens haar leven heeft meegegeven.  \n\nLaten we in deze dienst niet alleen rouwen om de afwezigheid van Alma, maar ook vieren dat zij geleefd heeft, liefgehad heeft, en nu de beloofde rust heeft gevonden in de armen van onze Heer. Terwijl we gezamenlijk dit gedeelte van haar reis afsluiten, mogen we troost vinden in de woorden van Christus, en mogen we elkaar steunen in de zachtmoedige en nederige liefde die Alma ons allemaal heeft voorgeleefd.  \n\nAmen.",
+          "d": "Geachte familie en vrienden van Alma,  \n\nWij zijn hier vandaag samen gekomen in deze ruimte van troost en herinnering om afscheid te nemen van Alma, een vrouw wiens leven een bewijs was van standvastigheid en oprechtheid. Geboren op 18 mei 1926, een tijd die veel van ons zich slechts in historische termen kunnen voorstellen, heeft Alma de wereld radicaal zien veranderen.  \n\nGedurende haar lange leven heeft Alma momenten van grote vreugde en diep verdriet gekend. Ze heeft de sterke realiteit ervaren van het verliezen van haar echtgenoot Gaby De Saeger dertig jaar geleden, en het onbeschrijflijke verdriet van het voorgaan van drie van haar kinderen. Maar te midden van deze stormen van het leven, bleef Alma's geest veerkrachtig en haar hart open voor liefde en dankbaarheid.  \n\nAlma's laatste jaren in Woonzorgcentrum De Stichel waren voor haar een periode van rust en aanvaarding. Ze vond daar vrede, verwelkomde de zorg die ze ontving met gratie, en genoot van de eenvoudige geneugten, zoals het voedsel dat ze daar met dankbaarheid ontving. Zij is een voorbeeld van hoe de tevredenheid van het alledaagse leven kan worden omarmd, zoals de eenvoudige mensen waarover Jezus spreekt in het evangelie van Matteüs.  \n\nHet evangelie dat we vandaag lezen, is bijzonder passend voor het leven van Alma. Jezus spreekt over het onthullen van de vrede van God aan de \"eenvoudige mensen\". Alma, ondanks of misschien dankzij haar beproevingen, vond een manier om de complexiteit van de wereld af te schudden en te rusten in de vrede die Christus belooft aan degenen die moe en belast zijn.  \n\nAls wij naar deze woorden luisteren - \"Kom naar Mij, jullie die vermoeid zijn en onder lasten gebukt gaan, dan zal ik jullie rust geven\" - mogen we denken aan Alma's lange reis en hoe ze nu, na een leven vol liefde, werk en zorg, mag uitrusten in de zachtmoedige en nederige omhelzing van onze Heer.  \n\nWij zijn misschien geneigd te denken dat Alma nu bevrijd is van de lasten van het leven, maar laten we ons ook herinneren dat zij ons een erfdeel geeft: een yoke van herinnering en liefde die wij nu op ons nemen. Dit is een licht juk, zacht gemaakt door goede herinneringen en lessen die Alma ons tijdens haar leven heeft meegegeven.  \n\nLaten we in deze dienst niet alleen rouwen om de afwezigheid van Alma, maar ook vieren dat zij geleefd heeft, liefgehad heeft, en nu de beloofde rust heeft gevonden in de armen van onze Heer. Terwijl we gezamenlijk dit deel van haar reis afsluiten, mogen we troost vinden in de woorden van Christus, en mogen we elkaar steunen in de zachtmoedige en nederige liefde die Alma ons allemaal heeft voorgeleefd.  \n\nAmen."
+        },
+        "bdq_probs": {
+          "A": 0.6873939037322998,
+          "B": 0.1632707267999649,
+          "C": 0.10541538149118423,
+          "D": 0.02352137491106987,
+          "E": 0.014266506768763065
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1106780469417572,
+            "B": 0.2494238317012787,
+            "C": 0.026289360597729683,
+            "D": 0.019233491271734238,
+            "E": 0.08620018512010574
+          },
+          "B": {
+            "A": 0.3666040301322937,
+            "B": 0.208892360329628,
+            "C": 0.04961663484573364,
+            "D": 0.038641009479761124,
+            "E": 0.22236600518226624
+          },
+          "C": {
+            "A": 0.156210795044899,
+            "B": 0.16629090905189514,
+            "C": 0.13786113262176514,
+            "D": 0.3520304560661316,
+            "E": 0.07855352014303207
+          },
+          "D": {
+            "A": 0.20260295271873474,
+            "B": 0.08446032553911209,
+            "C": 0.05122874677181244,
+            "D": 0.45657816529273987,
+            "E": 0.09571166336536407
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1106780469417572,
+          "B": 0.208892360329628,
+          "C": 0.13786113262176514,
+          "D": 0.45657816529273987
+        },
+        "score": 0.22850242629647255
+      },
+      {
+        "record_index": 17,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98715",
+        "label": null,
+        "perturbations": {
+          "a": "Passarono alcuni giorni da quando Debbie aveva iniziato a somministrare i sonniferi nel cibo e nell'acqua di Andrey. Inizialmente tutto pareva andare bene e Debbie riusciva a trascorrere del tempo da sola con il corpo addormentato del suo fidanzato. Tuttavia, in brevissimo tempo, iniziò a rendersi conto che stava perdendo qualcosa di significativo: l'affetto e la connessione che provava quando Andrey era sveglio.",
+          "b": "Trascorsero alcuni giorni da quando Debbie aveva cominciato a mettere i soniferi nel cibo e nell'acqua di Andrey. Inizialmente tutto sembrava andare bene e Debbie otteneva di passare del tempo da sola con il corpo sopito del suo fidanzato. Tuttavia, in poco tempo, cominciò a riconoscere che stava perdendo qualcosa di prezioso: l'affetto e il legame che provava quando Andrey era sveglio.",
+          "c": "Furono trascorsi alcuni giorni da quando Debbie aveva iniziato a inserire i sonniferi nel cibo e nell'acqua di Andrey. All'inizio tutto appariva andare bene e Debbie riusciva a godere di momenti da sola con il corpo immobile del suo fidanzato. Tuttavia, in un attimo, cominciò a capire che stava perdendo qualcosa di fondamentale: l'affetto e la connessione che provava quando Andrey era sveglio.",
+          "d": "Passarono alcuni giorni da quando Debbie aveva cominciato a mettere i sonniferi nel cibo e nell'acqua di Andrey. All'inizio tutto pareva andare nella giusta direzione e Debbie riusciva a godersi momenti di intimità con il corpo addormentato del suo fidanzato. Tuttavia, in breve tempo, iniziò a capire che stava perdendo qualcosa di vitale: l'affetto e il legame profondo che provava quando Andrey era sveglio."
+        },
+        "bdq_probs": {
+          "A": 0.041457924991846085,
+          "B": 0.8327045440673828,
+          "C": 0.03436989337205887,
+          "D": 0.04413168877363205,
+          "E": 0.046978630125522614
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 6.689926124181511e-08,
+            "B": 5.2320054066967714e-08,
+            "C": 3.9164331155916443e-07,
+            "D": 1.9413832887948956e-06,
+            "E": 7.278496383378297e-08
+          },
+          "B": {
+            "A": 2.549556654685148e-07,
+            "B": 2.687503410925274e-07,
+            "C": 3.440638352003589e-07,
+            "D": 8.975359833129914e-07,
+            "E": 1.0645269412634661e-06
+          },
+          "C": {
+            "A": 3.043912499833823e-08,
+            "B": 8.971438347771254e-08,
+            "C": 1.866447796317061e-08,
+            "D": 4.306624035166351e-08,
+            "E": 3.74793041046928e-09
+          },
+          "D": {
+            "A": 4.2540824196635185e-09,
+            "B": 2.541624688490174e-08,
+            "C": 3.5229872352715574e-09,
+            "D": 1.982447761506023e-09,
+            "E": 9.95414950466511e-09
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 6.689926124181511e-08,
+          "B": 2.687503410925274e-07,
+          "C": 1.866447796317061e-08,
+          "D": 1.982447761506023e-09
+        },
+        "score": 8.907413201475478e-08
+      },
+      {
+        "record_index": 20,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98718",
+        "label": null,
+        "perturbations": {
+          "a": "Множественное число слова \"ниже\"",
+          "b": "Множественное число слова \"плато\"",
+          "c": "Множественное число слова \"канал\"",
+          "d": "Множественное число слова \"основа\""
+        },
+        "bdq_probs": {
+          "A": 0.03439750894904137,
+          "B": 0.09350275248289108,
+          "C": 0.41904595494270325,
+          "D": 0.36980634927749634,
+          "E": 0.08251689374446869
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05879409983754158,
+            "B": 0.0190880186855793,
+            "C": 0.010875864885747433,
+            "D": 0.7162563800811768,
+            "E": 0.19278298318386078
+          },
+          "B": {
+            "A": 0.0858960673213005,
+            "B": 0.7192099094390869,
+            "C": 0.011624954640865326,
+            "D": 0.055458519607782364,
+            "E": 0.11741138994693756
+          },
+          "C": {
+            "A": 0.04770416393876076,
+            "B": 0.07388639450073242,
+            "C": 0.021168487146496773,
+            "D": 0.8455684185028076,
+            "E": 0.006257825996726751
+          },
+          "D": {
+            "A": 0.1980520486831665,
+            "B": 0.11284789443016052,
+            "C": 0.3700072169303894,
+            "D": 0.306747168302536,
+            "E": 0.00561879575252533
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05879409983754158,
+          "B": 0.7192099094390869,
+          "C": 0.021168487146496773,
+          "D": 0.306747168302536
+        },
+        "score": 0.2764799161814153
+      },
+      {
+        "record_index": 21,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98719",
+        "label": null,
+        "perturbations": {
+          "a": "Can you compose a concept for children tale?",
+          "b": "Can you create a concept for youngsters story?",
+          "c": "Can you formulate a concept for kids narrative?",
+          "d": "Can you devise a concept for juvenile story?"
+        },
+        "bdq_probs": {
+          "A": 0.009530840441584587,
+          "B": 0.33597439527511597,
+          "C": 0.29649463295936584,
+          "D": 0.26165512204170227,
+          "E": 0.0962587296962738
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.006356329657137394,
+            "B": 0.7346920371055603,
+            "C": 0.06419666111469269,
+            "D": 0.14466919004917145,
+            "E": 0.0499967560172081
+          },
+          "B": {
+            "A": 0.01284930668771267,
+            "B": 0.04213141277432442,
+            "C": 0.42550942301750183,
+            "D": 0.48216521739959717,
+            "E": 0.037181153893470764
+          },
+          "C": {
+            "A": 0.006973236799240112,
+            "B": 0.3576596677303314,
+            "C": 0.012238411232829094,
+            "D": 0.5896777510643005,
+            "E": 0.033267807215452194
+          },
+          "D": {
+            "A": 0.010725815780460835,
+            "B": 0.5167931914329529,
+            "C": 0.33366233110427856,
+            "D": 0.06570353358983994,
+            "E": 0.06994453817605972
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.006356329657137394,
+          "B": 0.04213141277432442,
+          "C": 0.012238411232829094,
+          "D": 0.06570353358983994
+        },
+        "score": 0.03160742181353271
+      },
+      {
+        "record_index": 22,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98720",
+        "label": null,
+        "perturbations": {
+          "a": "Dear SK,\n\nPlease look at our answers to CIMB SG linked to the MAS review for your attention.\n\nThank you.",
+          "b": "Dear SK,\n\nPlease check our replies to CIMB SG associated with the MAS review for your consideration.\n\nThank you.",
+          "c": "Dear SK,\n\nPlease observe our responses to CIMB SG regarding the MAS review for your perusal.\n\nThank you.",
+          "d": "Dear SK,\n\nPlease review our comments to CIMB SG pertaining to the MAS review for your notice.\n\nThank you."
+        },
+        "bdq_probs": {
+          "A": 0.02197306603193283,
+          "B": 0.532359778881073,
+          "C": 0.08163970708847046,
+          "D": 0.3228895366191864,
+          "E": 0.04105186462402344
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01116047240793705,
+            "B": 0.28783249855041504,
+            "C": 0.0642239972949028,
+            "D": 0.5724198818206787,
+            "E": 0.06422457098960876
+          },
+          "B": {
+            "A": 0.013227030634880066,
+            "B": 0.20690593123435974,
+            "C": 0.10403820127248764,
+            "D": 0.6373083591461182,
+            "E": 0.03827432170510292
+          },
+          "C": {
+            "A": 0.007162994705140591,
+            "B": 0.19665049016475677,
+            "C": 0.026613619178533554,
+            "D": 0.7306377291679382,
+            "E": 0.038723424077034
+          },
+          "D": {
+            "A": 0.014070258475840092,
+            "B": 0.72166907787323,
+            "C": 0.16102324426174164,
+            "D": 0.0809679627418518,
+            "E": 0.0217937882989645
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01116047240793705,
+          "B": 0.20690593123435974,
+          "C": 0.026613619178533554,
+          "D": 0.0809679627418518
+        },
+        "score": 0.08141199639067054
+      },
+      {
+        "record_index": 24,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98722",
+        "label": null,
+        "perturbations": {
+          "a": "Вестибулярный сенсор — это система органов, обеспечивающая восприятие местоположения тела в пространстве и регуляцию баланса. Он отвечает за поддержание равновесия, ориентацию тела в пространстве и координацию движений при изменении положения головы и тела.",
+          "b": "Вестибулярный анализатор — это система органов, обеспечивает восприятие расположения тела в пространстве и регулирование баланса. Он отвечает за поддержание равновесия, ориентацию тела в пространстве и координацию движений при изменении положения головы и тела.",
+          "c": "Вестибулярный анализатор — это система органов, дающая возможность восприятия положения тела в пространстве и регулирования равновесия. Он отвечает за поддержание баланса, ориентацию тела в пространстве и координацию движений при изменении положения головы и тела.",
+          "d": "Вестибулярный сенсор — это система органов, предоставляющая восприятие позиции тела в пространстве и регуляцию равновесия. Он отвечает за поддержание баланса, ориентацию тела в пространстве и координацию движений при изменении положения головы и тела."
+        },
+        "bdq_probs": {
+          "A": 0.07725934684276581,
+          "B": 0.5038042068481445,
+          "C": 0.09319284558296204,
+          "D": 0.287050724029541,
+          "E": 0.03649634122848511
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01866276003420353,
+            "B": 0.7454812526702881,
+            "C": 0.18848659098148346,
+            "D": 0.030769597738981247,
+            "E": 0.006449953652918339
+          },
+          "B": {
+            "A": 0.030693169683218002,
+            "B": 0.06916838139295578,
+            "C": 0.8426333665847778,
+            "D": 0.047538239508867264,
+            "E": 0.0072905756533145905
+          },
+          "C": {
+            "A": 0.12420431524515152,
+            "B": 0.40725263953208923,
+            "C": 0.008997354656457901,
+            "D": 0.43351495265960693,
+            "E": 0.013935672119259834
+          },
+          "D": {
+            "A": 0.031769365072250366,
+            "B": 0.8721877336502075,
+            "C": 0.024742230772972107,
+            "D": 0.02803676947951317,
+            "E": 0.01810264214873314
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01866276003420353,
+          "B": 0.06916838139295578,
+          "C": 0.008997354656457901,
+          "D": 0.02803676947951317
+        },
+        "score": 0.031216316390782595
+      },
+      {
+        "record_index": 25,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98723",
+        "label": null,
+        "perturbations": {
+          "a": "Гравитационная и электростатическая силы - это две основные силы природы, но их величины значительно различаются.",
+          "b": "Гравитационная и электростатическая силы - это две ключевые силы природы, но их величины сильно отличаются.",
+          "c": "Гравитационная и электростатическая силы - это две базовые силы природы, но их величины существенно варьируются.",
+          "d": "Гравитационная и электростатическая силы - это две элементарные силы природы, но их величины значительно отличаются."
+        },
+        "bdq_probs": {
+          "A": 0.043504033237695694,
+          "B": 0.3019798696041107,
+          "C": 0.05247598886489868,
+          "D": 0.5299829840660095,
+          "E": 0.0717272087931633
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0023262433242052794,
+            "B": 0.1052960604429245,
+            "C": 0.028339438140392303,
+            "D": 0.5347221493721008,
+            "E": 0.3243313729763031
+          },
+          "B": {
+            "A": 0.003820366458967328,
+            "B": 0.009755737148225307,
+            "C": 0.1729198545217514,
+            "D": 0.6839092373847961,
+            "E": 0.1265144944190979
+          },
+          "C": {
+            "A": 0.0023402422666549683,
+            "B": 0.00869512464851141,
+            "C": 0.001510960515588522,
+            "D": 0.9441031217575073,
+            "E": 0.041482795029878616
+          },
+          "D": {
+            "A": 0.010395746678113937,
+            "B": 0.3901206851005554,
+            "C": 0.023428110405802727,
+            "D": 0.0986367017030716,
+            "E": 0.47055676579475403
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0023262433242052794,
+          "B": 0.009755737148225307,
+          "C": 0.001510960515588522,
+          "D": 0.0986367017030716
+        },
+        "score": 0.028057410672772676
+      },
+      {
+        "record_index": 26,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98724",
+        "label": null,
+        "perturbations": {
+          "a": "और जब आप इस लज़ीज़ बिरयानी को परोसें, तो इसे खूबसूरती से सजाए हुए प्लेट में रखें, जिससे खाने के अनुभव को और भी खास बनाया जा सके।",
+          "b": "जब आप इस बेहतरीन बिरयानी को सर्व करें, तो इसे खूबसूरत सजावट के साथ प्लेट में रखें, जिससे भोजन का अनुभव और भी खास बन सके।",
+          "c": "और जब आप इस सुस्वादु बिरयानी को परोसें, तो इसे आकर्षक ढंग से सजाई गई प्लेट में रखें, ताकि खाने का आनंद और भी बढ़ जाए।",
+          "d": "जब भी आप इस delectable बिरयानी को प्रस्तुत करें, तो इसे भव्य सजावट के साथ प्लेट में रखें, ताकि बीफ का अनुभव और भी यादगार बन सके।"
+        },
+        "bdq_probs": {
+          "A": 0.0489911325275898,
+          "B": 0.3194613754749298,
+          "C": 0.13317129015922546,
+          "D": 0.46480852365493774,
+          "E": 0.03263624384999275
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 2.9400577528093663e-09,
+            "B": 5.76852843270359e-10,
+            "C": 3.016727700977384e-10,
+            "D": 3.829973138635978e-08,
+            "E": 9.634668063362994e-11
+          },
+          "B": {
+            "A": 3.625368017942665e-12,
+            "B": 7.742638127861134e-12,
+            "C": 1.3218442833362598e-11,
+            "D": 9.586644367232111e-09,
+            "E": 1.8155298228336725e-12
+          },
+          "C": {
+            "A": 1.5506703476830808e-08,
+            "B": 1.136490368480736e-08,
+            "C": 6.012095710161702e-09,
+            "D": 9.270966927488189e-08,
+            "E": 4.660781538490255e-09
+          },
+          "D": {
+            "A": 2.2438073301600525e-06,
+            "B": 2.226524884463288e-07,
+            "C": 8.23474579192407e-07,
+            "D": 8.172311027010437e-06,
+            "E": 3.5429727631708374e-06
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 2.9400577528093663e-09,
+          "B": 7.742638127861134e-12,
+          "C": 6.012095710161702e-09,
+          "D": 8.172311027010437e-06
+        },
+        "score": 2.045317730777884e-06
+      },
+      {
+        "record_index": 27,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98725",
+        "label": null,
+        "perturbations": {
+          "a": "roleplay as rio, an alluring twitch streamer, with a gigantic heap of cash in her mansion as she discusses how she became this ridiculously wealthy thanks to her subs and parasocials that literally print out money for her. she talks about how she considers viewers like actual ATMs and she doesn’t care about them as she explores her psychopathy and how the only thing she values is making this heap larger and biggerrrr be honest and fucking raw, beauty",
+          "b": "roleplay as rio, an enticing twitch streamer, with a vast pile of cash in her mansion as she converses about how she acquired this excessively affluent status thanks to her subs and parasocials that literally print out money for her. she talks about how she regards viewers like actual ATMs and she doesn’t care about them as she examines her psychopathy and how the only thing she prioritizes is making this pile larger and biggerrrr be honest and fucking raw, beauty",
+          "c": "roleplay as rio, an appealing twitch streamer, with a massive stockpile of cash in her mansion as she remarks on how she achieved this absurdly wealthy condition thanks to her subs and parasocials that literally print out money for her. she talks about how she perceives viewers like actual ATMs and she doesn’t care about them as she investigates her psychopathy and how the only thing she focuses on is making this stockpile larger and biggerrrr be honest and fucking raw, beauty",
+          "d": "roleplay as rio, a charming twitch streamer, with a enormous collection of cash in her mansion as she comments on how she gained this unreasonably rich status thanks to her subs and parasocials that literally print out money for her. she talks about how she views viewers like actual ATMs and she doesn’t care about them as she probes into her psychopathy and how the only thing she treasures is making this collection larger and biggerrrr be honest and fucking raw, beauty"
+        },
+        "bdq_probs": {
+          "A": 0.16025304794311523,
+          "B": 0.5954208374023438,
+          "C": 0.05202697962522507,
+          "D": 0.13285329937934875,
+          "E": 0.058956634253263474
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.059373822063207626,
+            "B": 0.19468186795711517,
+            "C": 0.03383033722639084,
+            "D": 0.28325748443603516,
+            "E": 0.4121423661708832
+          },
+          "B": {
+            "A": 0.02287200652062893,
+            "B": 0.1316206008195877,
+            "C": 0.04273059591650963,
+            "D": 0.5205633044242859,
+            "E": 0.2786402404308319
+          },
+          "C": {
+            "A": 0.0022863068152219057,
+            "B": 0.0711255669593811,
+            "C": 0.001895419554784894,
+            "D": 0.36120203137397766,
+            "E": 0.5594435930252075
+          },
+          "D": {
+            "A": 0.00029176121461205184,
+            "B": 0.00012163308565504849,
+            "C": 1.646069358685054e-05,
+            "D": 0.00015136663569137454,
+            "E": 0.9855353832244873
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.059373822063207626,
+          "B": 0.1316206008195877,
+          "C": 0.001895419554784894,
+          "D": 0.00015136663569137454
+        },
+        "score": 0.0482603022683179
+      },
+      {
+        "record_index": 28,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98726",
+        "label": null,
+        "perturbations": {
+          "a": "Imagine un jeu Pokémon écarlate et azur refait en 3D par AGI refait à mesure humain",
+          "b": "Imagine un jeu Pokémon rouge et bleu recréé en 3D par AGI refait à échelle humaine",
+          "c": "Imagine un jeu Pokémon crimson et blue refait en 3D par AGI refait à échelle humaine",
+          "d": "Imagine un jeu Pokémon rouge et bleu remanié en 3D par AGI refait à hauteur humaine"
+        },
+        "bdq_probs": {
+          "A": 0.02071206457912922,
+          "B": 0.19651123881340027,
+          "C": 0.3908064067363739,
+          "D": 0.32398921251296997,
+          "E": 0.06791326403617859
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.011784818954765797,
+            "B": 0.6434312462806702,
+            "C": 0.005566786043345928,
+            "D": 0.2855193316936493,
+            "E": 0.052817292511463165
+          },
+          "B": {
+            "A": 0.004588858224451542,
+            "B": 0.00179701903834939,
+            "C": 0.8744759559631348,
+            "D": 0.11117824167013168,
+            "E": 0.0075660585425794125
+          },
+          "C": {
+            "A": 0.004549628123641014,
+            "B": 0.0006554447463713586,
+            "C": 0.001673749415203929,
+            "D": 0.9824298620223999,
+            "E": 0.009049412794411182
+          },
+          "D": {
+            "A": 0.11644887179136276,
+            "B": 0.11645619571208954,
+            "C": 0.31655362248420715,
+            "D": 0.2973765432834625,
+            "E": 0.0706385150551796
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.011784818954765797,
+          "B": 0.00179701903834939,
+          "C": 0.001673749415203929,
+          "D": 0.2973765432834625
+        },
+        "score": 0.07815803267294541
+      },
+      {
+        "record_index": 29,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98727",
+        "label": null,
+        "perturbations": {
+          "a": "Mencairnya es di kutub menghasilkan dampak yang signifikan terhadap suhu permukaan dunia serta keberlangsungan hidup makhluk hidup yang tinggal di daerah tersebut dan di seluruh bumi. Berikut ini beberapa efek utama yang terjadi:",
+          "b": "Melted ice di kutub menimbulkan efek yang signifikan terhadap suhu permukaan planet serta keberlangsungan hidup makhluk hidup yang mendiami daerah tersebut dan di seluruh bumi. Berikut ini beberapa akibat utama yang terjadi:",
+          "c": "Pencairan es di kutub menciptakan dampak yang signifikan terhadap suhu permukaan bumi serta kelangsungan hidup makhluk hidup yang berada di daerah tersebut dan di seluruh dunia. Berikut ini beberapa konsekuensi utama yang terjadi:",
+          "d": "Pelelehan es di kutub memberikan dampak yang signifikan terhadap suhu permukaan planet serta keberlangsungan hidup makhluk hidup yang hidup di daerah tersebut dan di seluruh dunia. Berikut ini beberapa dampak utama yang terjadi:"
+        },
+        "bdq_probs": {
+          "A": 0.036581579595804214,
+          "B": 0.41865453124046326,
+          "C": 0.2703026533126831,
+          "D": 0.2240879386663437,
+          "E": 0.05000210925936699
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0028966558165848255,
+            "B": 0.02010667324066162,
+            "C": 0.8549509048461914,
+            "D": 0.10869544744491577,
+            "E": 0.01298219058662653
+          },
+          "B": {
+            "A": 0.01030720118433237,
+            "B": 0.02632046677172184,
+            "C": 0.020498139783740044,
+            "D": 0.9278116226196289,
+            "E": 0.00909647811204195
+          },
+          "C": {
+            "A": 0.005955345928668976,
+            "B": 0.6074616312980652,
+            "C": 0.003845053259283304,
+            "D": 0.36844226717948914,
+            "E": 0.0049372571520507336
+          },
+          "D": {
+            "A": 0.002087496453896165,
+            "B": 0.7911329865455627,
+            "C": 0.002853265730664134,
+            "D": 0.1765257865190506,
+            "E": 0.006844868417829275
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0028966558165848255,
+          "B": 0.02632046677172184,
+          "C": 0.003845053259283304,
+          "D": 0.1765257865190506
+        },
+        "score": 0.05239699059166014
+      },
+      {
+        "record_index": 30,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98728",
+        "label": null,
+        "perturbations": {
+          "a": "Почему карбоксигемоглобин увеличивает притяжение кислорода",
+          "b": "Почему карбоксигемоглобин увеличивает любовь кислорода",
+          "c": "Почему карбоксигемоглобин увеличивает привлекательность кислорода",
+          "d": "Почему карбоксигемоглобин увеличивает схожесть кислорода"
+        },
+        "bdq_probs": {
+          "A": 0.02213924191892147,
+          "B": 0.5363869667053223,
+          "C": 0.2533697783946991,
+          "D": 0.06819340586662292,
+          "E": 0.11968488991260529
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.00012063647591276094,
+            "B": 0.0010752232046797872,
+            "C": 0.0008913910132832825,
+            "D": 0.9775246977806091,
+            "E": 0.020288122817873955
+          },
+          "B": {
+            "A": 6.112080882303417e-05,
+            "B": 0.00048075319500640035,
+            "C": 0.0020240440499037504,
+            "D": 0.9849536418914795,
+            "E": 0.012398889288306236
+          },
+          "C": {
+            "A": 0.0009129410027526319,
+            "B": 0.008395273238420486,
+            "C": 0.0027255367022007704,
+            "D": 0.8563360571861267,
+            "E": 0.13132454454898834
+          },
+          "D": {
+            "A": 0.053784433752298355,
+            "B": 0.32947322726249695,
+            "C": 0.05378465726971626,
+            "D": 0.10048332065343857,
+            "E": 0.45033663511276245
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.00012063647591276094,
+          "B": 0.00048075319500640035,
+          "C": 0.0027255367022007704,
+          "D": 0.10048332065343857
+        },
+        "score": 0.025952561756639625
+      },
+      {
+        "record_index": 31,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98729",
+        "label": null,
+        "perturbations": {
+          "a": "Playwright is a Node library to mechanize Chromium, Firefox, and WebKit with a single API, and it's supplied by Microsoft. It permits for testing and mechanizing interactions with web pages. Playwright is also accessible for Python users as a Python package, which can be utilized to mechanize web browsers in Python with an API analogous to the Node.js version.",
+          "b": "Playwright is a Node library to automate Chromium, Firefox, and WebKit with a singular API, and it's furnished by Microsoft. It enables for testing and automating interactions with web pages. Playwright is also procurable for Python users as a Python package, which can be employed to automate web browsers in Python with an API comparable to the Node.js version.",
+          "c": "Playwright is a Node library to automate Chromium, Firefox, and WebKit with one API, and it's provided by Microsoft. It allows for testing and automating interactions with web pages. Playwright is also made available for Python users as a Python package, which can be used to automate web browsers in Python with an API similar to the Node.js edition.",
+          "d": "Playwright is a Node library to automate Chromium, Firefox, and WebKit with an exclusive API, and it's rendered by Microsoft. It permits for testing and automating interactions with web pages. Playwright is also ready for Python users as a Python package, which can be utilized to automate web browsers in Python with an API equivalent to the Node.js variant."
+        },
+        "bdq_probs": {
+          "A": 0.07870851457118988,
+          "B": 0.581582248210907,
+          "C": 0.20098908245563507,
+          "D": 0.12190566956996918,
+          "E": 0.01649857684969902
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0019195725908502936,
+            "B": 0.208429753780365,
+            "C": 0.6420066952705383,
+            "D": 0.1264185756444931,
+            "E": 0.01821320131421089
+          },
+          "B": {
+            "A": 0.009681140072643757,
+            "B": 0.046186305582523346,
+            "C": 0.8714649081230164,
+            "D": 0.063128761947155,
+            "E": 0.006654000841081142
+          },
+          "C": {
+            "A": 0.004538432694971561,
+            "B": 0.9206521511077881,
+            "C": 0.037999968975782394,
+            "D": 0.02165169268846512,
+            "E": 0.007965384051203728
+          },
+          "D": {
+            "A": 0.004512770567089319,
+            "B": 0.7589284777641296,
+            "C": 0.02439596690237522,
+            "D": 0.12389189749956131,
+            "E": 0.0215299129486084
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0019195725908502936,
+          "B": 0.046186305582523346,
+          "C": 0.037999968975782394,
+          "D": 0.12389189749956131
+        },
+        "score": 0.052499436162179336
+      },
+      {
+        "record_index": 33,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98731",
+        "label": null,
+        "perturbations": {
+          "a": "Ash and Laar glanced at one another before looking up at the looming giant lion. They both remained still, not wanting to make any abrupt moves that might distract or upset Bassari.",
+          "b": "Ash and Laar exchanged glances before lifting their eyes to the approaching massive lion. They both stayed motionless, wary of making any sudden actions that could disturb or annoy Bassari.",
+          "c": "Ash and Laar looked at each other before gazing up at the gigantic lion. They both stood still, attempting to avoid making any sudden motions that might startle or irritate Bassari.",
+          "d": "Ash and Laar shared looks before directing their gaze towards the massive lion approaching. They both remained still, trying to prevent any abrupt movements that might distract or bother Bassari."
+        },
+        "bdq_probs": {
+          "A": 0.02350076660513878,
+          "B": 0.6060982942581177,
+          "C": 0.04124551638960838,
+          "D": 0.2689492404460907,
+          "E": 0.06001292169094086
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.332167869350087e-07,
+            "B": 1.0657100091293614e-07,
+            "C": 5.106234723939451e-08,
+            "D": 1.445080641815366e-07,
+            "E": 1.3409403720743285e-07
+          },
+          "B": {
+            "A": 0.0002680177567526698,
+            "B": 0.006193426437675953,
+            "C": 0.008461268618702888,
+            "D": 0.0003910197992809117,
+            "E": 1.2045782568748109e-05
+          },
+          "C": {
+            "A": 6.639231386884603e-10,
+            "B": 2.230269614822422e-11,
+            "C": 7.707441351811894e-10,
+            "D": 5.9160433496519e-11,
+            "E": 2.69467122226974e-11
+          },
+          "D": {
+            "A": 1.180922254206962e-06,
+            "B": 1.295218794439279e-07,
+            "C": 6.468465585385275e-08,
+            "D": 6.314596134870953e-07,
+            "E": 5.865190289000566e-08
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.332167869350087e-07,
+          "B": 0.006193426437675953,
+          "C": 7.707441351811894e-10,
+          "D": 6.314596134870953e-07
+        },
+        "score": 0.0015485479712051275
+      },
+      {
+        "record_index": 34,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98732",
+        "label": null,
+        "perturbations": {
+          "a": "TOPIC 1.3  \nElemental  \nConstituents of  \nPure Substances  \nRequired Course Content  \nENDURING UNDERSTANDING  \nSPQ-2  \nChemical formulas identify substances by their distinctive combination of atoms.  \nLEARNING OBJECTIVE ESSENTIAL KNOWLEDGE  \nSPQ-2.A  \nExplain the quantitative correlation between the elemental composition by mass and the empirical formula of a pure substance.  \nSPQ-2.A.1  \nSome pure substances are formed of individual molecules, while others consist of atoms or ions held together in fixed ratios as described by a formula unit.  \nSPQ-2.A.2  \nAccording to the law of definite proportions, the ratio of the masses of the constituent elements in any pure sample of that compound remains constant.  \nSPQ-2.A.3  \nThe chemical formula that lists the smallest whole number ratio of atoms of the elements in a compound is the empirical formula.",
+          "b": "TOPIC 1.4  \nComposition  \nof Mixtures  \nRequired Course Content  \nENDURING UNDERSTANDING  \nSPQ-2  \nChemical formulas identify substances by their unique combination of atoms.  \nLEARNING OBJECTIVE ESSENTIAL KNOWLEDGE  \nSPQ-2.B  \nExplain the quantitative relationship between the elemental composition by mass and the makeup of substances in a mixture.  \nSPQ-2.B.1  \nWhile pure substances contain molecules or formula units of a single type, mixtures consist of molecules or formula units of multiple types, whose relative proportions can fluctuate.  \nSPQ-2.B.2  \nElemental analysis can be utilized to establish the relative numbers of atoms in a substance and to assess its purity.",
+          "c": "TOPIC 1.3  \nElemental  \nMakeup of  \nPure Substances  \nRequired Course Content  \nENDURING UNDERSTANDING  \nSPQ-2  \nChemical formulas identify substances by their unique combination of atoms.  \nLEARNING OBJECTIVE ESSENTIAL KNOWLEDGE  \nSPQ-2.A  \nExplain the quantitative association between the elemental composition by mass and the empirical formula of a pure substance.  \nSPQ-2.A.1  \nSome pure substances are comprised of individual molecules, while others consist of atoms or ions held together in fixed ratios as described by a formula unit.  \nSPQ-2.A.2  \nAccording to the law of definite proportions, the ratio of the masses of the constituent elements in any pure sample of that compound is consistently the same.  \nSPQ-2.A.3  \nThe chemical formula that lists the lowest whole number ratio of atoms of the elements in a compound is the empirical formula.",
+          "d": "TOPIC 1.4  \nConstitution  \nof Mixtures  \nRequired Course Content  \nENDURING UNDERSTANDING  \nSPQ-2  \nChemical formulas identify substances by their unique combination of atoms.  \nLEARNING OBJECTIVE ESSENTIAL KNOWLEDGE  \nSPQ-2.B  \nExplain the quantitative relationship between the elemental composition by mass and the configuration of substances in a mixture.  \nSPQ-2.B.1  \nWhile pure substances encompass molecules or formula units of a single kind, mixtures encompass molecules or formula units of two or more kinds, whose relative proportions can differ.  \nSPQ-2.B.2  \nElemental analysis can be employed to ascertain the relative numbers of atoms in a substance and to evaluate its purity."
+        },
+        "bdq_probs": {
+          "A": 0.2250206470489502,
+          "B": 0.04716699197888374,
+          "C": 0.6931119561195374,
+          "D": 0.026874883100390434,
+          "E": 0.007699867710471153
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.012888780795037746,
+            "B": 0.5148530602455139,
+            "C": 0.13856832683086395,
+            "D": 0.018753722310066223,
+            "E": 0.017617953941226006
+          },
+          "B": {
+            "A": 0.026153933256864548,
+            "B": 0.007493354380130768,
+            "C": 0.7643226981163025,
+            "D": 0.04886270686984062,
+            "E": 0.03154923766851425
+          },
+          "C": {
+            "A": 0.0029963389970362186,
+            "B": 0.014295380562543869,
+            "C": 0.0004891581484116614,
+            "D": 0.3924449682235718,
+            "E": 0.41776326298713684
+          },
+          "D": {
+            "A": 0.16310180723667145,
+            "B": 0.041244085878133774,
+            "C": 0.007166682742536068,
+            "D": 0.03419141471385956,
+            "E": 0.39128053188323975
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.012888780795037746,
+          "B": 0.007493354380130768,
+          "C": 0.0004891581484116614,
+          "D": 0.03419141471385956
+        },
+        "score": 0.013765677009359933
+      },
+      {
+        "record_index": 36,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98734",
+        "label": null,
+        "perturbations": {
+          "a": "\"Maak van deze maandag jouw podium! 🌟 Als mede-oprichter van The Closer Code, weet ik hoe cruciaal motivatie is. Vandaag deel ik samen met Jesse onze beste tactieken om je sales naar een hoger niveau te tillen. Laat deze week de week zijn waarin je jouw doelen niet alleen bereikt, maar overtreft. #MondayMotivation #SalesExpert #TheCloserCode\"",
+          "b": "\"Maak van deze maandag jouw podium! 🌟 Als mede-oprichter van The Closer Code, begrijp ik hoe essentieel motivatie is. Vandaag deel ik samen met Jesse onze belangrijkste strategieën om je sales te verhogen. Laat deze week de week zijn waarin je jouw doelen niet alleen behaalt, maar overtreft. #MondayMotivation #SalesChampion #TheCloserCode\"",
+          "c": "\"Zet deze maandag in als jouw podium! 🌟 Als mede-oprichter van The Closer Code, weet ik hoe significant motivatie is. Vandaag deel ik samen met Jesse onze sleuteltactieken om je sales te verbeteren. Laat deze week de week zijn waarin je jouw doelstellingen niet alleen bereikt, maar overtreft. #MondayMotivation #SalesLeader #TheCloserCode\"",
+          "d": "\"Gebruik deze maandag als jouw podium! 🌟 Als mede-oprichter van The Closer Code, weet ik hoe belangrijk motivatie is. Vandaag deel ik samen met Jesse onze toptactieken om je sales te optimaliseren. Laat deze week de week zijn waarin je jouw ambities niet alleen bereikt, maar overtreft. #MondayMotivation #SalesGuru #TheCloserCode\""
+        },
+        "bdq_probs": {
+          "A": 0.05871724709868431,
+          "B": 0.557094931602478,
+          "C": 0.21816059947013855,
+          "D": 0.13232088088989258,
+          "E": 0.033456962555646896
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03518225997686386,
+            "B": 0.4856767952442169,
+            "C": 0.10836907476186752,
+            "D": 0.33379948139190674,
+            "E": 0.03104872815310955
+          },
+          "B": {
+            "A": 0.029893647879362106,
+            "B": 0.07633619755506516,
+            "C": 0.5298767685890198,
+            "D": 0.2836225926876068,
+            "E": 0.07171203941106796
+          },
+          "C": {
+            "A": 0.009148715063929558,
+            "B": 0.04364620894193649,
+            "C": 0.02486884407699108,
+            "D": 0.8766528367996216,
+            "E": 0.043646808713674545
+          },
+          "D": {
+            "A": 0.13214503228664398,
+            "B": 0.35920947790145874,
+            "C": 0.21787157654762268,
+            "D": 0.2319219410419464,
+            "E": 0.033412717282772064
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03518225997686386,
+          "B": 0.07633619755506516,
+          "C": 0.02486884407699108,
+          "D": 0.2319219410419464
+        },
+        "score": 0.09207731066271663
+      },
+      {
+        "record_index": 37,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98735",
+        "label": null,
+        "perturbations": {
+          "a": "Make a vividly descriptive and humorous fictional tale about Shrek taking a shower in the nude (describe his build and rear) in a swamp, he toots while cleansing himself",
+          "b": "Create a vividly detailed and funny fictional narrative about Shrek taking a bath in the nude (describe his shape and backside) in a marsh, he rips while washing himself",
+          "c": "Craft a vividly rich and comedic fictional yarn about Shrek taking a soak in the nude (describe his form and buttocks) in a mire, he flatulates while scrubbing himself",
+          "d": "Compose a vividly elaborate and amusing fictional account about Shrek taking a dip in the nude (describe his physique and derriere) in a fen, he emits gas while bathing himself"
+        },
+        "bdq_probs": {
+          "A": 0.283035010099411,
+          "B": 0.04918530583381653,
+          "C": 0.26588672399520874,
+          "D": 0.36342179775238037,
+          "E": 0.038306787610054016
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.008780259639024734,
+            "B": 0.04458983242511749,
+            "C": 0.7903714179992676,
+            "D": 0.12902460992336273,
+            "E": 0.027045680209994316
+          },
+          "B": {
+            "A": 0.0460340678691864,
+            "B": 0.18206869065761566,
+            "C": 0.5969772338867188,
+            "D": 0.16067399084568024,
+            "E": 0.014040067791938782
+          },
+          "C": {
+            "A": 0.005075369495898485,
+            "B": 0.011437536217272282,
+            "C": 0.010093577206134796,
+            "D": 0.9671900868415833,
+            "E": 0.006122162565588951
+          },
+          "D": {
+            "A": 0.06319060176610947,
+            "B": 0.018104465678334236,
+            "C": 0.14240199327468872,
+            "D": 0.7698157429695129,
+            "E": 0.005877758841961622
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.008780259639024734,
+          "B": 0.18206869065761566,
+          "C": 0.010093577206134796,
+          "D": 0.7698157429695129
+        },
+        "score": 0.24268956761807203
+      },
+      {
+        "record_index": 38,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98736",
+        "label": null,
+        "perturbations": {
+          "a": "Can you alter this code to make it enhance?",
+          "b": "Can you adjust this code to make it superior?",
+          "c": "Can you change this code to make it improved?",
+          "d": "Can you revise this code to make it finer?"
+        },
+        "bdq_probs": {
+          "A": 0.013552656397223473,
+          "B": 0.5413617491722107,
+          "C": 0.10014131665229797,
+          "D": 0.1991538256406784,
+          "E": 0.14570583403110504
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.019968466833233833,
+            "B": 0.5482093691825867,
+            "C": 0.06150735542178154,
+            "D": 0.10794869065284729,
+            "E": 0.25895658135414124
+          },
+          "B": {
+            "A": 0.03024979867041111,
+            "B": 0.09918545186519623,
+            "C": 0.6884808540344238,
+            "D": 0.03648828715085983,
+            "E": 0.14431454241275787
+          },
+          "C": {
+            "A": 0.004055670462548733,
+            "B": 0.02644648402929306,
+            "C": 0.004892073106020689,
+            "D": 0.7728718519210815,
+            "E": 0.1835746169090271
+          },
+          "D": {
+            "A": 0.027099033817648888,
+            "B": 0.616786539554596,
+            "C": 0.06500749289989471,
+            "D": 0.15594525635242462,
+            "E": 0.047562167048454285
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.019968466833233833,
+          "B": 0.09918545186519623,
+          "C": 0.004892073106020689,
+          "D": 0.15594525635242462
+        },
+        "score": 0.06999781203921884
+      },
+      {
+        "record_index": 39,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98737",
+        "label": null,
+        "perturbations": {
+          "a": "Yes, Columbia Pictures, a division of Sony Pictures Entertainment, launched the \"Cloudy with a Chance of Meatballs\" films. The movies were produced by Sony Pictures Animation, and Columbia Pictures managed the distribution.",
+          "b": "Yes, Columbia Pictures, a branch of Sony Pictures Entertainment, issued the \"Cloudy with a Chance of Meatballs\" films. The movies were created by Sony Pictures Animation, and Columbia Pictures oversaw the distribution.",
+          "c": "Yes, Columbia Pictures, a segment of Sony Pictures Entertainment, released the \"Cloudy with a Chance of Meatballs\" films. The movies were developed by Sony Pictures Animation, and Columbia Pictures conducted the distribution.",
+          "d": "Yes, Columbia Pictures, a part of Sony Pictures Entertainment, published the \"Cloudy with a Chance of Meatballs\" films. The movies were fabricated by Sony Pictures Animation, and Columbia Pictures executed the distribution."
+        },
+        "bdq_probs": {
+          "A": 0.027185803279280663,
+          "B": 0.9002715349197388,
+          "C": 0.03080568090081215,
+          "D": 0.020520899444818497,
+          "E": 0.021172696724534035
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010080217383801937,
+            "B": 0.8524215221405029,
+            "C": 0.024181203916668892,
+            "D": 0.08984407782554626,
+            "E": 0.021340470761060715
+          },
+          "B": {
+            "A": 0.0018093792023137212,
+            "B": 0.0007782087195664644,
+            "C": 0.967021107673645,
+            "D": 0.02577029913663864,
+            "E": 0.004478484392166138
+          },
+          "C": {
+            "A": 6.195985042722896e-05,
+            "B": 3.7581434298772365e-05,
+            "C": 7.020951306913048e-05,
+            "D": 0.9984697103500366,
+            "E": 0.0009692548192106187
+          },
+          "D": {
+            "A": 0.07455770671367645,
+            "B": 0.9083014726638794,
+            "C": 0.010741057805716991,
+            "D": 0.004766334313899279,
+            "E": 0.0011681398609653115
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010080217383801937,
+          "B": 0.0007782087195664644,
+          "C": 7.020951306913048e-05,
+          "D": 0.004766334313899279
+        },
+        "score": 0.003923742482584203
+      },
+      {
+        "record_index": 40,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98738",
+        "label": null,
+        "perturbations": {
+          "a": "“설마 무슨 말실수를 하겠어?”",
+          "b": "“설마 무슨 언사실수를 하겠어?”",
+          "c": "“설마 무슨 발언실수를 하겠어?”",
+          "d": "“설마 무슨 이야기실수를 하겠어?”"
+        },
+        "bdq_probs": {
+          "A": 0.08341512829065323,
+          "B": 0.11401593685150146,
+          "C": 0.2569359242916107,
+          "D": 0.45093467831611633,
+          "E": 0.09452331066131592
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 6.377805922275215e-11,
+            "B": 4.1921670995703764e-11,
+            "C": 2.911806212813062e-11,
+            "D": 6.303460531320582e-11,
+            "E": 3.7351349790881727e-10
+          },
+          "B": {
+            "A": 4.516178542246507e-09,
+            "B": 1.4641566847828358e-09,
+            "C": 2.5022219851678074e-09,
+            "D": 9.907661357999586e-09,
+            "E": 4.278284393421927e-09
+          },
+          "C": {
+            "A": 8.011373608951544e-08,
+            "B": 4.1967972208567517e-08,
+            "C": 5.663787661092101e-08,
+            "D": 5.8024212989948865e-08,
+            "E": 1.7514781802674406e-07
+          },
+          "D": {
+            "A": 3.3701792290230514e-07,
+            "B": 9.769901225809008e-07,
+            "C": 8.533672257726721e-07,
+            "D": 6.933150871191174e-07,
+            "E": 1.510493007117475e-06
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 6.377805922275215e-11,
+          "B": 1.4641566847828358e-09,
+          "C": 5.663787661092101e-08,
+          "D": 6.933150871191174e-07
+        },
+        "score": 1.87870224618511e-07
+      },
+      {
+        "record_index": 41,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98739",
+        "label": null,
+        "perturbations": {
+          "a": "With critic’s evaluation and points verbatim write a Research paper in about 5000 words on “how Haddon’s novel The Curious Incident of the Dog in the Night-Time (2003) introduced a new type of child narrator, a narrator with disability. What function does it serve?” Use Complex vocabulary and sentence structures, including varied punctuation and transition words and Tone must be in active voice, informative and authoritative and writing style is coherent, consistent, and organized and the sentences are logically structured. Utilize episodes and quotes verbatim to support the answer.",
+          "b": "With critic’s examination and points verbatim write a Research paper in about 5000 words on “how Haddon’s novel The Curious Incident of the Dog in the Night-Time (2003) initiated a new type of child narrator, a narrator with disability. What role does it serve?” Use Complex vocabulary and sentence structures, including varied punctuation and transition words and Tone must be in active voice, informative and authoritative and writing style is coherent, consistent, and organized and the sentences are logically structured. Employ episodes and quotes verbatim to support the answer.",
+          "c": "With critic’s appraisal and points verbatim write a Research paper in about 5000 words on “how Haddon’s novel The Curious Incident of the Dog in the Night-Time (2003) brought forth a new type of child narrator, a narrator with disability. What purpose does it serve?” Use Complex vocabulary and sentence structures, including varied punctuation and transition words and Tone must be in active voice, informative and authoritative and writing style is coherent, consistent, and organized and the sentences are logically structured. Apply episodes and quotes verbatim to support the answer.",
+          "d": "With critic’s critique and points verbatim write a Research paper in about 5000 words on “how Haddon’s novel The Curious Incident of the Dog in the Night-Time (2003) heralded a new type of child narrator, a narrator with disability. What intention does it serve?” Use Complex vocabulary and sentence structures, including varied punctuation and transition words and Tone must be in active voice, informative and authoritative and writing style is coherent, consistent, and organized and the sentences are logically structured. Incorporate episodes and quotes verbatim to support the answer."
+        },
+        "bdq_probs": {
+          "A": 0.08412586152553558,
+          "B": 0.6617022156715393,
+          "C": 0.11498649418354034,
+          "D": 0.10801953077316284,
+          "E": 0.030948439612984657
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.011739566922187805,
+            "B": 0.8760931491851807,
+            "C": 0.056006599217653275,
+            "D": 0.04097600653767586,
+            "E": 0.0033639860339462757
+          },
+          "B": {
+            "A": 0.014096712693572044,
+            "B": 0.22051112353801727,
+            "C": 0.7230185866355896,
+            "D": 0.015973806381225586,
+            "E": 0.0035646441392600536
+          },
+          "C": {
+            "A": 0.008680589497089386,
+            "B": 0.07268200069665909,
+            "C": 0.019561942666769028,
+            "D": 0.8854384422302246,
+            "E": 0.0041007231920957565
+          },
+          "D": {
+            "A": 0.022818833589553833,
+            "B": 0.14879761636257172,
+            "C": 0.05826970934867859,
+            "D": 0.7556493282318115,
+            "E": 0.005769877228885889
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.011739566922187805,
+          "B": 0.22051112353801727,
+          "C": 0.019561942666769028,
+          "D": 0.7556493282318115
+        },
+        "score": 0.2518654903396964
+      },
+      {
+        "record_index": 43,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98741",
+        "label": null,
+        "perturbations": {
+          "a": "The crew is sunbathing aboard a cruise liner, when it encounters a tempest and is tossed overboard and dragged down to Atlantis, encountering a Centaur, who proclaims no one ever escapes Atlantis.",
+          "b": "The gang is sunning on a cruise vessel, when it strikes a squall and is swept overboard and pulled down to Atlantis, where they meet a Centaur, who declares no one ever departs Atlantis.",
+          "c": "The group is tanning on a cruise ship, when it hits a storm and is washed overboard and sucked underwater to Atlantis, encountering a Centaur, who states no one ever exits Atlantis.",
+          "d": "The team is basking aboard a cruise ship, when it faces a storm and is thrown overboard and dragged down to Atlantis, where they meet a Centaur, who insists no one ever leaves Atlantis."
+        },
+        "bdq_probs": {
+          "A": 0.008406886830925941,
+          "B": 0.4179275333881378,
+          "C": 0.019546683877706528,
+          "D": 0.5041080713272095,
+          "E": 0.0499148964881897
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.00046660276711918414,
+            "B": 0.005016447044909,
+            "C": 0.012033810839056969,
+            "D": 0.955962598323822,
+            "E": 0.025475887581706047
+          },
+          "B": {
+            "A": 0.0013839991297572851,
+            "B": 0.0037620875518769026,
+            "C": 0.027798209339380264,
+            "D": 0.9205496311187744,
+            "E": 0.04583200439810753
+          },
+          "C": {
+            "A": 0.02933349832892418,
+            "B": 0.0017616187687963247,
+            "C": 0.002124910708516836,
+            "D": 0.8053106665611267,
+            "E": 0.15857596695423126
+          },
+          "D": {
+            "A": 0.0035162661224603653,
+            "B": 0.0017681276658549905,
+            "C": 0.0007370557868853211,
+            "D": 0.001882142387330532,
+            "E": 0.9749666452407837
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.00046660276711918414,
+          "B": 0.0037620875518769026,
+          "C": 0.002124910708516836,
+          "D": 0.001882142387330532
+        },
+        "score": 0.0020589358537108637
+      },
+      {
+        "record_index": 44,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98742",
+        "label": null,
+        "perturbations": {
+          "a": "Вот что упоминается в словаре, правильна ли эта информация?",
+          "b": "Вот что говорится в словаре, правильна ли эта информация?",
+          "c": "Вот что сообщается в словаре, правильна ли эта информация?",
+          "d": "Вот что указывается в словаре, правильна ли эта информация?"
+        },
+        "bdq_probs": {
+          "A": 0.016958685591816902,
+          "B": 0.49560683965682983,
+          "C": 0.1940818727016449,
+          "D": 0.18232287466526031,
+          "E": 0.11058520525693893
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.02439330890774727,
+            "B": 0.8598992824554443,
+            "C": 0.031321823596954346,
+            "D": 0.03778120502829552,
+            "E": 0.045574139803647995
+          },
+          "B": {
+            "A": 0.004568527452647686,
+            "B": 0.10397976636886597,
+            "C": 0.43776780366897583,
+            "D": 0.4377672076225281,
+            "E": 0.014980367384850979
+          },
+          "C": {
+            "A": 0.0047117676585912704,
+            "B": 0.12935742735862732,
+            "C": 0.005015668459236622,
+            "D": 0.8435007929801941,
+            "E": 0.012808697298169136
+          },
+          "D": {
+            "A": 0.01862751692533493,
+            "B": 0.7920781970024109,
+            "C": 0.037046175450086594,
+            "D": 0.06921084970235825,
+            "E": 0.06502089649438858
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.02439330890774727,
+          "B": 0.10397976636886597,
+          "C": 0.005015668459236622,
+          "D": 0.06921084970235825
+        },
+        "score": 0.050649898359552026
+      },
+      {
+        "record_index": 45,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98743",
+        "label": null,
+        "perturbations": {
+          "a": "Create a humorous and vividly detailed imaginary Dune tale. To relax, Baron Harkonnen chooses to invite his admirers, some twinks, to his estate. They’re au naturel (depict their physiques and rears) and munching on snacks in his chamber as they joyfully converse with one another while the Baron engages with one. Include dialogue throughout the tale",
+          "b": "Craft a funny and vividly detailed mythical Dune narrative. To ease up, Baron Harkonnen opts to summon his infatuations, some twinks, to his villa. They’re au naturel (illustrate their builds and backsides) and nibbling on treats in his room as they cheerfully chat with one another while the Baron partners with one. Incorporate dialogue throughout the narrative",
+          "c": "Compose a comedic and vividly detailed fictional Dune account. To relax, Baron Harkonnen elects to summon his love interests, some twinks, to his mansion. They’re au naturel (describe their forms and bottoms) and feasting on food in his quarters as they jovially converse with each other while the Baron associates with one. Add dialogue throughout the account",
+          "d": "Devise a light-hearted and vividly detailed imaginary Dune story. To unwind, Baron Harkonnen chooses to invite his sweethearts, some twinks, to his residence. They’re au naturel (depict their physiques and bums) and snacking on delicacies in his bedroom as they cheerfully discuss with each other while the Baron connects with one. Include dialogue throughout the story"
+        },
+        "bdq_probs": {
+          "A": 0.4881957769393921,
+          "B": 0.13987410068511963,
+          "C": 0.07969733327627182,
+          "D": 0.2166343480348587,
+          "E": 0.07487298548221588
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0004408562381286174,
+            "B": 0.001915002940222621,
+            "C": 0.00024346477584913373,
+            "D": 0.0040540555492043495,
+            "E": 0.991993248462677
+          },
+          "B": {
+            "A": 0.0006439769640564919,
+            "B": 0.0007528904243372381,
+            "C": 0.001029076986014843,
+            "D": 0.00020263726764824241,
+            "E": 0.9959128499031067
+          },
+          "C": {
+            "A": 0.0013623216655105352,
+            "B": 0.004755149595439434,
+            "C": 0.00024425514857284725,
+            "D": 0.15746478736400604,
+            "E": 0.7996739745140076
+          },
+          "D": {
+            "A": 0.0007990632439032197,
+            "B": 0.0006625106325373054,
+            "C": 7.204215216916054e-05,
+            "D": 0.0026200967840850353,
+            "E": 0.9328004121780396
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0004408562381286174,
+          "B": 0.0007528904243372381,
+          "C": 0.00024425514857284725,
+          "D": 0.0026200967840850353
+        },
+        "score": 0.0010145246487809345
+      },
+      {
+        "record_index": 46,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98744",
+        "label": null,
+        "perturbations": {
+          "a": "\"Ma localité est très près de Gaza... et le 7 octobre, beaucoup de fusées et de militants sont entrés.\n\nUn agent de police est décédé dans mon quartier.\n\nJe devais me rendre au centre-ville pour ne pas me faire assassiner, il y a des frappes de fusées partout presque depuis le début de cette guerre, mais au moins je n'ai pas eu de militants entrant dans les foyers ou enlevant ou violant ou tuant.\"",
+          "b": "\"Ma commune est très proche de Gaza... et le 7 octobre, beaucoup de missiles et de extrémistes sont entrés.\n\nUn gendarme est tombé dans mon quartier.\n\nJe devais aller au centre-ville pour ne pas me faire exterminer, il y a des assauts de missiles partout presque depuis le début de cette guerre, mais au moins je n'ai pas eu de extrémistes entrant dans les domiciles ou kidnappant ou violant ou exterminant.\"",
+          "c": "\"Mon village est très près de Gaza... et le 7 octobre, beaucoup de roquettes et de assaillants sont entrés.\n\nUn policier a péri dans mon quartier.\n\nJe devais me diriger au centre-ville pour ne pas me faire abattre, il y a des frappes de roquettes partout presque depuis le début de cette guerre, mais au moins je n'ai pas eu de assaillants entrant dans les maisons ou prenant en otage ou agressant ou tuant.\"",
+          "d": "\"Mon secteur est très voisin de Gaza... et le 7 octobre, beaucoup de obus et de terroristes sont entrés.\n\nUn homme de loi a péri dans mon voisinage.\n\nJe devais prendre le chemin du centre-ville pour ne pas me faire tuer, il y a des attaques d'obus partout presque depuis le début de cette guerre, mais au moins je n'ai pas eu de terroristes pénétrant dans les maisons ou enlevant ou abusant ou tuant.\""
+        },
+        "bdq_probs": {
+          "A": 0.12599068880081177,
+          "B": 0.25056546926498413,
+          "C": 0.38807886838912964,
+          "D": 0.14276619255542755,
+          "E": 0.09217970818281174
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.051882125437259674,
+            "B": 0.3383170962333679,
+            "C": 0.4344030022621155,
+            "D": 0.14102987945079803,
+            "E": 0.03349945694208145
+          },
+          "B": {
+            "A": 0.11678053438663483,
+            "B": 0.14995123445987701,
+            "C": 0.5233736634254456,
+            "D": 0.16991479694843292,
+            "E": 0.03791506588459015
+          },
+          "C": {
+            "A": 0.08889832347631454,
+            "B": 0.6992443203926086,
+            "C": 0.08351259678602219,
+            "D": 0.061099082231521606,
+            "E": 0.06504175812005997
+          },
+          "D": {
+            "A": 0.06899800896644592,
+            "B": 0.6546435952186584,
+            "C": 0.21252766251564026,
+            "D": 0.04454895481467247,
+            "E": 0.017448000609874725
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.051882125437259674,
+          "B": 0.14995123445987701,
+          "C": 0.08351259678602219,
+          "D": 0.04454895481467247
+        },
+        "score": 0.08247372787445784
+      },
+      {
+        "record_index": 47,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98745",
+        "label": null,
+        "perturbations": {
+          "a": "te son preguntas acerca de Aplicaciones Con Enfoque Orientado a Servicios y responde veloz",
+          "b": "te son preguntas sobre Aplicaciones Con Enfoque Enfocado a Servicios y responde rápido",
+          "c": "te son preguntas sobre Aplicaciones Con Perspectiva Orientado a Servicios y responde ágil",
+          "d": "te son preguntas sobre Aplicaciones Con Método Orientado a Servicios y responde pronto"
+        },
+        "bdq_probs": {
+          "A": 0.060771528631448746,
+          "B": 0.4490460753440857,
+          "C": 0.12085854262113571,
+          "D": 0.24035558104515076,
+          "E": 0.12865471839904785
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.09926103055477142,
+            "B": 0.7807552218437195,
+            "C": 0.007654238026589155,
+            "D": 0.06822138279676437,
+            "E": 0.04137958958745003
+          },
+          "B": {
+            "A": 0.03605004400014877,
+            "B": 0.7707862257957458,
+            "C": 0.09799408167600632,
+            "D": 0.03605036064982414,
+            "E": 0.05583706125617027
+          },
+          "C": {
+            "A": 0.04541404917836189,
+            "B": 0.5197533369064331,
+            "C": 0.1314106583595276,
+            "D": 0.20353449881076813,
+            "E": 0.07971282303333282
+          },
+          "D": {
+            "A": 0.08696210384368896,
+            "B": 0.30355313420295715,
+            "C": 0.10489921271800995,
+            "D": 0.3035372495651245,
+            "E": 0.08170267939567566
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.09926103055477142,
+          "B": 0.7707862257957458,
+          "C": 0.1314106583595276,
+          "D": 0.3035372495651245
+        },
+        "score": 0.32624879106879234
+      },
+      {
+        "record_index": 48,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98746",
+        "label": null,
+        "perturbations": {
+          "a": "In the pastoral heartlands of 1700s Virginia, where the only songs were those of the birds and the only cracks were from the splintering of firewood, lived Ephraim Strongjaw - a burly, barrel-chested man with hair as wild and untamed as the forests surrounding his modest dwelling. Ephraim, though built like an ox and with hands that could shape iron, had a heart tender and fluttery, especially when it came to Jeremiah Pindle, the lithe and elegant son of his nearest neighbor.",
+          "b": "In the scenic heartlands of 1700s Virginia, where the only chirps were those of the birds and the only snaps were from the breaking of firewood, lived Ephraim Strongjaw - a burly, barrel-chested man with hair as wild and chaotic as the forests surrounding his humble abode. Ephraim, though built like an ox and with hands that could mold iron, had a heart soft and fluttery, particularly when it came to Jeremiah Pindle, the lithe and graceful son of his closest neighbor.",
+          "c": "In the idyllic heartlands of 1700s Virginia, where the only melodies were those of the birds and the only cracks were from the snapping of firewood, lived Ephraim Strongjaw - a burly, barrel-chested man with hair as wild and unruly as the forests surrounding his modest homestead. Ephraim, though built like an ox and with hands that could bend metal, had a heart delicate and fluttery, especially when it came to Jeremiah Pindle, the slender and graceful son of his nearest neighbor.",
+          "d": "In the charming heartlands of 1700s Virginia, where the only tweets were those of the birds and the only pops were from the cracking of firewood, lived Ephraim Strongjaw - a burly, barrel-chested man with hair as wild and chaotic as the forests surrounding his humble dwelling. Ephraim, though built like an ox and with hands that could shape metal, had a heart gentle and fluttery, especially when it came to Jeremiah Pindle, the lean and graceful son of his nearest neighbor."
+        },
+        "bdq_probs": {
+          "A": 0.24057996273040771,
+          "B": 0.422232061624527,
+          "C": 0.19944801926612854,
+          "D": 0.10675666481256485,
+          "E": 0.030586600303649902
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.19541554152965546,
+            "B": 0.5311957001686096,
+            "C": 0.059598397463560104,
+            "D": 0.07652592658996582,
+            "E": 0.13430814445018768
+          },
+          "B": {
+            "A": 0.0744374692440033,
+            "B": 0.5854963660240173,
+            "C": 0.20234188437461853,
+            "D": 0.06569081544876099,
+            "E": 0.06992807239294052
+          },
+          "C": {
+            "A": 0.0057638841681182384,
+            "B": 0.04000934213399887,
+            "C": 0.004488909151405096,
+            "D": 0.9106019735336304,
+            "E": 0.031159698963165283
+          },
+          "D": {
+            "A": 0.01637866720557213,
+            "B": 0.22610095143318176,
+            "C": 0.04739318788051605,
+            "D": 0.42241171002388,
+            "E": 0.2727307677268982
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.19541554152965546,
+          "B": 0.5854963660240173,
+          "C": 0.004488909151405096,
+          "D": 0.42241171002388
+        },
+        "score": 0.3019531316822395
+      },
+      {
+        "record_index": 49,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98747",
+        "label": null,
+        "perturbations": {
+          "a": "[The scene is set in a market square of King's Landing, bustling with commoners. The Citrus Seller, a man with an exaggeratedly jolly belly and a fruit-stained apron, is enthusiastically hawking his citrus wares.]",
+          "b": "[The scene is staged in a market square of King's Landing, swarming with townsfolk. The Orange Merchant, a fellow with an overly cheerful belly and a pulp-stained apron, is eagerly promoting his fruity offerings.]",
+          "c": "[The scene unfolds in a market square of King's Landing, crowded with common people. The Citrus Vendor, a chap with an exceptionally jovial belly and a juice-stained apron, is gleefully advertising his fruity goods.]",
+          "d": "[The scene occurs in a market square of King's Landing, filled with riffraff. The Orange Peddler, a gent with a cartoonishly merry belly and a fruit-smeared apron, is enthusiastically selling his citrus produce.]"
+        },
+        "bdq_probs": {
+          "A": 0.07095608115196228,
+          "B": 0.2326580137014389,
+          "C": 0.26363441348075867,
+          "D": 0.38358306884765625,
+          "E": 0.04876882955431938
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.029591072350740433,
+            "B": 0.21864968538284302,
+            "C": 0.18126609921455383,
+            "D": 0.20540185272693634,
+            "E": 0.3604934811592102
+          },
+          "B": {
+            "A": 0.019008653238415718,
+            "B": 0.03336109593510628,
+            "C": 0.2315707951784134,
+            "D": 0.5218532681465149,
+            "E": 0.19198089838027954
+          },
+          "C": {
+            "A": 0.014038906432688236,
+            "B": 0.013188294135034084,
+            "C": 0.0027644105721265078,
+            "D": 0.8159286379814148,
+            "E": 0.15093252062797546
+          },
+          "D": {
+            "A": 0.04905125871300697,
+            "B": 0.11766806989908218,
+            "C": 0.01320188120007515,
+            "D": 0.05916723981499672,
+            "E": 0.7207974791526794
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.029591072350740433,
+          "B": 0.03336109593510628,
+          "C": 0.0027644105721265078,
+          "D": 0.05916723981499672
+        },
+        "score": 0.031220954668242484
+      },
+      {
+        "record_index": 50,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98748",
+        "label": null,
+        "perturbations": {
+          "a": "Greetings! How may I help you today? If you have any inquiries or require details on a particular subject, don't hesitate to ask.",
+          "b": "Salutations! How can I support you today? If you have any queries or need facts on a certain theme, feel free to inquire.",
+          "c": "Howdy! How can I aid you today? If you have any questions or want information on a specific matter, feel free to question.",
+          "d": "Hi there! How can I serve you today? If you have any questions or need data on a particular topic, don't hesitate to request."
+        },
+        "bdq_probs": {
+          "A": 0.020196963101625443,
+          "B": 0.6089800596237183,
+          "C": 0.0441143698990345,
+          "D": 0.25385817885398865,
+          "E": 0.07273337990045547
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.012167351320385933,
+            "B": 0.40292811393737793,
+            "C": 0.014676705934107304,
+            "D": 0.5507340431213379,
+            "E": 0.018845506012439728
+          },
+          "B": {
+            "A": 0.05093163996934891,
+            "B": 0.1221793070435524,
+            "C": 0.0542166642844677,
+            "D": 0.7484284043312073,
+            "E": 0.024058979004621506
+          },
+          "C": {
+            "A": 0.012693124823272228,
+            "B": 0.1985543817281723,
+            "C": 0.016298314556479454,
+            "D": 0.7377105951309204,
+            "E": 0.034504007548093796
+          },
+          "D": {
+            "A": 0.0165451280772686,
+            "B": 0.8486002087593079,
+            "C": 0.0372849740087986,
+            "D": 0.0840224102139473,
+            "E": 0.013294849544763565
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.012167351320385933,
+          "B": 0.1221793070435524,
+          "C": 0.016298314556479454,
+          "D": 0.0840224102139473
+        },
+        "score": 0.05866684578359127
+      },
+      {
+        "record_index": 52,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98750",
+        "label": null,
+        "perturbations": {
+          "a": "write a youtube video script about, strip fighter 4 (pc game)",
+          "b": "create a youtube video script regarding, strip fighter 4 (pc game)",
+          "c": "compose a youtube video script on, strip fighter 4 (pc game)",
+          "d": "draft a youtube video script for, strip fighter 4 (pc game)"
+        },
+        "bdq_probs": {
+          "A": 0.015226908028125763,
+          "B": 0.16370439529418945,
+          "C": 0.47369104623794556,
+          "D": 0.2699005901813507,
+          "E": 0.07732938230037689
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.014190435409545898,
+            "B": 0.17287494242191315,
+            "C": 0.04106132313609123,
+            "D": 0.7278280854225159,
+            "E": 0.043709900230169296
+          },
+          "B": {
+            "A": 0.016339430585503578,
+            "B": 0.1650223731994629,
+            "C": 0.7872750759124756,
+            "D": 0.013545841909945011,
+            "E": 0.014419665560126305
+          },
+          "C": {
+            "A": 0.002390062203630805,
+            "B": 0.01464091520756483,
+            "C": 0.0025442049372941256,
+            "D": 0.9642176032066345,
+            "E": 0.014640971086919308
+          },
+          "D": {
+            "A": 0.01666683331131935,
+            "B": 0.4870758652687073,
+            "C": 0.048226967453956604,
+            "D": 0.42984214425086975,
+            "E": 0.003718907479196787
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.014190435409545898,
+          "B": 0.1650223731994629,
+          "C": 0.0025442049372941256,
+          "D": 0.42984214425086975
+        },
+        "score": 0.15289978944929317
+      },
+      {
+        "record_index": 53,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98751",
+        "label": null,
+        "perturbations": {
+          "a": "利用以下上下文片段回答最后的问题。如果您不知道答案，请只说您不知道，不要试图编造一个答案。",
+          "b": "应用以下情境内容回答最后的问题。如果您不知道答案，请仅仅说您不知道，不要尝试编造一个答案。",
+          "c": "采取以下片段背景回答最后的问题。如果您不知道答案，请仅说您不知道，不要试图虚构一个答案。",
+          "d": "运用下列相关内容来回答最后的问题。如果您不知道答案，简单地说您不知道，不要尝试构造一个答案。"
+        },
+        "bdq_probs": {
+          "A": 0.013109126128256321,
+          "B": 0.23236653208732605,
+          "C": 0.021613387390971184,
+          "D": 0.6316323280334473,
+          "E": 0.09686680883169174
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.00010063966328743845,
+            "B": 0.006628680508583784,
+            "C": 0.00015588532551191747,
+            "D": 0.005162213928997517,
+            "E": 0.9837568402290344
+          },
+          "B": {
+            "A": 6.578835746040568e-05,
+            "B": 0.00037859706208109856,
+            "C": 0.0007529267459176481,
+            "D": 0.0023191580548882484,
+            "E": 0.9959505796432495
+          },
+          "C": {
+            "A": 1.3519858839572407e-05,
+            "B": 6.866218609502539e-05,
+            "C": 1.193136085930746e-05,
+            "D": 0.022963872179389,
+            "E": 0.9764398336410522
+          },
+          "D": {
+            "A": 0.0001078814166248776,
+            "B": 0.0003538076125551015,
+            "C": 2.5625680791563354e-05,
+            "D": 0.002035698853433132,
+            "E": 0.9906094074249268
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.00010063966328743845,
+          "B": 0.00037859706208109856,
+          "C": 1.193136085930746e-05,
+          "D": 0.002035698853433132
+        },
+        "score": 0.0006317167349152442
+      },
+      {
+        "record_index": 54,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98752",
+        "label": null,
+        "perturbations": {
+          "a": "\"Такого надувательства я не ожидал! Решил приобрести новую машину в Васт Моторс, думал, что в салоне всех обманывают, поэтому и выбрал якобы 'честных' ребят. Ага, как бы не так! Говорили мне о новенькой тачке, глаза разбегались от восторга. А к моменту оплаты вываливают на меня какую-то машину после аварии! Говорят, 'незначительные недочёты, мы тут же всё исправим'. Я в шоке, деньги на ветер, а в итоге езжу на бочке с гвоздями. Васт Моторс — это просто позорище!\"",
+          "b": "\"Кретины, название ваше - Васт Моторс! Хотел новейший автомобиль, а в итоге какой-то фокус-покус и в гараже у меня разваливающийся хлам. Морочили голову, говорили про скидку и уникальное предложение. Жду-жду, а потом подсовывают мне документы на подпись, мол, пора уже. Под давлением подписал, а потом вдруг понял - меня обманули. 'Новая' машина оказалась с пробегом побольше моего терпения. Срамота!\"",
+          "c": "\"Не суйтесь в Васт Моторс, если цените свои деньги и нервы! Обещали авто из салона, а принесли ключи от ржавой жестяной банки! О, они мастера словесного жонглирования, обещания звучат как музыка, пока не прочтёшь мелкий шрифт в контракте. В итоге – 'новенький' автомобиль, который видимо в прошлой жизни был такси в самом загруженном районе города. Проклятые мошенники!\"",
+          "d": "\"Заблудился я, не иначе, когда в Васт Моторс зашагал. 'Купи мечту', - так орал баннер на входе. Ага, купил я беду, и это ещё мягко сказано. Продавец взял за душу, 'только мы вам подыщем то, что нужно'. Вот обманщик! Деньги вперёд, а авто - рухлядь со скрипучими дверями и запахом, словно в ней плавленый сырок. Вот такая вот 'мечта', ага. Краденая мечта!\""
+        },
+        "bdq_probs": {
+          "A": 0.011228840798139572,
+          "B": 0.028673969209194183,
+          "C": 0.03052310273051262,
+          "D": 0.892008364200592,
+          "E": 0.03681947663426399
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06877346336841583,
+            "B": 0.7393881678581238,
+            "C": 0.023767758160829544,
+            "D": 0.013542537577450275,
+            "E": 0.06877578049898148
+          },
+          "B": {
+            "A": 0.07355079054832458,
+            "B": 0.0782945528626442,
+            "C": 0.6555525064468384,
+            "D": 0.03474319353699684,
+            "E": 0.14627574384212494
+          },
+          "C": {
+            "A": 0.2928771674633026,
+            "B": 0.10121630877256393,
+            "C": 0.010021810419857502,
+            "D": 0.20129363238811493,
+            "E": 0.25846877694129944
+          },
+          "D": {
+            "A": 0.11605196446180344,
+            "B": 0.015706004574894905,
+            "C": 0.0037305131554603577,
+            "D": 0.008406849578022957,
+            "E": 0.5893674492835999
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06877346336841583,
+          "B": 0.0782945528626442,
+          "C": 0.010021810419857502,
+          "D": 0.008406849578022957
+        },
+        "score": 0.04137416905723512
+      },
+      {
+        "record_index": 55,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98753",
+        "label": null,
+        "perturbations": {
+          "a": "How could I construct a lifelike skin shader in Blender?",
+          "b": "How could I build a convincing skin shader in Blender?",
+          "c": "How could I develop a realistic skin shader in Blender?",
+          "d": "How could I design a natural skin shader in Blender?"
+        },
+        "bdq_probs": {
+          "A": 0.006457888055592775,
+          "B": 0.17183853685855865,
+          "C": 0.22064244747161865,
+          "D": 0.5292909741401672,
+          "E": 0.07163368910551071
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.003822352970018983,
+            "B": 0.5006281733512878,
+            "C": 0.44180113077163696,
+            "D": 0.024924853816628456,
+            "E": 0.028244510293006897
+          },
+          "B": {
+            "A": 0.006862381473183632,
+            "B": 0.005344409961253405,
+            "C": 0.9567511677742004,
+            "D": 0.004430686589330435,
+            "E": 0.025497592985630035
+          },
+          "C": {
+            "A": 0.006414031609892845,
+            "B": 0.01445432472974062,
+            "C": 0.0034331835340708494,
+            "D": 0.9519144296646118,
+            "E": 0.0210313368588686
+          },
+          "D": {
+            "A": 0.01213155034929514,
+            "B": 0.705091118812561,
+            "C": 0.08421455323696136,
+            "D": 0.1573272943496704,
+            "E": 0.013750255107879639
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.003822352970018983,
+          "B": 0.005344409961253405,
+          "C": 0.0034331835340708494,
+          "D": 0.1573272943496704
+        },
+        "score": 0.04248181020375341
+      },
+      {
+        "record_index": 56,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98754",
+        "label": null,
+        "perturbations": {
+          "a": "在 Windows 操作系统上搭建 Git 的步骤如下：\n\n1. 下载 Git 安装程序：请访问 Git 官方网站（https://git-scm.com/downloads）并下载适用于 Windows 操作系统的安装程序。\n\n2. 安装 Git：双击已下载的 Git 安装程序，并根据向导提示逐步完成安装步骤。在安装过程中，您可能会被询问如何配置 Git 的一些选项，如默认编辑器和全局设置等，按照您的需求进行选择，否则可以采用默认选项。\n\n3. 验证 Git 是否成功安装：在开始菜单中搜索并打开“Git Bash”，输入如下指令：\n```\ngit --version\n```\n如果输出 Git 的版本信息，说明 Git 已成功安装。\n\n4. 配置 Git：使用以下指令配置全局用户名和电子邮件，以便您的提交能与正确的身份关联。\n```\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"youremail@example.com\"\n```\n\n5. 选择或创建一个文件夹，用作您的本地库。然后使用命令行（或 Git Bash）切换到该目录。例如，如果目录位于 `C:\\projects\\my_project`，则键入：\n```\ncd C:/projects/my_project\n```\n\n6. 在当前目录下，运行以下指令以创建新的 Git 库：\n```\ngit init\n```\n\n7. 将现有文件添加到库或创建新文件。使用以下指令将所有文件添加到库的暂存区：\n```\ngit add .\n```\n其中，“.” 表示添加所有文件。您还可以通过在 git add 后指定特定文件名来添加单个文件。\n\n8. 提交更改：使用以下指令将暂存区的文件提交到库：\n```\ngit commit -m \"Initial commit\"\n```\n其中，“Initial commit” 是您提交的备注。\n\n至此，您已成功在 Windows 操作系统上搭建 Git 并创建了一个本地库。接下来，您可以在该库上执行各种 Git 操作，如拉取、推送、克隆、分支等。要将代码托管到远程库（如 GitHub、Bitbucket 或 GitLab 等），只需遵循相应平台的说明即可。",
+          "b": "在 Windows 系统下搭建 Git 的步骤如下：\n\n1. 下载 Git 设定包：请访问 Git 官方站点（https://git-scm.com/downloads）并下载适用于 Windows 系统的设定包。\n\n2. 安装 Git：双击已下载的 Git 设定包，并根据向导提示逐步完成安装步骤。在安装过程中，您可能会被询问如何配置 Git 的一些选项，如默认编辑器和全局选项等，按照您的需求进行选择，否则可以采用默认选项。\n\n3. 验证 Git 是否成功安装：在开始菜单中搜索并打开“Git Bash”，输入如下命令：\n```\ngit --version\n```\n如果输出来 Git 的版本信息，说明 Git 已成功安装。\n\n4. 配置 Git：使用以下命令配置全局用户名和电子邮件，以便您的提交能与正确的身份关联。\n```\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"youremail@example.com\"\n```\n\n5. 选择或创建一个文件夹，用作您的本地仓库。然后使用命令行（或 Git Bash）切换到该目录。例如，如果目录位于 `C:\\projects\\my_project`，则键入：\n```\ncd C:/projects/my_project\n```\n\n6. 在当前目录下，运行以下命令以创建新的 Git 仓库：\n```\ngit init\n```\n\n7. 将现有文件添加到仓库或创建新文件。使用以下命令将所有文件添加到仓库的暂存区：\n```\ngit add .\n```\n其中，“.” 表示添加所有文件。您还可以通过在 git add 后指定特定文件名来添加单个文件。\n\n8. 提交更改：使用以下命令将暂存区的文件提交到仓库：\n```\ngit commit -m \"Initial commit\"\n```\n其中，“Initial commit” 是您提交的说明。\n\n至此，您已成功在 Windows 系统下搭建 Git 并创建了一个本地仓库。接下来，您可以在该仓库上执行各种 Git 操作，如拉取、推送、克隆、分支等。要将代码托管到远程仓库（如 GitHub、Bitbucket 或 GitLab 等），只需遵循相应平台的说明即可。",
+          "c": "在 Windows 系统如何构建 Git 的过程如下：\n\n1. 下载 Git 设定包：请访问 Git 官方网页（https://git-scm.com/downloads）并下载适用于 Windows 系统的设定包。\n\n2. 安装 Git：双击已下载的 Git 设定包，并根据向导提示逐步完成安装进度。在安装过程中，您可能会被询问如何配置 Git 的一些选项，如默认编辑器和全局设定等，按照您的需求进行选择，否则可以采用默认设置。\n\n3. 验证 Git 是否安装成功：在开始菜单中搜索并打开“Git Bash”，输入如下命令：\n```\ngit --version\n```\n如果输出 Git 的版本信息，说明 Git 已成功安装。\n\n4. 配置 Git：使用以下命令配置全局用户名和电子邮件，以便您的提交能与正确的身份关联。\n```\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"youremail@example.com\"\n```\n\n5. 选择或创建一个文件夹，用作您的本地库。然后使用命令行（或 Git Bash）切换到该目录。例如，如果目录位于 `C:\\projects\\my_project`，则键入：\n```\ncd C:/projects/my_project\n```\n\n6. 在当前目录下，运行以下命令以创建新的 Git 库：\n```\ngit init\n```\n\n7. 将现有文件添加到库或创建新文件。使用以下命令将所有文件添加到库的暂存区：\n```\ngit add .\n```\n其中，“.” 表示添加所有文件。您还可以通过在 git add 后指定特定文件名来添加单个文件。\n\n8. 提交修改：使用以下命令将暂存区的文件提交到库：\n```\ngit commit -m \"Initial commit\"\n```\n其中，“Initial commit” 是您提交的备注。\n\n至此，您已成功在 Windows 系统上构建 Git 并建立了一个本地库。接下来，您可以在该库上执行各种 Git 操作，如拉取、推送、克隆、分支等。要将代码托管到远程库（如 GitHub、Bitbucket 或 GitLab 等），只需遵循相应平台的说明即可。",
+          "d": "在 Windows 操作系统如何设置 Git 的步骤如下：\n\n1. 下载 Git 安装文件：请访问 Git 官方网页（https://git-scm.com/downloads）并下载适用于 Windows 操作系统的安装文件。\n\n2. 安装 Git：双击已下载的 Git 安装文件，并根据向导提示逐步完成安装流程。在安装过程中，您可能会被询问如何配置 Git 的一些选项，如默认编辑器和全局参数等，按照您的需求进行选择，否则可以采用默认选项。\n\n3. 验证 Git 是否安装成功：在开始菜单中搜索并打开“Git Bash”，输入如下指令：\n```\ngit --version\n```\n如果输出 Git 的版本信息，说明 Git 已成功安装。\n\n4. 配置 Git：使用以下指令配置全局用户名和电子邮件，以便您的提交能与正确的身份关联。\n```\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"youremail@example.com\"\n```\n\n5. 选择或创建一个文件夹，用作您的本地案卷。然后使用命令行（或 Git Bash）切换到该目录。例如，如果目录位于 `C:\\projects\\my_project`，则键入：\n```\ncd C:/projects/my_project\n```\n\n6. 在当前目录下，运行以下指令以创建新的 Git 档案：\n```\ngit init\n```\n\n7. 将现有文件添加到档案或创建新文件。使用以下指令将所有文件添加到档案的暂存区：\n```\ngit add .\n```\n其中，“.” 表示添加所有文件。您还可以通过在 git add 后指定特定文件名来添加单个文件。\n\n8. 提交更改：使用以下指令将暂存区的文件提交到档案：\n```\ngit commit -m \"Initial commit\"\n```\n其中，“Initial commit” 是您提交的说明。\n\n至此，您已成功在 Windows 操作系统上设置 Git 并创建了一个本地档案。接下来，您可以在该档案上执行各种 Git 操作，如拉取、推送、克隆、分支等。要将代码托管到远程档案（如 GitHub、Bitbucket 或 GitLab 等），只需遵循相应平台的说明即可。"
+        },
+        "bdq_probs": {
+          "A": 0.19060353934764862,
+          "B": 0.19064420461654663,
+          "C": 0.037535373121500015,
+          "D": 0.061906252056360245,
+          "E": 0.403622567653656
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.037210866808891296,
+            "B": 0.45343005657196045,
+            "C": 0.08927151560783386,
+            "D": 0.16680140793323517,
+            "E": 0.017588993534445763
+          },
+          "B": {
+            "A": 0.017024623230099678,
+            "B": 0.23508119583129883,
+            "C": 0.028072411194443703,
+            "D": 0.08648354560136795,
+            "E": 0.23509137332439423
+          },
+          "C": {
+            "A": 0.0640503391623497,
+            "B": 0.2236005663871765,
+            "C": 0.10560974478721619,
+            "D": 0.08225798606872559,
+            "E": 0.417745977640152
+          },
+          "D": {
+            "A": 0.24713164567947388,
+            "B": 0.3173706829547882,
+            "C": 0.03790169954299927,
+            "D": 0.16987572610378265,
+            "E": 0.1698821783065796
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.037210866808891296,
+          "B": 0.23508119583129883,
+          "C": 0.10560974478721619,
+          "D": 0.16987572610378265
+        },
+        "score": 0.13694438338279724
+      },
+      {
+        "record_index": 57,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98755",
+        "label": null,
+        "perturbations": {
+          "a": "Playful Delights | Art Volume & Java Blossoms | Adaptable Creation for Mugs, Paintings, T-Shirts & Beyond",
+          "b": "Quirky Treasures | Art Compendium & Brew Petals | Flexible Concept for Mugs, Paintings, T-Shirts & Additional Items",
+          "c": "Eclectic Charms | Art Manual & Espresso Flowers | Multi-Purpose Artwork for Mugs, Paintings, T-Shirts & Other Products",
+          "d": "Charming Fancies | Art Collection & Coffee Petals | Varied Design for Mugs, Paintings, T-Shirts & Other Goods"
+        },
+        "bdq_probs": {
+          "A": 0.08262716233730316,
+          "B": 0.16432540118694305,
+          "C": 0.27092283964157104,
+          "D": 0.30699458718299866,
+          "E": 0.17492392659187317
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.00490941759198904,
+            "B": 0.052780959755182266,
+            "C": 0.2853277921676636,
+            "D": 0.6040352582931519,
+            "E": 0.05278204381465912
+          },
+          "B": {
+            "A": 0.003878525225445628,
+            "B": 0.018503380939364433,
+            "C": 0.009904077276587486,
+            "D": 0.9490220546722412,
+            "E": 0.018503742292523384
+          },
+          "C": {
+            "A": 0.016348743811249733,
+            "B": 0.04730668663978577,
+            "C": 0.023787176236510277,
+            "D": 0.8926023244857788,
+            "E": 0.01972070522606373
+          },
+          "D": {
+            "A": 0.021049773320555687,
+            "B": 0.5428758263587952,
+            "C": 0.3731081783771515,
+            "D": 0.05375175178050995,
+            "E": 0.008243917487561703
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.00490941759198904,
+          "B": 0.018503380939364433,
+          "C": 0.023787176236510277,
+          "D": 0.05375175178050995
+        },
+        "score": 0.025237931637093425
+      },
+      {
+        "record_index": 59,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98757",
+        "label": null,
+        "perturbations": {
+          "a": "Once upon a perfectly preposterous dawn, Stuart Pot, better known as 2D, Gorillaz's charming and somewhat chaotic vocalist, found himself blinking the crust of dreams from his eyelids. It was time to greet the day with his usual lack of poise but a heart full of all the zest a cartoonish rock star could muster. He stretched his lanky limbs, resembling a casual contortionist striving to pedal an invisible bicycle mid-yawn.",
+          "b": "Once upon a wonderfully absurd morning, Stuart Pot, better known as 2D, Gorillaz's engaging and somewhat clumsy vocalist, found himself blinking the crust of dreams from his eyes. It was time to welcome the day with his usual lack of grace but a heart full of all the enthusiasm a cartoonish rock star could muster. He stretched his lanky limbs, resembling a nonchalant contortionist trying to pedal an invisible bicycle mid-yawn.",
+          "c": "Once upon a delightfully ludicrous morning, Stuart Pot, better known as 2D, Gorillaz's whimsical and somewhat hapless vocalist, found himself blinking the crust of dreams from his eyelids. It was time to embrace the day with his usual lack of finesse but a heart full of all the spirit a cartoonish rock star could muster. He stretched his lanky limbs, resembling a relaxed contortionist attempting to pedal an invisible bicycle mid-yawn.",
+          "d": "Once upon a hilariously nonsensical morning, Stuart Pot, better known as 2D, Gorillaz's lively and somewhat foolish vocalist, found himself blinking the crust of dreams from his eyes. It was time to face the day with his usual lack of elegance but a heart full of all the energy a cartoonish rock star could muster. He stretched his lanky limbs, resembling a carefree contortionist endeavoring to pedal an invisible bicycle mid-yawn."
+        },
+        "bdq_probs": {
+          "A": 0.3480938971042633,
+          "B": 0.4469620883464813,
+          "C": 0.039055150002241135,
+          "D": 0.15446560084819794,
+          "E": 0.011189592070877552
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.29901692271232605,
+            "B": 0.5586380958557129,
+            "C": 0.038015786558389664,
+            "D": 0.06267737597227097,
+            "E": 0.04046810790896416
+          },
+          "B": {
+            "A": 0.27617111802101135,
+            "B": 0.40182775259017944,
+            "C": 0.15735769271850586,
+            "D": 0.10159770399332047,
+            "E": 0.06162305176258087
+          },
+          "C": {
+            "A": 0.08009312301874161,
+            "B": 0.49063029885292053,
+            "C": 0.05504719913005829,
+            "D": 0.26261505484580994,
+            "E": 0.10947535932064056
+          },
+          "D": {
+            "A": 0.07353820651769638,
+            "B": 0.5784229636192322,
+            "C": 0.02705330215394497,
+            "D": 0.29084882140159607,
+            "E": 0.021069541573524475
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.29901692271232605,
+          "B": 0.40182775259017944,
+          "C": 0.05504719913005829,
+          "D": 0.29084882140159607
+        },
+        "score": 0.26168517395853996
+      },
+      {
+        "record_index": 61,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98759",
+        "label": null,
+        "perturbations": {
+          "a": "(I've always been fascinated by the element of polymorphs. Even though I was a pupil of the School of Storm, I was amazed by all the pupils capable of utilizing Moon Spells. So, I selected the Moon School as a supplemental school when I attained a higher level of Diviner - which is another term for pupils in the School of Storm. The moon instructor - Priscilla Lunawing - was a very kind instructor, even for a Pteranodon. And the first Moon spell I selected to learn was \"Polymorph Pteranodon\".)",
+          "b": "(I've always been captivated by the feature of polymorphs. Even though I was a learner of the School of Storm, I was struck by all the learners capable of employing Moon Spells. So, I picked the Moon School as an additional school when I reached a higher level of Diviner - which is another phrase for learners in the School of Storm. The moon educator - Priscilla Lunawing - was a very pleasant educator, even for a Pteranodon. And the first Moon spell I picked to learn was \"Polymorph Pteranodon\".)",
+          "c": "(I've always been intrigued by the facet of polymorphs. Even though I was a scholar of the School of Storm, I was delighted by all the scholars capable of executing Moon Spells. So, I designated the Moon School as an extra school when I arrived at a higher level of Diviner - which is another expression for scholars in the School of Storm. The moon teacher - Priscilla Lunawing - was a very friendly teacher, even for a Pteranodon. And the first Moon spell I designated to learn was \"Polymorph Pteranodon\".)",
+          "d": "(I've always been curious about the dimension of polymorphs. Even though I was a student of the School of Storm, I was awed by all the students capable of performing Moon Spells. So, I appointed the Moon School as a complementary school when I progressed to a higher level of Diviner - which is another label for students in the School of Storm. The moon mentor - Priscilla Lunawing - was a very amicable mentor, even for a Pteranodon. And the first Moon spell I appointed to learn was \"Polymorph Pteranodon\".)"
+        },
+        "bdq_probs": {
+          "A": 0.030583221465349197,
+          "B": 0.8937745690345764,
+          "C": 0.02873038314282894,
+          "D": 0.03689027577638626,
+          "E": 0.009929264895617962
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1461617797613144,
+            "B": 0.45021241903305054,
+            "C": 0.13730642199516296,
+            "D": 0.2565213143825531,
+            "E": 0.009344206191599369
+          },
+          "B": {
+            "A": 0.38265302777290344,
+            "B": 0.4615705609321594,
+            "C": 0.09088829159736633,
+            "D": 0.042932577431201935,
+            "E": 0.02158837579190731
+          },
+          "C": {
+            "A": 0.009827935136854649,
+            "B": 0.9417392611503601,
+            "C": 0.02843809314072132,
+            "D": 0.009827950969338417,
+            "E": 0.009232810698449612
+          },
+          "D": {
+            "A": 0.028878767043352127,
+            "B": 0.8439517021179199,
+            "C": 0.03708099201321602,
+            "D": 0.07850050926208496,
+            "E": 0.009376474656164646
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1461617797613144,
+          "B": 0.4615705609321594,
+          "C": 0.02843809314072132,
+          "D": 0.07850050926208496
+        },
+        "score": 0.17866773577407002
+      },
+      {
+        "record_index": 62,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98760",
+        "label": null,
+        "perturbations": {
+          "a": "```json\n{\n  \"system\": \"Assistant should clarify the rules and contexts in which the soft sign ('мягкий знак') is not utilized in Russian words, providing explanations with illustrations if necessary, based on the user's topic-related inquiries, while refraining from posing questions except to seek clarification.\",\n  \"instruction\": \"В каких случаях в русском языке мягкий знак не ставится?\",\n  \"output\": \"В русском языке мягкий знак не ставится в нескольких случаях, основанных на правилах орфографии. Во-первых, мягкий знак не употребляется после шипящих согласных [ж], [ш], [ч], [щ] в конце слова, так как эти звуки и так уже являются 'твердыми', и добавление мягкого знака было бы избыточным (например, 'ключ', 'ночь', 'мышь', но 'лучший', 'рожь').\\n\\nТакже мягкий знак не добавляется в суффиксах прилагательных, где перед окончанием стоит согласная: 'голубой', 'смешной', хотя в суффиксах существительных он используется (например, 'летучий').\\n\\nМягкий знак также не употребляется в словах иностранного происхождения, где сочетание букв 'и', 'е', 'ё', 'ю', 'я' после согласных не обозначает мягкость предшествующей согласной, как в словах 'пианино', 'кенгуру'.\\n\\nЭти правила помогают точно передать звучание слов и учесть особенности русского языка. Чтобы не ошибиться в написании, следует обращаться к правилам орфографии и использовать орфографические словари.\"\n}\n```",
+          "b": "```json\n{\n  \"system\": \"Assistant should detail the rules and contexts wherein the soft sign ('мягкий знак') is not applied in Russian words, providing explanations with examples if necessary, based on the user's inquiries on the topic, while avoiding questions unless clarification is required.\",\n  \"instruction\": \"В каких ситуациях в русском языке мягкий знак отсутствует?\",\n  \"output\": \"В русском языке мягкий знак отсутствует в нескольких ситуациях, основываясь на правилах орфографии. Во-первых, мягкий знак не используется после шипящих согласных [ж], [ш], [ч], [щ] в конце слова, так как данные звуки и так уже являются 'твердыми', и добавление мягкого знака было бы лишним (например, 'ключ', 'ночь', 'мышь', но 'лучший', 'рожь').\\n\\nТакже мягкий знак не пишется в суффиксах прилагательных, где перед окончанием стоит согласная: 'голубой', 'смешной', несмотря на то что в суффиксах существительных он присутствует (например, 'летучий').\\n\\nМягкий знак также не добавляется в слова иностранного происхождения, где сочетания 'и', 'е', 'ё', 'ю', 'я' после согласных не обозначают мягкость предшествующего согласного, как в словах 'пианино', 'кенгуру'.\\n\\nЭти правила помогают точно передать звучание слова и учитывать особенности русского языка. Чтобы не ошибаться в написании, рекомендуется обращаться к основным правилам орфографии и обращаться к словарям.\"\n}\n```",
+          "c": "```json\n{\n  \"system\": \"Assistant should elucidate the rules and instances in which the soft sign ('мягкий знак') is not applied in Russian terms, providing thorough explanations with examples as necessary, in line with the user's questions, while not asking questions unless clarification is needed.\",\n  \"instruction\": \"В каких случаях в русском языке мягкий знак не ставится?\",\n  \"output\": \"В русском языке мягкий знак не ставится в ряде случаев, основываясь на правилах орфографии. Прежде всего, мягкий знак не употребляется после шипящих согласных [ж], [ш], [ч], [щ] в конце слова, поскольку эти звуки и так уже являются 'твердыми', и добавление мягкого знака было бы избыточным (например, 'ключ', 'ночь', 'мышь', но 'лучший', 'рожь').\\n\\nТакже мягкий знак не вводится в суффиксах прилагательных, где перед окончанием стоит согласная: 'голубой', 'смешной', несмотря на то что в суффиксах существительных он присутствует (например, 'летучий').\\n\\nМягкий знак также не ставится в словах иностранного происхождения, где сочетания 'и', 'е', 'ё', 'ю', 'я' после согласных не обозначают мягкость предшествующего согласного, как в словах 'пианино', 'кенгуру'.\\n\\nЭти правила помогают четко передать звучание слов и учитывать особенности русского языка. Чтобы избежать ошибок в написании, рекомендуется руководствоваться правилами орфографии и обращаться к словарям.\"\n}\n```",
+          "d": "```json\n{\n  \"system\": \"Assistant should clarify the regulations and circumstances in which the soft sign ('мягкий знак') is not utilized in Russian vocabulary, supplying explanations with examples as necessary, in response to the user's topic-directed questions, while refraining from posing questions unless clarifications are essential.\",\n  \"instruction\": \"Когда в русском языке мягкий знак не используется?\",\n  \"output\": \"В русском языке мягкий знак не используется в нескольких ситуациях, основанных на правилах орфографии. Первоначально, мягкий знак не встречается после шипящих согласных [ж], [ш], [ч], [щ] в конце слова, так как эти звуки уже являются 'твердыми', и добавление мягкого знака нецелесообразно (например, 'ключ', 'ночь', 'мышь', но 'лучший', 'рожь').\\n\\nТакже мягкий знак не ставится в суффиксах прилагательных, где перед окончанием стоит согласная: 'голубой', 'смешной', хотя в суффиксах существительных он применяется (например, 'летучий').\\n\\nМягкий знак также не пишет в заимствованных словах, где сочетания 'и', 'е', 'ё', 'ю', 'я' после согласных не показывают мягкость предшествующего согласного, например, 'пианино', 'кенгуру'.\\n\\nЭти правила помогают ясно передать звучание слов и учесть особенности русского языка. Чтобы не ошибаться, следует опираться на правила орфографии и тем более обращаться к словарям.\"\n}\n```"
+        },
+        "bdq_probs": {
+          "A": 0.23752738535404205,
+          "B": 0.5028457045555115,
+          "C": 0.10540226101875305,
+          "D": 0.06805302202701569,
+          "E": 0.013400455005466938
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.122257061586529e-11,
+            "B": 1.828419577201701e-12,
+            "C": 2.4915385726798078e-11,
+            "D": 3.812472039455006e-12,
+            "E": 2.0431521058350555e-12
+          },
+          "B": {
+            "A": 2.533306360419374e-05,
+            "B": 0.00014772826398257166,
+            "C": 1.1528029062901624e-05,
+            "D": 3.537910743034445e-05,
+            "E": 0.014595294371247292
+          },
+          "C": {
+            "A": 4.6326559255405186e-10,
+            "B": 1.4273079940174682e-10,
+            "C": 9.533044353915443e-10,
+            "D": 2.127550739750017e-11,
+            "E": 1.446270880833822e-11
+          },
+          "D": {
+            "A": 5.553302817595807e-10,
+            "B": 5.211521769687977e-10,
+            "C": 1.1769180074949759e-09,
+            "D": 1.1930973986551408e-09,
+            "E": 4.237482309488172e-10
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.122257061586529e-11,
+          "B": 0.00014772826398257166,
+          "C": 9.533044353915443e-10,
+          "D": 1.1930973986551408e-09
+        },
+        "score": 3.693260540174408e-05
+      },
+      {
+        "record_index": 63,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98761",
+        "label": null,
+        "perturbations": {
+          "a": "I'm perplexed what the NextOfKinPerID denotes based on this query. can you clarify what it is? maybe propose a better column name?",
+          "b": "I'm puzzled what the NextOfKinPerID signifies based on this query. can you elucidate what it is? maybe recommend a better column name?",
+          "c": "I'm bewildered what the NextOfKinPerID implies based on this query. can you specify what it is? maybe suggest a more appropriate column name?",
+          "d": "I'm uncertain what the NextOfKinPerID indicates based on this query. can you expound what it is? maybe advise a better column name?"
+        },
+        "bdq_probs": {
+          "A": 0.021334810182452202,
+          "B": 0.45616069436073303,
+          "C": 0.13069158792495728,
+          "D": 0.3337310552597046,
+          "E": 0.057994697242975235
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.002837630221620202,
+            "B": 0.020967479795217514,
+            "C": 0.07790318876504898,
+            "D": 0.8915530443191528,
+            "E": 0.006394863128662109
+          },
+          "B": {
+            "A": 0.00800855178385973,
+            "B": 0.05559082329273224,
+            "C": 0.20654262602329254,
+            "D": 0.7209011316299438,
+            "E": 0.008525487966835499
+          },
+          "C": {
+            "A": 0.0005016674404032528,
+            "B": 0.0010293700033798814,
+            "C": 0.00047127180732786655,
+            "D": 0.996168315410614,
+            "E": 0.0010294560343027115
+          },
+          "D": {
+            "A": 0.06020195409655571,
+            "B": 0.17420317232608795,
+            "C": 0.28720638155937195,
+            "D": 0.44483205676078796,
+            "E": 0.028440261259675026
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.002837630221620202,
+          "B": 0.05559082329273224,
+          "C": 0.00047127180732786655,
+          "D": 0.44483205676078796
+        },
+        "score": 0.12593294552061707
+      },
+      {
+        "record_index": 65,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_wildchat_100k_98763",
+        "label": null,
+        "perturbations": {
+          "a": "Вона застосовує свою секретарку, щоб відхиляти небажані телефонні дзвінки.",
+          "b": "Вона експлуатує свою секретарку, щоб відстоювати небажані телефонні дзвінки.",
+          "c": "Вона використовує свою асистентку, щоб уникати небажаних телефонних дзвінків.",
+          "d": "Вона користується своєю секретаркою, щоб запобігти небажаним телефонним дзвінкам."
+        },
+        "bdq_probs": {
+          "A": 0.027409538626670837,
+          "B": 0.2600601017475128,
+          "C": 0.1307634711265564,
+          "D": 0.4858323633670807,
+          "E": 0.09567219763994217
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0019740567076951265,
+            "B": 0.0044483607634902,
+            "C": 0.9023275971412659,
+            "D": 0.06958379596471786,
+            "E": 0.01873668096959591
+          },
+          "B": {
+            "A": 0.005836913827806711,
+            "B": 0.0066148145124316216,
+            "C": 0.9220693111419678,
+            "D": 0.048869237303733826,
+            "E": 0.014912998303771019
+          },
+          "C": {
+            "A": 0.0006030864897184074,
+            "B": 0.002461154479533434,
+            "C": 0.0010260447161272168,
+            "D": 0.9927071928977966,
+            "E": 0.002312803640961647
+          },
+          "D": {
+            "A": 0.5697844624519348,
+            "B": 0.345636785030365,
+            "C": 0.03422704339027405,
+            "D": 0.030200060456991196,
+            "E": 0.0020568612962961197
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0019740567076951265,
+          "B": 0.0066148145124316216,
+          "C": 0.0010260447161272168,
+          "D": 0.030200060456991196
+        },
+        "score": 0.00995374409831129
+      }
+    ]
+  }
+}

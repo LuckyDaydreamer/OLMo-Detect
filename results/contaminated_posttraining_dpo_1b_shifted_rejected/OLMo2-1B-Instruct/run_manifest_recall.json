@@ -1,0 +1,31 @@
+{
+  "created_at_utc": "2026-05-01T20:59:11.822854+00:00",
+  "config": {
+    "data_paths": [
+      "benchmark/posttraining/dpo/contaminated/shifted/test/contaminated_posttraining_dpo_1b_shifted_rejected_test.jsonl"
+    ],
+    "model_path": "olmo_models/OLMo2-1B-Instruct",
+    "method_names": [
+      "recall"
+    ],
+    "output_dir": "results",
+    "seed": 42,
+    "max_tokens": 1024,
+    "batch_size": 1,
+    "uncon_dev_path": "benchmark/posttraining/dpo/uncontaminated/dev/uncontaminated_posttraining_dpo_1b_rejected_dev.jsonl"
+  },
+  "model_name": "OLMo2-1B-Instruct",
+  "dataset_name": "contaminated_posttraining_dpo_1b_shifted_rejected_test",
+  "dataset_path": "benchmark/posttraining/dpo/contaminated/shifted/test/contaminated_posttraining_dpo_1b_shifted_rejected_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "results": [
+    {
+      "dataset_name": "contaminated_posttraining_dpo_1b_shifted_rejected_test",
+      "dataset_path": "benchmark/posttraining/dpo/contaminated/shifted/test/contaminated_posttraining_dpo_1b_shifted_rejected_test.jsonl",
+      "dataset_data_type": "paragraph",
+      "method_name": "recall",
+      "output_path": "results/contaminated_posttraining_dpo_1b_shifted_rejected_test/OLMo2-1B-Instruct/recall.json",
+      "elapsed_seconds": 14.727661371231079
+    }
+  ]
+}

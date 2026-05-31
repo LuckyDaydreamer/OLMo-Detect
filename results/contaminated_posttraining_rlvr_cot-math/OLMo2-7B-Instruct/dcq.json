@@ -1,0 +1,39 @@
+{
+  "model_name": "OLMo2-7B-Instruct",
+  "model_path": "olmo_models/OLMo2-7B-Instruct",
+  "dataset_name": "contaminated_posttraining_rlvr_cot-math",
+  "dataset_path": "benchmark/posttraining/rlvr/contaminated/test/contaminated_posttraining_rlvr_cot-math_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 27.003260135650635,
+  "result": {
+    "method": "dcq",
+    "dataset": "contaminated_posttraining_rlvr_cot-math",
+    "dataset_path": "benchmark/posttraining/rlvr/contaminated/test/contaminated_posttraining_rlvr_cot-math_test.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "mean_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.026825498882681133,
+      "B": 0.22394465953111647,
+      "C": 0.21173544188961388,
+      "D": 0.33850185208022593
+    },
+    "non_preferred": [
+      "A"
+    ],
+    "num_total_records": 0,
+    "num_scored_records": 0,
+    "summary": {
+      "mean_score": 0.03949694292398938
+    },
+    "samples": []
+  }
+}

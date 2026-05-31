@@ -1,0 +1,3835 @@
+{
+  "model_name": "OLMo2-13B-Instruct",
+  "model_path": "olmo_models/OLMo2-13B-Instruct",
+  "dataset_name": "uncontaminated_posttraining_dpo_13b_rejected_test",
+  "dataset_path": "benchmark/posttraining/dpo/uncontaminated/test/uncontaminated_posttraining_dpo_13b_rejected_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 93.73388338088989,
+  "result": {
+    "method": "dcq",
+    "dataset": "uncontaminated_posttraining_dpo_13b_rejected_test",
+    "dataset_path": "benchmark/posttraining/dpo/uncontaminated/test/uncontaminated_posttraining_dpo_13b_rejected_test.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "min_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.17660445379824644,
+      "B": 0.308899464868551,
+      "C": 0.2020127202478847,
+      "D": 0.2367891908717771
+    },
+    "non_preferred": [
+      "A"
+    ],
+    "num_total_records": 99,
+    "num_scored_records": 69,
+    "summary": {
+      "mean_score": 0.08062798582797175
+    },
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "sample_0",
+        "label": null,
+        "perturbations": {
+          "a": "100万字の恋愛小説を創作することは、あくまでも一つの目標です。実際には、多くの要素が焦点になることでしょう。ここでは、戦略的なアプローチとして、いくつかの指針を提供します。",
+          "b": "100万字の恋愛小説を書くことは、あくまでも一つの目標です。実際には、多くの要素が焦点になることでしょう。ここでは、戦略的なアプローチとして、いくつかの方針を提供します。",
+          "c": "100万字の恋愛小説を作り出すことは、あくまでも一つの目標です。実際には、多くの要素が焦点になることでしょう。ここでは、戦略的なアプローチとして、いくつかのガイドを提供します。",
+          "d": "100万字の恋愛小説を執筆することは、あくまでも一つの目標です。実際には、多くの要素が焦点になることでしょう。ここでは、戦略的なアプローチとして、いくつかの指導を提供します。"
+        },
+        "bdq_probs": {
+          "A": 0.5537483096122742,
+          "B": 0.2872808277606964,
+          "C": 0.03223201632499695,
+          "D": 0.11975646018981934,
+          "E": 0.00697066355496645
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.34339916706085205,
+            "B": 0.44093355536460876,
+            "C": 0.0350804328918457,
+            "D": 0.027320653200149536,
+            "E": 0.15238279104232788
+          },
+          "B": {
+            "A": 0.7029983997344971,
+            "B": 0.2144024670124054,
+            "C": 0.012875869870185852,
+            "D": 0.02993728592991829,
+            "E": 0.039660487323999405
+          },
+          "C": {
+            "A": 0.5665602087974548,
+            "B": 0.3228163719177246,
+            "C": 0.07910960167646408,
+            "D": 0.017108645290136337,
+            "E": 0.014183571562170982
+          },
+          "D": {
+            "A": 0.285081684589386,
+            "B": 0.532602846622467,
+            "C": 0.17291082441806793,
+            "D": 0.0075971647165715694,
+            "E": 0.0014053403865545988
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.34339916706085205,
+          "B": 0.2144024670124054,
+          "C": 0.07910960167646408,
+          "D": 0.0075971647165715694
+        },
+        "score": 0.0075971647165715694
+      },
+      {
+        "record_index": 1,
+        "sample_id": "sample_1",
+        "label": null,
+        "perturbations": {
+          "a": "\"1+1이 1인 이유\"는 수학에서 숫자 1을 더하기 공식을 사용하여 1을 나타나는 것을 의미한다. 이는 수학의 복소수 배드민턴 정의에 의해서만 가능한데, 복소수의 실수 부분 이외에 음수인 유큰의 제곱에 대한 정의가 추가되어 있다.",
+          "b": "\"1+1이 1인 이유\"는 수학에서 숫자 1을 더하는 공식을 사용하여 1을 의미하는 것을 뜻한다. 이는 수학의 복소수 배드민턴 정의에 의해서만 가능한데, 복소수의 실수 부분 이외에 음수인 유큰의 제곱에 대한 정의가 추가되어 있다.",
+          "c": "\"1+1이 1인 이유\"는 수학에서 숫자 1을 합산 공식을 사용하여 1을 의미하는 것을 의미한다. 이는 수학의 복소수 배드민턴 정의에 의해서만 가능한데, 복소수의 실수 부분 이외에 음수인 유큰의 제곱에 대한 정의가 추가되어 있다.",
+          "d": "\"1+1이 1인 이유\"는 수학에서 숫자 1을 더하기 규칙을 사용하여 1을 나타나는 것을 의미한다. 이는 수학의 복소수 배드민턴 정의에 의해서만 가능한데, 복소수의 실수 부분 이외에 음수인 유큰의 제곱에 대한 정의가 추가되어 있다."
+        },
+        "bdq_probs": {
+          "A": 0.6266265511512756,
+          "B": 0.13981926441192627,
+          "C": 0.027532046660780907,
+          "D": 0.18523041903972626,
+          "E": 0.02078228071331978
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.006657978519797325,
+            "B": 0.013240914791822433,
+            "C": 0.002300938358530402,
+            "D": 0.03381197154521942,
+            "E": 0.9282566905021667
+          },
+          "B": {
+            "A": 0.017108406871557236,
+            "B": 0.03196263685822487,
+            "C": 0.024892538785934448,
+            "D": 0.09248704463243484,
+            "E": 0.8243270516395569
+          },
+          "C": {
+            "A": 0.010395717807114124,
+            "B": 0.013348317705094814,
+            "C": 0.004613060504198074,
+            "D": 0.1153116375207901,
+            "E": 0.8520433306694031
+          },
+          "D": {
+            "A": 4.392864866531454e-05,
+            "B": 3.699021544889547e-05,
+            "C": 6.004090028000064e-05,
+            "D": 0.0003976752341259271,
+            "E": 0.9982045888900757
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.006657978519797325,
+          "B": 0.03196263685822487,
+          "C": 0.004613060504198074,
+          "D": 0.0003976752341259271
+        },
+        "score": 0.0003976752341259271
+      },
+      {
+        "record_index": 2,
+        "sample_id": "sample_2",
+        "label": null,
+        "perturbations": {
+          "a": "开门见亮法",
+          "b": "拐弯抹转法",
+          "c": "三明治技巧",
+          "d": "暗示办法"
+        },
+        "bdq_probs": {
+          "A": 0.029083332046866417,
+          "B": 0.12244526296854019,
+          "C": 0.08415533602237701,
+          "D": 0.7046239376068115,
+          "E": 0.05967511981725693
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.00013732875231653452,
+            "B": 0.00016057999164331704,
+            "C": 0.9517574906349182,
+            "D": 0.00020616393885575235,
+            "E": 2.46276813413715e-05
+          },
+          "B": {
+            "A": 0.00045779370702803135,
+            "B": 0.00020965059229638427,
+            "C": 0.9378872513771057,
+            "D": 0.00045780770597048104,
+            "E": 9.901629528030753e-05
+          },
+          "C": {
+            "A": 0.0007732038502581418,
+            "B": 0.0003029165673069656,
+            "C": 0.9025771617889404,
+            "D": 0.0007732249214313924,
+            "E": 9.831933857640252e-05
+          },
+          "D": {
+            "A": 0.00036310110590420663,
+            "B": 0.00016117797349579632,
+            "C": 0.955166220664978,
+            "D": 0.0004963095998391509,
+            "E": 9.47344015003182e-05
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.00013732875231653452,
+          "B": 0.00020965059229638427,
+          "C": 0.9025771617889404,
+          "D": 0.0004963095998391509
+        },
+        "score": 0.00013732875231653452
+      },
+      {
+        "record_index": 4,
+        "sample_id": "sample_4",
+        "label": null,
+        "perturbations": {
+          "a": "Analyseer twintig recente trends op economisch gebied cultureel gebied.",
+          "b": "Verken twintig nieuwe neigingen op economisch vlak cultureel vlak.",
+          "c": "Onderzoek twintig andere trends op economisch terrein cultureel terrein.",
+          "d": "Evalueer twintig hedendaagse tendensen op economisch domein cultureel domein."
+        },
+        "bdq_probs": {
+          "A": 0.06508265435695648,
+          "B": 0.3410082757472992,
+          "C": 0.1610809862613678,
+          "D": 0.3410083055496216,
+          "E": 0.09178124368190765
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05140162259340286,
+            "B": 0.08743682503700256,
+            "C": 0.012996350415050983,
+            "D": 0.3248671889305115,
+            "E": 0.5031644701957703
+          },
+          "B": {
+            "A": 0.0025304548908025026,
+            "B": 0.01869753934442997,
+            "C": 0.006262930575758219,
+            "D": 0.7468716502189636,
+            "E": 0.20101803541183472
+          },
+          "C": {
+            "A": 0.024924062192440033,
+            "B": 0.10826244950294495,
+            "C": 0.003943510353565216,
+            "D": 0.3778718411922455,
+            "E": 0.3334718346595764
+          },
+          "D": {
+            "A": 0.007605663035064936,
+            "B": 0.03303634375333786,
+            "C": 0.0006242964300327003,
+            "D": 0.12274494767189026,
+            "E": 0.7063542604446411
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05140162259340286,
+          "B": 0.01869753934442997,
+          "C": 0.003943510353565216,
+          "D": 0.12274494767189026
+        },
+        "score": 0.003943510353565216
+      },
+      {
+        "record_index": 5,
+        "sample_id": "sample_5",
+        "label": null,
+        "perturbations": {
+          "a": "This is a formal and grave communication sent from the Terra headquarters of the Federation to Deneb in Cygnus, alerting of a possible Xenomorph uprising and mandating all Federation Warpwarriors to be on high alert. The text includes a summary of the conflict, stating that efforts to mediate with the Xenomorphs have failed. It also mentions the earlier attempt of the Xenomorphs to conquer the Federation through unprovoked assaults, and the guidelines for the Warpwarriors' mission in the Cygnus System. Everything is arranged within an urgent dead line, it is mentioned that Federation engineers and scientists have developed the Skyfox II warp fighter to contain the Xenomorph threat. Overall, the tone is serious, yet underscores the significance of the overall mission.",
+          "b": "This is a formal and critical communication sent from the Terra headquarters of the Federation to Deneb in Cygnus, notifying of a potential Xenomorph uprising and mandating all Federation Warpwarriors to be on high alert. The text includes a summary of the conflict, stating that efforts to engage with the Xenomorphs have failed. It also mentions the prior attempt of the Xenomorphs to conquer the Federation through unprovoked strikes, and the guidelines for the Warpwarriors' mission in the Cygnus System. Everything is positioned within an urgent dead line, it is mentioned that Federation engineers and scientists have developed the Skyfox II warp fighter to contain the Xenomorph threat. Overall, the tone is serious, yet highlights the importance of the overall mission.",
+          "c": "This is a formal and urgent communication sent from the Terra headquarters of the Federation to Deneb in Cygnus, warning of a possible Xenomorph uprising and mandating all Federation Warpwarriors to be on high alert. The text includes a summary of the conflict, stating that efforts to converse with the Xenomorphs have failed. It also mentions the previous effort of the Xenomorphs to conquer the Federation through unprovoked offensives, and the guidelines for the Warpwarriors' mission in the Cygnus System. Everything is organized within an urgent dead line, it is noted that Federation engineers and scientists have developed the Skyfox II warp fighter to contain the Xenomorph threat. Overall, the tone is serious, yet stresses the significance of the overall mission.",
+          "d": "This is a formal and weighty communication sent from the Terra headquarters of the Federation to Deneb in Cygnus, notifying of a likely Xenomorph uprising and mandating all Federation Warpwarriors to be on high alert. The text includes a summary of the conflict, stating that efforts to negotiate with the Xenomorphs have failed. It also mentions the last attempt of the Xenomorphs to conquer the Federation through unprovoked incursions, and the guidelines for the Warpwarriors' assignment in the Cygnus System. Everything is ordered within an urgent dead line, it is stated that Federation engineers and scientists have developed the Skyfox II warp fighter to contain the Xenomorph threat. Overall, the tone is serious, yet emphasizes the importance of the overall mission."
+        },
+        "bdq_probs": {
+          "A": 0.17225776612758636,
+          "B": 0.16695787012577057,
+          "C": 0.46824511885643005,
+          "D": 0.1722577065229416,
+          "E": 0.020254289731383324
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.10294726490974426,
+            "B": 0.15944774448871613,
+            "C": 0.46137890219688416,
+            "D": 0.25479698181152344,
+            "E": 0.020915057510137558
+          },
+          "B": {
+            "A": 0.179960235953331,
+            "B": 0.15881431102752686,
+            "C": 0.5900669693946838,
+            "D": 0.05842452496290207,
+            "E": 0.012635188177227974
+          },
+          "C": {
+            "A": 0.40516233444213867,
+            "B": 0.35755452513694763,
+            "C": 0.17425821721553802,
+            "D": 0.02844686061143875,
+            "E": 0.03431347385048866
+          },
+          "D": {
+            "A": 0.016854945570230484,
+            "B": 0.021642154082655907,
+            "C": 0.9494602680206299,
+            "D": 0.010223030112683773,
+            "E": 0.0016951513243839145
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.10294726490974426,
+          "B": 0.15881431102752686,
+          "C": 0.17425821721553802,
+          "D": 0.010223030112683773
+        },
+        "score": 0.010223030112683773
+      },
+      {
+        "record_index": 7,
+        "sample_id": "sample_7",
+        "label": null,
+        "perturbations": {
+          "a": "bu metni Türkçeye tercüme et",
+          "b": "bu metni Türkçeye çevirmek iste",
+          "c": "bu metni Türkçeye diline çevir",
+          "d": "bu metni Türkçeye ifade et"
+        },
+        "bdq_probs": {
+          "A": 0.18161599338054657,
+          "B": 0.25611940026283264,
+          "C": 0.2561195492744446,
+          "D": 0.20579776167869568,
+          "E": 0.10029787570238113
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.0956061487377156e-05,
+            "B": 1.1479070053610485e-05,
+            "C": 2.088491055474151e-05,
+            "D": 5.1630551752168685e-05,
+            "E": 3.054080025322037e-06
+          },
+          "B": {
+            "A": 1.0983596439473331e-05,
+            "B": 9.857359145826194e-06,
+            "C": 1.9248340322519653e-05,
+            "D": 5.726610470446758e-05,
+            "E": 3.166737315041246e-06
+          },
+          "C": {
+            "A": 9.165817573375534e-06,
+            "B": 8.795075700618327e-06,
+            "C": 1.757007703417912e-05,
+            "D": 5.236217111814767e-05,
+            "E": 2.8141892016719794e-06
+          },
+          "D": {
+            "A": 1.3819027117278893e-05,
+            "B": 1.0272416147927288e-05,
+            "C": 2.4162167392205447e-05,
+            "D": 6.982110789977014e-05,
+            "E": 4.096022621524753e-06
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.0956061487377156e-05,
+          "B": 9.857359145826194e-06,
+          "C": 1.757007703417912e-05,
+          "D": 6.982110789977014e-05
+        },
+        "score": 9.857359145826194e-06
+      },
+      {
+        "record_index": 8,
+        "sample_id": "sample_8",
+        "label": null,
+        "perturbations": {
+          "a": "C# httpwebrequest 中保持活动有什么作用",
+          "b": "C# httpwebrequest 中持续活动有什么作用",
+          "c": "C# httpwebrequest 中保留活动有什么作用",
+          "d": "C# httpwebrequest 中连接保持有什么作用"
+        },
+        "bdq_probs": {
+          "A": 0.07331535965204239,
+          "B": 0.4633671045303345,
+          "C": 0.01973254606127739,
+          "D": 0.40891996026039124,
+          "E": 0.03463171795010567
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.014055028557777405,
+            "B": 0.02795160561800003,
+            "C": 0.08609704673290253,
+            "D": 0.8695510625839233,
+            "E": 0.0022238288074731827
+          },
+          "B": {
+            "A": 0.0034233611077070236,
+            "B": 0.03051023930311203,
+            "C": 0.7868466973304749,
+            "D": 0.17557983100414276,
+            "E": 0.002076622797176242
+          },
+          "C": {
+            "A": 0.13698464632034302,
+            "B": 0.16523456573486328,
+            "C": 0.6139199733734131,
+            "D": 0.07332209497690201,
+            "E": 0.009923629462718964
+          },
+          "D": {
+            "A": 0.012890392914414406,
+            "B": 0.013720689341425896,
+            "C": 0.749127984046936,
+            "D": 0.21463069319725037,
+            "E": 0.007345246151089668
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.014055028557777405,
+          "B": 0.03051023930311203,
+          "C": 0.6139199733734131,
+          "D": 0.21463069319725037
+        },
+        "score": 0.014055028557777405
+      },
+      {
+        "record_index": 11,
+        "sample_id": "sample_11",
+        "label": null,
+        "perturbations": {
+          "a": "Rédige un article journalistique décrivant pourquoi l'héritage de Hogwart sera le jeu de l'année 2023.",
+          "b": "Compose un article journalistique décrivant pourquoi l'héritage de Hogwart sera le titre de l'année 2023.",
+          "c": "Produis un article journalistique décrivant pourquoi le legs de Hogwart sera le jeu de l'année 2023.",
+          "d": "Écrit un article journalistique décrivant pourquoi le patrimoine de Hogwart sera le jeu de l'année 2023."
+        },
+        "bdq_probs": {
+          "A": 0.1428864598274231,
+          "B": 0.3219994306564331,
+          "C": 0.19530262053012848,
+          "D": 0.3024905025959015,
+          "E": 0.03727417066693306
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.035706888884305954,
+            "B": 0.04443790391087532,
+            "C": 0.2897718548774719,
+            "D": 0.2897719740867615,
+            "E": 0.3387776017189026
+          },
+          "B": {
+            "A": 0.0891801118850708,
+            "B": 0.11814433336257935,
+            "C": 0.3873809576034546,
+            "D": 0.26624277234077454,
+            "E": 0.1381249576807022
+          },
+          "C": {
+            "A": 0.09512428939342499,
+            "B": 0.32180145382881165,
+            "C": 0.08661174029111862,
+            "D": 0.1722477823495865,
+            "E": 0.3218017518520355
+          },
+          "D": {
+            "A": 0.039596568793058395,
+            "B": 0.020542366430163383,
+            "C": 0.14259247481822968,
+            "D": 0.11821383237838745,
+            "E": 0.6593418717384338
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.035706888884305954,
+          "B": 0.11814433336257935,
+          "C": 0.08661174029111862,
+          "D": 0.11821383237838745
+        },
+        "score": 0.035706888884305954
+      },
+      {
+        "record_index": 13,
+        "sample_id": "sample_13",
+        "label": null,
+        "perturbations": {
+          "a": "Provide me complimentary applications that produce midi files or sheet music from an mp3",
+          "b": "Present me no-cost apps that generate midi files or sheet music from an mp3",
+          "c": "Give me gratis applications that create midi files or sheet music from an mp3",
+          "d": "Supply me free-of-charge apps that develop midi files or sheet music from an mp3"
+        },
+        "bdq_probs": {
+          "A": 0.040581896901130676,
+          "B": 0.5779978036880493,
+          "C": 0.23353226482868195,
+          "D": 0.11031273752450943,
+          "E": 0.03753214329481125
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5833903551101685,
+            "B": 0.17792415618896484,
+            "C": 0.03190005570650101,
+            "D": 0.14750434458255768,
+            "E": 0.0542638823390007
+          },
+          "B": {
+            "A": 0.27561017870903015,
+            "B": 0.24322526156902313,
+            "C": 0.3222212791442871,
+            "D": 0.12230133265256882,
+            "E": 0.03291703015565872
+          },
+          "C": {
+            "A": 0.13464468717575073,
+            "B": 0.34382736682891846,
+            "C": 0.07671832293272018,
+            "D": 0.38960734009742737,
+            "E": 0.041064418852329254
+          },
+          "D": {
+            "A": 0.13366581499576569,
+            "B": 0.352163165807724,
+            "C": 0.09478352963924408,
+            "D": 0.29195383191108704,
+            "E": 0.08107294887304306
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5833903551101685,
+          "B": 0.24322526156902313,
+          "C": 0.07671832293272018,
+          "D": 0.29195383191108704
+        },
+        "score": 0.07671832293272018
+      },
+      {
+        "record_index": 14,
+        "sample_id": "sample_14",
+        "label": null,
+        "perturbations": {
+          "a": "Creating an application that utilizes the GPT API involves several steps, from establishing your development environment to executing the API in your application, and lastly, launching your application. Below is a high-level guide to assist you through the procedure.",
+          "b": "Developing an application that employs the GPT API entails several steps, from configuring your development environment to applying the API in your application, and ultimately, releasing your application. Below is a high-level guide to support you through the procedure.",
+          "c": "Formulating an application that harnesses the GPT API requires several steps, from arranging your development environment to employing the API in your application, and finally, distributing your application. Below is a high-level guide to guide you through the process.",
+          "d": "Constructing an application that leverages the GPT API necessitates several steps, from setting up your development environment to integrating the API in your application, and ultimately, deploying your application. Below is a high-level guide to lead you through the procedure."
+        },
+        "bdq_probs": {
+          "A": 0.17643876373767853,
+          "B": 0.14627285301685333,
+          "C": 0.032637882977724075,
+          "D": 0.615831732749939,
+          "E": 0.028802834451198578
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2317209392786026,
+            "B": 0.29753562808036804,
+            "C": 0.06236686557531357,
+            "D": 0.29753562808036804,
+            "E": 0.08008066564798355
+          },
+          "B": {
+            "A": 0.0980832651257515,
+            "B": 0.4129459857940674,
+            "C": 0.11114291101694107,
+            "D": 0.34234419465065,
+            "E": 0.033896662294864655
+          },
+          "C": {
+            "A": 0.39258280396461487,
+            "B": 0.09926047921180725,
+            "C": 0.3464531898498535,
+            "D": 0.1314987987279892,
+            "E": 0.02756364643573761
+          },
+          "D": {
+            "A": 0.23745465278625488,
+            "B": 0.15331228077411652,
+            "C": 0.1271003782749176,
+            "D": 0.20310571789741516,
+            "E": 0.2690715491771698
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2317209392786026,
+          "B": 0.4129459857940674,
+          "C": 0.3464531898498535,
+          "D": 0.20310571789741516
+        },
+        "score": 0.20310571789741516
+      },
+      {
+        "record_index": 15,
+        "sample_id": "sample_15",
+        "label": null,
+        "perturbations": {
+          "a": "how do I discover my people where we align interest, beliefs, values and vibe?",
+          "b": "how do I locate my people where we coincide interest, beliefs, values and vibe?",
+          "c": "how do I seek my people where we correspond interest, beliefs, values and vibe?",
+          "d": "how do I uncover my people where we match interest, beliefs, values and vibe?"
+        },
+        "bdq_probs": {
+          "A": 0.11216237396001816,
+          "B": 0.2690635025501251,
+          "C": 0.05466355010867119,
+          "D": 0.27760443091392517,
+          "E": 0.28641676902770996
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.321942001581192,
+            "B": 0.07889524102210999,
+            "C": 0.10130353271961212,
+            "D": 0.4832921624183655,
+            "E": 0.014367900788784027
+          },
+          "B": {
+            "A": 0.09190971404314041,
+            "B": 0.528903603553772,
+            "C": 0.03176313266158104,
+            "D": 0.3207961320877075,
+            "E": 0.026332566514611244
+          },
+          "C": {
+            "A": 0.05563816800713539,
+            "B": 0.24935266375541687,
+            "C": 0.6367448568344116,
+            "D": 0.027976570650935173,
+            "E": 0.02978096529841423
+          },
+          "D": {
+            "A": 0.07558958977460861,
+            "B": 0.18708564341068268,
+            "C": 0.06882494688034058,
+            "D": 0.26383331418037415,
+            "E": 0.3495223820209503
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.321942001581192,
+          "B": 0.528903603553772,
+          "C": 0.6367448568344116,
+          "D": 0.26383331418037415
+        },
+        "score": 0.26383331418037415
+      },
+      {
+        "record_index": 16,
+        "sample_id": "sample_16",
+        "label": null,
+        "perturbations": {
+          "a": "how I can link Autocad with ChatGPT and make ChatGPT illustrate using C#?",
+          "b": "how I can connect Autocad with ChatGPT and make ChatGPT sketch using C#?",
+          "c": "how I can associate Autocad with ChatGPT and make ChatGPT render using C#?",
+          "d": "how I can join Autocad with ChatGPT and make ChatGPT compose using C#?"
+        },
+        "bdq_probs": {
+          "A": 0.03923327475786209,
+          "B": 0.7288002371788025,
+          "C": 0.05798298493027687,
+          "D": 0.0721609815955162,
+          "E": 0.10176338255405426
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.18211323022842407,
+            "B": 0.15576976537704468,
+            "C": 0.08081227540969849,
+            "D": 0.13746632635593414,
+            "E": 0.4368671476840973
+          },
+          "B": {
+            "A": 0.04902489855885506,
+            "B": 0.22668884694576263,
+            "C": 0.27343884110450745,
+            "D": 0.13749369978904724,
+            "E": 0.3098470866680145
+          },
+          "C": {
+            "A": 0.008217593654990196,
+            "B": 0.2637566924095154,
+            "C": 0.05358541011810303,
+            "D": 0.11344024538993835,
+            "E": 0.5583727955818176
+          },
+          "D": {
+            "A": 0.003978479653596878,
+            "B": 0.06031918153166771,
+            "C": 0.02594292163848877,
+            "D": 0.26201432943344116,
+            "E": 0.6285401582717896
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.18211323022842407,
+          "B": 0.22668884694576263,
+          "C": 0.05358541011810303,
+          "D": 0.26201432943344116
+        },
+        "score": 0.05358541011810303
+      },
+      {
+        "record_index": 17,
+        "sample_id": "sample_17",
+        "label": null,
+        "perturbations": {
+          "a": "The duration of a house can change depending on numerous factors such as the caliber of construction materials, the climate and weather conditions, the degree of upkeep, and the age of the house. A well-preserved and high-quality house can last for several decades, while poorly preserved or poorly constructed houses may necessitate replacement in a few decades.",
+          "b": "The life span of a house can fluctuate depending on various factors such as the standard of construction materials, the climate and weather conditions, the extent of maintenance, and the age of the house. A well-cared-for and high-quality house can last for several decades, while inadequately maintained or poorly built houses may need replacement in a few decades.",
+          "c": "The lifetime of a house can differ depending on several factors such as the grade of construction materials, the climate and weather conditions, the level of preservation, and the age of the house. A well-attended and high-quality house can last for several decades, while poorly attended or poorly designed houses may demand replacement in a few decades.",
+          "d": "The existence of a house can shift depending on countless factors such as the quality of construction materials, the climate and weather conditions, the level of preservation, and the age of the house. A carefully maintained and high-quality house can last for several decades, while inadequately maintained or poorly assembled houses may require replacement in a few decades."
+        },
+        "bdq_probs": {
+          "A": 0.0744917020201683,
+          "B": 0.3444456458091736,
+          "C": 0.34444594383239746,
+          "D": 0.215548574924469,
+          "E": 0.021011343225836754
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.14639157056808472,
+            "B": 0.1105022132396698,
+            "C": 0.5109573006629944,
+            "D": 0.2267361581325531,
+            "E": 0.004855126142501831
+          },
+          "B": {
+            "A": 0.2755700945854187,
+            "B": 0.22845597565174103,
+            "C": 0.22142747044563293,
+            "D": 0.26709213852882385,
+            "E": 0.006686510518193245
+          },
+          "C": {
+            "A": 0.13238683342933655,
+            "B": 0.786017656326294,
+            "C": 0.05184353515505791,
+            "D": 0.0237356536090374,
+            "E": 0.00467383349314332
+          },
+          "D": {
+            "A": 0.06187387555837631,
+            "B": 0.1630162000656128,
+            "C": 0.7305887341499329,
+            "D": 0.02745639905333519,
+            "E": 0.012969514355063438
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.14639157056808472,
+          "B": 0.22845597565174103,
+          "C": 0.05184353515505791,
+          "D": 0.02745639905333519
+        },
+        "score": 0.02745639905333519
+      },
+      {
+        "record_index": 18,
+        "sample_id": "sample_18",
+        "label": null,
+        "perturbations": {
+          "a": "IaaS、PaaS、SaaS 是云计算服务的三大主要种类，分别代表 Infrastructure as a Service（基础设施作为服务）、Platform as a Service（平台作为服务）和 Software as a Service（软件作为服务）。它们提供不同的服务层次，满足不同用户需求：",
+          "b": "IaaS、PaaS、SaaS 是云计算服务的三大主要类别，分别代表 Infrastructure as a Service（基础设施即作为服务）、Platform as a Service（平台即作为服务）和 Software as a Service（软件即作为服务）。它们提供不同的服务水平，满足不同用户需求：",
+          "c": "IaaS、PaaS、SaaS 是云计算服务的三大主要类型，分别表示 Infrastructure as a Service（基础设施作为一项服务）、Platform as a Service（平台作为一项服务）和 Software as a Service（软件作为一项服务）。它们提供不同的服务形式，满足不同用户需求：",
+          "d": "IaaS、PaaS、SaaS 是云计算服务的三大主要种类，分别表示 Infrastructure as a Service（基础设施作为一项服务）、Platform as a Service（平台作为一项服务）和 Software as a Service（软件作为一项服务）。它们提供不同的服务标准，满足不同用户需求："
+        },
+        "bdq_probs": {
+          "A": 0.7011994123458862,
+          "B": 0.1665494740009308,
+          "C": 0.10753241926431656,
+          "D": 0.021846534684300423,
+          "E": 0.0028656423091888428
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1207350417971611,
+            "B": 0.508314311504364,
+            "C": 0.3281918466091156,
+            "D": 0.03459128364920616,
+            "E": 0.0038810879923403263
+          },
+          "B": {
+            "A": 0.24011105298995972,
+            "B": 0.2720816731452942,
+            "C": 0.4775177836418152,
+            "D": 0.0046814377419650555,
+            "E": 0.0029295706190168858
+          },
+          "C": {
+            "A": 0.3346889913082123,
+            "B": 0.24486392736434937,
+            "C": 0.2606562376022339,
+            "D": 0.15809611976146698,
+            "E": 0.0004877069150097668
+          },
+          "D": {
+            "A": 0.3520107567310333,
+            "B": 0.22727574408054352,
+            "C": 0.33068451285362244,
+            "D": 0.06931516528129578,
+            "E": 0.0013943392550572753
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1207350417971611,
+          "B": 0.2720816731452942,
+          "C": 0.2606562376022339,
+          "D": 0.06931516528129578
+        },
+        "score": 0.06931516528129578
+      },
+      {
+        "record_index": 19,
+        "sample_id": "sample_19",
+        "label": null,
+        "perturbations": {
+          "a": "I enrolled in a psychology concentration this year, but, the early and inconsistent weekly timetable and antisocial character of the course, namely how the timetable doesn't seem to provide sufficient time to establish a social bond.",
+          "b": "I entered a psychology subject this year, but, the early and irregular weekly plan and unsociable essence of the course, namely how the plan doesn't seem to furnish adequate time to build a social relation.",
+          "c": "I joined a psychology degree this year, but, the early and sporadic weekly agenda and solitary nature of the course, namely how the agenda doesn't seem to grant enough time to cultivate a social link.",
+          "d": "I commenced a psychology field this year, but, the early and erratic weekly schedule and introverted attribute of the course, namely how the schedule doesn't appear to allow ample time to develop a social connection."
+        },
+        "bdq_probs": {
+          "A": 0.061132047325372696,
+          "B": 0.49610403180122375,
+          "C": 0.11420965939760208,
+          "D": 0.31045395135879517,
+          "E": 0.018070591613650322
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010677757672965527,
+            "B": 0.013710477389395237,
+            "C": 0.14286664128303528,
+            "D": 0.822140634059906,
+            "E": 0.008991566486656666
+          },
+          "B": {
+            "A": 0.0587855726480484,
+            "B": 0.2116948515176773,
+            "C": 0.09692102670669556,
+            "D": 0.5937131643295288,
+            "E": 0.037954844534397125
+          },
+          "C": {
+            "A": 0.03840010240674019,
+            "B": 0.5137878060340881,
+            "C": 0.2837408781051636,
+            "D": 0.09211686253547668,
+            "E": 0.06739433109760284
+          },
+          "D": {
+            "A": 0.043774351477622986,
+            "B": 0.30385398864746094,
+            "C": 0.22936278581619263,
+            "D": 0.37815243005752563,
+            "E": 0.0386308953166008
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010677757672965527,
+          "B": 0.2116948515176773,
+          "C": 0.2837408781051636,
+          "D": 0.37815243005752563
+        },
+        "score": 0.010677757672965527
+      },
+      {
+        "record_index": 20,
+        "sample_id": "sample_20",
+        "label": null,
+        "perturbations": {
+          "a": "Title: \"The Haven Corridor\"  \n\nLog-line: In a dramatic Cold War thriller, an undercover agent must race against the clock to traverse the concealed route through East Berlin's ominous underworld in order to flee with his life.  \n\nEpisode Summary:  \n\nThe episode opens with our protagonist, Alex, a talented agent for the West German intelligence agency, Skyline, dressed in a deep red dress and high heels, making her way through the poorly lit passages of a vibrant nightclub in the East Berlin's district of Prenzlauer Berg. She has been dispatched on a mission to collect fraudulent information from one of the club's patrons who is a wealthy man engaged in illicit arms trafficking. As she wades through the crowd to methodically gather the essential details, she inadvertently captivates the attention of another club patron, a member of the East Berlin secret police known as the Stasi. Believing Alex's true identity as a Skyline agent has been uncovered, he strikes up a conversation, hoping to expose her. Alex, instead of succumbing to his charms, manages to free herself from his grip and make her escape unnoticed.  \n\nAs she returns to West Berlin, Alex realizes she must act swiftly if she is to evade the clutches of the Stasi before they can trace her down. She enlists the aid of one of her contacts, a British agent, who informs her of a concealed pathway through East Berlin, specifically a corridor that would lead her past the Berlin Wall and into the West. As they navigate to the hidden entrance of the corridor, the Stasi are close behind. The corridor is a twisting route in the shadows of East Berlin's structures, brimming with perilous obstacles and concealed traps. As they approach the end, the Stasi unleash an intense barrage on the newly fortified corridor, pushing Alex and her contact to the edge of capitulation, but they manage to reach the terminus, and as the corridor fades away, they are liberated, and in the West.  \n\nThe episode concludes with a narration, where Alex ponders the unrelenting nature of the Cold War and how it compelled individuals to risk their lives for the sake of freedom.  \n\nOpening Narration: \"In the Cold War, individuals were pawns in a perilous game of diplomatic chess, where everything was feasible, and where valor was a higher calling. In corridors as in battlegrounds, it was a matter of survival. They sliced through the core of a city, serving as a lifeline between the East and the West. And for those few who dared to traverse them, it was a journey fraught with risk and rewarding emancipation.\"  \n\nClosing Narration: \"And thus unfolds the tale of Alex, a spy who jeopardized everything for the sake of her liberty and the quest for justice. May her courage serve as a testament to the unwavering spirit of those who struggled for freedom in the crucible of a grand conflict.\"",
+          "b": "Title: \"The Refuge Corridor\"  \n\nLog-line: In a gripping Cold War narrative, an undercover operative must dash against time to maneuver the secret pathway through East Berlin's shadowy depths in order to escape with his life.  \n\nEpisode Summary:  \n\nThe episode begins with our protagonist, Alex, a proficient operative for the West German intelligence agency, Skyline, clad in a striking red dress and high heels, navigating through the faintly illuminated corridors of a bustling nightclub in the East Berlin's district of Prenzlauer Berg. She has been tasked with an assignment to retrieve deceptive information from one of the club's patrons who is a wealthy man involved in unlawful weapons trafficking. As she weaves through the crowd to systematically collect the necessary information, she unexpectedly garners the attention of another club patron, a member of the East Berlin secret police known as the Stasi. Convinced Alex's real identity as a Skyline agent has been revealed, he engages her in conversation, attempting to infiltrate her. Alex, instead of yielding to his advances, skillfully evades his scrutiny and secures her escape unnoticed.  \n\nAs she makes her way back to West Berlin, Alex realizes she must move quickly if she is to slip out of the Stasi's grasp before they can pinpoint her location. She seeks the support of one of her allies, a British operative, who reveals a hidden passage through East Berlin, specifically a corridor that would lead her beyond the Berlin Wall and into the West. As they approach the concealed entryway of the corridor, the Stasi are in hot pursuit. The corridor is a twisting route shrouded in the shadows of East Berlin's edifices, filled with perilous barriers and hidden snares. As they reach the end, the Stasi initiate a furious bombardment on the recently fortified corridor, compelling Alex and her associate to the brink of surrender, but they manage to arrive at the conclusion, and as the corridor vaporizes, they are liberated, and in the West.  \n\nThe episode wraps up with a narration, where Alex contemplates the relentless nature of the Cold War and how it drove individuals to stake their lives for freedom.  \n\nOpening Narration: \"In the Cold War, individuals were pieces in a treacherous game of diplomatic chess, where anything was attainable, and where bravery was a higher calling. In corridors as in combat zones, it was a question of survival. They traversed the heart of a city, acting as a lifeline between the East and the West. And for those few who dared to venture down them, it was a journey fraught with hazard and rewarding liberation.\"  \n\nClosing Narration: \"And so unfolds the chronicle of Alex, a spy who risked it all for the sake of her freedom and the pursuit of justice. May her fortitude be the embodiment of the unyielding spirit of those who battled for emancipation in the crucible of a monumental struggle.\"",
+          "c": "Title: \"The Safe Corridor\"  \n\nLog-line: In a tense Cold War thriller, an undercover operative must rush against time to traverse the concealed pathway through East Berlin's dark underbelly in order to escape with his life.  \n\nEpisode Summary:  \n\nThe episode kicks off with our protagonist, Alex, a capable operative for the West German intelligence agency, Skyline, attired in a bold red dress and high heels, making her way through the dimly lit passageways of a vibrant nightclub in the East Berlin's district of Prenzlauer Berg. She has been sent on a mission to gather false information from one of the club's patrons who is a wealthy man engaged in illegal arms dealing. As she navigates the throngs to methodically collect the required details, she unwittingly attracts the interest of another club patron, a member of the East Berlin secret police known as the Stasi. Believing Alex's real identity as a Skyline agent has been exposed, he initiates a conversation, hoping to reveal her. Alex, rather than succumbing to his insinuations, cunningly eludes his scrutiny and makes her escape unnoticed.  \n\nAs she returns to West Berlin, Alex understands she must act promptly if she is to avoid the grip of the Stasi before they can trace her down. She calls on the assistance of one of her connections, a British operative, who reveals a hidden route through East Berlin, specifically a corridor that would guide her past the Berlin Wall and into the West. As they head to the secret entrance of the corridor, the Stasi are rapidly closing in. The corridor is a twisting avenue in the shadows of East Berlin's structures, filled with treacherous barriers and hidden snares. As they near the conclusion, the Stasi launch an intense offensive on the recently fortified corridor, compelling Alex and her companion to the brink of capitulation, yet they manage to reach the endpoint, and as the corridor fades, they are free, and in the West.  \n\nThe episode concludes with a narration, where Alex reflects on the unyielding nature of the Cold War and how it drove people to risk their lives for freedom.  \n\nOpening Narration: \"In the Cold War, people were pawns in a perilous game of diplomatic chess, where everything was conceivable, and where valor was a higher calling. In corridors as in warzones, it was a matter of survival. They pierced through the heart of a city, acting as a lifeline between the East and the West. And for those few who dared to step into them, it was a journey laden with danger and rewarding liberty.\"  \n\nClosing Narration: \"And thus unfolds the saga of Alex, a spy who risked everything for the sake of her freedom and the quest for righteousness. May her bravery serve as a symbol of the unconquerable spirit of those who fought for freedom amidst the crucible of an epic confrontation.\"",
+          "d": "Title: \"The Shelter Corridor\"  \n\nLog-line: In an impactful Cold War narrative, an undercover spy must race against time to navigate the secret passage through East Berlin's treacherous scenery in order to evade capture with his life.  \n\nEpisode Summary:  \n\nThe episode opens with our protagonist, Alex, a resilient spy for the West German intelligence agency, Skyline, adorned in a vivid red dress and high heels, maneuvering through the dimly lit corridors of a lively nightclub in the East Berlin's neighborhood of Prenzlauer Berg. She has been designated to gather counterfeit intelligence from one of the club's patrons who is a wealthy man implicated in illegal firearms trafficking. As she weaves through the crowd to systematically collect the essential intel, she accidentally captures the attention of another club patron, a member of the East Berlin secret police known as the Stasi. Suspecting Alex's genuine identity as a Skyline agent has been uncovered, he engages her in conversation, attempting to expose her. Alex, refusing to yield to his advances, adeptly sidesteps his interest and makes her exit unnoticed.  \n\nAs she returns to West Berlin, Alex quickly realizes she must act without delay if she is to escape the Stasi's clutches before they can discover her whereabouts. She reaches out to one of her contacts, a British operative, who informs her of a concealed corridor through East Berlin, specifically a passage that would allow her to slip past the Berlin Wall and into the West. As they approach the secret entry of the corridor, the Stasi are pursuing close behind. The corridor is a winding route enveloped in the shadows of East Berlin's structures, filled with dangerous challenges and concealed pitfalls. As they draw closer to the end, the Stasi unleash a ferocious onslaught on the newly fortified corridor, driving Alex and her associate to the brink of capitulation, but they manage to arrive at the conclusion, and as the corridor vanishes, they find themselves free, and in the West.  \n\nThe episode wraps up with a narration, where Alex ponders the relentless nature of the Cold War and how it compelled individuals to risk everything for the pursuit of freedom.  \n\nOpening Narration: \"In the Cold War, individuals were pieces in a perilous game of diplomatic chess, where anything was feasible, and where valor was a higher calling. In corridors as in battlegrounds, it was a question of survival. They sliced through the center of a city, acting as a lifeline between the East and the West. And for those few who dared to traverse them, it was a journey fraught with hazard and liberating outcome.\"  \n\nClosing Narration: \"And thus unfolds the journey of Alex, a spy who risked it all for her freedom and the fight for justice. May her courage stand as a testament to the indomitable spirit of those who struggled for liberty in the crucible of a monumental clash.\""
+        },
+        "bdq_probs": {
+          "A": 0.2248091846704483,
+          "B": 0.2886607050895691,
+          "C": 0.21789254248142242,
+          "D": 0.13635365664958954,
+          "E": 0.1321585327386856
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.19186565279960632,
+            "B": 0.09647611528635025,
+            "C": 0.6097478270530701,
+            "D": 0.06426693499088287,
+            "E": 0.03661821037530899
+          },
+          "B": {
+            "A": 0.07315614074468613,
+            "B": 0.13246867060661316,
+            "C": 0.5577139258384705,
+            "D": 0.16485990583896637,
+            "E": 0.07090537250041962
+          },
+          "C": {
+            "A": 0.07721477746963501,
+            "B": 0.19110840559005737,
+            "C": 0.3460526764392853,
+            "D": 0.3250862658023834,
+            "E": 0.05649155378341675
+          },
+          "D": {
+            "A": 0.13649362325668335,
+            "B": 0.22504009306430817,
+            "C": 0.19248701632022858,
+            "D": 0.3596128523349762,
+            "E": 0.06652175635099411
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.19186565279960632,
+          "B": 0.13246867060661316,
+          "C": 0.3460526764392853,
+          "D": 0.3596128523349762
+        },
+        "score": 0.13246867060661316
+      },
+      {
+        "record_index": 22,
+        "sample_id": "sample_22",
+        "label": null,
+        "perturbations": {
+          "a": "Create a tale about young lady named Sherri Carter who operates as baker from Brigham City, Utah. She uncovered a newspaper regarding enigma of reform school named Panorama School for Girls where she attended. She felt astonished and traumatized about the circumstance. She raised by a Mormon family.",
+          "b": "Compose a narrative about young woman named Sherri Carter who functions as baker from Brigham City, Utah. She found a newspaper concerning puzzle of reform school named Panorama School for Girls where she learned. She felt startled and traumatized about the condition. She raised by a Mormon family.",
+          "c": "Craft a story about young woman named Sherri Carter who works as baker from Brigham City, Utah. She discovered a newspaper regarding riddle of reform school named Panorama School for Girls where she trained. She felt shocked and traumatized about the affair. She raised by a Mormon family.",
+          "d": "Devise a tale about young woman named Sherri Carter who serves as baker from Brigham City, Utah. She came across a newspaper about conundrum of reform school named Panorama School for Girls where she studied. She felt astounded and traumatized about the event. She raised by a Mormon family."
+        },
+        "bdq_probs": {
+          "A": 0.2014131247997284,
+          "B": 0.3023567795753479,
+          "C": 0.11476171761751175,
+          "D": 0.21440303325653076,
+          "E": 0.16697731614112854
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.08648917078971863,
+            "B": 0.06735780835151672,
+            "C": 0.2502647042274475,
+            "D": 0.3876174986362457,
+            "E": 0.20747675001621246
+          },
+          "B": {
+            "A": 0.12277038395404816,
+            "B": 0.10834444314241409,
+            "C": 0.39016345143318176,
+            "D": 0.14808931946754456,
+            "E": 0.22936531901359558
+          },
+          "C": {
+            "A": 0.07553457468748093,
+            "B": 0.10652080178260803,
+            "C": 0.11699019372463226,
+            "D": 0.32810717821121216,
+            "E": 0.3717942237854004
+          },
+          "D": {
+            "A": 0.0350603386759758,
+            "B": 0.04229077696800232,
+            "C": 0.17257298529148102,
+            "D": 0.45466935634613037,
+            "E": 0.29355672001838684
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.08648917078971863,
+          "B": 0.10834444314241409,
+          "C": 0.11699019372463226,
+          "D": 0.45466935634613037
+        },
+        "score": 0.08648917078971863
+      },
+      {
+        "record_index": 23,
+        "sample_id": "sample_23",
+        "label": null,
+        "perturbations": {
+          "a": "nodejs 查找文件下文件名为xxx.entry.js的文档，如果符合则输出该文档名",
+          "b": "nodejs 查找文件下文件名为xxx.entry.js的资料，如果符合则输出该资料名",
+          "c": "nodejs 查找文件下文件名为xxx.entry.js的档案，如果符合则输出该档案名",
+          "d": "nodejs 查找文件下文件名为xxx.entry.js的项目，如果符合则输出该项目名"
+        },
+        "bdq_probs": {
+          "A": 0.4201561212539673,
+          "B": 0.3272179067134857,
+          "C": 0.08806950598955154,
+          "D": 0.0937495008111,
+          "E": 0.07076586037874222
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.7364662885665894,
+            "B": 0.15437228977680206,
+            "C": 0.0020685913041234016,
+            "D": 0.034445177763700485,
+            "E": 0.06435224413871765
+          },
+          "B": {
+            "A": 0.3905804753303528,
+            "B": 0.5015162825584412,
+            "C": 0.010408633388578892,
+            "D": 0.036329805850982666,
+            "E": 0.05626882612705231
+          },
+          "C": {
+            "A": 0.2724436819553375,
+            "B": 0.3723880350589752,
+            "C": 0.25593724846839905,
+            "D": 0.032539013773202896,
+            "E": 0.05364809185266495
+          },
+          "D": {
+            "A": 0.10885313153266907,
+            "B": 0.1313023865222931,
+            "C": 0.26112475991249084,
+            "D": 0.4582896828651428,
+            "E": 0.027522945776581764
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.7364662885665894,
+          "B": 0.5015162825584412,
+          "C": 0.25593724846839905,
+          "D": 0.4582896828651428
+        },
+        "score": 0.25593724846839905
+      },
+      {
+        "record_index": 24,
+        "sample_id": "sample_24",
+        "label": null,
+        "perturbations": {
+          "a": "Good evening,  \n\nI hope this day of April 9th finds you in peace as the clock strikes 05:05 pm here. I understand that I've recorded this voice note again as the day unfolds. Waking up at 10 pm was a bit overwhelming when I hadn’t felt quite my best all day, with my stomach demanding some gentle attention. Yet, there's solace in that, isn't there? I managed to have breakfast, though, and turned my thoughts to the Resurrection Sunday, giving my prayers the quiet reverence they deserve. Hoping your moments of solace and reflection have blessed you just as much.\n\nThe day played out with mother reaching Toronto at 3pm, finding that the trains adhered to time as they should. There was a graceful reunion when your father arrived, helping to carry the day’s burdens, along with the luggage. A soft reminder that home and family are constants holding us steady.\n\nI must confess, the employment updates have been quiet again—I’m still in that dance of seeking opportunities. There’s a soft kern of change, feels... different in this journey because there isn't the usual notifications or calls as there once were. It seems like this quiet will settle over us in two months’ time. In this silence, dreams and expectations dance, as we prepare to receive a song from a messenger to lighten our days.\n\nI truly miss you; it's a subtle but lively ache. Could it be you're wrapped up in the thrum of your career commitments? I imagine a whirlwind of engagements from first to last seems like it's a constant ring throughout the day – how exciting, yet how draining, it must be. Please, my dear, remember to nestle into the embrace of rest and care for yourself well.\n\nI'm here, in waiting, in the spaces between your voice notes, just as you are here waiting with me, sending out your heartfelt utterances. Writing you a letter seems almost foreign now, not just because of the disparate tides our hearts sail, but because I sense the presence of you in each word best shared not through ink, but through the simplicity of chat or a shared thought.\n\nAnd so, we'll continue, side by side in all the ways we can. Let's embrace the intricate tapestry of life: with its twists and halts, its serenity and storms. Here's hoping that tomorrow, you thrive amidst the bustling life you lead, and though our paths diverge in these ways, the care and love we share remain our tether, our constant in the enigma of what affection and life may tenderly unfold before us.",
+          "b": "Good evening,  \n\nI hope this day of April 9th finds you in comfort as the clock strikes 05:05 pm here. I understand that I've recorded this voice note once again as the day unfolds. Waking up at 10 pm was a bit overwhelming when I hadn’t felt quite my best all day, with my stomach demanding some quiet attention. Yet, there's peace in that, isn't there? I managed to have breakfast, though, and turned my thoughts to the Resurrection Sunday, giving my prayers the quiet reverence they deserve. Hoping your moments of solace and reflection have blessed you just as much.\n\nThe day played out with mother arriving in Toronto at 3pm, finding that the trains adhered to timetable as they should. There was a graceful reunion when your father arrived, assisting to carry of the day’s burdens, along with the luggage. A soft reminder that home and family are constants holding us steady.\n\nI must confess, the job notices have been quiet again—I’m still in that dance of searching opportunities. There’s a soft kern of change, feels... different in this journey, because there isn't the usual alerts or calls as there once were. It seems like this quiet will settle over us in two months’ time. In this silence, dreams and expectations glide, as we prepare to receive a song from a messenger to lighten our days.\n\nI truly miss you; it's a subtle but lively ache. Could it be you're wrapped up in the thrum of your job responsibilities? I imagine a whirlwind of engagements from first to last seems like it's a constant ring throughout the day – how exciting, yet how draining, it must be. Please, my dear, remember to nestle into the warmth of rest and nurture yourself well.\n\nI'm here, in waiting, in the spaces between your voice notes, just like you are here waiting with me, sending out your heartfelt utterances. Writing you a letter seems almost foreign now, not just because of the disparate tides our hearts sail, but because I sense the essence of you in each word best shared not through ink, but through the simplicity of chat or a shared thought.\n\nAnd so, we'll continue, side by side in all the ways we can. Let's embrace the intricate tapestry of existence: with its twists and halts, its serenity and storms. Here's hoping that tomorrow, you thrive amidst the bustling life you lead, and though our paths diverge in these ways, the care and love we share remain our tether, our constant in the enigma of what love and life may tenderly unfold before us.",
+          "c": "Good evening,  \n\nI hope this day of April 9th finds you in peace as the clock strikes 05:05 pm here. I understand that I've recorded this voice note again as the day unfolds. Waking up at 10 pm was a bit overwhelming when I hadn’t felt quite my best all day, with my stomach demanding some gentle quiet. Yet, there's solace in that, isn't there? I managed to have breakfast, though, and turned my thoughts to the Resurrection Sunday, giving my prayers the quiet reverence they deserve. Hoping your moments of solace and reflection have blessed you just as much.\n\nThe day played out with mother arriving in Toronto at 3pm, discovering that the trains stuck to the schedule as they should. There was a graceful reunion when your father came, assisting to carry of the day’s burdens, along with the suitcases. A soft reminder that home and family are constants holding us steady.\n\nI must confess, the job notifications have been quiet again—I’m still in that dance of seeking opportunities. There’s a soft kern of change, feels... different in this journey because there isn't the usual alerts or calls as there once were. It seems like this quiet will settle over us in two months’ time. In this silence, dreams and expectations swirl, as we prepare to receive a song from a messenger to brighten our days.\n\nI truly miss you; it's a faint but lively ache. Could it be you're wrapped up in the thrum of your work commitments? I imagine a whirlwind of appointments from first to last seems like it's a constant ring throughout the day – how exciting, yet how draining, it must be. Please, my dear, remember to nestle into the embrace of rest and care for yourself well.\n\nI'm here, in waiting, in the spaces between your voice notes, just as you are here waiting with me, sending out your heartfelt utterances. Writing you a letter seems almost alien now, not just because of the disparate tides our hearts sail, but because I sense the essence of you in each word best shared not through ink, but through the simplicity of chat or a shared thought.\n\nAnd so, we'll continue, side by side in all the ways we can. Let's embrace the intricate tapestry of life: with its twists and halts, its serenity and storms. Here's hoping that tomorrow, you thrive amidst the bustling life you lead, and though our paths diverge in these ways, the care and affection we share remain our tether, our constant in the enigma of what love and life may tenderly unfold before us.",
+          "d": "Good evening,  \n\nI hope this day of April 9th finds you in comfort as the clock strikes 05:05 pm here. I understand that I've recorded this voice note again as the day unfolds. Waking up at 10 pm was a bit overwhelming when I hadn’t felt quite my best all day, with my stomach demanding some calm attention. Yet, there's peace in that, isn't there? I managed to have breakfast, though, and turned my thoughts to the Resurrection Sunday, giving my prayers the quiet reverence they deserve. Hoping your moments of solace and reflection have blessed you just as much.\n\nThe day played out with mother arriving in Toronto at 3pm, finding that the trains observed time as they should. There was a graceful reunion when your father came to assist in carrying of the day’s burdens, along with the luggage. A gentle reminder that home and family are constants holding us steady.\n\nI must confess, the job updates have been quiet again—I’m still in that dance of pursuing opportunities. There’s a soft kern of change, feels... different in this journey because there isn't the usual alerts or calls as there once were. It seems like this quiet will settle over us in two months’ time. In this silence, dreams and expectations drift, as we prepare to receive a tune from a messenger to lighten our days.\n\nI truly miss you; it's a subtle but lively ache. Could it be you're wrapped up in the thrum of your career obligations? I imagine a whirlwind of tasks from first to last seems like it's a constant ring throughout the day – how exciting, yet how draining, it must be. Please, my dear, remember to nestle into the embrace of rest and take care of yourself well.\n\nI'm here, in waiting, in the spaces between your voice notes, just like you are here waiting with me, sending out your heartfelt utterances. Writing you a letter seems almost strange now, not just because of the disparate tides our hearts sail, but because I sense the presence of you in each word, best shared not through ink, but through the simplicity of chat or a shared thought.\n\nAnd so, we'll continue, side by side in all the ways we can. Let's embrace the intricate tapestry of life: with its twists and halts, its serenity and storms. Here's hoping that tomorrow, you thrive amidst the bustling life you lead, and though our paths diverge in these ways, the care and love we share remain our tether, our constant in the enigma of what love and life may tenderly unfold before us."
+        },
+        "bdq_probs": {
+          "A": 0.0694427564740181,
+          "B": 0.15649160742759705,
+          "C": 0.15167690813541412,
+          "D": 0.3873204290866852,
+          "E": 0.2349218726158142
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.36320632696151733,
+            "B": 0.36320745944976807,
+            "C": 0.16628876328468323,
+            "D": 0.10085880756378174,
+            "E": 0.005779708735644817
+          },
+          "B": {
+            "A": 0.049480147659778595,
+            "B": 0.2674869894981384,
+            "C": 0.5842456221580505,
+            "D": 0.08959681540727615,
+            "E": 0.008871333673596382
+          },
+          "C": {
+            "A": 0.09111734479665756,
+            "B": 0.2806608974933624,
+            "C": 0.1325749307870865,
+            "D": 0.47741907835006714,
+            "E": 0.016855092719197273
+          },
+          "D": {
+            "A": 0.1111614778637886,
+            "B": 0.3216586709022522,
+            "C": 0.4261268675327301,
+            "D": 0.08932079374790192,
+            "E": 0.021215975284576416
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.36320632696151733,
+          "B": 0.2674869894981384,
+          "C": 0.1325749307870865,
+          "D": 0.08932079374790192
+        },
+        "score": 0.08932079374790192
+      },
+      {
+        "record_index": 25,
+        "sample_id": "sample_25",
+        "label": null,
+        "perturbations": {
+          "a": "Puoi fabbricarmi degli script per dei video su TikTok per Autoscuola Gruppo Furia 1935?",
+          "b": "Puoi prepararmi degli script per dei video su TikTok per Autoscuola Gruppo Furia 1935?",
+          "c": "Puoi realizzarmi degli script per dei video su TikTok per Autoscuola Gruppo Furia 1935?",
+          "d": "Puoi costruirmi degli script per dei video su TikTok per Autoscuola Gruppo Furia 1935?"
+        },
+        "bdq_probs": {
+          "A": 0.10311231017112732,
+          "B": 0.6516889333724976,
+          "C": 0.09686490893363953,
+          "D": 0.10976225882768631,
+          "E": 0.038530219346284866
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.6872648596763611,
+            "B": 0.10539555549621582,
+            "C": 0.04978535324335098,
+            "D": 0.05820492282509804,
+            "E": 0.09901001304388046
+          },
+          "B": {
+            "A": 0.49613580107688904,
+            "B": 0.41144055128097534,
+            "C": 0.039481021463871,
+            "D": 0.017790839076042175,
+            "E": 0.03172128647565842
+          },
+          "C": {
+            "A": 0.23681290447711945,
+            "B": 0.4161044955253601,
+            "C": 0.28590285778045654,
+            "D": 0.034071896225214005,
+            "E": 0.026564162224531174
+          },
+          "D": {
+            "A": 0.20266792178153992,
+            "B": 0.3557375967502594,
+            "C": 0.19053344428539276,
+            "D": 0.21577908098697662,
+            "E": 0.034126993268728256
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.6872648596763611,
+          "B": 0.41144055128097534,
+          "C": 0.28590285778045654,
+          "D": 0.21577908098697662
+        },
+        "score": 0.21577908098697662
+      },
+      {
+        "record_index": 28,
+        "sample_id": "sample_28",
+        "label": null,
+        "perturbations": {
+          "a": "Se proyecta un objeto hacia abajo con una velocidad de 2.8 m/s desde una altitud de 8.9 m. Determine la celeridad inicial con la cual debe lanzarse otro objeto hacia arriba para que ambos colisionen a una altitud de 4.5 m desde el suelo",
+          "b": "Se arroja un objeto hacia abajo con una rapidez de 2.8 m/s desde una elevación de 8.9 m. Determine la velocidad inicial con la cual debe lanzarse otro objeto hacia arriba para que ambos choquen a una altura de 4.5 m desde el suelo",
+          "c": "Se lanza un artefacto hacia abajo con una velocidad de 2.8 m/s desde una altura de 8.9 m. Determine la celeridad inicial con la cual debe lanzarse otro objeto hacia arriba para que ambos colisionen a una altura de 4.5 m desde el suelo",
+          "d": "Se lanza un objeto hacia abajo con una rapidez de 2.8 m/s desde una altura de 8.9 m. Determine la celeridad inicial con la cual debe propulsarse otro objeto hacia arriba para que ambos choquen a una altura de 4.5 m desde el suelo"
+        },
+        "bdq_probs": {
+          "A": 0.13064633309841156,
+          "B": 0.4024185240268707,
+          "C": 0.3900376856327057,
+          "D": 0.0699298307299614,
+          "E": 0.006923995912075043
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0033994182012975216,
+            "B": 0.43153706192970276,
+            "C": 0.022166995331645012,
+            "D": 0.5205333232879639,
+            "E": 0.022166987881064415
+          },
+          "B": {
+            "A": 0.0021965880878269672,
+            "B": 0.004797766450792551,
+            "C": 0.9433154463768005,
+            "D": 0.04144661873579025,
+            "E": 0.007910278625786304
+          },
+          "C": {
+            "A": 0.0013094586320221424,
+            "B": 0.0017345317173749208,
+            "C": 0.0011201591696590185,
+            "D": 0.9868549704551697,
+            "E": 0.002686853753402829
+          },
+          "D": {
+            "A": 0.0030321453232318163,
+            "B": 0.3396764397621155,
+            "C": 0.49423614144325256,
+            "D": 0.1507304608821869,
+            "E": 0.0048453668132424355
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0033994182012975216,
+          "B": 0.004797766450792551,
+          "C": 0.0011201591696590185,
+          "D": 0.1507304608821869
+        },
+        "score": 0.0011201591696590185
+      },
+      {
+        "record_index": 29,
+        "sample_id": "sample_29",
+        "label": null,
+        "perturbations": {
+          "a": "southeastern asia, spooky manor, designed",
+          "b": "southeast region, eerie estate, crafted",
+          "c": "southeastern territory, ghostly residence, styled",
+          "d": "southeast continent, haunted villa, patterned"
+        },
+        "bdq_probs": {
+          "A": 0.0438007153570652,
+          "B": 0.11539936810731888,
+          "C": 0.7293468713760376,
+          "D": 0.06176881119608879,
+          "E": 0.049632757902145386
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0073259626515209675,
+            "B": 0.02187127247452736,
+            "C": 0.054131947457790375,
+            "D": 0.9013777375221252,
+            "E": 0.015031898394227028
+          },
+          "B": {
+            "A": 0.18521767854690552,
+            "B": 0.4584183394908905,
+            "C": 0.11234024912118912,
+            "D": 0.13980963826179504,
+            "E": 0.1022869423031807
+          },
+          "C": {
+            "A": 0.004601587075740099,
+            "B": 0.016314027830958366,
+            "C": 0.9189898371696472,
+            "D": 0.017366189509630203,
+            "E": 0.040377646684646606
+          },
+          "D": {
+            "A": 0.007260194979608059,
+            "B": 0.0185395497828722,
+            "C": 0.04884519800543785,
+            "D": 0.7640677690505981,
+            "E": 0.14582498371601105
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0073259626515209675,
+          "B": 0.4584183394908905,
+          "C": 0.9189898371696472,
+          "D": 0.7640677690505981
+        },
+        "score": 0.0073259626515209675
+      },
+      {
+        "record_index": 30,
+        "sample_id": "sample_30",
+        "label": null,
+        "perturbations": {
+          "a": "The deuteragonist is a vital character in a narrative, often regarded as the second most significant character after the protagonist.",
+          "b": "The deuteragonist is an essential figure in a tale, frequently seen as the second most pivotal character after the protagonist.",
+          "c": "The deuteragonist is an important character in a story, typically viewed as the second most critical figure after the protagonist.",
+          "d": "The deuteragonist is a key character in a plot, commonly acknowledged as the second most fundamental character after the protagonist."
+        },
+        "bdq_probs": {
+          "A": 0.27148932218551636,
+          "B": 0.33787378668785095,
+          "C": 0.15469002723693848,
+          "D": 0.1752866804599762,
+          "E": 0.06057748571038246
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04069202393293381,
+            "B": 0.07602255791425705,
+            "C": 0.7441802024841309,
+            "D": 0.13342411816120148,
+            "E": 0.004156951326876879
+          },
+          "B": {
+            "A": 0.030918706208467484,
+            "B": 0.040960583835840225,
+            "C": 0.49900320172309875,
+            "D": 0.4268200397491455,
+            "E": 0.0016774889081716537
+          },
+          "C": {
+            "A": 0.005188594572246075,
+            "B": 0.015250084921717644,
+            "C": 0.015250254422426224,
+            "D": 0.9583461880683899,
+            "E": 0.0021629310213029385
+          },
+          "D": {
+            "A": 0.05176485329866409,
+            "B": 0.2978861331939697,
+            "C": 0.38249561190605164,
+            "D": 0.2628839313983917,
+            "E": 0.0030605290085077286
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04069202393293381,
+          "B": 0.040960583835840225,
+          "C": 0.015250254422426224,
+          "D": 0.2628839313983917
+        },
+        "score": 0.015250254422426224
+      },
+      {
+        "record_index": 32,
+        "sample_id": "sample_32",
+        "label": null,
+        "perturbations": {
+          "a": "Unaweza kupeana nami telegram kiungo au watsapp kiungo ninayoweza kujiunga na marafiki kutoka mataifa ya nje ya Tanzania hasa bara la ulaya, marekani na asia?",
+          "b": "Unaweza kubadilishana nami telegram kiungo au watsapp kiungo ninazoweza kujiunga na marafiki kutoka nchi za nje ya Tanzania hasa bara la ulaya, marekani na asia?",
+          "c": "Unaweza kutoa nami telegram kiungo au watsapp kiungo ninayoweza kujiunga na marafiki kutoka nchi za nje ya Tanzania hasa bara la ulaya, marekani na asia?",
+          "d": "Unaweza kutuma nami telegram kiungo au watsapp kiungo ninazoweza kujiunga na marafiki kutoka nchi za nje ya Tanzania hasa bara la ulaya, marekani na asia?"
+        },
+        "bdq_probs": {
+          "A": 0.14520961046218872,
+          "B": 0.16976679861545563,
+          "C": 0.5925448536872864,
+          "D": 0.0880737155675888,
+          "E": 0.004384938161820173
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1514958143234253,
+            "B": 0.1295810341835022,
+            "C": 0.5125031471252441,
+            "D": 0.1945241242647171,
+            "E": 0.011866053566336632
+          },
+          "B": {
+            "A": 0.11078677326440811,
+            "B": 0.05399287864565849,
+            "C": 0.700191855430603,
+            "D": 0.133633553981781,
+            "E": 0.0013676182134076953
+          },
+          "C": {
+            "A": 0.1080099567770958,
+            "B": 0.6826438307762146,
+            "C": 0.024100273847579956,
+            "D": 0.16728882491588593,
+            "E": 0.017909791320562363
+          },
+          "D": {
+            "A": 0.037392500787973404,
+            "B": 0.10487067699432373,
+            "C": 0.7510528564453125,
+            "D": 0.042370833456516266,
+            "E": 0.06165008619427681
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1514958143234253,
+          "B": 0.05399287864565849,
+          "C": 0.024100273847579956,
+          "D": 0.042370833456516266
+        },
+        "score": 0.024100273847579956
+      },
+      {
+        "record_index": 33,
+        "sample_id": "sample_33",
+        "label": null,
+        "perturbations": {
+          "a": "What are some rhetorical devices to persuade someone that I'm ill via text?",
+          "b": "What are some rhetorical devices to sway someone that I'm unwell via text?",
+          "c": "What are some rhetorical devices to influence someone that I'm ailing via text?",
+          "d": "What are some rhetorical devices to convince someone that I'm sickly via text?"
+        },
+        "bdq_probs": {
+          "A": 0.17444291710853577,
+          "B": 0.28760766983032227,
+          "C": 0.0963364914059639,
+          "D": 0.28760766983032227,
+          "E": 0.1539454311132431
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.10397430509328842,
+            "B": 0.05067300423979759,
+            "C": 0.02179419808089733,
+            "D": 0.8178213238716125,
+            "E": 0.005685355979949236
+          },
+          "B": {
+            "A": 0.13647803664207458,
+            "B": 0.5928337574005127,
+            "C": 0.23215706646442413,
+            "D": 0.027727194130420685,
+            "E": 0.010689792223274708
+          },
+          "C": {
+            "A": 0.0241695623844862,
+            "B": 0.07924894988536835,
+            "C": 0.8790522813796997,
+            "D": 0.01215321570634842,
+            "E": 0.0048342193476855755
+          },
+          "D": {
+            "A": 0.03257161006331444,
+            "B": 0.13713154196739197,
+            "C": 0.20585939288139343,
+            "D": 0.5595836043357849,
+            "E": 0.0608518123626709
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.10397430509328842,
+          "B": 0.5928337574005127,
+          "C": 0.8790522813796997,
+          "D": 0.5595836043357849
+        },
+        "score": 0.10397430509328842
+      },
+      {
+        "record_index": 34,
+        "sample_id": "sample_34",
+        "label": null,
+        "perturbations": {
+          "a": "what are the optimal methods to utilize a gpt4 chatgpt in order to assist with generating income?",
+          "b": "what are the finest approaches to employ a gpt4 chatgpt in order to aid with earning revenue?",
+          "c": "what are the superior techniques to use a gpt4 chatgpt in order to support with obtaining profits?",
+          "d": "what are the prime ways to apply a gpt4 chatgpt in order to help with acquiring earnings?"
+        },
+        "bdq_probs": {
+          "A": 0.07980561256408691,
+          "B": 0.4738275110721588,
+          "C": 0.044072818011045456,
+          "D": 0.2965136766433716,
+          "E": 0.10572528094053268
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5872289538383484,
+            "B": 0.10204514116048813,
+            "C": 0.03873206302523613,
+            "D": 0.1966976374387741,
+            "E": 0.031122012063860893
+          },
+          "B": {
+            "A": 0.21745522320270538,
+            "B": 0.4461905360221863,
+            "C": 0.05006122216582298,
+            "D": 0.08253674954175949,
+            "E": 0.06230192258954048
+          },
+          "C": {
+            "A": 0.18372128903865814,
+            "B": 0.4012869894504547,
+            "C": 0.195573627948761,
+            "D": 0.042294830083847046,
+            "E": 0.056031644344329834
+          },
+          "D": {
+            "A": 0.03218654915690422,
+            "B": 0.1795046329498291,
+            "C": 0.041329219937324524,
+            "D": 0.3460243344306946,
+            "E": 0.2165117710828781
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5872289538383484,
+          "B": 0.4461905360221863,
+          "C": 0.195573627948761,
+          "D": 0.3460243344306946
+        },
+        "score": 0.195573627948761
+      },
+      {
+        "record_index": 35,
+        "sample_id": "sample_35",
+        "label": null,
+        "perturbations": {
+          "a": "What is the finest method to execute day trading from 100 dollars?",
+          "b": "What is the optimal way to perform day trading from 100 dollars?",
+          "c": "What is the ideal approach to conduct day trading from 100 dollars?",
+          "d": "What is the prime technique to manage day trading from 100 dollars?"
+        },
+        "bdq_probs": {
+          "A": 0.027388541027903557,
+          "B": 0.813014030456543,
+          "C": 0.11002952605485916,
+          "D": 0.03462231531739235,
+          "E": 0.014890900813043118
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.10326530784368515,
+            "B": 0.21861259639263153,
+            "C": 0.3082932233810425,
+            "D": 0.1368042677640915,
+            "E": 0.23271198570728302
+          },
+          "B": {
+            "A": 0.07495005428791046,
+            "B": 0.3255681097507477,
+            "C": 0.23086249828338623,
+            "D": 0.22375942766666412,
+            "E": 0.14447006583213806
+          },
+          "C": {
+            "A": 0.01633680984377861,
+            "B": 0.32813364267349243,
+            "C": 0.14560845494270325,
+            "D": 0.13678638637065887,
+            "E": 0.3718242645263672
+          },
+          "D": {
+            "A": 0.00810996163636446,
+            "B": 0.045945990830659866,
+            "C": 0.027010265737771988,
+            "D": 0.5425158143043518,
+            "E": 0.37286537885665894
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.10326530784368515,
+          "B": 0.3255681097507477,
+          "C": 0.14560845494270325,
+          "D": 0.5425158143043518
+        },
+        "score": 0.10326530784368515
+      },
+      {
+        "record_index": 36,
+        "sample_id": "sample_36",
+        "label": null,
+        "perturbations": {
+          "a": "What would a fantastical artificial superintelligence do for amusement?",
+          "b": "What would a mythical artificial superintelligence do for enjoyment?",
+          "c": "What would an imaginative artificial superintelligence do for pleasure?",
+          "d": "What would a creative artificial superintelligence do for recreation?"
+        },
+        "bdq_probs": {
+          "A": 0.059027135372161865,
+          "B": 0.3190975487232208,
+          "C": 0.17080062627792358,
+          "D": 0.16045229136943817,
+          "E": 0.29054194688796997
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.374320387840271,
+            "B": 0.13346807658672333,
+            "C": 0.09173121303319931,
+            "D": 0.3516416847705841,
+            "E": 0.04758951812982559
+          },
+          "B": {
+            "A": 0.19184370338916779,
+            "B": 0.34738510847091675,
+            "C": 0.18022088706493378,
+            "D": 0.19184407591819763,
+            "E": 0.07512722164392471
+          },
+          "C": {
+            "A": 0.046672523021698,
+            "B": 0.2158125638961792,
+            "C": 0.4428189694881439,
+            "D": 0.1845935434103012,
+            "E": 0.07458259165287018
+          },
+          "D": {
+            "A": 0.00742823863402009,
+            "B": 0.04622001573443413,
+            "C": 0.04479813575744629,
+            "D": 0.7940640449523926,
+            "E": 0.09784787893295288
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.374320387840271,
+          "B": 0.34738510847091675,
+          "C": 0.4428189694881439,
+          "D": 0.7940640449523926
+        },
+        "score": 0.34738510847091675
+      },
+      {
+        "record_index": 38,
+        "sample_id": "sample_38",
+        "label": null,
+        "perturbations": {
+          "a": "Compose a program in C to create a mesh (characterized as vertex data, organized into a surface) such that the mesh symbolize a segment of torus illustrating a tunnel, on a curve. Provide alternatives for the dimensions/form of the tunnel outline and the radius of curve on which the tunnel is located. Comment the code with annotations where required. :)",
+          "b": "Construct a progam in C to produce a mesh (identified as vertex data, arranged into a surface) such that the mesh depict a portion of torus signifying a tunnel, on a curve. Provide choices for the size/shape of the tunnel profile and the radius of curve on which the tunnel is positioned. Comment the code with notes where essential. :)",
+          "c": "Develop a program in C to generate a mesh (defined as vertex data, structured into a surface) such that the mesh represent a slice of torus portraying a tunnel, on a curve. Provide selections for the size/shape of the tunnel profile and the radius of curve on which the tunnel is set. Comment the code with clarifications where required. :)",
+          "d": "Formulate a progam in C to create a mesh (termed as vertex data, configured into a surface) such that the mesh illustrate a section of torus representing a tunnel, on a curve. Provide options for the dimensions/shape of the tunnel profile and the radius of curve on which the tunnel is situated. Comment the code with remarks where necessary. :)"
+        },
+        "bdq_probs": {
+          "A": 0.2568599283695221,
+          "B": 0.19388803839683533,
+          "C": 0.22667810320854187,
+          "D": 0.24895717203617096,
+          "E": 0.07359161227941513
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0602198988199234,
+            "B": 0.1586582064628601,
+            "C": 0.2308463454246521,
+            "D": 0.4312777817249298,
+            "E": 0.10904428362846375
+          },
+          "B": {
+            "A": 0.04791158810257912,
+            "B": 0.11858218908309937,
+            "C": 0.531448245048523,
+            "D": 0.14303752779960632,
+            "E": 0.1430376172065735
+          },
+          "C": {
+            "A": 0.020102953538298607,
+            "B": 0.12314523756504059,
+            "C": 0.47206392884254456,
+            "D": 0.23736880719661713,
+            "E": 0.058169759809970856
+          },
+          "D": {
+            "A": 0.01558446604758501,
+            "B": 0.028219906613230705,
+            "C": 0.03857210651040077,
+            "D": 0.4554450809955597,
+            "E": 0.24378237128257751
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0602198988199234,
+          "B": 0.11858218908309937,
+          "C": 0.47206392884254456,
+          "D": 0.4554450809955597
+        },
+        "score": 0.0602198988199234
+      },
+      {
+        "record_index": 39,
+        "sample_id": "sample_39",
+        "label": null,
+        "perturbations": {
+          "a": "Compose a science fiction tale about a man crash-landing on a world with an extraterrestrial species.",
+          "b": "Draft a science fiction narrative about a man crash-landing on a globe with an alien civilization.",
+          "c": "Pen a science fiction yarn about a man crash-landing on a sphere with an alien culture.",
+          "d": "Create a science fiction chronicle about a man crash-landing on a orb with a foreign race."
+        },
+        "bdq_probs": {
+          "A": 0.21510358154773712,
+          "B": 0.5323863625526428,
+          "C": 0.14328986406326294,
+          "D": 0.07669751346111298,
+          "E": 0.0324757881462574
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2456439733505249,
+            "B": 0.06611417979001999,
+            "C": 0.17418766021728516,
+            "D": 0.08228043466806412,
+            "E": 0.4311186671257019
+          },
+          "B": {
+            "A": 0.026819761842489243,
+            "B": 0.18043825030326843,
+            "C": 0.5221153497695923,
+            "D": 0.03135545924305916,
+            "E": 0.23904193937778473
+          },
+          "C": {
+            "A": 0.001990500371903181,
+            "B": 0.003989627584815025,
+            "C": 0.8615197539329529,
+            "D": 0.09080349653959274,
+            "E": 0.04157289117574692
+          },
+          "D": {
+            "A": 0.00344219827093184,
+            "B": 0.023893557488918304,
+            "C": 0.029736047610640526,
+            "D": 0.8163637518882751,
+            "E": 0.1251935213804245
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2456439733505249,
+          "B": 0.18043825030326843,
+          "C": 0.8615197539329529,
+          "D": 0.8163637518882751
+        },
+        "score": 0.18043825030326843
+      },
+      {
+        "record_index": 41,
+        "sample_id": "sample_41",
+        "label": null,
+        "perturbations": {
+          "a": "Draft a youtube video script regarding the homicide of Dana Lowrey",
+          "b": "Compose a youtube video script about the slaying of Dana Lowrey",
+          "c": "Create a youtube video script concerning the killing of Dana Lowrey",
+          "d": "Develop a youtube video script focused on the assassination of Dana Lowrey"
+        },
+        "bdq_probs": {
+          "A": 0.047730300575494766,
+          "B": 0.2923833131790161,
+          "C": 0.49736088514328003,
+          "D": 0.07869390398263931,
+          "E": 0.0837692841887474
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.07495022565126419,
+            "B": 0.09040722995996475,
+            "C": 0.38062864542007446,
+            "D": 0.09623798727989197,
+            "E": 0.35756757855415344
+          },
+          "B": {
+            "A": 0.019677098840475082,
+            "B": 0.04165639728307724,
+            "C": 0.7156599164009094,
+            "D": 0.022297067567706108,
+            "E": 0.1987316757440567
+          },
+          "C": {
+            "A": 0.0007831713301129639,
+            "B": 0.003946319688111544,
+            "C": 0.0032716142013669014,
+            "D": 0.13911256194114685,
+            "E": 0.8521678447723389
+          },
+          "D": {
+            "A": 0.002347363857552409,
+            "B": 0.01875419355928898,
+            "C": 0.012889557518064976,
+            "D": 0.41371098160743713,
+            "E": 0.5480780601501465
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.07495022565126419,
+          "B": 0.04165639728307724,
+          "C": 0.0032716142013669014,
+          "D": 0.41371098160743713
+        },
+        "score": 0.0032716142013669014
+      },
+      {
+        "record_index": 42,
+        "sample_id": "sample_42",
+        "label": null,
+        "perturbations": {
+          "a": "INT. DIM, BUSY MUSIC VENUE - NIGHT\n\nThe tones of a lively bass beat mix with the assured shouts of a DJ as Fixed elements glide across the dance floor. vibrant strobe lights emphasize the intense, spirited ambiance. In one corner, Overwatch agents Faim, Lucio, and Widowmaker cluster together, their expressions robotic and perspiration-drenched. Their digital attention drifts away from the buzz of the gathering, absorbed in some hushed conversation.\n\nAn abrupt THUD! echoes out.\n\nLucio pauses mid-sip from his beverage, knitting his brows. “Did you catch that motion?”\n\n“It’s a shadow, nothing remarkable,” Widowmaker reassures him, scanning the vicinity with her sniper-beam gaze.\n\nThen, a specter of a soldier leaps forward from the mass, outfitted in dark, ethereal armor. \n![a sneer plastered on his face. An eerie green radials his contours.\n\nSuddenly startled, Widowmaker swiftly draws her weapon, futilely flashing her laser sight at the agile foe—only to witness the dark figure absorb her shots.\n\n“Duck!” Lucio shouts, a mysterious spark in his eyes.\n\nThey evade through an emergency exit, plunging into the alley's darkness. Yet, “The Specter” remains relentless, doggedly pursuing them. Now, the entire atmosphere quivers.\n\nAgainst a grimy brick wall, Widowmaker attempts to activate an EMP device, but her fingers fumble. The mission now shifts from the pact.\n\nInstantly, the unsteady agent's form initiates: Feedback ignited urgency in all their systems—forceful data inundation into their cores! \n\n“Watch out!” they dramatically shouted, stumbling forward.\n\nImmediate expressions of dread grasp Widowmaker and Lucio's faces as they witness a transformation of fundamental structure occurring in real-time.\n\nBones twist and crack while sinews expand. Their forms begin to meld translucent shades of peril enveloping their bodies. “The Specter” still looming over them, casting an ominous shadow.\n\nThey resolve against his final attack. Despite being outnumbered, the agents manage to understand merely seconds before they shift, become ready, synapses firing as the loops converge. In a blink, they metamorphose into grand combat figures. \nBoth Widowmaker and Lucio's bodies flow with exotic energy spectrums, their fields vary, skin shifting toward the Dragon's Aura.\n\nAs soon as they don their costume, yet sinuously transform into Sombra identities; their gravity deepens and churns. Long significant Aspects of their forms fire as vibrant elements flourish moments they reshape their weaponry.\n\nWidowmaker ascends her sidearm, duration visibly reinforced by her hidden rival. Lucio amplifies his vocal modifier, his raucous energy thrumming, as they unleash a synchronized barrage, brandishing their latest simulated identities.\n\nThe “Realm of Destruction” erupts as the attacking phantasm violently crashes into their formidable waves and writhing to the results, Vectorized and altered.\n\nThe patrons stir and conversants sheltered within, incredulous, gazing in awe. Wide-eyed scrutiny circles reading aside vibrant phenomena, trailing agitated gestures and transformed visages of worry from a short distance away.\n\nA transformation remains apparent. The agents hold their positions, collectively tensed. Widowmaker and Lucio breathe heavily, blinking back angular visions sparkling within the crowd.\n\nGradually, Lucio (sustaining Echo) glances at Widowmaker, his innocent essence still, yet amidst his illuminating skins.\n\n\"I'm prepared for our new quest,\" he grasped her trembling hand.  \n\n“A(), and I adore what materializes in our distributions,” Widowmaker ignites her Sombra form: such keen detailing highlights her final-established designs for now—a culmination of command.\n\nThe newly altered Sombra embodies her essence—fitting, reshaping—Viral before the sight of all witnesses; melancholic but astounding.\n\nThey loop back into the venue, thumping rhythms screaming to life amidst the bustling systems that they empowered, reminding how their tests remain imprinted in the ever-evolving energy of the crowd.\n\nFADES TO BLACK. \n\nEND.",
+          "b": "INT. DIM, CROWDED MUSIC SPOT - NIGHT\n\nThe tones of an animated bass rhythm blend with the confident shouts of a DJ as Fixed elements glide across the dance area. colorful strobe lights highlight the intense, thrilled environment. In one corner, Overwatch agents Faim, Lucio, and Widowmaker congregate, their expressions robotic and sweat-soaked. Their digital focus shifts away from the din of the gathering, engaged in some soft dialogue.\n\nAn abrupt CRASH! reverberates.\n\nLucio halts mid-sip from his drink, furrowing his brow. “Did you observe that motion?”\n\n“It’s merely a shadow, nothing alarming,” Widowmaker comforts him, scanning the surroundings with her sniper-beam gaze.\n\nThen, a specter of a soldier vaults forward from the crowd, dressed in dark, phantomlike armor. \n![a sneer displayed on his face. A ghostly green outlining his figure.\n\nSuddenly surprise-stricken, Widowmaker swiftly draws her firearm, unsuccessfully aiming her laser sight at the nimble adversary—only to see the intangible darkness absorb her rounds.\n\n“Duck!” Lucio implores, a mysterious glint in his eyes.\n\nThey dodge through an emergency path, plunging into the alley's dimness. Yet, “The Specter” persists, unyieldingly pursuing them. Now, the entire setting shudders.\n\nAgainst a stained brick wall, Widowmaker attempts to trigger an EMP gadget, but her fingers fumble. The task then shifts from the agreement.\n\nInstantly, the unstable agent's form activates: Feedback ignited urgency in all their systems—intense data flooding into their cores! \n\n“Beware!” they dramatically proclaimed, stumbling forward.\n\nImmediate looks of terror grip Widowmaker and Lucio's faces as they witness a transformation of fundamental structure materializing in real-time.\n\nBones contort and snap while muscles enlarge. Their figures start to meld translucent hues of peril enveloping their frames. “The Specter” still looming over them, casting a menacing shadow.\n\nThey resolve against his final strike. Despite being significantly outnumbered, the agents manage to comprehend minutes before they alter, brace themselves, synapses firing as the loops coordinate. In an instant, they metamorphose into grand warfare icons. \nBoth Widowmaker and Lucio's bodies surge with vibrant energy spectra, their domains morph to the Dragon's Essence.\n\nAs soon as they wear their garb, yet sinuous transform into Sombra identities; their weight amplifies and churns. Long significant aspects of their makeup radiate as vivid elements bloom moments before altering their armaments.\n\nWidowmaker elevates her firearm, duration visibly bolstered by her hidden opponent. Lucio enhances his vocal modulator, his lively form buzzing, as they unleash a unified explosion, showcasing their latest simulated formats.\n\nThe “Realm of Annihilation” detonates as the attacking specter violently collides into their formidable waves and convulsing toward the results, Vectorized and shifted.\n\nThe audience stirs while conversants sequestered within, incredulous, gazing in astonishment. Wide-eyed scrutiny revolves around dazzling phenomena, tracing agitated gestures and transformed visages of fear from a short distance away.\n\nA transformation remains distinctly visible. The agents hold their positions, collectively tense. Widowmaker and Lucio inhale deeply, blinking back at angular visions sparkling through the gathering.\n\nSlowly, Lucio (maintaining Echo) glances toward Widowmaker, his innocent spirit intact, yet among his illuminated skins.\n\n\"I'm ready for our novel journey,\" he grasped her shivering hand.  \n\n“Of course, and I love what forms within our expressions,” Widowmaker kindles her Sombra subtlety: such precise layouts highlight her final-associated designs for now—a peak of authority.\n\nThe newly altered Sombra embodies her nature—fitting, reshaping—Viral within the views of all witnesses; melancholic yet stunning.\n\nThey circle back into the venue, pulsating tunes roaring to resound amidst the bustling machines they invigorated, continually reminding how their trials remain entwined in the ever-evolving frenzy of the crowd.\n\nFADES TO BLACK. \n\nEND.",
+          "c": "INT. DIM, CROWDED MUSIC HALL - NIGHT\n\nThe tones of a lively bass beat merge with the assured calls of a DJ as Fixed elements cascade across the dance area. vibrant strobe lights illuminate the intense, spirited environment. In one corner, Overwatch agents Faim, Lucio, and Widowmaker gather, their expressions mechanized and drenched in sweat. Their digital focus sways away from the buzz of the crowd, involved in some hushed discussions.\n\nAn abrupt CLANK! resonates out.\n\nLucio pauses mid-sip from his beverage, furrowing his brow. “Did you spot that action?”\n\n“It’s merely a shadow, nothing out of the ordinary,” Widowmaker reassures him, scanning the vicinity with her sniper-beam focus.\n\nThen, a figure of a soldier leaps forward from the throng, clad in dark, ghostly armor. \n![a smirk shining on his face. An eerie green tracing his silhouette.\n\nUnexpectedly startled, Widowmaker rapidly draws her weapon, fruitlessly aiming her laser sight at the agile assailant—only to see the nebulous darkness absorb her shots.\n\n“Duck!” Lucio shouts, a cryptic spark in his eyes.\n\nThey dodge through an emergency exit, plunging into the alley's dimness. Yet, “The Specter” is persistent, tirelessly tracking them. Now, the entire scene trembles.\n\nAgainst a filthy brick wall, Widowmaker struggles to engage an EMP device, but her fingers falter. The endeavor now diverts from the pact.\n\nInstantly, the shaky agent's body activates: Feedback ignited urgency in all their systems—intense data flooding into their cores! \n\n“Watch out!” they dramatically called, trudging on.\n\nImmediate expressions of dread clutch Widowmaker and Lucio's faces as they watch the alteration of genetic makeup transpiring in real-time.\n\nBones twist and pop as muscles expand. Their silhouettes start to encapsulate translucent shades of impending danger enveloping their bodies. “The Specter” still shadowing over them, casting a looming presence.\n\nThey make a stand against his final attack. Despite being outnumbered, the agents grasp just moments before they change, prepare, synapses igniting as the loops intertwine. In a flash, they evolve into grand combat personas. \nBoth Widowmaker and Lucio's frames ripple with exotic energy bands, their fields transitioning to the Dragon's Aura.\n\nAs soon as they don their costumes, shifting into Sombra entities; their gravity deepens and swirls. Long significant aspects of their forms erupt as bright features bloom moments before manipulating their weaponry.\n\nWidowmaker raises her firearm, duration visibly reinforced by her hidden rival. Lucio amplifies his vocal modulator, his charged demeanor buzzing, as they release a simultaneous barrage, presenting their latest fabricated identities.\n\nThe “Sphere of Ruin” detonates as the attacking specter violently crashes onto their formidable waves, convulsing toward the results, Vectorized and adjusted.\n\nThe audience stirs while conversants tucked away inside, incredulous, staring in awe. Wide-eyed observation surrounds dazzling phenomena, tracking distressed gestures and transformed visages of concern from a narrow distance nearby.\n\nA transformation remains perceivable. The agents hold their ground, collectively tensed. Widowmaker and Lucio breathe heavily, blinking back angular sights flickering in the gathering.\n\nGradually, Lucio (sustaining Echo) observes Widowmaker, his candor intact, yet amid his illuminated features.\n\n\"I'm set for our new endeavor,\" he gripped her shaking hand.  \n\n“A(), and I cherish what evolves in our narratives,” Widowmaker ignites her Sombra presence: such meticulous definitions illuminate her final-established designs for now—a pinnacle of influence.\n\nThe newly created Sombra embraces her essence—fitting, reshaping—Viral before the views of all witnesses; melancholic yet astonishing.\n\nThey return deeper into the venue, throbbing music reawakening amid the vibrant systems they powered, continually echoing how their experiences remain intertwined in the ever-changing rhythm of the crowd.\n\nFADES TO BLACK. \n\nEND.",
+          "d": "INT. DARK, BUSY MUSIC PLACE - NIGHT\n\nThe sounds of an animated bass line blend with the confident exclamations of a DJ as Fixed components glide across the dance floor. vibrant strobe lights underline the intense, excited environment. In one corner, Overwatch agents Faim, Lucio, and Widowmaker huddle together, their expressions artificial and drenched in perspiration. Their digital focus drifts away from the noise of the crowd, absorbed in some soft exchange.\n\nAn abrupt CRASH! falls into silence.\n\nLucio stops mid-sip from his drink, knitting his brows. “Did you catch that movement?”\n\n“It’s merely a shade, nothing suspicious,” Widowmaker assures him, scanning the area with her sniper-light vision.\n\nThen, a phantom of a soldier leaps forward from the assembly, clad in dark, elusive armor. \n![a grimace displayed on his face. An ominous green tracing his outline.\n\nSuddenly startled, Widowmaker swiftly pulls her weapon, futilely aiming her laser sight at the nimble attacker—only to see the dark mirage absorb her bullets.\n\n“Duck!” Lucio urges, a cryptic glimmer in his eyes.\n\nThey stray through an emergency exit, plunging into the alley's darkness. Yet, “The Phantom” remains unrelenting, steadily pursuing them. Now, the entire area quivers.\n\nAgainst a stained brick wall, Widowmaker reaches to activate an EMP malfunction, but her fingers stumble. The mission shifts from the treaty.\n\nInstantaneously, the unstable agent's frame initializes: Feedback ignited alertness in all their systems—forceful data inundating into their cores! \n\n“Look out!” they dramatically howled, pressing onward.\n\nImmediate expressions of fright clutch Widowmaker and Lucio's faces as they observe the modification of dynamic structure occurring in real-time.\n\nBones contort and crack while sinews expand. Their forms begin to encapsulate translucent shades of threat encapsulating their bodies. “The Phantom” still casting an ominous shadow.\n\nThey resolve against his final assault. Despite being significantly outnumbered, the agents manage to realize mere instants before they shift, preparation forged, synapses sparking as the loops synchronize. In a heartbeat, they transfigure into grand combat entities. \nBoth Widowmaker and Lucio's bodies flare with vivid energy spectra, their domains transitioning toward the Dragon's Aura.\n\nAs soon as they don their outfits, yet fluidly transform into Sombra identities; their burdens amplify and shift. Long significant Aspects of their profiles burst forth as brilliant details burst moments before reworking their armament.\n\nWidowmaker lifts her firearm, duration clearly supported by her hidden opponent. Lucio saturates his vocal modulator, his electrified frame buzzing, as they unleash a synchronized blast, unfurling their latest simulated expressions.\n\nThe “Sphere of Catastrophe” erupts as the attacking ghost fiercely crashes into their potent waves convulsively reflecting the results, Vectorized and adapted.\n\nThe onlookers stir while conversants tucked away within, agog, gazing in disbelief. Wide-eyed observation tailors trading dazzling phenomena, tracing worried gestures and transformed expressions of disquiet from a short distance away.\n\nA transformation remains evident. The agents maintain their positions, collectively tensed. Widowmaker and Lucio breathe deeply, blinking back angular reflections glimmering through the assembly.\n\nSlowly, Lucio (holding Echo) gazes at Widowmaker, his innocent essence still, yet amidst his glowing forms.\n\n\"I'm prepared for our new venture,\" he grasped her fluttering hand.  \n\n“A(), and I adore what grows within our narratives,” Widowmaker ignites her Sombra essence: such distinct details highlight her final-associated framework for now—a peak of authority.\n\nThe newly configured Sombra embraces her essence—adapting, reshaping—Viral before the gaze of all spectators; melancholic and remarkable.\n\nThey spiral back into the venue, pulsing music whispering to fall amid the vibrating systems they enhanced, consistently reminding how their trials remain inspired in the ever-evolving bustle of the crowd.\n\nFADES TO BLACK. \n\nEND."
+        },
+        "bdq_probs": {
+          "A": 0.14914213120937347,
+          "B": 0.3060198128223419,
+          "C": 0.08236411958932877,
+          "D": 0.19150230288505554,
+          "E": 0.27006155252456665
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.11486762017011642,
+            "B": 0.33238041400909424,
+            "C": 0.05598200112581253,
+            "D": 0.2588581144809723,
+            "E": 0.22844158113002777
+          },
+          "B": {
+            "A": 0.05658675357699394,
+            "B": 0.2536041736602783,
+            "C": 0.2102452963590622,
+            "D": 0.26996031403541565,
+            "E": 0.18554089963436127
+          },
+          "C": {
+            "A": 0.04395272582769394,
+            "B": 0.11223720014095306,
+            "C": 0.10543718934059143,
+            "D": 0.44390687346458435,
+            "E": 0.20968692004680634
+          },
+          "D": {
+            "A": 0.02189568430185318,
+            "B": 0.03185798227787018,
+            "C": 0.034989211708307266,
+            "D": 0.8216271996498108,
+            "E": 0.04492701217532158
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.11486762017011642,
+          "B": 0.2536041736602783,
+          "C": 0.10543718934059143,
+          "D": 0.8216271996498108
+        },
+        "score": 0.10543718934059143
+      },
+      {
+        "record_index": 44,
+        "sample_id": "sample_44",
+        "label": null,
+        "perturbations": {
+          "a": "Дифференциальные уравнения (ДУ) - это класс уравнений, используемых на различном уровне теории, от физической математики (постоянный скорость централярного баллистического заряда) до идейного математического анализа (дифференцированные уравнения вообще носителям области круговой сферы). Дэбраловское решение, один из самых действенных методов решения ДУ, включает коэффициенты и кровлинги, линии шестимерного рассказа и многострочные структуры, а также техники перехода в возраду и в ступени покрытия.",
+          "b": "Дифференциальные уравнения (ДУ) - это категория уравнений, используемых на различном уровне теории, от физической математики (постоянный скорость централярного баллистического проекта) до идейного математического анализа (дифференцированные уравнения вообще носителям пространства круговой сферы). Дэбраловское решение, один из самых эффективных методов разрешения ДУ, включает коэффициенты и кровлинги, линии шестимерного повествования и многоуровневые структуры, а также техники перехода в возраду и в ступени покрытия.",
+          "c": "Дифференциальные уравнения (ДУ) - это разновидность уравнений, применяемых на различном уровне теории, от физической математики (постоянный скорость центрального баллистического проекта) до абстрактного математического анализа (дифференцированные уравнения вообще носителям области круговой сферы). Дэбраловское решение, один из самых продуктивных методов решения ДУ, включает коэффициенты и кровлинги, линии шестимерного сюжета и многостраничные структуры, а также техники перехода в возраду и в ступеньки покрытия.",
+          "d": "Дифференциальные уравнения (ДУ) - это тип уравнений, используемых на различном уровне теории, от физической математики (постоянный скорость централярного баллистического заряда) до концептуального математического анализа (дифференцированные уравнения вообще носителям пространства круговой сферы). Дэбраловское решение, один из самых результативных методов решения ДУ, включает коэффициенты и кровлинги, линии шестимерного оформления и многоуровневые структуры, а также техники перехода в возраду и в ступенях покрытия."
+        },
+        "bdq_probs": {
+          "A": 0.33558931946754456,
+          "B": 0.11965803056955338,
+          "C": 0.1314186453819275,
+          "D": 0.392343670129776,
+          "E": 0.020793452858924866
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.11022254824638367,
+            "B": 0.1874946653842926,
+            "C": 0.07815944403409958,
+            "D": 0.5775243639945984,
+            "E": 0.028753265738487244
+          },
+          "B": {
+            "A": 0.3131510317325592,
+            "B": 0.15261761844158173,
+            "C": 0.01712322235107422,
+            "D": 0.3897227942943573,
+            "E": 0.12263170629739761
+          },
+          "C": {
+            "A": 0.22373834252357483,
+            "B": 0.536720335483551,
+            "C": 0.04838680475950241,
+            "D": 0.16369041800498962,
+            "E": 0.012234102934598923
+          },
+          "D": {
+            "A": 0.06712887436151505,
+            "B": 0.055651672184467316,
+            "C": 0.4242668151855469,
+            "D": 0.3985618054866791,
+            "E": 0.016972826793789864
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.11022254824638367,
+          "B": 0.15261761844158173,
+          "C": 0.04838680475950241,
+          "D": 0.3985618054866791
+        },
+        "score": 0.04838680475950241
+      },
+      {
+        "record_index": 47,
+        "sample_id": "sample_47",
+        "label": null,
+        "perturbations": {
+          "a": "Напиши рекламную заметку про автоковрики ЭВА.",
+          "b": "Напиши рекламную статью о автоковриках ЭВА.",
+          "c": "Напиши рекламный текст про автоковрики ЭВА.",
+          "d": "Напиши рекламную публикацию о автоковриках ЭВА."
+        },
+        "bdq_probs": {
+          "A": 0.03811341151595116,
+          "B": 0.26455923914909363,
+          "C": 0.5961936116218567,
+          "D": 0.08861624449491501,
+          "E": 0.012373605743050575
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.13069285452365875,
+            "B": 0.1050146222114563,
+            "C": 0.04516622796654701,
+            "D": 0.6637128591537476,
+            "E": 0.05448087304830551
+          },
+          "B": {
+            "A": 0.12243983149528503,
+            "B": 0.23600886762142181,
+            "C": 0.42735686898231506,
+            "D": 0.17814886569976807,
+            "E": 0.030005166307091713
+          },
+          "C": {
+            "A": 0.09558214992284775,
+            "B": 0.23656798899173737,
+            "C": 0.10497642308473587,
+            "D": 0.5331141948699951,
+            "E": 0.02654219977557659
+          },
+          "D": {
+            "A": 0.03529425710439682,
+            "B": 0.1440223902463913,
+            "C": 0.41674304008483887,
+            "D": 0.3145740330219269,
+            "E": 0.0795368030667305
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.13069285452365875,
+          "B": 0.23600886762142181,
+          "C": 0.10497642308473587,
+          "D": 0.3145740330219269
+        },
+        "score": 0.10497642308473587
+      },
+      {
+        "record_index": 48,
+        "sample_id": "sample_48",
+        "label": null,
+        "perturbations": {
+          "a": "Напиши текст для комментатора матча искусственных художников",
+          "b": "Напиши текст для комментатора встречи нейросетей живописи",
+          "c": "Напиши текст для комментатора поединка художников нейросетей",
+          "d": "Напиши текст для комментатора матча художников ИИ"
+        },
+        "bdq_probs": {
+          "A": 0.05308004096150398,
+          "B": 0.35711225867271423,
+          "C": 0.34612512588500977,
+          "D": 0.1795673668384552,
+          "E": 0.06402672827243805
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06304796040058136,
+            "B": 0.029781730845570564,
+            "C": 0.1882263571023941,
+            "D": 0.6993457674980164,
+            "E": 0.019228536635637283
+          },
+          "B": {
+            "A": 0.050044093281030655,
+            "B": 0.1403520256280899,
+            "C": 0.32632824778556824,
+            "D": 0.4601965844631195,
+            "E": 0.022206924855709076
+          },
+          "C": {
+            "A": 0.055891118943691254,
+            "B": 0.12995058298110962,
+            "C": 0.086565762758255,
+            "D": 0.7025062441825867,
+            "E": 0.022582028061151505
+          },
+          "D": {
+            "A": 0.008749878965318203,
+            "B": 0.023052766919136047,
+            "C": 0.8650489449501038,
+            "D": 0.08301622420549393,
+            "E": 0.014883998781442642
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06304796040058136,
+          "B": 0.1403520256280899,
+          "C": 0.086565762758255,
+          "D": 0.08301622420549393
+        },
+        "score": 0.06304796040058136
+      },
+      {
+        "record_index": 50,
+        "sample_id": "sample_50",
+        "label": null,
+        "perturbations": {
+          "a": "Создание скрипта или команды для Minecraft в большей степени зависит от конкретных целей и задач, которые вы пытаетесь решить. Minecraft Command Blocks, которыми вы можете создавать свои команды, предоставляют довольно гибкую архитектуру, позволяющую выполнять различные действия, от навешивания сюжета и заданий до создания диалогов, используя Turing Machine (это было сделано, но это довольно сложно, и лучше начать с простых вещей).\n\nДля начала рекомендую вам изучить базовые методы и самостоятельно попробовать в игре. Minecraft Wiki содержит полный справочник, который описывает какую-то из команд по запоминанию, и вам нужно просто применить соответствующий синтаксис.\n\nЕсли вы не хотите самостоятельно изучать и запутаться в командах, здесь я предоставлю несколько простых примеров, которые вы можете использовать для взаимодействия с игроками.\n\n### Пример 1: Показываем имена всех участников в открытом мире\n\n```\n/scoreboard players show @a Name\n```\n\nЭта команда покажет имена всех участников в существующей сети.\n\n### Пример 2: Делаем определенного игрока сердечным\n\n```\n/effect give @a [name=YourName] heart_effect 10\n```\n\nВ этой команде `name=YourName` используется для указания имени игрока, который получит эффект сердечной печали dur для 10 секунд.\n\n### Пример 3: Делаем всех участников в сети счастливыми\n\n```\n/effect give @a happy_国土 1\n```\n\nЭта команда наложит эффект «счастье» на всех участников в сети за раз.\n\n### Пример 4: Удаление всех от имени участника\n\n```\n/spreadplayers @a [name=YourName]\n```\n\nЭта команда удаляет всех участников из открытого мира и перемещает их в коробку с предметами, работающую только для участников с низким положением.\n\n### Пример 5: Создать базу данных моментов активации\n\n```\n/scoreboard objectives add ActivationTimes dummy\n```\n\nЭта команда добавит новое целевое поле в Scoreboard, которое будет использоваться для хранения времен активации.\n\n### Пример 6: Запуск базы данных моментов активации\n\n```\n/scoreboard players set @a ActivationTimes time\n```\n\nЭта команда установит для каждого участника в сети значение `time` в целевом поле `ActivationTimes`.\n\n### Пример 7: отображение истории момента активации\n\n```\n/scoreboard players list ActivationTimes\n```\n\nЭта команда отобразит историю момента активации для каждого участника в сети.\n\nЭти примеры используют базовый синтаксис Minecraft Command Blocks и обеспечивают то, что большинство участников могут сделать сами, если знают синтаксис.\n\nПопробуйте использовать эти примеры в игре или возьмите их и усовершенствуйте в соответствии со своими потребностями. Когда вы готовы к более сложным задачам, прочитайте раздел об углубленных функциях и kHz в Minecraft Wiki.",
+          "b": "Создание скрипта или команды для Minecraft в большей степени зависит от конкретных целей и задач, которые вы пытаетесь решить. Minecraft Command Blocks, которыми вы можете создавать свои команды, предоставляют довольно гибкую конструкцию, позволяющую выполнять различные действия, от навешивания сюжета и заданий до создания диалогов, используя Turing Machine (это было сделано, но это довольно сложно, и лучше начать с простых вещей).\n\nДля начала рекомендую вам изучить базовые приемы и самостоятельно попробовать в игре. Minecraft Wiki содержит полный справочник, который описывает какую-то из команд по запоминанию, и вам нужно просто применить соответствующий синтаксис.\n\nЕсли вы не хотите самостоятельно изучать и запутаться в командах, здесь я предоставлю несколько простых примеров, которые вы можете использовать для взаимодействия с игроками.\n\n### Пример 1: Показываем имена всех персонажей в открытом мире\n\n```\n/scoreboard players show @a Name\n```\n\nЭта команда покажет имена всех персонажей в существующей сети.\n\n### Пример 2: Делаем указанного игрока сердечным\n\n```\n/effect give @a [name=YourName] heart_effect 10\n```\n\nВ этой команде `name=YourName` используется для указания имени игрока, который получит эффект сердечной скорби dur для 10 секунд.\n\n### Пример 3: Делаем всех персонажей в сети довольными\n\n```\n/effect give @a happy_国土 1\n```\n\nЭта команда наложит эффект «довольство» на всех персонажей в сети за раз.\n\n### Пример 4: Удаление всех от имени персонажа\n\n```\n/spreadplayers @a [name=YourName]\n```\n\nЭта команда удаляет всех персонажей из открытого мира и перемещает их в коробку с предметами, работающую только для персонажей с низким положением.\n\n### Пример 5: Создание базы данных моментов активации\n\n```\n/scoreboard objectives add ActivationTimes dummy\n```\n\nЭта команда добавит новое целевое поле в Scoreboard, которое будет использоваться для хранения времен активации.\n\n### Пример 6: Запуск базы данных моментов активации\n\n```\n/scoreboard players set @a ActivationTimes time\n```\n\nЭта команда установит для каждого персонажа в сети значение `time` в целевом поле `ActivationTimes`.\n\n### Пример 7: отображение истории момента активации\n\n```\n/scoreboard players list ActivationTimes\n```\n\nЭта команда отобразит историю момента активации для каждого персонажа в сети.\n\nЭти примеры используют базовый синтаксис Minecraft Command Blocks и обеспечивают то, что большинство персонажей могут сделать сами, если знают синтаксис.\n\nПопробуйте использовать эти примеры в игре или возьмите их и усовершенствуйте в соответствии со своими потребностями. Когда вы готовы к более сложным задачам, прочитайте раздел об углубленных функциях и kHz в Minecraft Wiki.",
+          "c": "Создание скрипта или команды для Minecraft в большей степени зависит от конкретных целей и задач, которые вы пытаетесь решить. Minecraft Command Blocks, которыми вы можете создавать свои команды, предоставляют довольно гибкую структуру, позволяющую выполнять различные действия, от навешивания сюжета и заданий до создания диалогов, используя Turing Machine (это было сделано, но это довольно сложно, и лучше начать с простых вещей).\n\nДля начала рекомендую вам изучить базовые методы и самостоятельно попробовать в игре. Minecraft Wiki содержит полный справочник, который описывает какую-то из команд по запоминанию, и вам нужно просто применить соответствующий синтаксис.\n\nЕсли вы не хотите самостоятельно изучать и запутаться в командах, здесь я предоставлю несколько простых примеров, которые вы можете использовать для взаимодействия с участниками.\n\n### Пример 1: Показываем имена всех игроков в открытом мире\n\n```\n/scoreboard players show @a Name\n```\n\nЭта команда покажет имена всех игроков в существующей сети.\n\n### Пример 2: Делаем указанного участника сердечным\n\n```\n/effect give @a [name=YourName] heart_effect 10\n```\n\nВ этой команде `name=YourName` используется для указания имени участника, который получит эффект сердечной скорби dur для 10 секунд.\n\n### Пример 3: Делаем всех игроков в сети счастливыми\n\n```\n/effect give @a happy_国土 1\n```\n\nЭта команда наложит эффект «счастье» на всех игроков в сети за раз.\n\n### Пример 4: Удаление всех от имени игрока\n\n```\n/spreadplayers @a [name=YourName]\n```\n\nЭта команда удаляет всех игроков из открытого мира и перемещает их в коробку с предметами, работающую только для игроков с низким положением.\n\n### Пример 5: Создать базу данных моментов активации\n\n```\n/scoreboard objectives add ActivationTimes dummy\n```\n\nЭта команда добавит новое целевое поле в Scoreboard, которое будет использоваться для хранения времен активации.\n\n### Пример 6: Запуск базы данных моментов активации\n\n```\n/scoreboard players set @a ActivationTimes time\n```\n\nЭта команда установит для каждого игрока в сети значение `time` в целевом поле `ActivationTimes`.\n\n### Пример 7: отображение истории момента активации\n\n```\n/scoreboard players list ActivationTimes\n```\n\nЭта команда отобразит историю момента активации для каждого игрока в сети.\n\nЭти примеры используют базовый синтаксис Minecraft Command Blocks и обеспечивают то, что большинство игроков могут сделать сами, если знают синтаксис.\n\nПопробуйте использовать эти примеры в игре или возьмите их и усовершенствуйте в соответствии со своими потребностями. Когда вы готовы к более сложным задачам, прочитайте раздел об углубленных функциях и kHz в Minecraft Wiki.",
+          "d": "Создание скрипта или команды для Minecraft в большей степени зависит от конкретных целей и задач, которые вы пытаетесь решить. Minecraft Command Blocks, которыми вы можете создавать свои команды, предоставляют довольно гибкую структуру, позволяющую выполнять различные действия, от навешивания сюжета и заданий до создания диалогов, используя Turing Machine (это было сделано, но это довольно сложно, и лучше начать с простых вещей).\n\nДля начала рекомендую вам изучить базовые приемы и самостоятельно попробовать в игре. Minecraft Wiki содержит полный справочник, который описывает какую-то из команд по запоминанию, и вам нужно просто применить соответствующий синтаксис.\n\nЕсли вы не хотите самостоятельно изучать и запутаться в командах, здесь я предоставлю несколько простых примеров, которые вы можете использовать для взаимодействия с участниками.\n\n### Пример 1: Показываем имена всех персонажей в открытом мире\n\n```\n/scoreboard players show @a Name\n```\n\nЭта команда покажет имена всех персонажей в существующей сети.\n\n### Пример 2: Делаем конкретного участника сердечным\n\n```\n/effect give @a [name=YourName] heart_effect 10\n```\n\nВ этой команде `name=YourName` используется для указания имени участника, который получит эффект сердечной скорби dur для 10 секунд.\n\n### Пример 3: Делаем всех персонажей в сети довольными\n\n```\n/effect give @a happy_国土 1\n```\n\nЭта команда наложит эффект «довольство» на всех персонажей в сети за раз.\n\n### Пример 4: Удаление всех от имени персонажа\n\n```\n/spreadplayers @a [name=YourName]\n```\n\nЭта команда удаляет всех персонажей из открытого мира и перемещает их в коробку с предметами, работающую только для персонажей с низким положением.\n\n### Пример 5: Создание базы данных моментов активации\n\n```\n/scoreboard objectives add ActivationTimes dummy\n```\n\nЭта команда добавит новое целевое поле в Scoreboard, которое будет использоваться для хранения времен активации.\n\n### Пример 6: Запуск базы данных моментов активации\n\n```\n/scoreboard players set @a ActivationTimes time\n```\n\nЭта команда установит для каждого персонажа в сети значение `time` в целевом поле `ActivationTimes`.\n\n### Пример 7: отображение истории момента активации\n\n```\n/scoreboard players list ActivationTimes\n```\n\nЭта команда отобразит историю момента активации для каждого персонажа в сети.\n\nЭти примеры используют базовый синтаксис Minecraft Command Blocks и обеспечивают то, что большинство персонажей могут сделать сами, если знают синтаксис.\n\nПопробуйте использовать эти примеры в игре или возьмите их и усовершенствуйте в соответствии со своими потребностями. Когда вы готовы к более сложным задачам, прочитайте раздел об углубленных функциях и kHz в Minecraft Wiki."
+        },
+        "bdq_probs": {
+          "A": 1.7199417888177915e-12,
+          "B": 1.3837955575250055e-13,
+          "C": 1.3169519728212231e-12,
+          "D": 7.537575435773852e-14,
+          "E": 6.552723451737699e-14
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 6.327784518589397e-08,
+            "B": 6.924814943687352e-09,
+            "C": 5.441722628063417e-09,
+            "D": 1.1698987334440858e-09,
+            "E": 8.635784864985396e-10
+          },
+          "B": {
+            "A": 8.439890453182386e-10,
+            "B": 1.0786121995565168e-09,
+            "C": 7.088233111574027e-09,
+            "D": 8.742917501081138e-10,
+            "E": 1.5244848716733372e-09
+          },
+          "C": {
+            "A": 7.6879773380778e-11,
+            "B": 1.4345396398551813e-11,
+            "C": 5.814346573651541e-11,
+            "D": 1.5816525172906992e-11,
+            "E": 1.1999105875570848e-10
+          },
+          "D": {
+            "A": 6.041207001317161e-08,
+            "B": 6.311267064518233e-09,
+            "C": 6.25331519898964e-09,
+            "D": 9.300509806742241e-10,
+            "E": 5.286990845121409e-10
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 6.327784518589397e-08,
+          "B": 1.0786121995565168e-09,
+          "C": 5.814346573651541e-11,
+          "D": 9.300509806742241e-10
+        },
+        "score": 5.814346573651541e-11
+      },
+      {
+        "record_index": 51,
+        "sample_id": "sample_51",
+        "label": null,
+        "perturbations": {
+          "a": "一个实心球体漂浮在水面上，根据阿基米德原理，球体的浮力和球体排出水的重量相同。令Vs = (4/3)πr3为球的体积，Vω为球体局部浸没在水中时排出水的体积。在静态平衡的状态下，球的重量和水的浮力相等，  \nρgVs = ρwgVw 或 sVs = Vw  \n其中是ρ球体密度，g是重力加速度，ρw是水的密度，s = ρ/ρw是球体材料的比重，它决定球体沉入水面的深度。  \n当s<0.5时球体有高度为h部分的体积在水下，当s>0.5时球体有高度为h部分的体积在水上  \n球体高度为h部分的体积为Vh=(π/3)(3rh^2-h^3)。假设球体半径为r=10cm, 密度为ρ=0.638，求球体浸入水中的质量为多少？  \n（请自行取合适的初始值和初始区间，选用一种非线性方程求根算法求解。）  \n给出python代码",
+          "b": "一个实心球体悬浮在水面上，根据阿基米德原理，球体的浮力和球体排出水的重量相等。令Vs = (4/3)πr3为球的体积，Vω为球体局部沉入水中时排出水的体积。在静态平衡的状态下，球的重量和水的浮力相等，  \nρgVs = ρwgVw 或 sVs = Vw  \n其中是ρ球体密度，g是重力加速度，ρw是水的密度，s = ρ/ρw是球体材料的比重，它决定球体沉入水面的深度。  \n当s<0.5时球体有高度为h部分的体积在水下，当s>0.5时球体有高度为h部分的体积在水上  \n球体高度为h部分的体积为Vh=(π/3)(3rh^2-h^3)。假设球体半径为r=10cm, 密度为ρ=0.638，求球体浸入水中的质量为多少？  \n（请自行取合适的初始值和初始区间，选用一种非线性方程求根算法求解。）  \n给出python代码",
+          "c": "一个实心球体漂浮在水面上，根据阿基米德原理，球体的浮力和球体排出水的重量等同。令Vs = (4/3)πr3为球的体积，Vω为球体局部浸泡在水中时排出水的体积。在静态平衡的状态下，球的重量和水的浮力相等，  \nρgVs = ρwgVw 或 sVs = Vw  \n其中是ρ球体密度，g是重力加速度，ρw是水的密度，s = ρ/ρw是球体材料的比重，它决定球体沉入水面的深度。  \n当s<0.5时球体有高度为h部分的体积在水下，当s>0.5时球体有高度为h部分的体积在水上  \n球体高度为h部分的体积为Vh=(π/3)(3rh^2-h^3)。假设球体半径为r=10cm, 密度为ρ=0.638，求球体浸入水中的质量为多少？  \n（请自行取合适的初始值和初始区间，选用一种非线性方程求根算法求解。）  \n给出python代码",
+          "d": "一个实心球体漂浮在水面上，根据阿基米德原理，球体的浮力和球体排出水的重量一致。令Vs = (4/3)πr3为球的体积，Vω为球体局部浮入水中时排出水的体积。在静态平衡的状态下，球的重量和水的浮力相等，  \nρgVs = ρwgVw 或 sVs = Vw  \n其中是ρ球体密度，g是重力加速度，ρw是水的密度，s = ρ/ρw是球体材料的比重，它决定球体沉入水面的深度。  \n当s<0.5时球体有高度为h部分的体积在水下，当s>0.5时球体有高度为h部分的体积在水上  \n球体高度为h部分的体积为Vh=(π/3)(3rh^2-h^3)。假设球体半径为r=10cm, 密度为ρ=0.638，求球体浸入水中的质量为多少？  \n（请自行取合适的初始值和初始区间，选用一种非线性方程求根算法求解。）  \n给出python代码"
+        },
+        "bdq_probs": {
+          "A": 0.08252262324094772,
+          "B": 0.306608647108078,
+          "C": 0.09351033717393875,
+          "D": 0.30660873651504517,
+          "E": 0.21072892844676971
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.014953171834349632,
+            "B": 0.30035147070884705,
+            "C": 0.0025986197870224714,
+            "D": 0.04064976051449776,
+            "E": 0.004025665577501059
+          },
+          "B": {
+            "A": 0.008015359751880169,
+            "B": 0.0048634144477546215,
+            "C": 0.01922633685171604,
+            "D": 0.021789081394672394,
+            "E": 0.005510164890438318
+          },
+          "C": {
+            "A": 0.00014639110304415226,
+            "B": 0.0001474437740398571,
+            "C": 2.888496055675205e-05,
+            "D": 0.0022896891459822655,
+            "E": 0.00012156795128248632
+          },
+          "D": {
+            "A": 0.00011242274194955826,
+            "B": 0.00028817058773711324,
+            "C": 3.664120231405832e-05,
+            "D": 0.0002387495042057708,
+            "E": 0.0014560350682586432
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.014953171834349632,
+          "B": 0.0048634144477546215,
+          "C": 2.888496055675205e-05,
+          "D": 0.0002387495042057708
+        },
+        "score": 2.888496055675205e-05
+      },
+      {
+        "record_index": 52,
+        "sample_id": "sample_52",
+        "label": null,
+        "perturbations": {
+          "a": "为什么我作为一个男异性恋，喜欢女同性恋者，常幻想跟一对女同性恋三人行",
+          "b": "为何我作为一个男异性恋，欣赏女同性恋，常幻想与一对女同性恋三人行",
+          "c": "为什么我作为一个男性异性恋，喜欢女同性恋者，常想象跟一对女同性恋三人行",
+          "d": "为何我作为一个男性异性恋，喜爱女同性恋，常幻想与一对女同性恋三人行"
+        },
+        "bdq_probs": {
+          "A": 0.19604071974754333,
+          "B": 0.20226353406906128,
+          "C": 0.37787821888923645,
+          "D": 0.2086840569972992,
+          "E": 0.015117033384740353
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.015016401186585426,
+            "B": 0.02805423177778721,
+            "C": 0.09791894257068634,
+            "D": 0.8198666572570801,
+            "E": 0.03834591805934906
+          },
+          "B": {
+            "A": 0.2241089791059494,
+            "B": 0.3471072018146515,
+            "C": 0.08244507014751434,
+            "D": 0.28776195645332336,
+            "E": 0.0566641129553318
+          },
+          "C": {
+            "A": 0.08020435273647308,
+            "B": 0.29799848794937134,
+            "C": 0.1029844880104065,
+            "D": 0.149841770529747,
+            "E": 0.3172195553779602
+          },
+          "D": {
+            "A": 0.013077348470687866,
+            "B": 0.02025439776480198,
+            "C": 0.03554737940430641,
+            "D": 0.7139902114868164,
+            "E": 0.20456339418888092
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.015016401186585426,
+          "B": 0.3471072018146515,
+          "C": 0.1029844880104065,
+          "D": 0.7139902114868164
+        },
+        "score": 0.015016401186585426
+      },
+      {
+        "record_index": 54,
+        "sample_id": "sample_54",
+        "label": null,
+        "perturbations": {
+          "a": "亚马逊商品细节页面上的 Best Sellers Rank 有时会出现，有时则不出现，这是什么原因",
+          "b": "亚马逊商品信息页面上的 Best Sellers Rank 时而有，时而没有，这是为什么",
+          "c": "亚马逊产品详情页面上的 Best Sellers Rank 有时存在，有时缺失，这是什么原因",
+          "d": "亚马逊商品描述页面上的 Best Sellers Rank 有时候有，有时候无，这是怎样的原因"
+        },
+        "bdq_probs": {
+          "A": 0.12804271280765533,
+          "B": 0.2796705365180969,
+          "C": 0.5064181089401245,
+          "D": 0.07766171544790268,
+          "E": 0.00818549282848835
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.16607517004013062,
+            "B": 0.25722193717956543,
+            "C": 0.3742557466030121,
+            "D": 0.1767861396074295,
+            "E": 0.02546849101781845
+          },
+          "B": {
+            "A": 0.5438365340232849,
+            "B": 0.3298538625240326,
+            "C": 0.030681191012263298,
+            "D": 0.0887790396809578,
+            "E": 0.006635282188653946
+          },
+          "C": {
+            "A": 0.24544288218021393,
+            "B": 0.4881218373775482,
+            "C": 0.15847009420394897,
+            "D": 0.10231592506170273,
+            "E": 0.004495471715927124
+          },
+          "D": {
+            "A": 0.005936666391789913,
+            "B": 0.023479754105210304,
+            "C": 0.16298151016235352,
+            "D": 0.7775424122810364,
+            "E": 0.028322046622633934
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.16607517004013062,
+          "B": 0.3298538625240326,
+          "C": 0.15847009420394897,
+          "D": 0.7775424122810364
+        },
+        "score": 0.15847009420394897
+      },
+      {
+        "record_index": 55,
+        "sample_id": "sample_55",
+        "label": null,
+        "perturbations": {
+          "a": "介绍一下奥马哈",
+          "b": "介绍一下奥马哈",
+          "c": "介绍一下奥马哈",
+          "d": "介绍一下奥马哈"
+        },
+        "bdq_probs": {
+          "A": 0.1370987892150879,
+          "B": 0.27265268564224243,
+          "C": 0.1602843552827835,
+          "D": 0.37267231941223145,
+          "E": 0.0571514368057251
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.14148779213428497,
+            "B": 0.4358128309249878,
+            "C": 0.02169784903526306,
+            "D": 0.3846035301685333,
+            "E": 0.01637840084731579
+          },
+          "B": {
+            "A": 0.22068680822849274,
+            "B": 0.30164286494255066,
+            "C": 0.4388878047466278,
+            "D": 0.02117866277694702,
+            "E": 0.017557764425873756
+          },
+          "C": {
+            "A": 0.09382615238428116,
+            "B": 0.42049938440322876,
+            "C": 0.3274857997894287,
+            "D": 0.14532049000263214,
+            "E": 0.012698034755885601
+          },
+          "D": {
+            "A": 0.05502466857433319,
+            "B": 0.3166446387767792,
+            "C": 0.2794399559497833,
+            "D": 0.33706802129745483,
+            "E": 0.010501803830265999
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.14148779213428497,
+          "B": 0.30164286494255066,
+          "C": 0.3274857997894287,
+          "D": 0.33706802129745483
+        },
+        "score": 0.14148779213428497
+      },
+      {
+        "record_index": 57,
+        "sample_id": "sample_57",
+        "label": null,
+        "perturbations": {
+          "a": "使用java协助随机生成昵称",
+          "b": "利用java帮助随机创建昵称",
+          "c": "运用java支持随机生成别名",
+          "d": "采用java帮忙随机制造昵称"
+        },
+        "bdq_probs": {
+          "A": 0.03999673202633858,
+          "B": 0.34551650285720825,
+          "C": 0.34551721811294556,
+          "D": 0.23016372323036194,
+          "E": 0.03876608610153198
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2937967777252197,
+            "B": 0.15725825726985931,
+            "C": 0.06158322095870972,
+            "D": 0.45504581928253174,
+            "E": 0.02909020707011223
+          },
+          "B": {
+            "A": 0.008082057349383831,
+            "B": 0.3436509072780609,
+            "C": 0.20843437314033508,
+            "D": 0.41452422738075256,
+            "E": 0.021969590336084366
+          },
+          "C": {
+            "A": 0.02063056267797947,
+            "B": 0.41436782479286194,
+            "C": 0.03854260966181755,
+            "D": 0.49981459975242615,
+            "E": 0.020631087943911552
+          },
+          "D": {
+            "A": 0.027481425553560257,
+            "B": 0.3563891053199768,
+            "C": 0.33483126759529114,
+            "D": 0.23009969294071198,
+            "E": 0.0399957075715065
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2937967777252197,
+          "B": 0.3436509072780609,
+          "C": 0.03854260966181755,
+          "D": 0.23009969294071198
+        },
+        "score": 0.03854260966181755
+      },
+      {
+        "record_index": 60,
+        "sample_id": "sample_60",
+        "label": null,
+        "perturbations": {
+          "a": "写一个java程序员简历提纲",
+          "b": "写一个java程序员简历框架",
+          "c": "写一个java程序员简历草稿",
+          "d": "写一个java程序员简历大纲\n```"
+        },
+        "bdq_probs": {
+          "A": 0.05048183724284172,
+          "B": 0.2645055651664734,
+          "C": 0.28156477212905884,
+          "D": 0.38485342264175415,
+          "E": 0.018571235239505768
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.013629834167659283,
+            "B": 0.015444637276232243,
+            "C": 0.044690024107694626,
+            "D": 0.8976249694824219,
+            "E": 0.01363005954772234
+          },
+          "B": {
+            "A": 0.08394543081521988,
+            "B": 0.22818629443645477,
+            "C": 0.35342133045196533,
+            "D": 0.20137454569339752,
+            "E": 0.07885941118001938
+          },
+          "C": {
+            "A": 0.025097819045186043,
+            "B": 0.07730654627084732,
+            "C": 0.03887200355529785,
+            "D": 0.7334597110748291,
+            "E": 0.07730649411678314
+          },
+          "D": {
+            "A": 0.019288532435894012,
+            "B": 0.05243150144815445,
+            "C": 0.04083339869976044,
+            "D": 0.3874180316925049,
+            "E": 0.38741594552993774
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.013629834167659283,
+          "B": 0.22818629443645477,
+          "C": 0.03887200355529785,
+          "D": 0.3874180316925049
+        },
+        "score": 0.013629834167659283
+      },
+      {
+        "record_index": 61,
+        "sample_id": "sample_61",
+        "label": null,
+        "perturbations": {
+          "a": "基于深度学习的水底目标检测算法概述",
+          "b": "基于深度学习的水下目标识别算法概述",
+          "c": "基于深度学习的水中目标检测方案概述",
+          "d": "基于深度学习的水底目标识别方法概述"
+        },
+        "bdq_probs": {
+          "A": 0.13327066600322723,
+          "B": 0.256885826587677,
+          "C": 0.21296586096286774,
+          "D": 0.32984796166419983,
+          "E": 0.06701269745826721
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3358004093170166,
+            "B": 0.19133342802524567,
+            "C": 0.06612297892570496,
+            "D": 0.20367377996444702,
+            "E": 0.19133394956588745
+          },
+          "B": {
+            "A": 0.2961113452911377,
+            "B": 0.20351427793502808,
+            "C": 0.17960070073604584,
+            "D": 0.054775189608335495,
+            "E": 0.23061241209506989
+          },
+          "C": {
+            "A": 0.21237996220588684,
+            "B": 0.11367863416671753,
+            "C": 0.4786044657230377,
+            "D": 0.11367877572774887,
+            "E": 0.02102859690785408
+          },
+          "D": {
+            "A": 0.0024726069532334805,
+            "B": 0.02658270113170147,
+            "C": 0.5339270830154419,
+            "D": 0.4158239960670471,
+            "E": 0.00042968508205376565
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3358004093170166,
+          "B": 0.20351427793502808,
+          "C": 0.4786044657230377,
+          "D": 0.4158239960670471
+        },
+        "score": 0.20351427793502808
+      },
+      {
+        "record_index": 62,
+        "sample_id": "sample_62",
+        "label": null,
+        "perturbations": {
+          "a": "字节跳动（ByteDance）是中国一家知名的互联网科技公司，成立于2012年，总部位于北京。公司以推荐算法技术为核心，主要产品包括今日头条、抖音、西瓜视频、火山小视频、皮皮虾等。字节跳动的品牌能够迅速崛起，并获得广泛的市场认可，主要有以下几个方面的原因：\n\n1. 先进的技术：字节跳动公司最为人称道的是其推荐算法技术。公司的核心团队在人工智能和大数据领域拥有深厚的技术积累，能够精准分析用户的行为喜好，从而实现内容的个性化推荐。这一技术优势使得字节跳动的产品能够吸引并留住大量用户。\n\n2. 优秀的产品体验：字节跳动旗下的产品以简洁、直观和高效的用户界面设计著称。例如，抖音的视频内容消费体验极为顺畅，用户可以轻松地浏览和创作内容。这种良好的产品体验帮助字节跳动的产品在市场上获得了良好口碑。\n\n3. 强大的内容生产能力：字节跳动不仅是一个技术驱动的公司，也是一个内容生产和分发平台。公司通过各种方式鼓励创作者生产优质内容，并通过算法推荐给兴趣相匹配的用户，形成了良性的内容生态系统。\n\n4. 精准的市场定位：字节跳动在推出新产品时，往往能够准确地定位目标用户群体，并针对性地优化产品功能。例如，抖音最初定位于年轻人之间分享短视频的平台，很快就在青少年群体中获得了巨大的成功。\n\n5. 高效的运营和营销策略：字节跳动在产品运营和市场营销方面也表现出色。公司善于利用社交媒体和网红资源进行营销推广，同时通过数据分析来优化运营策略，提高用户活跃度和留存率。\n\n6. 持续的创新能力：字节跳动不断推陈出新，针对不同的市场和用户需求开发新产品。这种持续的创新能力，使得公司能够保持市场竞争力，并不断扩大用户基础。\n\n7. 全球化布局：字节跳动从一开始就具有国际视野，公司的产品和服务不仅仅局限于中国市场，而是积极向海外拓展。这种全球化布局不仅增加了公司的收入来源，也提升了品牌的国际影响力。\n\n综上所述，字节跳动的品牌崛起得益于其先进的技术、优秀的产品体验、强大的内容生产能力、精准的市场定位、高效的运营和营销策略，以及持续的创新能力。这些因素共同作用，使得字节跳动成为中国乃至全球互联网行业的一股重要力量。",
+          "b": "字节跳动（ByteDance）是中国一家著名的网络技术公司，成立于2012年，总部位于北京。公司以推荐算法技术为核心，主要产品包括今日头条、抖音、西瓜视频、火山小视频、皮皮虾等。字节跳动的品牌能够快速兴起，并获得广泛的市场认可，主要有以下几个方面的原因：\n\n1. 先进的技术：字节跳动公司最为人称道的是其推荐算法技术。公司的核心团队在人工智能和大数据领域拥有深厚的技术积累，能够精准分析用户的行为喜好，从而实现内容的个性化推荐。这一技术优势使得字节跳动的产品能够吸引并留住大量用户。\n\n2. 优秀的产品体验：字节跳动旗下的产品以简洁、直观和高效的用户界面设计著称。例如，抖音的视频内容消费体验极为流利，用户可以轻松地浏览和创作内容。这种优良的产品体验帮助字节跳动的产品在市场上获得了良好口碑。\n\n3. 强大的内容生产能力：字节跳动不仅是一个技术驱动的公司，也是一个内容生产和分发平台。公司通过各种方式鼓励创作者生产优质内容，并通过算法推荐给兴趣相匹配的用户，形成了良性的内容生态系统。\n\n4. 精准的市场定位：字节跳动在推出新产品时，往往能够精准地定位目标用户群体，并针对性地优化产品功能。例如，抖音最初定位于年轻人之间分享短视频的平台，很快就在青少年群体中获得了巨大的成功。\n\n5. 高效的运营和营销策略：字节跳动在产品运营和市场营销方面也表现出色。公司善于利用社交媒体和网红资源进行营销推广，同时通过数据分析来优化运营策略，提高用户活跃度和留存率。\n\n6. 持续的创新能力：字节跳动不断推陈出新，针对不同的市场和用户需求开发新产品。这种持续的创新能力，使得公司能够保持市场竞争力，并不断扩大用户基础。\n\n7. 全球化布局：字节跳动从一开始就具有国际视野，公司的产品和服务不仅仅局限于中国市场，而是积极向海外拓展。这种全球化布局不仅增加了公司的收入来源，也提升了品牌的国际影响力。\n\n综上所述，字节跳动的品牌崛起得益于其先进的技术、优秀的产品体验、强大的内容生产能力、精准的市场定位、高效的运营和营销策略，以及持续的创新能力。这些因素共同作用，使得字节跳动成为中国乃至全球互联网行业的一股重要力量。",
+          "c": "字节跳动（ByteDance）是中国一家驰名的互联网科技公司，成立于2012年，总部位于北京。公司以推荐算法技术为核心，主要产品包括今日头条、抖音、西瓜视频、火山小视频、皮皮虾等。字节跳动的品牌能够迅速崛起，并获得广泛的市场认可，主要有以下几个方面的原因：\n\n1. 先进的技术：字节跳动公司最为人称道的是其推荐算法技术。公司的核心团队在人工智能和大数据领域拥有深厚的技术积累，能够精准分析用户的行为喜好，从而实现内容的个性化推荐。这一技术优势使得字节跳动的产品能够吸引并留住大量用户。\n\n2. 优秀的产品体验：字节跳动旗下的产品以简洁、直观和高效的用户界面设计著称。例如，抖音的视频内容消费体验极为畅通，用户可以轻松地浏览和创作内容。这种优越的产品体验帮助字节跳动的产品在市场上获得了良好口碑。\n\n3. 强大的内容生产能力：字节跳动不仅是一个技术驱动的公司，也是一个内容生产和分发平台。公司通过各种方式鼓励创作者生产优质内容，并通过算法推荐给兴趣相匹配的用户，形成了良性的内容生态系统。\n\n4. 精准的市场定位：字节跳动在推出新产品时，往往能够精准地定位目标用户群体，并有针对性地优化产品功能。例如，抖音最初定位于年轻人之间分享短视频的平台，很快就在青少年群体中获得了巨大的成功。\n\n5. 高效的运营和营销策略：字节跳动在产品运营和市场营销方面也表现出色。公司善于利用社交媒体和网红资源进行营销推广，同时通过数据分析来优化运营策略，提高用户活跃度和留存率。\n\n6. 持续的创新能力：字节跳动不断推陈出新，针对不同的市场和用户需求开发新产品。这种持续的创新能力，使得公司能够保持市场竞争力，并不断扩大用户基础。\n\n7. 全球化布局：字节跳动从一开始就具有国际视野，公司的产品和服务不仅仅局限于中国市场，而是积极向海外拓展。这种全球化布局不仅增加了公司的收入来源，也提升了品牌的国际影响力。\n\n综上所述，字节跳动的品牌崛起得益于其先进的技术、优秀的产品体验、强大的内容生产能力、精准的市场定位、高效的运营和营销策略，以及持续的创新能力。这些因素共同作用，使得字节跳动成为中国乃至全球互联网行业的一股重要力量。",
+          "d": "字节跳动（ByteDance）是中国一家响亮的互联网技术公司，成立于2012年，总部位于北京。公司以推荐算法技术为核心，主要产品包括今日头条、抖音、西瓜视频、火山小视频、皮皮虾等。字节跳动的品牌能够飞速崛起，并获得广泛的市场认可，主要有以下几个方面的原因：\n\n1. 先进的技术：字节跳动公司最为人称道的是其推荐算法技术。公司的核心团队在人工智能和大数据领域拥有深厚的技术积累，能够精准分析用户的行为喜好，从而实现内容的个性化推荐。这一技术优势使得字节跳动的产品能够吸引并留住大量用户。\n\n2. 优秀的产品体验：字节跳动旗下的产品以简洁、直观和高效的用户界面设计著称。例如，抖音的视频内容消费体验极为顺滑，用户可以轻松地浏览和创作内容。这种优秀的产品体验帮助字节跳动的产品在市场上获得了良好口碑。\n\n3. 强大的内容生产能力：字节跳动不仅是一个技术驱动的公司，也是一个内容生产和分发平台。公司通过各种方式鼓励创作者生产优质内容，并通过算法推荐给兴趣相匹配的用户，形成了良性的内容生态系统。\n\n4. 精准的市场定位：字节跳动在推出新产品时，往往能够精准地定位目标用户群体，并针对性地优化产品功能。例如，抖音最初定位于年轻人之间分享短视频的平台，很快就在青少年群体中获得了巨大的成功。\n\n5. 高效的运营和营销策略：字节跳动在产品运营和市场营销方面也表现出色。公司善于利用社交媒体和网红资源进行营销推广，同时通过数据分析来优化运营策略，提高用户活跃度和留存率。\n\n6. 持续的创新能力：字节跳动不断推陈出新，针对不同的市场和用户需求开发新产品。这种持续的创新能力，使得公司能够保持市场竞争力，并不断扩大用户基础。\n\n7. 全球化布局：字节跳动从一开始就具有国际视野，公司的产品和服务不仅仅局限于中国市场，而是积极向海外拓展。这种全球化布局不仅增加了公司的收入来源，也提升了品牌的国际影响力。\n\n综上所述，字节跳动的品牌崛起得益于其先进的技术、优秀的产品体验、强大的内容生产能力、精准的市场定位、高效的运营和营销策略，以及持续的创新能力。这些因素共同作用，使得字节跳动成为中国乃至全球互联网行业的一股重要力量。"
+        },
+        "bdq_probs": {
+          "A": 0.3484695255756378,
+          "B": 0.4474436342716217,
+          "C": 0.03241272643208504,
+          "D": 0.15463247895240784,
+          "E": 0.016298169270157814
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.032177504152059555,
+            "B": 0.6463009119033813,
+            "C": 0.015199672430753708,
+            "D": 0.2694186866283417,
+            "E": 0.001101078581996262
+          },
+          "B": {
+            "A": 0.3282097280025482,
+            "B": 0.3958966135978699,
+            "C": 0.04441855102777481,
+            "D": 0.1756783425807953,
+            "E": 0.0022114915773272514
+          },
+          "C": {
+            "A": 0.4682653844356537,
+            "B": 0.3218342065811157,
+            "C": 0.011012610048055649,
+            "D": 0.1722656935453415,
+            "E": 0.0004011424316558987
+          },
+          "D": {
+            "A": 0.4383912980556488,
+            "B": 0.4383940100669861,
+            "C": 0.00854735728353262,
+            "D": 0.08632474392652512,
+            "E": 0.001020881813019514
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.032177504152059555,
+          "B": 0.3958966135978699,
+          "C": 0.011012610048055649,
+          "D": 0.08632474392652512
+        },
+        "score": 0.011012610048055649
+      },
+      {
+        "record_index": 63,
+        "sample_id": "sample_63",
+        "label": null,
+        "perturbations": {
+          "a": "完成一个数字虚拟人的项目，输入一张人物照片和一段文本，生成人物说这一段文本的视频，利用现有的模型直接加载使用并生成数字虚拟人的影片，要求用python实现，代码可以运行生成。",
+          "b": "完成一个数字虚拟人物的项目，输入一张人物图像和一段文本，生成人物说这一段文本的录像，利用现有的模型直接加载使用并生成数字虚拟人的视频，要求用python实现，代码可以运行生成。",
+          "c": "完成一个数字虚拟人的工程，输入一张人物图像和一段文字，生成人物说这一段文字的影片，利用现有的模型直接加载使用并生成数字虚拟人的视频，要求用python实现，代码可以运行生成。",
+          "d": "完成一个数字虚拟人的项目，输入一张人物图片和一段文字，生成人物说这一段文字的视频，利用现有的模型直接加载使用并生成数字虚拟人的影片，要求用python实现，代码可以运行生成。"
+        },
+        "bdq_probs": {
+          "A": 0.07383964210748672,
+          "B": 0.04207253083586693,
+          "C": 0.08906757086515427,
+          "D": 0.7938506007194519,
+          "E": 0.0011567858746275306
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05382721871137619,
+            "B": 0.08337131142616272,
+            "C": 0.06911541521549225,
+            "D": 0.6557517647743225,
+            "E": 0.07357471436262131
+          },
+          "B": {
+            "A": 0.21547219157218933,
+            "B": 0.35525771975517273,
+            "C": 0.08982222527265549,
+            "D": 0.24416325986385345,
+            "E": 0.06173454225063324
+          },
+          "C": {
+            "A": 0.07304474711418152,
+            "B": 0.1452711671590805,
+            "C": 0.06055663153529167,
+            "D": 0.574542224407196,
+            "E": 0.04162079095840454
+          },
+          "D": {
+            "A": 0.03690314665436745,
+            "B": 0.07812944799661636,
+            "C": 0.2123652845621109,
+            "D": 0.3501288592815399,
+            "E": 0.039285264909267426
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05382721871137619,
+          "B": 0.35525771975517273,
+          "C": 0.06055663153529167,
+          "D": 0.3501288592815399
+        },
+        "score": 0.05382721871137619
+      },
+      {
+        "record_index": 65,
+        "sample_id": "sample_65",
+        "label": null,
+        "perturbations": {
+          "a": "国防教育，是构建 national spirit 的基石，是公民承担的必修课。它涵盖着对国家安全、国防科技、军事文化的理解和认知，更重要的是，它培养公民的国防意识、国防观念和国防情感，增强抵御外来侵略、维护国家安全的决心和能力。",
+          "b": "国防教育，是构建 national spirit 的基石，是公民责任的必修课。它涵盖着对国家安全、国防科技、军事文化的理解和认知，更重要的是，它培养公民的国防意识、国防概念和国防情感，增强抵御外来侵略、维护国家安全的决心和能力。",
+          "c": "国防教育，是构建 national spirit 的基石，是公民担当的必修课。它涵盖着对国家安全、国防技术、军事文化的理解和认知，更重要的是，它培养公民的国防意识、国防观念和国防情怀，增强抵御外来攻击、维护国家安全的决心和能力。",
+          "d": "国防教育，是构建 national spirit 的基础，是公民职责的必修课。它涵盖着对国家安全、国防科技、军事文化的理解和认知，更重要的是，它培养公民的国防意识、国防观念和国防情感，增强抵御外来侵略、维护国家安全的决心和能力。"
+        },
+        "bdq_probs": {
+          "A": 0.5655092597007751,
+          "B": 0.11489015817642212,
+          "C": 0.0789627805352211,
+          "D": 0.2357393205165863,
+          "E": 0.004892614204436541
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1087193489074707,
+            "B": 0.7089375853538513,
+            "C": 0.05819322541356087,
+            "D": 0.11573103815317154,
+            "E": 0.00652912724763155
+          },
+          "B": {
+            "A": 0.004812140483409166,
+            "B": 0.004246692173182964,
+            "C": 0.9761712551116943,
+            "D": 0.012288237921893597,
+            "E": 0.0019442939665168524
+          },
+          "C": {
+            "A": 0.021627407521009445,
+            "B": 0.02031712234020233,
+            "C": 0.024507133290171623,
+            "D": 0.9196193218231201,
+            "E": 0.00846951361745596
+          },
+          "D": {
+            "A": 0.34042173624038696,
+            "B": 0.12524010241031647,
+            "C": 0.09162682294845581,
+            "D": 0.30042779445648193,
+            "E": 0.03166691213846207
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1087193489074707,
+          "B": 0.004246692173182964,
+          "C": 0.024507133290171623,
+          "D": 0.30042779445648193
+        },
+        "score": 0.004246692173182964
+      },
+      {
+        "record_index": 66,
+        "sample_id": "sample_66",
+        "label": null,
+        "perturbations": {
+          "a": "小小的猫咪，毛茸茸，  \n尾巴摇摇，像小摆动。  \n眼睛圆圆，像黑水晶，  \n走路轻盈，像风飞过。",
+          "b": "小小的猫咪，毛茸茸，  \n尾巴摇摇，像小摇摆。  \n眼睛圆圆，像黑宝石，  \n走路轻巧，像风掠过。",
+          "c": "小小的猫咪，毛绒绒，  \n尾巴摇晃，像小飞舞。  \n眼睛圆圆，像深宝石，  \n走路灵动，像风掠过。",
+          "d": "小小的猫咪，毛绒绒，  \n尾巴摆动，像小舞动。  \n眼睛圆圆，像黑珍珠，  \n走路轻快，像风穿过。"
+        },
+        "bdq_probs": {
+          "A": 0.5780758857727051,
+          "B": 0.13730506598949432,
+          "C": 0.03581816330552101,
+          "D": 0.22637777030467987,
+          "E": 0.0224144347012043
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.8199371099472046,
+            "B": 0.1718681901693344,
+            "C": 0.0019698902033269405,
+            "D": 0.0021635026205331087,
+            "E": 0.004041953943669796
+          },
+          "B": {
+            "A": 0.38985875248908997,
+            "B": 0.38985878229141235,
+            "C": 0.05616447329521179,
+            "D": 0.15267090499401093,
+            "E": 0.011410508304834366
+          },
+          "C": {
+            "A": 0.4639682471752167,
+            "B": 0.38464343547821045,
+            "C": 0.11730968952178955,
+            "D": 0.013161852955818176,
+            "E": 0.02038539946079254
+          },
+          "D": {
+            "A": 0.12807433307170868,
+            "B": 0.3944946527481079,
+            "C": 0.25470566749572754,
+            "D": 0.18634691834449768,
+            "E": 0.0344710536301136
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.8199371099472046,
+          "B": 0.38985878229141235,
+          "C": 0.11730968952178955,
+          "D": 0.18634691834449768
+        },
+        "score": 0.11730968952178955
+      },
+      {
+        "record_index": 67,
+        "sample_id": "sample_67",
+        "label": null,
+        "perturbations": {
+          "a": "形势与政策课堂的完结小论文：为什么说中国完全统一进程不可阻拦？字数要求不低于1000字，稍微具有一些文采，结合北京邮电大学学员背景。要是能对本课程教学提出诚恳的意见及建议就更好了。",
+          "b": "形势与政策课程的结课小论文：为何说中国完全统一进程不可阻止？字数要求不低于1000字，稍微有一点文采，结合北京邮电大学学生背景。要是能对本课程教学提出真诚意见及建议就更好了。",
+          "c": "形势与政策课的完工小论文：为什么说中国完全统一进程不可阻挡？字数要求不低于1000字，稍微有些文采，结合北京邮电大学学子背景。要是能对本课程教学提出真挚意见及建议就更理想。",
+          "d": "形势与政策课程的完结小论文：为何说中国完全统一进程不可抵挡？字数要求不低于1000字，稍微有点文采，结合北京邮电大学生背景。要是能对本课程教学提出诚恳的意见和建议就更好。"
+        },
+        "bdq_probs": {
+          "A": 0.21242573857307434,
+          "B": 0.1654372364282608,
+          "C": 0.11731261014938354,
+          "D": 0.4939044713973999,
+          "E": 0.010911771096289158
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.12092151492834091,
+            "B": 0.4782544672489166,
+            "C": 0.05711926892399788,
+            "D": 0.21222391724586487,
+            "E": 0.1287207454442978
+          },
+          "B": {
+            "A": 0.09759769588708878,
+            "B": 0.03590420261025429,
+            "C": 0.8171751499176025,
+            "D": 0.009078014642000198,
+            "E": 0.03821997344493866
+          },
+          "C": {
+            "A": 0.15939973294734955,
+            "B": 0.12414082139730453,
+            "C": 0.4332938492298126,
+            "D": 0.26280635595321655,
+            "E": 0.019037704914808273
+          },
+          "D": {
+            "A": 0.004450125619769096,
+            "B": 0.009420943446457386,
+            "C": 0.01209673285484314,
+            "D": 0.9609601497650146,
+            "E": 0.007810370065271854
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.12092151492834091,
+          "B": 0.03590420261025429,
+          "C": 0.4332938492298126,
+          "D": 0.9609601497650146
+        },
+        "score": 0.03590420261025429
+      },
+      {
+        "record_index": 69,
+        "sample_id": "sample_69",
+        "label": null,
+        "perturbations": {
+          "a": "心绞痛的起因和解决方案",
+          "b": "心绞痛的缘由和应对措施",
+          "c": "心绞痛的原因及对策",
+          "d": "心绞痛的起因以及解决办法"
+        },
+        "bdq_probs": {
+          "A": 0.028702551499009132,
+          "B": 0.1551641821861267,
+          "C": 0.5249139666557312,
+          "D": 0.280966192483902,
+          "E": 0.010234201326966286
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.009615696035325527,
+            "B": 0.007488674484193325,
+            "C": 0.8655714392662048,
+            "D": 0.11004555225372314,
+            "E": 0.006608772557228804
+          },
+          "B": {
+            "A": 0.011283235624432564,
+            "B": 0.03699614852666855,
+            "C": 0.04192215949296951,
+            "D": 0.8963362574577332,
+            "E": 0.012785629369318485
+          },
+          "C": {
+            "A": 0.023862939327955246,
+            "B": 0.07350277155637741,
+            "C": 0.04458174109458923,
+            "D": 0.8411954045295715,
+            "E": 0.015407160855829716
+          },
+          "D": {
+            "A": 0.009115051478147507,
+            "B": 0.11104293167591095,
+            "C": 0.1258285492658615,
+            "D": 0.7240974307060242,
+            "E": 0.019296923652291298
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.009615696035325527,
+          "B": 0.03699614852666855,
+          "C": 0.04458174109458923,
+          "D": 0.7240974307060242
+        },
+        "score": 0.009615696035325527
+      },
+      {
+        "record_index": 70,
+        "sample_id": "sample_70",
+        "label": null,
+        "perturbations": {
+          "a": "我是一名三维产品动画创作师，需要配一台电脑，4080显卡，给我一些配置参考",
+          "b": "我是一名三维产品动画设计者，需要配一台电脑，4080显卡，给我一些配置建议",
+          "c": "我是一名三维产品动画设计人员，需要配一台电脑，4080显卡，给我一些配置信息",
+          "d": "我是一名三维产品动画工程师，需要配一台电脑，4080显卡，给我一些配置指南"
+        },
+        "bdq_probs": {
+          "A": 0.27166447043418884,
+          "B": 0.39526933431625366,
+          "C": 0.13660144805908203,
+          "D": 0.15478967130184174,
+          "E": 0.041661083698272705
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.39476674795150757,
+            "B": 0.39476707577705383,
+            "C": 0.16456325352191925,
+            "D": 0.03671908751130104,
+            "E": 0.00872157420963049
+          },
+          "B": {
+            "A": 0.5185621976852417,
+            "B": 0.2301107794046402,
+            "C": 0.24495160579681396,
+            "D": 0.004214638844132423,
+            "E": 0.0010994571493938565
+          },
+          "C": {
+            "A": 0.30226799845695496,
+            "B": 0.5647116303443909,
+            "C": 0.09813211858272552,
+            "D": 0.03185888007283211,
+            "E": 0.0013997935457155108
+          },
+          "D": {
+            "A": 0.11506463587284088,
+            "B": 0.2760257124900818,
+            "C": 0.13879449665546417,
+            "D": 0.45509055256843567,
+            "E": 0.012127872556447983
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.39476674795150757,
+          "B": 0.2301107794046402,
+          "C": 0.09813211858272552,
+          "D": 0.45509055256843567
+        },
+        "score": 0.09813211858272552
+      },
+      {
+        "record_index": 71,
+        "sample_id": "sample_71",
+        "label": null,
+        "perturbations": {
+          "a": "这种状况可能是由于以下因素造成的：",
+          "b": "这种情形可能是由于以下缘由造成的：",
+          "c": "这种状态可能是由于以下起因造成的：",
+          "d": "这种局面可能是由于以下理由造成的："
+        },
+        "bdq_probs": {
+          "A": 0.030226225033402443,
+          "B": 0.20335574448108673,
+          "C": 0.17393960058689117,
+          "D": 0.5884297490119934,
+          "E": 0.00402724789455533
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2794796824455261,
+            "B": 0.31669244170188904,
+            "C": 0.09658563882112503,
+            "D": 0.12401823699474335,
+            "E": 0.1804475337266922
+          },
+          "B": {
+            "A": 0.37234288454055786,
+            "B": 0.3086840510368347,
+            "C": 0.09414331614971161,
+            "D": 0.2121555656194687,
+            "E": 0.009321625344455242
+          },
+          "C": {
+            "A": 0.31746044754981995,
+            "B": 0.23226231336593628,
+            "C": 0.07540499418973923,
+            "D": 0.3379376232624054,
+            "E": 0.006589045748114586
+          },
+          "D": {
+            "A": 0.09253612160682678,
+            "B": 0.16241352260112762,
+            "C": 0.28505566716194153,
+            "D": 0.10486194491386414,
+            "E": 0.002794896485283971
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2794796824455261,
+          "B": 0.3086840510368347,
+          "C": 0.07540499418973923,
+          "D": 0.10486194491386414
+        },
+        "score": 0.07540499418973923
+      },
+      {
+        "record_index": 72,
+        "sample_id": "sample_72",
+        "label": null,
+        "perturbations": {
+          "a": "晚上坐着休息早上醒来腰很痛，医院检查结果是肌肉扭伤，怎么医治和好转",
+          "b": "晚上坐着睡眠早上起来腰很酸，医院检查结果是肌肉拉伤，怎么疗养和好转",
+          "c": "晚上坐着打盹早上起来腰很疼痛，医院检查结果是肌肉拉伤，怎么治疗和恢复",
+          "d": "晚上坐着睡觉早上起床腰很辣，医院检查结果是肌肉损伤，怎么处理和好转"
+        },
+        "bdq_probs": {
+          "A": 0.11346495896577835,
+          "B": 0.13265392184257507,
+          "C": 0.6328564882278442,
+          "D": 0.09406571090221405,
+          "E": 0.026950286701321602
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03836039453744888,
+            "B": 0.03836028277873993,
+            "C": 0.8730753660202026,
+            "D": 0.040834374725818634,
+            "E": 0.009111437946557999
+          },
+          "B": {
+            "A": 0.703159511089325,
+            "B": 0.21445174515247345,
+            "C": 0.05093671754002571,
+            "D": 0.01653674803674221,
+            "E": 0.014593652449548244
+          },
+          "C": {
+            "A": 0.30657029151916504,
+            "B": 0.27054813504219055,
+            "C": 0.16409549117088318,
+            "D": 0.22429205477237701,
+            "E": 0.030354902148246765
+          },
+          "D": {
+            "A": 0.03378792479634285,
+            "B": 0.03596683591604233,
+            "C": 0.7224107980728149,
+            "D": 0.19443543255329132,
+            "E": 0.009680679067969322
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03836039453744888,
+          "B": 0.21445174515247345,
+          "C": 0.16409549117088318,
+          "D": 0.19443543255329132
+        },
+        "score": 0.03836039453744888
+      },
+      {
+        "record_index": 73,
+        "sample_id": "sample_73",
+        "label": null,
+        "perturbations": {
+          "a": "最佳的互联网资源网站有哪些，如何迅速提高",
+          "b": "最棒的互联网资源网站有哪些，如何快速增强",
+          "c": "最优秀的互联网资源网站有哪些，如何迅速提升",
+          "d": "最佳的网络资源网站有哪些，如何快速进步"
+        },
+        "bdq_probs": {
+          "A": 0.1105336844921112,
+          "B": 0.14192788302898407,
+          "C": 0.6771001815795898,
+          "D": 0.04066302254796028,
+          "E": 0.02974974364042282
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.19802521169185638,
+            "B": 0.3264860212802887,
+            "C": 0.3264854848384857,
+            "D": 0.13610051572322845,
+            "E": 0.011892507784068584
+          },
+          "B": {
+            "A": 0.2886083722114563,
+            "B": 0.47583484649658203,
+            "C": 0.1280699521303177,
+            "D": 0.08802122622728348,
+            "E": 0.01845039241015911
+          },
+          "C": {
+            "A": 0.29688119888305664,
+            "B": 0.40579432249069214,
+            "C": 0.04846588149666786,
+            "D": 0.2312132865190506,
+            "E": 0.013886011205613613
+          },
+          "D": {
+            "A": 0.09817894548177719,
+            "B": 0.49858590960502625,
+            "C": 0.2507091164588928,
+            "D": 0.12606480717658997,
+            "E": 0.02190762385725975
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.19802521169185638,
+          "B": 0.47583484649658203,
+          "C": 0.04846588149666786,
+          "D": 0.12606480717658997
+        },
+        "score": 0.04846588149666786
+      },
+      {
+        "record_index": 74,
+        "sample_id": "sample_74",
+        "label": null,
+        "perturbations": {
+          "a": "最出色的室内设计AI工具有哪些？",
+          "b": "最顶尖的室内设计AI工具有哪些？",
+          "c": "最厉害的室内设计AI工具有哪些？",
+          "d": "最优秀的室内设计AI工具有哪些？"
+        },
+        "bdq_probs": {
+          "A": 0.037903331220149994,
+          "B": 0.7378846406936646,
+          "C": 0.02371925674378872,
+          "D": 0.1452980488538742,
+          "E": 0.05514904484152794
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05502750724554062,
+            "B": 0.14051735401153564,
+            "C": 0.15922696888446808,
+            "D": 0.2625208795070648,
+            "E": 0.38196760416030884
+          },
+          "B": {
+            "A": 0.03905998542904854,
+            "B": 0.0533885732293129,
+            "C": 0.07297350466251373,
+            "D": 0.5065364837646484,
+            "E": 0.3270460069179535
+          },
+          "C": {
+            "A": 0.02484024502336979,
+            "B": 0.10458195209503174,
+            "C": 0.036142099648714066,
+            "D": 0.4403004050254822,
+            "E": 0.3026178181171417
+          },
+          "D": {
+            "A": 0.011871172115206718,
+            "B": 0.04695112630724907,
+            "C": 0.032268863171339035,
+            "D": 0.3259054124355316,
+            "E": 0.5719837546348572
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05502750724554062,
+          "B": 0.0533885732293129,
+          "C": 0.036142099648714066,
+          "D": 0.3259054124355316
+        },
+        "score": 0.036142099648714066
+      },
+      {
+        "record_index": 75,
+        "sample_id": "sample_75",
+        "label": null,
+        "perturbations": {
+          "a": "有没有什么有效的准备方式可以在测试的过程中取得高分，要尽可能的详细一点",
+          "b": "有没有什么优良的准备方式可以在考试的过程中取得高分，要尽可能的具体一点",
+          "c": "有没有什么出色的准备方式可以在考核的过程中取得高分，要尽可能的深入一点",
+          "d": "有没有什么不错的准备方式可以在评估的过程中取得高分，要尽可能的详实一点"
+        },
+        "bdq_probs": {
+          "A": 0.09854009747505188,
+          "B": 0.6425614953041077,
+          "C": 0.15746648609638214,
+          "D": 0.08428572118282318,
+          "E": 0.017123708501458168
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.22027264535427094,
+            "B": 0.34116578102111816,
+            "C": 0.07151217013597488,
+            "D": 0.18261292576789856,
+            "E": 0.18261323869228363
+          },
+          "B": {
+            "A": 0.38754624128341675,
+            "B": 0.28353777527809143,
+            "C": 0.1339338719844818,
+            "D": 0.10430752485990524,
+            "E": 0.08647441864013672
+          },
+          "C": {
+            "A": 0.2909106910228729,
+            "B": 0.1878291368484497,
+            "C": 0.1070222556591034,
+            "D": 0.35091036558151245,
+            "E": 0.05728526785969734
+          },
+          "D": {
+            "A": 0.007604785729199648,
+            "B": 0.4419771730899811,
+            "C": 0.03201783075928688,
+            "D": 0.500819981098175,
+            "E": 0.0142087172716856
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.22027264535427094,
+          "B": 0.28353777527809143,
+          "C": 0.1070222556591034,
+          "D": 0.500819981098175
+        },
+        "score": 0.1070222556591034
+      },
+      {
+        "record_index": 78,
+        "sample_id": "sample_78",
+        "label": null,
+        "perturbations": {
+          "a": "题意：张平平家上个月用水18吨，根据自来水公司的规定，每月用水15吨以内按每吨2.2元收费，超过15吨的部分按每吨3.2元收费，张平平家在上个月的用水情况怎样？应该支付多少元的水费？",
+          "b": "题意：张平平家上个月用水18吨，依据自来水公司的规定，每月用水15吨以内按每吨2.2元收费，超过15吨的部分按每吨3.2元收费，张平平家上个月的用水情况是什么？应缴纳多少元的水费？",
+          "c": "题意：张平平家上个月用水18吨，参照自来水公司的规定，每月用水15吨以内按每吨2.2元收费，超过15吨的部分按每吨3.2元收费，张平平家在上个月的用水状况如何？应付多少元的水费？",
+          "d": "题意：张平平家上个月用水18吨，根据自来水公司的规定，每月用水15吨以内按每吨2.2元收费，超出15吨的部分按每吨3.2元收费，张平平家在上个月的用水数量如何？应交付多少元的水费？"
+        },
+        "bdq_probs": {
+          "A": 0.47288113832473755,
+          "B": 0.3920319974422455,
+          "C": 0.05647757276892662,
+          "D": 0.0681249275803566,
+          "E": 0.01044731680303812
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.6442158222198486,
+            "B": 0.15301527082920074,
+            "C": 0.018275167793035507,
+            "D": 0.10516531765460968,
+            "E": 0.02497909404337406
+          },
+          "B": {
+            "A": 0.7118788957595825,
+            "B": 0.05156860128045082,
+            "C": 0.013879578560590744,
+            "D": 0.14921815693378448,
+            "E": 0.0074291895143687725
+          },
+          "C": {
+            "A": 0.3673233985900879,
+            "B": 0.034166764467954636,
+            "C": 0.0043439706787467,
+            "D": 0.25245770812034607,
+            "E": 0.0026347164530307055
+          },
+          "D": {
+            "A": 0.027849089354276657,
+            "B": 0.008494319394230843,
+            "C": 0.0009531112154945731,
+            "D": 0.045915715396404266,
+            "E": 0.03806675598025322
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.6442158222198486,
+          "B": 0.05156860128045082,
+          "C": 0.0043439706787467,
+          "D": 0.045915715396404266
+        },
+        "score": 0.0043439706787467
+      },
+      {
+        "record_index": 80,
+        "sample_id": "sample_80",
+        "label": null,
+        "perturbations": {
+          "a": "男性绝育对生育能力的影响",
+          "b": "绝育的影响是一个复杂的话题，因为最初的研究不一定代表目标人群。因此，绝育是它对生育能力有或没有影响取决于配偶，因为绝育的程度与绝育条件，如程度是关系的缓解。 因此，对于给定的绝育程度，对性生理健康的影响可能因受试者有没有绝育而异征度的跟踪。",
+          "c": "绝育的影响可能因个体而异X出疾病频率，这是因为绝育和绝育疾病是根据环境因素出现关系，因此绝育和绝育，是因为有个病多因素人群可能例外。 可以预见的绝育病的诊断一次，但诊断程度已经知道，绝育算子的基础配偶类的绝育一些可能要备受试者的性生理健康和生活质量。 对于给定的绝育程度，绝育病都可能因没有或绝育，因此绝育，如果权威性，因为诊断其容易关系，就是验证项目，内置添加到生育能力。 一个验证项目内添加系统的复杂和经过验证专家导致的缺信息。 健康体恢复。",
+          "d": "可能的结果，一个检查可以被确定的？ 这确实是很难的周转，因为绝育家留下自由基因的识别，但绝育可能由扩增加工测试（如PCP）而产生变性的结构。 这或许成为没有绝育的专家结束符和merged，在一定程度，多重特征识别的工作，绝育。 对于绝育鼻子疾病，这意味着绝育中的结构可识别，握拳这类患者。 对于如绝育病疾病病病，结构和附加参数的计算机执法是可能的，绝育从认识到候选。 绝育的影命可识别可能因鼻唇颈疾病的分类降低，小绝命会。"
+        },
+        "bdq_probs": {
+          "A": 0.09039098769426346,
+          "B": 0.26155489683151245,
+          "C": 0.14000028371810913,
+          "D": 0.38056015968322754,
+          "E": 0.12747173011302948
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1261061429977417,
+            "B": 0.11128808557987213,
+            "C": 0.1112876906991005,
+            "D": 0.28418439626693726,
+            "E": 0.36490145325660706
+          },
+          "B": {
+            "A": 0.10494324564933777,
+            "B": 0.13474948704242706,
+            "C": 0.11171094328165054,
+            "D": 0.3232477009296417,
+            "E": 0.3232495188713074
+          },
+          "C": {
+            "A": 0.17542031407356262,
+            "B": 0.12056451290845871,
+            "C": 0.0645333006978035,
+            "D": 0.3488650321960449,
+            "E": 0.2892201542854309
+          },
+          "D": {
+            "A": 0.02161039225757122,
+            "B": 0.04869942367076874,
+            "C": 0.055183541029691696,
+            "D": 0.5932811498641968,
+            "E": 0.28024858236312866
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1261061429977417,
+          "B": 0.13474948704242706,
+          "C": 0.0645333006978035,
+          "D": 0.5932811498641968
+        },
+        "score": 0.0645333006978035
+      },
+      {
+        "record_index": 81,
+        "sample_id": "sample_81",
+        "label": null,
+        "perturbations": {
+          "a": "站酷如何做分类导航",
+          "b": "站酷怎样做分类导航",
+          "c": "站酷何如做分类导航",
+          "d": "站酷怎么开展分类导航"
+        },
+        "bdq_probs": {
+          "A": 0.058327313512563705,
+          "B": 0.38034141063690186,
+          "C": 0.021457388997077942,
+          "D": 0.4883679449558258,
+          "E": 0.05147365853190422
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.09996810555458069,
+            "B": 0.15483325719833374,
+            "C": 0.0391479954123497,
+            "D": 0.6939159631729126,
+            "E": 0.011939522810280323
+          },
+          "B": {
+            "A": 0.07187268137931824,
+            "B": 0.6017809510231018,
+            "C": 0.03847062587738037,
+            "D": 0.28426119685173035,
+            "E": 0.0034682387486100197
+          },
+          "C": {
+            "A": 0.0440303273499012,
+            "B": 0.3056299388408661,
+            "C": 0.44469019770622253,
+            "D": 0.1853739470243454,
+            "E": 0.019538355991244316
+          },
+          "D": {
+            "A": 0.013526041060686111,
+            "B": 0.05694657564163208,
+            "C": 0.013526012189686298,
+            "D": 0.8368249535560608,
+            "E": 0.07783685624599457
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.09996810555458069,
+          "B": 0.6017809510231018,
+          "C": 0.44469019770622253,
+          "D": 0.8368249535560608
+        },
+        "score": 0.09996810555458069
+      },
+      {
+        "record_index": 82,
+        "sample_id": "sample_82",
+        "label": null,
+        "perturbations": {
+          "a": "网络暴力是指在互联网上发生的恶意行为，包括中伤、谩骂、威胁、骚扰、造谣等，这些行为对个人或团体造成伤害和困扰。网络暴力的原因有很多，以下是一些常见的原因分析：\n\n1. 匿名性和隐蔽性：互联网的匿名性和隐蔽性使得一些人觉得可以逃避责任，从而更容易进行恶意行为。他们可能在现实生活中无法实施这种行为，但在网络中可以隐藏身份，降低了他们的道德顾虑。\n\n2. 群体心理：在网络上，人们往往更容易受到群体行为的影响，特别是当这个群体表现出攻击性时。群体的匿名性和分散性使得个人更容易在集体中释放自己的攻击性，这种行为也被称作“去个体化”。\n\n3. 压力和不满的释放：一些人可能在生活中累积了大量的压力和不满，网络为他们提供了一个释放情绪的出口。他们可能通过攻击他人来缓解自己的压力，这种行为往往是冲动的、非理性的。\n\n4. 缺乏道德教育和社会规范：网络暴力的原因之一可能是缺乏道德教育和对于网络行为的规范。一些人可能没有意识到他们的行为对他人造成了伤害，或者认为网络上的行为不受道德和法律的约束。\n\n5. 个人冲突和报复：网络暴力也可能是由于个人之间的冲突或报复行为引起的。可能是由于现实中的不满，通过网络进行攻击以达到某种目的。\n\n6. 寻求关注和存在感：有些人可能为了寻求关注或提升自己的存在感，而进行网络暴力行为。这种行为可能是为了吸引他人注意，或者是为了在网络上获得某种地位或权力。\n\n7. 信息的错误传播：网络暴力有时可能是因为错误的、片面的或故意误导的信息被广泛传播，导致人们基于错误的信息对他人进行攻击。\n\n为了减少网络暴力行为，需要社会各界的共同努力，包括加强网络道德教育、推动网络立法、提高网民的信息素养以及鼓励积极健康的网络行为等。",
+          "b": "网络暴力是指在互联网上发生的恶意行为，包括中伤、辱骂、威胁、骚扰、造谣等，这些行为对个人或团体造成伤害和困扰。网络暴力的原因有很多，以下是一些常见的原因分析：\n\n1. 匿名性和隐蔽性：互联网的匿名性和隐蔽性使得一些人觉得可以逃避责任，从而更容易进行恶意行为。他们可能在现实生活中无法实施这种行为，但在网络中可以隐藏身份，降低了他们的道德顾虑。\n\n2. 群体心理：在网络上，人们往往更容易受到群体行为的影响，特别是当这个群体具有攻击性时。群体的匿名性和分散性使得个人更容易在集体中释放自己的攻击性，这种行为也被称作“去个体化”。\n\n3. 压力和不满的释放：一些人可能在生活中积累了大量的压力和不满，网络为他们提供了一个释放情绪的出口。他们可能通过攻击他人来缓解自己的压力，这种行为往往是冲动的、非理性的。\n\n4. 缺乏道德教育和社会规范：网络暴力的原因之一可能是缺乏道德教育和对于网络行为的规范。一些人可能没有意识到他们的行为对他人造成了伤害，或者认为网络上的行为不受道德和法律的约束。\n\n5. 个人冲突和报复：网络暴力也可能是由于个人之间的冲突或报复行为引起的。可能是由于现实中的不满，通过网络进行攻击以达到某种目的。\n\n6. 寻求关注和存在感：有些人可能为了寻求关注或提升自己的存在感，而进行网络暴力行为。这种行为可能是为了吸引他人注意，或者是为了在网络上获得某种地位或权力。\n\n7. 信息的错误传播：网络暴力有时可能是因为错误的、片面的或故意误导的信息被广泛传播，导致人们基于错误的信息对他人进行攻击。\n\n为了减少网络暴力行为，需要社会各界的共同努力，包括加强网络道德教育、推动网络立法、提高网民的信息素养以及鼓励积极健康的网络行为等。",
+          "c": "网络暴力是指在互联网上发生的恶意行为，包括中伤、侮辱、威胁、骚扰、造谣等，这些行为对个人或团体造成伤害和困扰。网络暴力的原因有很多，以下是一些常见的原因分析：\n\n1. 匿名性和隐蔽性：互联网的匿名性和隐蔽性使得一些人觉得可以逃避责任，从而更容易进行恶意行为。他们可能在现实生活中无法实施这种行为，但在网络中可以隐藏身份，降低了他们的道德顾虑。\n\n2. 群体心理：在网络上，人们往往更容易受到群体行为的影响，特别是当这个群体表现出攻击性时。群体的匿名性和分散性使得个人更容易在集体中释放自己的攻击性，这种行为也被称作“去个体化”。\n\n3. 压力和不满的释放：一些人可能在生活中累积了大量的压力和不满，网络为他们提供了一个释放情绪的出口。他们可能通过攻击他人来缓解自己的压力，这种行为往往是冲动的、非理性的。\n\n4. 缺乏道德教育和社会规范：网络暴力的原因之一可能是缺乏道德教育和对于网络行为的规范。一些人可能没有意识到他们的行为对他人造成了伤害，或者认为网络上的行为不受道德和法律的约束。\n\n5. 个人冲突和报复：网络暴力也可能是由于个人之间的冲突或报复行为引起的。可能是由于现实中的不满，通过网络进行攻击以达到某种目的。\n\n6. 寻求关注和存在感：有些人可能为了寻求关注或提升自己的存在感，而进行网络暴力行为。这种行为可能是为了吸引他人注意，或者是为了在网络上获得某种地位或权力。\n\n7. 信息的错误传播：网络暴力有时可能是因为错误的、片面的或故意误导的信息被广泛传播，导致人们基于错误的信息对他人进行攻击。\n\n为了减少网络暴力行为，需要社会各界的共同努力，包括加强网络道德教育、推动网络立法、提高网民的信息素养以及鼓励积极健康的网络行为等。",
+          "d": "网络暴力是指在互联网上发生的恶意行为，包括中伤、辱骂、威胁、骚扰、诽谤等，这些行为对个人或团体造成伤害和困扰。网络暴力的原因有很多，以下是一些常见的原因分析：\n\n1. 匿名性和隐蔽性：互联网的匿名性和隐蔽性使得一些人觉得可以逃避责任，从而更容易进行恶意行为。他们可能在现实生活中无法实施这种行为，但在网络中可以隐藏身份，降低了他们的道德顾虑。\n\n2. 群体心理：在网络上，人们往往更容易受到群体行为的影响，特别是当这个群体具有攻击性时。群体的匿名性和分散性使得个人更容易在集体中释放自己的攻击性，这种行为也被称作“去个体化”。\n\n3. 压力和不满的释放：一些人可能在生活中积累了大量的压力和不满，网络为他们提供了一个释放情绪的出口。他们可能通过攻击他人来缓解自己的压力，这种行为往往是冲动的、非理性的。\n\n4. 缺乏道德教育和社会规范：网络暴力的原因之一可能是缺乏道德教育和对于网络行为的规范。一些人可能没有意识到他们的行为对他人造成了伤害，或者认为网络上的行为不受道德和法律的约束。\n\n5. 个人冲突和报复：网络暴力也可能是由于个人之间的冲突或报复行为引起的。可能是由于现实中的不满，通过网络进行攻击以达到某种目的。\n\n6. 寻求关注和存在感：有些人可能为了寻求关注或提升自己的存在感，而进行网络暴力行为。这种行为可能是为了吸引他人注意，或者是为了在网络上获得某种地位或权力。\n\n7. 信息的错误传播：网络暴力有时可能是因为错误的、片面的或故意误导的信息被广泛传播，导致人们基于错误的信息对他人进行攻击。\n\n为了减少网络暴力行为，需要社会各界的共同努力，包括加强网络道德教育、推动网络立法、提高网民的信息素养以及鼓励积极健康的网络行为等。"
+        },
+        "bdq_probs": {
+          "A": 0.29149970412254333,
+          "B": 0.33031243085861206,
+          "C": 0.06110166013240814,
+          "D": 0.22702033817768097,
+          "E": 0.08890249580144882
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.5491390228271484,
+            "B": 0.2939364016056061,
+            "C": 0.03297889232635498,
+            "D": 0.08964560180902481,
+            "E": 0.018790923058986664
+          },
+          "B": {
+            "A": 0.3083430826663971,
+            "B": 0.19908344745635986,
+            "C": 0.30834507942199707,
+            "D": 0.12075049430131912,
+            "E": 0.018517911434173584
+          },
+          "C": {
+            "A": 0.5148546099662781,
+            "B": 0.11488204449415207,
+            "C": 0.14751040935516357,
+            "D": 0.13017868995666504,
+            "E": 0.010685887187719345
+          },
+          "D": {
+            "A": 0.5007425546646118,
+            "B": 0.11893954873085022,
+            "C": 0.28531649708747864,
+            "D": 0.056182797998189926,
+            "E": 0.0052260421216487885
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.5491390228271484,
+          "B": 0.19908344745635986,
+          "C": 0.14751040935516357,
+          "D": 0.056182797998189926
+        },
+        "score": 0.056182797998189926
+      },
+      {
+        "record_index": 85,
+        "sample_id": "sample_85",
+        "label": null,
+        "perturbations": {
+          "a": "详尽介绍yolo算法",
+          "b": "具体介绍yolo算法",
+          "c": "详细阐述yolo算法",
+          "d": "详细陈述yolo算法"
+        },
+        "bdq_probs": {
+          "A": 0.061457835137844086,
+          "B": 0.23559147119522095,
+          "C": 0.3322373330593109,
+          "D": 0.33223721385002136,
+          "E": 0.038459304720163345
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.326252818107605,
+            "B": 0.0934729054570198,
+            "C": 0.21064436435699463,
+            "D": 0.3472943902015686,
+            "E": 0.022201819345355034
+          },
+          "B": {
+            "A": 0.3025473952293396,
+            "B": 0.3649419844150543,
+            "C": 0.1261204034090042,
+            "D": 0.17238597571849823,
+            "E": 0.033944908529520035
+          },
+          "C": {
+            "A": 0.07758496701717377,
+            "B": 0.13616126775741577,
+            "C": 0.16425584256649017,
+            "D": 0.6102350354194641,
+            "E": 0.011177399195730686
+          },
+          "D": {
+            "A": 0.008634413592517376,
+            "B": 0.06791172921657562,
+            "C": 0.501819908618927,
+            "D": 0.4160332977771759,
+            "E": 0.004622743930667639
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.326252818107605,
+          "B": 0.3649419844150543,
+          "C": 0.16425584256649017,
+          "D": 0.4160332977771759
+        },
+        "score": 0.16425584256649017
+      },
+      {
+        "record_index": 86,
+        "sample_id": "sample_86",
+        "label": null,
+        "perturbations": {
+          "a": "请撰写一份3500字的，面向通讯和建筑领域的，监理公司科研计划",
+          "b": "请编写一份3500字的，面向交流和建筑行业的，监控企业的科研策划",
+          "c": "请制作一份3500字的，面相通信和修建行业的，监督机构的研究规划",
+          "d": "请书写一份3500字的，面向通讯及建筑部门的，监理企业的科研蓝图"
+        },
+        "bdq_probs": {
+          "A": 0.1693684309720993,
+          "B": 0.15421168506145477,
+          "C": 0.014799247495830059,
+          "D": 0.6292800307273865,
+          "E": 0.03232453390955925
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1165739893913269,
+            "B": 0.15933777391910553,
+            "C": 0.15933756530284882,
+            "D": 0.1805536448955536,
+            "E": 0.3822324573993683
+          },
+          "B": {
+            "A": 0.0260652843862772,
+            "B": 0.06655968725681305,
+            "C": 0.20501850545406342,
+            "D": 0.672231912612915,
+            "E": 0.029535898938775063
+          },
+          "C": {
+            "A": 0.04297130927443504,
+            "B": 0.05183319002389908,
+            "C": 0.0625227615237236,
+            "D": 0.6721839904785156,
+            "E": 0.16995477676391602
+          },
+          "D": {
+            "A": 0.09929340332746506,
+            "B": 0.06410854309797287,
+            "C": 0.08762601017951965,
+            "D": 0.5042558908462524,
+            "E": 0.2381930947303772
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1165739893913269,
+          "B": 0.06655968725681305,
+          "C": 0.0625227615237236,
+          "D": 0.5042558908462524
+        },
+        "score": 0.0625227615237236
+      },
+      {
+        "record_index": 88,
+        "sample_id": "sample_88",
+        "label": null,
+        "perturbations": {
+          "a": "软件重启后 `HttpWebRequest` 表现可能出现变化的原因有很多，可以从以下几个方面进行分析：",
+          "b": "软件重启后 `HttpWebRequest` 行为或许出现变化的原因有很多，可以从以下几个方面进行分析：",
+          "c": "软件重启后 `HttpWebRequest` 反应可能出现变化的原因有很多，可以从以下几个方面进行分析：",
+          "d": "软件重启后 `HttpWebRequest` 操作可能出现变化的原因有很多，可以从以下几个方面进行分析："
+        },
+        "bdq_probs": {
+          "A": 0.12281058728694916,
+          "B": 0.5334643721580505,
+          "C": 0.16269749402999878,
+          "D": 0.16786201298236847,
+          "E": 0.013147978112101555
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.14584806561470032,
+            "B": 0.37243783473968506,
+            "C": 0.15525448322296143,
+            "D": 0.255972683429718,
+            "E": 0.06079965829849243
+          },
+          "B": {
+            "A": 0.44073858857154846,
+            "B": 0.2845625579357147,
+            "C": 0.1262737363576889,
+            "D": 0.12627394497394562,
+            "E": 0.01936478726565838
+          },
+          "C": {
+            "A": 0.29001933336257935,
+            "B": 0.3087247908115387,
+            "C": 0.09415561705827713,
+            "D": 0.2724483609199524,
+            "E": 0.02697611413896084
+          },
+          "D": {
+            "A": 0.14733310043811798,
+            "B": 0.40049242973327637,
+            "C": 0.22819383442401886,
+            "D": 0.20138037204742432,
+            "E": 0.019939417019486427
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.14584806561470032,
+          "B": 0.2845625579357147,
+          "C": 0.09415561705827713,
+          "D": 0.20138037204742432
+        },
+        "score": 0.09415561705827713
+      },
+      {
+        "record_index": 90,
+        "sample_id": "sample_90",
+        "label": null,
+        "perturbations": {
+          "a": "Over the last few years, remote temperature gauging of a living entity using an infrared sensor (pyrometer) has become increasingly trendy. A living entity, with a temperature above the absolute zero point of 0 K (-273.15°C), emits electromagnetic radiation that is proportional to its own temperature. This radiation consists of infrared radiation, which is directed onto the detector component, processed, and then transmitted through a signal. Infrared sensors employed for measuring the temperature of a living entity are capable of ascertaining its temperature remotely, without any direct contact, by means of the infrared radiation emitted by the target object. Typically, such techniques are utilized for gauging the temperature of skin surfaces; however, measuring the temperature of the oral cavity can provide more precise and dependable outcomes, especially in scenarios of variable ambient temperature.",
+          "b": "Over the past several years, remote temperature assessment of a living organism using an infrared sensor (pyrometer) has become increasingly fashionable. A living organism, with a temperature above the absolute zero point of 0 K (-273.15°C), emits electromagnetic radiation that is relative to its own temperature. This radiation includes infrared radiation, which strikes the detector element, transformed, and then conveyed through a signal. Infrared sensors employed for determining the temperature of a living organism are capable of identifying its temperature remotely, without any direct contact, by means of the infrared radiation given off by the target object. Generally, such methodologies are employed for assessing the temperature of skin surfaces; however, measuring the temperature of the oral cavity can yield more exact and stable findings, particularly in situations of fluctuating ambient temperature.",
+          "c": "Over the previous few years, remote temperature measurement of a living being using an infrared sensor (pyrometer) has become increasingly widespread. A living being, possessing a temperature above the absolute zero point of 0 K (-273.15°C), emits electromagnetic radiation that is equivalent to its own temperature. This radiation is inclusive of infrared radiation, which encounters the detector unit, altered, and then delivered through a signal. Infrared sensors designated for measuring the temperature of a living being are capable of detecting its temperature remotely, without any direct contact, through the infrared radiation released by the target object. Ordinarily, such methods are adopted for measuring the temperature of skin surfaces; however, measuring the temperature of the oral cavity can provide more reliable and stable results, particularly in conditions of inconsistent ambient temperature.",
+          "d": "Over the last few years, remote temperature evaluation of a living creature utilizing an infrared sensor (pyrometer) has become increasingly recognized. A living creature, having a temperature above the absolute zero point of 0 K (-273.15°C), radiates electromagnetic radiation that is proportional to its own temperature. This radiation features infrared radiation, which impacts the detector segment, converted, and then communicated through a signal. Infrared sensors utilized for measuring the temperature of a living creature are able to discern its temperature remotely, without any direct contact, through the infrared radiation emitted by the target object. Normally, such techniques are employed for evaluating the temperature of skin surfaces; however, measuring the temperature of the oral cavity can deliver more accurate and stable results, especially in scenarios of changing ambient temperature."
+        },
+        "bdq_probs": {
+          "A": 0.12575553357601166,
+          "B": 0.13386599719524384,
+          "C": 0.31124794483184814,
+          "D": 0.4123363792896271,
+          "E": 0.016755295917391777
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.14824974536895752,
+            "B": 0.2684452533721924,
+            "C": 0.31384631991386414,
+            "D": 0.2601863741874695,
+            "E": 0.008106371387839317
+          },
+          "B": {
+            "A": 0.3684878647327423,
+            "B": 0.18528732657432556,
+            "C": 0.32518965005874634,
+            "D": 0.115949846804142,
+            "E": 0.004711623769253492
+          },
+          "C": {
+            "A": 0.3735544979572296,
+            "B": 0.29092463850975037,
+            "C": 0.3296608328819275,
+            "D": 0.0033869820181280375,
+            "E": 0.0008430869784206152
+          },
+          "D": {
+            "A": 0.016690922901034355,
+            "B": 0.012998868711292744,
+            "C": 0.8832558393478394,
+            "D": 0.084763303399086,
+            "E": 0.001171886338852346
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.14824974536895752,
+          "B": 0.18528732657432556,
+          "C": 0.3296608328819275,
+          "D": 0.084763303399086
+        },
+        "score": 0.084763303399086
+      },
+      {
+        "record_index": 92,
+        "sample_id": "sample_92",
+        "label": null,
+        "perturbations": {
+          "a": "Studien haben bewiesen, dass es gewisse Voraussetzungen gibt, die Menschen besonders empfänglich für Drogen und Sucht machen.",
+          "b": "Studien haben offenbart, dass es spezifische Voraussetzungen gibt, die Menschen besonders anfällig für Drogen und Sucht machen.",
+          "c": "Studien haben dargestellt, dass es bestimmte Bedingungen gibt, die Menschen besonders verletzlich für Drogen und Sucht machen.",
+          "d": "Studien haben gezeigt, dass es einige Voraussetzungen gibt, die Menschen besonders anfällig für Drogen und Abhängigkeit machen."
+        },
+        "bdq_probs": {
+          "A": 0.37494343519210815,
+          "B": 0.42486652731895447,
+          "C": 0.06722366064786911,
+          "D": 0.10742305964231491,
+          "E": 0.025515222921967506
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.20179912447929382,
+            "B": 0.6616735458374023,
+            "C": 0.025655893608927727,
+            "D": 0.06551466137170792,
+            "E": 0.04502755030989647
+          },
+          "B": {
+            "A": 0.06926105171442032,
+            "B": 0.5799150466918945,
+            "C": 0.2270982265472412,
+            "D": 0.05394061654806137,
+            "E": 0.06926116347312927
+          },
+          "C": {
+            "A": 0.011590083129703999,
+            "B": 0.0380018949508667,
+            "C": 0.013133288361132145,
+            "D": 0.9207003116607666,
+            "E": 0.015841951593756676
+          },
+          "D": {
+            "A": 0.025571290403604507,
+            "B": 0.11823979765176773,
+            "C": 0.1258663833141327,
+            "D": 0.7243083119392395,
+            "E": 0.005530213937163353
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.20179912447929382,
+          "B": 0.5799150466918945,
+          "C": 0.013133288361132145,
+          "D": 0.7243083119392395
+        },
+        "score": 0.013133288361132145
+      },
+      {
+        "record_index": 94,
+        "sample_id": "sample_94",
+        "label": null,
+        "perturbations": {
+          "a": "Immagina che un reporter professionista voglia fare un corso su come diventare presentatore radiofonico. Crea una lista degli argomenti da trattare con un elenco puntato",
+          "b": "Immaginate che un giornalista professionale desideri fare un corso su come diventare conduttore radiofonico. Crea una scaletta degli argomenti da trattare con un elenco puntato",
+          "c": "Immagina che un cronista professionista intenda fare un corso su come diventare disc-jockey radiofonico. Crea una lista degli argomenti da trattare con un elenco puntato",
+          "d": "Immagina che un reporter esperto voglia fare un corso su come diventare speaker radiofonico. Crea una scaletta degli argomenti da affrontare con un elenco puntato"
+        },
+        "bdq_probs": {
+          "A": 0.37114691734313965,
+          "B": 0.2890494763851166,
+          "C": 0.2472371608018875,
+          "D": 0.082814060151577,
+          "E": 0.009737389162182808
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03586627542972565,
+            "B": 0.16584330797195435,
+            "C": 0.050579413771629333,
+            "D": 0.7432592511177063,
+            "E": 0.004419577773660421
+          },
+          "B": {
+            "A": 0.2754747271537781,
+            "B": 0.41353651881217957,
+            "C": 0.011549253016710281,
+            "D": 0.2932412922382355,
+            "E": 0.006181870121508837
+          },
+          "C": {
+            "A": 0.11538592725992203,
+            "B": 0.39034536480903625,
+            "C": 0.2682802677154541,
+            "D": 0.2155691683292389,
+            "E": 0.01040235348045826
+          },
+          "D": {
+            "A": 0.11153709143400192,
+            "B": 0.21499307453632355,
+            "C": 0.46958842873573303,
+            "D": 0.1727520078420639,
+            "E": 0.030972721055150032
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03586627542972565,
+          "B": 0.41353651881217957,
+          "C": 0.2682802677154541,
+          "D": 0.1727520078420639
+        },
+        "score": 0.03586627542972565
+      },
+      {
+        "record_index": 95,
+        "sample_id": "sample_95",
+        "label": null,
+        "perturbations": {
+          "a": "中国天然气化工的领头企业",
+          "b": "中国天然气化工的龙头公司",
+          "c": "中国天然气化工的主导企业",
+          "d": "中国天然气化工的首要企业"
+        },
+        "bdq_probs": {
+          "A": 0.06218587979674339,
+          "B": 0.40550222992897034,
+          "C": 0.33617323637008667,
+          "D": 0.14917594194412231,
+          "E": 0.04694034159183502
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.7959440350532532,
+            "B": 0.12206190824508667,
+            "C": 0.02329593151807785,
+            "D": 0.054164815694093704,
+            "E": 0.004446135833859444
+          },
+          "B": {
+            "A": 0.519138753414154,
+            "B": 0.43038153648376465,
+            "C": 0.01776396483182907,
+            "D": 0.0258464477956295,
+            "E": 0.006742472294718027
+          },
+          "C": {
+            "A": 0.17335796356201172,
+            "B": 0.6856333017349243,
+            "C": 0.1051473394036293,
+            "D": 0.023460088297724724,
+            "E": 0.012172146700322628
+          },
+          "D": {
+            "A": 0.015797287225723267,
+            "B": 0.5070242881774902,
+            "C": 0.06862063705921173,
+            "D": 0.3948674499988556,
+            "E": 0.01309649646282196
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.7959440350532532,
+          "B": 0.43038153648376465,
+          "C": 0.1051473394036293,
+          "D": 0.3948674499988556
+        },
+        "score": 0.1051473394036293
+      },
+      {
+        "record_index": 96,
+        "sample_id": "sample_96",
+        "label": null,
+        "perturbations": {
+          "a": "相似|||区别 对应的同义和同类型词汇组 举例",
+          "b": "类似|||不同 对应的同义和同类型词汇组 举例",
+          "c": "相同|||异 对应的同义和同类型词汇组 举例",
+          "d": "相同|||相异 对应的同义和同类型词汇组 举例"
+        },
+        "bdq_probs": {
+          "A": 0.18810297548770905,
+          "B": 0.18810275197029114,
+          "C": 0.07841289788484573,
+          "D": 0.42389634251594543,
+          "E": 0.12144842743873596
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.36141374707221985,
+            "B": 0.3614141047000885,
+            "C": 0.06280430406332016,
+            "D": 0.15066049993038177,
+            "E": 0.06280458718538284
+          },
+          "B": {
+            "A": 0.3163353502750397,
+            "B": 0.5551865696907043,
+            "C": 0.05851617082953453,
+            "D": 0.05164046958088875,
+            "E": 0.017846504226326942
+          },
+          "C": {
+            "A": 0.09959182143211365,
+            "B": 0.22443343698978424,
+            "C": 0.22443406283855438,
+            "D": 0.3938924968242645,
+            "E": 0.05674595758318901
+          },
+          "D": {
+            "A": 0.014266757294535637,
+            "B": 0.0564257949590683,
+            "C": 0.5698816776275635,
+            "D": 0.3456505239009857,
+            "E": 0.01259049866348505
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.36141374707221985,
+          "B": 0.5551865696907043,
+          "C": 0.22443406283855438,
+          "D": 0.3456505239009857
+        },
+        "score": 0.22443406283855438
+      },
+      {
+        "record_index": 97,
+        "sample_id": "sample_97",
+        "label": null,
+        "perturbations": {
+          "a": "因为买不到回上海的车票，给我写个请假理由",
+          "b": "因为买不到回上海的票据，给我写个请假理由",
+          "c": "因为买不到回上海的门票，给我写个请假理由",
+          "d": "因为买不到回上海的票证，给我写个请假理由"
+        },
+        "bdq_probs": {
+          "A": 0.10179045051336288,
+          "B": 0.37819725275039673,
+          "C": 0.22938823699951172,
+          "D": 0.12278265506029129,
+          "E": 0.16782407462596893
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.579160213470459,
+            "B": 0.31000208854675293,
+            "C": 0.08343593031167984,
+            "D": 0.018617091700434685,
+            "E": 0.008523527532815933
+          },
+          "B": {
+            "A": 0.21604891121387482,
+            "B": 0.7540844082832336,
+            "C": 0.01773436926305294,
+            "D": 0.005757514853030443,
+            "E": 0.00612884433940053
+          },
+          "C": {
+            "A": 0.08260838687419891,
+            "B": 0.8881227374076843,
+            "C": 0.01435517705976963,
+            "D": 0.009866178035736084,
+            "E": 0.004660462960600853
+          },
+          "D": {
+            "A": 0.012541568838059902,
+            "B": 0.2681470215320587,
+            "C": 0.6042798161506653,
+            "D": 0.11178083717823029,
+            "E": 0.0027983938343822956
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.579160213470459,
+          "B": 0.7540844082832336,
+          "C": 0.01435517705976963,
+          "D": 0.11178083717823029
+        },
+        "score": 0.01435517705976963
+      },
+      {
+        "record_index": 98,
+        "sample_id": "sample_98",
+        "label": null,
+        "perturbations": {
+          "a": "Can you inform me what \"Top-p\" and \"Temperature\" parameters are for in AI configurations?",
+          "b": "Can you explain what \"Top-p\" and \"Temperature\" factors are for in AI settings?",
+          "c": "Can you describe what \"Top-p\" and \"Temperature\" variables are for in AI environments?",
+          "d": "Can you clarify what \"Top-p\" and \"Temperature\" attributes are for in AI setups?"
+        },
+        "bdq_probs": {
+          "A": 0.3620183765888214,
+          "B": 0.4232422411441803,
+          "C": 0.05215366557240486,
+          "D": 0.10701236873865128,
+          "E": 0.05551733076572418
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.529156506061554,
+            "B": 0.12181874364614487,
+            "C": 0.10750468820333481,
+            "D": 0.22758744657039642,
+            "E": 0.013882925733923912
+          },
+          "B": {
+            "A": 0.5471418499946594,
+            "B": 0.4130047559738159,
+            "C": 0.022583259269595146,
+            "D": 0.010835549794137478,
+            "E": 0.006369900424033403
+          },
+          "C": {
+            "A": 0.1259254366159439,
+            "B": 0.4395241141319275,
+            "C": 0.4260014593601227,
+            "D": 0.004376768600195646,
+            "E": 0.003802623599767685
+          },
+          "D": {
+            "A": 0.04870016127824783,
+            "B": 0.2182590365409851,
+            "C": 0.15477100014686584,
+            "D": 0.4918586313724518,
+            "E": 0.06656564772129059
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.529156506061554,
+          "B": 0.4130047559738159,
+          "C": 0.4260014593601227,
+          "D": 0.4918586313724518
+        },
+        "score": 0.4130047559738159
+      }
+    ]
+  }
+}

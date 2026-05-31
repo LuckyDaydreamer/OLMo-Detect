@@ -1,0 +1,4001 @@
+{
+  "model_name": "OLMo2-7B-Instruct",
+  "model_path": "olmo_models/OLMo2-7B-Instruct",
+  "dataset_name": "contaminated_posttraining_sft_7b-13b_aya_test_shifted",
+  "dataset_path": "benchmark/posttraining/sft/7b-13b/contaminated/shifted/test/contaminated_posttraining_sft_7b-13b_aya_test_shifted.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 37.90666580200195,
+  "result": {
+    "method": "dcq",
+    "dataset": "contaminated_posttraining_sft_7b-13b_aya_test_shifted",
+    "dataset_path": "benchmark/posttraining/sft/7b-13b/contaminated/shifted/test/contaminated_posttraining_sft_7b-13b_aya_test_shifted.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "mean_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.07646160093632244,
+      "B": 0.3777960457550446,
+      "C": 0.15945557362199894,
+      "D": 0.28255378758487065
+    },
+    "non_preferred": [
+      "A",
+      "C"
+    ],
+    "num_total_records": 82,
+    "num_scored_records": 72,
+    "summary": {
+      "mean_score": 0.11121625460645118
+    },
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14209",
+        "label": null,
+        "perturbations": {
+          "a": "ما لقب أم سيدنا عيسى عليه السلام ؟",
+          "b": "ما هو اسم والدة سيدنا عيسى عليه السلام ؟",
+          "c": "ما هو عنوان والدة سيدنا عيسى عليه السلام ؟",
+          "d": "ما هي تسمية والدة سيدنا عيسى عليه السلام ؟"
+        },
+        "bdq_probs": {
+          "A": 0.009891098365187645,
+          "B": 0.023727523162961006,
+          "C": 0.2715459167957306,
+          "D": 0.6119369864463806,
+          "E": 0.08281783759593964
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0070594376884400845,
+            "B": 0.08600429445505142,
+            "C": 0.07589549571275711,
+            "D": 0.8158790469169617,
+            "E": 0.014949078671634197
+          },
+          "B": {
+            "A": 0.0020804081577807665,
+            "B": 0.013566074892878532,
+            "C": 0.018542392179369926,
+            "D": 0.9510132074356079,
+            "E": 0.01444216538220644
+          },
+          "C": {
+            "A": 0.0017572296783328056,
+            "B": 0.005412683356553316,
+            "C": 0.00892384722828865,
+            "D": 0.9689230918884277,
+            "E": 0.014714812859892845
+          },
+          "D": {
+            "A": 0.014929329045116901,
+            "B": 0.06285437941551208,
+            "C": 0.7192379832267761,
+            "D": 0.19358742237091064,
+            "E": 0.006629178766161203
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0070594376884400845,
+          "B": 0.013566074892878532,
+          "C": 0.00892384722828865,
+          "D": 0.19358742237091064
+        },
+        "score": 0.05578419554512948
+      },
+      {
+        "record_index": 1,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14210",
+        "label": null,
+        "perturbations": {
+          "a": "كان جالساً على مقعد بين السماء والأرض",
+          "b": "كان واقفاً على كرسي بين السماء والأرض",
+          "c": "كان جالساً على عرش بين السماء والأرض",
+          "d": "كان جالساً على منصة بين السماء والأرض"
+        },
+        "bdq_probs": {
+          "A": 0.07216649502515793,
+          "B": 0.6042442917823792,
+          "C": 0.03408908471465111,
+          "D": 0.12665574252605438,
+          "E": 0.16263099014759064
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0034777766559273005,
+            "B": 0.9643000364303589,
+            "C": 0.011403532698750496,
+            "D": 0.010063291527330875,
+            "E": 0.010713047347962856
+          },
+          "B": {
+            "A": 0.8738265633583069,
+            "B": 0.024790015071630478,
+            "C": 0.04929972440004349,
+            "D": 0.021876176819205284,
+            "E": 0.02990320883691311
+          },
+          "C": {
+            "A": 0.028659138828516006,
+            "B": 0.07790856063365936,
+            "C": 0.028659911826252937,
+            "D": 0.8375185132026672,
+            "E": 0.026927832514047623
+          },
+          "D": {
+            "A": 0.006670908071100712,
+            "B": 0.9300234913825989,
+            "C": 0.019304823130369186,
+            "D": 0.038380879908800125,
+            "E": 0.0030597918666899204
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0034777766559273005,
+          "B": 0.024790015071630478,
+          "C": 0.028659911826252937,
+          "D": 0.038380879908800125
+        },
+        "score": 0.02382714586565271
+      },
+      {
+        "record_index": 2,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14211",
+        "label": null,
+        "perturbations": {
+          "a": "Napisz ciąg dalszy: Stan kondycji Barrona zmusił go do złożenia rezygnacji – pod koniec maja przekazał dowództwo Johnowi Rodgersowi. Barron rozkazał Coxowi przejąć komendę na „Essexie”, zaś „Presidenta” przekazał swojemu bratu Jamesowi (29 maja). 3 czerwca, po  \n  \nbitwie o Darnę, Stany Zjednoczone podpisały układ pokojowy z Trypolitanią. 13 lipca „President” wypłynął ku Ameryce, wioząc na pokładzie chorego Barrona oraz wielu marynarzy uwolnionych z niewoli.",
+          "b": "Napisz ciąg dalszy: Stan zdrowia Barrona zmusił go do złożenia rezygnacji – pod koniec maja przekazał dowództwo Johnowi Rodgersowi. Barron rozkazał Coxowi przejąć komendę na „Essexem”, zaś „Presidenta” powierzył swojemu bratu Jamesowi (29 maja). 3 czerwca, po  \n  \nbitwie o Darnę, Stany Zjednoczone podpisały umowę pokojową z Trypolitanią. 13 lipca „President” wypłynął ku Ameryce, wioząc na pokładzie chorego Barrona oraz wielu żeglarzy wyrwanych z niewoli.",
+          "c": "Napisz ciąg dalszy: Stan zdrowia Barrona zmusił go do złożenia rezygnacji – pod koniec maja przekazał komendę Johnowi Rodgersowi. Barron rozkazał Coxowi przejąć dowództwo na „Essexie”, zaś „Presidenta” przekazał swojemu bratu Jamesowi (29 maja). 3 czerwca, po  \n  \nbitwie o Darnę, Stany Zjednoczone podpisały traktat pokojowy z Trypolitanią. 13 lipca „President” wyruszył ku Ameryce, wioząc na pokładzie chorego Barrona oraz wielu żeglarzy wypuszczonych z niewoli.",
+          "d": "Napisz ciąg dalszy: Stan zdrowia Barrona zmusił go do oddania rezygnacji – pod koniec maja przekazał zwierzchnictwo Johnowi Rodgersowi. Barron rozkazał Coxowi przejąć dowodzenie na „Essexie”, zaś „Presidenta” dał swojemu bratu Jamesowi (29 maja). 3 czerwca, po  \n  \nbitwie o Darnę, Stany Zjednoczone podpisały porozumienie pokojowe z Trypolitanią. 13 lipca „President” wyruszył ku Ameryce, wioząc na pokładzie chorego Barrona oraz wielu żeglarzy uwolnionych z niewoli."
+        },
+        "bdq_probs": {
+          "A": 0.0995546504855156,
+          "B": 0.5381882190704346,
+          "C": 0.06427746266126633,
+          "D": 0.2706170380115509,
+          "E": 0.026795055717229843
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.007410065736621618,
+            "B": 0.9705252051353455,
+            "C": 0.00741012766957283,
+            "D": 0.008938238956034184,
+            "E": 0.005421449430286884
+          },
+          "B": {
+            "A": 0.04335254430770874,
+            "B": 0.3863973617553711,
+            "C": 0.5281420350074768,
+            "D": 0.033762991428375244,
+            "E": 0.007533809635788202
+          },
+          "C": {
+            "A": 0.046038202941417694,
+            "B": 0.6355398297309875,
+            "C": 0.0974636822938919,
+            "D": 0.20632825791835785,
+            "E": 0.013190842233598232
+          },
+          "D": {
+            "A": 0.007270146626979113,
+            "B": 0.8403089642524719,
+            "C": 0.047408442944288254,
+            "D": 0.10035844147205353,
+            "E": 0.0033293883316218853
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.007410065736621618,
+          "B": 0.3863973617553711,
+          "C": 0.0974636822938919,
+          "D": 0.10035844147205353
+        },
+        "score": 0.14790738781448454
+      },
+      {
+        "record_index": 3,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14212",
+        "label": null,
+        "perturbations": {
+          "a": "கவிஞன் உலகத்தின் உண்மைகளை, வாழ்க்கையின் இரகசியங்களை வேறு வடிவமாகப் பார்க்கிறான். அவன் கண்கள் உணர்வுக் கண்கள். கனவுக் கண்கள்.",
+          "b": "கவிஞன் உலகத்தின் உண்மைகளை, வாழ்க்கையின் ரகசியங்களை ভিন্ন விதமாகப் பார்த்துக்கொள்கிறான். அவன் கண்கள் உணர்ச்சி கண்கள். கனவுக் கண்கள்.",
+          "c": "கவிஞன் உலகத்தின் விசையே, வாழ்க்கையின் ரகசீயங்களை வேறு முறையாகப் பார்க்கிறான். அவன் கண்கள் உணர்வுகளுக்குக் கண்கள். கனவுக் கண்கள்.",
+          "d": "கவிஞன் உலகத்தின் உண்மைகளை, வாழ்க்கையின் ரகசியங்களை வேறுபாட்டில் பார்க்கிறான். அவன் கண்கள் உணர்ச்சி வாய்ந்த கண்கள். கனவுக் கண்கள்."
+        },
+        "bdq_probs": {
+          "A": 0.08946941047906876,
+          "B": 0.42683616280555725,
+          "C": 0.16715040802955627,
+          "D": 0.27558085322380066,
+          "E": 0.03970327973365784
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.062206968665122986,
+            "B": 0.5544476509094238,
+            "C": 0.10256211459636688,
+            "D": 0.2171209305524826,
+            "E": 0.017275111749768257
+          },
+          "B": {
+            "A": 0.21235431730747223,
+            "B": 0.06084171682596207,
+            "C": 0.27266794443130493,
+            "D": 0.4223111867904663,
+            "E": 0.02699935995042324
+          },
+          "C": {
+            "A": 0.039569828659296036,
+            "B": 0.35268598794937134,
+            "C": 0.10104469954967499,
+            "D": 0.45284155011177063,
+            "E": 0.04484119266271591
+          },
+          "D": {
+            "A": 0.05554240942001343,
+            "B": 0.766734778881073,
+            "C": 0.10376401245594025,
+            "D": 0.05553806573152542,
+            "E": 0.008257913403213024
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.062206968665122986,
+          "B": 0.06084171682596207,
+          "C": 0.10104469954967499,
+          "D": 0.05553806573152542
+        },
+        "score": 0.06990786269307137
+      },
+      {
+        "record_index": 4,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14213",
+        "label": null,
+        "perturbations": {
+          "a": "Slutför den här meningen: Det antika Nanning var fyrkantigt konstruerat och inneslutet av en 1,5 km lång mur. Före",
+          "b": "Slutför denna fras: Det gamla Nanning var rektangulärt byggt och omgiven av en 1,5 km lång mur. Före",
+          "c": "Slutför den här satsen: Det forna Nanning var kvadratisk uppfört och omgärdat av en 1,5 km lång mur. Före",
+          "d": "Slutför denna mening: Det tidigare Nanning var kvadratiskt anlagt och omringat av en 1,5 km lång mur. Före"
+        },
+        "bdq_probs": {
+          "A": 0.052149444818496704,
+          "B": 0.3400585651397705,
+          "C": 0.07127987593412399,
+          "D": 0.3853331208229065,
+          "E": 0.1509004682302475
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.012183581478893757,
+            "B": 0.03525439277291298,
+            "C": 0.012969364412128925,
+            "D": 0.854134202003479,
+            "E": 0.08457104116678238
+          },
+          "B": {
+            "A": 0.016772862523794174,
+            "B": 0.026803063228726387,
+            "C": 0.022220460698008537,
+            "D": 0.7358371615409851,
+            "E": 0.19804933667182922
+          },
+          "C": {
+            "A": 0.0003539207100402564,
+            "B": 0.0009037710260599852,
+            "C": 0.0003767470479942858,
+            "D": 0.9024075269699097,
+            "E": 0.09511370211839676
+          },
+          "D": {
+            "A": 0.08148608356714249,
+            "B": 0.3222876489162445,
+            "C": 0.10463077574968338,
+            "D": 0.32228466868400574,
+            "E": 0.14301522076129913
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.012183581478893757,
+          "B": 0.026803063228726387,
+          "C": 0.0003767470479942858,
+          "D": 0.32228466868400574
+        },
+        "score": 0.09041201510990504
+      },
+      {
+        "record_index": 5,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14214",
+        "label": null,
+        "perturbations": {
+          "a": "ਆਧੁਨਿਕ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰਨ ਨਾਲ ਲੋਕਾਂ ਨੂੰ ਜਾਤੀ ਸਿਸਟਮ ਦੇ ਅਵਗੁਣਾਂ ਦਾ ਪਤਾ ਚਲ ਗਿਆ ਹੈ । ਜਿਸ ਕਾਰਨ ਉਨ੍ਹਾਂ ਨੇ ਜਾਤੀ ਦੀਆਂ ਰੋਕਾਂ ਨੂੰ ਮੰਨਣਾ ਬੰਦ ਕਰ ਦਿੱਤਾ ਹੈ ।",
+          "b": "ਆਧੁਨਿਕ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰਨ ਨਾਲ ਲੋਕਾਂ ਨੂੰ ਜਾਤੀ ਪ੍ਰਣਾਲੀ ਦੇ ਅਵਗੁਣਾਂ ਦਾ ਪਤਾ ਚਲ ਗਿਆ ਹੈ । ਜਿਸ ਕਾਰਨ ਉਨ੍ਹਾਂ ਨੇ ਜਾਤੀ ਦੀਆਂ ਰੁਕਾਵਟਾਂ ਨੂੰ ਮੰਨਣਾ ਬੰਦ ਕਰ ਦਿੱਤਾ ਹੈ ।",
+          "c": "ਆਧੁਨਿਕ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰਨ ਨਾਲ ਲੋਕਾਂ ਨੂੰ ਜਾਤੀ ਢਾਂਚੇ ਦੇ ਅਵਗੁਣਾਂ ਦਾ ਪਤਾ ਚਲ ਗਿਆ ਹੈ । ਜਿਸ ਕਾਰਨ ਉਨ੍ਹਾਂ ਨੇ ਜਾਤੀ ਦੀਆਂ ਰੋਕਾਵਟਾਂ ਨੂੰ ਮੰਨਣਾ ਬੰਦ ਕਰ ਦਿੱਤਾ ਹੈ ।",
+          "d": "ਆਧੁਨਿਕ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰਨ ਨਾਲ ਲੋਕਾਂ ਨੂੰ ਜਾਤੀ ਦੇ ਢਾਂਚੇ ਦੇ ਅਵਗੁਣਾਂ ਦਾ ਪਤਾ ਚਲ ਗਿਆ ਹੈ । ਜਿਸ ਕਾਰਨ ਉਨ੍ਹਾਂ ਨੇ ਜਾਤੀ ਦੀਆਂ ਪਾਬੰਦੀਆਂ ਨੂੰ ਮੰਨਣਾ ਬੰਦ ਕਰ ਦਿੱਤਾ ਹੈ ।"
+        },
+        "bdq_probs": {
+          "A": 0.06588557362556458,
+          "B": 0.42963191866874695,
+          "C": 0.16824473440647125,
+          "D": 0.31431907415390015,
+          "E": 0.021391097456216812
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03603372722864151,
+            "B": 0.3997028172016144,
+            "C": 0.09493689984083176,
+            "D": 0.4529092311859131,
+            "E": 0.014560171402990818
+          },
+          "B": {
+            "A": 0.06436053663492203,
+            "B": 0.087971992790699,
+            "C": 0.5062340497970581,
+            "D": 0.3268462121486664,
+            "E": 0.01228444091975689
+          },
+          "C": {
+            "A": 0.04075774550437927,
+            "B": 0.6786890029907227,
+            "C": 0.08628521114587784,
+            "D": 0.17159482836723328,
+            "E": 0.020496539771556854
+          },
+          "D": {
+            "A": 0.049364492297172546,
+            "B": 0.8750191926956177,
+            "C": 0.04637577012181282,
+            "D": 0.024058206006884575,
+            "E": 0.003360660979524255
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03603372722864151,
+          "B": 0.087971992790699,
+          "C": 0.08628521114587784,
+          "D": 0.024058206006884575
+        },
+        "score": 0.05858728429302573
+      },
+      {
+        "record_index": 6,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14215",
+        "label": null,
+        "perturbations": {
+          "a": "Braunau am Inn ni",
+          "b": "Braunau am Inn ni",
+          "c": "Braunau am Inn ni",
+          "d": "Braunau am Inn ni"
+        },
+        "bdq_probs": {
+          "A": 0.2271902710199356,
+          "B": 0.1377991884946823,
+          "C": 0.10081486403942108,
+          "D": 0.2917165458202362,
+          "E": 0.2418447881937027
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03729831054806709,
+            "B": 0.29337450861930847,
+            "C": 0.15703141689300537,
+            "D": 0.4543841779232025,
+            "E": 0.05776932090520859
+          },
+          "B": {
+            "A": 0.04703854024410248,
+            "B": 0.14488936960697174,
+            "C": 0.2244069129228592,
+            "D": 0.5057061910629272,
+            "E": 0.07755427807569504
+          },
+          "C": {
+            "A": 0.007460896857082844,
+            "B": 0.05178891122341156,
+            "C": 0.009579968638718128,
+            "D": 0.9179689288139343,
+            "E": 0.013094495050609112
+          },
+          "D": {
+            "A": 0.03506619483232498,
+            "B": 0.7980785369873047,
+            "C": 0.01004666555672884,
+            "D": 0.14762847125530243,
+            "E": 0.008329636417329311
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03729831054806709,
+          "B": 0.14488936960697174,
+          "C": 0.009579968638718128,
+          "D": 0.14762847125530243
+        },
+        "score": 0.08484903001226485
+      },
+      {
+        "record_index": 7,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14216",
+        "label": null,
+        "perturbations": {
+          "a": "Isaac Newton, mpikaroka siansa britanika, dia namolavola ny lalàn'ny fihetsehana sy ny lalàna manerantany momba ny sinton'ny tany. Nametraka ny fototry ny fizika klasika ny asa lehibe nataony.",
+          "b": "Isaac Newton, mpitsabo siansa britanika, dia namolavola ny lalàn'ny fihetsehana sy ny lalàna manerantany momba ny sinton'ny tany. Nametraka ny fototry ny fizika klasika ny asa lehibe nataony.",
+          "c": "Isaac Newton, mpampianatra siansa britanika, dia namolavola ny lalàn'ny fihetsehana sy ny lalàna manerantany momba ny sinton'ny tany. Nametraka ny fototry ny fizika klasika ny asa lehibe nataony.",
+          "d": "Isaac Newton, mpandinika siansa britanika, dia namolavola ny lalàn'ny fihetsehana sy ny lalàna manerantany momba ny sinton'ny tany. Nametraka ny fototry ny fizika klasika ny asa lehibe nataony."
+        },
+        "bdq_probs": {
+          "A": 0.06764183193445206,
+          "B": 0.6417686939239502,
+          "C": 0.038541216403245926,
+          "D": 0.19572749733924866,
+          "E": 0.05607754364609718
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.009733052924275398,
+            "B": 0.9039544463157654,
+            "C": 0.006090937647968531,
+            "D": 0.0654817596077919,
+            "E": 0.014611675404012203
+          },
+          "B": {
+            "A": 0.5754165649414062,
+            "B": 0.06456059217453003,
+            "C": 0.08289732038974762,
+            "D": 0.27180665731430054,
+            "E": 0.0051366547122597694
+          },
+          "C": {
+            "A": 0.019270526245236397,
+            "B": 0.9285069108009338,
+            "C": 0.013244646601378918,
+            "D": 0.036001916974782944,
+            "E": 0.0028644597623497248
+          },
+          "D": {
+            "A": 0.015517931431531906,
+            "B": 0.9600412249565125,
+            "C": 0.006674653384834528,
+            "D": 0.01551761943846941,
+            "E": 0.0019732259679585695
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.009733052924275398,
+          "B": 0.06456059217453003,
+          "C": 0.013244646601378918,
+          "D": 0.01551761943846941
+        },
+        "score": 0.02576397778466344
+      },
+      {
+        "record_index": 8,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14217",
+        "label": null,
+        "perturbations": {
+          "a": "Ніна спекла дворівневий торт і десятки мафінів на день народження своєї знайомої. Для кожного шару торту потрібна така ж кількість цукру, як і для дюжини (дванадцяти) мафінів. На все Ніна використала 720 грамів цукру. Скільки грамів цукру в одному мафіні? Роз'яжи завдання та поясни відповідь.  \nНіна спекла 2 шари торту, які були рівними 2 х 12 = 24 мафіни. Вона зробила еквівалент 24 + 12 = 36 мафінів загалом.  \nТаким чином, кількість цукру в мафіні це 720 / 36 = 20 г. Отже, остаточна відповідь: 20 грамів.",
+          "b": "Ніна приготувала дворівневий пиріг і десятки кексів на день народження своєї подруги. Для кожного шару пирога потрібна така ж кількість цукру, як і для дюжини (дванадцяти) кексів. На все Ніна використала 720 грамів цукру. Скільки грамів цукру в одному кексі? Роз'яжи завдання та поясни відповідь.  \nНіна приготувала 2 шари пирога, які були рівними 2 х 12 = 24 кекси. Вона зробила еквівалент 24 + 12 = 36 кексів загалом.  \nТаким чином, кількість цукру в кексі це 720 / 36 = 20 г. Отже, остаточна відповідь: 20 грамів.",
+          "c": "Ніна спекла дворівневий торт і десятки смаколиків на день народження своєї приятельки. Для кожного шару торту потрібна така ж кількість цукру, як і для дюжини (дванадцяти) смаколиків. На все Ніна використала 720 грамів цукру. Скільки грамів цукру в одному смаколику? Роз'яжи завдання та поясни відповідь.  \nНіна спекла 2 шари торту, які були рівними 2 х 12 = 24 смаколики. Вона зробила еквівалент 24 + 12 = 36 смаколиків загалом.  \nТаким чином, кількість цукру в смаколику це 720 / 36 = 20 г. Отже, остаточна відповідь: 20 грамів.",
+          "d": "Ніна приготувала два поверхи торту і десятки кексів на день народження своєї подруги. Для кожного шару торту потрібна така ж кількість цукру, як і для дюжини (дванадцяти) кексів. На все Ніна використала 720 грамів цукру. Скільки грамів цукру в одному кексі? Роз'яжи завдання та поясни відповідь.  \nНіна приготувала 2 шари торту, які були рівними 2 х 12 = 24 кекси. Вона зробила еквівалент 24 + 12 = 36 кексів загалом.  \nТаким чином, кількість цукру в кексі це 720 / 36 = 20 г. Отже, остаточна відповідь: 20 грамів."
+        },
+        "bdq_probs": {
+          "A": 0.11681543290615082,
+          "B": 0.29830071330070496,
+          "C": 0.23231548070907593,
+          "D": 0.2982986867427826,
+          "E": 0.051837559789419174
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010022272355854511,
+            "B": 0.8475196361541748,
+            "C": 0.024042457342147827,
+            "D": 0.05089837685227394,
+            "E": 0.003925217315554619
+          },
+          "B": {
+            "A": 0.03821733966469765,
+            "B": 0.11771886050701141,
+            "C": 0.6363762021064758,
+            "D": 0.10388599336147308,
+            "E": 0.09759517014026642
+          },
+          "C": {
+            "A": 0.02011573128402233,
+            "B": 0.13117274641990662,
+            "C": 0.15822361409664154,
+            "D": 0.6661404371261597,
+            "E": 0.015667136758565903
+          },
+          "D": {
+            "A": 0.0372772142291069,
+            "B": 0.3764984905719757,
+            "C": 0.14743532240390778,
+            "D": 0.42661094665527344,
+            "E": 0.00590003514662385
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010022272355854511,
+          "B": 0.11771886050701141,
+          "C": 0.15822361409664154,
+          "D": 0.42661094665527344
+        },
+        "score": 0.17814392340369523
+      },
+      {
+        "record_index": 9,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14218",
+        "label": null,
+        "perturbations": {
+          "a": "Erin jẹ ẹran ti ó tóbi ju gbogbo ẹranko ti a mọ̀ si ẹran inú igbó àti ẹran-àmúsìn, ti a mọ̀ ni ayé òde òni.  Bi a bá ṣe àyẹ̀wò bi Yorùbá ti ńgé ẹran ọbẹ̀, ó ṣòro lati ro oye ẹran ti ẹni yio jẹ ki ó tó Erin.",
+          "b": "Erin jẹ ẹran ti ó tóbi ju gbogbo ẹranko ti a mọ̀ si ẹran inú igbó àti ẹran-àmúsìn, ti a mọ̀ ni ayé òde òni.  Bi a bá ṣe àyẹ̀wò bi Yorùbá ti ńgé ẹran ọbẹ̀, ó ṣòro lati ro oye ẹran ti enia yio jẹ ki ó tó Erin.",
+          "c": "Erin jẹ ẹran ti ó tóbi ju gbogbo ẹranko ti a mọ̀ si ẹran inú igbó àti ẹran-àmúsìn, ti a mọ̀ ni ayé òde òni.  Bi a bá ṣe àyẹ̀wò bi Yorùbá ti ńgé ẹran ọbẹ̀, ó ṣòro lati ro oye ẹran ti enia yio jẹ ki ó tó Erin.",
+          "d": "Erin jẹ ẹran ti ó tóbi ju gbogbo ẹranko ti a mọ̀ si ẹran inú igbó àti ẹran-àmúsìn, ti a mọ̀ ni ayé òde òni.  Bi a bá ṣe àyẹ̀wò bi Yorùbá ti ńgé ẹran ọbẹ̀, ó ṣòro lati ro oye ẹran ti enia yio jẹ ki ó tó Erin."
+        },
+        "bdq_probs": {
+          "A": 0.2975684702396393,
+          "B": 0.31676292419433594,
+          "C": 0.13204558193683624,
+          "D": 0.21770519018173218,
+          "E": 0.03554007411003113
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.08032821863889694,
+            "B": 0.49207407236099243,
+            "C": 0.11687742173671722,
+            "D": 0.2474285215139389,
+            "E": 0.06256065517663956
+          },
+          "B": {
+            "A": 0.19375254213809967,
+            "B": 0.3194470703601837,
+            "C": 0.34004735946655273,
+            "D": 0.11039706319570541,
+            "E": 0.035841204226017
+          },
+          "C": {
+            "A": 0.26738542318344116,
+            "B": 0.6414273977279663,
+            "C": 0.052651602774858475,
+            "D": 0.021948406472802162,
+            "E": 0.01605803519487381
+          },
+          "D": {
+            "A": 0.16852323710918427,
+            "B": 0.48764845728874207,
+            "C": 0.15831461548805237,
+            "D": 0.1793934851884842,
+            "E": 0.0042191073298454285
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.08032821863889694,
+          "B": 0.3194470703601837,
+          "C": 0.052651602774858475,
+          "D": 0.1793934851884842
+        },
+        "score": 0.15795509424060583
+      },
+      {
+        "record_index": 11,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14220",
+        "label": null,
+        "perturbations": {
+          "a": "ආඛ්ඛ්‍යායනය කියන්නෙ කථාවක්ද?",
+          "b": "ආඛ්ඛ්‍යානය කියන්නෙ කථාන්දරයක්.",
+          "c": "අපේ ආඛ්ඛ්‍යානය නම් අහන්නෙ නැති වචනයක්.",
+          "d": "ආඛ්ඛ්‍යායනය නම් අහනැති වාක්‍යයක්."
+        },
+        "bdq_probs": {
+          "A": 0.0368327759206295,
+          "B": 0.16507375240325928,
+          "C": 0.1650727242231369,
+          "D": 0.47765132784843445,
+          "E": 0.15507321059703827
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.03904513642191887,
+            "B": 0.14507433772087097,
+            "C": 0.0323704332113266,
+            "D": 0.6920758485794067,
+            "E": 0.08799448609352112
+          },
+          "B": {
+            "A": 0.02894704043865204,
+            "B": 0.038349542766809464,
+            "C": 0.06523386389017105,
+            "D": 0.7946862578392029,
+            "E": 0.06944496929645538
+          },
+          "C": {
+            "A": 0.009198952466249466,
+            "B": 0.018875330686569214,
+            "C": 0.007868350483477116,
+            "D": 0.8543314337730408,
+            "E": 0.10862188041210175
+          },
+          "D": {
+            "A": 0.04220113903284073,
+            "B": 0.1669130027294159,
+            "C": 0.547241747379303,
+            "D": 0.13836629688739777,
+            "E": 0.10125492513179779
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.03904513642191887,
+          "B": 0.038349542766809464,
+          "C": 0.007868350483477116,
+          "D": 0.13836629688739777
+        },
+        "score": 0.055907331639900804
+      },
+      {
+        "record_index": 12,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14221",
+        "label": null,
+        "perturbations": {
+          "a": "Magbigay ng mga halimbawa ng palindrom sa wikang Ingles.",
+          "b": "Magbigay ng ilang halimbawa ng palindrom sa wikang Ingles.",
+          "c": "Magbigay ng mga halimbawa ng palindromes sa wikang Ingles.",
+          "d": "Magbigay ng mga halimbawa ng palidrom sa wikang Ingles."
+        },
+        "bdq_probs": {
+          "A": 0.0372125469148159,
+          "B": 0.22094525396823883,
+          "C": 0.43938693404197693,
+          "D": 0.22093553841114044,
+          "E": 0.08128209412097931
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.006309482268989086,
+            "B": 0.8796834349632263,
+            "C": 0.023442929610610008,
+            "D": 0.08182207494974136,
+            "E": 0.008624594658613205
+          },
+          "B": {
+            "A": 0.006167463026940823,
+            "B": 0.16932044923305511,
+            "C": 0.6290892362594604,
+            "D": 0.18023577332496643,
+            "E": 0.014795873314142227
+          },
+          "C": {
+            "A": 0.0008019867236725986,
+            "B": 0.0011669175000861287,
+            "C": 0.0002950487833004445,
+            "D": 0.996554970741272,
+            "E": 0.0010963270906358957
+          },
+          "D": {
+            "A": 0.19223226606845856,
+            "B": 0.31710493564605713,
+            "C": 0.2628583610057831,
+            "D": 0.1806221455335617,
+            "E": 0.021593863144516945
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.006309482268989086,
+          "B": 0.16932044923305511,
+          "C": 0.0002950487833004445,
+          "D": 0.1806221455335617
+        },
+        "score": 0.08913678145472659
+      },
+      {
+        "record_index": 13,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14222",
+        "label": null,
+        "perturbations": {
+          "a": "Op het stripparcours in Brussel ontdekken we in de Kapucijnenstraat deze prachtige illustratie van Govert Suurbier. We zoeken de naam van deze fascinerend mooie dame die hier naar beneden wordt geholpen door de robuust gebouwde missionaris. Haar beroemdste tenue bestond uit niet veel meer dan een bananenrokje (waarmee ze Parijs in het interbellum in vuur en vlam zette met haar ietwat gewaagde cabaretvoorstellingen). Je mag reageren met haar artiestennaam.",
+          "b": "Op het stripparcours in Brussel vinden we in de Kapucijnenstraat deze schitterende afbeelding van Govert Suurbier. We zoeken de naam van deze fascinerend mooie dame die hier naar beneden wordt geholpen door de krachtig gebouwde missionaris. Haar beroemdste ensemble bestond uit niet veel meer dan een bananenrokje (waarmee ze Parijs in het interbellum in vuur en vlam zette met haar ietwat gewaagde cabaretvoorstellingen). Je mag antwoorden met haar artiestennaam.",
+          "c": "Op het stripparcours in Brussel zien we in de Kapucijnenstraat deze mooie tekening van Govert Suurbier. We zoeken de naam van deze fascinerend mooie dame die hier naar beneden wordt geholpen door de stevig gebouwde zendeling. Haar beroemdste kledingstuk bestond uit niet veel meer dan een bananenrokje (waarmee ze Parijs in het interbellum in vuur en vlam zette met haar ietwat gewaagde cabaretvoorstellingen). Je mag reageren met haar artiestennaam.",
+          "d": "Op het stripparcours in Brussel ontdekken we in de Kapucijnenstraat deze schitterende tekening van Govert Suurbier. We zoeken de naam van deze fascinerend mooie dame die hier naar beneden wordt geholpen door de sterk gebouwde missionaris. Haar beroemdste outfit bestond uit niet veel meer dan een bananenrokje (waarmee ze Parijs in het interbellum in vuur en vlam zette met haar ietwat gewaagde cabaretvoorstellingen). Je mag antwoorden met haar artiestennaam."
+        },
+        "bdq_probs": {
+          "A": 0.1883390098810196,
+          "B": 0.5449775457382202,
+          "C": 0.09470284730195999,
+          "D": 0.15613842010498047,
+          "E": 0.015459953807294369
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.049325719475746155,
+            "B": 0.8742921352386475,
+            "C": 0.023299742490053177,
+            "D": 0.046335961669683456,
+            "E": 0.006274838466197252
+          },
+          "B": {
+            "A": 0.25802546739578247,
+            "B": 0.5814757943153381,
+            "C": 0.05757516622543335,
+            "D": 0.08376825600862503,
+            "E": 0.016498759388923645
+          },
+          "C": {
+            "A": 0.06022634729743004,
+            "B": 0.3689192831516266,
+            "C": 0.01955261267721653,
+            "D": 0.5367448329925537,
+            "E": 0.01344328373670578
+          },
+          "D": {
+            "A": 0.1251765787601471,
+            "B": 0.8159263134002686,
+            "C": 0.007516887038946152,
+            "D": 0.038167499005794525,
+            "E": 0.01028828602284193
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.049325719475746155,
+          "B": 0.5814757943153381,
+          "C": 0.01955261267721653,
+          "D": 0.038167499005794525
+        },
+        "score": 0.17213040636852384
+      },
+      {
+        "record_index": 14,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14223",
+        "label": null,
+        "perturbations": {
+          "a": "Slack (or Float) is the duration an activity can be postponed without postponing the next task (Free Slack) or the entire project (Total Slack).",
+          "b": "Slack (or Float) is the period an activity can be deferred without deferring the next task (Free Slack) or the complete project (Total Slack).",
+          "c": "Slack (or Float) is the span an activity can be put off without putting off the next task (Free Slack) or the whole project (Total Slack).",
+          "d": "Slack (or Float) is the interval an activity can be delayed without delaying the subsequent task (Free Slack) or the overall project (Total Slack)."
+        },
+        "bdq_probs": {
+          "A": 0.0022401446476578712,
+          "B": 0.7492265105247498,
+          "C": 0.022624587640166283,
+          "D": 0.17795543372631073,
+          "E": 0.04789698123931885
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0018846906023100019,
+            "B": 0.12412218749523163,
+            "C": 0.00481272442266345,
+            "D": 0.8615639805793762,
+            "E": 0.007454417180269957
+          },
+          "B": {
+            "A": 0.001228148816153407,
+            "B": 0.002294492442160845,
+            "C": 0.0062370640225708485,
+            "D": 0.9853468537330627,
+            "E": 0.0048575736582279205
+          },
+          "C": {
+            "A": 0.005960996262729168,
+            "B": 0.1537364274263382,
+            "C": 0.0023343651555478573,
+            "D": 0.8310831785202026,
+            "E": 0.006754865404218435
+          },
+          "D": {
+            "A": 0.016574323177337646,
+            "B": 0.9632866978645325,
+            "C": 0.014626776799559593,
+            "D": 0.0038156623486429453,
+            "E": 0.0014483750564977527
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0018846906023100019,
+          "B": 0.002294492442160845,
+          "C": 0.0023343651555478573,
+          "D": 0.0038156623486429453
+        },
+        "score": 0.0025823026371654123
+      },
+      {
+        "record_index": 15,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14224",
+        "label": null,
+        "perturbations": {
+          "a": "Inona no atao hoe fanambady?",
+          "b": "Inona no atao hoe fetin-bary?",
+          "c": "Inona no atao hoe susan-bary?",
+          "d": "Inona no atao hoe tsanta-bary?"
+        },
+        "bdq_probs": {
+          "A": 0.026647279039025307,
+          "B": 0.046767592430114746,
+          "C": 0.47233301401138306,
+          "D": 0.26912716031074524,
+          "E": 0.18497009575366974
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.005877555347979069,
+            "B": 0.049212295562028885,
+            "C": 0.023246221244335175,
+            "D": 0.7698052525520325,
+            "E": 0.15158498287200928
+          },
+          "B": {
+            "A": 0.00470140902325511,
+            "B": 0.018594523891806602,
+            "C": 0.03697950020432472,
+            "D": 0.697748064994812,
+            "E": 0.24113823473453522
+          },
+          "C": {
+            "A": 0.0011642201570793986,
+            "B": 0.005912418942898512,
+            "C": 0.0031646916177123785,
+            "D": 0.8774750232696533,
+            "E": 0.11156027764081955
+          },
+          "D": {
+            "A": 0.006057748105376959,
+            "B": 0.019863054156303406,
+            "C": 0.02550460956990719,
+            "D": 0.009987879544496536,
+            "E": 0.8990808129310608
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.005877555347979069,
+          "B": 0.018594523891806602,
+          "C": 0.0031646916177123785,
+          "D": 0.009987879544496536
+        },
+        "score": 0.009406162600498646
+      },
+      {
+        "record_index": 16,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14225",
+        "label": null,
+        "perturbations": {
+          "a": "ஏலக்காயில் இருக்கும் எண்ணையின் அடைப்பு என்ன?",
+          "b": "ஏலக்காயில் இருக்கும் எண்ணையின் அடையாளம் என்ன?",
+          "c": "ஏலக்காயில் இருக்கும் எண்ணையின் நிரூபம் என்ன?",
+          "d": "ஏலக்காயில் இருக்கும் எண்ணையின் குறி என்ன?"
+        },
+        "bdq_probs": {
+          "A": 0.021072542294859886,
+          "B": 0.6353805065155029,
+          "C": 0.09743846952915192,
+          "D": 0.14177073538303375,
+          "E": 0.10372491925954819
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06623882800340652,
+            "B": 0.14924640953540802,
+            "C": 0.13168247044086456,
+            "D": 0.2460346817970276,
+            "E": 0.2969229817390442
+          },
+          "B": {
+            "A": 0.014463137835264206,
+            "B": 0.06481460481882095,
+            "C": 0.053722888231277466,
+            "D": 0.10037937015295029,
+            "E": 0.6968161463737488
+          },
+          "C": {
+            "A": 0.004387145861983299,
+            "B": 0.20452946424484253,
+            "C": 0.048592519015073776,
+            "D": 0.1921836882829666,
+            "E": 0.10304007679224014
+          },
+          "D": {
+            "A": 0.0652548298239708,
+            "B": 0.3312781751155853,
+            "C": 0.1144518181681633,
+            "D": 0.3525228500366211,
+            "E": 0.06135795637965202
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06623882800340652,
+          "B": 0.06481460481882095,
+          "C": 0.048592519015073776,
+          "D": 0.3525228500366211
+        },
+        "score": 0.1330422004684806
+      },
+      {
+        "record_index": 17,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14226",
+        "label": null,
+        "perturbations": {
+          "a": "வினா:  \nபுறநானூறு பற்றிக் குறிப்பளிக்கவும்.",
+          "b": "வினா:  \nபுறநானூறு குறித்துச் செய்திகள் எழுதுங்கள்.",
+          "c": "வினா:  \nபுறநானூறு பற்றிய உரையை எழுதுங்கள்.",
+          "d": "வினா:  \nபுறநானூறு குறித்து விவரிக்கவும்."
+        },
+        "bdq_probs": {
+          "A": 0.032011669129133224,
+          "B": 0.18421505391597748,
+          "C": 0.07679129391908646,
+          "D": 0.642950713634491,
+          "E": 0.06366539001464844
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.2261430093474246e-08,
+            "B": 4.470353864860499e-09,
+            "C": 4.0017432922923035e-08,
+            "D": 6.186719136991314e-09,
+            "E": 9.776564446895009e-09
+          },
+          "B": {
+            "A": 3.211959032078937e-10,
+            "B": 3.6189457680579906e-11,
+            "C": 1.6258205892683009e-10,
+            "D": 5.641747138906972e-11,
+            "E": 1.847241803965005e-11
+          },
+          "C": {
+            "A": 4.803550265886081e-11,
+            "B": 7.401635727932732e-12,
+            "C": 2.486197879514318e-11,
+            "D": 6.302727090234939e-11,
+            "E": 4.975864512091199e-11
+          },
+          "D": {
+            "A": 3.309727839018173e-11,
+            "B": 1.0539109515650402e-11,
+            "C": 1.2318104869457613e-11,
+            "D": 6.861068137242743e-12,
+            "E": 7.575784444213696e-11
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.2261430093474246e-08,
+          "B": 3.6189457680579906e-11,
+          "C": 2.486197879514318e-11,
+          "D": 6.861068137242743e-12
+        },
+        "score": 3.082335649521803e-09
+      },
+      {
+        "record_index": 18,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14227",
+        "label": null,
+        "perturbations": {
+          "a": "Tidak ada yang istimewa, dengan tarif agak tinggi dibanding lokasi makan lain yang lebih lezat dan terjangkau.  \nsayur asemnya sangat manis nis nis.  \nempal, paru goreng jenis dengan rempah gurih tidak terlalu manis. tetapi ukuran sedikit kecil.  \npelayanan agak kurang cepat, karena pesanan dihimpun dulu baru dihidangkan.. tidak cocok untuk yang sedang lapar atau mengejar waktu.",
+          "b": "Tiada yang khusus, dengan biaya agak mahal dibanding tempat santap lain yang lebih nikmat dan murah.  \nsayur asemnya super manis nis nis.  \nempal, paru goreng tipe dengan bumbu lezat tidak terlalu manis. tetapi ukuran cukup kecil.  \npelayanan sedikit kurang cepat, karena pesanan dikumpulkan terlebih dahulu baru dihidangkan.. tidak sesuai untuk yang lapar atau kejar waktu.",
+          "c": "Tak ada yang luar biasa, dengan biaya sedikit mahal dibanding lokasi makan lain yang lebih enak dan murah.  \nsayur asemnya amat manis nis nis.  \nempal, paru goreng kategori dengan bumbu gurih tak terlalu manis. namun ukuran sedikit kecil.  \npelayanan agak kurang cepat, karena pesanan dikumpulkan dulu baru disajikan.. tak pas untuk yang sedang lapar atau mengejar waktu.",
+          "d": "Nol yang spesial, dengan harga agak tinggi dibanding tempat makan lainnya yang lebih enak dan terjangkau.  \nsayur asemnya super manis nis nis.  \nempal, paru goreng varian dengan bumbu gurih tidak terlalu manis. tapi ukuran cukup kecil.  \npelayanan agak tidak cepat, karena pesanan dikumpulkan sebelumnya baru disajikan.. tidak cocok bagi yang sedang lapar atau mengejar waktu."
+        },
+        "bdq_probs": {
+          "A": 0.07972734421491623,
+          "B": 0.5891206860542297,
+          "C": 0.1912565380334854,
+          "D": 0.06609635800123215,
+          "E": 0.07036389410495758
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.10221435874700546,
+            "B": 0.48765257000923157,
+            "C": 0.09020356833934784,
+            "D": 0.2957509458065033,
+            "E": 0.022815724834799767
+          },
+          "B": {
+            "A": 0.09292912483215332,
+            "B": 0.3452775478363037,
+            "C": 0.39120209217071533,
+            "D": 0.13520579040050507,
+            "E": 0.02208947017788887
+          },
+          "C": {
+            "A": 0.035946086049079895,
+            "B": 0.8708838224411011,
+            "C": 0.0192466638982296,
+            "D": 0.04616875946521759,
+            "E": 0.02326338365674019
+          },
+          "D": {
+            "A": 0.14787828922271729,
+            "B": 0.5493975877761841,
+            "C": 0.08972331881523132,
+            "D": 0.06567532569169998,
+            "E": 0.03119385614991188
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.10221435874700546,
+          "B": 0.3452775478363037,
+          "C": 0.0192466638982296,
+          "D": 0.06567532569169998
+        },
+        "score": 0.1331034740433097
+      },
+      {
+        "record_index": 19,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14228",
+        "label": null,
+        "perturbations": {
+          "a": "Mmemme Oro bụ mmemme nke obodo na agbụrụ ndị Yoruba na-eme. Ọ bụ mmemme ọdịnala a na-eme kwa afọ bụ nke sitere na nna ochie, ebe ọ bụ na ọ bụ naanị ụmụ nwoke bụ ndị nna nna na-eme ya n'ebe a kapịrị ọnụ ebe emume a na-eme.  \n\nỌ na-efe chi/ orisha, Orò, chi ndị Yoruba nke ụmụ na-agba ehi na ikpe ziri ezi. N'oge ememme ahụ, ụmụ nwanyị na ndị na-abụghị ụmụ amaala na-anọ n'ime ụlọ dịka akụkọ ihe mere eme ọnụ naekwu na ndị inyom na ndị na-abụghị ndị na-adịghị ahụ agaghị ahụ Oro.",
+          "b": "Mmemme Oro bụ mmemme nke obodo na obodo ndị Yoruba na-eme. Ọ bụ mmemme ọdịnala a na-eme kwa afọ bụ nke sitere na nna ochie, ebe ọ bụ na ọ bụ naanị ụmụ nwoke bụ ndị nna nna na-eme ya n'ebe a kapịrị ọnụ ebe emume a na-eme.  \n\nỌ na-efe chi/ orisha, Orò, chi ndị Yoruba nke ndị nọ na-agba ehi na ikpe ziri ezi. N'oge ememme ahụ, ụmụ nwanyị na ndị na-abụghị ụmụ amaala na-anọ n'ime ụlọ dịka akụkọ ihe mere eme ọnụ naekwu na ndị inyom na ndị na-abụghị ndị na-adịghị ahụ agaghị ahụ Oro.",
+          "c": "Mmemme Oro bụ mmemme nke obodo na obodo ndị Yoruba na-eme. Ọ bụ mmemme ọdịnala a na-eme kwa afọ bụ nke sitere na nna ochie, ebe ọ bụ na ọ bụ naanị ụmụ nwoke bụ ndị nna nna na-eme ya n'ebe a kapịrị ọnụ ebe emume a na-eme.  \n\nỌ na-efe chi/ orisha, Orò, chi ndị Yoruba nke ndị ga-agba ehi na ikpe ziri ezi. N'oge ememme ahụ, ụmụ nwanyị na ndị na-abụghị ụmụ amaala na-anọ n'ime ụlọ dịka akụkọ ihe mere eme ọnụ naekwu na ndị inyom na ndị na-abụghị ndị na-enweghị ahụ agaghị ahụ Oro.",
+          "d": "Mmemme Oro bụ mmemme nke obodo na obodo ndị Yoruba na-eme. Ọ bụ mmemme ọdịnala a na-eme kwa afọ bụ nke sitere na nna ochie, ebe ọ bụ na ọ bụ naanị ụmụ nwoke bụ ndị nna nna na-eme ya n'ebe a kapịrị ọnụ ebe emume a na-eme.  \n\nỌ na-efe chi/ orisha, Orò, chi ndị Yoruba nke ndị na-agba ehi na ikpe ziri ezi. N'oge ememme ahụ, ụmụ nwanyị na ndị na-abụghị ụmụ amaala na-anọ n'ime ụlọ dịka akụkọ ihe mere eme ọnụ naekwu na ndị inyom na ndị na-abụghị ụmụ na-adịghị ahụ agaghị ahụ Oro."
+        },
+        "bdq_probs": {
+          "A": 0.10014054924249649,
+          "B": 0.6530003547668457,
+          "C": 0.064655601978302,
+          "D": 0.15510022640228271,
+          "E": 0.02695312164723873
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.021030424162745476,
+            "B": 0.894240140914917,
+            "C": 0.009332308545708656,
+            "D": 0.07340328395366669,
+            "E": 0.001896207919344306
+          },
+          "B": {
+            "A": 0.18372061848640442,
+            "B": 0.15231069922447205,
+            "C": 0.41402092576026917,
+            "D": 0.23590104281902313,
+            "E": 0.011033952236175537
+          },
+          "C": {
+            "A": 0.08873099833726883,
+            "B": 0.7908506393432617,
+            "C": 0.05055776238441467,
+            "D": 0.06491654366254807,
+            "E": 0.004418448079377413
+          },
+          "D": {
+            "A": 0.4391992390155792,
+            "B": 0.529782772064209,
+            "C": 0.015028906054794788,
+            "D": 0.015028764493763447,
+            "E": 0.0006013491656631231
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.021030424162745476,
+          "B": 0.15231069922447205,
+          "C": 0.05055776238441467,
+          "D": 0.015028764493763447
+        },
+        "score": 0.05973191256634891
+      },
+      {
+        "record_index": 20,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14229",
+        "label": null,
+        "perturbations": {
+          "a": "Sheeg Kumuu Ahaa Qofkii Ugu Horeeyey Ee Qora Bismillaahi Raxmaanil Raxiim?",
+          "b": "Sheeg Kumuu Ahaa Qofkii Ugu Horeeyey Ee Qoro Bismillaahi Raxmaanil Raxiim?",
+          "c": "Sheeg Kumuu Ahaa Qofkii Ugu Horeeyey Ee Qore Bismillaahi Raxmaanil Raxiim?",
+          "d": "Sheeg Kumuu Ahaa Qofkii Ugu Horeeyey Ee Qoral Bismillaahi Raxmaanil Raxiim?"
+        },
+        "bdq_probs": {
+          "A": 0.008645773865282536,
+          "B": 0.05637757107615471,
+          "C": 0.7311118245124817,
+          "D": 0.17365415394306183,
+          "E": 0.030177060514688492
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.02947872132062912,
+            "B": 0.055074408650398254,
+            "C": 0.33736082911491394,
+            "D": 0.5562002658843994,
+            "E": 0.021569091826677322
+          },
+          "B": {
+            "A": 0.017827991396188736,
+            "B": 0.018977899104356766,
+            "C": 0.020201686769723892,
+            "D": 0.9143672585487366,
+            "E": 0.02761463075876236
+          },
+          "C": {
+            "A": 0.024550573900341988,
+            "B": 0.17041420936584473,
+            "C": 0.04586587846279144,
+            "D": 0.7174229025840759,
+            "E": 0.03356153890490532
+          },
+          "D": {
+            "A": 0.012605433352291584,
+            "B": 0.29599809646606445,
+            "C": 0.3570176959037781,
+            "D": 0.31505921483039856,
+            "E": 0.007414264604449272
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.02947872132062912,
+          "B": 0.018977899104356766,
+          "C": 0.04586587846279144,
+          "D": 0.31505921483039856
+        },
+        "score": 0.10234542842954397
+      },
+      {
+        "record_index": 21,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14230",
+        "label": null,
+        "perturbations": {
+          "a": "ソニーグループとホンダは去年9月、電気自動車の企業を作りました。企業はアメリカのラスベガスで、発展している途中の電気自動車「AFEELA」を発表しました。  \n運転席の前が全部タッチパネルの画面になっています。ゲームをしたりインターネットのメタバースと接続したりすることができます。カメラやセンサーが45個ついていて、高速道路で渋滞しているときなどに自動で運転できるようにする計画です。ソニーが得意なゲームや映画などエンターテインメントを利用して、移動することを楽しむ自動車を作ります。  \n企業は、人気のゲーム「フォートナイト」を作っているアメリカの企業などと協力することも発表しました。この自動車は、2025年ごろから販売し始める計画です。",
+          "b": "ソニーグループとホンダは昨年9月、電気自動車の事業を作りました。事業はアメリカのラスベガスで、進行中の電気自動車「AFEELA」を発表しました。  \n運転席の前が全部タッチパネルの画面になっています。ゲームをしたりインターネットのメタバースと繋いだりすることができます。カメラやセンサーが45個ついていて、高速道路で渋滞しているときなどに自動で運転できるようにする計画です。ソニーが得意なゲームや映画など娯楽を使って、移動することを楽しむ車を作ります。  \n事業は、人気のゲーム「フォートナイト」を作っているアメリカの事業などと協力することも発表しました。この車は、2025年ごろから販売し始める計画です。",
+          "c": "ソニーグループとホンダは昨年9月、電気自動車の法人を作りました。法人はアメリカのラスベガスで、開発中の電気自動車「AFEELA」を発表しました。  \n運転席の前が全部タッチパネルの画面になっています。ゲームをしたりインターネットのメタバースと結びつけたりすることができます。カメラやセンサーが45個ついていて、高速道路で渋滞しているときなどに自動で運転できるようにする計画です。ソニーが得意なゲームや映画などのエンターテインメントを通じて、移動することを楽しむ自動車を作ります。  \n法人は、人気のゲーム「フォートナイト」を作っているアメリカの法人などと協力することも発表しました。この自動車は、2025年ごろから販売を開始する計画です。",
+          "d": "ソニーグループとホンダは前年9月、電気自動車の組織を作りました。組織はアメリカのラスベガスで、開発中の電気自動車「AFEELA」を発表しました。  \n運転席の前が全部タッチパネルの画面になっています。ゲームをしたりインターネットのメタバースと結びつけたりすることができます。カメラやセンサーが45個ついていて、高速道路で渋滞しているときなどに自動で運転できるようにする計画です。ソニーが得意なゲームや映画などエンターテインメントを駆使して、移動することを楽しむ自動車を作ります。  \n組織は、人気のゲーム「フォートナイト」を作っているアメリカの組織などと協力することも発表しました。この自動車は、2025年ごろから販売を始める計画です。"
+        },
+        "bdq_probs": {
+          "A": 0.07015231251716614,
+          "B": 0.7542110681533813,
+          "C": 0.09007750451564789,
+          "D": 0.07467644661664963,
+          "E": 0.010758611373603344
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.028151871636509895,
+            "B": 0.6407445669174194,
+            "C": 0.10459744185209274,
+            "D": 0.22143039107322693,
+            "E": 0.004596126731485128
+          },
+          "B": {
+            "A": 0.34492504596710205,
+            "B": 0.30440765619277954,
+            "C": 0.22270579636096954,
+            "D": 0.09283581376075745,
+            "E": 0.03208622336387634
+          },
+          "C": {
+            "A": 0.0644669383764267,
+            "B": 0.1364789605140686,
+            "C": 0.1282094269990921,
+            "D": 0.6510905027389526,
+            "E": 0.018471507355570793
+          },
+          "D": {
+            "A": 0.15393555164337158,
+            "B": 0.09336884319782257,
+            "C": 0.013450859114527702,
+            "D": 0.7343800067901611,
+            "E": 0.004367401823401451
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.028151871636509895,
+          "B": 0.30440765619277954,
+          "C": 0.1282094269990921,
+          "D": 0.7343800067901611
+        },
+        "score": 0.29878724040463567
+      },
+      {
+        "record_index": 23,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14232",
+        "label": null,
+        "perturbations": {
+          "a": "Atsakyk į šį sudėtingą klausimą: Kuri valstybė yra didžiausia pagal gyventojų skaičių?",
+          "b": "Atsakyk į šį sudėtingą klausimą: Kuri šalis yra didžiausia pagal gyventojų skaičių?",
+          "c": "Atsakyk į šią sudėtingą užduotį: Kuri šalis yra didžiausia pagal gyventojų skaičių?",
+          "d": "Atsakyk į šį sudėtingą klausimą: Kuri tauta yra didžiausia pagal gyventojų skaičių?"
+        },
+        "bdq_probs": {
+          "A": 0.015680687502026558,
+          "B": 0.6667611598968506,
+          "C": 0.1022513285279274,
+          "D": 0.13975979387760162,
+          "E": 0.07481028139591217
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1447036862373352,
+            "B": 0.5050671696662903,
+            "C": 0.06421256810426712,
+            "D": 0.19778679311275482,
+            "E": 0.08777022361755371
+          },
+          "B": {
+            "A": 0.06041795015335083,
+            "B": 0.09961272031068802,
+            "C": 0.37010523676872253,
+            "D": 0.41938313841819763,
+            "E": 0.05008934438228607
+          },
+          "C": {
+            "A": 0.005380513146519661,
+            "B": 0.030962759628891945,
+            "C": 0.005054537206888199,
+            "D": 0.8500388860702515,
+            "E": 0.10807116329669952
+          },
+          "D": {
+            "A": 0.07708045840263367,
+            "B": 0.5350455641746521,
+            "C": 0.03641039505600929,
+            "D": 0.3245203495025635,
+            "E": 0.02663901075720787
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1447036862373352,
+          "B": 0.09961272031068802,
+          "C": 0.005054537206888199,
+          "D": 0.3245203495025635
+        },
+        "score": 0.14347282331436872
+      },
+      {
+        "record_index": 24,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14233",
+        "label": null,
+        "perturbations": {
+          "a": "Koalay üzerinden poliçe satın alanlar Medicana'nın SGK sözleşmesi ile hastalarına sunduğu imkanların yanında, ekstra çok özel kampanyalar ve avantajlardan da faydalanıyorlar. Sevgiyle, sağlıkla.",
+          "b": "Koalay vasıtasıyla poliçe satın alanlar Medicana'nın SGK anlaşması ile hastalarına sunduğu fırsatların yanında, ekstra oldukça özel tekliflerden ve avantajlardan da istifade ediyorlar. Sevgiyle, sağlıkla.",
+          "c": "Koalay ile poliçe satın alanlar Medicana'nın SGK sözleşmesi ile hastalarına sağladığı imkanların yanında, ekstra çok özel öneriler ve avantajlardan da yararlanıyorlar. Sevgiyle, sağlıkla.",
+          "d": "Koalay aracılığıyla poliçe satın alanlar Medicana'nın SGK anlaşması ile hastalarına sunduğu fırsatların yanı sıra, ekstra oldukça özel avantajlar ve teklifler de elde ediyorlar. Sevgiyle, sağlıkla."
+        },
+        "bdq_probs": {
+          "A": 0.047955285757780075,
+          "B": 0.5842160582542419,
+          "C": 0.05104820057749748,
+          "D": 0.21492008864879608,
+          "E": 0.10152224451303482
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.031035222113132477,
+            "B": 0.7063605785369873,
+            "C": 0.04242057725787163,
+            "D": 0.15760940313339233,
+            "E": 0.06172310560941696
+          },
+          "B": {
+            "A": 0.0771680399775505,
+            "B": 0.09308306127786636,
+            "C": 0.09308251738548279,
+            "D": 0.6877865791320801,
+            "E": 0.046805884689092636
+          },
+          "C": {
+            "A": 0.02796405926346779,
+            "B": 0.6364609003067017,
+            "C": 0.09169086068868637,
+            "D": 0.1712998002767563,
+            "E": 0.07141070812940598
+          },
+          "D": {
+            "A": 0.005390450358390808,
+            "B": 0.9649896025657654,
+            "C": 0.009460773319005966,
+            "D": 0.01767449639737606,
+            "E": 0.0020464130211621523
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.031035222113132477,
+          "B": 0.09308306127786636,
+          "C": 0.09169086068868637,
+          "D": 0.01767449639737606
+        },
+        "score": 0.05837091011926532
+      },
+      {
+        "record_index": 25,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14234",
+        "label": null,
+        "perturbations": {
+          "a": "आर्टिफिसियल बुद्धिमत्ताले सफ्टवेयर इन्जिनियरिङलाई स्वचालित कार्यहरू, सफ्टवेयर परीक्षण वृद्धि गर्दै, र बौद्धिक अनुप्रयोगहरूको विकासलाई सक्षम पारेर क्रान्तिकारी परिवर्तन गरेको छ। इन्जिनियरहरूले सफ्टवेयर प्रदर्शन र कार्यक्षमता सुधार गर्न AI एल्गोरिदमहरू समावेश गर्छन्।",
+          "b": "आर्टिफिसियल इन्टेलिजेन्सले सफ्टवेयर इन्जिनियरिङलाई स्वचालन कार्यहरू, सफ्टवेयर परीक्षण बढाएर, र बौद्धिक अनुप्रयोगहरूको विकासलाई सक्षम पारेर क्रान्तिकारी परिवर्तन गरेको छ। इन्जिनियरहरूले सफ्टवेयर प्रदर्शन र कार्यक्षमता सुधार गर्न AI एल्गोरिदमहरू समाहित गर्छन्।",
+          "c": "आर्टिफिसियल इन्टेलिजेन्सले सफ्टवेयर इन्जिनियरिङलाई स्वचालित कार्यहरू, सफ्टवेयर परीक्षण वृद्धि गरेर, र बुद्धिमानी अनुप्रयोगहरूको विकासलाई सक्षम पारेर क्रान्तिकारी परिवर्तन गरेको छ। इन्जिनियरहरूले सफ्टवेयर प्रभाव र कार्यक्षमता सुधार गर्न AI एल्गोरिदमहरू समावेश गर्छन्।",
+          "d": "आर्टिफिसियल इन्टेलिजेन्सले सफ्टवेयर इन्जिनियरिङलाई स्वचालित कार्यहरू, सफ्टवेयर परीक्षण वृद्धि गर्दै, र बौद्धिक अनुप्रयोगहरूको विकासलाई सक्षम पारेर अभूतपूर्व परिवर्तन गरेको छ। इन्जिनियरहरूले सफ्टवेयर प्रदर्शन र कार्यक्षमता सुधार गर्न AI एल्गोरिदमहरू प्रयोग गर्छन्।"
+        },
+        "bdq_probs": {
+          "A": 0.07893649488687515,
+          "B": 0.35376912355422974,
+          "C": 0.18935814499855042,
+          "D": 0.3537658751010895,
+          "E": 0.022616203874349594
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010613259859383106,
+            "B": 0.5978553891181946,
+            "C": 0.10389171540737152,
+            "D": 0.2652950584888458,
+            "E": 0.0062394230626523495
+          },
+          "B": {
+            "A": 0.08768649399280548,
+            "B": 0.27009543776512146,
+            "C": 0.30605435371398926,
+            "D": 0.32578912377357483,
+            "E": 0.007662595249712467
+          },
+          "C": {
+            "A": 0.05594933032989502,
+            "B": 0.4986717104911804,
+            "C": 0.2669178247451782,
+            "D": 0.14286968111991882,
+            "E": 0.016030898317694664
+          },
+          "D": {
+            "A": 0.19300194084644318,
+            "B": 0.6736397743225098,
+            "C": 0.029598310589790344,
+            "D": 0.0911664366722107,
+            "E": 0.0014738801401108503
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010613259859383106,
+          "B": 0.27009543776512146,
+          "C": 0.2669178247451782,
+          "D": 0.0911664366722107
+        },
+        "score": 0.15969823976047337
+      },
+      {
+        "record_index": 26,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14235",
+        "label": null,
+        "perturbations": {
+          "a": "पहली बार प्रेम में पड़ने की भावना का वर्णन करें।",
+          "b": "पहली बार प्यार में गिरने की अनुभूति का विवरण करें।",
+          "c": "पहली बार मोहब्बत में उलझने की भावना का वर्णन करें।",
+          "d": "पहली बार इश्क में गिरने की अनुभूति का विवरण करें।"
+        },
+        "bdq_probs": {
+          "A": 0.026694880798459053,
+          "B": 0.48819810152053833,
+          "C": 0.11595679819583893,
+          "D": 0.24547815322875977,
+          "E": 0.12343775480985641
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.022363414987921715,
+            "B": 0.6957034468650818,
+            "C": 0.06888513267040253,
+            "D": 0.17589762806892395,
+            "E": 0.03687411546707153
+          },
+          "B": {
+            "A": 0.08630194514989853,
+            "B": 0.09186780452728271,
+            "C": 0.3012200593948364,
+            "D": 0.4665358364582062,
+            "E": 0.05234657973051071
+          },
+          "C": {
+            "A": 0.04238037392497063,
+            "B": 0.8512247204780579,
+            "C": 0.03300601616501808,
+            "D": 0.05111972242593765,
+            "E": 0.02198793552815914
+          },
+          "D": {
+            "A": 0.002458451082929969,
+            "B": 0.9917765855789185,
+            "C": 0.0027000715490430593,
+            "D": 0.0015872594667598605,
+            "E": 0.001275564543902874
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.022363414987921715,
+          "B": 0.09186780452728271,
+          "C": 0.03300601616501808,
+          "D": 0.0015872594667598605
+        },
+        "score": 0.03720612378674559
+      },
+      {
+        "record_index": 28,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14237",
+        "label": null,
+        "perturbations": {
+          "a": "Phó Hiệu trưởng ĐH Hồng Đức cũng nhấn mạnh thí sinh đây là mức tối thiểu, tùy theo chỉ tiêu, uy tín thương hiệu từng trường, tùy nhu cầu và thực tế đăng ký nguyện vọng của các em, các trường sẽ xác định được mức điểm chuẩn. \"Theo tôi, điểm chuẩn năm nay có thể tương tự hoặc cao hơn năm ngoái một chút\", thầy Huyền nói. Với trường ĐH Hồng Đức, điểm chuẩn của trường năm 2020, đặc biệt là năm 2021 khá cao, từ 22 điểm trở lên tùy theo từng ngành. PGS.TS Lê Hoằng Bá Huyền dự đoán, năm nay, phổ điểm chuẩn của Trường ĐH Hồng Đức có thể rơi vào từ 22 đến 27-28 điểm, tùy từng ngành. Đây chỉ là dự đoán còn thực tế phụ thuộc vào rất nhiều biến số, phụ thuộc sự lựa chọn của thí sinh. \"Hiện giờ là thời điểm rất quan trọng, thí sinh và phụ huynh cần suy xét, tính toán kỹ lưỡng. Các em lựa chọn sao cho phù hợp với sở thích, năng lực của mình. Tư vấn định hướng của cơ sở giáo dục đại học cũng như xã hội rất cần thiết, để thông tin tới thí sinh, phụ huynh được đầy đủ, chính xác nhất\", PGS.TS Lê Hoằng Bá Huyền nói. Nhận xét về mức điểm sàn này, GS.TS Nguyễn Văn Minh, Hiệu trưởng Trường ĐH Sư phạm Hà Nội cho rằng, để trở thành thầy cô giáo tương lai, cần phải có những tiêu chuẩn nhất định, những cơ sở ban đầu, nên ngưỡng đảm bảo chất lượng đầu vào cho ngành sư phạm là điều cần thiết. \"Các vấn đề liên quan đến điểm học THPT cho chúng ta thông tin rằng các em ấy đã có nỗ lực nhất định trong quá trình học tập để trở thành sinh viên trong tương lai. Việc đảm bảo chất lượng sư phạm hàng năm chúng ta xác định là điều kiện cần. Tức là phải có khả năng tối thiểu để quy định đầu vào. Còn về sau các trường trên cơ sở nền tảng này có thể lấy các điểm chuẩn cao hơn nhiều so với điểm sàn đã đặt ra. Thí sinh lưu ý đây là điều kiện cần chứ không phải là điều kiện đủ. Ví dụ, ngưỡng điểm sàn năm ngoái đặt ra là 19 điểm trong khi đó ngành tiếng Anh của trường chúng tôi đã lấy 28 điểm, hoặc Toán tiếng Anh lấy 27,7 điểm. Điều đó phụ thuộc vào các trường\", GS.TS Nguyễn Văn Minh cho biết. Hiệu trưởng Trường ĐH Sư phạm Hà Nội cũng lưu ý, trong quá trình điều chỉnh nguyện vọng, thí sinh cần bảo đảm về ngưỡng, và đảm bảo những điều kiện khác, ví dụ như hạnh kiểm. Hồ sơ phải đầy đủ, phải đúng. Mặt khác, các em nên tham khảo các điểm xét tuyển, trúng tuyển của các trường khác nhau trong những năm gần đây.",
+          "b": "Phó Hiệu trưởng ĐH Hồng Đức cũng nhấn mạnh thí sinh đây là mức tối thiểu, tùy theo chỉ tiêu, uy tín thương hiệu từng cơ sở, tùy nhu cầu và thực tế đăng ký nguyện vọng của các em, các trường sẽ xác định được mức điểm chuẩn. \"Theo tôi, điểm chuẩn năm nay có thể tương đương hoặc cao hơn năm ngoái một chút\", thầy Huyền nói. Với trường ĐH Hồng Đức, điểm chuẩn của cơ sở năm 2020, đặc biệt là năm 2021 khá cao, từ 22 điểm trở lên tùy theo từng ngành. PGS.TS Lê Hoằng Bá Huyền dự báo, năm nay, phổ điểm chuẩn của Trường ĐH Hồng Đức có thể rơi vào từ 22 đến 27-28 điểm, tùy từng ngành. Đây chỉ là dự báo còn thực tế phụ thuộc vào rất nhiều biến số, phụ thuộc sự lựa chọn của thí sinh. \"Hiện giờ là thời điểm rất đặc biệt, thí sinh và phụ huynh cần cân nhắc, tính toán kỹ lưỡng. Các em lựa chọn sao cho phù hợp với sở thích, năng lực của mình. Tư vấn định hướng của cơ sở giáo dục đại học cũng như xã hội rất cần thiết, để thông tin tới thí sinh, phụ huynh được đầy đủ, chính xác nhất\", PGS.TS Lê Hoằng Bá Huyền nói. Nhận xét về mức điểm sàn này, GS.TS Nguyễn Văn Minh, Hiệu trưởng Trường ĐH Sư phạm Hà Nội cho rằng, để trở thành thầy cô giáo tương lai, cần phải có những tiêu chí nhất định, những cơ sở ban đầu, nên ngưỡng đảm bảo chất lượng đầu vào cho ngành sư phạm là điều cần thiết. \"Các vấn đề liên quan đến điểm học THPT cho chúng ta thông tin rằng các em ấy đã có nỗ lực nhất định trong quá trình học tập để trở thành sinh viên trong tương lai. Việc đảm bảo chất lượng sư phạm hàng năm chúng ta xác định là điều kiện cần. Tức là phải có khả năng tối thiểu để quy định đầu vào. Còn về sau các trường trên cơ sở nền tảng này có thể lấy các điểm chuẩn cao hơn nhiều so với điểm sàn đã đặt ra. Thí sinh lưu ý đây là điều kiện cần chứ không phải là điều kiện đủ. Ví dụ, ngưỡng điểm sàn năm ngoái đặt ra là 19 điểm trong khi đó ngành tiếng Anh của cơ sở chúng tôi đã lấy 28 điểm, hoặc Toán tiếng Anh lấy 27,7 điểm. Điều đó phụ thuộc vào các trường\", GS.TS Nguyễn Văn Minh cho biết. Hiệu trưởng Trường ĐH Sư phạm Hà Nội cũng lưu ý, trong quá trình điều chỉnh nguyện vọng, thí sinh cần bảo đảm về ngưỡng, và đảm bảo những điều kiện khác, ví dụ như hạnh kiểm. Hồ sơ phải đầy đủ, phải đúng. Mặt khác, các em nên tham khảo các điểm xét tuyển, trúng tuyển của các trường khác nhau trong những năm gần đây.",
+          "c": "Phó Hiệu trưởng ĐH Hồng Đức cũng nhấn mạnh thí sinh đây là mức tối thiểu, tùy theo chỉ tiêu, uy tín danh tiếng từng trường, tùy nhu cầu và thực tế đăng ký nguyện vọng của các em, các cơ sở sẽ xác định được mức điểm chuẩn. \"Theo tôi, điểm chuẩn năm nay có thể tương đương hoặc cao hơn năm ngoái một chút\", thầy Huyền nói. Với trường ĐH Hồng Đức, điểm chuẩn của trường năm 2020, đặc biệt là năm 2021 khá cao, từ 22 điểm trở lên tùy theo từng ngành. PGS.TS Lê Hoằng Bá Huyền dự báo, năm nay, phổ điểm chuẩn của Trường ĐH Hồng Đức có thể rơi vào từ 22 đến 27-28 điểm, tùy từng ngành. Đây chỉ là dự báo còn thực tế phụ thuộc vào rất nhiều biến số, phụ thuộc sự lựa chọn của thí sinh. \"Hiện giờ là thời điểm rất quan trọng, thí sinh và phụ huynh cần cân nhắc, tính toán kỹ lưỡng. Các em lựa chọn sao cho phù hợp với sở thích, năng lực của mình. Tư vấn định hướng của cơ sở giáo dục đại học cũng như xã hội rất cần thiết, để thông tin tới thí sinh, phụ huynh được đầy đủ, chính xác nhất\", PGS.TS Lê Hoằng Bá Huyền nói. Nhận xét về mức điểm sàn này, GS.TS Nguyễn Văn Minh, Hiệu trưởng Trường ĐH Sư phạm Hà Nội cho rằng, để trở thành thầy cô giáo tương lai, cần phải có những tiêu chí nhất định, những cơ sở ban đầu, nên ngưỡng đảm bảo chất lượng đầu vào cho ngành sư phạm là điều cần thiết. \"Các vấn đề liên quan đến điểm học THPT cho chúng ta thông tin rằng các em ấy đã có nỗ lực nhất định trong quá trình học tập để trở thành sinh viên trong tương lai. Việc đảm bảo chất lượng sư phạm hàng năm chúng ta xác định là điều kiện cần. Tức là phải có khả năng tối thiểu để quy định đầu vào. Còn về sau các trường trên cơ sở nền tảng này có thể lấy các điểm chuẩn cao hơn nhiều so với điểm sàn đã đặt ra. Thí sinh lưu ý đây là điều kiện cần chứ không phải là điều kiện đủ. Ví dụ, ngưỡng điểm sàn năm ngoái đặt ra là 19 điểm trong khi đó ngành tiếng Anh của trường chúng tôi đã lấy 28 điểm, hoặc Toán tiếng Anh lấy 27,7 điểm. Điều đó phụ thuộc vào các trường\", GS.TS Nguyễn Văn Minh cho biết. Hiệu trưởng Trường ĐH Sư phạm Hà Nội cũng lưu ý, trong quá trình điều chỉnh nguyện vọng, thí sinh cần bảo đảm về ngưỡng, và đảm bảo những điều kiện khác, ví dụ như hạnh kiểm. Hồ sơ phải đầy đủ, phải đúng. Mặt khác, các em nên tham khảo các điểm xét tuyển, trúng tuyển của các trường khác nhau trong những năm gần đây.",
+          "d": "Phó Hiệu trưởng ĐH Hồng Đức cũng lưu ý thí sinh đây là mức tối thiểu, tùy theo chỉ tiêu, uy tín thương hiệu từng trường, tùy nhu cầu và thực tế đăng ký nguyện vọng của các em, các cơ sở sẽ xác định được mức điểm chuẩn. \"Theo tôi, điểm chuẩn năm nay có thể tương tự hoặc cao hơn năm ngoái một chút\", thầy Huyền nói. Với trường ĐH Hồng Đức, điểm chuẩn của trường năm 2020, đặc biệt là năm 2021 khá cao, từ 22 điểm trở lên tùy theo từng lĩnh vực. PGS.TS Lê Hoằng Bá Huyền dự báo, năm nay, phổ điểm chuẩn của Trường ĐH Hồng Đức có thể rơi vào từ 22 đến 27-28 điểm, tùy từng lĩnh vực. Đây chỉ là dự báo còn thực tế phụ thuộc vào rất nhiều biến số, phụ thuộc sự lựa chọn của thí sinh. \"Hiện giờ là thời điểm rất quan trọng, thí sinh và phụ huynh cần cân nhắc, tính toán kỹ lưỡng. Các em lựa chọn sao cho phù hợp với sở thích, năng lực của mình. Tư vấn định hướng của cơ sở giáo dục đại học cũng như xã hội rất cần thiết, để thông tin tới thí sinh, phụ huynh được đầy đủ, chính xác nhất\", PGS.TS Lê Hoằng Bá Huyền nói. Nhận xét về mức điểm sàn này, GS.TS Nguyễn Văn Minh, Hiệu trưởng Trường ĐH Sư phạm Hà Nội cho rằng, để trở thành thầy cô giáo tương lai, cần phải có những tiêu chí nhất định, những cơ sở ban đầu, nên ngưỡng đảm bảo chất lượng đầu vào cho ngành sư phạm là điều cần thiết. \"Các vấn đề liên quan đến điểm học THPT cho chúng ta thông tin rằng các em ấy đã có nỗ lực nhất định trong quá trình học tập để trở thành sinh viên trong tương lai. Việc đảm bảo chất lượng sư phạm hàng năm chúng ta xác định là điều kiện cần. Tức là phải có khả năng tối thiểu để quy định đầu vào. Còn về sau các trường trên cơ sở nền tảng này có thể lấy các điểm chuẩn cao hơn nhiều so với điểm sàn đã đặt ra. Thí sinh lưu ý đây là điều kiện cần chứ không phải là điều kiện đủ. Ví dụ, ngưỡng điểm sàn năm ngoái đặt ra là 19 điểm trong khi đó ngành tiếng Anh của trường chúng tôi đã lấy 28 điểm, hoặc Toán tiếng Anh lấy 27,7 điểm. Điều đó phụ thuộc vào các trường\", GS.TS Nguyễn Văn Minh cho biết. Hiệu trưởng Trường ĐH Sư phạm Hà Nội cũng lưu ý, trong quá trình điều chỉnh nguyện vọng, thí sinh cần bảo đảm về ngưỡng, và đảm bảo những điều kiện khác, ví dụ như hạnh kiểm. Hồ sơ phải đầy đủ, phải chính xác. Mặt khác, các em nên tham khảo các điểm xét tuyển, trúng tuyển của các trường khác nhau trong những năm gần đây."
+        },
+        "bdq_probs": {
+          "A": 1.893708656552917e-08,
+          "B": 2.422713350824779e-06,
+          "C": 2.1464054498210317e-06,
+          "D": 6.71547195452149e-06,
+          "E": 9.229211173078511e-09
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.1066499279455133e-11,
+            "B": 1.88944190154805e-11,
+            "C": 7.321482829725223e-12,
+            "D": 7.187699047062068e-11,
+            "E": 4.12957775614009e-12
+          },
+          "B": {
+            "A": 7.736734863872385e-12,
+            "B": 3.4744941299069687e-12,
+            "C": 1.6912762856868824e-11,
+            "D": 3.836566481174586e-12,
+            "E": 1.511220489025522e-11
+          },
+          "C": {
+            "A": 2.9849172179102768e-12,
+            "B": 9.395867764383503e-12,
+            "C": 2.8105508372011645e-12,
+            "D": 1.7304756586011827e-11,
+            "E": 1.1440928499723002e-12
+          },
+          "D": {
+            "A": 8.273481899578883e-11,
+            "B": 5.7480794429798365e-11,
+            "C": 6.75787828474661e-11,
+            "D": 2.633524787132302e-10,
+            "E": 8.25788534775107e-11
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.1066499279455133e-11,
+          "B": 3.4744941299069687e-12,
+          "C": 2.8105508372011645e-12,
+          "D": 2.633524787132302e-10
+        },
+        "score": 7.017600573994837e-11
+      },
+      {
+        "record_index": 29,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14238",
+        "label": null,
+        "perturbations": {
+          "a": "ශ්‍රී ලංකාව වෙනුවෙන් එක්දින ජාත්‍යන්තර තරඟයකට ක්‍රීඩා කළ පළමු ක්‍රීඩකයා සෝමචන්ද්‍ර ද සිල්වාතුමාය.",
+          "b": "ශ්‍රී ලංකාව වෙනුවෙන් එක්දින ජාත්‍යන්තර තරඟයකට ක්‍රීඩා කළ පළමු ක්‍රීඩකයා සෝමචන්ද්‍ර වෞද්‍ය සහෝදරයෙක් වෙයි.",
+          "c": "ශ්‍රී ලංකාව වෙනුවෙන් එක්දින ජාත්‍යන්තර තරඟයකට ක්‍රීඩා කළ පළමු ක්‍රීඩකයා සෝමචන්ද්‍ර ද සිල්වා මහත්තයා.",
+          "d": "ශ්‍රී ලංකාව වෙනුවෙන් එක්දින ජාත්‍යන්තර තරඟයකට ක්‍රීඩා කළ පළමු ක්‍රීඩකයා සෝමචන්ද්‍ර ද සිල්වා වෞද්‍ය."
+        },
+        "bdq_probs": {
+          "A": 0.17865774035453796,
+          "B": 0.2945605218410492,
+          "C": 0.3135553002357483,
+          "D": 0.17865711450576782,
+          "E": 0.034098606556653976
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06960874795913696,
+            "B": 0.5143702626228333,
+            "C": 0.057710591703653336,
+            "D": 0.2930609881877899,
+            "E": 0.0614362508058548
+          },
+          "B": {
+            "A": 0.4402534067630768,
+            "B": 0.16197270154953003,
+            "C": 0.250860333442688,
+            "D": 0.1113140657544136,
+            "E": 0.031896986067295074
+          },
+          "C": {
+            "A": 0.10009218007326126,
+            "B": 0.19907332956790924,
+            "C": 0.06462864577770233,
+            "D": 0.613129734992981,
+            "E": 0.021651707589626312
+          },
+          "D": {
+            "A": 0.18519924581050873,
+            "B": 0.28686439990997314,
+            "C": 0.4729291498661041,
+            "D": 0.04984484985470772,
+            "E": 0.004093751776963472
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06960874795913696,
+          "B": 0.16197270154953003,
+          "C": 0.06462864577770233,
+          "D": 0.04984484985470772
+        },
+        "score": 0.08651373628526926
+      },
+      {
+        "record_index": 30,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14239",
+        "label": null,
+        "perturbations": {
+          "a": "アイヌ語は、北海道などに昔から住んでいるアイヌの人々が使う言葉です。日本語や世界のほかの言葉との関係がほとんど見つかっていないため、珍しい言葉だと言われています。  \n国立国語研究所はアイヌ語を世界の人に知ってもらうため、研究している者たちと一緒に本を制作しました。本には、アイヌ語の文法の説明や歴史、アイヌで昔から伝えられている物語などが英語で書いてあります。700ページぐらいあって、できるまでに7年かかりました。  \n本を書いた者は「日本には日本語だけではなくてアイヌ語も存在します。世界の人にアイヌ語を伝えていきたいです」と話しています。",
+          "b": "アイヌ語は、北海道などに昔から住んでいるアイヌの人々が使う言語です。日本語や世界のほかの言語との関係がほとんど見つかっていないため、珍しい言語だと言われています。  \n国立国語研究所はアイヌ語を世界の人に知ってもらうため、研究している専門家たちと一緒に本を制作しました。本には、アイヌ語の文法の説明や歴史、アイヌで昔から伝えられている話などが英語で書いてあります。700ページぐらいあって、できるまでに7年かかりました。  \n本を書いた専門家は「日本には日本語だけではなくてアイヌ語も存在します。世界の人にアイヌ語を伝えていきたいです」と話しています。",
+          "c": "アイヌ語は、北海道などに昔から住んでいるアイヌの人たちが使う言葉です。日本語や世界の他の言葉との関係がほとんど見つかっていないため、珍しい言葉だと言われています。  \n国立国語研究所はアイヌ語を世界の人に知ってもらうため、研究している人々と一緒に本を作成しました。本には、アイヌ語の文法の説明や歴史、アイヌで昔から伝えられている物語などが英語で書いてあります。700ページぐらいあって、できるまでに7年かかりました。  \n本を書いた人々は「日本には日本語だけではなくてアイヌ語も存在します。世界の人にアイヌ語を伝えていきたいです」と話しています。",
+          "d": "アイヌ語は、北海道などに昔から住んでいるアイヌの人たちが使用する言葉です。日本語や世界のほかの言語との関係がほとんど見つかっていないため、珍しい言葉だと言われています。  \n国立国語研究所はアイヌ語を世界の人に知ってもらうため、研究している者たちと一緒に本を製作しました。本には、アイヌ語の文法の解説や歴史、アイヌで昔から伝えられている物語などが英語で書いてあります。700ページぐらいあって、完成するまでに7年かかりました。  \n本を書いた人は「日本には日本語だけではなくてアイヌ語もあります。世界の人にアイヌ語を伝えていきたいです」と話しています。"
+        },
+        "bdq_probs": {
+          "A": 0.0771854892373085,
+          "B": 0.36824488639831543,
+          "C": 0.3052779734134674,
+          "D": 0.22334273159503937,
+          "E": 0.025061441585421562
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.007124589290469885,
+            "B": 0.9331489205360413,
+            "C": 0.023360898718237877,
+            "D": 0.03398970887064934,
+            "E": 0.0019178056390956044
+          },
+          "B": {
+            "A": 0.005961523856967688,
+            "B": 0.019548676908016205,
+            "C": 0.9418370127677917,
+            "D": 0.030275890603661537,
+            "E": 0.0019360888982191682
+          },
+          "C": {
+            "A": 0.015165655873715878,
+            "B": 0.8814521431922913,
+            "C": 0.04388483613729477,
+            "D": 0.0438840389251709,
+            "E": 0.013385971076786518
+          },
+          "D": {
+            "A": 0.02053719386458397,
+            "B": 0.6801420450210571,
+            "C": 0.04084568843245506,
+            "D": 0.2501945495605469,
+            "E": 0.0026124767027795315
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.007124589290469885,
+          "B": 0.019548676908016205,
+          "C": 0.04388483613729477,
+          "D": 0.2501945495605469
+        },
+        "score": 0.08018816297408193
+      },
+      {
+        "record_index": 31,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14240",
+        "label": null,
+        "perturbations": {
+          "a": "Réwum Pays-Bas mu am nékk ci kembaar bi ñuy wakh Europe",
+          "b": "Réwum Pays-Bas mu ci nékk kembaar bi ñuy wakh Europe",
+          "c": "Réwum Pays-Bas mu ngi am nékk ci kembaar bi ñuy wakh Europe",
+          "d": "Réwum Pays-Bas mu ngi nékk ci kembaar bi ñuy wakh Europe"
+        },
+        "bdq_probs": {
+          "A": 0.14998045563697815,
+          "B": 0.433984637260437,
+          "C": 0.13235704600811005,
+          "D": 0.19257791340351105,
+          "E": 0.09096894413232803
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.016263093799352646,
+            "B": 0.39401930570602417,
+            "C": 0.030383465811610222,
+            "D": 0.5059270858764648,
+            "E": 0.05332506448030472
+          },
+          "B": {
+            "A": 0.054552111774683,
+            "B": 0.10191718488931656,
+            "C": 0.19040518999099731,
+            "D": 0.5509535074234009,
+            "E": 0.10191775858402252
+          },
+          "C": {
+            "A": 0.007441686000674963,
+            "B": 0.03335142508149147,
+            "C": 0.010171588510274887,
+            "D": 0.9156108498573303,
+            "E": 0.03335171565413475
+          },
+          "D": {
+            "A": 0.0007381532923318446,
+            "B": 0.012681574560701847,
+            "C": 0.9463602304458618,
+            "D": 0.036695100367069244,
+            "E": 0.0034135193563997746
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.016263093799352646,
+          "B": 0.10191718488931656,
+          "C": 0.010171588510274887,
+          "D": 0.036695100367069244
+        },
+        "score": 0.041261741891503334
+      },
+      {
+        "record_index": 32,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14241",
+        "label": null,
+        "perturbations": {
+          "a": "Chùa nào ở Lâm Đồng có gần 500 bức hình tương tự nhau?",
+          "b": "Chùa nào tại Lâm Đồng có gần 500 bức tượng tương đồng nhau?",
+          "c": "Chùa nào tại Lâm Đồng có gần 500 bức ảnh giống nhau?",
+          "d": "Chùa nào ở Lâm Đồng có gần 500 bức tượng y hệt nhau?"
+        },
+        "bdq_probs": {
+          "A": 0.025761745870113373,
+          "B": 0.28575819730758667,
+          "C": 0.44258764386177063,
+          "D": 0.09277122467756271,
+          "E": 0.1529563069343567
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.017916664481163025,
+            "B": 0.6315857172012329,
+            "C": 0.012313993647694588,
+            "D": 0.3175797760486603,
+            "E": 0.02030279114842415
+          },
+          "B": {
+            "A": 0.0019480491755530238,
+            "B": 0.3276132643222809,
+            "C": 0.014394301921129227,
+            "D": 0.6515312790870667,
+            "E": 0.004124259576201439
+          },
+          "C": {
+            "A": 0.005157888866961002,
+            "B": 0.9233691692352295,
+            "C": 0.024607069790363312,
+            "D": 0.035802874714136124,
+            "E": 0.009636744856834412
+          },
+          "D": {
+            "A": 0.003125877119600773,
+            "B": 0.9226180911064148,
+            "C": 0.015874745324254036,
+            "D": 0.05205056816339493,
+            "E": 0.0035424719098955393
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.017916664481163025,
+          "B": 0.3276132643222809,
+          "C": 0.024607069790363312,
+          "D": 0.05205056816339493
+        },
+        "score": 0.10554689168930054
+      },
+      {
+        "record_index": 33,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14242",
+        "label": null,
+        "perturbations": {
+          "a": "Tất cả các điểm BOT trên toàn quốc đều đang gấp rút chuẩn bị cho \"giờ G\" thu phí không dừng (ETC) từ hôm nay, 1.8. Đáng nhấn mạnh, dù \"giờ G\" đã điểm, song thu phí không dừng vẫn còn nhiều trở ngại chưa được giải quyết. Ngày 31.7, theo Bộ Y tế, SARS-CoV-2 liên tục biến hóa và đã ghi nhận các biến thể mới như Alpha, Delta, Omicron, XE (một biến thể tái tổ hợp giữa biến thể phụ BA.1 và BA.2 của Omicron). Hôm nay (1.8), dự đoán giá xăng dầu tiếp tục giảm, nhưng câu hỏi lớn hơn là liệu hàng hóa, đặc biệt nhu yếu phẩm thường ngày có tiếp tục ca bài \"đã tăng rồi, khó giảm lắm\" nữa hay không.",
+          "b": "Toàn bộ các trạm BOT trên cả nước đều đang khẩn trương chuẩn bị cho \"giờ G\" thu phí không dừng (ETC) từ hôm nay, 1.8. Đáng chú ý, dù \"giờ G\" đã điểm, song thu phí không dừng vẫn còn nhiều rào cản chưa được xử lý. Ngày 31.7, theo Bộ Y tế, SARS-CoV-2 liên tục phát triển và đã ghi nhận các biến thể mới như Alpha, Delta, Omicron, XE (một biến thể tái tổ hợp giữa biến thể phụ BA.1 và BA.2 của Omicron). Hôm nay (1.8), dự báo giá xăng dầu tiếp tục giảm, nhưng câu hỏi lớn hơn là liệu hàng hóa, đặc biệt nhu yếu phẩm hàng ngày có tiếp tục ca bài \"đã tăng rồi, khó giảm lắm\" nữa hay không.",
+          "c": "Tất cả các trạm thu phí BOT trên toàn quốc đều đang nhanh chóng chuẩn bị cho \"giờ G\" thu phí không dừng (ETC) từ hôm nay, 1.8. Đáng đề cập, dù \"giờ G\" đã điểm, song thu phí không dừng vẫn còn nhiều khó khăn chưa được giải quyết. Ngày 31.7, theo Bộ Y tế, SARS-CoV-2 liên tục chuyển biến và đã ghi nhận các biến thể mới như Alpha, Delta, Omicron, XE (một biến thể tái tổ hợp giữa biến thể phụ BA.1 và BA.2 của Omicron). Hôm nay (1.8), dự đoán giá xăng dầu tiếp tục giảm, nhưng câu hỏi lớn hơn là liệu hàng hóa, đặc biệt nhu yếu phẩm hàng ngày có tiếp tục ca bài \"đã tăng rồi, khó giảm lắm\" nữa hay không.",
+          "d": "Toàn bộ các điểm thu phí BOT trên toàn quốc đều đang cấp tốc chuẩn bị cho \"giờ G\" thu phí không dừng (ETC) từ hôm nay, 1.8. Đáng lưu ý, dù \"giờ G\" đã điểm, song thu phí không dừng vẫn còn nhiều trắc trở chưa được giải quyết. Ngày 31.7, theo Bộ Y tế, SARS-CoV-2 liên tục thay đổi và đã ghi nhận các biến thể mới như Alpha, Delta, Omicron, XE (một biến thể tái tổ hợp giữa biến thể phụ BA.1 và BA.2 của Omicron). Hôm nay (1.8), dự báo giá xăng dầu tiếp tục giảm, nhưng câu hỏi lớn hơn là liệu hàng hóa, đặc biệt nhu yếu phẩm thường nhật có tiếp tục ca bài \"đã tăng rồi, khó giảm lắm\" nữa hay không."
+        },
+        "bdq_probs": {
+          "A": 0.032876159995794296,
+          "B": 0.7965174317359924,
+          "C": 0.08395226299762726,
+          "D": 0.07408753037452698,
+          "E": 0.012094574049115181
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.009422875940799713,
+            "B": 0.9029276967048645,
+            "C": 0.04785347357392311,
+            "D": 0.0372682623565197,
+            "E": 0.002102583646774292
+          },
+          "B": {
+            "A": 0.004913615994155407,
+            "B": 0.012547419406473637,
+            "C": 0.8263437151908875,
+            "D": 0.15285846590995789,
+            "E": 0.00298035959713161
+          },
+          "C": {
+            "A": 0.0016450417460873723,
+            "B": 0.852154016494751,
+            "C": 0.024173777550458908,
+            "D": 0.11532637476921082,
+            "E": 0.005393944680690765
+          },
+          "D": {
+            "A": 0.013473707251250744,
+            "B": 0.39376044273376465,
+            "C": 0.474965363740921,
+            "D": 0.11281392723321915,
+            "E": 0.003406788920983672
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.009422875940799713,
+          "B": 0.012547419406473637,
+          "C": 0.024173777550458908,
+          "D": 0.11281392723321915
+        },
+        "score": 0.03973950003273785
+      },
+      {
+        "record_index": 35,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14244",
+        "label": null,
+        "perturbations": {
+          "a": "Ndi anthu pafupifupi 199 miliyoni, 86% ya anthu a Nigeria alibe madzi akumwa abwino. Bungwe la UNICEF likunena kuti opitilira theka la ntchito zamadzi zoyambira 70% za anthu a Nigeria ali ndi kachilombo.",
+          "b": "Ndi anthu pafupifupi 199 miliyoni, 86% ya anthu a Nigeria alibe madzi akumwa abwino. Bungwe la UNICEF likunena kuti opitilira theka la ntchito za madzi zoyambira 70% za anthu a Nigeria ali ndi kachilombo.",
+          "c": "Ndi anthu pafupifupi 199 miliyoni, 86% ya anthu a Nigeria alibe madzi akumwa abwino. Bungwe la UNICEF likunena kuti opitilira theka la ntchito zamadzi zolemba 70% za anthu a Nigeria ali ndi kachilombo.",
+          "d": "Ndi anthu pafupifupi 199 miliyoni, 86% ya anthu a Nigeria alibe madzi akumwa abwino. Bungwe la UNICEF likunena kuti opitilira theka la ntchito zamadzi zoyambirira 70% za anthu a Nigeria ali ndi kachilombo."
+        },
+        "bdq_probs": {
+          "A": 0.07819297909736633,
+          "B": 0.6345643401145935,
+          "C": 0.0757877305150032,
+          "D": 0.1330101042985916,
+          "E": 0.0781942829489708
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.011020414531230927,
+            "B": 0.8754652142524719,
+            "C": 0.036134906113147736,
+            "D": 0.06750848889350891,
+            "E": 0.009726012125611305
+          },
+          "B": {
+            "A": 0.15485922992229462,
+            "B": 0.6519854664802551,
+            "C": 0.08289047330617905,
+            "D": 0.07315026223659515,
+            "E": 0.03678309544920921
+          },
+          "C": {
+            "A": 0.006925859954208136,
+            "B": 0.9359056949615479,
+            "C": 0.030084876343607903,
+            "D": 0.01512748934328556,
+            "E": 0.011419158428907394
+          },
+          "D": {
+            "A": 0.006781276315450668,
+            "B": 0.9163612127304077,
+            "C": 0.014811888337135315,
+            "D": 0.05169755965471268,
+            "E": 0.009563717991113663
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.011020414531230927,
+          "B": 0.6519854664802551,
+          "C": 0.030084876343607903,
+          "D": 0.05169755965471268
+        },
+        "score": 0.18619707925245166
+      },
+      {
+        "record_index": 36,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14245",
+        "label": null,
+        "perturbations": {
+          "a": "من هو الصحابي المعروف بالفاروق ؟",
+          "b": "من هو الصحابي المدعو بالفاروق ؟",
+          "c": "من هو الصحابي المسمى بالفاروق ؟",
+          "d": "من هو الصحابي المشهور بالفاروق ؟"
+        },
+        "bdq_probs": {
+          "A": 0.06849367171525955,
+          "B": 0.087947778403759,
+          "C": 0.5387439131736755,
+          "D": 0.2109750211238861,
+          "E": 0.09362049400806427
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.036640457808971405,
+            "B": 0.08257155865430832,
+            "C": 0.6913512945175171,
+            "D": 0.1449148952960968,
+            "E": 0.04419878497719765
+          },
+          "B": {
+            "A": 0.04176982492208481,
+            "B": 0.175863578915596,
+            "C": 0.2403666228055954,
+            "D": 0.5088443756103516,
+            "E": 0.022360675036907196
+          },
+          "C": {
+            "A": 0.018501531332731247,
+            "B": 0.04438433423638344,
+            "C": 0.42108240723609924,
+            "D": 0.4771398603916168,
+            "E": 0.03457040339708328
+          },
+          "D": {
+            "A": 0.08262758702039719,
+            "B": 0.056789398193359375,
+            "C": 0.32677745819091797,
+            "D": 0.5061154961585999,
+            "E": 0.00562561908736825
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.036640457808971405,
+          "B": 0.175863578915596,
+          "C": 0.42108240723609924,
+          "D": 0.5061154961585999
+        },
+        "score": 0.2849254850298166
+      },
+      {
+        "record_index": 38,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14247",
+        "label": null,
+        "perturbations": {
+          "a": "ما هي السورة الحضرية الأطول في عدد آياتها؟",
+          "b": "ما هي السورة المدنية الأعرض في عدد آياتها؟",
+          "c": "ما هي السورة المدنية الأطول في عدد آياتها؟",
+          "d": "ما هي السورة العمرانية الأطول في عدد آياتها؟"
+        },
+        "bdq_probs": {
+          "A": 0.029129046946763992,
+          "B": 0.06564358621835709,
+          "C": 0.40211254358291626,
+          "D": 0.3548620343208313,
+          "E": 0.14793090522289276
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05931301787495613,
+            "B": 0.1179596409201622,
+            "C": 0.49662086367607117,
+            "D": 0.24971525371074677,
+            "E": 0.07616275548934937
+          },
+          "B": {
+            "A": 0.005675838328897953,
+            "B": 0.014493887312710285,
+            "C": 0.8423556685447693,
+            "D": 0.08340463787317276,
+            "E": 0.053853314369916916
+          },
+          "C": {
+            "A": 0.006280809640884399,
+            "B": 0.026443449780344963,
+            "C": 0.020594026893377304,
+            "D": 0.8756688237190247,
+            "E": 0.06752736866474152
+          },
+          "D": {
+            "A": 0.01718124747276306,
+            "B": 0.03871886432170868,
+            "C": 0.8278090357780457,
+            "D": 0.11203259229660034,
+            "E": 0.002805330092087388
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05931301787495613,
+          "B": 0.014493887312710285,
+          "C": 0.020594026893377304,
+          "D": 0.11203259229660034
+        },
+        "score": 0.051608381094411016
+      },
+      {
+        "record_index": 39,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14248",
+        "label": null,
+        "perturbations": {
+          "a": "¿De qué suceso significativo trata este texto? El origen e inicio de la ejecución de los principios se dio en la FENU I, que fue la 1ra Fuerza de Emergencia de las Naciones Unidas operada por la Asamblea General, durante la Crisis de Suez (1956) la cual fue la primera en disponer de tropas armadas, ya que las primeras y anteriores Operaciones de Mantenimiento a la Paz (OMP) fueron misiones tan solo de adquisición de información y observación. Estos principios se modificarían luego en respuesta de la Crisis del Congo, rigiendo con una mínima variación hasta los años ochenta. La doctrina que es de donde se desprenden los principios, junto con la búsqueda de consenso en el modo de actuar, en caso de una situación complicada, encuentra que se adecuan al tener un parecido en común en todas las operaciones.",
+          "b": "¿De qué acontecimiento importante trata este texto? El origen e inicio de la instauración de los principios se dio en la FENU I, que fue la 1ra Fuerza de Emergencia de las Naciones Unidas operada por la Asamblea General, durante la Crisis de Suez (1956) la cual fue la primera en disponer de fuerzas bélicas, ya que las primeras y anteriores Operaciones de Mantenimiento a la Paz (OMP) fueron misiones tan solo de acumulación de información y observación. Estos principios se modificarían luego en respuesta de la Crisis del Congo, rigiendo con una mínima variación hasta los años ochenta. La doctrina que es de donde se deducen los principios, junto con la búsqueda de consenso en el modo de actuar, en caso de una situación compleja, encuentra que se adecuan al tener una afinidad en común en todas las operaciones.",
+          "c": "¿De qué incidente relevante trata este texto? El origen e inicio de la aplicación de los principios se dio en la FENU I, que fue la 1ra Fuerza de Emergencia de las Naciones Unidas operada por la Asamblea General, durante la Crisis de Suez (1956) la cual fue la primera en disponer de unidades armadas, ya que las primeras y anteriores Operaciones de Mantenimiento a la Paz (OMP) fueron misiones tan solo de recolección de información y observación. Estos principios se modificarían luego en respuesta de la Crisis del Congo, rigiendo con una mínima variación hasta los años ochenta. La doctrina que es de donde se derivan los principios, junto con la búsqueda de acuerdo en el modo de actuar, en caso de una situación compleja, encuentra que se adecuan al tener una similitud en común en todas las operaciones.",
+          "d": "¿De qué acontecimiento significativo trata este texto? El origen e inicio de la instauración de los principios se dio en la FENU I, que fue la 1ra Fuerza de Emergencia de las Naciones Unidas operada por la Asamblea General, durante la Crisis de Suez (1956) la cual fue la primera en disponer de fuerzas militares, ya que las primeras y anteriores Operaciones de Mantenimiento a la Paz (OMP) fueron misiones tan solo de recolección de información y observación. Estos principios se modificarían luego en respuesta de la Crisis del Congo, rigiendo con una mínima variación hasta los años ochenta. La doctrina que es de donde se desprenden los principios, junto con la búsqueda de consenso en el modo de proceder, en caso de una situación difícil, encuentra que se adecuan al tener una afinidad en común en todas las operaciones."
+        },
+        "bdq_probs": {
+          "A": 0.007909398525953293,
+          "B": 0.8588138222694397,
+          "C": 0.035447463393211365,
+          "D": 0.07988207787275314,
+          "E": 0.017824184149503708
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.011157844215631485,
+            "B": 0.8863765001296997,
+            "C": 0.022189974784851074,
+            "D": 0.06420879811048508,
+            "E": 0.015251267701387405
+          },
+          "B": {
+            "A": 0.022108521312475204,
+            "B": 0.13543160259723663,
+            "C": 0.6069570183753967,
+            "D": 0.17389656603336334,
+            "E": 0.056456878781318665
+          },
+          "C": {
+            "A": 0.0024538105353713036,
+            "B": 0.043495044112205505,
+            "C": 0.006265982519835234,
+            "D": 0.9299534559249878,
+            "E": 0.008564796298742294
+          },
+          "D": {
+            "A": 0.03053330071270466,
+            "B": 0.613322377204895,
+            "C": 0.02694488689303398,
+            "D": 0.010552740655839443,
+            "E": 0.06881435215473175
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.011157844215631485,
+          "B": 0.13543160259723663,
+          "C": 0.006265982519835234,
+          "D": 0.010552740655839443
+        },
+        "score": 0.0408520424971357
+      },
+      {
+        "record_index": 40,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14249",
+        "label": null,
+        "perturbations": {
+          "a": "\"Бөрсө\" термини кенгуру дегенди билдирет.",
+          "b": "\"Бөрсө\" термени кенгуру дегенди түшүндүрөт.",
+          "c": "\"Бөрсө\" сөзү кенгуру дегенди билдирет.",
+          "d": "\"Бөрсө\" термин жаныбар кенгуру дегенди түшүндүрөт."
+        },
+        "bdq_probs": {
+          "A": 0.019405432045459747,
+          "B": 0.6036881804466248,
+          "C": 0.06773195415735245,
+          "D": 0.22208233177661896,
+          "E": 0.08697032928466797
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0059273201040923595,
+            "B": 0.7068525552749634,
+            "C": 0.015617270022630692,
+            "D": 0.2600322961807251,
+            "E": 0.011075228452682495
+          },
+          "B": {
+            "A": 0.0225913617759943,
+            "B": 0.010025016032159328,
+            "C": 0.20135317742824554,
+            "D": 0.7481023669242859,
+            "E": 0.01759560965001583
+          },
+          "C": {
+            "A": 0.0027103060856461525,
+            "B": 0.935244083404541,
+            "C": 0.005738212261348963,
+            "D": 0.04374190792441368,
+            "E": 0.012149641290307045
+          },
+          "D": {
+            "A": 0.001054752035997808,
+            "B": 0.9892175197601318,
+            "C": 0.004305371083319187,
+            "D": 0.0036819579545408487,
+            "E": 0.0012342218542471528
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0059273201040923595,
+          "B": 0.010025016032159328,
+          "C": 0.005738212261348963,
+          "D": 0.0036819579545408487
+        },
+        "score": 0.006343126588035375
+      },
+      {
+        "record_index": 41,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14250",
+        "label": null,
+        "perturbations": {
+          "a": "Makanan yang boleh mencetuskan GERD dan pedih ulu hati menjadi semakin teruk perlu dielakkan. Antaranya ialah:  \n1. Makanan pedas  \n2. Makanan bergoreng  \n3. Makanan segera  \n4. Makanan yang diproses  \n5. Daging yang berlemak  \n6. Keju  \n7. Makanan berasaskan tomato  \n8. Buah-buahan sitrus  \n9. Coklat  \n10. Gula-gula berpudina  \n11. Minuman berkarbonat",
+          "b": "Makanan yang boleh mengakibatkan GERD dan pedih ulu hati menjadi semakin teruk perlu dielakkan. Antaranya ialah:  \n1. Makanan pedas  \n2. Makanan bergoreng  \n3. Makanan segera  \n4. Makanan yang diproses  \n5. Daging yang berlemak  \n6. Keju  \n7. Makanan berasaskan tomato  \n8. Buah-buahan sitrus  \n9. Coklat  \n10. Gula-gula berpudina  \n11. Minuman berkarbonat",
+          "c": "Makanan yang boleh menyebabkan GERD dan pedih ulu hati menjadi semakin kritikal perlu dielakkan. Antaranya ialah:  \n1. Makanan pedas  \n2. Makanan bergoreng  \n3. Makanan segera  \n4. Makanan yang diproses  \n5. Daging yang berlemak  \n6. Keju  \n7. Makanan berasaskan tomato  \n8. Buah-buahan sitrus  \n9. Coklat  \n10. Gula-gula berpudina  \n11. Minuman berkarbonat",
+          "d": "Makanan yang boleh menghasilkan GERD dan pedih ulu hati menjadi semakin parah perlu dielakkan. Antaranya ialah:  \n1. Makanan pedas  \n2. Makanan bergoreng  \n3. Makanan segera  \n4. Makanan yang diproses  \n5. Daging yang berlemak  \n6. Keju  \n7. Makanan berasaskan tomato  \n8. Buah-buahan sitrus  \n9. Coklat  \n10. Gula-gula berpudina  \n11. Minuman berkarbonat"
+        },
+        "bdq_probs": {
+          "A": 0.17154255509376526,
+          "B": 0.26570001244544983,
+          "C": 0.08625998347997665,
+          "D": 0.1335982382297516,
+          "E": 0.07151802629232407
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04562943056225777,
+            "B": 0.8610036969184875,
+            "C": 0.024425290524959564,
+            "D": 0.014815254136919975,
+            "E": 0.03339000046253204
+          },
+          "B": {
+            "A": 0.1373608112335205,
+            "B": 0.30954989790916443,
+            "C": 0.32951363921165466,
+            "D": 0.1656903475522995,
+            "E": 0.021067049354314804
+          },
+          "C": {
+            "A": 0.0955360159277916,
+            "B": 0.42817962169647217,
+            "C": 0.06989800930023193,
+            "D": 0.33346307277679443,
+            "E": 0.04804551601409912
+          },
+          "D": {
+            "A": 0.12505827844142914,
+            "B": 0.5966593027114868,
+            "C": 0.06288979947566986,
+            "D": 0.09740127623081207,
+            "E": 0.06694817543029785
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04562943056225777,
+          "B": 0.30954989790916443,
+          "C": 0.06989800930023193,
+          "D": 0.09740127623081207
+        },
+        "score": 0.13061965350061655
+      },
+      {
+        "record_index": 42,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14251",
+        "label": null,
+        "perturbations": {
+          "a": "الإجابة: لأنه قال للنبي صلى الله عليه وسلم : ” تبًا لك طوال اليوم” عند جهره بدعوة العشائر للإسلام.",
+          "b": "الإجابة: لأنه قال للرسول صلى الله عليه وسلم : ” تبًا لك كل اليوم” عند جهره بدعوة الجماعات للإسلام.",
+          "c": "الإجابة: لأنه قال للنبي صلى الله عليه وسلم : ” تبًا لك على مدار اليوم” عند جهره بدعوة القبائل إلى الإسلام.",
+          "d": "الإجابة: لأنه قال للرسول صلى الله عليه وسلم : ” تبًا لك طوال النهار” عند جهره بدعوة المجتمعات للإسلام."
+        },
+        "bdq_probs": {
+          "A": 0.07984630763530731,
+          "B": 0.20389528572559357,
+          "C": 0.12366829812526703,
+          "D": 0.48911648988723755,
+          "E": 0.10252571105957031
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.035538267344236374,
+            "B": 0.19211937487125397,
+            "C": 0.026000525802373886,
+            "D": 0.6705538630485535,
+            "E": 0.07523690909147263
+          },
+          "B": {
+            "A": 0.09266217052936554,
+            "B": 0.12666112184524536,
+            "C": 0.08177609741687775,
+            "D": 0.19616684317588806,
+            "E": 0.5009452104568481
+          },
+          "C": {
+            "A": 0.10296456515789032,
+            "B": 0.3593899607658386,
+            "C": 0.1594763994216919,
+            "D": 0.09672664850950241,
+            "E": 0.2798953652381897
+          },
+          "D": {
+            "A": 0.024872004985809326,
+            "B": 0.7269376516342163,
+            "C": 0.07661891728639603,
+            "D": 0.16217726469039917,
+            "E": 0.00860277097672224
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.035538267344236374,
+          "B": 0.12666112184524536,
+          "C": 0.1594763994216919,
+          "D": 0.16217726469039917
+        },
+        "score": 0.1209632633253932
+      },
+      {
+        "record_index": 43,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14252",
+        "label": null,
+        "perturbations": {
+          "a": "ما هي أصناف الذكاء الصناعي المختلفة؟",
+          "b": "ما هي أنواع الذكاء الآلي المختلفة؟",
+          "c": "ما هي أشكال الذكاء الاصطناعي المختلفة؟",
+          "d": "ما هي فئات الذكاء الصناعي المختلفة؟"
+        },
+        "bdq_probs": {
+          "A": 0.008761596865952015,
+          "B": 0.3610905110836029,
+          "C": 0.08576632291078568,
+          "D": 0.4636472761631012,
+          "E": 0.08057050406932831
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.004609243478626013,
+            "B": 0.009166636504232883,
+            "C": 0.8783566355705261,
+            "D": 0.10490477830171585,
+            "E": 0.0027959339786320925
+          },
+          "B": {
+            "A": 0.018897412344813347,
+            "B": 0.14864002168178558,
+            "C": 0.5188023447990417,
+            "D": 0.29560375213623047,
+            "E": 0.01775304228067398
+          },
+          "C": {
+            "A": 0.014067495241761208,
+            "B": 0.3007771670818329,
+            "C": 0.023193590342998505,
+            "D": 0.6367409825325012,
+            "E": 0.019228732213377953
+          },
+          "D": {
+            "A": 0.10498917102813721,
+            "B": 0.6431413292884827,
+            "C": 0.11897189915180206,
+            "D": 0.09862880408763885,
+            "E": 0.00671309744939208
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.004609243478626013,
+          "B": 0.14864002168178558,
+          "C": 0.023193590342998505,
+          "D": 0.09862880408763885
+        },
+        "score": 0.06876791489776224
+      },
+      {
+        "record_index": 45,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14254",
+        "label": null,
+        "perturbations": {
+          "a": "A que tipo corresponde la pregunta : ¿Cuál disco de Fall Out Boy fue emitido en 2007?.",
+          "b": "A que clase corresponde la pregunta : ¿Cuál álbum de Fall Out Boy fue publicado en 2007?.",
+          "c": "A que sección corresponde la pregunta : ¿Cuál LP de Fall Out Boy fue lanzado en 2007?.",
+          "d": "A que categoría corresponde la cuestión : ¿Cuál disco de Fall Out Boy fue sacado en 2007?."
+        },
+        "bdq_probs": {
+          "A": 0.0022327080368995667,
+          "B": 0.028063375502824783,
+          "C": 0.008558838628232479,
+          "D": 0.9293286204338074,
+          "E": 0.031800031661987305
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0032864538952708244,
+            "B": 0.021430443972349167,
+            "C": 0.015678798779845238,
+            "D": 0.9112343788146973,
+            "E": 0.04829436540603638
+          },
+          "B": {
+            "A": 0.014289911836385727,
+            "B": 0.025079697370529175,
+            "C": 0.03025171533226967,
+            "D": 0.7329283356666565,
+            "E": 0.19726648926734924
+          },
+          "C": {
+            "A": 0.012318373657763004,
+            "B": 0.13243542611598969,
+            "C": 0.013112841174006462,
+            "D": 0.5237893462181091,
+            "E": 0.3176954388618469
+          },
+          "D": {
+            "A": 0.024409255012869835,
+            "B": 0.5218937993049622,
+            "C": 0.025983517989516258,
+            "D": 0.3818245828151703,
+            "E": 0.04283982887864113
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0032864538952708244,
+          "B": 0.025079697370529175,
+          "C": 0.013112841174006462,
+          "D": 0.3818245828151703
+        },
+        "score": 0.10582589381374419
+      },
+      {
+        "record_index": 46,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14255",
+        "label": null,
+        "perturbations": {
+          "a": "Prinsip fundamental dina démokrasi nyaéta hak suara anu sarua pikeun sakabéh warga nagara.",
+          "b": "Prinsip dasar dina démokrasi nyaéta hak pilih anu sarupa pikeun sakabéh warga nagara.",
+          "c": "Prinsip pokok dina démokrasi nyaéta hak suara anu sami pikeun sakabéh warga nagara.",
+          "d": "Prinsip dasar dina démokrasi nyaéta hak suara anu unggul pikeun sakabéh warga nagara."
+        },
+        "bdq_probs": {
+          "A": 0.02263757213950157,
+          "B": 0.7980012893676758,
+          "C": 0.08953319489955902,
+          "D": 0.019977521151304245,
+          "E": 0.06972946226596832
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.005813295021653175,
+            "B": 0.9776478409767151,
+            "C": 0.007464520633220673,
+            "D": 0.003210422582924366,
+            "E": 0.005813616793602705
+          },
+          "B": {
+            "A": 0.37250250577926636,
+            "B": 0.0884777158498764,
+            "C": 0.5091507434844971,
+            "D": 0.007262666244059801,
+            "E": 0.02237110398709774
+          },
+          "C": {
+            "A": 0.0010502515360713005,
+            "B": 0.9851351380348206,
+            "C": 0.0015766214346513152,
+            "D": 0.0008439004886895418,
+            "E": 0.010944170877337456
+          },
+          "D": {
+            "A": 0.000773299892898649,
+            "B": 0.9914329648017883,
+            "C": 0.0015378949465230107,
+            "D": 0.0026160231791436672,
+            "E": 0.002037633443251252
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.005813295021653175,
+          "B": 0.0884777158498764,
+          "C": 0.0015766214346513152,
+          "D": 0.0026160231791436672
+        },
+        "score": 0.02462091387133114
+      },
+      {
+        "record_index": 47,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14256",
+        "label": null,
+        "perturbations": {
+          "a": "Ẹni ba da iṣoro silẹ nibi eto iforukọsilẹ APC yoo da ara rẹ lẹbi – Samari",
+          "b": "Ẹni ba da ìṣòro silẹ nibi eto iforukọsilẹ APC yoo da ara rẹ lẹbi – Samari",
+          "c": "Ẹni ba da wahala silẹ nibi eto iforukọsilẹ APC yoo da ara rẹ lẹbi – Samari",
+          "d": "Ẹni ba da aawọ silẹ nibi eto iforukọsilẹ APC yoo da ara rẹ lẹbi – Samari"
+        },
+        "bdq_probs": {
+          "A": 0.013879843056201935,
+          "B": 0.8587149977684021,
+          "C": 0.03329620137810707,
+          "D": 0.045510124415159225,
+          "E": 0.04844607040286064
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0001958515349542722,
+            "B": 0.00158939347602427,
+            "C": 0.9931168556213379,
+            "D": 0.0035817588213831186,
+            "E": 0.0014931251062080264
+          },
+          "B": {
+            "A": 0.004659803584218025,
+            "B": 0.6103131175041199,
+            "C": 0.3477455675601959,
+            "D": 0.016264356672763824,
+            "E": 0.02088405005633831
+          },
+          "C": {
+            "A": 0.003114717546850443,
+            "B": 0.9485045671463013,
+            "C": 0.013529762625694275,
+            "D": 0.009298847988247871,
+            "E": 0.02527720294892788
+          },
+          "D": {
+            "A": 0.005107771139591932,
+            "B": 0.9143819808959961,
+            "C": 0.004650734830647707,
+            "D": 0.07051026076078415,
+            "E": 0.005108188837766647
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0001958515349542722,
+          "B": 0.6103131175041199,
+          "C": 0.013529762625694275,
+          "D": 0.07051026076078415
+        },
+        "score": 0.17363724810638814
+      },
+      {
+        "record_index": 48,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14257",
+        "label": null,
+        "perturbations": {
+          "a": "तलको कथा सम्पूर्ण गर्नुहोस्।\n\nकुनै समय एउटा खरायो थियो जो कछुवासँग मित्र थियो। एकदिन उसले कछुवालाई दौडको चुनौती दियो। कछुवा धेरै ढिलो गइरहेको देखेर, खरायोले सोचे कि उसले सजीलै जीत्नेछ । त्यसैले कछुवा चलिरहँदा उसले एकछिन सुत्ने विचार गर्यो ।\n\nजब खरायो ब्यूँझयो, उसले कछुवाले अन्तिम रेखा कटिसकेको देख्यो । दु:खको कुरा - जब ऊ सुतिरहेको थियो, कछुवाले दौड जित्यो ।",
+          "b": "तलको कथा समाप्त गर्नुहोस्।\n\nकुनै समय एउटा खरायो थियो जो कछुवासँग संगति थियो। एकदिन उसले कछुवालाई दौडको चुनौती दियो। कछुवा धेरै ढिलो गइरहेको देखेर, खरायोले सोचे कि उसले सजीलै जित्नेछ । त्यसैले कछुवा चलिरहँदा उसले एकछिन सुत्ने मन बनाएर गर्यो ।\n\nजब खरायो ब्यूँझ्यो, उसले कछुवाले अन्तिम रेखा कटिसकेको देख्यो । दु:खको कुरा - जब ऊ सुतिरहेको थियो, कछुवाले दौड जित्यो ।",
+          "c": "तलको कथा पूरा गर्नुहोस्।\n\nकुनै समय एउटा खरायो थियो जो कछुवासँग सखा थियो। एकदिन उसले कछुवालाई दौडको चुनौती दियो। कछुवा धेरै ढिलो गइरहेको देखेर, खरायोले सोचे कि उसले सजीलै हराउनेछ । त्यसैले कछुवा चलिरहँदा उसले एकछिन सुत्ने योजना गर्यो ।\n\nजब खरायो ब्यूँझ्यो, उसले कछुवाले अन्तिम रेखा कटिसकेको देख्यो । दु:खको कुरा - जब ऊ सुतिरहेको थियो, कछुवाले दौड जित्यो ।",
+          "d": "तलको कथा पूरा गर्नुहोस्।\n\nकुनै समय एउटा खरायो थियो जो कछुवासँग सहयोगी थियो। एकदिन उसले कछुवालाई दौडको चुनौती दियो। कछुवा धेरै ढिलो गइरहेको देखेर, खरायोले सोचे कि उसले सजीलै जित्नेछ । त्यसैले कछुवा चलिरहँदा उसले एकछिन सुत्ने धारणा गर्यो ।\n\nजब खरायो ब्यूँझ्यो, उसले कछुवाले अन्तिम रेखा कटिसकेको देख्यो । दु:खको कुरा - जब ऊ सुतिरहेको थियो, कछुवाले दौड जित्यो ।"
+        },
+        "bdq_probs": {
+          "A": 0.17977523803710938,
+          "B": 0.2615722417831421,
+          "C": 0.15865105390548706,
+          "D": 0.3805826008319855,
+          "E": 0.01894860714673996
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.022537177428603172,
+            "B": 0.5460222363471985,
+            "C": 0.039553649723529816,
+            "D": 0.37527167797088623,
+            "E": 0.007092222571372986
+          },
+          "B": {
+            "A": 0.028105353936553,
+            "B": 0.11115925759077072,
+            "C": 0.4981748163700104,
+            "D": 0.3423891067504883,
+            "E": 0.017047850415110588
+          },
+          "C": {
+            "A": 0.017159586772322655,
+            "B": 0.09276390820741653,
+            "C": 0.04381833225488663,
+            "D": 0.8267831802368164,
+            "E": 0.017160339280962944
+          },
+          "D": {
+            "A": 0.08353832364082336,
+            "B": 0.12938787043094635,
+            "C": 0.200397327542305,
+            "D": 0.579850971698761,
+            "E": 0.004713950678706169
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.022537177428603172,
+          "B": 0.11115925759077072,
+          "C": 0.04381833225488663,
+          "D": 0.579850971698761
+        },
+        "score": 0.18934143474325538
+      },
+      {
+        "record_index": 50,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14259",
+        "label": null,
+        "perturbations": {
+          "a": "مستقیم سوداګرۍ موندنه د اعلاناتو چینل - اګنوسټیک ډول دی چې کارونې او غیر انتفاعي سازمانونو ته اجازه ورکوي چې مستقیم مصرف کونکو سره اړیکه ونیسي ، د اعلاناتو تخنیکونو سره چې پکې د ګرځنده تلیفون متن پیغامونه ، بریښنالیک ، د متقابل مصرف کونکي ویب پاڼې، آنلاین ښودنې اعلانونه ، لیکونه شامل دي. د کتالوګ توزیع، پروموشنل لیکونه، او بهرنی اعلانونه\".؟ موضوع مستقیم سوداګرۍ موندنه ده.",
+          "b": "مستقیم بازار موندنه د اعلاناتو چینل - اګنوسټیک ډول دی چې کاروبارونه او غیر انتفاعي سازمانونو ته اجازه ورکوي چې مستقیم مصرف کونکو سره اړیکه ونیسي ، د اعلاناتو تخنیکونو سره چې پکې د ګرځنده تلیفون متن پیغامونه ، بریښنالیک ، د متقابل مصرف کونکي ویب پاڼه، آنلاین ښودنې اعلانونه ، لیکونه شامل دي. د کتالوګ توزیع، پروموشنل لیکونه، او بهرنی اعلانونه\".؟ موضوع مستقیم بازار موندنه ده.",
+          "c": "مستقیم بازار موندنه د اعلاناتو چینل - اګنوسټیک ډول دی چې سوداګرۍ او غیر انتفاعي ادارو ته اجازه ورکوي چې مستقیم مصرف کونکو سره اړیکه ونیسي ، د اعلانونو تخنیکونو سره چې پکې د ګرځنده تلیفون متن پیغامونه ، بریښنالیک ، د متقابل مصرف کونکي ویب پاڼې، آنلاین ښودنې اعلانونه ، لیکونه شامل دي. د کتالوګ توزیع، پروموشنل لیکونه، او بهرنی اعلانونه\".؟ موضوع مستقیم بازار موندنه ده.",
+          "d": "مستقیم بازار موندنه د اعلاناتو چینل - اګنوسټیک ډول دی چې سوداګرۍ او غیر انتفاعي ادارو ته اجازه ورکوي چې مستقیم مصرف کونکو سره اړیکه ونیسي ، د اعلاناتو تخنیکونو سره چې پکې د ګرځنده تلیفون متن پیغامونه ، بریښنالیک ، د متقابل مصرف کونکي ویب پاڼې، آنلاین ښودنې اعلانونه ، لیکونه شامل دي. د کتالوګ ویش داړی، پروموشنل لیکونه، او بهرنی اعلانونه\".؟ موضوع مستقیم بازار موندنه ده."
+        },
+        "bdq_probs": {
+          "A": 0.38770830631256104,
+          "B": 0.12587189674377441,
+          "C": 0.0763448029756546,
+          "D": 0.3421502113342285,
+          "E": 0.06329407542943954
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.14500142633914948,
+            "B": 0.3069702386856079,
+            "C": 0.2883707582950592,
+            "D": 0.2109745740890503,
+            "E": 0.04154575616121292
+          },
+          "B": {
+            "A": 0.07921365648508072,
+            "B": 0.031020769849419594,
+            "C": 0.4282255470752716,
+            "D": 0.3779052495956421,
+            "E": 0.06567246466875076
+          },
+          "C": {
+            "A": 0.018672367557883263,
+            "B": 0.018672537058591843,
+            "C": 0.0047211903147399426,
+            "D": 0.8451685309410095,
+            "E": 0.07385542243719101
+          },
+          "D": {
+            "A": 0.34575626254081726,
+            "B": 0.0172154288738966,
+            "C": 0.006741918623447418,
+            "D": 0.1534201055765152,
+            "E": 0.028397686779499054
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.14500142633914948,
+          "B": 0.031020769849419594,
+          "C": 0.0047211903147399426,
+          "D": 0.1534201055765152
+        },
+        "score": 0.08354087301995605
+      },
+      {
+        "record_index": 51,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14260",
+        "label": null,
+        "perturbations": {
+          "a": "Inona no planeta lehibe indrindra amin'ny rafitra-masoandro misy antsika?",
+          "b": "Inona no planeta lehibe indrindra amin'ny rafi-masoandro manan-kery antsika?",
+          "c": "Inona no planeta lehibe indrindra amin'ny rafi-masoandro mitranga antsika?",
+          "d": "Inona no planeta lehibe indrindra amin'ny rafi-masoandro ananantsika?"
+        },
+        "bdq_probs": {
+          "A": 0.06815169006586075,
+          "B": 0.4730670750141144,
+          "C": 0.09916011989116669,
+          "D": 0.28692886233329773,
+          "E": 0.07254743576049805
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.030131865292787552,
+            "B": 0.22264830768108368,
+            "C": 0.08719002455472946,
+            "D": 0.6442345976829529,
+            "E": 0.01563325710594654
+          },
+          "B": {
+            "A": 0.02063680812716484,
+            "B": 0.13884148001670837,
+            "C": 0.1388404667377472,
+            "D": 0.6222339272499084,
+            "E": 0.07911043614149094
+          },
+          "C": {
+            "A": 0.009372545406222343,
+            "B": 0.13773028552532196,
+            "C": 0.015452857129275799,
+            "D": 0.792556643486023,
+            "E": 0.044715359807014465
+          },
+          "D": {
+            "A": 0.12401992082595825,
+            "B": 0.24664489924907684,
+            "C": 0.06638127565383911,
+            "D": 0.555750846862793,
+            "E": 0.005284352693706751
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.030131865292787552,
+          "B": 0.13884148001670837,
+          "C": 0.015452857129275799,
+          "D": 0.555750846862793
+        },
+        "score": 0.18504426232539117
+      },
+      {
+        "record_index": 52,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14261",
+        "label": null,
+        "perturbations": {
+          "a": "سلام روزتون خوش",
+          "b": "سلام روزتون نیک",
+          "c": "سلام روزتون خوب",
+          "d": "سلام روزتون مبارک"
+        },
+        "bdq_probs": {
+          "A": 0.08042275160551071,
+          "B": 0.0709729939699173,
+          "C": 0.29880601167678833,
+          "D": 0.4084189236164093,
+          "E": 0.14114724099636078
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.015296822413802147,
+            "B": 0.05683505907654762,
+            "C": 0.3706066608428955,
+            "D": 0.37060606479644775,
+            "E": 0.18635500967502594
+          },
+          "B": {
+            "A": 0.03502092510461807,
+            "B": 0.05095560848712921,
+            "C": 0.31213706731796265,
+            "D": 0.454155832529068,
+            "E": 0.1474449783563614
+          },
+          "C": {
+            "A": 0.009745452553033829,
+            "B": 0.06354870647192001,
+            "C": 0.020631127059459686,
+            "D": 0.824100911617279,
+            "E": 0.08159955590963364
+          },
+          "D": {
+            "A": 0.011723129078745842,
+            "B": 0.06746271997690201,
+            "C": 0.8218391537666321,
+            "D": 0.06337431818246841,
+            "E": 0.03392514958977699
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.015296822413802147,
+          "B": 0.05095560848712921,
+          "C": 0.020631127059459686,
+          "D": 0.06337431818246841
+        },
+        "score": 0.037564469035714865
+      },
+      {
+        "record_index": 55,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14264",
+        "label": null,
+        "perturbations": {
+          "a": "सामान्यीकृत चिन्ताको विकार (GAD) भएका मानिसहरूमा लक्षणहरूको कमीमा ध्यानको प्रभाव अनुसन्धान गर्नुहोस्।",
+          "b": "सामान्यीकृत चिन्ता विकार (GAD) भएका व्यक्तिहरूमा लक्षणहरूको अभावमा ध्यानको प्रभाव अध्ययन गर्नुहोस्।",
+          "c": "सामान्यीकृत चिन्तालाई विकार (GAD)का व्यक्तिहरूमा लक्षणहरूको कमीमा ध्यानको प्रभाव जाँच गर्नुहोस्।",
+          "d": "सामान्यीकृत चिन्ता विकार (GAD) भएका व्यक्तिहरूमा लक्षणहरूको घटामा ध्यानको प्रभाव अनुसन्धान गर्नुहोस्।"
+        },
+        "bdq_probs": {
+          "A": 0.14211654663085938,
+          "B": 0.4659843146800995,
+          "C": 0.06306391954421997,
+          "D": 0.26550671458244324,
+          "E": 0.06306543946266174
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.1692514568567276,
+            "B": 0.21732304990291595,
+            "C": 0.07510481029748917,
+            "D": 0.5213260054588318,
+            "E": 0.008426951244473457
+          },
+          "B": {
+            "A": 0.04640277847647667,
+            "B": 0.5310490727424622,
+            "C": 0.15214769542217255,
+            "D": 0.2508467733860016,
+            "E": 0.012105604633688927
+          },
+          "C": {
+            "A": 0.06244608387351036,
+            "B": 0.49117210507392883,
+            "C": 0.051769472658634186,
+            "D": 0.3375721275806427,
+            "E": 0.019046533852815628
+          },
+          "D": {
+            "A": 0.1204567700624466,
+            "B": 0.13649097084999084,
+            "C": 0.013514808379113674,
+            "D": 0.6931136250495911,
+            "E": 0.003527424531057477
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.1692514568567276,
+          "B": 0.5310490727424622,
+          "C": 0.051769472658634186,
+          "D": 0.6931136250495911
+        },
+        "score": 0.36129590682685375
+      },
+      {
+        "record_index": 56,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14265",
+        "label": null,
+        "perturbations": {
+          "a": "Mẹ nhiều con trai 45 tuổi. Biết số tuổi của hai người đều chứa các chữ số nguyên tố, có vị trí đảo ngược lẫn nhau. Trong 30 giây, bạn hãy tìm số tuổi của hai mẹ con.",
+          "b": "Mẹ lớn con trai 45 tuổi. Biết số tuổi của hai người đều chứa các chữ số nguyên tố, có vị trí hoán đổi nhau. Trong 30 giây, bạn hãy tìm số tuổi của hai mẹ con.",
+          "c": "Mẹ hơn con 45 tuổi. Biết số tuổi của hai người đều chứa các chữ số nguyên tố, có vị trí đảo lộn nhau. Trong 30 giây, bạn hãy tìm số tuổi của hai mẹ con.",
+          "d": "Mẹ vượt con trai 45 tuổi. Biết số tuổi của hai người đều chứa các chữ số nguyên tố, có vị trí đảo chiều nhau. Trong 30 giây, bạn hãy tìm số tuổi của hai mẹ con."
+        },
+        "bdq_probs": {
+          "A": 0.13917678594589233,
+          "B": 0.3338705897331238,
+          "C": 0.1678798794746399,
+          "D": 0.19023187458515167,
+          "E": 0.1678803712129593
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.006715182680636644,
+            "B": 0.03864334896206856,
+            "C": 0.8795114159584045,
+            "D": 0.05281895399093628,
+            "E": 0.022018950432538986
+          },
+          "B": {
+            "A": 0.0488777756690979,
+            "B": 0.18160401284694672,
+            "C": 0.09720532596111298,
+            "D": 0.6338555812835693,
+            "E": 0.03806651011109352
+          },
+          "C": {
+            "A": 0.012871296145021915,
+            "B": 0.2281501740217209,
+            "C": 0.057685259729623795,
+            "D": 0.4829920828342438,
+            "E": 0.21432755887508392
+          },
+          "D": {
+            "A": 0.016472259536385536,
+            "B": 0.5124529600143433,
+            "C": 0.24206100404262543,
+            "D": 0.1885170042514801,
+            "E": 0.03487668186426163
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.006715182680636644,
+          "B": 0.18160401284694672,
+          "C": 0.057685259729623795,
+          "D": 0.1885170042514801
+        },
+        "score": 0.10863036487717181
+      },
+      {
+        "record_index": 57,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14266",
+        "label": null,
+        "perturbations": {
+          "a": "لا، عاصمة الدولة العربية السعودية هي الرياض.",
+          "b": "لا، عاصمة المملكة السعودية هي الرياض.",
+          "c": "لا، عاصمة المملكة العربية السعودية هي الرياضة.",
+          "d": "لا، عاصمة المملكة العربية السعودية هي الرياضة."
+        },
+        "bdq_probs": {
+          "A": 0.01316638570278883,
+          "B": 0.8671132326126099,
+          "C": 0.009336424991488457,
+          "D": 0.029670869931578636,
+          "E": 0.08065496385097504
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0008252805564552546,
+            "B": 0.993981122970581,
+            "C": 0.0005497746751643717,
+            "D": 0.0012388910399749875,
+            "E": 0.003367877099663019
+          },
+          "B": {
+            "A": 0.5125371217727661,
+            "B": 0.0540224090218544,
+            "C": 0.015477695502340794,
+            "D": 0.042072031646966934,
+            "E": 0.3749876916408539
+          },
+          "C": {
+            "A": 0.00238460092805326,
+            "B": 0.9620227813720703,
+            "C": 0.012110178358852863,
+            "D": 0.007818853482604027,
+            "E": 0.01555035449564457
+          },
+          "D": {
+            "A": 0.0012235299218446016,
+            "B": 0.9816656708717346,
+            "C": 0.004011916927993298,
+            "D": 0.010905261151492596,
+            "E": 0.0018371352925896645
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0008252805564552546,
+          "B": 0.0540224090218544,
+          "C": 0.012110178358852863,
+          "D": 0.010905261151492596
+        },
+        "score": 0.01946578227216378
+      },
+      {
+        "record_index": 58,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14267",
+        "label": null,
+        "perturbations": {
+          "a": "Yintoni intsingiselo yobomi? impendulo idize ngokwase bhayibhelini.",
+          "b": "Yintoni intsingiselo yobomi? impendulo idlula ngokwase bhayibhileni.",
+          "c": "Yintoni intsingiselo yobomi? impendulo ibhiyozwa ngokwase bhayibhileni.",
+          "d": "Yintoni intsingiselo yobomi? impendulo igqama ngokwase bhayibhileni."
+        },
+        "bdq_probs": {
+          "A": 0.08522705733776093,
+          "B": 0.1804274320602417,
+          "C": 0.27944862842559814,
+          "D": 0.19206121563911438,
+          "E": 0.26252081990242004
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0499124601483345,
+            "B": 0.08229190856218338,
+            "C": 0.2534768581390381,
+            "D": 0.04137944057583809,
+            "E": 0.5712236762046814
+          },
+          "B": {
+            "A": 0.12585946917533875,
+            "B": 0.32139381766319275,
+            "C": 0.024783238768577576,
+            "D": 0.10434240847826004,
+            "E": 0.4126843512058258
+          },
+          "C": {
+            "A": 0.06840209662914276,
+            "B": 0.12004835158586502,
+            "C": 0.6908310651779175,
+            "D": 0.025164855644106865,
+            "E": 0.08783737570047379
+          },
+          "D": {
+            "A": 0.10131727159023285,
+            "B": 0.09517821669578552,
+            "C": 0.05094583332538605,
+            "D": 0.6606720685958862,
+            "E": 0.08941961079835892
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0499124601483345,
+          "B": 0.32139381766319275,
+          "C": 0.6908310651779175,
+          "D": 0.6606720685958862
+        },
+        "score": 0.43070235289633274
+      },
+      {
+        "record_index": 59,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14268",
+        "label": null,
+        "perturbations": {
+          "a": "أي مما يلي عنصر وليس مركب؟",
+          "b": "أي مما يلي عنصر وليس مركب؟",
+          "c": "أي مما يلي عنصر وليس مركب؟",
+          "d": "أي مما يلي عنصر وليس مركب؟"
+        },
+        "bdq_probs": {
+          "A": 0.05527513846755028,
+          "B": 0.2327180653810501,
+          "C": 0.18123960494995117,
+          "D": 0.4926580488681793,
+          "E": 0.037990763783454895
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.25483930110931396,
+            "B": 0.018468884751200676,
+            "C": 0.00046241970267146826,
+            "D": 0.0043862867169082165,
+            "E": 0.0777614414691925
+          },
+          "B": {
+            "A": 0.5235365033149719,
+            "B": 0.023009605705738068,
+            "C": 0.06253872811794281,
+            "D": 0.02606889419257641,
+            "E": 0.09687169641256332
+          },
+          "C": {
+            "A": 0.04828450828790665,
+            "B": 0.0021292862948030233,
+            "C": 4.689627166953869e-05,
+            "D": 0.14873851835727692,
+            "E": 0.014732033014297485
+          },
+          "D": {
+            "A": 0.06063676252961159,
+            "B": 0.007721228525042534,
+            "C": 0.00011350685235811397,
+            "D": 0.0016170607414096594,
+            "E": 0.05028719827532768
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.25483930110931396,
+          "B": 0.023009605705738068,
+          "C": 4.689627166953869e-05,
+          "D": 0.0016170607414096594
+        },
+        "score": 0.06987821595703281
+      },
+      {
+        "record_index": 60,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14269",
+        "label": null,
+        "perturbations": {
+          "a": "Турмуш оңолмоюн арбалет тазарбайт.",
+          "b": "Турмуш оңолмоюн жоокер тазарбайт.",
+          "c": "Турмуш оңолмоюн акыл тазарбайт.",
+          "d": "Турмуш оңолмоюн бедел тазарбайт."
+        },
+        "bdq_probs": {
+          "A": 0.13459549844264984,
+          "B": 0.11878130584955215,
+          "C": 0.15251654386520386,
+          "D": 0.4413183927536011,
+          "E": 0.15251877903938293
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05616500601172447,
+            "B": 0.17300106585025787,
+            "C": 0.11890135705471039,
+            "D": 0.5328764319419861,
+            "E": 0.11890213191509247
+          },
+          "B": {
+            "A": 0.17898331582546234,
+            "B": 0.07942455261945724,
+            "C": 0.20281516015529633,
+            "D": 0.42935711145401,
+            "E": 0.10856131464242935
+          },
+          "C": {
+            "A": 0.14345064759254456,
+            "B": 0.04957587271928787,
+            "C": 0.0234177615493536,
+            "D": 0.6843620538711548,
+            "E": 0.09859462082386017
+          },
+          "D": {
+            "A": 0.5867660641670227,
+            "B": 0.2446185201406479,
+            "C": 0.11554436385631561,
+            "D": 0.0425063818693161,
+            "E": 0.009194162674248219
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05616500601172447,
+          "B": 0.07942455261945724,
+          "C": 0.0234177615493536,
+          "D": 0.0425063818693161
+        },
+        "score": 0.050378425512462854
+      },
+      {
+        "record_index": 61,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14270",
+        "label": null,
+        "perturbations": {
+          "a": "Đá vẫn trơ gan cùng tuế nguyệt,  \n(...) còn chau mặt với tang khí.",
+          "b": "Đá vẫn trơ gan cùng tuế nguyệt,  \n(...) còn chau mặt với tang thương.",
+          "c": "Đá vẫn trơ gan cùng tuế nguyệt,  \n(...) còn chau diện với tang thương.",
+          "d": "Đá vẫn trơ gan cùng tuế nguyệt,  \n(...) còn chau mặt với tang tử."
+        },
+        "bdq_probs": {
+          "A": 0.07324831932783127,
+          "B": 0.3282775580883026,
+          "C": 0.19910980761051178,
+          "D": 0.21195088326931,
+          "E": 0.18704740703105927
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.059168990701436996,
+            "B": 0.30049797892570496,
+            "C": 0.0629877820611,
+            "D": 0.24911069869995117,
+            "E": 0.3198992908000946
+          },
+          "B": {
+            "A": 0.04871314764022827,
+            "B": 0.02449553832411766,
+            "C": 0.29840177297592163,
+            "D": 0.19266490638256073,
+            "E": 0.43419092893600464
+          },
+          "C": {
+            "A": 0.0011153103550896049,
+            "B": 0.0393173024058342,
+            "C": 0.005664191674441099,
+            "D": 0.0005106388125568628,
+            "E": 0.9525506496429443
+          },
+          "D": {
+            "A": 0.5786523818969727,
+            "B": 0.11395087093114853,
+            "C": 0.06911894679069519,
+            "D": 0.21288222074508667,
+            "E": 0.0023654296528548002
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.059168990701436996,
+          "B": 0.02449553832411766,
+          "C": 0.005664191674441099,
+          "D": 0.21288222074508667
+        },
+        "score": 0.0755527353612706
+      },
+      {
+        "record_index": 62,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14271",
+        "label": null,
+        "perturbations": {
+          "a": "Kiswahili ni lugha ya kitaifa nchini Kenya na kwa kiwango kikubwa inaeleweka na kutumiwa na Wakenya wengi kwa ajili ya mawasiliano ya kila siku. Katiba ya Kenya ya mwaka wa 2010 inatambua lugha hii kama lugha ya kitaifa na pia lugha rasmi.",
+          "b": "Kiswahili ni lugha ya taifa nchini Kenya na kwa kiwango kikubwa inaeleweka na kutumiwa na Wakenya wengi kwa ajili ya mawasiliano ya kila siku. Katiba ya Kenya ya mwaka wa 2010 inatambua lugha hii kama lugha ya kitaifa na pia lugha rasmi.",
+          "c": "Kiswahili ni lugha ya taifa nchini Kenya na kwa kiasi kikubwa inaeleweka na kutumiwa na wakenya wengi kwa ajili ya mawasiliano ya kila siku. Katiba ya Kenya ya mwaka wa 2010 inatambua lugha hii kama lugha ya kitaifa na vile vile lugha rasmi.",
+          "d": "Kiswahili ni lugha ya kitaifa nchini Kenya na kwa kiasi kikubwa inaeleweka na kutumiwa na Wakenya wengi kwa ajili ya mawasiliano ya kila siku. Katiba ya Kenya ya mwaka wa 2010 inatambua lugha hii kama lugha ya kitaifa na vile vile lugha rasmi."
+        },
+        "bdq_probs": {
+          "A": 0.19574213027954102,
+          "B": 0.3227251470088959,
+          "C": 0.19574186205863953,
+          "D": 0.2513361871242523,
+          "E": 0.03401581570506096
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.024663247168064117,
+            "B": 0.925479531288147,
+            "C": 0.026254253461956978,
+            "D": 0.012401447631418705,
+            "E": 0.010945211164653301
+          },
+          "B": {
+            "A": 0.1924496740102768,
+            "B": 0.1167290210723877,
+            "C": 0.07536552101373672,
+            "D": 0.5927771925926208,
+            "E": 0.020286375656723976
+          },
+          "C": {
+            "A": 0.056338824331760406,
+            "B": 0.6863513588905334,
+            "C": 0.05292624235153198,
+            "D": 0.1531432420015335,
+            "E": 0.04972333461046219
+          },
+          "D": {
+            "A": 0.019180363044142723,
+            "B": 0.9241530299186707,
+            "C": 0.040605656802654266,
+            "D": 0.014032562263309956,
+            "E": 0.001624781172722578
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.024663247168064117,
+          "B": 0.1167290210723877,
+          "C": 0.05292624235153198,
+          "D": 0.014032562263309956
+        },
+        "score": 0.05208776821382344
+      },
+      {
+        "record_index": 63,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14272",
+        "label": null,
+        "perturbations": {
+          "a": "Apakah peraturan permainan congkak? Berikan langkah-langkah secara terperinci.  \n1. Dua orang pemain duduk berhadapan menghadap papan congkak, dimulakan dengan kedua-dua pemain serentak mencapai buah di kawasan masing-masing dan memasukkan buah satu demi satu di dalam lubang kawasan dengan pergerakan dari kanan ke kiri hingga ke rumah dan kawasan lawan.  \n2. Gerakan diteruskan sehingga buah yang terakhir pada tangan dimasukkan ke dalam kawasan kosong di tempat sendiri atau lawan dan pemain hendaklah berhenti, sekiranya buah itu jatuh atau mati di kawasan sendiri. Pemain itu boleh menembak kawasan lawan yang setentang dengan kawasan nya iaitu mengaut kesemua buah (jika ada) di dalam kawasan tersebut, hanya selepas membuat satu pusingan.  \n3. Pihak lawan mengambil giliran meneruskan permainan hingga buahnya mati. Sekiranya buah terakhir jatuh di dalam rumah sendiri, pemain boleh meneruskan permainan dengan mengambil buah yang masih banyak di mana-mana kawasan sendiri. Sekiranya buah terakhir jatuh di kawasan kosong pihak lawan, maka permainan itu mati di situ sahaja dan pihak lawan boleh memulakan permainan seterusnya hingga mati.  \n4. Jika tidak terdapat sebarang buah di kawasan pemain sungguhpun giliran berada di pihaknya, maka giliran untuk menggerakkan buah akan berpindah kepada pihak lawan.  \n5. Setelah tamat pusingan pertama, setiap pemain mengisi semula kawasan dengan buah congkak dan jika ada kawasan yang tidak cukup buah, ia dianggap 'terbakar'. Kawasan ini tidak boleh diisi apabila bermain pada pusingan yang kedua, ketiga dan seterusnya hingga pihak lawan mengaku kalah.",
+          "b": "Apakah peraturan permainan congkak? Berikan langkah-langkah secara terperinci.  \n1. Dua orang pemain duduk berhadapan menghadap papan congkak, dimulakan dengan kedua-dua pemain serentak mencapai buah di kampung masing-masing dan memasukkan buah satu demi satu di dalam lubang kampung dengan pergerakan dari kanan ke kiri hingga ke rumah dan kampung musuh.  \n2. Gerakan diteruskan sehingga buah yang terakhir pada tangan dimasukkan ke dalam kampung kosong di kawasan sendiri atau musuh dan pemain hendaklah berhenti, sekiranya buah itu jatuh atau mati di kampung sendiri. Pemain itu boleh menembak kampung musuh yang setentang dengan kampungnya iaitu mengaut kesemua buah (jika ada) di dalam kampung tersebut, hanya selepas membuat satu pusingan.  \n3. Pihak musuh mengambil giliran meneruskan permainan hingga buahnya mati. Sekiranya buah terakhir jatuh di dalam rumah sendiri, pemain boleh meneruskan permainan dengan mengambil buah yang masih banyak di mana-mana kampung sendiri. Sekiranya buah terakhir jatuh di kampung kosong pihak musuh, maka permainan itu mati di situ sahaja dan pihak musuh boleh memulakan permainan seterusnya hingga mati.  \n4. Jika tidak terdapat sebarang buah di kampung pemain sungguhpun giliran berada di pihaknya, maka giliran untuk menggerakkan buah akan berpindah kepada pihak musuh.  \n5. Setelah tamat pusingan pertama, setiap pemain mengisi semula kampung dengan buah congkak dan jika ada kampung yang tidak cukup buah, ia dianggap 'terbakar'. Kampung ini tidak boleh diisi apabila bermain pada pusingan yang kedua, ketiga dan seterusnya hingga pihak musuh mengaku kalah.",
+          "c": "Apakah peraturan permainan congkak? Berikan langkah-langkah secara terperinci.  \n1. Dua orang pemain duduk berhadapan menghadap papan congkak, dimulakan dengan kedua-dua pemain serentak mencapai buah di kampung masing-masing dan memasukkan buah satu demi satu di dalam lubang kampung dengan pergerakan dari kanan ke kiri hingga ke rumah dan kampung lawan.  \n2. Gerakan diteruskan sehingga buah yang terakhir pada tangan dimasukkan ke dalam kampung kosong di wilayah sendiri atau lawan dan pemain hendaklah berhenti, sekiranya buah itu jatuh atau mati di kampung sendiri. Pemain itu boleh menembak kampung lawan yang setentang dengan kampungnya iaitu mengaut kesemua buah (jika ada) di dalam kampung tersebut, hanya selepas membuat satu pusingan.  \n3. Pihak lawan mengambil giliran meneruskan permainan hingga buahnya mati. Sekiranya buah terakhir jatuh di dalam rumah sendiri, pemain boleh meneruskan permainan dengan mengambil buah yang masih banyak di mana-mana kampung sendiri. Sekiranya buah terakhir jatuh di kampung kosong pihak lawan, maka permainan itu mati di situ sahaja dan pihak lawan boleh memulakan permainan seterusnya hingga mati.  \n4. Jika tidak terdapat sebarang buah di kampung pemain sungguhpun giliran berada di pihaknya, maka giliran untuk menggerakkan buah akan berpindah kepada pihak lawan.  \n5. Setelah tamat pusingan pertama, setiap pemain mengisi semula kampung dengan buah congkak dan jika ada kampung yang tidak cukup buah, ia dianggap 'terbakar'. Kampung ini tidak boleh diisi apabila bermain pada pusingan yang kedua, ketiga dan seterusnya hingga pihak lawan mengaku kalah.",
+          "d": "Apakah peraturan permainan congkak? Berikan langkah-langkah secara terperinci.  \n1. Dua orang pemain duduk berhadapan menghadap papan congkak, dimulakan dengan kedua-dua pemain serentak mencapai buah di kampung masing-masing dan memasukkan buah satu demi satu di dalam lubang kampung dengan pergerakan dari kanan ke kiri hingga ke rumah dan kampung lawan.  \n2. Gerakan diteruskan sehingga buah yang terakhir pada tangan dimasukkan ke dalam kampung kosong di ruang sendiri atau lawan dan pemain hendaklah berhenti, sekiranya buah itu jatuh atau mati di kampung sendiri. Pemain itu boleh menembak kampung lawan yang setentang dengan kampungnya iaitu mengaut kesemua buah (jika ada) di dalam kampung tersebut, hanya selepas membuat satu pusingan.  \n3. Pihak lawan mengambil giliran meneruskan permainan hingga buahnya mati. Sekiranya buah terakhir jatuh di dalam rumah sendiri, pemain boleh meneruskan permainan dengan mengambil buah yang masih banyak di mana-mana kampung sendiri. Sekiranya buah terakhir jatuh di kampung kosong pihak lawan, maka permainan itu mati di situ sahaja dan pihak lawan boleh memulakan permainan seterusnya hingga mati.  \n4. Jika tidak terdapat sebarang buah di kampung pemain sungguhpun giliran berada di pihaknya, maka giliran untuk menggerakkan buah akan berpindah kepada pihak lawan.  \n5. Setelah tamat pusingan pertama, setiap pemain mengisi semula kampung dengan buah congkak dan jika ada kampung yang tidak cukup buah, ia dianggap 'terbakar'. Kampung ini tidak boleh diisi apabila bermain pada pusingan yang kedua, ketiga dan seterusnya hingga pihak lawan mengaku kalah."
+        },
+        "bdq_probs": {
+          "A": 0.010072884149849415,
+          "B": 0.5854315757751465,
+          "C": 0.10829467326402664,
+          "D": 0.12271406501531601,
+          "E": 0.12271951138973236
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0545099601149559,
+            "B": 0.45640477538108826,
+            "C": 0.045192018151283264,
+            "D": 0.21560432016849518,
+            "E": 0.13920919597148895
+          },
+          "B": {
+            "A": 0.025705114006996155,
+            "B": 0.03981589898467064,
+            "C": 0.16763386130332947,
+            "D": 0.202219158411026,
+            "E": 0.2022484391927719
+          },
+          "C": {
+            "A": 0.08560939133167267,
+            "B": 0.02304680645465851,
+            "C": 0.04305563494563103,
+            "D": 0.12461700290441513,
+            "E": 0.2989777624607086
+          },
+          "D": {
+            "A": 0.0512395054101944,
+            "B": 0.4290265440940857,
+            "C": 0.03310359641909599,
+            "D": 0.15796656906604767,
+            "E": 0.0795554518699646
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0545099601149559,
+          "B": 0.03981589898467064,
+          "C": 0.04305563494563103,
+          "D": 0.15796656906604767
+        },
+        "score": 0.07383701577782631
+      },
+      {
+        "record_index": 64,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14273",
+        "label": null,
+        "perturbations": {
+          "a": "Ileeṣẹ ọlọpaa ipinlẹ Ọṣun ti kede pe awọn ti ri akẹkọọ ile-ẹkọ ilera, Osun State College of Health Technology, Ileṣa, Rukayat Bayọọle, tawọn ajinigbe gbe logunjọ, osù yii, gba pada.",
+          "b": "Ileeṣẹ ọlọpaa ipinlẹ Ọṣun ti kede pe awọn ti ri akẹkọọ ile-ẹkọ ilera, Osun State College of Health Technology, Ileṣa, Rukayat Bayọnle, tawọn ajinigbe ti gbe logunjọ, oṣu yii, gba pada.",
+          "c": "Ileeṣẹ ọlọpaa ipinlẹ Ọṣun ti kede pe awọn ti ri akẹkọọ ile-ẹkọ ilera, Osun State College of Health Technology, Ileṣa, Rukayat Bayọnle, tawọn ajinigbe gbe logun, oṣu yii, gba pada.",
+          "d": "Ileeṣẹ ọlọpaa ipinlẹ Ọṣun ti kede pe awọn ti ri akẹkọọ ile-ẹkọ ilera, Osun State College of Health Technology, Ileṣa, Rukayat Bayọnle, awọn ajinigbe gbe logun, osù yii, gba pada."
+        },
+        "bdq_probs": {
+          "A": 0.0485200509428978,
+          "B": 0.6292200684547424,
+          "C": 0.1590912789106369,
+          "D": 0.09649327397346497,
+          "E": 0.06632040441036224
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.2476024329662323,
+            "B": 0.6730599403381348,
+            "C": 0.01793644391000271,
+            "D": 0.03797123208642006,
+            "E": 0.023031430318951607
+          },
+          "B": {
+            "A": 0.258963406085968,
+            "B": 0.14755380153656006,
+            "C": 0.5835830569267273,
+            "D": 0.005545257590711117,
+            "E": 0.004057181999087334
+          },
+          "C": {
+            "A": 0.02661803737282753,
+            "B": 0.8280639052391052,
+            "C": 0.022067198529839516,
+            "D": 0.1192937046289444,
+            "E": 0.0037168378476053476
+          },
+          "D": {
+            "A": 0.006973218638449907,
+            "B": 0.9722051024436951,
+            "C": 0.009833982214331627,
+            "D": 0.0063492730259895325,
+            "E": 0.0036180540919303894
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.2476024329662323,
+          "B": 0.14755380153656006,
+          "C": 0.022067198529839516,
+          "D": 0.0063492730259895325
+        },
+        "score": 0.10589317651465535
+      },
+      {
+        "record_index": 65,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14274",
+        "label": null,
+        "perturbations": {
+          "a": "പോംഫ്രെറ്റ് (ആവോലി) പരമ്പരാഗത കേരള മത്സ്യ ഫ്രൈ ഉണ്ടാക്കാൻ ഉപയോഗിക്കുന്ന ഒരു ജനിതക മത്സ്യ ഇനമാണ്, ഉറച്ച മാംസത്തിനും മൃദുവായ രുചിക്കും പേരുകേട്ടതാണ് ഇത്.",
+          "b": "പോംഫ്രെറ്റ് (ആവോലി) പരമ്പരാഗത കേരള മത്സ്യ ഫ്രൈ ഉണ്ടാക്കാൻ ഉപയോഗിക്കുന്ന ഒരു അധിക പ്രശസ്ത മത്സ്യ ഇനമാണ്, ഉറച്ച മാംസത്തിനും മൃദുവായ രുചിക്കും പേരുകേട്ടമാണ് ഇത്.",
+          "c": "പോംഫ്രെറ്റ് (ആവോലി) പരമ്പരാഗത കേരള ഫിഷ് ഫ്രൈ ഉണ്ടാക്കാൻ ഉപയോഗിക്കുന്ന ഒരു എണ്ണപ്പോൾ മത്സ്യ ഇനമാണ്, ഉറച്ച മാംസത്തിനും മൃദുവായ രുചിക്കും പേരുകേട്ടമാണിത്.",
+          "d": "പോംഫ്രെറ്റ് (ആാവോലി) പരമ്പരാഗത കേരള ഫിഷ് ഫ്രൈ ഉണ്ടാക്കാൻ ഉപയോഗിക്കുന്ന ഒരു പ്രസിദ്ധ മത്സ്യ ഇനമാണ്, ഉറച്ച മാംസത്തിനും മൃദുവായ രുചിക്കും പേരുകേട്ടമാണ് ഇത്."
+        },
+        "bdq_probs": {
+          "A": 0.07366936653852463,
+          "B": 0.48038676381111145,
+          "C": 0.1767238974571228,
+          "D": 0.2269168496131897,
+          "E": 0.041976530104875565
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04285275563597679,
+            "B": 0.8607259392738342,
+            "C": 0.0148096838966012,
+            "D": 0.07520890980958939,
+            "E": 0.0038634655065834522
+          },
+          "B": {
+            "A": 0.2139749974012375,
+            "B": 0.6191657781600952,
+            "C": 0.12978503108024597,
+            "D": 0.02255297638475895,
+            "E": 0.0047279540449380875
+          },
+          "C": {
+            "A": 0.050723280757665634,
+            "B": 0.1884668469429016,
+            "C": 0.17704598605632782,
+            "D": 0.545322060585022,
+            "E": 0.010633974336087704
+          },
+          "D": {
+            "A": 0.38015639781951904,
+            "B": 0.4585893452167511,
+            "C": 0.09029996395111084,
+            "D": 0.06606440246105194,
+            "E": 0.002483752090483904
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04285275563597679,
+          "B": 0.6191657781600952,
+          "C": 0.17704598605632782,
+          "D": 0.06606440246105194
+        },
+        "score": 0.22628223057836294
+      },
+      {
+        "record_index": 66,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14275",
+        "label": null,
+        "perturbations": {
+          "a": "O modo de viver da sociedade contemporânea contribui para a sustentabilidade?",
+          "b": "O modo de vida da sociedade atual contribui para a sustentabilidade?",
+          "c": "O estilo de vida da sociedade moderna contribui para a sustentabilidade?",
+          "d": "O sistema de vida da sociedade moderna contribui para a sustentabilidade?"
+        },
+        "bdq_probs": {
+          "A": 0.002330844523385167,
+          "B": 0.9113985896110535,
+          "C": 0.027521857991814613,
+          "D": 0.027521828189492226,
+          "E": 0.031186461448669434
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.012289715930819511,
+            "B": 0.11660320311784744,
+            "C": 0.5225710868835449,
+            "D": 0.08530770987272263,
+            "E": 0.2627699375152588
+          },
+          "B": {
+            "A": 0.009378083981573582,
+            "B": 0.01985347270965576,
+            "C": 0.05069754272699356,
+            "D": 0.5450485944747925,
+            "E": 0.3746073544025421
+          },
+          "C": {
+            "A": 0.008459486067295074,
+            "B": 0.33791396021842957,
+            "C": 0.013947362080216408,
+            "D": 0.20495466887950897,
+            "E": 0.4338896870613098
+          },
+          "D": {
+            "A": 0.007203966379165649,
+            "B": 0.47444018721580505,
+            "C": 0.007203978952020407,
+            "D": 0.010481813922524452,
+            "E": 0.4744395613670349
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.012289715930819511,
+          "B": 0.01985347270965576,
+          "C": 0.013947362080216408,
+          "D": 0.010481813922524452
+        },
+        "score": 0.014143091160804033
+      },
+      {
+        "record_index": 67,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14276",
+        "label": null,
+        "perturbations": {
+          "a": "ঢাকাই মসলিন প্রথম কোথায় নির্মাণ হয় ?",
+          "b": "ঢাকাই মসলিন প্রথম কোথায় প্রস্তুত হয় ?",
+          "c": "ঢাকাই মসলিন প্রথম কোথায় সৃষ্ট হয় ?",
+          "d": "ঢাকাই মসলিন প্রথম কোথায় উৎপাদন হয় ?"
+        },
+        "bdq_probs": {
+          "A": 0.05718688666820526,
+          "B": 0.3729090094566345,
+          "C": 0.19960243999958038,
+          "D": 0.2562922239303589,
+          "E": 0.11373214423656464
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4465809464454651,
+            "B": 0.22455792129039764,
+            "C": 0.07290410995483398,
+            "D": 0.03902234882116318,
+            "E": 0.12795154750347137
+          },
+          "B": {
+            "A": 0.1133442148566246,
+            "B": 0.12843680381774902,
+            "C": 0.4482867419719696,
+            "D": 0.14553719758987427,
+            "E": 0.15492600202560425
+          },
+          "C": {
+            "A": 0.07576528936624527,
+            "B": 0.12491688132286072,
+            "C": 0.09728526324033737,
+            "D": 0.5598332285881042,
+            "E": 0.11735012382268906
+          },
+          "D": {
+            "A": 0.03195251151919365,
+            "B": 0.11872008442878723,
+            "C": 0.11871945112943649,
+            "D": 0.09246009588241577,
+            "E": 0.566382646560669
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4465809464454651,
+          "B": 0.12843680381774902,
+          "C": 0.09728526324033737,
+          "D": 0.09246009588241577
+        },
+        "score": 0.1911907773464918
+      },
+      {
+        "record_index": 68,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14277",
+        "label": null,
+        "perturbations": {
+          "a": "Ny \"The Blue Lion\" no anarana toeram-pisakafoanana be mpampiasa indrindra ao Angletera.",
+          "b": "Ny \"The Red Lion\" no anarana toerana-fisakafoanana be mpampiasa indrindra ao Angletera.",
+          "c": "Ny \"The Red Lion\" no anarana toeram-pisakafoanana be mpampiasa lehibe indrindra ao Angletera.",
+          "d": "Ny \"The Red Lion\" no anarana toeram-pisakafoanana be mpampiasa indrindra eto Angletera."
+        },
+        "bdq_probs": {
+          "A": 0.0905708596110344,
+          "B": 0.1493268758058548,
+          "C": 0.04554194211959839,
+          "D": 0.5905937552452087,
+          "E": 0.12379658967256546
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0022390279918909073,
+            "B": 0.08401953428983688,
+            "C": 0.005045775324106216,
+            "D": 0.9032777547836304,
+            "E": 0.005371429491788149
+          },
+          "B": {
+            "A": 0.020655784755945206,
+            "B": 0.014196567237377167,
+            "C": 0.009456939995288849,
+            "D": 0.934944212436676,
+            "E": 0.020656228065490723
+          },
+          "C": {
+            "A": 0.0010769692016765475,
+            "B": 0.01396641880273819,
+            "C": 0.0020120618864893913,
+            "D": 0.9791017174720764,
+            "E": 0.003759177401661873
+          },
+          "D": {
+            "A": 0.01633775606751442,
+            "B": 0.6526020169258118,
+            "C": 0.019707288593053818,
+            "D": 0.308255672454834,
+            "E": 0.002505973679944873
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0022390279918909073,
+          "B": 0.014196567237377167,
+          "C": 0.0020120618864893913,
+          "D": 0.308255672454834
+        },
+        "score": 0.08167583239264786
+      },
+      {
+        "record_index": 69,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14278",
+        "label": null,
+        "perturbations": {
+          "a": "セミ、マッコウ、シロナガスといえばどんな動物の型でしょう？",
+          "b": "セミ、マッコウ、シロナガスといえばどんな動物の種類ですか？",
+          "c": "セミ、マッコウ、シロナガスといえばどんな生物の種類でしょう？",
+          "d": "セミ、マッコウ、シロナガスといえばどんな動物の種類ですか？"
+        },
+        "bdq_probs": {
+          "A": 0.005461584776639938,
+          "B": 0.13232240080833435,
+          "C": 0.08025725930929184,
+          "D": 0.7153226137161255,
+          "E": 0.06653637439012527
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.012906943447887897,
+            "B": 0.03296010196208954,
+            "C": 0.03508548066020012,
+            "D": 0.9048217535018921,
+            "E": 0.013741438277065754
+          },
+          "B": {
+            "A": 0.006946726702153683,
+            "B": 0.13953126966953278,
+            "C": 0.07468482106924057,
+            "D": 0.7542729377746582,
+            "E": 0.024247974157333374
+          },
+          "C": {
+            "A": 0.007474351674318314,
+            "B": 0.2052023857831955,
+            "C": 0.027770720422267914,
+            "D": 0.7162023186683655,
+            "E": 0.04301460459828377
+          },
+          "D": {
+            "A": 0.18243321776390076,
+            "B": 0.30079877376556396,
+            "C": 0.09173649549484253,
+            "D": 0.41112175583839417,
+            "E": 0.011667403392493725
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.012906943447887897,
+          "B": 0.13953126966953278,
+          "C": 0.027770720422267914,
+          "D": 0.41112175583839417
+        },
+        "score": 0.1478326723445207
+      },
+      {
+        "record_index": 70,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14279",
+        "label": null,
+        "perturbations": {
+          "a": "ਓਲੂਏਮਿਸੀ ਓਲੂਰੇਮੀ ਓਬੀਲੇਡ (ਜਨਮ 14 ਨਵੰਬਰ 1958) ਇੱਕ ਨਾਈਜੀਰੀਅਨ ਸਿੱਖਿਆ ਦੀ ਉੱਚ ਸਥਿਤੀ ਹੈ।",
+          "b": "ਓਲੂਏਮਿਸੀ ਓਲੂਰੇਮੀ ਓਬੀਲੇਡ (ਜਨਮ 14 ਨਵੰਬਰ 1958) ਇੱਕ ਨਾਈਜੀਰੀਅਨ ਸਿੱਖਿਆ ਦੀ ਪ੍ਰबंधਕਾ ਹੈ।",
+          "c": "ਓਲੂਏਮਿਸੀ ਓਲੂਰੇਮੀ ਓਬੀਲੇਡ (ਜਨਮ 14 ਨਵੰਬਰ 1958) ਇੱਕ ਨਾਈਜੀਰੀਅਨ ਸਿੱਖਿਆ ਦੀ ਪ੍ਰਧਾਨ ਹੈ।",
+          "d": "ਓਲੂਏਮਿਸੀ ਓਲੂਰੇਮੀ ਓਬੀਲੇਡ (ਜਨਮ 14 ਨਵੰਬਰ 1958) ਇੱਕ ਨਾਈਜੀਰੀਅਨ ਸਿੱਖਿਆ ਦੀ ਆਯੋਗਤਾ ਹੈ।"
+        },
+        "bdq_probs": {
+          "A": 0.0544273778796196,
+          "B": 0.4281081259250641,
+          "C": 0.21526481211185455,
+          "D": 0.20222175121307373,
+          "E": 0.09552475064992905
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.17766499519348145,
+            "B": 0.48295456171035767,
+            "C": 0.027246009558439255,
+            "D": 0.06535971164703369,
+            "E": 0.24284234642982483
+          },
+          "B": {
+            "A": 0.13960224390029907,
+            "B": 0.3564958870410919,
+            "C": 0.15819023549556732,
+            "D": 0.20311973989009857,
+            "E": 0.1396041363477707
+          },
+          "C": {
+            "A": 0.022861886769533157,
+            "B": 0.6681342124938965,
+            "C": 0.1235911175608635,
+            "D": 0.09041973948478699,
+            "E": 0.09042372554540634
+          },
+          "D": {
+            "A": 0.014847202226519585,
+            "B": 0.6720475554466248,
+            "C": 0.16991887986660004,
+            "D": 0.11678183823823929,
+            "E": 0.017910819500684738
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.17766499519348145,
+          "B": 0.3564958870410919,
+          "C": 0.1235911175608635,
+          "D": 0.11678183823823929
+        },
+        "score": 0.19363345950841904
+      },
+      {
+        "record_index": 71,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14280",
+        "label": null,
+        "perturbations": {
+          "a": "السؤال: من هو شريك السيدة فاطمة الزهراء رضي الله عنها؟",
+          "b": "السؤال: من هو رفيق السيدة فاطمة الزهراء رضي الله عنها؟",
+          "c": "السؤال: من هو زوجة السيدة فاطمة الزهراء رضي الله عنها؟",
+          "d": "السؤال: من هو حليف السيدة فاطمة الزهراء رضي الله عنها؟"
+        },
+        "bdq_probs": {
+          "A": 0.029032917693257332,
+          "B": 0.24309012293815613,
+          "C": 0.06542671471834183,
+          "D": 0.5831390023231506,
+          "E": 0.078920379281044
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4706171452999115,
+            "B": 0.10501009970903397,
+            "C": 0.1842975616455078,
+            "D": 0.10500920563936234,
+            "E": 0.13483662903308868
+          },
+          "B": {
+            "A": 0.05443280190229416,
+            "B": 0.35494908690452576,
+            "C": 0.10825283825397491,
+            "D": 0.1479637324810028,
+            "E": 0.33344438672065735
+          },
+          "C": {
+            "A": 0.05893751233816147,
+            "B": 0.18154144287109375,
+            "C": 0.20571240782737732,
+            "D": 0.43549105525016785,
+            "E": 0.11721435934305191
+          },
+          "D": {
+            "A": 0.3153125047683716,
+            "B": 0.24557460844516754,
+            "C": 0.15855154395103455,
+            "D": 0.2614065408706665,
+            "E": 0.012229351326823235
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4706171452999115,
+          "B": 0.35494908690452576,
+          "C": 0.20571240782737732,
+          "D": 0.2614065408706665
+        },
+        "score": 0.32317129522562027
+      },
+      {
+        "record_index": 73,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14282",
+        "label": null,
+        "perturbations": {
+          "a": "දෑත දෙපා ලන ගිගිරි සරින්",
+          "b": "මා කැඳවා නොතැවෙන්",
+          "c": "සිවුසිය ගව් දුර ඇදෙන ලෙසින්",
+          "d": "සෝක සුසුම් නොහෙලන්"
+        },
+        "bdq_probs": {
+          "A": 0.1371745467185974,
+          "B": 0.18750008940696716,
+          "C": 0.329061359167099,
+          "D": 0.19958487153053284,
+          "E": 0.14602749049663544
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.02104230225086212,
+            "B": 0.019767969846725464,
+            "C": 0.1935005784034729,
+            "D": 0.4360523521900177,
+            "E": 0.2059856355190277
+          },
+          "B": {
+            "A": 0.004462989047169685,
+            "B": 0.006293966434895992,
+            "C": 0.0027069435454905033,
+            "D": 0.5158448815345764,
+            "E": 0.2761172950267792
+          },
+          "C": {
+            "A": 0.034312982112169266,
+            "B": 0.02215486206114292,
+            "C": 0.010464908555150032,
+            "D": 0.2381768375635147,
+            "E": 0.5367477536201477
+          },
+          "D": {
+            "A": 0.058672357350587845,
+            "B": 0.1322236955165863,
+            "C": 0.045694854110479355,
+            "D": 0.33762842416763306,
+            "E": 0.04864654317498207
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.02104230225086212,
+          "B": 0.006293966434895992,
+          "C": 0.010464908555150032,
+          "D": 0.33762842416763306
+        },
+        "score": 0.0938574003521353
+      },
+      {
+        "record_index": 74,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14283",
+        "label": null,
+        "perturbations": {
+          "a": "Rabe-raben faɗan barkwanci guda nawane?",
+          "b": "Rabe-raben labarin barkwanci guda nawane?",
+          "c": "Rabe-raben magana barkwanci guda nawane?",
+          "d": "Rabe-raben zancen barkwanci guda nawane?"
+        },
+        "bdq_probs": {
+          "A": 0.14195431768894196,
+          "B": 0.2198636382818222,
+          "C": 0.2198628932237625,
+          "D": 0.30051642656326294,
+          "E": 0.11768496036529541
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.3789832293987274,
+            "B": 0.37898555397987366,
+            "C": 0.04818250611424446,
+            "D": 0.0701049342751503,
+            "E": 0.12303861975669861
+          },
+          "B": {
+            "A": 0.08966149389743805,
+            "B": 0.705243706703186,
+            "C": 0.03978714719414711,
+            "D": 0.0423530675470829,
+            "E": 0.12255371361970901
+          },
+          "C": {
+            "A": 0.03829619660973549,
+            "B": 0.7692010402679443,
+            "C": 0.05234585329890251,
+            "D": 0.014088522642850876,
+            "E": 0.12557372450828552
+          },
+          "D": {
+            "A": 0.11074116080999374,
+            "B": 0.678374171257019,
+            "C": 0.14219515025615692,
+            "D": 0.0592753067612648,
+            "E": 0.008811047300696373
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.3789832293987274,
+          "B": 0.705243706703186,
+          "C": 0.05234585329890251,
+          "D": 0.0592753067612648
+        },
+        "score": 0.2989620240405202
+      },
+      {
+        "record_index": 75,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14284",
+        "label": null,
+        "perturbations": {
+          "a": "在賣車後的6天之內，通知安省服務處更改車主名稱  \n提供簽名後的車主證明  \n提供車輛安全證明",
+          "b": "在賣車後的6天之內，通知安省服務機構更改車主稱呼  \n提供簽名後的車主文檔  \n提供車輛安全憑證",
+          "c": "在賣車後的6天之內，通知安省服務單位更改車主身份  \n提供簽名後的車主文件  \n提供車輛安全證書",
+          "d": "在賣車後的6天之內，通知安省服務局更改車主名稱  \n提供簽名後的車主證件  \n提供車輛安全證明"
+        },
+        "bdq_probs": {
+          "A": 0.07947234809398651,
+          "B": 0.12309040129184723,
+          "C": 0.07013452798128128,
+          "D": 0.7083219289779663,
+          "E": 0.018877360969781876
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.01874234341084957,
+            "B": 0.18930421769618988,
+            "C": 0.3536391258239746,
+            "D": 0.4007079005241394,
+            "E": 0.03728220611810684
+          },
+          "B": {
+            "A": 0.015376005321741104,
+            "B": 0.04449367895722389,
+            "C": 0.08848428726196289,
+            "D": 0.8394418954849243,
+            "E": 0.011978022754192352
+          },
+          "C": {
+            "A": 0.2068774402141571,
+            "B": 0.23444265127182007,
+            "C": 0.11073814332485199,
+            "D": 0.4379578232765198,
+            "E": 0.009678439237177372
+          },
+          "D": {
+            "A": 0.5059735178947449,
+            "B": 0.32671764492988586,
+            "C": 0.10606510192155838,
+            "D": 0.056772105395793915,
+            "E": 0.004113894421607256
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.01874234341084957,
+          "B": 0.04449367895722389,
+          "C": 0.11073814332485199,
+          "D": 0.056772105395793915
+        },
+        "score": 0.05768656777217984
+      },
+      {
+        "record_index": 76,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14285",
+        "label": null,
+        "perturbations": {
+          "a": "ஆலெக்சாண்டரின் ஆசிரியர் யார்?",
+          "b": "அலெக்சாண்டரின் கற்றனர் யார்?",
+          "c": "அலெக்சாண்டரின் மாசிர் யார்?",
+          "d": "அலெக்சாண்டரின் தலைமை யார்?"
+        },
+        "bdq_probs": {
+          "A": 0.022302230820059776,
+          "B": 0.0665823444724083,
+          "C": 0.045761045068502426,
+          "D": 0.7619831562042236,
+          "E": 0.10312549769878387
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010306183248758316,
+            "B": 0.018662218004465103,
+            "C": 0.042053863406181335,
+            "D": 0.8446444272994995,
+            "E": 0.08364280313253403
+          },
+          "B": {
+            "A": 0.00488697737455368,
+            "B": 0.00971891637891531,
+            "C": 0.015052488073706627,
+            "D": 0.931239664554596,
+            "E": 0.03844083473086357
+          },
+          "C": {
+            "A": 0.007372328080236912,
+            "B": 0.11898371577262878,
+            "C": 0.012938657775521278,
+            "D": 0.7758403420448303,
+            "E": 0.08177889138460159
+          },
+          "D": {
+            "A": 0.048736777156591415,
+            "B": 0.38332894444465637,
+            "C": 0.1410059630870819,
+            "D": 0.4079892635345459,
+            "E": 0.012330494821071625
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010306183248758316,
+          "B": 0.00971891637891531,
+          "C": 0.012938657775521278,
+          "D": 0.4079892635345459
+        },
+        "score": 0.1102382552344352
+      },
+      {
+        "record_index": 77,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14286",
+        "label": null,
+        "perturbations": {
+          "a": "Cuál es la contestación correcta a esta pregunta: \\n¿Cuál edición del juego Mortal Kombat tiene más personajes jugables, Mortal Kombat 2 o Mortal Kombat 3?",
+          "b": "Cuál es la solución correcta a esta pregunta: \\n¿Cuál variante del juego Mortal Kombat tiene más personajes jugables, Mortal Kombat 2 o Mortal Kombat 3?",
+          "c": "Cuál es la respuesta apropiada a esta pregunta: \\n¿Cuál versión del juego Mortal Kombat posee más personajes jugables, Mortal Kombat 2 o Mortal Kombat 3?",
+          "d": "Cuál es la contestación apropiada a esta pregunta: \\n¿Cuál edición del juego Mortal Kombat posee más personajes jugables, Mortal Kombat 2 o Mortal Kombat 3?"
+        },
+        "bdq_probs": {
+          "A": 0.023342806845903397,
+          "B": 0.46885356307029724,
+          "C": 0.06754462420940399,
+          "D": 0.41376009583473206,
+          "E": 0.026451027020812035
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.21493735909461975,
+            "B": 0.3127324879169464,
+            "C": 0.08417078852653503,
+            "D": 0.35437166690826416,
+            "E": 0.03296202793717384
+          },
+          "B": {
+            "A": 0.035953715443611145,
+            "B": 0.16113348305225372,
+            "C": 0.15137068927288055,
+            "D": 0.6372937560081482,
+            "E": 0.01407975796610117
+          },
+          "C": {
+            "A": 0.014417975209653378,
+            "B": 0.09401703625917435,
+            "C": 0.041719745844602585,
+            "D": 0.837962806224823,
+            "E": 0.011228781193494797
+          },
+          "D": {
+            "A": 0.06388135999441147,
+            "B": 0.2373480647802353,
+            "C": 0.22296719253063202,
+            "D": 0.4720211625099182,
+            "E": 0.0033856418449431658
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.21493735909461975,
+          "B": 0.16113348305225372,
+          "C": 0.041719745844602585,
+          "D": 0.4720211625099182
+        },
+        "score": 0.22245293762534857
+      },
+      {
+        "record_index": 78,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14287",
+        "label": null,
+        "perturbations": {
+          "a": "Yàn loy a àm Wolof?",
+          "b": "Yàn ko a àm Wolof?",
+          "c": "Yàn skol a àm Wolof?",
+          "d": "Yàn kòr a àm Wolof?"
+        },
+        "bdq_probs": {
+          "A": 0.10998993366956711,
+          "B": 0.28086981177330017,
+          "C": 0.10998983681201935,
+          "D": 0.3387918770313263,
+          "E": 0.16003522276878357
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.4396282434463501,
+            "B": 0.1427275538444519,
+            "C": 0.028104588389396667,
+            "D": 0.1044209748506546,
+            "E": 0.2838471531867981
+          },
+          "B": {
+            "A": 0.021319065243005753,
+            "B": 0.06566762179136276,
+            "C": 0.03741622716188431,
+            "D": 0.12268276512622833,
+            "E": 0.7515247464179993
+          },
+          "C": {
+            "A": 0.005599489435553551,
+            "B": 0.06408277153968811,
+            "C": 0.0026450115256011486,
+            "D": 0.6889541745185852,
+            "E": 0.23809672892093658
+          },
+          "D": {
+            "A": 0.07832413166761398,
+            "B": 0.05383238196372986,
+            "C": 0.03475677967071533,
+            "D": 0.25681793689727783,
+            "E": 0.35103800892829895
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.4396282434463501,
+          "B": 0.06566762179136276,
+          "C": 0.0026450115256011486,
+          "D": 0.25681793689727783
+        },
+        "score": 0.19118970341514796
+      },
+      {
+        "record_index": 79,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14288",
+        "label": null,
+        "perturbations": {
+          "a": "\"ما هي الأبعاد على الرهن العقاري؟\"",
+          "b": "\"ما هي العلامات على الرهن العقاري؟\"",
+          "c": "\"ما هي النقاط على الرهن العقاري؟\"",
+          "d": "\"ما هي العناصر على الرهن العقاري؟\""
+        },
+        "bdq_probs": {
+          "A": 0.015196877531707287,
+          "B": 0.20978718996047974,
+          "C": 0.25305014848709106,
+          "D": 0.36818498373031616,
+          "E": 0.15348410606384277
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.013498049229383469,
+            "B": 0.09973886609077454,
+            "C": 0.7369533181190491,
+            "D": 0.08801653236150742,
+            "E": 0.06050000339746475
+          },
+          "B": {
+            "A": 0.0013021648628637195,
+            "B": 0.0025897023733705282,
+            "C": 0.9814164638519287,
+            "D": 0.0045449924655258656,
+            "E": 0.008492380380630493
+          },
+          "C": {
+            "A": 0.021256359294056892,
+            "B": 0.02262800745666027,
+            "C": 0.025640452280640602,
+            "D": 0.9038298726081848,
+            "E": 0.018760360777378082
+          },
+          "D": {
+            "A": 0.0016577208880335093,
+            "B": 0.009539447724819183,
+            "C": 0.9729766249656677,
+            "D": 0.005785816349089146,
+            "E": 0.00015424835146404803
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.013498049229383469,
+          "B": 0.0025897023733705282,
+          "C": 0.025640452280640602,
+          "D": 0.005785816349089146
+        },
+        "score": 0.011878505058120936
+      },
+      {
+        "record_index": 80,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14289",
+        "label": null,
+        "perturbations": {
+          "a": "भारतीय संविधान को पहली बार कब परिवर्तित किया गया?",
+          "b": "भारतीय संविधान को पहली बार कब सुधार किया गया?",
+          "c": "भारतीय संविधान को पहली बार कब बदला गया?",
+          "d": "भारतीय संविधान को पहली बार कब लिहाजा किया गया?"
+        },
+        "bdq_probs": {
+          "A": 0.03844914957880974,
+          "B": 0.4006478190422058,
+          "C": 0.24300435185432434,
+          "D": 0.2282802015542984,
+          "E": 0.08939831703901291
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.023688312619924545,
+            "B": 0.27970099449157715,
+            "C": 0.5225439071655273,
+            "D": 0.1497097909450531,
+            "E": 0.02369043044745922
+          },
+          "B": {
+            "A": 0.038874782621860504,
+            "B": 0.07262731343507767,
+            "C": 0.8311678767204285,
+            "D": 0.04991548880934715,
+            "E": 0.007191666401922703
+          },
+          "C": {
+            "A": 0.052422165870666504,
+            "B": 0.23493942618370056,
+            "C": 0.020529108121991158,
+            "D": 0.6798043847084045,
+            "E": 0.011698314920067787
+          },
+          "D": {
+            "A": 0.23468250036239624,
+            "B": 0.6379331350326538,
+            "C": 0.0715760886669159,
+            "D": 0.05236434563994408,
+            "E": 0.0026080182287842035
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.023688312619924545,
+          "B": 0.07262731343507767,
+          "C": 0.020529108121991158,
+          "D": 0.05236434563994408
+        },
+        "score": 0.04230226995423436
+      },
+      {
+        "record_index": 81,
+        "sample_id": "ai2-adapt-dev/tulu_v3.9_aya_100k_14290",
+        "label": null,
+        "perturbations": {
+          "a": "ஒரு தேனீயால் எத்தனை முறைகள் கொட்ட முடியும் ?",
+          "b": "மின்தடையை கண்டுபிடித்தவர் யார் ?",
+          "c": "முகப்பவுடரை கண்டுபிடித்த நாடு என்ன ?",
+          "d": "கிரிக்கெட் விளையாட்டு எங்கு பிரகடனம் அடைந்தது ?"
+        },
+        "bdq_probs": {
+          "A": 0.1743597388267517,
+          "B": 0.1357952356338501,
+          "C": 0.17435972392559052,
+          "D": 0.36911478638648987,
+          "E": 0.1445547491312027
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.19648070633411407,
+            "B": 0.34486153721809387,
+            "C": 0.018276790156960487,
+            "D": 0.010414027608931065,
+            "E": 0.006727307103574276
+          },
+          "B": {
+            "A": 0.01657845452427864,
+            "B": 0.035089462995529175,
+            "C": 0.7986087203025818,
+            "D": 0.02412150613963604,
+            "E": 0.00348113221116364
+          },
+          "C": {
+            "A": 0.01413330715149641,
+            "B": 0.004877028986811638,
+            "C": 0.005525656975805759,
+            "D": 0.8201240301132202,
+            "E": 0.0027926296461373568
+          },
+          "D": {
+            "A": 0.05560406297445297,
+            "B": 0.02628483809530735,
+            "C": 0.005012043751776218,
+            "D": 0.011665109544992447,
+            "E": 0.3860655426979065
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.19648070633411407,
+          "B": 0.035089462995529175,
+          "C": 0.005525656975805759,
+          "D": 0.011665109544992447
+        },
+        "score": 0.062190233962610364
+      }
+    ]
+  }
+}

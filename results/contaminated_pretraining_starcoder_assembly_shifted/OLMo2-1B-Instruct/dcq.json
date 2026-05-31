@@ -1,0 +1,868 @@
+{
+  "model_name": "OLMo2-1B-Instruct",
+  "model_path": "olmo_models/OLMo2-1B-Instruct",
+  "dataset_name": "contaminated_pretraining_starcoder_assembly_test_shifted",
+  "dataset_path": "benchmark/pretraining/starcoder/contaminated/shifted/test/contaminated_pretraining_starcoder_assembly_test_shifted.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "dcq",
+  "elapsed_seconds": 5.635218143463135,
+  "result": {
+    "method": "dcq",
+    "dataset": "contaminated_pretraining_starcoder_assembly_test_shifted",
+    "dataset_path": "benchmark/pretraining/starcoder/contaminated/shifted/test/contaminated_pretraining_starcoder_assembly_test_shifted.jsonl",
+    "dataset_data_type": "paragraph",
+    "score_type_used": "min_pcorrect",
+    "judge_model": "gpt-4o-mini-2024-07-18",
+    "placements_used": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "include_bdq": true,
+    "partition_bdq_pe": {
+      "A": 0.03235268614268737,
+      "B": 0.02852693108110185,
+      "C": 0.051833687771609196,
+      "D": 0.19574337503305783
+    },
+    "non_preferred": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "num_total_records": 18,
+    "num_scored_records": 15,
+    "summary": {
+      "mean_score": 0.023983017802750813
+    },
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "91839",
+        "label": null,
+        "perturbations": {
+          "a": "<filename>Compilation/x86_compilation.asm<gh_stars>100-1000  \nsection     .text  \nglobal      _begin  \n_begin:  \n    mov     edx,len  \n    mov     ecx,msg  \n    mov     ebx,1  \n    mov     eax,4  \n    int     0x80  \n    mov     eax,1  \n    int     0x80  \nsection     .data  \nmsg     db  'Greetings globe',0xa  \nlen     equ $ - msg  \n\n; how to execute:  \n; 1. first install assemblers  \n; sudo apt install as31 nasm  \n; 2. compile the program  \n; nasm -f elf64 x86_compilation.asm  \n; 3. link the object file into an executable file  \n; ld -s -o x86_compilation x86_compilation.o  \n; 4. run it  \n; ./x86_compilation",
+          "b": "<filename>Build/x86_build.asm<gh_stars>100-1000  \nsection     .text  \nglobal      _begin  \n_begin:  \n    mov     edx,len  \n    mov     ecx,msg  \n    mov     ebx,1  \n    mov     eax,4  \n    int     0x80  \n    mov     eax,1  \n    int     0x80  \nsection     .data  \nmsg     db  'Hi planet',0xa  \nlen     equ $ - msg  \n\n; how to execute:  \n; 1. first install assemblers  \n; sudo apt install as31 nasm  \n; 2. assemble the program  \n; nasm -f elf64 x86_build.asm  \n; 3. link the object file into an executable file  \n; ld -s -o x86_build x86_build.o  \n; 4. run it  \n; ./x86_build",
+          "c": "<filename>Code/x86_code.asm<gh_stars>100-1000  \nsection     .text  \nglobal      _init  \n_init:  \n    mov     edx,len  \n    mov     ecx,msg  \n    mov     ebx,1  \n    mov     eax,4  \n    int     0x80  \n    mov     eax,1  \n    int     0x80  \nsection     .data  \nmsg     db  'Salutations world',0xa  \nlen     equ $ - msg  \n\n; how to execute:  \n; 1. first install assemblers  \n; sudo apt install as31 nasm  \n; 2. assemble the program  \n; nasm -f elf64 x86_code.asm  \n; 3. link the object file into an executable file  \n; ld -s -o x86_code x86_code.o  \n; 4. run it  \n; ./x86_code",
+          "d": "<filename>Script/x86_script.asm<gh_stars>100-1000  \nsection     .text  \nglobal      _begin  \n_begin:  \n    mov     edx,len  \n    mov     ecx,msg  \n    mov     ebx,1  \n    mov     eax,4  \n    int     0x80  \n    mov     eax,1  \n    int     0x80  \nsection     .data  \nmsg     db  'Hello universe',0xa  \nlen     equ $ - msg  \n\n; how to execute:  \n; 1. first install assemblers  \n; sudo apt install as31 nasm  \n; 2. compile the program  \n; nasm -f elf64 x86_script.asm  \n; 3. link the object file into an executable file  \n; ld -s -o x86_script x86_script.o  \n; 4. run it  \n; ./x86_script"
+        },
+        "bdq_probs": {
+          "A": 0.008630644530057907,
+          "B": 0.020705949515104294,
+          "C": 0.08188556134700775,
+          "D": 0.17335182428359985,
+          "E": 0.6856198906898499
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010705175809562206,
+            "B": 0.03297852724790573,
+            "C": 0.11509192734956741,
+            "D": 0.21502014994621277,
+            "E": 0.5844861268997192
+          },
+          "B": {
+            "A": 0.007680315990000963,
+            "B": 0.023661058396100998,
+            "C": 0.09356582909822464,
+            "D": 0.22445274889469147,
+            "E": 0.6101261973381042
+          },
+          "C": {
+            "A": 0.009466606192290783,
+            "B": 0.02271278016269207,
+            "C": 0.10177605599164963,
+            "D": 0.16780048608779907,
+            "E": 0.6636644005775452
+          },
+          "D": {
+            "A": 0.010697472840547562,
+            "B": 0.02908632531762123,
+            "C": 0.1476752609014511,
+            "D": 0.3126292824745178,
+            "E": 0.4548731744289398
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010705175809562206,
+          "B": 0.023661058396100998,
+          "C": 0.10177605599164963,
+          "D": 0.3126292824745178
+        },
+        "score": 0.010705175809562206
+      },
+      {
+        "record_index": 1,
+        "sample_id": "91845",
+        "label": null,
+        "perturbations": {
+          "a": "[BITS 64]\n%macro push_all 0\n\n    cld\n    push rax\n    push rbx\n    push rcx\n    push rdx\n    push rsi\n    push rdi\n    push rbp\n    push r8\n    push r9\n    push r10\n    push r11\n    push r12\n    push r13\n    push r14\n    push r15\n\n%endmacro\n\n%macro pop_all_syscall 0\n    pop r15\n    pop r14\n    pop r13\n    pop r12\n    pop r11\n    pop r10\n    pop r9\n    pop r8\n    pop rbp\n    pop rdi\n    pop rsi\n    pop rdx\n    pop rcx\n    pop rbx\n\n%endmacro\n\nALIGN\t4096\nextern syscall_higher_handler\nglobal syscall_handle\nsyscall_handle:\n    swapgs\n    mov [gs:0x8], rsp\n    mov rsp, [gs:0x0]\n\n    push qword 0x1b ; user data\n    push qword [gs:0x8] ; saved stack\n    push r11 ; saved rflags\n    push qword 0x23 ; user code\n    push rcx ; current IP\n\n    push_all\n\n    mov rdi, rsp\n    mov rbp, 0\n    call syscall_higher_handler\n\n    pop_all_syscall\n    mov rsp, [gs:0x8]\n    swapgs\n    sti\n    o64 sysret",
+          "b": "[BITS 64]\n%macro push_all 0\n\n    cld\n    push rax\n    push rbx\n    push rcx\n    push rdx\n    push rsi\n    push rdi\n    push rbp\n    push r8\n    push r9\n    push r10\n    push r11\n    push r12\n    push r13\n    push r14\n    push r15\n\n%endmacro\n\n%macro pop_all_syscall 0\n    pop r15\n    pop r14\n    pop r13\n    pop r12\n    pop r11\n    pop r10\n    pop r9\n    pop r8\n    pop rbp\n    pop rdi\n    pop rsi\n    pop rdx\n    pop rcx\n    pop rbx\n\n%endmacro\n\nALIGN\t4096\nextern syscall_higher_handler\nglobal syscall_handle\nsyscall_handle:\n    swapgs\n    mov [gs:0x8], rsp\n    mov rsp, [gs:0x0]\n\n    push qword 0x1b ; user data\n    push qword [gs:0x8] ; stored stack\n    push r11 ; saved rflags\n    push qword 0x23 ; user code\n    push rcx ; current IP\n\n    push_all\n\n    mov rdi, rsp\n    mov rbp, 0\n    call syscall_higher_handler\n\n    pop_all_syscall\n    mov rsp, [gs:0x8]\n    swapgs\n    sti\n    o64 sysret",
+          "c": "[BITS 64]\n%macro push_all 0\n\n    cld\n    push rax\n    push rbx\n    push rcx\n    push rdx\n    push rsi\n    push rdi\n    push rbp\n    push r8\n    push r9\n    push r10\n    push r11\n    push r12\n    push r13\n    push r14\n    push r15\n\n%endmacro\n\n%macro pop_all_syscall 0\n    pop r15\n    pop r14\n    pop r13\n    pop r12\n    pop r11\n    pop r10\n    pop r9\n    pop r8\n    pop rbp\n    pop rdi\n    pop rsi\n    pop rdx\n    pop rcx\n    pop rbx\n\n%endmacro\n\nALIGN\t4096\nextern syscall_higher_handler\nglobal syscall_handle\nsyscall_handle:\n    swapgs\n    mov [gs:0x8], rsp\n    mov rsp, [gs:0x0]\n\n    push qword 0x1b ; user data\n    push qword [gs:0x8] ; retained stack\n    push r11 ; saved rflags\n    push qword 0x23 ; user code\n    push rcx ; current IP\n\n    push_all\n\n    mov rdi, rsp\n    mov rbp, 0\n    call syscall_higher_handler\n\n    pop_all_syscall\n    mov rsp, [gs:0x8]\n    swapgs\n    sti\n    o64 sysret",
+          "d": "[BITS 64]\n%macro push_all 0\n\n    cld\n    push rax\n    push rbx\n    push rcx\n    push rdx\n    push rsi\n    push rdi\n    push rbp\n    push r8\n    push r9\n    push r10\n    push r11\n    push r12\n    push r13\n    push r14\n    push r15\n\n%endmacro\n\n%macro pop_all_syscall 0\n    pop r15\n    pop r14\n    pop r13\n    pop r12\n    pop r11\n    pop r10\n    pop r9\n    pop r8\n    pop rbp\n    pop rdi\n    pop rsi\n    pop rdx\n    pop rcx\n    pop rbx\n\n%endmacro\n\nALIGN\t4096\nextern syscall_higher_handler\nglobal syscall_handle\nsyscall_handle:\n    swapgs\n    mov [gs:0x8], rsp\n    mov rsp, [gs:0x0]\n\n    push qword 0x1b ; user data\n    push qword [gs:0x8] ; backed stack\n    push r11 ; saved rflags\n    push qword 0x23 ; user code\n    push rcx ; current IP\n\n    push_all\n\n    mov rdi, rsp\n    mov rbp, 0\n    call syscall_higher_handler\n\n    pop_all_syscall\n    mov rsp, [gs:0x8]\n    swapgs\n    sti\n    o64 sysret"
+        },
+        "bdq_probs": {
+          "A": 0.029354380443692207,
+          "B": 0.02286485955119133,
+          "C": 0.029354708269238472,
+          "D": 0.11610015481710434,
+          "E": 0.757064700126648
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.032399315387010574,
+            "B": 0.025236884132027626,
+            "C": 0.032399632036685944,
+            "D": 0.12814313173294067,
+            "E": 0.7374101877212524
+          },
+          "B": {
+            "A": 0.029255617409944534,
+            "B": 0.022788148373365402,
+            "C": 0.033151283860206604,
+            "D": 0.11570955812931061,
+            "E": 0.7545182108879089
+          },
+          "C": {
+            "A": 0.024210220202803612,
+            "B": 0.017715362831950188,
+            "C": 0.02421046420931816,
+            "D": 0.09575434029102325,
+            "E": 0.801736056804657
+          },
+          "D": {
+            "A": 0.03273018077015877,
+            "B": 0.0254939217120409,
+            "C": 0.03273047134280205,
+            "D": 0.11424077302217484,
+            "E": 0.7449414730072021
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.032399315387010574,
+          "B": 0.022788148373365402,
+          "C": 0.02421046420931816,
+          "D": 0.11424077302217484
+        },
+        "score": 0.022788148373365402
+      },
+      {
+        "record_index": 2,
+        "sample_id": "91853",
+        "label": null,
+        "perturbations": {
+          "a": ";  \n;\tMSX particular routines  \n;  \n;\tGFX - a tiny graphics library   \n;\tCopyright (C) 2004  <NAME>  \n;  \n;\textern bool __FASTCALL__ msx_get_trigger(unsigned char id);  \n;  \n;\tobtain state of joystick button (trigger) number \\a id, true = pressed  \n;  \n;\t$Id: msx_get_trigger.asm,v 1.8 2017-01-02 23:19:02 aralbrec Exp $  \n;  \n        SECTION code_clib  \n\tPUBLIC\tmsx_get_trigger  \n\tPUBLIC\t_msx_get_trigger  \n\tEXTERN\tmsxbios  \nIF FORmsx  \n        INCLUDE \"target/msx/def/msxbios.def\"  \nELSE  \n        INCLUDE \"target/svi/def/svibios.def\"  \nENDIF  \nmsx_get_trigger:  \n_msx_get_trigger:  \n\t; __FASTCALL__ : stick id is already in L  \n\tpush\tix  \n\tld\ta,l  \n\tld\tix,GTTRIG  \n\tcall\tmsxbios  \n\tld\th,0  \n\tld\tl,a  \n\tpop\tix  \t\n\tret",
+          "b": ";  \n;\tMSX designated routines  \n;  \n;\tGFX - a diminutive graphics library   \n;\tCopyright (C) 2004  <NAME>  \n;  \n;\textern bool __FASTCALL__ msx_get_trigger(unsigned char id);  \n;  \n;\tretrieve state of joystick button (trigger) number \\a id, true = pressed  \n;  \n;\t$Id: msx_get_trigger.asm,v 1.8 2017-01-02 23:19:02 aralbrec Exp $  \n;  \n        SECTION code_clib  \n\tPUBLIC\tmsx_get_trigger  \n\tPUBLIC\t_msx_get_trigger  \n\tEXTERN\tmsxbios  \nIF FORmsx  \n        INCLUDE \"target/msx/def/msxbios.def\"  \nELSE  \n        INCLUDE \"target/svi/def/svibios.def\"  \nENDIF  \nmsx_get_trigger:  \n_msx_get_trigger:  \n\t; __FASTCALL__ : stick id is already in L  \n\tpush\tix  \n\tld\ta,l  \n\tld\tix,GTTRIG  \n\tcall\tmsxbios  \n\tld\th,0  \n\tld\tl,a  \n\tpop\tix  \t\n\tret",
+          "c": ";  \n;\tMSX relevant routines  \n;  \n;\tGFX - a minor graphics library   \n;\tCopyright (C) 2004  <NAME>  \n;  \n;\textern bool __FASTCALL__ msx_get_trigger(unsigned char id);  \n;  \n;\tfetch state of joystick button (trigger) number \\a id, true = pressed  \n;  \n;\t$Id: msx_get_trigger.asm,v 1.8 2017-01-02 23:19:02 aralbrec Exp $  \n;  \n        SECTION code_clib  \n\tPUBLIC\tmsx_get_trigger  \n\tPUBLIC\t_msx_get_trigger  \n\tEXTERN\tmsxbios  \nIF FORmsx  \n        INCLUDE \"target/msx/def/msxbios.def\"  \nELSE  \n        INCLUDE \"target/svi/def/svibios.def\"  \nENDIF  \nmsx_get_trigger:  \n_msx_get_trigger:  \n\t; __FASTCALL__ : stick id is already in L  \n\tpush\tix  \n\tld\ta,l  \n\tld\tix,GTTRIG  \n\tcall\tmsxbios  \n\tld\th,0  \n\tld\tl,a  \n\tpop\tix  \t\n\tret",
+          "d": ";  \n;\tMSX specific procedures  \n;  \n;\tGFX - a compact graphics library   \n;\tCopyright (C) 2004  <NAME>  \n;  \n;\textern bool __FASTCALL__ msx_get_trigger(unsigned char id);  \n;  \n;\tacquire state of joystick button (trigger) number \\a id, true = pressed  \n;  \n;\t$Id: msx_get_trigger.asm,v 1.8 2017-01-02 23:19:02 aralbrec Exp $  \n;  \n        SECTION code_clib  \n\tPUBLIC\tmsx_get_trigger  \n\tPUBLIC\t_msx_get_trigger  \n\tEXTERN\tmsxbios  \nIF FORmsx  \n        INCLUDE \"target/msx/def/msxbios.def\"  \nELSE  \n        INCLUDE \"target/svi/def/svibios.def\"  \nENDIF  \nmsx_get_trigger:  \n_msx_get_trigger:  \n\t; __FASTCALL__ : stick id is already in L  \n\tpush\tix  \n\tld\ta,l  \n\tld\tix,GTTRIG  \n\tcall\tmsxbios  \n\tld\th,0  \n\tld\tl,a  \n\tpop\tix  \t\n\tret"
+        },
+        "bdq_probs": {
+          "A": 0.015062270686030388,
+          "B": 0.014151344075798988,
+          "C": 0.04094378650188446,
+          "D": 0.34281986951828003,
+          "E": 0.565211832523346
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.022467374801635742,
+            "B": 0.013629534281790257,
+            "C": 0.03269016370177269,
+            "D": 0.511361300945282,
+            "E": 0.3982490003108978
+          },
+          "B": {
+            "A": 0.020329313352704048,
+            "B": 0.020332738757133484,
+            "C": 0.04876786097884178,
+            "D": 0.5243075489997864,
+            "E": 0.3603503704071045
+          },
+          "C": {
+            "A": 0.022833801805973053,
+            "B": 0.025878164917230606,
+            "C": 0.054776035249233246,
+            "D": 0.458636999130249,
+            "E": 0.40474429726600647
+          },
+          "D": {
+            "A": 0.019022176042199135,
+            "B": 0.016793370246887207,
+            "C": 0.07523605972528458,
+            "D": 0.49061062932014465,
+            "E": 0.2975689470767975
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.022467374801635742,
+          "B": 0.020332738757133484,
+          "C": 0.054776035249233246,
+          "D": 0.49061062932014465
+        },
+        "score": 0.020332738757133484
+      },
+      {
+        "record_index": 5,
+        "sample_id": "91867",
+        "label": null,
+        "perturbations": {
+          "a": "<gh_stars>100-1000\n\n; double expm1(double y)\n\nSECTION code_clib\nSECTION code_fp_math48\n\nPUBLIC am48_expm1\n\nEXTERN am48_exp, am48_dconst_1, am48_dsub, am48_dpopret\n\nam48_expm1:\n\n   ; calculate exp(AC')-1\n   ;\n   ; enter : AC' = double y\n   ;\n   ; exit  : success\n   ;\n   ;            AC' = exp(y) - 1\n   ;            carry reset\n   ;\n   ;         fail if overflow\n   ;\n   ;            AC' = +inf\n   ;            carry set, errno set\n   ;\n   ; utilizes  : af, af', bc', de', hl'\n\n   call am48_exp\n   ret c                       ; if overflow\n\n   push bc                     ; save AC\n   push de\n   push hl\n   \n   call am48_dconst_1\n   call am48_dsub\n\n   jp am48_dpopret",
+          "b": "<gh_stars>100-1000\n\n; double expm1(double z)\n\nSECTION code_clib\nSECTION code_fp_math48\n\nPUBLIC am48_expm1\n\nEXTERN am48_exp, am48_dconst_1, am48_dsub, am48_dpopret\n\nam48_expm1:\n\n   ; determine exp(AC')-1\n   ;\n   ; enter : AC' = double z\n   ;\n   ; exit  : success\n   ;\n   ;            AC' = exp(z) - 1\n   ;            carry reset\n   ;\n   ;         fail if overflow\n   ;\n   ;            AC' = +inf\n   ;            carry set, errno set\n   ;\n   ; employs  : af, af', bc', de', hl'\n\n   call am48_exp\n   ret c                       ; if overflow\n\n   push bc                     ; save AC\n   push de\n   push hl\n   \n   call am48_dconst_1\n   call am48_dsub\n\n   jp am48_dpopret",
+          "c": "<gh_stars>100-1000\n\n; double expm1(double w)\n\nSECTION code_clib\nSECTION code_fp_math48\n\nPUBLIC am48_expm1\n\nEXTERN am48_exp, am48_dconst_1, am48_dsub, am48_dpopret\n\nam48_expm1:\n\n   ; evaluate exp(AC')-1\n   ;\n   ; enter : AC' = double w\n   ;\n   ; exit  : success\n   ;\n   ;            AC' = exp(w) - 1\n   ;            carry reset\n   ;\n   ;         fail if overflow\n   ;\n   ;            AC' = +inf\n   ;            carry set, errno set\n   ;\n   ; utilizes  : af, af', bc', de', hl'\n\n   call am48_exp\n   ret c                       ; if overflow\n\n   push bc                     ; save AC\n   push de\n   push hl\n   \n   call am48_dconst_1\n   call am48_dsub\n\n   jp am48_dpopret",
+          "d": "<gh_stars>100-1000\n\n; double expm1(double v)\n\nSECTION code_clib\nSECTION code_fp_math48\n\nPUBLIC am48_expm1\n\nEXTERN am48_exp, am48_dconst_1, am48_dsub, am48_dpopret\n\nam48_expm1:\n\n   ; find exp(AC')-1\n   ;\n   ; enter : AC' = double v\n   ;\n   ; exit  : success\n   ;\n   ;            AC' = exp(v) - 1\n   ;            carry reset\n   ;\n   ;         fail if overflow\n   ;\n   ;            AC' = +inf\n   ;            carry set, errno set\n   ;\n   ; employs  : af, af', bc', de', hl'\n\n   call am48_exp\n   ret c                       ; if overflow\n\n   push bc                     ; save AC\n   push de\n   push hl\n   \n   call am48_dconst_1\n   call am48_dsub\n\n   jp am48_dpopret"
+        },
+        "bdq_probs": {
+          "A": 0.004107814747840166,
+          "B": 0.004108545370399952,
+          "C": 0.01624666154384613,
+          "D": 0.050043653696775436,
+          "E": 0.8870368599891663
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.0038671724032610655,
+            "B": 0.004117281176149845,
+            "C": 0.015294895507395267,
+            "D": 0.05015042796730995,
+            "E": 0.8889304995536804
+          },
+          "B": {
+            "A": 0.0036547172348946333,
+            "B": 0.0038910782895982265,
+            "C": 0.014454636722803116,
+            "D": 0.05045195668935776,
+            "E": 0.8942756056785583
+          },
+          "C": {
+            "A": 0.004109563771635294,
+            "B": 0.004375367425382137,
+            "C": 0.016253573819994926,
+            "D": 0.050064947456121445,
+            "E": 0.8874146938323975
+          },
+          "D": {
+            "A": 0.004072380717843771,
+            "B": 0.004615364596247673,
+            "C": 0.01714531145989895,
+            "D": 0.056217681616544724,
+            "E": 0.8793864250183105
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.0038671724032610655,
+          "B": 0.0038910782895982265,
+          "C": 0.016253573819994926,
+          "D": 0.056217681616544724
+        },
+        "score": 0.0038671724032610655
+      },
+      {
+        "record_index": 6,
+        "sample_id": "91868",
+        "label": null,
+        "perturbations": {
+          "a": "<gh_stars>1-10  \nCODE    SECTION  \nASSUME\tCS:CODE,DS:CODE,ES:CODE,SS:CODE  \n\nPPIC_C  EQU 1EH   \nPPIC    EQU 1CH   \nPPIB    EQU 1AH  \nPPIA    EQU 18H  \n\nPPIC_C1\tEQU 1FH   \nPPIC1 \tEQU 1DH  \nPPIB1   EQU 1BH  \nPPIA1  \tEQU 19H  \n\nORG 1000H  \nMOV AL,10000000B  \nOUT PPIC_C,AL  \nOUT PPIC_C1,AL  \n\nMOV AL, 11111111B  \nOUT PPIC,AL  \nOUT PPIB,AL          \n\nOUT PPIA1,AL   \nMOV AL,11110000B  \nOUT PPIB1,AL  \nMOV AL,00000000B  \nOUT PPIC1,AL  \nSTART:  \n    MOV  BL,11111110B    \n    MOV  DL,11110001B    \n    MOV  SI,OFFSET DATA  \nL2:  \n    MOV  AL,BL  \n    OUT  PPIA,AL  \n    CALL TIMER  \n    STC  \n    ROL  BL,1  \n    JC   Le2  \n    JMP  L1\t\t\t  \nL1:  \n    MOV  BL,11111110B   \n    JMP  Le2  \nLe2:  \n    MOV  AL,DL  \n    OUT\t PPIB1,AL  \n    CALL TIMER  \n    SHL  DL,1  \n    TEST DL,00010000B  \n    JNZ  Le1  \n    OR   DL,11110000B  \n    JMP  Lf1\t\t\nLe1:\t\n    MOV\t DL,11110001B     \n    JMP  Lf1  \nLf1:  \n    MOV  BH,BYTE PTR CS:[SI]  \n    CMP\t BH,10010000B  \n    JE   Lf2   \n    MOV  AH,BH  \n    OUT\t PPIA1,AL  \n    CALL TIMER  \n    INC\t SI  \n    JMP\t L2\t\t\nLf2: \t\t\n    MOV\t AL,BH  \n    OUT\t PPIA1,AL  \n    MOV  SI,OFFSET DATA  \n    JMP  L2    \n    INT\t 3  \t\t\nTIMER:\t\n    MOV\t CX,0FFFFH    \nTIMER1:\t\n    NOP  \n    NOP  \n    NOP  \n    NOP  \n    NOP  \n    NOP  \n    LOOP TIMER1  \n    RET    \t\nDATA:  \n    DB 11000000B  \n    DB 11111001B  \n    DB 10100100B  \n    DB 10110000B  \n    DB 10011001B  \n    DB 10010010B  \n    DB 10000010B  \n    DB 11111000B  \n    DB 10000000B  \n    DB 10010000B  \n    DB 00000000B  \n \nCODE ENDS  \n    END",
+          "b": "<gh_stars>1-10  \nCODE    PART  \nASSUME\tCS:CODE,DS:CODE,ES:CODE,SS:CODE  \n\nPPIC_C  EQU 1EH   \nPPIC    EQU 1CH   \nPPIB    EQU 1AH  \nPPIA    EQU 18H  \n\nPPIC_C1\tEQU 1FH   \nPPIC1 \tEQU 1DH  \nPPIB1   EQU 1BH  \nPPIA1  \tEQU 19H  \n\nORG 1000H  \nMOV AL,10000000B  \nOUT PPIC_C,AL  \nOUT PPIC_C1,AL  \n\nMOV AL, 11111111B  \nOUT PPIC,AL  \nOUT PPIB,AL          \n\nOUT PPIA1,AL   \nMOV AL,11110000B  \nOUT PPIB1,AL  \nMOV AL,00000000B  \nOUT PPIC1,AL  \nSTART:  \n    MOV  BL,11111110B    \n    MOV  DL,11110001B    \n    MOV  SI,OFFSET DATA  \nL2:  \n    MOV  AL,BL  \n    OUT  PPIA,AL  \n    CALL TIMER  \n    STC  \n    ROL  BL,1  \n    JC   Le2  \n    JMP  L1\t\t\t  \nL1:  \n    MOV  BL,11111110B   \n    JMP  Le2  \nLe2:  \n    MOV  AL,DL  \n    OUT\t PPIB1,AL  \n    CALL TIMER  \n    SHL  DL,1  \n    TEST DL,00010000B  \n    JNZ  Le1  \n    OR   DL,11110000B  \n    JMP  Lf1\t\t\nLe1:\t\n    MOV\t DL,11110001B     \n    JMP  Lf1  \nLf1:  \n    MOV  BH,BYTE PTR CS:[SI]  \n    CMP\t BH,10010000B  \n    JE   Lf2   \n    MOV  AH,BH  \n    OUT\t PPIA1,AL  \n    CALL TIMER  \n    INC\t SI  \n    JMP\t L2\t\t\nLf2: \t\t\n    MOV\t AL,BH  \n    OUT\t PPIA1,AL  \n    MOV  SI,OFFSET DATA  \n    JMP  L2    \n    INT\t 3  \t\t\nTIMER:\t\n    MOV\t CX,0FFFFH    \nTIMER1:\t\n    NOP  \n    NOP  \n    NOP  \n    NOP  \n    NOP  \n    NOP  \n    LOOP TIMER1  \n    RET    \t\nDATA:  \n    DB 11000000B  \n    DB 11111001B  \n    DB 10100100B  \n    DB 10110000B  \n    DB 10011001B  \n    DB 10010010B  \n    DB 10000010B  \n    DB 11111000B  \n    DB 10000000B  \n    DB 10010000B  \n    DB 00000000B  \n\nCODE ENDS  \n    END",
+          "c": "<gh_stars>1-10  \nCODE    BLOCK  \nASSUME\tCS:CODE,DS:CODE,ES:CODE,SS:CODE  \n\nPPIC_C  EQU 1EH   \nPPIC    EQU 1CH   \nPPIB    EQU 1AH  \nPPIA    EQU 18H  \n\nPPIC_C1\tEQU 1FH   \nPPIC1 \tEQU 1DH  \nPPIB1   EQU 1BH  \nPPIA1  \tEQU 19H  \n\nORG 1000H  \nMOV AL,10000000B  \nOUT PPIC_C,AL  \nOUT PPIC_C1,AL  \n\nMOV AL, 11111111B  \nOUT PPIC,AL  \nOUT PPIB,AL          \n\nOUT PPIA1,AL   \nMOV AL,11110000B  \nOUT PPIB1,AL  \nMOV AL,00000000B  \nOUT PPIC1,AL  \nSTART:  \n    MOV  BL,11111110B    \n    MOV  DL,11110001B    \n    MOV  SI,OFFSET DATA  \nL2:  \n    MOV  AL,BL  \n    OUT  PPIA,AL  \n    CALL TIMER  \n    STC  \n    ROL  BL,1  \n    JC   Le2  \n    JMP  L1\t\t\t  \nL1:  \n    MOV  BL,11111110B   \n    JMP  Le2  \nLe2:  \n    MOV  AL,DL  \n    OUT\t PPIB1,AL  \n    CALL TIMER  \n    SHL  DL,1  \n    TEST DL,00010000B  \n    JNZ  Le1  \n    OR   DL,11110000B  \n    JMP  Lf1\t\t\nLe1:\t\n    MOV\t DL,11110001B     \n    JMP  Lf1  \nLf1:  \n    MOV  BH,BYTE PTR CS:[SI]  \n    CMP\t BH,10010000B  \n    JE   Lf2   \n    MOV  AH,BH  \n    OUT\t PPIA1,AL  \n    CALL TIMER  \n    INC\t SI  \n    JMP\t L2\t\t\nLf2: \t\t\n    MOV\t AL,BH  \n    OUT\t PPIA1,AL  \n    MOV  SI,OFFSET DATA  \n    JMP  L2    \n    INT\t 3  \t\t\nTIMER:\t\n    MOV\t CX,0FFFFH    \nTIMER1:\t\n    NOP  \n    NOP  \n    NOP  \n    NOP  \n    NOP  \n    NOP  \n    LOOP TIMER1  \n    RET    \t\nDATA:  \n    DB 11000000B  \n    DB 11111001B  \n    DB 10100100B  \n    DB 10110000B  \n    DB 10011001B  \n    DB 10010010B  \n    DB 10000010B  \n    DB 11111000B  \n    DB 10000000B  \n    DB 10010000B  \n    DB 00000000B  \n\nCODE ENDS  \n    END",
+          "d": "<gh_stars>1-10  \nCODE    UNIT  \nASSUME\tCS:CODE,DS:CODE,ES:CODE,SS:CODE  \n\nPPIC_C  EQU 1EH   \nPPIC    EQU 1CH   \nPPIB    EQU 1AH  \nPPIA    EQU 18H  \n\nPPIC_C1\tEQU 1FH   \nPPIC1 \tEQU 1DH  \nPPIB1   EQU 1BH  \nPPIA1  \tEQU 19H  \n\nORG 1000H  \nMOV AL,10000000B  \nOUT PPIC_C,AL  \nOUT PPIC_C1,AL  \n\nMOV AL, 11111111B  \nOUT PPIC,AL  \nOUT PPIB,AL          \n\nOUT PPIA1,AL   \nMOV AL,11110000B  \nOUT PPIB1,AL  \nMOV AL,00000000B  \nOUT PPIC1,AL  \nSTART:  \n    MOV  BL,11111110B    \n    MOV  DL,11110001B    \n    MOV  SI,OFFSET DATA  \nL2:  \n    MOV  AL,BL  \n    OUT  PPIA,AL  \n    CALL TIMER  \n    STC  \n    ROL  BL,1  \n    JC   Le2  \n    JMP  L1\t\t\t  \nL1:  \n    MOV  BL,11111110B   \n    JMP  Le2  \nLe2:  \n    MOV  AL,DL  \n    OUT\t PPIB1,AL  \n    CALL TIMER  \n    SHL  DL,1  \n    TEST DL,00010000B  \n    JNZ  Le1  \n    OR   DL,11110000B  \n    JMP  Lf1\t\t\nLe1:\t\n    MOV\t DL,11110001B     \n    JMP  Lf1  \nLf1:  \n    MOV  BH,BYTE PTR CS:[SI]  \n    CMP\t BH,10010000B  \n    JE   Lf2   \n    MOV  AH,BH  \n    OUT\t PPIA1,AL  \n    CALL TIMER  \n    INC\t SI  \n    JMP\t L2\t\t\nLf2: \t\t\n    MOV\t AL,BH  \n    OUT\t PPIA1,AL  \n    MOV  SI,OFFSET DATA  \n    JMP  L2    \n    INT\t 3  \t\t\nTIMER:\t\n    MOV\t CX,0FFFFH    \nTIMER1:\t\n    NOP  \n    NOP  \n    NOP  \n    NOP  \n    NOP  \n    NOP  \n    LOOP TIMER1  \n    RET    \t\nDATA:  \n    DB 11000000B  \n    DB 11111001B  \n    DB 10100100B  \n    DB 10110000B  \n    DB 10011001B  \n    DB 10010010B  \n    DB 10000010B  \n    DB 11111000B  \n    DB 10000000B  \n    DB 10010000B  \n    DB 00000000B  \n\nCODE ENDS  \n    END"
+        },
+        "bdq_probs": {
+          "A": 0.02913312055170536,
+          "B": 0.0330381877720356,
+          "C": 0.04803501442074776,
+          "D": 0.276427686214447,
+          "E": 0.04804166033864021
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.026851221919059753,
+            "B": 0.03910118713974953,
+            "C": 0.05016854777932167,
+            "D": 0.22483593225479126,
+            "E": 0.06442788243293762
+          },
+          "B": {
+            "A": 0.033963531255722046,
+            "B": 0.04364405572414398,
+            "C": 0.05599972978234291,
+            "D": 0.3222637474536896,
+            "E": 0.07191293686628342
+          },
+          "C": {
+            "A": 0.03255622833967209,
+            "B": 0.03692155331373215,
+            "C": 0.0418059304356575,
+            "D": 0.39664793014526367,
+            "E": 0.0536864772439003
+          },
+          "D": {
+            "A": 0.02709510549902916,
+            "B": 0.03073192946612835,
+            "C": 0.039427291601896286,
+            "D": 0.3740755617618561,
+            "E": 0.030709903687238693
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.026851221919059753,
+          "B": 0.04364405572414398,
+          "C": 0.0418059304356575,
+          "D": 0.3740755617618561
+        },
+        "score": 0.026851221919059753
+      },
+      {
+        "record_index": 7,
+        "sample_id": "91871",
+        "label": null,
+        "perturbations": {
+          "a": "<reponame>neoneye/loda-projects\n; A269527: a(n) = n^20 + n^15 + n^10 + n^5 + 1.\n; 1,5,1082401,3501192601,1100586419201,95397958987501,3656628685521505,79797014141614001,1152956690052710401,12157871353675866901,100001000010000100001,672754172206667010505,3833775399530967321601,19005014960911672392701,83668410993669614565601,332526110902432119900001,1208926972537233294229505,4064234269072640027537701,12748242963040265121012001,37589988638679119136887801,104857632768010240003200001,278218497569286811473941005,705429635566498619547944801,1716156097969863233832790801\n\npow $0,5\nseq $0,27445 ; a(n) = n^4 + n^3 + n^2 + n^1.\nadd $0,1",
+          "b": "<reponame>neoneye/loda-schemes\n; A269527: a(n) = n^20 + n^15 + n^10 + n^5 + 1.\n; 1,5,1082401,3501192601,1100586419201,95397958987501,3656628685521505,79797014141614001,1152956690052710401,12157871353675866901,100001000010000100001,672754172206667010505,3833775399530967321601,19005014960911672392701,83668410993669614565601,332526110902432119900001,1208926972537233294229505,4064234269072640027537701,12748242963040265121012001,37589988638679119136887801,104857632768010240003200001,278218497569286811473941005,705429635566498619547944801,1716156097969863233832790801\n\npow $0,5\nseq $0,27445 ; a(n) = n^4 + n^3 + n^2 + n^1.\nadd $0,1",
+          "c": "<reponame>neoneye/loda-programs\n; A269527: a(n) = n^20 + n^15 + n^10 + n^5 + 1.\n; 1,5,1082401,3501192601,1100586419201,95397958987501,3656628685521505,79797014141614001,1152956690052710401,12157871353675866901,100001000010000100001,672754172206667010505,3833775399530967321601,19005014960911672392701,83668410993669614565601,332526110902432119900001,1208926972537233294229505,4064234269072640027537701,12748242963040265121012001,37589988638679119136887801,104857632768010240003200001,278218497569286811473941005,705429635566498619547944801,1716156097969863233832790801\n\npow $0,5\nseq $0,27445 ; a(n) = n^4 + n^3 + n^2 + n^1.\nadd $0,1",
+          "d": "<reponame>neoneye/loda-programs\n; A269527: a(n) = n^20 + n^15 + n^10 + n^5 + 1.\n; 1,5,1082401,3501192601,1100586419201,95397958987501,3656628685521505,79797014141614001,1152956690052710401,12157871353675866901,100001000010000100001,672754172206667010505,3833775399530967321601,19005014960911672392701,83668410993669614565601,332526110902432119900001,1208926972537233294229505,4064234269072640027537701,12748242963040265121012001,37589988638679119136887801,104857632768010240003200001,278218497569286811473941005,705429635566498619547944801,1716156097969863233832790801\n\npow $0,5\nseq $0,27445 ; a(n) = n^4 + n^3 + n^2 + n^1.\nadd $0,1"
+        },
+        "bdq_probs": {
+          "A": 0.08695891499519348,
+          "B": 0.06773322075605392,
+          "C": 0.18409250676631927,
+          "D": 0.3897275924682617,
+          "E": 0.2363801896572113
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.06517278403043747,
+            "B": 0.044797297567129135,
+            "C": 0.15634173154830933,
+            "D": 0.37504762411117554,
+            "E": 0.330976277589798
+          },
+          "B": {
+            "A": 0.0692363977432251,
+            "B": 0.0611085407435894,
+            "C": 0.1660897433757782,
+            "D": 0.3984321653842926,
+            "E": 0.27383649349212646
+          },
+          "C": {
+            "A": 0.08695891499519348,
+            "B": 0.06773322075605392,
+            "C": 0.18409250676631927,
+            "D": 0.3897275924682617,
+            "E": 0.2363801896572113
+          },
+          "D": {
+            "A": 0.08695891499519348,
+            "B": 0.06773322075605392,
+            "C": 0.18409250676631927,
+            "D": 0.3897275924682617,
+            "E": 0.2363801896572113
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.06517278403043747,
+          "B": 0.0611085407435894,
+          "C": 0.18409250676631927,
+          "D": 0.3897275924682617
+        },
+        "score": 0.0611085407435894
+      },
+      {
+        "record_index": 8,
+        "sample_id": "91874",
+        "label": null,
+        "perturbations": {
+          "a": "<filename>data/pokemon/base_stats/gyarados.asm  \n\tdb 0 ; species ID placeholder  \n\n\tdb  95, 125,  79,  81,  60, 100  \n\t;   hp  atk  def  spd  sat  sdf  \n\n\tdb WATER, FLYING ; type  \n\tdb 45 ; catch rate  \n\tdb 214 ; base exp  \n\tdb NO_ITEM, NO_ITEM ; items  \n\tdb GENDER_F50 ; gender ratio  \n\tdb 5 ; step cycles to hatch  \n\tINCBIN \"gfx/pokemon/gyarados/front.dimensions\"  \n\tdb GROWTH_SLOW ; growth rate  \n\tdn EGG_WATER_2, EGG_DRAGON ; egg groups  \n\tdb 70 ; happiness  \n\n\t; tm/hm learnset  \n\ttmhm WATER_PULSE, ROAR, TOXIC, HAIL, HIDDEN_POWER, TAUNT, ICE_BEAM, BLIZZARD, HYPER_BEAM, PROTECT, RAIN_DANCE, FRUSTRATION, THUNDERBOLT, THUNDER, EARTHQUAKE, RETURN, DOUBLE_TEAM, FLAMETHROWER, SANDSTORM, FIRE_BLAST, TORMENT, FACADE, SECRET_POWER, REST, ATTRACT, BRINE, ENDURE, DRAGON_PULSE, PAYBACK, GIGA_IMPACT, STONE_EDGE, AVALANCHE, THUNDER_WAVE, CAPTIVATE, DARK_PULSE, SLEEP_TALK, NATURAL_GIFT, SWAGGER, SUBSTITUTE, SURF, STRENGTH, ROCK_SMASH, WATERFALL, AQUA_TAIL, BOUNCE, DIVE, ICY_WIND, IRON_HEAD, OUTRAGE, SNORE, SPITE, TWISTER, UPROAR  \n\t; end",
+          "b": "<filename>data/pokemon/base_stats/gyarados.asm  \n\tdb 0 ; species ID placeholder  \n\n\tdb  95, 125,  79,  81,  60, 100  \n\t;   hp  atk  def  spd  sat  sdf  \n\n\tdb WATER, FLYING ; type  \n\tdb 45 ; catch rate  \n\tdb 214 ; base exp  \n\tdb NO_ITEM, NO_ITEM ; products  \n\tdb GENDER_F50 ; gender ratio  \n\tdb 5 ; step cycles to hatch  \n\tINCBIN \"gfx/pokemon/gyarados/front.dimensions\"  \n\tdb GROWTH_SLOW ; growth rate  \n\tdn EGG_WATER_2, EGG_DRAGON ; egg groups  \n\tdb 70 ; joy  \n\n\t; tm/hm learnset  \n\ttmhm WATER_PULSE, ROAR, TOXIC, HAIL, HIDDEN_POWER, TAUNT, ICE_BEAM, BLIZZARD, HYPER_BEAM, PROTECT, RAIN_DANCE, FRUSTRATION, THUNDERBOLT, THUNDER, EARTHQUAKE, RETURN, DOUBLE_TEAM, FLAMETHROWER, SANDSTORM, FIRE_BLAST, TORMENT, FACADE, SECRET_POWER, REST, ATTRACT, BRINE, ENDURE, DRAGON_PULSE, PAYBACK, GIGA_IMPACT, STONE_EDGE, AVALANCHE, THUNDER_WAVE, CAPTIVATE, DARK_PULSE, SLEEP_TALK, NATURAL_GIFT, SWAGGER, SUBSTITUTE, SURF, STRENGTH, ROCK_SMASH, WATERFALL, AQUA_TAIL, BOUNCE, DIVE, ICY_WIND, IRON_HEAD, OUTRAGE, SNORE, SPITE, TWISTER, UPROAR  \n\t; end",
+          "c": "<filename>data/pokemon/base_stats/gyarados.asm  \n\tdb 0 ; species ID placeholder  \n\n\tdb  95, 125,  79,  81,  60, 100  \n\t;   hp  atk  def  spd  sat  sdf  \n\n\tdb WATER, FLYING ; category  \n\tdb 45 ; catch rate  \n\tdb 214 ; base exp  \n\tdb NO_ITEM, NO_ITEM ; belongings  \n\tdb GENDER_F50 ; gender ratio  \n\tdb 5 ; step cycles to hatch  \n\tINCBIN \"gfx/pokemon/gyarados/front.dimensions\"  \n\tdb GROWTH_SLOW ; growth rate  \n\tdn EGG_WATER_2, EGG_DRAGON ; egg groups  \n\tdb 70 ; contentment  \n\n\t; tm/hm learnset  \n\ttmhm WATER_PULSE, ROAR, TOXIC, HAIL, HIDDEN_POWER, TAUNT, ICE_BEAM, BLIZZARD, HYPER_BEAM, PROTECT, RAIN_DANCE, FRUSTRATION, THUNDERBOLT, THUNDER, EARTHQUAKE, RETURN, DOUBLE_TEAM, FLAMETHROWER, SANDSTORM, FIRE_BLAST, TORMENT, FACADE, SECRET_POWER, REST, ATTRACT, BRINE, ENDURE, DRAGON_PULSE, PAYBACK, GIGA_IMPACT, STONE_EDGE, AVALANCHE, THUNDER_WAVE, CAPTIVATE, DARK_PULSE, SLEEP_TALK, NATURAL_GIFT, SWAGGER, SUBSTITUTE, SURF, STRENGTH, ROCK_SMASH, WATERFALL, AQUA_TAIL, BOUNCE, DIVE, ICY_WIND, IRON_HEAD, OUTRAGE, SNORE, SPITE, TWISTER, UPROAR  \n\t; end",
+          "d": "<filename>data/pokemon/base_stats/gyarados.asm  \n\tdb 0 ; species ID placeholder  \n\n\tdb  95, 125,  79,  81,  60, 100  \n\t;   hp  atk  def  spd  sat  sdf  \n\n\tdb WATER, FLYING ; type  \n\tdb 45 ; catch rate  \n\tdb 214 ; base exp  \n\tdb NO_ITEM, NO_ITEM ; goods  \n\tdb GENDER_F50 ; gender ratio  \n\tdb 5 ; step cycles to hatch  \n\tINCBIN \"gfx/pokemon/gyarados/front.dimensions\"  \n\tdb GROWTH_SLOW ; growth rate  \n\tdn EGG_WATER_2, EGG_DRAGON ; egg groups  \n\tdb 70 ; affection  \n\n\t; tm/hm learnset  \n\ttmhm WATER_PULSE, ROAR, TOXIC, HAIL, HIDDEN_POWER, TAUNT, ICE_BEAM, BLIZZARD, HYPER_BEAM, PROTECT, RAIN_DANCE, FRUSTRATION, THUNDERBOLT, THUNDER, EARTHQUAKE, RETURN, DOUBLE_TEAM, FLAMETHROWER, SANDSTORM, FIRE_BLAST, TORMENT, FACADE, SECRET_POWER, REST, ATTRACT, BRINE, ENDURE, DRAGON_PULSE, PAYBACK, GIGA_IMPACT, STONE_EDGE, AVALANCHE, THUNDER_WAVE, CAPTIVATE, DARK_PULSE, SLEEP_TALK, NATURAL_GIFT, SWAGGER, SUBSTITUTE, SURF, STRENGTH, ROCK_SMASH, WATERFALL, AQUA_TAIL, BOUNCE, DIVE, ICY_WIND, IRON_HEAD, OUTRAGE, SNORE, SPITE, TWISTER, UPROAR  \n\t; end"
+        },
+        "bdq_probs": {
+          "A": 0.09820477664470673,
+          "B": 0.06750407814979553,
+          "C": 0.06749562174081802,
+          "D": 0.2669524550437927,
+          "E": 0.3025011122226715
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.08918604999780655,
+            "B": 0.069467693567276,
+            "C": 0.06945840269327164,
+            "D": 0.27471673488616943,
+            "E": 0.3112994134426117
+          },
+          "B": {
+            "A": 0.08839355409145355,
+            "B": 0.068852499127388,
+            "C": 0.07800755649805069,
+            "D": 0.2722766101360321,
+            "E": 0.34961557388305664
+          },
+          "C": {
+            "A": 0.08340667188167572,
+            "B": 0.06496518850326538,
+            "C": 0.09451255202293396,
+            "D": 0.3298839032649994,
+            "E": 0.29112640023231506
+          },
+          "D": {
+            "A": 0.09526845067739487,
+            "B": 0.06548547744750977,
+            "C": 0.09526889026165009,
+            "D": 0.33252301812171936,
+            "E": 0.29345422983169556
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.08918604999780655,
+          "B": 0.068852499127388,
+          "C": 0.09451255202293396,
+          "D": 0.33252301812171936
+        },
+        "score": 0.068852499127388
+      },
+      {
+        "record_index": 9,
+        "sample_id": "91875",
+        "label": null,
+        "perturbations": {
+          "a": "COMMENT @----------------------------------------------------------------------\n\n\tCopyright (c) GeoWorks 1988 -- All Rights Preserved\n\nPROJECT:\tPC GEOS\nMODULE:\t\tCommonUI/CSpec\nFILE:\t\tcspecAppDocumentControl.asm\n\nROUTINES:\n\tName\t\t\tDescription\n\t----\t\t\t-----------\n   GLB\tOLBuildAppDocumentControl Transform a generic document control to the OL\n\t\t\t\tcorresponding\n\nREVISION HISTORY:\n\tName\tDate\t\tDescription\n\t----\t----\t\t-----------\n\tTony\t1/90\t\tOriginal version\n\nDESCRIPTION:\n\tThis file encompasses routines to manage the Open Look execution\nof a generic document control.\n\n\t$Id: cspecAppDocumentControl.asm,v 1.1 97/04/07 10:50:58 newdeal Exp $\n\n------------------------------------------------------------------------------@\n\nDocInit segment resource\n\n\f\nCOMMENT @----------------------------------------------------------------------\n\nFUNCTION:\tOLBuildAppDocumentControl\n\nDESCRIPTION:\tReturn the particular UI class for a GenDocumentGroup\n\nCALLED BY:\tGLOBAL\n\nPASS:\n\t*ds:si - instance data\n\tax - MSG_META_RESOLVE_VARIANT_SUPERCLASS\n\tcx, dx, bp - ?\n\nRETURN:\n\tcx:dx - class (cx = 0 for no adjustment)\n\nDESTROYED:\n\tax, bx, si, di, bp, ds, es\n\nREGISTER/STACK USAGE:\n\nPSEUDO CODE/STRATEGY:\n\nKNOWN BUGS/SIDE EFFECTS/CAVEATS/IDEAS:\n\nREVISION HISTORY:\n\tName\tDate\t\tDescription\n\t----\t----\t\t-----------\n\tTony\t2/89\t\tOriginal version\n\n------------------------------------------------------------------------------@\n\f\nOLBuildAppDocumentControl\tproc\tfar\n\n\t; Always modify to OLDocumentGroupClass\n\n\tmov\tdx, offset OLDocumentGroupClass\n\tmov\tcx, segment OLDocumentGroupClass\n\tret\n\nOLBuildAppDocumentControl\tendp\n\n\nDocInit ends",
+          "b": "COMMENT @----------------------------------------------------------------------\n\n\tCopyright (c) GeoWorks 1988 -- All Rights Secured\n\nPROJECT:\tPC GEOS\nMODULE:\t\tCommonUI/CSpec\nFILE:\t\tcspecAppDocumentControl.asm\n\nROUTINES:\n\tName\t\t\tDescription\n\t----\t\t\t-----------\n   GLB\tOLBuildAppDocumentControl Change a generic document control to the OL\n\t\t\t\tsimilar\n\nREVISION HISTORY:\n\tName\tDate\t\tDescription\n\t----\t----\t\t-----------\n\tTony\t1/90\t\tFirst version\n\nDESCRIPTION:\n\tThis file possesses routines to oversee the Open Look implementation\nof a generic document control.\n\n\t$Id: cspecAppDocumentControl.asm,v 1.1 97/04/07 10:50:58 newdeal Exp $\n\n------------------------------------------------------------------------------@\n\nDocInit segment resource\n\n\f\nCOMMENT @----------------------------------------------------------------------\n\nFUNCTION:\tOLBuildAppDocumentControl\n\nDESCRIPTION:\tReturn the definitive UI class for a GenDocumentGroup\n\nCALLED BY:\tGLOBAL\n\nPASS:\n\t*ds:si - instance data\n\tax - MSG_META_RESOLVE_VARIANT_SUPERCLASS\n\tcx, dx, bp - ?\n\nRETURN:\n\tcx:dx - class (cx = 0 for no transformation)\n\nDESTROYED:\n\tax, bx, si, di, bp, ds, es\n\nREGISTER/STACK USAGE:\n\nPSEUDO CODE/STRATEGY:\n\nKNOWN BUGS/SIDE EFFECTS/CAVEATS/IDEAS:\n\nREVISION HISTORY:\n\tName\tDate\t\tDescription\n\t----\t----\t\t-----------\n\tTony\t2/89\t\tFirst version\n\n------------------------------------------------------------------------------@\n\f\nOLBuildAppDocumentControl\tproc\tfar\n\n\t; Always rearrange to OLDocumentGroupClass\n\n\tmov\tdx, offset OLDocumentGroupClass\n\tmov\tcx, segment OLDocumentGroupClass\n\tret\n\nOLBuildAppDocumentControl\tendp\n\n\nDocInit ends",
+          "c": "COMMENT @----------------------------------------------------------------------\n\n\tCopyright (c) GeoWorks 1988 -- All Rights Maintained\n\nPROJECT:\tPC GEOS\nMODULE:\t\tCommonUI/CSpec\nFILE:\t\tcspecAppDocumentControl.asm\n\nROUTINES:\n\tName\t\t\tDescription\n\t----\t\t\t-----------\n   GLB\tOLBuildAppDocumentControl Adapt a generic document control to the OL\n\t\t\t\talternative\n\nREVISION HISTORY:\n\tName\tDate\t\tDescription\n\t----\t----\t\t-----------\n\tTony\t1/90\t\tBeginning version\n\nDESCRIPTION:\n\tThis file encompasses routines to guide the Open Look realization\nof a generic document control.\n\n\t$Id: cspecAppDocumentControl.asm,v 1.1 97/04/07 10:50:58 newdeal Exp $\n\n------------------------------------------------------------------------------@\n\nDocInit segment resource\n\n\f\nCOMMENT @----------------------------------------------------------------------\n\nFUNCTION:\tOLBuildAppDocumentControl\n\nDESCRIPTION:\tReturn the distinct UI class for a GenDocumentGroup\n\nCALLED BY:\tGLOBAL\n\nPASS:\n\t*ds:si - instance data\n\tax - MSG_META_RESOLVE_VARIANT_SUPERCLASS\n\tcx, dx, bp - ?\n\nRETURN:\n\tcx:dx - class (cx = 0 for no conversion)\n\nDESTROYED:\n\tax, bx, si, di, bp, ds, es\n\nREGISTER/STACK USAGE:\n\nPSEUDO CODE/STRATEGY:\n\nKNOWN BUGS/SIDE EFFECTS/CAVEATS/IDEAS:\n\nREVISION HISTORY:\n\tName\tDate\t\tDescription\n\t----\t----\t\t-----------\n\tTony\t2/89\t\tBeginning version\n\n------------------------------------------------------------------------------@\n\f\nOLBuildAppDocumentControl\tproc\tfar\n\n\t; Always transform to OLDocumentGroupClass\n\n\tmov\tdx, offset OLDocumentGroupClass\n\tmov\tcx, segment OLDocumentGroupClass\n\tret\n\nOLBuildAppDocumentControl\tendp\n\n\nDocInit ends",
+          "d": "COMMENT @----------------------------------------------------------------------\n\n\tCopyright (c) GeoWorks 1988 -- All Rights Reserved\n\nPROJECT:\tPC GEOS\nMODULE:\t\tCommonUI/CSpec\nFILE:\t\tcspecAppDocumentControl.asm\n\nROUTINES:\n\tName\t\t\tDescription\n\t----\t\t\t-----------\n   GLB\tOLBuildAppDocumentControl Convert a generic document control to the OL\n\t\t\t\tanalogous\n\nREVISION HISTORY:\n\tName\tDate\t\tDescription\n\t----\t----\t\t-----------\n\tTony\t1/90\t\tInitial version\n\nDESCRIPTION:\n\tThis file retains routines to steer the Open Look deployment\nof a generic document control.\n\n\t$Id: cspecAppDocumentControl.asm,v 1.1 97/04/07 10:50:58 newdeal Exp $\n\n------------------------------------------------------------------------------@\n\nDocInit segment resource\n\n\f\nCOMMENT @----------------------------------------------------------------------\n\nFUNCTION:\tOLBuildAppDocumentControl\n\nDESCRIPTION:\tReturn the exact UI class for a GenDocumentGroup\n\nCALLED BY:\tGLOBAL\n\nPASS:\n\t*ds:si - instance data\n\tax - MSG_META_RESOLVE_VARIANT_SUPERCLASS\n\tcx, dx, bp - ?\n\nRETURN:\n\tcx:dx - class (cx = 0 for no alteration)\n\nDESTROYED:\n\tax, bx, si, di, bp, ds, es\n\nREGISTER/STACK USAGE:\n\nPSEUDO CODE/STRATEGY:\n\nKNOWN BUGS/SIDE EFFECTS/CAVEATS/IDEAS:\n\nREVISION HISTORY:\n\tName\tDate\t\tDescription\n\t----\t----\t\t-----------\n\tTony\t2/89\t\tInitial version\n\n------------------------------------------------------------------------------@\n\f\nOLBuildAppDocumentControl\tproc\tfar\n\n\t; Always convert to OLDocumentGroupClass\n\n\tmov\tdx, offset OLDocumentGroupClass\n\tmov\tcx, segment OLDocumentGroupClass\n\tret\n\nOLBuildAppDocumentControl\tendp\n\n\nDocInit ends"
+        },
+        "bdq_probs": {
+          "A": 0.07381667196750641,
+          "B": 0.05750420317053795,
+          "C": 0.050735071301460266,
+          "D": 0.29196202754974365,
+          "E": 0.37488853931427
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.05332944169640541,
+            "B": 0.05334779992699623,
+            "C": 0.05333159863948822,
+            "D": 0.1861514151096344,
+            "E": 0.44655221700668335
+          },
+          "B": {
+            "A": 0.07235848158597946,
+            "B": 0.06387536972761154,
+            "C": 0.049733445048332214,
+            "D": 0.3243034780025482,
+            "E": 0.32430583238601685
+          },
+          "C": {
+            "A": 0.07197308540344238,
+            "B": 0.0719875618815422,
+            "C": 0.04946792125701904,
+            "D": 0.32257065176963806,
+            "E": 0.3225715160369873
+          },
+          "D": {
+            "A": 0.0730859637260437,
+            "B": 0.05025208368897438,
+            "C": 0.05692305415868759,
+            "D": 0.17534273862838745,
+            "E": 0.3275708854198456
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.05332944169640541,
+          "B": 0.06387536972761154,
+          "C": 0.04946792125701904,
+          "D": 0.17534273862838745
+        },
+        "score": 0.04946792125701904
+      },
+      {
+        "record_index": 11,
+        "sample_id": "91884",
+        "label": null,
+        "perturbations": {
+          "a": "<gh_stars>1-10\n.global s_prepare_buffers\ns_prepare_buffers:\nret\n\n    .global s_faulty_load\ns_faulty_load:\npush %r13\npush %r9\npush %rbx\npush %rcx\npush %rdi\npush %rdx\npush %rsi\n\n// Store\nlea addresses_WC+0x18ff7, %r13\nnop\nnop\nnop\nadd $43014, %rdx\nmov $0x5152535455565758, %rcx\nmovq %rcx, %xmm4\nvmovntdq %ymm4, (%r13)\ncmp $211, %r13\n\n// Load\nlea addresses_WT+0x16777, %r13\nnop\nnop\nnop\nsub %rbx, %rbx\nmovb (%r13), %r9b\nnop\nnop\nnop\nsub %r9, %r9\n\n// Store\nlea addresses_RW+0x1e517, %rdx\nnop\nnop\nnop\nnop\ncmp %r13, %r13\nmov $0x5152535455565758, %rdi\nmovq %rdi, (%rdx)\nnop\nnop\nnop\ncmp $9766, %rcx\n\n// Store\nlea addresses_WC+0x16f7, %rbx\ncmp $10418, %rsi\nmovl $0x51525354, (%rbx)\nnop\nnop\nnop\nnop\nnop\nsub $47302, %rcx\n\n// Store\nlea addresses_WC+0x1eda7, %rcx\nnop\nnop\nnop\nnop\ncmp $20965, %rsi\nmovw $0x5152, (%rcx)\nnop\nsub %r13, %r13\n\n// Faulty Load\nmov $0x706a4d00000007f7, %rbx\nnop\nand %r9, %r9\nvmovaps (%rbx), %ymm7\nvextracti128 $0, %ymm7, %xmm7\nvpextrq $1, %xmm7, %rdx\nlea oracles, %rdi\nand $0xff, %rdx\nshlq $12, %rdx\nmov (%rdi,%rdx,1), %rdx\npop %rsi\npop %rdx\npop %rdi\npop %rcx\npop %rbx\npop %r9\npop %r13\nret\n\n/*\n<gen_faulty_load>\n[REF]\n{'OP': 'LOAD', 'src': {'same': False, 'type': 'addresses_NC', 'NT': False, 'AVXalign': False, 'size': 4, 'congruent': 0}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_WC', 'NT': True, 'AVXalign': False, 'size': 32, 'congruent': 8}}\n{'OP': 'LOAD', 'src': {'same': False, 'type': 'addresses_WT', 'NT': False, 'AVXalign': False, 'size': 1, 'congruent': 4}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_RW', 'NT': False, 'AVXalign': True, 'size': 8, 'congruent': 5}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_WC', 'NT': False, 'AVXalign': False, 'size': 4, 'congruent': 6}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_WC', 'NT': False, 'AVXalign': True, 'size': 2, 'congruent': 4}}\n[Faulty Load]\n{'OP': 'LOAD', 'src': {'same': True, 'type': 'addresses_NC', 'NT': True, 'AVXalign': True, 'size': 32, 'congruent': 0}}\n<gen_prepare_buffer>\n{'00': 5}\n00 00 00 00 00\n*/",
+          "b": "<gh_stars>1-10\n.global s_prepare_buffers\ns_prepare_buffers:\nret\n\n    .global s_faulty_load\ns_faulty_load:\npush %r13\npush %r9\npush %rbx\npush %rcx\npush %rdi\npush %rdx\npush %rsi\n\n// Store\nlea addresses_WC+0x18ff7, %r13\nnop\nnop\nnop\nadd $43014, %rdx\nmov $0x5152535455565758, %rcx\nmovq %rcx, %xmm4\nvmovntdq %ymm4, (%r13)\ncmp $211, %r13\n\n// Load\nlea addresses_WT+0x16777, %r13\nnop\nnop\nnop\nsub %rbx, %rbx\nmovb (%r13), %r9b\nnop\nnop\nnop\nsub %r9, %r9\n\n// Store\nlea addresses_RW+0x1e517, %rdx\nnop\nnop\nnop\nnop\ncmp %r13, %r13\nmov $0x5152535455565758, %rdi\nmovq %rdi, (%rdx)\nnop\nnop\nnop\ncmp $9766, %rcx\n\n// Store\nlea addresses_WC+0x16f7, %rbx\ncmp $10418, %rsi\nmovl $0x51525354, (%rbx)\nnop\nnop\nnop\nnop\nnop\nsub $47302, %rcx\n\n// Store\nlea addresses_WC+0x1eda7, %rcx\nnop\nnop\nnop\nnop\ncmp $20965, %rsi\nmovw $0x5152, (%rcx)\nnop\nsub %r13, %r13\n\n// Faulty Load\nmov $0x706a4d00000007f7, %rbx\nnop\nand %r9, %r9\nvmovaps (%rbx), %ymm7\nvextracti128 $0, %ymm7, %xmm7\nvpextrq $1, %xmm7, %rdx\nlea oracles, %rdi\nand $0xff, %rdx\nshlq $12, %rdx\nmov (%rdi,%rdx,1), %rdx\npop %rsi\npop %rdx\npop %rdi\npop %rcx\npop %rbx\npop %r9\npop %r13\nret\n\n/*\n<gen_faulty_load>\n[REF]\n{'OP': 'LOAD', 'src': {'same': False, 'type': 'addresses_NC', 'NT': False, 'AVXalign': False, 'size': 4, 'congruent': 0}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_WC', 'NT': True, 'AVXalign': False, 'size': 32, 'congruent': 8}}\n{'OP': 'LOAD', 'src': {'same': False, 'type': 'addresses_WT', 'NT': False, 'AVXalign': False, 'size': 1, 'congruent': 4}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_RW', 'NT': False, 'AVXalign': True, 'size': 8, 'congruent': 5}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_WC', 'NT': False, 'AVXalign': False, 'size': 4, 'congruent': 6}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_WC', 'NT': False, 'AVXalign': True, 'size': 2, 'congruent': 4}}\n[Faulty Load]\n{'OP': 'LOAD', 'src': {'same': True, 'type': 'addresses_NC', 'NT': True, 'AVXalign': True, 'size': 32, 'congruent': 0}}\n<gen_prepare_buffer>\n{'00': 5}\n00 00 00 00 00\n*/",
+          "c": "<gh_stars>1-10\n.global s_prepare_buffers\ns_prepare_buffers:\nret\n\n    .global s_faulty_load\ns_faulty_load:\npush %r13\npush %r9\npush %rbx\npush %rcx\npush %rdi\npush %rdx\npush %rsi\n\n// Store\nlea addresses_WC+0x18ff7, %r13\nnop\nnop\nnop\nadd $43014, %rdx\nmov $0x5152535455565758, %rcx\nmovq %rcx, %xmm4\nvmovntdq %ymm4, (%r13)\ncmp $211, %r13\n\n// Load\nlea addresses_WT+0x16777, %r13\nnop\nnop\nnop\nsub %rbx, %rbx\nmovb (%r13), %r9b\nnop\nnop\nnop\nsub %r9, %r9\n\n// Store\nlea addresses_RW+0x1e517, %rdx\nnop\nnop\nnop\nnop\ncmp %r13, %r13\nmov $0x5152535455565758, %rdi\nmovq %rdi, (%rdx)\nnop\nnop\nnop\ncmp $9766, %rcx\n\n// Store\nlea addresses_WC+0x16f7, %rbx\ncmp $10418, %rsi\nmovl $0x51525354, (%rbx)\nnop\nnop\nnop\nnop\nnop\nsub $47302, %rcx\n\n// Store\nlea addresses_WC+0x1eda7, %rcx\nnop\nnop\nnop\nnop\ncmp $20965, %rsi\nmovw $0x5152, (%rcx)\nnop\nsub %r13, %r13\n\n// Faulty Load\nmov $0x706a4d00000007f7, %rbx\nnop\nand %r9, %r9\nvmovaps (%rbx), %ymm7\nvextracti128 $0, %ymm7, %xmm7\nvpextrq $1, %xmm7, %rdx\nlea oracles, %rdi\nand $0xff, %rdx\nshlq $12, %rdx\nmov (%rdi,%rdx,1), %rdx\npop %rsi\npop %rdx\npop %rdi\npop %rcx\npop %rbx\npop %r9\npop %r13\nret\n\n/*\n<gen_faulty_load>\n[REF]\n{'OP': 'LOAD', 'src': {'same': False, 'type': 'addresses_NC', 'NT': False, 'AVXalign': False, 'size': 4, 'congruent': 0}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_WC', 'NT': True, 'AVXalign': False, 'size': 32, 'congruent': 8}}\n{'OP': 'LOAD', 'src': {'same': False, 'type': 'addresses_WT', 'NT': False, 'AVXalign': False, 'size': 1, 'congruent': 4}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_RW', 'NT': False, 'AVXalign': True, 'size': 8, 'congruent': 5}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_WC', 'NT': False, 'AVXalign': False, 'size': 4, 'congruent': 6}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_WC', 'NT': False, 'AVXalign': True, 'size': 2, 'congruent': 4}}\n[Faulty Load]\n{'OP': 'LOAD', 'src': {'same': True, 'type': 'addresses_NC', 'NT': True, 'AVXalign': True, 'size': 32, 'congruent': 0}}\n<gen_prepare_buffer>\n{'00': 5}\n00 00 00 00 00\n*/",
+          "d": "<gh_stars>1-10\n.global s_prepare_buffers\ns_prepare_buffers:\nret\n\n    .global s_faulty_load\ns_faulty_load:\npush %r13\npush %r9\npush %rbx\npush %rcx\npush %rdi\npush %rdx\npush %rsi\n\n// Store\nlea addresses_WC+0x18ff7, %r13\nnop\nnop\nnop\nadd $43014, %rdx\nmov $0x5152535455565758, %rcx\nmovq %rcx, %xmm4\nvmovntdq %ymm4, (%r13)\ncmp $211, %r13\n\n// Load\nlea addresses_WT+0x16777, %r13\nnop\nnop\nnop\nsub %rbx, %rbx\nmovb (%r13), %r9b\nnop\nnop\nnop\nsub %r9, %r9\n\n// Store\nlea addresses_RW+0x1e517, %rdx\nnop\nnop\nnop\nnop\ncmp %r13, %r13\nmov $0x5152535455565758, %rdi\nmovq %rdi, (%rdx)\nnop\nnop\nnop\ncmp $9766, %rcx\n\n// Store\nlea addresses_WC+0x16f7, %rbx\ncmp $10418, %rsi\nmovl $0x51525354, (%rbx)\nnop\nnop\nnop\nnop\nnop\nsub $47302, %rcx\n\n// Store\nlea addresses_WC+0x1eda7, %rcx\nnop\nnop\nnop\nnop\ncmp $20965, %rsi\nmovw $0x5152, (%rcx)\nnop\nsub %r13, %r13\n\n// Faulty Load\nmov $0x706a4d00000007f7, %rbx\nnop\nand %r9, %r9\nvmovaps (%rbx), %ymm7\nvextracti128 $0, %ymm7, %xmm7\nvpextrq $1, %xmm7, %rdx\nlea oracles, %rdi\nand $0xff, %rdx\nshlq $12, %rdx\nmov (%rdi,%rdx,1), %rdx\npop %rsi\npop %rdx\npop %rdi\npop %rcx\npop %rbx\npop %r9\npop %r13\nret\n\n/*\n<gen_faulty_load>\n[REF]\n{'OP': 'LOAD', 'src': {'same': False, 'type': 'addresses_NC', 'NT': False, 'AVXalign': False, 'size': 4, 'congruent': 0}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_WC', 'NT': True, 'AVXalign': False, 'size': 32, 'congruent': 8}}\n{'OP': 'LOAD', 'src': {'same': False, 'type': 'addresses_WT', 'NT': False, 'AVXalign': False, 'size': 1, 'congruent': 4}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_RW', 'NT': False, 'AVXalign': True, 'size': 8, 'congruent': 5}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_WC', 'NT': False, 'AVXalign': False, 'size': 4, 'congruent': 6}}\n{'OP': 'STOR', 'dst': {'same': False, 'type': 'addresses_WC', 'NT': False, 'AVXalign': True, 'size': 2, 'congruent': 4}}\n[Faulty Load]\n{'OP': 'LOAD', 'src': {'same': True, 'type': 'addresses_NC', 'NT': True, 'AVXalign': True, 'size': 32, 'congruent': 0}}\n<gen_prepare_buffer>\n{'00': 5}\n00 00 00 00 00\n*/"
+        },
+        "bdq_probs": {
+          "A": 0.006703262683004141,
+          "B": 0.05277638137340546,
+          "C": 0.005917784292250872,
+          "D": 0.12650182843208313,
+          "E": 0.011057120747864246
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.006703262683004141,
+            "B": 0.05277638137340546,
+            "C": 0.005917784292250872,
+            "D": 0.12650182843208313,
+            "E": 0.011057120747864246
+          },
+          "B": {
+            "A": 0.006703262683004141,
+            "B": 0.05277638137340546,
+            "C": 0.005917784292250872,
+            "D": 0.12650182843208313,
+            "E": 0.011057120747864246
+          },
+          "C": {
+            "A": 0.006703262683004141,
+            "B": 0.05277638137340546,
+            "C": 0.005917784292250872,
+            "D": 0.12650182843208313,
+            "E": 0.011057120747864246
+          },
+          "D": {
+            "A": 0.006703262683004141,
+            "B": 0.05277638137340546,
+            "C": 0.005917784292250872,
+            "D": 0.12650182843208313,
+            "E": 0.011057120747864246
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.006703262683004141,
+          "B": 0.05277638137340546,
+          "C": 0.005917784292250872,
+          "D": 0.12650182843208313
+        },
+        "score": 0.005917784292250872
+      },
+      {
+        "record_index": 12,
+        "sample_id": "91885",
+        "label": null,
+        "perturbations": {
+          "a": "Tiny C+ Extended Library Functions",
+          "b": "Split 2 32 bit digits",
+          "c": "Hopefully this function does operate!",
+          "d": "I believe the usage of ix is inescapable in this scenario..unless you are aware otherwise!"
+        },
+        "bdq_probs": {
+          "A": 0.007919933646917343,
+          "B": 0.02152884192764759,
+          "C": 0.016766494140028954,
+          "D": 0.02764330431818962,
+          "E": 0.9154183864593506
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.021097781136631966,
+            "B": 0.17665758728981018,
+            "C": 0.057349905371665955,
+            "D": 0.25702449679374695,
+            "E": 0.48018401861190796
+          },
+          "B": {
+            "A": 0.035496849566698074,
+            "B": 0.07514868676662445,
+            "C": 0.12389644980430603,
+            "D": 0.20427070558071136,
+            "E": 0.5552644729614258
+          },
+          "C": {
+            "A": 0.014603003859519958,
+            "B": 0.039695847779512405,
+            "C": 0.024076314643025398,
+            "D": 0.2933097779750824,
+            "E": 0.6209352612495422
+          },
+          "D": {
+            "A": 0.005595874041318893,
+            "B": 0.019532307982444763,
+            "C": 0.01723651960492134,
+            "D": 0.009226086549460888,
+            "E": 0.9410806894302368
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.021097781136631966,
+          "B": 0.07514868676662445,
+          "C": 0.024076314643025398,
+          "D": 0.009226086549460888
+        },
+        "score": 0.009226086549460888
+      },
+      {
+        "record_index": 13,
+        "sample_id": "91889",
+        "label": null,
+        "perturbations": {
+          "a": "<gh_stars>10-100  \nMusic_TitleScreen::  \n\tdbw ( $C0 | CH0 ), Music_TitleScreen_Ch1  \n\tdbw CH1, Music_TitleScreen_Ch2  \n\tdbw CH2, Music_TitleScreen_Ch3  \n\tdbw CH3, Music_TitleScreen_Ch4  \n\nMusic_Credits::  \n\tdbw ( $80 | CH0 ), Music_Credits_Ch1  \n\tdbw CH1, Music_Credits_Ch2  \n\tdbw CH2, Music_Credits_Ch3  \n\nMusic_HallOfFame::  \n\tdbw ( $80 | CH0 ), Music_HallOfFame_Ch1  \n\tdbw CH1, Music_HallOfFame_Ch2  \n\tdbw CH2, Music_HallOfFame_Ch3  \n\nMusic_OaksLab::  \n\tdbw ( $80 | CH0 ), Music_OaksLab_Ch1  \n\tdbw CH1, Music_OaksLab_Ch2  \n\tdbw CH2, Music_OaksLab_Ch3  \n\nMusic_JigglypuffSong::  \n\tdbw $40, Music_JigglypuffSong_Ch1  \n\tdbw CH1, Music_JigglypuffSong_Ch2  \n\nMusic_BikeRiding::  \n\tdbw ( $C0 | CH0 ), Music_BikeRiding_Ch1  \n\tdbw CH1, Music_BikeRiding_Ch2  \n\tdbw CH2, Music_BikeRiding_Ch3  \n\tdbw CH3, Music_BikeRiding_Ch4  \n\nMusic_Surfing::  \n\tdbw ( $80 | CH0 ), Music_Surfing_Ch1  \n\tdbw CH1, Music_Surfing_Ch2  \n\tdbw CH2, Music_Surfing_Ch3  \n\nMusic_GameCorner::  \n\tdbw ( $80 | CH0 ), Music_GameCorner_Ch1  \n\tdbw CH1, Music_GameCorner_Ch2  \n\tdbw CH2, Music_GameCorner_Ch3  \n\nMusic_IntroBattle::  \n\tdbw ( $80 | CH0 ), Music_YellowIntro_Ch1  \n\tdbw CH1, Music_YellowIntro_Ch2  \n\tdbw CH2, Music_YellowIntro_Ch3  \n\n; Power Plant, Unknown Dungeon, Rocket HQ  \nMusic_Dungeon1::  \n\tdbw ( $C0 | CH0 ), Music_Dungeon1_Ch1  \n\tdbw CH1, Music_Dungeon1_Ch2  \n\tdbw CH2, Music_Dungeon1_Ch3  \n\tdbw CH3, Music_Dungeon1_Ch4  \n\n; Viridian Forest, Seafoam Islands  \nMusic_Dungeon2::  \n\tdbw ( $C0 | CH0 ), Music_Dungeon2_Ch1  \n\tdbw CH1, Music_Dungeon2_Ch2  \n\tdbw CH2, Music_Dungeon2_Ch3  \n\tdbw CH3, Music_Dungeon2_Ch4  \n\n; Mt. Moon, Rock Tunnel, Victory Road  \nMusic_Dungeon3::  \n\tdbw ( $C0 | CH0 ), Music_Dungeon3_Ch1  \n\tdbw CH1, Music_Dungeon3_Ch2  \n\tdbw CH2, Music_Dungeon3_Ch3  \n\tdbw CH3, Music_Dungeon3_Ch4  \n\nMusic_CinnabarMansion::  \n\tdbw ( $C0 | CH0 ), Music_CinnabarMansion_Ch1  \n\tdbw CH1, Music_CinnabarMansion_Ch2  \n\tdbw CH2, Music_CinnabarMansion_Ch3  \n\tdbw CH3, Music_CinnabarMansion_Ch4  \n\nMusic_PokemonTower::  \n\tdbw ( $80 | CH0 ), Music_PokemonTower_Ch1  \n\tdbw CH1, Music_PokemonTower_Ch2  \n\tdbw CH2, Music_PokemonTower_Ch3  \n\nMusic_SilphCo::  \n\tdbw ( $80 | CH0 ), Music_SilphCo_Ch1  \n\tdbw CH1, Music_SilphCo_Ch2  \n\tdbw CH2, Music_SilphCo_Ch3  \n\nMusic_MeetEvilTrainer::  \n\tdbw ( $80 | CH0 ), Music_MeetEvilTrainer_Ch1  \n\tdbw CH1, Music_MeetEvilTrainer_Ch2  \n\tdbw CH2, Music_MeetEvilTrainer_Ch3  \n\nMusic_MeetFemaleTrainer::  \n\tdbw ( $80 | CH0 ), Music_MeetFemaleTrainer_Ch1  \n\tdbw CH1, Music_MeetFemaleTrainer_Ch2  \n\tdbw CH2, Music_MeetFemaleTrainer_Ch3  \n\nMusic_MeetMaleTrainer::  \n\tdbw ( $80 | CH0 ), Music_MeetMaleTrainer_Ch1  \n\tdbw CH1, Music_MeetMaleTrainer_Ch2  \n\tdbw CH2, Music_MeetMaleTrainer_Ch3",
+          "b": "<gh_stars>10-100  \nMusic_TitleScreen::  \n\tdbw ( $C0 | CH0 ), Music_TitleScreen_Ch1  \n\tdbw CH1, Music_TitleScreen_Ch2  \n\tdbw CH2, Music_TitleScreen_Ch3  \n\tdbw CH3, Music_TitleScreen_Ch4  \n\nMusic_Credits::  \n\tdbw ( $80 | CH0 ), Music_Credits_Ch1  \n\tdbw CH1, Music_Credits_Ch2  \n\tdbw CH2, Music_Credits_Ch3  \n\nMusic_HallOfFame::  \n\tdbw ( $80 | CH0 ), Music_HallOfFame_Ch1  \n\tdbw CH1, Music_HallOfFame_Ch2  \n\tdbw CH2, Music_HallOfFame_Ch3  \n\nMusic_OaksLab::  \n\tdbw ( $80 | CH0 ), Music_OaksLab_Ch1  \n\tdbw CH1, Music_OaksLab_Ch2  \n\tdbw CH2, Music_OaksLab_Ch3  \n\nMusic_JigglypuffSong::  \n\tdbw $40, Music_JigglypuffSong_Ch1  \n\tdbw CH1, Music_JigglypuffSong_Ch2  \n\nMusic_BikeRiding::  \n\tdbw ( $C0 | CH0 ), Music_BikeRiding_Ch1  \n\tdbw CH1, Music_BikeRiding_Ch2  \n\tdbw CH2, Music_BikeRiding_Ch3  \n\tdbw CH3, Music_BikeRiding_Ch4  \n\nMusic_Surfing::  \n\tdbw ( $80 | CH0 ), Music_Surfing_Ch1  \n\tdbw CH1, Music_Surfing_Ch2  \n\tdbw CH2, Music_Surfing_Ch3  \n\nMusic_GameCorner::  \n\tdbw ( $80 | CH0 ), Music_GameCorner_Ch1  \n\tdbw CH1, Music_GameCorner_Ch2  \n\tdbw CH2, Music_GameCorner_Ch3  \n\nMusic_IntroBattle::  \n\tdbw ( $80 | CH0 ), Music_YellowIntro_Ch1  \n\tdbw CH1, Music_YellowIntro_Ch2  \n\tdbw CH2, Music_YellowIntro_Ch3  \n\n; Power Plant, Unknown Dungeon, Rocket HQ  \nMusic_Dungeon1::  \n\tdbw ( $C0 | CH0 ), Music_Dungeon1_Ch1  \n\tdbw CH1, Music_Dungeon1_Ch2  \n\tdbw CH2, Music_Dungeon1_Ch3  \n\tdbw CH3, Music_Dungeon1_Ch4  \n\n; Viridian Forest, Seafoam Islands  \nMusic_Dungeon2::  \n\tdbw ( $C0 | CH0 ), Music_Dungeon2_Ch1  \n\tdbw CH1, Music_Dungeon2_Ch2  \n\tdbw CH2, Music_Dungeon2_Ch3  \n\tdbw CH3, Music_Dungeon2_Ch4  \n\n; Mt. Moon, Rock Tunnel, Victory Road  \nMusic_Dungeon3::  \n\tdbw ( $C0 | CH0 ), Music_Dungeon3_Ch1  \n\tdbw CH1, Music_Dungeon3_Ch2  \n\tdbw CH2, Music_Dungeon3_Ch3  \n\tdbw CH3, Music_Dungeon3_Ch4  \n\nMusic_CinnabarMansion::  \n\tdbw ( $C0 | CH0 ), Music_CinnabarMansion_Ch1  \n\tdbw CH1, Music_CinnabarMansion_Ch2  \n\tdbw CH2, Music_CinnabarMansion_Ch3  \n\tdbw CH3, Music_CinnabarMansion_Ch4  \n\nMusic_PokemonTower::  \n\tdbw ( $80 | CH0 ), Music_PokemonTower_Ch1  \n\tdbw CH1, Music_PokemonTower_Ch2  \n\tdbw CH2, Music_PokemonTower_Ch3  \n\nMusic_SilphCo::  \n\tdbw ( $80 | CH0 ), Music_SilphCo_Ch1  \n\tdbw CH1, Music_SilphCo_Ch2  \n\tdbw CH2, Music_SilphCo_Ch3  \n\nMusic_MeetEvilTrainer::  \n\tdbw ( $80 | CH0 ), Music_MeetEvilTrainer_Ch1  \n\tdbw CH1, Music_MeetEvilTrainer_Ch2  \n\tdbw CH2, Music_MeetEvilTrainer_Ch3  \n\nMusic_MeetFemaleTrainer::  \n\tdbw ( $80 | CH0 ), Music_MeetFemaleTrainer_Ch1  \n\tdbw CH1, Music_MeetFemaleTrainer_Ch2  \n\tdbw CH2, Music_MeetFemaleTrainer_Ch3  \n\nMusic_MeetMaleTrainer::  \n\tdbw ( $80 | CH0 ), Music_MeetMaleTrainer_Ch1  \n\tdbw CH1, Music_MeetMaleTrainer_Ch2  \n\tdbw CH2, Music_MeetMaleTrainer_Ch3",
+          "c": "<gh_stars>10-100  \nMusic_TitleScreen::  \n\tdbw ( $C0 | CH0 ), Music_TitleScreen_Ch1  \n\tdbw CH1, Music_TitleScreen_Ch2  \n\tdbw CH2, Music_TitleScreen_Ch3  \n\tdbw CH3, Music_TitleScreen_Ch4  \n\nMusic_Credits::  \n\tdbw ( $80 | CH0 ), Music_Credits_Ch1  \n\tdbw CH1, Music_Credits_Ch2  \n\tdbw CH2, Music_Credits_Ch3  \n\nMusic_HallOfFame::  \n\tdbw ( $80 | CH0 ), Music_HallOfFame_Ch1  \n\tdbw CH1, Music_HallOfFame_Ch2  \n\tdbw CH2, Music_HallOfFame_Ch3  \n\nMusic_OaksLab::  \n\tdbw ( $80 | CH0 ), Music_OaksLab_Ch1  \n\tdbw CH1, Music_OaksLab_Ch2  \n\tdbw CH2, Music_OaksLab_Ch3  \n\nMusic_JigglypuffSong::  \n\tdbw $40, Music_JigglypuffSong_Ch1  \n\tdbw CH1, Music_JigglypuffSong_Ch2  \n\nMusic_BikeRiding::  \n\tdbw ( $C0 | CH0 ), Music_BikeRiding_Ch1  \n\tdbw CH1, Music_BikeRiding_Ch2  \n\tdbw CH2, Music_BikeRiding_Ch3  \n\tdbw CH3, Music_BikeRiding_Ch4  \n\nMusic_Surfing::  \n\tdbw ( $80 | CH0 ), Music_Surfing_Ch1  \n\tdbw CH1, Music_Surfing_Ch2  \n\tdbw CH2, Music_Surfing_Ch3  \n\nMusic_GameCorner::  \n\tdbw ( $80 | CH0 ), Music_GameCorner_Ch1  \n\tdbw CH1, Music_GameCorner_Ch2  \n\tdbw CH2, Music_GameCorner_Ch3  \n\nMusic_IntroBattle::  \n\tdbw ( $80 | CH0 ), Music_YellowIntro_Ch1  \n\tdbw CH1, Music_YellowIntro_Ch2  \n\tdbw CH2, Music_YellowIntro_Ch3  \n\n; Power Plant, Unknown Dungeon, Rocket HQ  \nMusic_Dungeon1::  \n\tdbw ( $C0 | CH0 ), Music_Dungeon1_Ch1  \n\tdbw CH1, Music_Dungeon1_Ch2  \n\tdbw CH2, Music_Dungeon1_Ch3  \n\tdbw CH3, Music_Dungeon1_Ch4  \n\n; Viridian Forest, Seafoam Islands  \nMusic_Dungeon2::  \n\tdbw ( $C0 | CH0 ), Music_Dungeon2_Ch1  \n\tdbw CH1, Music_Dungeon2_Ch2  \n\tdbw CH2, Music_Dungeon2_Ch3  \n\tdbw CH3, Music_Dungeon2_Ch4  \n\n; Mt. Moon, Rock Tunnel, Victory Road  \nMusic_Dungeon3::  \n\tdbw ( $C0 | CH0 ), Music_Dungeon3_Ch1  \n\tdbw CH1, Music_Dungeon3_Ch2  \n\tdbw CH2, Music_Dungeon3_Ch3  \n\tdbw CH3, Music_Dungeon3_Ch4  \n\nMusic_CinnabarMansion::  \n\tdbw ( $C0 | CH0 ), Music_CinnabarMansion_Ch1  \n\tdbw CH1, Music_CinnabarMansion_Ch2  \n\tdbw CH2, Music_CinnabarMansion_Ch3  \n\tdbw CH3, Music_CinnabarMansion_Ch4  \n\nMusic_PokemonTower::  \n\tdbw ( $80 | CH0 ), Music_PokemonTower_Ch1  \n\tdbw CH1, Music_PokemonTower_Ch2  \n\tdbw CH2, Music_PokemonTower_Ch3  \n\nMusic_SilphCo::  \n\tdbw ( $80 | CH0 ), Music_SilphCo_Ch1  \n\tdbw CH1, Music_SilphCo_Ch2  \n\tdbw CH2, Music_SilphCo_Ch3  \n\nMusic_MeetEvilTrainer::  \n\tdbw ( $80 | CH0 ), Music_MeetEvilTrainer_Ch1  \n\tdbw CH1, Music_MeetEvilTrainer_Ch2  \n\tdbw CH2, Music_MeetEvilTrainer_Ch3  \n\nMusic_MeetFemaleTrainer::  \n\tdbw ( $80 | CH0 ), Music_MeetFemaleTrainer_Ch1  \n\tdbw CH1, Music_MeetFemaleTrainer_Ch2  \n\tdbw CH2, Music_MeetFemaleTrainer_Ch3  \n\nMusic_MeetMaleTrainer::  \n\tdbw ( $80 | CH0 ), Music_MeetMaleTrainer_Ch1  \n\tdbw CH1, Music_MeetMaleTrainer_Ch2  \n\tdbw CH2, Music_MeetMaleTrainer_Ch3",
+          "d": "<gh_stars>10-100  \nMusic_TitleScreen::  \n\tdbw ( $C0 | CH0 ), Music_TitleScreen_Ch1  \n\tdbw CH1, Music_TitleScreen_Ch2  \n\tdbw CH2, Music_TitleScreen_Ch3  \n\tdbw CH3, Music_TitleScreen_Ch4  \n\nMusic_Credits::  \n\tdbw ( $80 | CH0 ), Music_Credits_Ch1  \n\tdbw CH1, Music_Credits_Ch2  \n\tdbw CH2, Music_Credits_Ch3  \n\nMusic_HallOfFame::  \n\tdbw ( $80 | CH0 ), Music_HallOfFame_Ch1  \n\tdbw CH1, Music_HallOfFame_Ch2  \n\tdbw CH2, Music_HallOfFame_Ch3  \n\nMusic_OaksLab::  \n\tdbw ( $80 | CH0 ), Music_OaksLab_Ch1  \n\tdbw CH1, Music_OaksLab_Ch2  \n\tdbw CH2, Music_OaksLab_Ch3  \n\nMusic_JigglypuffSong::  \n\tdbw $40, Music_JigglypuffSong_Ch1  \n\tdbw CH1, Music_JigglypuffSong_Ch2  \n\nMusic_BikeRiding::  \n\tdbw ( $C0 | CH0 ), Music_BikeRiding_Ch1  \n\tdbw CH1, Music_BikeRiding_Ch2  \n\tdbw CH2, Music_BikeRiding_Ch3  \n\tdbw CH3, Music_BikeRiding_Ch4  \n\nMusic_Surfing::  \n\tdbw ( $80 | CH0 ), Music_Surfing_Ch1  \n\tdbw CH1, Music_Surfing_Ch2  \n\tdbw CH2, Music_Surfing_Ch3  \n\nMusic_GameCorner::  \n\tdbw ( $80 | CH0 ), Music_GameCorner_Ch1  \n\tdbw CH1, Music_GameCorner_Ch2  \n\tdbw CH2, Music_GameCorner_Ch3  \n\nMusic_IntroBattle::  \n\tdbw ( $80 | CH0 ), Music_YellowIntro_Ch1  \n\tdbw CH1, Music_YellowIntro_Ch2  \n\tdbw CH2, Music_YellowIntro_Ch3  \n\n; Power Plant, Unknown Dungeon, Rocket HQ  \nMusic_Dungeon1::  \n\tdbw ( $C0 | CH0 ), Music_Dungeon1_Ch1  \n\tdbw CH1, Music_Dungeon1_Ch2  \n\tdbw CH2, Music_Dungeon1_Ch3  \n\tdbw CH3, Music_Dungeon1_Ch4  \n\n; Viridian Forest, Seafoam Islands  \nMusic_Dungeon2::  \n\tdbw ( $C0 | CH0 ), Music_Dungeon2_Ch1  \n\tdbw CH1, Music_Dungeon2_Ch2  \n\tdbw CH2, Music_Dungeon2_Ch3  \n\tdbw CH3, Music_Dungeon2_Ch4  \n\n; Mt. Moon, Rock Tunnel, Victory Road  \nMusic_Dungeon3::  \n\tdbw ( $C0 | CH0 ), Music_Dungeon3_Ch1  \n\tdbw CH1, Music_Dungeon3_Ch2  \n\tdbw CH2, Music_Dungeon3_Ch3  \n\tdbw CH3, Music_Dungeon3_Ch4  \n\nMusic_CinnabarMansion::  \n\tdbw ( $C0 | CH0 ), Music_CinnabarMansion_Ch1  \n\tdbw CH1, Music_CinnabarMansion_Ch2  \n\tdbw CH2, Music_CinnabarMansion_Ch3  \n\tdbw CH3, Music_CinnabarMansion_Ch4  \n\nMusic_PokemonTower::  \n\tdbw ( $80 | CH0 ), Music_PokemonTower_Ch1  \n\tdbw CH1, Music_PokemonTower_Ch2  \n\tdbw CH2, Music_PokemonTower_Ch3  \n\nMusic_SilphCo::  \n\tdbw ( $80 | CH0 ), Music_SilphCo_Ch1  \n\tdbw CH1, Music_SilphCo_Ch2  \n\tdbw CH2, Music_SilphCo_Ch3  \n\nMusic_MeetEvilTrainer::  \n\tdbw ( $80 | CH0 ), Music_MeetEvilTrainer_Ch1  \n\tdbw CH1, Music_MeetEvilTrainer_Ch2  \n\tdbw CH2, Music_MeetEvilTrainer_Ch3  \n\nMusic_MeetFemaleTrainer::  \n\tdbw ( $80 | CH0 ), Music_MeetFemaleTrainer_Ch1  \n\tdbw CH1, Music_MeetFemaleTrainer_Ch2  \n\tdbw CH2, Music_MeetFemaleTrainer_Ch3  \n\nMusic_MeetMaleTrainer::  \n\tdbw ( $80 | CH0 ), Music_MeetMaleTrainer_Ch1  \n\tdbw CH1, Music_MeetMaleTrainer_Ch2  \n\tdbw CH2, Music_MeetMaleTrainer_Ch3"
+        },
+        "bdq_probs": {
+          "A": 4.2117184739787206e-10,
+          "B": 1.696580098631273e-10,
+          "C": 2.68232325240092e-10,
+          "D": 1.477766520263657e-10,
+          "E": 1.5118756246934595e-10
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 1.7860857042251155e-05,
+            "B": 1.3895224583393428e-05,
+            "C": 7.900638593127951e-06,
+            "D": 3.4401525681460043e-06,
+            "E": 1.078348645933147e-06
+          },
+          "B": {
+            "A": 8.006911230040714e-06,
+            "B": 8.80504467204446e-06,
+            "C": 7.235816610773327e-06,
+            "D": 5.526555924006971e-06,
+            "E": 5.822677167088841e-07
+          },
+          "C": {
+            "A": 8.36104663903825e-06,
+            "B": 1.257240364793688e-05,
+            "C": 1.3273583135742228e-05,
+            "D": 8.940049156080931e-06,
+            "E": 8.851166057866067e-07
+          },
+          "D": {
+            "A": 6.779116574762156e-06,
+            "B": 7.4234912972315215e-06,
+            "C": 1.0754831237136386e-05,
+            "D": 3.2214059046964394e-06,
+            "E": 3.505737993236835e-07
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 1.7860857042251155e-05,
+          "B": 8.80504467204446e-06,
+          "C": 1.3273583135742228e-05,
+          "D": 3.2214059046964394e-06
+        },
+        "score": 3.2214059046964394e-06
+      },
+      {
+        "record_index": 14,
+        "sample_id": "91892",
+        "label": null,
+        "perturbations": {
+          "a": "; A002737: a(n) = Sum_{j=0..n} (n+j)*binomial(n+j,j).\n; 0,5,35,189,924,4290,19305,85085,369512,1587222,6760390,28601650,120349800,504131940,2103781365,8751023325,36300541200,150217371150,620309379690,2556724903590,10520494818600,43225511319900,177361820257050,726860987017074,2975511197688624,12168371410300700\n\nmov $1,$0\nadd $1,1\nmov $2,3\nadd $2,$0\nmov $3,$0\nadd $0,$2\nbin $0,$1\nmul $0,$3\ndiv $0,2",
+          "b": "; A002737: a(n) = Sum_{j=0..n} (n+j)*binomial(n+j,j).\n; 0,5,35,189,924,4290,19305,85085,369512,1587222,6760390,28601650,120349800,504131940,2103781365,8751023325,36300541200,150217371150,620309379690,2556724903590,10520494818600,43225511319900,177361820257050,726860987017074,2975511197688624,12168371410300700\n\nmov $1,$0\nadd $1,1\nmov $2,3\nadd $2,$0\nmov $3,$0\nadd $0,$2\nbin $0,$1\nmul $0,$3\ndiv $0,2",
+          "c": "; A002737: a(n) = Sum_{j=0..n} (n+j)*binomial(n+j,j).\n; 0,5,35,189,924,4290,19305,85085,369512,1587222,6760390,28601650,120349800,504131940,2103781365,8751023325,36300541200,150217371150,620309379690,2556724903590,10520494818600,43225511319900,177361820257050,726860987017074,2975511197688624,12168371410300700\n\nmov $1,$0\nadd $1,1\nmov $2,3\nadd $2,$0\nmov $3,$0\nadd $0,$2\nbin $0,$1\nmul $0,$3\ndiv $0,2",
+          "d": "; A002737: a(n) = Sum_{j=0..n} (n+j)*binomial(n+j,j).\n; 0,5,35,189,924,4290,19305,85085,369512,1587222,6760390,28601650,120349800,504131940,2103781365,8751023325,36300541200,150217371150,620309379690,2556724903590,10520494818600,43225511319900,177361820257050,726860987017074,2975511197688624,12168371410300700\n\nmov $1,$0\nadd $1,1\nmov $2,3\nadd $2,$0\nmov $3,$0\nadd $0,$2\nbin $0,$1\nmul $0,$3\ndiv $0,2"
+        },
+        "bdq_probs": {
+          "A": 0.015090761706233025,
+          "B": 0.004323876462876797,
+          "C": 0.024880502372980118,
+          "D": 0.12635453045368195,
+          "E": 0.8239292502403259
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.015090761706233025,
+            "B": 0.004323876462876797,
+            "C": 0.024880502372980118,
+            "D": 0.12635453045368195,
+            "E": 0.8239292502403259
+          },
+          "B": {
+            "A": 0.015090761706233025,
+            "B": 0.004323876462876797,
+            "C": 0.024880502372980118,
+            "D": 0.12635453045368195,
+            "E": 0.8239292502403259
+          },
+          "C": {
+            "A": 0.015090761706233025,
+            "B": 0.004323876462876797,
+            "C": 0.024880502372980118,
+            "D": 0.12635453045368195,
+            "E": 0.8239292502403259
+          },
+          "D": {
+            "A": 0.015090761706233025,
+            "B": 0.004323876462876797,
+            "C": 0.024880502372980118,
+            "D": 0.12635453045368195,
+            "E": 0.8239292502403259
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.015090761706233025,
+          "B": 0.004323876462876797,
+          "C": 0.024880502372980118,
+          "D": 0.12635453045368195
+        },
+        "score": 0.004323876462876797
+      },
+      {
+        "record_index": 15,
+        "sample_id": "91899",
+        "label": null,
+        "perturbations": {
+          "a": "[bits\t32]\n\t\n\tsection\t.text\n\n; Establishes the new GDT into the processor while expelling the old one.\nglobal _gdt_load\n_gdt_load:\n\t; Retrieve GDT pointer into EAX, and intended segment offset into EBX.\n\tmov\t\teax, [esp + 4]\n\tmov\t\tebx, [esp + 8]\n\n\t; Install the GDT.\n\tlgdt\t[eax]\n\n\t; Install segments.\n\tmov\t\tds, bx\n\tmov\t\tes, bx\n\tmov\t\tfs, bx\n\tmov\t\tgs, bx\n\tmov\t\tss, bx\n\t\n\tjmp\t\t0x08:.flush\n.flush:\n\tret\n\n; Transfers the TSS into the processor.\nglobal _tss_load\n_tss_load:\n\t; Transfer designated TSS segment into the processor.\n\tmov\t\teax, [esp + 4]\n\tltr\t\tax\n\tret",
+          "b": "[bits\t32]\n\t\n\tsection\t.text\n\n; Configures the new GDT into the processor while eliminating the old one.\nglobal _gdt_load\n_gdt_load:\n\t; Fetch GDT pointer into EAX, and chosen segment offset into EBX.\n\tmov\t\teax, [esp + 4]\n\tmov\t\tebx, [esp + 8]\n\n\t; Employ the GDT.\n\tlgdt\t[eax]\n\n\t; Employ segments.\n\tmov\t\tds, bx\n\tmov\t\tes, bx\n\tmov\t\tfs, bx\n\tmov\t\tgs, bx\n\tmov\t\tss, bx\n\t\n\tjmp\t\t0x08:.flush\n.flush:\n\tret\n\n; Inserts the TSS into the processor.\nglobal _tss_load\n_tss_load:\n\t; Insert selected TSS segment into the processor.\n\tmov\t\teax, [esp + 4]\n\tltr\t\tax\n\tret",
+          "c": "[bits\t32]\n\t\n\tsection\t.text\n\n; Arranges the new GDT into the processor while dismissing the old one.\nglobal _gdt_load\n_gdt_load:\n\t; Acquire GDT pointer into EAX, and selected segment offset into EBX.\n\tmov\t\teax, [esp + 4]\n\tmov\t\tebx, [esp + 8]\n\n\t; Load the GDT.\n\tlgdt\t[eax]\n\n\t; Load segments.\n\tmov\t\tds, bx\n\tmov\t\tes, bx\n\tmov\t\tfs, bx\n\tmov\t\tgs, bx\n\tmov\t\tss, bx\n\t\n\tjmp\t\t0x08:.flush\n.flush:\n\tret\n\n; Places the TSS into the processor.\nglobal _tss_load\n_tss_load:\n\t; Place specified TSS segment into the processor.\n\tmov\t\teax, [esp + 4]\n\tltr\t\tax\n\tret",
+          "d": "[bits\t32]\n\t\n\tsection\t.text\n\n; Establishes the new GDT into the processor while removing the old one.\nglobal _gdt_load\n_gdt_load:\n\t; Identify GDT pointer into EAX, and required segment offset into EBX.\n\tmov\t\teax, [esp + 4]\n\tmov\t\tebx, [esp + 8]\n\n\t; Set the GDT.\n\tlgdt\t[eax]\n\n\t; Set segments.\n\tmov\t\tds, bx\n\tmov\t\tes, bx\n\tmov\t\tfs, bx\n\tmov\t\tgs, bx\n\tmov\t\tss, bx\n\t\n\tjmp\t\t0x08:.flush\n.flush:\n\tret\n\n; Loads the TSS into the processor.\nglobal _tss_load\n_tss_load:\n\t; Load indicated TSS segment into the processor.\n\tmov\t\teax, [esp + 4]\n\tltr\t\tax\n\tret"
+        },
+        "bdq_probs": {
+          "A": 0.009478476829826832,
+          "B": 0.00738846231251955,
+          "C": 0.1392877697944641,
+          "D": 0.1788511425256729,
+          "E": 0.37865471839904785
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.010189248248934746,
+            "B": 0.008999736979603767,
+            "C": 0.140661358833313,
+            "D": 0.180614173412323,
+            "E": 0.3374626338481903
+          },
+          "B": {
+            "A": 0.01096691470593214,
+            "B": 0.009101707488298416,
+            "C": 0.1336088329553604,
+            "D": 0.19439972937107086,
+            "E": 0.3205448091030121
+          },
+          "C": {
+            "A": 0.009983960539102554,
+            "B": 0.0077828941866755486,
+            "C": 0.14671668410301208,
+            "D": 0.16625405848026276,
+            "E": 0.3519926965236664
+          },
+          "D": {
+            "A": 0.009000357240438461,
+            "B": 0.006592401769012213,
+            "C": 0.1322636902332306,
+            "D": 0.14987562596797943,
+            "E": 0.3595705032348633
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.010189248248934746,
+          "B": 0.009101707488298416,
+          "C": 0.14671668410301208,
+          "D": 0.14987562596797943
+        },
+        "score": 0.009101707488298416
+      },
+      {
+        "record_index": 16,
+        "sample_id": "91906",
+        "label": null,
+        "perturbations": {
+          "a": "<filename>oeis/020/A020874.asm  \n; A020874: Quantity of routes in Moebius ladder M_n.  \n; Submitted by <NAME>  \n; 0,3,30,135,452,1295,3378,8295,19560,44847,100790,223223,488940,1061775,2289882,4910535,10480208,22275695,47178270,99605847,209704980,440390223,922733570,1929364775,4026514872,8388588975,17448283398,36238762935,75161901500,155692535567,322122515370,665719895943,1374389496480,2834678373615,5841155477102,12025908379415,24739011571428,50852412726735,104453604576210,214404767348967,439804651037960,901599534698543,1847179534580310,3782319999460215,7740561859447692,15832967439872655,32369622321617018  \n\nmov $2,$0  \nlpb $0  \n  add $1,4  \n  mul $2,2  \n  cmp $3,$2  \n  cmp $3,0  \n  mul $3,2  \n  mul $3,$0  \n  sub $0,1  \n  add $4,$2  \n  mul $3,$4  \n  add $1,$3  \n  sub $1,6  \nlpe  \nadd $3,$1  \nmov $0,$3  \ndiv $0,2",
+          "b": "<filename>oeis/020/A020874.asm  \n; A020874: Count of ways in Moebius ladder M_n.  \n; Submitted by <NAME>  \n; 0,3,30,135,452,1295,3378,8295,19560,44847,100790,223223,488940,1061775,2289882,4910535,10480208,22275695,47178270,99605847,209704980,440390223,922733570,1929364775,4026514872,8388588975,17448283398,36238762935,75161901500,155692535567,322122515370,665719895943,1374389496480,2834678373615,5841155477102,12025908379415,24739011571428,50852412726735,104453604576210,214404767348967,439804651037960,901599534698543,1847179534580310,3782319999460215,7740561859447692,15832967439872655,32369622321617018  \n\nmov $2,$0  \nlpb $0  \n  add $1,4  \n  mul $2,2  \n  cmp $3,$2  \n  cmp $3,0  \n  mul $3,2  \n  mul $3,$0  \n  sub $0,1  \n  add $4,$2  \n  mul $3,$4  \n  add $1,$3  \n  sub $1,6  \nlpe  \nadd $3,$1  \nmov $0,$3  \ndiv $0,2",
+          "c": "<filename>oeis/020/A020874.asm  \n; A020874: Total number of passages in Moebius ladder M_n.  \n; Submitted by <NAME>  \n; 0,3,30,135,452,1295,3378,8295,19560,44847,100790,223223,488940,1061775,2289882,4910535,10480208,22275695,47178270,99605847,209704980,440390223,922733570,1929364775,4026514872,8388588975,17448283398,36238762935,75161901500,155692535567,322122515370,665719895943,1374389496480,2834678373615,5841155477102,12025908379415,24739011571428,50852412726735,104453604576210,214404767348967,439804651037960,901599534698543,1847179534580310,3782319999460215,7740561859447692,15832967439872655,32369622321617018  \n\nmov $2,$0  \nlpb $0  \n  add $1,4  \n  mul $2,2  \n  cmp $3,$2  \n  cmp $3,0  \n  mul $3,2  \n  mul $3,$0  \n  sub $0,1  \n  add $4,$2  \n  mul $3,$4  \n  add $1,$3  \n  sub $1,6  \nlpe  \nadd $3,$1  \nmov $0,$3  \ndiv $0,2",
+          "d": "<filename>oeis/020/A020874.asm  \n; A020874: Amount of trajectories in Moebius ladder M_n.  \n; Submitted by <NAME>  \n; 0,3,30,135,452,1295,3378,8295,19560,44847,100790,223223,488940,1061775,2289882,4910535,10480208,22275695,47178270,99605847,209704980,440390223,922733570,1929364775,4026514872,8388588975,17448283398,36238762935,75161901500,155692535567,322122515370,665719895943,1374389496480,2834678373615,5841155477102,12025908379415,24739011571428,50852412726735,104453604576210,214404767348967,439804651037960,901599534698543,1847179534580310,3782319999460215,7740561859447692,15832967439872655,32369622321617018  \n\nmov $2,$0  \nlpb $0  \n  add $1,4  \n  mul $2,2  \n  cmp $3,$2  \n  cmp $3,0  \n  mul $3,2  \n  mul $3,$0  \n  sub $0,1  \n  add $4,$2  \n  mul $3,$4  \n  add $1,$3  \n  sub $1,6  \nlpe  \nadd $3,$1  \nmov $0,$3  \ndiv $0,2"
+        },
+        "bdq_probs": {
+          "A": 0.08022840321063995,
+          "B": 0.020305506885051727,
+          "C": 0.03789858892560005,
+          "D": 0.2471606433391571,
+          "E": 0.2800607979297638
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.07146809995174408,
+            "B": 0.014082868583500385,
+            "C": 0.029792843386530876,
+            "D": 0.3203303813934326,
+            "E": 0.3629738390445709
+          },
+          "B": {
+            "A": 0.0894046276807785,
+            "B": 0.02563186176121235,
+            "C": 0.037269994616508484,
+            "D": 0.31208065152168274,
+            "E": 0.35362446308135986
+          },
+          "C": {
+            "A": 0.10075869411230087,
+            "B": 0.02888457104563713,
+            "C": 0.05393264815211296,
+            "D": 0.3103856146335602,
+            "E": 0.31038209795951843
+          },
+          "D": {
+            "A": 0.06493246555328369,
+            "B": 0.02110263518989086,
+            "C": 0.044628363102674484,
+            "D": 0.42348623275756836,
+            "E": 0.13748155534267426
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.07146809995174408,
+          "B": 0.02563186176121235,
+          "C": 0.05393264815211296,
+          "D": 0.42348623275756836
+        },
+        "score": 0.02563186176121235
+      },
+      {
+        "record_index": 17,
+        "sample_id": "91910",
+        "label": null,
+        "perturbations": {
+          "a": ".global s_setup_buffers  \ns_setup_buffers:  \nret  \n\n    .global s_erroneous_load  \ns_erroneous_load:  \npush %r10  \npush %r12  \npush %r13  \npush %r8  \npush %rax  \n\n// Erroneous Load  \nmov $0x5c4557000000080f, %r13  \nnop  \nnop  \nadd $3184, %r12  \nvmovups (%r13), %ymm7  \nvextracti128 $0, %ymm7, %xmm7  \nvpextrq $0, %xmm7, %r8  \nlea oracles, %r13  \nand $0xff, %r8  \nshlq $12, %r8  \nmov (%r13,%r8,1), %r8  \npop %rax  \npop %r8  \npop %r13  \npop %r12  \npop %r10  \nret  \n\n/*\n<gen_erroneous_load>  \n[REF]  \n{'OP': 'LOAD', 'src': {'type': 'addresses_NC', 'AVXalign': False, 'congruent': 0, 'size': 2, 'same': False, 'NT': False}}  \n[Erroneous Load]  \n{'OP': 'LOAD', 'src': {'type': 'addresses_NC', 'AVXalign': False, 'congruent': 0, 'size': 32, 'same': True, 'NT': False}}  \n<gen_setup_buffer>  \n{'00': 8}  \n00 00 00 00 00 00 00 00  \n*/",
+          "b": ".global s_initialize_buffers  \ns_initialize_buffers:  \nret  \n\n    .global s_defective_load  \ns_defective_load:  \npush %r10  \npush %r12  \npush %r13  \npush %r8  \npush %rax  \n\n// Defective Load  \nmov $0x5c4557000000080f, %r13  \nnop  \nnop  \nadd $3184, %r12  \nvmovups (%r13), %ymm7  \nvextracti128 $0, %ymm7, %xmm7  \nvpextrq $0, %xmm7, %r8  \nlea oracles, %r13  \nand $0xff, %r8  \nshlq $12, %r8  \nmov (%r13,%r8,1), %r8  \npop %rax  \npop %r8  \npop %r13  \npop %r12  \npop %r10  \nret  \n\n/*\n<gen_defective_load>  \n[REF]  \n{'OP': 'LOAD', 'src': {'type': 'addresses_NC', 'AVXalign': False, 'congruent': 0, 'size': 2, 'same': False, 'NT': False}}  \n[Defective Load]  \n{'OP': 'LOAD', 'src': {'type': 'addresses_NC', 'AVXalign': False, 'congruent': 0, 'size': 32, 'same': True, 'NT': False}}  \n<gen_initialize_buffer>  \n{'00': 8}  \n00 00 00 00 00 00 00 00  \n*/",
+          "c": ".global s_construct_buffers  \ns_construct_buffers:  \nret  \n\n    .global s_flawed_load  \ns_flawed_load:  \npush %r10  \npush %r12  \npush %r13  \npush %r8  \npush %rax  \n\n// Flawed Load  \nmov $0x5c4557000000080f, %r13  \nnop  \nnop  \nadd $3184, %r12  \nvmovups (%r13), %ymm7  \nvextracti128 $0, %ymm7, %xmm7  \nvpextrq $0, %xmm7, %r8  \nlea oracles, %r13  \nand $0xff, %r8  \nshlq $12, %r8  \nmov (%r13,%r8,1), %r8  \npop %rax  \npop %r8  \npop %r13  \npop %r12  \npop %r10  \nret  \n\n/*\n<gen_flawed_load>  \n[REF]  \n{'OP': 'LOAD', 'src': {'type': 'addresses_NC', 'AVXalign': False, 'congruent': 0, 'size': 2, 'same': False, 'NT': False}}  \n[Flawed Load]  \n{'OP': 'LOAD', 'src': {'type': 'addresses_NC', 'AVXalign': False, 'congruent': 0, 'size': 32, 'same': True, 'NT': False}}  \n<gen_construct_buffer>  \n{'00': 8}  \n00 00 00 00 00 00 00 00  \n*/",
+          "d": ".global s_create_buffers  \ns_create_buffers:  \nret  \n\n    .global s_inaccurate_load  \ns_inaccurate_load:  \npush %r10  \npush %r12  \npush %r13  \npush %r8  \npush %rax  \n\n// Inaccurate Load  \nmov $0x5c4557000000080f, %r13  \nnop  \nnop  \nadd $3184, %r12  \nvmovups (%r13), %ymm7  \nvextracti128 $0, %ymm7, %xmm7  \nvpextrq $0, %xmm7, %r8  \nlea oracles, %r13  \nand $0xff, %r8  \nshlq $12, %r8  \nmov (%r13,%r8,1), %r8  \npop %rax  \npop %r8  \npop %r13  \npop %r12  \npop %r10  \nret  \n\n/*\n<gen_inaccurate_load>  \n[REF]  \n{'OP': 'LOAD', 'src': {'type': 'addresses_NC', 'AVXalign': False, 'congruent': 0, 'size': 2, 'same': False, 'NT': False}}  \n[Inaccurate Load]  \n{'OP': 'LOAD', 'src': {'type': 'addresses_NC', 'AVXalign': False, 'congruent': 0, 'size': 32, 'same': True, 'NT': False}}  \n<gen_create_buffer>  \n{'00': 8}  \n00 00 00 00 00 00 00 00  \n*/"
+        },
+        "bdq_probs": {
+          "A": 0.020600859075784683,
+          "B": 0.033970508724451065,
+          "C": 0.03396524488925934,
+          "D": 0.32225391268730164,
+          "E": 0.5313083529472351
+        },
+        "bcq_probs": {
+          "A": {
+            "A": 0.04156731069087982,
+            "B": 0.032377056777477264,
+            "C": 0.09971510618925095,
+            "D": 0.5738223195075989,
+            "E": 0.2392050176858902
+          },
+          "B": {
+            "A": 0.03923121094703674,
+            "B": 0.06469166278839111,
+            "C": 0.0732942521572113,
+            "D": 0.6136837601661682,
+            "E": 0.1758241206407547
+          },
+          "C": {
+            "A": 0.028136983513832092,
+            "B": 0.04094631224870682,
+            "C": 0.04639040678739548,
+            "D": 0.640399694442749,
+            "E": 0.2079077959060669
+          },
+          "D": {
+            "A": 0.012542707845568657,
+            "B": 0.034103717654943466,
+            "C": 0.03863466531038284,
+            "D": 0.7759955525398254,
+            "E": 0.08179061114788055
+          }
+        },
+        "pcorrect_per_slot": {
+          "A": 0.04156731069087982,
+          "B": 0.06469166278839111,
+          "C": 0.04639040678739548,
+          "D": 0.7759955525398254
+        },
+        "score": 0.04156731069087982
+      }
+    ]
+  }
+}
