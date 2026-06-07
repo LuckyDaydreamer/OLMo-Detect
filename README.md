@@ -9,7 +9,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/stages-3-4F8DFD"> 
   <img src="https://img.shields.io/badge/domains-9-4F8DFD"> 
-  <img src="https://img.shields.io/badge/models-OLMo%202%20(1B%E2%80%9332B)-7C5CFC">
+  <img src="https://img.shields.io/badge/models-OLMo%202%20(1B%E2%80%9332B)-7C5CFC"> 
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-1b2330"></a>
 </p>
 
 ---
