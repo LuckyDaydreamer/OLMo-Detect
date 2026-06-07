@@ -36,6 +36,11 @@ benchmark/
 - `matched`: `OLMo-Detect`, where contaminated and uncontaminated splits are explicitly aligned along up to three axes: text quality, temporal range, and lexical similarity.
 - `shifted`: `OLMo-Detect (Shifted)`, where contaminated splits are sampled without distributional alignment to their uncontaminated counterparts.
 
+## 2. Code
+
+### Data Preprocessing code
+
+
 <!-- ### 1.3 Record schema
 
 Every record contains a `text` field — **`text` is always the input scored by the
