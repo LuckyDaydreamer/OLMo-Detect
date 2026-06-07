@@ -37,7 +37,7 @@ benchmark/
 
 
 ## 2. Infini-Gram Indexed OLMo 2 Corpus
-We employ Infini-gram (Liu et al., 2024), a suffix-array–based indexing system, to index the full OLMo 2 training corpus across all four model sizes and all three training stages. The complete indexed corpus (~12.3 TB) is available for download (link withheld for anonymity and will be released after the anonymity period).
+We employ Infini-gram, a suffix-array–based indexing system, to index the full OLMo 2 training corpus across all four model sizes and all three training stages. The complete indexed corpus (~12.3 TB) is available for download (link withheld for anonymity and will be released after the anonymity period).
 
 
 <!-- ## 3. Data Processing Code -->
