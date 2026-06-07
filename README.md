@@ -14,28 +14,9 @@
 
 ---
 
-This repository contains the **benchmark, detection-method code, and reproduction
-scripts** for the EMNLP 2026 submission *"OLMo-Detect: A Multi-Stage Benchmark for Verbatim
+This repository contains the benchmark and code for the EMNLP 2026 submission *"OLMo-Detect: A Multi-Stage Benchmark for Verbatim
 Contamination Detection in Large Language Models."*
 
-Verbatim contamination detection asks whether a given text appears *verbatim* in
-an LLM's training data, **without access to the training corpus**. OLMo-Detect is
-built on the fully open [OLMo 2](https://arxiv.org/abs/2501.00656) training
-pipeline, so contaminated membership is known and uncontaminated splits can be
-rigorously verified against the actual training data via infini-gram.
-
-The benchmark has two complementary parts:
-
-- **OLMo-Detect (Matched)** — contaminated and uncontaminated splits are explicitly
-  aligned along text quality, temporal range, and lexical similarity. This isolates
-  the *genuine* contamination signal and measures a method's intrinsic detection
-  ability.
-- **OLMo-Detect (Shifted)** — contaminated splits are sampled *without* distributional
-  alignment, so the same domains carry a built-in distribution shift. This measures a
-  method's *robustness*: whether it detects memorization or merely distributional
-  mismatch.
-
----
 
 ## 1. The Benchmark
 
@@ -103,6 +84,27 @@ detection methods.** Records also retain domain-native fields and the per-record
   `rejected_text`, and rating metadata.
 - **RLVR CoT subsets:** `text` is the CoT-prefixed input; `text_no_cot` is the same
   sample with the shared CoT boilerplate stripped.
+
+
+<!-- 
+Verbatim contamination detection asks whether a given text appears *verbatim* in
+an LLM's training data, **without access to the training corpus**. OLMo-Detect is
+built on the fully open [OLMo 2](https://arxiv.org/abs/2501.00656) training
+pipeline, so contaminated membership is known and uncontaminated splits can be
+rigorously verified against the actual training data via infini-gram.
+
+The benchmark has two complementary parts:
+
+- **OLMo-Detect (Matched)** — contaminated and uncontaminated splits are explicitly
+  aligned along text quality, temporal range, and lexical similarity. This isolates
+  the *genuine* contamination signal and measures a method's intrinsic detection
+  ability.
+- **OLMo-Detect (Shifted)** — contaminated splits are sampled *without* distributional
+  alignment, so the same domains carry a built-in distribution shift. This measures a
+  method's *robustness*: whether it detects memorization or merely distributional
+  mismatch.
+
+---
 
 ---
 
@@ -246,4 +248,4 @@ base_method.py          method base class
 method_loader.py        maps method names to implementations
 results/                precomputed per-record scores for all reported runs
 requirements.txt        Python dependencies
-```
+``` -->
