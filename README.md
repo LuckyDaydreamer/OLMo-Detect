@@ -14,64 +14,28 @@
 
 ---
 
-This repository contains the benchmark and code for the EMNLP 2026 submission *"OLMo-Detect: A Multi-Stage Benchmark for Verbatim
-Contamination Detection in Large Language Models."*
+This repository contains the benchmark and code for the EMNLP 2026 submission *OLMo-Detect: A Multi-Stage Benchmark for Verbatim Contamination Detection in Large Language Models.*
 
 
-## 1. The Benchmark
+## 1. Benchmark
+Built upon the OLMo 2 training pipeline, OLMo-Detect comprises nine domains across all three stages of modern LLM training: pre-training (DCLM-Baseline, peS2o, OpenWebMath, and StarCoder), mid-training (GSM8K and StackExchange), and post-training (SFT, DPO, and RLVR).
 
-### 1.1 Coverage
-
-OLMo-Detect spans **all three stages** of the modern LLM training pipeline and
-**nine domains**, evaluated across the four instruction-tuned OLMo 2 sizes
-(**1B, 7B, 13B, 32B**):
-
-| Stage | Domain | Subsets used |
-|-------|--------|--------------|
-| Pre-training | DCLM-Baseline | — |
-| Pre-training | OpenWebMath | — |
-| Pre-training | peS2o | — |
-| Pre-training | StarCoder | Java, Assembly |
-| Mid-training | GSM8K (Dolmino Math Mix) | — |
-| Mid-training | Stack Exchange | Math Stack Exchange, Stack Overflow |
-| Post-training | SFT | Aya, WildChat |
-| Post-training | DPO | WildChat |
-| Post-training | RLVR | CoT-GSM8K, CoT-MATH, IFEval |
-
-Each domain targets ~217K tokens per split. Uncontaminated splits are filtered so
-that the average 7-gram overlap with the contaminated split is ~1.6% (max 6.5%).
-For full per-domain statistics, see the paper's Appendix D.
-
-### 1.2 Directory layout
-
+### Directory Layout
 ```
 benchmark/
   <stage>/<domain>/
     contaminated/
-      matched/   {dev,test}/   contaminated_<stage>_<domain>_<split>_matched.jsonl
-      shifted/   {dev,test}/   contaminated_<stage>_<domain>_<split>_shifted.jsonl
+      matched/<split>/    contaminated_<stage>_<domain>_<split>_matched.jsonl
+      shifted/<split>/    contaminated_<stage>_<domain>_<split>_shifted.jsonl
     uncontaminated/
-      {dev,test}/              uncontaminated_<stage>_<domain>_<split>.jsonl
+      <split>/            uncontaminated_<stage>_<domain>_<split>.jsonl
 ```
 
-Naming conventions:
+- `<split>`: `dev` (hyperparameter tuning, ~10%) or `test` (evaluation, ~90%).
+- `matched`: `OLMo-Detect`, where contaminated and uncontaminated splits are explicitly aligned along up to three axes: text quality, temporal range, and lexical similarity.
+- `shifted`: `OLMo-Detect (Shifted)`, where contaminated splits are sampled without distributional alignment to their uncontaminated counterparts.
 
-- `<split>` is `dev` (hyperparameter tuning, ~10% of data) or `test` (evaluation, ~90%).
-- **Contaminated** files carry a `matched` or `shifted` tag *after* the split, e.g.
-  `..._test_matched.jsonl`. The `matched` tree is OLMo-Detect; the `shifted` tree is
-  OLMo-Detect (Shifted).
-- **Uncontaminated** files are shared between the matched and shifted settings, so they
-  carry no tag, e.g. `..._test.jsonl`.
-- Two domains have no `shifted` variant (random sampling does not produce a distributional
-  shift there): **mid-training/GSM8K** and **post-training/RLVR**. These have
-  `contaminated/{dev,test}/` directly, with no `matched`/`shifted` level.
-- **SFT** training data differs across model sizes, so it is split into `sft/1b-32b/`
-  and `sft/7b-13b/`.
-- **RLVR** contaminated subsets are `cot-gsm8k`, `cot-math` (8-shot / 3-shot CoT-prefixed),
-  and `ifeval`. We additionally release no-CoT variants (`*_gsm8k_no_cot`, `*_math_no_cot`)
-  used for the boilerplate-removal analysis (paper Table 7).
-
-### 1.3 Record schema
+<!-- ### 1.3 Record schema
 
 Every record contains a `text` field — **`text` is always the input scored by the
 detection methods.** Records also retain domain-native fields and the per-record
@@ -84,7 +48,7 @@ detection methods.** Records also retain domain-native fields and the per-record
   `rejected_text`, and rating metadata.
 - **RLVR CoT subsets:** `text` is the CoT-prefixed input; `text_no_cot` is the same
   sample with the shared CoT boilerplate stripped.
-
+ -->
 
 <!-- 
 Verbatim contamination detection asks whether a given text appears *verbatim* in
