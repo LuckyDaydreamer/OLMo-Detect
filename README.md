@@ -1,7 +1,23 @@
-# OLMo-Detect
+<p align="center">
+  <img src="assets/logo.svg" alt="OLMo-Detect" width="640">
+</p>
+
+<p align="center">
+  <em>A Multi-Stage Benchmark for Verbatim Contamination Detection in Large Language Models</em>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/stages-3-4F8DFD"> 
+  <img src="https://img.shields.io/badge/domains-9-4F8DFD"> 
+  <img src="https://img.shields.io/badge/methods-14-7C5CFC"> 
+  <img src="https://img.shields.io/badge/model%20sizes-1B%E2%80%9332B-7C5CFC"> 
+  <img src="https://img.shields.io/badge/venue-EMNLP%202026-1b2330">
+</p>
+
+---
 
 This repository contains the **benchmark, detection-method code, and reproduction
-scripts** for the submission *"OLMo-Detect: A Multi-Stage Benchmark for Verbatim
+scripts** for the EMNLP 2026 submission *"OLMo-Detect: A Multi-Stage Benchmark for Verbatim
 Contamination Detection in Large Language Models."*
 
 Verbatim contamination detection asks whether a given text appears *verbatim* in

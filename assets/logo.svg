@@ -1,0 +1,38 @@
+<svg width="880" height="240" viewBox="0 0 880 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OLMo-Detect">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4F8DFD"/>
+      <stop offset="1" stop-color="#7C5CFC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- icon: magnifier scanning a document of text lines -->
+  <g transform="translate(40,52)">
+    <!-- document -->
+    <rect x="6" y="6" width="104" height="128" rx="12" fill="#ffffff" stroke="url(#g)" stroke-width="4"/>
+    <rect x="26" y="34" width="64" height="8" rx="4" fill="#C9D7F5"/>
+    <rect x="26" y="54" width="64" height="8" rx="4" fill="#C9D7F5"/>
+    <!-- highlighted (contaminated) line -->
+    <rect x="26" y="74" width="64" height="8" rx="4" fill="url(#g)"/>
+    <rect x="26" y="94" width="44" height="8" rx="4" fill="#C9D7F5"/>
+    <!-- magnifier -->
+    <circle cx="92" cy="92" r="34" fill="#ffffff" fill-opacity="0.0" stroke="url(#g)" stroke-width="9"/>
+    <line x1="116" y1="116" x2="142" y2="142" stroke="url(#g)" stroke-width="11" stroke-linecap="round"/>
+    <!-- detection check -->
+    <path d="M80 92 l8 9 16 -20" fill="none" stroke="url(#g)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="220" y="110" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="62" font-weight="800" fill="#1b2330">OLMo<tspan fill="url(#g)">-Detect</tspan></text>
+
+  <!-- tagline -->
+  <text x="222" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" fill="#5b6675">A Multi-Stage Benchmark for Verbatim Contamination Detection in LLMs</text>
+
+  <!-- chips -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700">
+    <rect x="222" y="168" width="148" height="30" rx="15" fill="#EAF1FF"/>
+    <text x="296" y="188" fill="#3b6fd6" text-anchor="middle">3 stages · 9 domains</text>
+    <rect x="380" y="168" width="132" height="30" rx="15" fill="#EFEAFF"/>
+    <text x="446" y="188" fill="#6a4fd6" text-anchor="middle">14 methods · 4 sizes</text>
+  </g>
+</svg>
