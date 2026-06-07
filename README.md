@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.svg" alt="OLMo-Detect" width="640">
+  <img src="assets/logo.svg" alt="OLMo-Detect" width="460">
 </p>
 
 <p align="center">
@@ -9,9 +9,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/stages-3-4F8DFD"> 
   <img src="https://img.shields.io/badge/domains-9-4F8DFD"> 
-  <img src="https://img.shields.io/badge/methods-14-7C5CFC"> 
-  <img src="https://img.shields.io/badge/model%20sizes-1B%E2%80%9332B-7C5CFC"> 
-  <img src="https://img.shields.io/badge/venue-EMNLP%202026-1b2330">
+  <img src="https://img.shields.io/badge/model%20sizes-1B%E2%80%9332B-7C5CFC">
 </p>
 
 ---
