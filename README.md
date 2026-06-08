@@ -18,7 +18,7 @@
 This repository contains the data and code for the EMNLP 2026 submission *OLMo-Detect: A Multi-Stage Benchmark for Verbatim Contamination Detection in Large Language Models.*
 
 
-## 1 Benchmark
+## Benchmark
 Built upon the OLMo 2 training pipeline, OLMo-Detect comprises nine domains across all three stages of modern LLM training: pre-training (DCLM-Baseline, peS2o, OpenWebMath, and StarCoder), mid-training (GSM8K and StackExchange), and post-training (SFT, DPO, and RLVR). The benchmark is organized as follows:
 
 ```
@@ -35,8 +35,22 @@ benchmark/
 - `matched`: `OLMo-Detect`, where contaminated and uncontaminated splits are explicitly aligned along up to three axes: text quality, temporal range, and lexical similarity.
 - `shifted`: `OLMo-Detect (Shifted)`, where contaminated splits are sampled without distributional alignment to their uncontaminated counterparts.
 
+The original OLMo 2 data is available from the following sources:
 
-## 2 Infini-Gram Indexed OLMo 2 Corpus
+- **Pre-training:** [olmo-mix-1124](https://huggingface.co/datasets/allenai/olmo-mix-1124)
+- **Mid-training:** [dolmino-mix-1124](https://huggingface.co/datasets/allenai/dolmino-mix-1124)
+- **Post-training:**
+  - **SFT:**
+    - 7B and 13B: [tulu-3-sft-olmo-2-mixture](https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture)
+    - 1B and 32B: [tulu-3-sft-olmo-2-mixture-0225](https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture-0225)
+  - **DPO:**
+    - 1B: [olmo-2-0425-1b-preference-mix](https://huggingface.co/datasets/allenai/olmo-2-0425-1b-preference-mix)
+    - 7B: [olmo-2-1124-7b-preference-mix](https://huggingface.co/datasets/allenai/olmo-2-1124-7b-preference-mix)
+    - 13B: [olmo-2-1124-13b-preference-mix](https://huggingface.co/datasets/allenai/olmo-2-1124-13b-preference-mix)
+    - 32B: [olmo-2-0325-32b-preference-mix](https://huggingface.co/datasets/allenai/olmo-2-0325-32b-preference-mix)
+  - **RLVR:** [RLVR-GSM-MATH-IF-Mixed-Constraints](https://huggingface.co/datasets/allenai/RLVR-GSM-MATH-IF-Mixed-Constraints)
+
+## Infini-Gram Indexed OLMo 2 Corpus
 We employ Infini-gram, a suffix-array–based indexing system, to index the full OLMo 2 training corpus across all four model sizes and all three training stages. The complete indexed corpus (~12.3 TB) is available for download (link withheld for anonymity and will be released after the anonymity period).
 
 
