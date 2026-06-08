@@ -73,8 +73,9 @@ The original OLMo 2 data is available from the following sources:
 We employ Infini-gram, a suffix-array–based indexing system, to index the full OLMo 2 training corpus across all four model sizes and all three training stages. The complete indexed corpus (~12.3 TB) is available for download (link withheld for anonymity and will be released after the anonymity period).
 
 
-<!-- ## 3. Data Processing Code -->
-
+## Data Processing Code
+The `utils/` directory contains the data processing code:
+- `13gram_filtering.py`: filters uncontaminated instances against the infini-gram–indexed OLMo 2 corpus, keeping only those whose 13-gram overlap stays below the 20% threshold. For DCLM-Baseline, StarCoder, and Stack Exchange, it also applies text quality boundary check. The DCLM quality filter needs the fastText model from [mlfoundations/fasttext-oh-eli5](https://huggingface.co/mlfoundations/fasttext-oh-eli5), downloaded into `utils/fasttext_dir/`.
 
 
 
