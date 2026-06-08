@@ -33,7 +33,7 @@ benchmark/
       <split>/            uncontaminated_<stage>_<domain>_<split>.jsonl
 ```
 
-- `<split>`: `dev` (hyperparameter tuning, ~10%) or `test` (evaluation, ~90%).
+- `<split>`: `dev` (hyperparameter tuning) or `test` (evaluation).
 - `matched`: `OLMo-Detect`, where contaminated and uncontaminated splits are explicitly aligned along up to three axes: text quality, temporal range, and lexical similarity.
 - `shifted`: `OLMo-Detect (Shifted)`, where contaminated splits are sampled without distributional alignment to their uncontaminated counterparts.
 
