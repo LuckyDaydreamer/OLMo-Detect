@@ -51,7 +51,7 @@ Every instance has a **`text`** field, which is the input scored by detection me
 | **Stack Exchange** | `created`, `question_score`, `answer_score` |
 | **SFT** | `messages` (chat turns; `text` is the rendered chat-templated string) |
 | **DPO** | `prompt`, `chosen`, `rejected`, `chosen_text`, `rejected_text`, `chosen_model`, `rejected_model`, `chosen_rating`, `rejected_rating` |
-| **RLVR** | `messages`, `ground_truth`, `dataset`, `constraint_type`, `constraint`; `text_no_cot` (sample with the shared CoT prefix removed) |
+| **RLVR** | `messages`, `ground_truth`, `dataset`, `constraint_type`, `constraint`; `text_no_cot` (text with the shared CoT prefix removed) |
 
 
 ## Infini-Gram Indexed OLMo 2 Corpus
