@@ -44,10 +44,10 @@ Every instance has a **`text`** field, which is the input scored by detection me
 | Domain | Domain-specific fields |
 |--------|------------------------|
 | **DCLM-Baseline** | `url`, `metadata` (WARC headers), `language_id_whole_page_fasttext`, fastText quality scores, n-gram / word counts |
-| **OpenWebMath** | `url`, `created`, `metadata` |
+| **OpenWebMath** | `url`, `created`, `metadata` (math-extraction info) |
 | **peS2o** | `id`, `added`, `created` |
 | **StarCoder** | `id`, `max_stars_repo_path`, `max_stars_repo_name`, `max_stars_count`, `top1_word_freq`, `top2_word_freq` |
-| **GSM8K** | `id`, `source`, `added`, `created`, `metadata`, `contamination_metadata_<size>` |
+| **GSM8K** | `id`, `source`, `added`, `created`, `metadata` (original question/answer) |
 | **Stack Exchange** | `created`, `question_score`, `answer_score` |
 | **SFT** | `messages` (chat turns; `text` is the rendered chat-templated string) |
 | **DPO** | `prompt`, `chosen`, `rejected`, `chosen_text`, `rejected_text`, `chosen_model`, `rejected_model`, `chosen_rating`, `rejected_rating` |
