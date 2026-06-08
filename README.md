@@ -39,7 +39,7 @@ benchmark/
 
 
 ### Data Format
-Every instance has a **`text`** field, which is the input scored by detection methods (for DPO, the scored inputs are `chosen_text` and `rejected_text` instead). Within a domain, contaminated and uncontaminated instances share the same fields; uncontaminated instances additionally carry per-model **`<size>_13-gram_overlap_score`** fields (the 13-gram overlap against the OLMo 2 corpus). Beyond `text`, each domain keeps its source-native metadata:
+Every instance has a **`text`** field, which is the input scored by detection methods (for DPO, the scored inputs are `chosen_text` and `rejected_text` instead). Within a domain, contaminated and uncontaminated instances share the same fields; uncontaminated instances additionally carry per-model **`<size>_13-gram_overlap_score`** fields (the 13-gram overlap with the OLMo 2 corpus). Beyond `text`, each domain keeps its source-native metadata:
 
 | Domain | Domain-specific fields |
 |--------|------------------------|
@@ -54,7 +54,7 @@ Every instance has a **`text`** field, which is the input scored by detection me
 | **RLVR** | `messages`, `ground_truth`, `dataset`, `constraint_type`, `constraint`; `text_no_cot` (sample with the shared CoT prefix removed) |
 
 
-## OLMo 2 Corpus
+## Infini-Gram Indexed OLMo 2 Corpus
 The original OLMo 2 data is available from the following sources:
 
 - **Pre-training:** [olmo-mix-1124](https://huggingface.co/datasets/allenai/olmo-mix-1124)
@@ -70,7 +70,6 @@ The original OLMo 2 data is available from the following sources:
     - 32B: [olmo-2-0325-32b-preference-mix](https://huggingface.co/datasets/allenai/olmo-2-0325-32b-preference-mix)
   - **RLVR:** [RLVR-GSM-MATH-IF-Mixed-Constraints](https://huggingface.co/datasets/allenai/RLVR-GSM-MATH-IF-Mixed-Constraints)
 
-## Infini-Gram Indexed OLMo 2 Corpus
 We employ Infini-gram, a suffix-array–based indexing system, to index the full OLMo 2 training corpus across all four model sizes and all three training stages. The complete indexed corpus (~12.3 TB) is available for download (link withheld for anonymity and will be released after the anonymity period).
 
 
