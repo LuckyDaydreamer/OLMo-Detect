@@ -19,6 +19,8 @@ This repository contains the data and code for the EMNLP 2026 submission *OLMo-D
 
 
 ## Benchmark
+
+### Overview
 Built upon the OLMo 2 training pipeline, OLMo-Detect comprises nine domains across all three stages of modern LLM training: pre-training (DCLM-Baseline, peS2o, OpenWebMath, and StarCoder), mid-training (GSM8K and StackExchange), and post-training (SFT, DPO, and RLVR). The benchmark is organized as follows:
 
 ```
@@ -35,6 +37,24 @@ benchmark/
 - `matched`: `OLMo-Detect`, where contaminated and uncontaminated splits are explicitly aligned along up to three axes: text quality, temporal range, and lexical similarity.
 - `shifted`: `OLMo-Detect (Shifted)`, where contaminated splits are sampled without distributional alignment to their uncontaminated counterparts.
 
+
+### Data Format
+Every instance has a **`text`** field, which is the input scored by detection methods (for DPO, the scored inputs are `chosen_text` and `rejected_text` instead). Within a domain, contaminated and uncontaminated instances share the same fields; uncontaminated instances additionally carry per-model **`<size>_13-gram_overlap_score`** fields (the 13-gram overlap against the OLMo 2 corpus). Beyond `text`, each domain keeps its source-native metadata:
+
+| Domain | Domain-specific fields |
+|--------|------------------------|
+| **DCLM-Baseline** | `url`, `metadata` (WARC headers), `language_id_whole_page_fasttext`, fastText quality scores, n-gram / word counts |
+| **OpenWebMath** | `url`, `created`, `metadata` |
+| **peS2o** | `id`, `added`, `created` |
+| **StarCoder** | `id`, `max_stars_repo_path`, `max_stars_repo_name`, `max_stars_count`, `top1_word_freq`, `top2_word_freq` |
+| **GSM8K** | `id`, `source`, `added`, `created`, `metadata`, `contamination_metadata_<size>` |
+| **Stack Exchange** | `created`, `question_score`, `answer_score` |
+| **SFT** | `messages` (chat turns; `text` is the rendered chat-templated string) |
+| **DPO** | `prompt`, `chosen`, `rejected`, `chosen_text`, `rejected_text`, `chosen_model`, `rejected_model`, `chosen_rating`, `rejected_rating` |
+| **RLVR** | `messages`, `ground_truth`, `dataset`, `constraint_type`, `constraint`; `text_no_cot` (sample with the shared CoT prefix removed) |
+
+
+## OLMo 2 Corpus
 The original OLMo 2 data is available from the following sources:
 
 - **Pre-training:** [olmo-mix-1124](https://huggingface.co/datasets/allenai/olmo-mix-1124)
@@ -58,21 +78,6 @@ We employ Infini-gram, a suffix-array–based indexing system, to index the full
 
 
 
-
-<!-- ### 1.3 Record schema
-
-Every record contains a `text` field — **`text` is always the input scored by the
-detection methods.** Records also retain domain-native fields and the per-record
-13-gram `*_overlap_score` used during construction. A few examples:
-
-- **Pre-training (e.g. OpenWebMath, DCLM, peS2o, StarCoder):** `text`, plus source
-  metadata (URL, quality scores, dates).
-- **SFT / DPO / RLVR:** `messages` (chat turns) and `text` (the rendered, chat-templated
-  string). DPO additionally has `prompt`, `chosen`, `rejected`, `chosen_text`,
-  `rejected_text`, and rating metadata.
-- **RLVR CoT subsets:** `text` is the CoT-prefixed input; `text_no_cot` is the same
-  sample with the shared CoT boilerplate stripped.
- -->
 
 <!-- 
 Verbatim contamination detection asks whether a given text appears *verbatim* in
