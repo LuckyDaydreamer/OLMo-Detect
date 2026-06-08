@@ -76,7 +76,8 @@ We employ Infini-gram, a suffix-array–based indexing system, to index the full
 ## Data Processing Code
 The `utils/` directory contains the data processing code:
 - `13gram_filtering.py`: filters uncontaminated instances against the infini-gram–indexed OLMo 2 corpus, keeping only those whose 13-gram overlap stays below the 20% threshold. For DCLM-Baseline, StarCoder, and Stack Exchange, it also applies text quality boundary check. The DCLM quality filter needs the fastText model from [mlfoundations/fasttext-oh-eli5](https://huggingface.co/mlfoundations/fasttext-oh-eli5), downloaded into `utils/fasttext_dir/`.
-- `sample_contaminated_candidates.py`: samples the contaminated candidate pool via boundary sampling for quality-filtered domains (DCLM-Baseline, StarCoder, and Stack Exchange), retaining instances whose quality scores sit just above OLMo 2's filtering threshold.
+- `sample_contaminated_candidates.py`: samples the contaminated candidate pool via boundary sampling for quality-filtered domains (DCLM-Baseline, StarCoder, and Stack Exchange), retaining instances whose text quality scores sit just above OLMo 2's filtering threshold.
+- `simulated_annealing_sampling.py`: selects the final contaminated split from the candidate pool via constrained simulated annealing, matching the uncontaminated split's instance count and token count while minimizing lexical (and, where dates are available, temporal) distribution mismatch.
 
 
 
