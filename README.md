@@ -143,7 +143,7 @@ python evaluate.py --method camia --show-tpr --results-dir results_repro  # AUC/
 
 To evaluate `loss_zlib_lowercase` end to end:
 ```bash
-sbatch run_all.slurm loss_zlib_lowercase matched                                    # scores -> results_repro/
+sbatch run_all.slurm loss_zlib_lowercase matched                               # scores -> results_repro/
 python evaluate.py --method ppl       --show-tpr --results-dir results_repro   # Perplexity
 python evaluate.py --method zlib      --show-tpr --results-dir results_repro   # Zlib
 python evaluate.py --method lowercase --show-tpr --results-dir results_repro   # Lowercase
