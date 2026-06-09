@@ -39,10 +39,17 @@ class DatasetBundle:
 
 def _dataset_name_from_path(path: str) -> str:
     stem = Path(path).stem
-    # Result directories are named after the dataset stem. Drop a trailing
-    # "_eval" so output dirs are e.g. "<domain>" rather than "<domain>_eval".
+    # Result directories are named after the dataset stem, with the split
+    # markers dropped so a fresh run lands in the same folder as the released
+    # scores:
+    #   ..._eval          -> ...
+    #   ..._test_matched  -> ..._matched   (and ..._test_shifted -> ..._shifted)
+    #   ..._test          -> ...
     if stem.endswith("_eval"):
         stem = stem[: -len("_eval")]
+    stem = stem.replace("_test_", "_")
+    if stem.endswith("_test"):
+        stem = stem[: -len("_test")]
     return stem
 
 

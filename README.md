@@ -44,6 +44,7 @@ benchmark/
 - `<split>`: `dev` (hyperparameter tuning) or `test` (evaluation).
 - `matched`: `OLMo-Detect`, where contaminated and uncontaminated splits are explicitly aligned along up to three axes: text quality, temporal range, and lexical similarity.
 - `shifted`: `OLMo-Detect (Shifted)`, where contaminated splits are sampled without distributional alignment to their uncontaminated counterparts.
+- **DPO** additionally has separate `chosen` and `rejected` files (e.g. `..._matched_chosen_test.jsonl` and `..._matched_rejected_test.jsonl`), since its two scored inputs are evaluated independently.
 
 
 ### Data Format
@@ -102,6 +103,31 @@ The source files used to sample each domain are detailed below:
 | **SFT** | Original [Aya](https://huggingface.co/datasets/CohereLabs/aya_dataset/tree/main/data) and [WildChat](https://huggingface.co/datasets/allenai/WildChat-1M/tree/main/data) | [tulu-3-sft-olmo-2-mixture Aya and WildChat](https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture/tree/main/data) (7B and 13B)<br>[tulu-3-sft-olmo-2-mixture-0225 Aya and WildChat](https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture-0225/tree/main/data) (1B and 32B) |
 | **DPO** | [Original WildChat prompts](https://huggingface.co/datasets/allenai/WildChat-1M/tree/main/data) + [UltraFeedback pipeline for response generation](https://github.com/allenai/open-instruct/blob/main/scripts/synth_pref/README.md) | [olmo-2-0425-1b-preference-mix WildChat](https://huggingface.co/datasets/allenai/olmo-2-0425-1b-preference-mix) (1B)<br>[olmo-2-1124-7b-preference-mix WildChat](https://huggingface.co/datasets/allenai/olmo-2-1124-7b-preference-mix) (7B)<br>[olmo-2-1124-13b-preference-mix WildChat](https://huggingface.co/datasets/allenai/olmo-2-1124-13b-preference-mix) (13B)<br>[olmo-2-0325-32b-preference-mix WildChat](https://huggingface.co/datasets/allenai/olmo-2-0325-32b-preference-mix) (32B) |
 | **RLVR** | [gsm8k-test.jsonl](https://huggingface.co/datasets/openai/gsm8k/blob/main/main/test-00000-of-00001.parquet) (excluding the 200 OLMo 2 dev instances) + 8-shot CoT<br>[MATH test split](https://huggingface.co/datasets/qwedsacf/competition_math/tree/main/data) (the file mixes train and test; split them first) + 3-shot CoT<br>[Tülu 2 SFT Mixture IFEval prompts](https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture/tree/main/data) + constraints | [RLVR-GSM-MATH-IF-Mixed-Constraints](https://huggingface.co/datasets/allenai/RLVR-GSM-MATH-IF-Mixed-Constraints/tree/main/data) |
+
+
+## Reproducing Results
+
+**Step 1 — get per-record scores.** Run one method across all domains using the following script; scores are written under `results_repro/`:
+```bash
+sbatch run_all.slurm <method> [matched|shifted]   # default split: matched
+```
+`<method>` is one of: `loss_zlib_lowercase` (Perplexity, Zlib, Lowercase), `minkprob` (Min-K%, Min-K%++), `dcpdd`, `recall`, `camia`, `pac`, `neighborhood_attack`, `dcq`, `guided_instruction`, `cdd`, `selfcrit`. Alternatively, you can skip this step and use the scores already in `results/`. 
+
+Methods with tunable hyperparameters are tuned on the `dev` split.
+
+**Step 2 — get AUC / TPR@5%FPR from the scores.** Run `reproduce_auc.py` for a method. Point `--results-dir` at your Step-1 output (`results_repro/`); omit it to score the released `results/` instead:
+```bash
+python reproduce_auc.py --list                                                 # available method keys
+python reproduce_auc.py --method camia --show-tpr --results-dir results_repro  # AUC/TPR@5%FPR per stage / domain / subset
+```
+
+**Quick example.** To evaluate `loss_zlib_lowercase` end to end:
+```bash
+sbatch run_all.slurm loss_zlib_lowercase matched                                    # scores -> results_repro/
+python reproduce_auc.py --method ppl       --show-tpr --results-dir results_repro   # Perplexity
+python reproduce_auc.py --method zlib      --show-tpr --results-dir results_repro   # Zlib
+python reproduce_auc.py --method lowercase --show-tpr --results-dir results_repro   # Lowercase
+```
 
 
 <!-- 
