@@ -92,49 +92,15 @@ The source files used to sample each domain are detailed below:
 
 | Domain | Uncontaminated | Contaminated |
 |--------|----------------|--------------|
-| **DCLM-Baseline** | DCLM-Pool [global-shard_01-local-shard_0, global-shard_05-local-shard_6, global-shard_07-local-shard_3](https://data.commoncrawl.org/contrib/datacomp/DCLM-refinedweb/index.html) | DCLM-Baseline [global-shard_01-local-shard_0](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/dclm/raw/hero-run-fasttext_for_HF/filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_01_of_10/local-shard_0_of_10), [global-shard_05-local-shard_6](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/dclm/raw/hero-run-fasttext_for_HF/filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_05_of_10/local-shard_6_of_10), [global-shard_07-local-shard_3](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/dclm/raw/hero-run-fasttext_for_HF/filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_07_of_10/local-shard_3_of_10) |
+| **DCLM-Baseline** | DCLM-Pool [global-shard_01-local-shard_0, global-shard_05-local-shard_6, global-shard_07-local-shard_3](https://data.commoncrawl.org/contrib/datacomp/DCLM-refinedweb/index.html) | olmo-mix-1124 DCLM-Baseline [global-shard_01-local-shard_0](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/dclm/raw/hero-run-fasttext_for_HF/filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_01_of_10/local-shard_0_of_10), [global-shard_05-local-shard_6](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/dclm/raw/hero-run-fasttext_for_HF/filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_05_of_10/local-shard_6_of_10), [global-shard_07-local-shard_3](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/dclm/raw/hero-run-fasttext_for_HF/filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_07_of_10/local-shard_3_of_10) |
 | **peS2o** | [validation-00.jsonl](https://huggingface.co/datasets/allenai/peS2o/blob/main/data/v2/validation-00000-of-00002.json.gz), [validation-01.jsonl](https://huggingface.co/datasets/allenai/peS2o/blob/main/data/v2/validation-00001-of-00002.json.gz) | [olmo-mix-1124 peS2o](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/pes2o) |
 | **OpenWebMath** | [test.jsonl](https://huggingface.co/datasets/EleutherAI/proof-pile-2/tree/main/open-web-math/test) | [olmo-mix-1124 OpenWebMath](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/open-web-math/train) |
-| **StarCoder** | Assembly [`train-00.jsonl`][sc-asm-train00], [`train-01.jsonl`][sc-asm-train01]; Java [`train-00.jsonl`–`train-86.jsonl`][sc-java-train] | Assembly [`assembly-00.jsonl`][sc-asm-con00], [`assembly-01.jsonl`][sc-asm-con01]; Java [`00.jsonl`–`86.jsonl`][sc-java-con] |
-| **GSM8K** | [`gsm8k_test.jsonl`][gsm8k-test] (excluding the 200 OLMo 2 dev instances) | [`gsm8k_train.jsonl`][gsm8k-train] |
-| **Stack Exchange** | [2024-09-30 Stack Exchange dump][se-dump] | [`stackexchange-00.jsonl`–`stackexchange-15.jsonl`][se-con] |
-| **SFT** | Aya [`train-0.jsonl`][aya-train], [`test-0.jsonl`][aya-test]; WildChat [`train-00.jsonl`–`train-13.jsonl`][wildchat-sft] | [tulu-3-sft-olmo-2-mixture][sft-con] (Aya / WildChat instances) |
-| **DPO** | WildChat [`train-00.jsonl`–`train-13.jsonl`][wildchat-dpo] (then UltraFeedback pipeline for chosen / rejected) | [olmo-2 preference mix][dpo-con] (WildChat instances) |
-| **RLVR** | GSM8K [`gsm8k-test.jsonl`][rlvr-gsm8k]; MATH test split in [`train-00.jsonl`][rlvr-math]; IFEval prompts from [Tülu 2 SFT Mixture][rlvr-ifeval] | [RLVR-GSM-MATH-IF-Mixed-Constraints][rlvr-con] `train-00.jsonl` |
-
-<!-- Fill in the URLs below (one per line). -->
-[dclm-pool-01]: 
-[dclm-pool-05]: 
-[dclm-pool-07]: 
-[dclm-base-01]: 
-[dclm-base-05]: 
-[dclm-base-07]: 
-[pes2o-val00]: 
-[pes2o-val01]: 
-[pes2o-con]: 
-[owm-test]: 
-[owm-con]: 
-[sc-asm-train00]: 
-[sc-asm-train01]: 
-[sc-java-train]: 
-[sc-asm-con00]: 
-[sc-asm-con01]: 
-[sc-java-con]: 
-[gsm8k-test]: 
-[gsm8k-train]: 
-[se-dump]: 
-[se-con]: 
-[aya-train]: 
-[aya-test]: 
-[wildchat-sft]: 
-[sft-con]: 
-[wildchat-dpo]: 
-[dpo-con]: 
-[rlvr-gsm8k]: 
-[rlvr-math]: 
-[rlvr-ifeval]: 
-[rlvr-con]: 
-
+| **StarCoder** | Original StarCoder [Assembly](https://huggingface.co/datasets/bigcode/starcoderdata/tree/main/assembly) and [Java](https://huggingface.co/datasets/bigcode/starcoderdata/tree/main/java) | [olmo-mix-1124 Assembly and Java](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/starcoder/v1-decon-100_to_20k-2star-top_token_030/documents) |
+| **GSM8K** | [gsm8k-test.jsonl](https://huggingface.co/datasets/openai/gsm8k/blob/main/main/test-00000-of-00001.parquet) (excluding the 200 OLMo 2 dev instances) | [gsm8k-train.jsonl](https://huggingface.co/datasets/allenai/dolmino-mix-1124/tree/main/data/math/gsm8k/main/train) |
+| **Stack Exchange** | [Original 2024-09-30 Stack Exchange dump](https://archive.org/details/stackexchange_20240930) | [dolmino-mix-1124 Stack Exchange](https://huggingface.co/datasets/allenai/dolmino-mix-1124/tree/main/data/stackexchange) |
+| **SFT** | Original [Aya](https://huggingface.co/datasets/CohereLabs/aya_dataset/tree/main/data) and [WildChat](https://huggingface.co/datasets/allenai/WildChat-1M/tree/main/data) | [tulu-3-sft-olmo-2-mixture Aya and WildChat](https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture/tree/main/data) (7B and 13B)<br>[tulu-3-sft-olmo-2-mixture-0225 Aya and WildChat](https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture-0225/tree/main/data) (1B and 32B) |
+| **DPO** | [Original WildChat prompts](https://huggingface.co/datasets/allenai/WildChat-1M/tree/main/data) + [UltraFeedback pipeline for response generation](https://github.com/allenai/open-instruct/blob/main/scripts/synth_pref/README.md) | [olmo-2-0425-1b-preference-mix WildChat](https://huggingface.co/datasets/allenai/olmo-2-0425-1b-preference-mix) (1B)<br>[olmo-2-1124-7b-preference-mix WildChat](https://huggingface.co/datasets/allenai/olmo-2-1124-7b-preference-mix) (7B)<br>[olmo-2-1124-13b-preference-mix WildChat](https://huggingface.co/datasets/allenai/olmo-2-1124-13b-preference-mix) (13B)<br>[olmo-2-0325-32b-preference-mix WildChat](https://huggingface.co/datasets/allenai/olmo-2-0325-32b-preference-mix) (32B) |
+| **RLVR** | [gsm8k-test.jsonl](https://huggingface.co/datasets/openai/gsm8k/blob/main/main/test-00000-of-00001.parquet) (excluding the 200 OLMo 2 dev instances) + 8-shot CoT<br>[MATH test split](https://huggingface.co/datasets/qwedsacf/competition_math/tree/main/data) + 3-shot CoT<br>[Tülu 2 SFT Mixture IFEval prompts](https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture/tree/main/data) + constraints | [RLVR-GSM-MATH-IF-Mixed-Constraints](https://huggingface.co/datasets/allenai/RLVR-GSM-MATH-IF-Mixed-Constraints/tree/main/data) |
 
 
 <!-- 
