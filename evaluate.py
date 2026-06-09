@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 """
-Reproduce OLMo-Detect AUC for ONE detection method, at every granularity:
-all-stage (Overall), per-stage, per-domain, and per-subset.
+Compute OLMo-Detect AUC and TPR@5%FPR for ONE detection method, at every
+granularity: all-stage (Overall), per-stage, per-domain, and per-subset.
+Works both for reproducing our reported methods and for evaluating a new one.
 
 This covers the 14 "per-sample" methods, whose scope AUC is computed by POOLING
 the contaminated (label 1) and uncontaminated (label 0) instances across the
@@ -11,8 +12,9 @@ pools instances across stages; domain/stage numbers pool their members).
   Perplexity, Zlib, Lowercase, Min-K%, Min-K%++, DC-PDD, RECALL, CAMIA, PAC,
   Neighborhood, DCQ, CDD, Guided Instruction, Self-Critique
 
-EMMIA is NOT here: it aggregates by AVERAGING per-cell AUCs, not pooling, and
-has a different on-disk layout — use reproduce_auc_emmia.py for it.
+EMMIA is NOT covered here: it aggregates by AVERAGING per-cell AUCs (not
+pooling) and has a different on-disk layout, so it will be scored by a
+separate script.
 
 Method-specific data handling (this is where methods differ — handled for you):
   * DPO          → contaminated = chosen ∪ rejected pooled (likewise uncontam.).
@@ -22,9 +24,9 @@ Method-specific data handling (this is where methods differ — handled for you)
                    (method, domain) combinations that don't exist print "n/a".
 
 Usage:
-  python reproduce_auc.py --method ppl
-  python reproduce_auc.py --method camia --fpr 0.05      # also prints TPR@FPR
-  python reproduce_auc.py --list                          # list method keys
+  python evaluate.py --method ppl
+  python evaluate.py --method camia --fpr 0.05      # also prints TPR@FPR
+  python evaluate.py --list                          # list method keys
 """
 from __future__ import annotations
 import argparse, json, math

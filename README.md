@@ -25,6 +25,20 @@ conda activate olmo-detect
 pip install -r requirements.txt
 ```
 
+Evaluation also needs the four OLMo 2 Instruct checkpoints, placed under `olmo_models/` with these exact directory names:
+
+| Local directory | Hugging Face model |
+|-----------------|--------------------|
+| `olmo_models/OLMo2-1B-Instruct`  | [allenai/OLMo-2-0425-1B-Instruct](https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct) |
+| `olmo_models/OLMo2-7B-Instruct`  | [allenai/OLMo-2-1124-7B-Instruct](https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct) |
+| `olmo_models/OLMo2-13B-Instruct` | [allenai/OLMo-2-1124-13B-Instruct](https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct) |
+| `olmo_models/OLMo2-32B-Instruct` | [allenai/OLMo-2-0325-32B-Instruct](https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct) |
+
+For example:
+```bash
+hf download allenai/OLMo-2-0425-1B-Instruct --local-dir olmo_models/OLMo2-1B-Instruct
+```
+
 
 ## Benchmark
 
@@ -107,26 +121,66 @@ The source files used to sample each domain are detailed below:
 
 ## Reproducing Results
 
-**Step 1 — get per-record scores.** Run one method across all domains using the following script; scores are written under `results_repro/`:
+**Step 1: Get Per-Record Scores.** 
+
+Run the target method across all domains using the following script; scores are written under `results_repro/`:
 ```bash
 sbatch run_all.slurm <method> [matched|shifted]   # default split: matched
 ```
 `<method>` is one of: `loss_zlib_lowercase` (Perplexity, Zlib, Lowercase), `minkprob` (Min-K%, Min-K%++), `dcpdd`, `recall`, `camia`, `pac`, `neighborhood_attack`, `dcq`, `guided_instruction`, `cdd`, `selfcrit`. Alternatively, you can skip this step and use the scores already in `results/`. 
 
-Methods with tunable hyperparameters are tuned on the `dev` split.
+Methods with tunable hyperparameters are tuned on the `dev` split, with all three stages (pre-training, mid-training, and post-training) pooled into a single tuning set.
 
-**Step 2 — get AUC / TPR@5%FPR from the scores.** Run `reproduce_auc.py` for a method. Point `--results-dir` at your Step-1 output (`results_repro/`); omit it to score the released `results/` instead:
+**Step 2: Compute AUC and TPR@5%FPR.** 
+
+Run `evaluate.py` for the target method. Set `--results-dir` to the output directory generated in Step 1 (e.g., `results_repro/`). If omitted, the script evaluates the scores provided in `results/`.
 ```bash
-python reproduce_auc.py --list                                                 # available method keys
-python reproduce_auc.py --method camia --show-tpr --results-dir results_repro  # AUC/TPR@5%FPR per stage / domain / subset
+python evaluate.py --list                                                 # show available method keys
+python evaluate.py --method camia --show-tpr --results-dir results_repro  # AUC/TPR@5%FPR per stage / domain / subset
 ```
 
-**Quick example.** To evaluate `loss_zlib_lowercase` end to end:
+**Example.** 
+
+To evaluate `loss_zlib_lowercase` end to end:
 ```bash
 sbatch run_all.slurm loss_zlib_lowercase matched                                    # scores -> results_repro/
-python reproduce_auc.py --method ppl       --show-tpr --results-dir results_repro   # Perplexity
-python reproduce_auc.py --method zlib      --show-tpr --results-dir results_repro   # Zlib
-python reproduce_auc.py --method lowercase --show-tpr --results-dir results_repro   # Lowercase
+python evaluate.py --method ppl       --show-tpr --results-dir results_repro   # Perplexity
+python evaluate.py --method zlib      --show-tpr --results-dir results_repro   # Zlib
+python evaluate.py --method lowercase --show-tpr --results-dir results_repro   # Lowercase
+```
+
+
+## Evaluating a New Method
+
+OLMo-Detect is meant as an evaluation suite, so you can plug in your own detection method and measure it with the same protocol.
+
+**1. Implement the method.** Add `methods/<your_method>_method.py` with a subclass of `BaseMethod` (see `base_method.py`). It needs a `name` and a `run(model_bundle, dataset)` that returns a `samples` list: one score per record, where a **higher score means more likely contaminated**:
+```python
+# methods/mymethod_method.py
+from base_method import BaseMethod
+
+class MyMethod(BaseMethod):
+    name = "mymethod"
+
+    def run(self, model_bundle, dataset):
+        samples = []
+        for i, rec in enumerate(dataset.records):
+            text = rec["text"]                          # the instance to score
+            score = my_score(text, model_bundle)        # higher = more likely contaminated
+            samples.append({"record_index": i, "score": float(score)})
+        return {"samples": samples, "num_scored_records": len(samples)}
+```
+`model_bundle` exposes the loaded model/tokenizer (and `llm_adapter` scoring helpers); `dataset.records` are the raw instances. The existing files under `methods/` are good templates: `loss_zlib_lowercase_method.py` / `minkprob_method.py` for likelihood-based scoring, `cdd_method.py` / `selfcrit_method.py` for generation-based. The loader finds `methods/<name>_method.py` automatically, so `--method <name>` works with no further registration (to add a short alias, edit `method_loader.py`).
+
+**2. Run it across all domains** (scores → `results_repro/`):
+```bash
+sbatch run_all.slurm mymethod matched
+```
+`run_all` works with any method name. If your method needs the `dev` split as a reference, or long generations, add it to `DEV_METHODS` / `GEN_METHODS` in `run_all.py`.
+
+**3. Score it.** Register the score column by adding one line to the `METHODS` map in `evaluate.py`: `"mymethod": ("mymethod", "score")` (file stem, score field), and then:
+```bash
+python evaluate.py --method mymethod --show-tpr --results-dir results_repro
 ```
 
 

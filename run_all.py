@@ -15,7 +15,7 @@ Handled automatically (mirrors how the experiments were run):
 
 Scores go to a SEPARATE dir (default results_repro/) so the released results/
 is never overwritten. Dir names inside it match the released layout, so:
-  python reproduce_auc.py --method <key> --results-dir results_repro
+  python evaluate.py --method <key> --results-dir results_repro
 
 Usage:
   python run_all.py --method minkprob --split matched
@@ -145,7 +145,7 @@ def main():
     for c in cmds:
         print("==>", c[c.index("--data")+1], "|", c[c.index("--model")+1].split('/')[-1])
         subprocess.run(c, cwd=ROOT, check=True)
-    print(f"All runs complete. Now: python reproduce_auc.py --method <key> --results-dir {a.out}")
+    print(f"All runs complete. Now: python evaluate.py --method <key> --results-dir {a.out}")
 
 if __name__ == "__main__":
     main()

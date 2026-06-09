@@ -19,7 +19,7 @@
 #  Min-K%/Min-K%++.)  Default split: matched.
 #
 # Per-record scores are written under results/, matching the released layout,
-# so afterwards:   python reproduce_auc.py --method <key>
+# so afterwards:   python evaluate.py --method <key>
 # =============================================================================
 set -euo pipefail
 
