@@ -18,6 +18,14 @@
 This repository contains the data and code for the EMNLP 2026 submission *OLMo-Detect: A Multi-Stage Benchmark for Verbatim Contamination Detection in Large Language Models.*
 
 
+## Setup
+```bash
+conda create -n olmo-detect python=3.11
+conda activate olmo-detect
+pip install -r requirements.txt
+```
+
+
 ## Benchmark
 
 ### Overview
@@ -78,6 +86,54 @@ The `utils/` directory contains the data processing code:
 - `13gram_filtering.py`: filters uncontaminated instances against the infini-gram–indexed OLMo 2 corpus, keeping only those whose 13-gram overlap stays below the 20% threshold. For DCLM-Baseline, StarCoder, and Stack Exchange, it also applies text quality boundary check. The DCLM quality filter needs the fastText model from [mlfoundations/fasttext-oh-eli5](https://huggingface.co/mlfoundations/fasttext-oh-eli5), downloaded into `utils/fasttext_dir/`.
 - `sample_contaminated_candidates.py`: samples the contaminated candidate pool via boundary sampling for quality-filtered domains (DCLM-Baseline, StarCoder, and Stack Exchange), retaining instances whose text quality scores sit just above OLMo 2's filtering threshold.
 - `simulated_annealing_sampling.py`: selects the final contaminated split from the candidate pool via constrained simulated annealing, matching the uncontaminated split's instance count and token count while minimizing lexical (and, where dates are available, temporal) distribution mismatch.
+
+### Source Data
+The source files used to sample each domain are detailed below:
+
+| Domain | Uncontaminated | Contaminated |
+|--------|----------------|--------------|
+| **DCLM-Baseline** | DCLM-Pool [global-shard_01-local-shard_0, global-shard_05-local-shard_6, global-shard_07-local-shard_3](https://data.commoncrawl.org/contrib/datacomp/DCLM-refinedweb/index.html) | DCLM-Baseline [global-shard_01-local-shard_0](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/dclm/raw/hero-run-fasttext_for_HF/filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_01_of_10/local-shard_0_of_10), [global-shard_05-local-shard_6](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/dclm/raw/hero-run-fasttext_for_HF/filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_05_of_10/local-shard_6_of_10), [global-shard_07-local-shard_3](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/dclm/raw/hero-run-fasttext_for_HF/filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_07_of_10/local-shard_3_of_10) |
+| **peS2o** | [validation-00.jsonl](https://huggingface.co/datasets/allenai/peS2o/blob/main/data/v2/validation-00000-of-00002.json.gz), [validation-01.jsonl](https://huggingface.co/datasets/allenai/peS2o/blob/main/data/v2/validation-00001-of-00002.json.gz) | [olmo-mix-1124 peS2o](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/pes2o) |
+| **OpenWebMath** | [test.jsonl](https://huggingface.co/datasets/EleutherAI/proof-pile-2/tree/main/open-web-math/test) | [olmo-mix-1124 OpenWebMath](https://huggingface.co/datasets/allenai/olmo-mix-1124/tree/main/data/open-web-math/train) |
+| **StarCoder** | Assembly [`train-00.jsonl`][sc-asm-train00], [`train-01.jsonl`][sc-asm-train01]; Java [`train-00.jsonl`–`train-86.jsonl`][sc-java-train] | Assembly [`assembly-00.jsonl`][sc-asm-con00], [`assembly-01.jsonl`][sc-asm-con01]; Java [`00.jsonl`–`86.jsonl`][sc-java-con] |
+| **GSM8K** | [`gsm8k_test.jsonl`][gsm8k-test] (excluding the 200 OLMo 2 dev instances) | [`gsm8k_train.jsonl`][gsm8k-train] |
+| **Stack Exchange** | [2024-09-30 Stack Exchange dump][se-dump] | [`stackexchange-00.jsonl`–`stackexchange-15.jsonl`][se-con] |
+| **SFT** | Aya [`train-0.jsonl`][aya-train], [`test-0.jsonl`][aya-test]; WildChat [`train-00.jsonl`–`train-13.jsonl`][wildchat-sft] | [tulu-3-sft-olmo-2-mixture][sft-con] (Aya / WildChat instances) |
+| **DPO** | WildChat [`train-00.jsonl`–`train-13.jsonl`][wildchat-dpo] (then UltraFeedback pipeline for chosen / rejected) | [olmo-2 preference mix][dpo-con] (WildChat instances) |
+| **RLVR** | GSM8K [`gsm8k-test.jsonl`][rlvr-gsm8k]; MATH test split in [`train-00.jsonl`][rlvr-math]; IFEval prompts from [Tülu 2 SFT Mixture][rlvr-ifeval] | [RLVR-GSM-MATH-IF-Mixed-Constraints][rlvr-con] `train-00.jsonl` |
+
+<!-- Fill in the URLs below (one per line). -->
+[dclm-pool-01]: 
+[dclm-pool-05]: 
+[dclm-pool-07]: 
+[dclm-base-01]: 
+[dclm-base-05]: 
+[dclm-base-07]: 
+[pes2o-val00]: 
+[pes2o-val01]: 
+[pes2o-con]: 
+[owm-test]: 
+[owm-con]: 
+[sc-asm-train00]: 
+[sc-asm-train01]: 
+[sc-java-train]: 
+[sc-asm-con00]: 
+[sc-asm-con01]: 
+[sc-java-con]: 
+[gsm8k-test]: 
+[gsm8k-train]: 
+[se-dump]: 
+[se-con]: 
+[aya-train]: 
+[aya-test]: 
+[wildchat-sft]: 
+[sft-con]: 
+[wildchat-dpo]: 
+[dpo-con]: 
+[rlvr-gsm8k]: 
+[rlvr-math]: 
+[rlvr-ifeval]: 
+[rlvr-con]: 
 
 
 
