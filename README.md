@@ -43,16 +43,26 @@ hf download allenai/OLMo-2-0425-1B-Instruct --local-dir olmo_models/OLMo2-1B-Ins
 ## Benchmark
 
 ### Overview
-Built upon the OLMo 2 training pipeline, OLMo-Detect comprises nine domains across all three stages of modern LLM training: pre-training (DCLM-Baseline, peS2o, OpenWebMath, and StarCoder), mid-training (GSM8K and StackExchange), and post-training (SFT, DPO, and RLVR). The benchmark is organized as follows:
+Built upon the OLMo 2 training pipeline, OLMo-Detect comprises nine domains across all three stages of modern LLM training: pre-training (DCLM-Baseline, peS2o, OpenWebMath, and StarCoder), mid-training (GSM8K and StackExchange), and post-training (SFT, DPO, and RLVR). The repository is organized as follows:
 
 ```
-benchmark/
-  <stage>/<domain>/
-    contaminated/
-      matched/<split>/    contaminated_<stage>_<domain>_<split>_matched.jsonl
-      shifted/<split>/    contaminated_<stage>_<domain>_<split>_shifted.jsonl
-    uncontaminated/
-      <split>/            uncontaminated_<stage>_<domain>_<split>.jsonl
+OLMo-Detect/
+├── benchmark/                         # benchmark data — 9 domains × 3 stages
+│   └── <stage>/<domain>/
+│       ├── contaminated/
+│       │   ├── matched/<split>/       # contaminated_<stage>_<domain>_<split>_matched.jsonl
+│       │   └── shifted/<split>/       # contaminated_<stage>_<domain>_<split>_shifted.jsonl
+│       └── uncontaminated/<split>/    # uncontaminated_<stage>_<domain>_<split>.jsonl
+├── results/                           # released per-record detection scores (every method × model size)
+├── methods/                           # detection-method implementations (one module per method)
+├── utils/                             # data-processing code (13-gram filtering, sampling, IFEval constraints)
+├── infini_gram/, infini_gram_mini/    # vendored infini-gram (used by utils/)
+├── run_all.slurm, run_all.py          # Step 1: run a method across all domains
+├── evaluate.py                        # Step 2: AUC / TPR@5%FPR (all-stage / per-stage / per-domain / per-subset)
+├── run_detection.py                   # score one (model, file, method); called by run_all
+├── detector.py, model_utils.py, data_utils.py, base_method.py, method_loader.py   # core engine
+├── requirements.txt
+└── .gitignore
 ```
 
 - `<split>`: `dev` (hyperparameter tuning) or `test` (evaluation).
