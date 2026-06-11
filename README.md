@@ -19,9 +19,12 @@ This repository contains the data and code for the EMNLP 2026 submission *OLMo-D
 
 
 ## Setup
+
 ```bash
-conda create -n olmo-detect python=3.11
-conda activate olmo-detect
+curl -L https://anonymous.4open.science/api/repo/OLMo-Detect-3E76/zip -o OLMo-Detect.zip
+unzip OLMo-Detect.zip -d OLMo-Detect && cd OLMo-Detect
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
