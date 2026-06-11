@@ -20,3 +20,8 @@ __pycache__/
 
 # Reproduced scores from run_all.slurm (keep separate from released results/)
 results_repro/
+
+# Compiled extensions — build infini-gram from its vendored source; never commit
+# (platform-specific, and may embed build paths). Source .cpp/.h/.py stay tracked.
+*.so
+infini_gram/rust_indexing

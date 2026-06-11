@@ -5,7 +5,7 @@
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=16
 #SBATCH --output=logs/run_all_%x_%j.out
-# Set your cluster's GPU partition / QOS (names differ per site), e.g.:
+# Set your cluster's GPU partition / QOS, e.g.:
 ##SBATCH --partition=<gpu-partition>
 ##SBATCH --qos=<qos>
 # =============================================================================
@@ -28,14 +28,15 @@
 set -euo pipefail
 
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-module load GCCcore/11.3.0 Python/3.11.3 2>/dev/null || true
-# Activate your environment first, e.g.:  source .venv/bin/activate
 
 # Run from the directory you submitted from. sbatch copies this script to a
 # spool dir, so "$0" is NOT the repo — use SLURM_SUBMIT_DIR (falls back to the
 # script dir when run as a plain shell script).
 cd "${SLURM_SUBMIT_DIR:-$(dirname "$0")}"
 mkdir -p logs
+
+# Activate the .venv from Setup (skipped if you manage the environment yourself).
+if [ -f .venv/bin/activate ]; then source .venv/bin/activate; fi
 
 METHOD="${1:?usage: sbatch --job-name=<method> run_all.slurm <method> [matched|shifted]}"
 SPLIT="${2:-matched}"
