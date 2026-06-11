@@ -37,9 +37,11 @@ Evaluation also needs the four OLMo 2 Instruct checkpoints, placed under `olmo_m
 | `olmo_models/OLMo2-13B-Instruct` | [allenai/OLMo-2-1124-13B-Instruct](https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct) |
 | `olmo_models/OLMo2-32B-Instruct` | [allenai/OLMo-2-0325-32B-Instruct](https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct) |
 
-For example:
 ```bash
-hf download allenai/OLMo-2-0425-1B-Instruct --local-dir olmo_models/OLMo2-1B-Instruct
+hf download allenai/OLMo-2-0425-1B-Instruct  --local-dir olmo_models/OLMo2-1B-Instruct
+hf download allenai/OLMo-2-1124-7B-Instruct  --local-dir olmo_models/OLMo2-7B-Instruct
+hf download allenai/OLMo-2-1124-13B-Instruct --local-dir olmo_models/OLMo2-13B-Instruct
+hf download allenai/OLMo-2-0325-32B-Instruct --local-dir olmo_models/OLMo2-32B-Instruct
 ```
 
 
