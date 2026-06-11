@@ -60,8 +60,8 @@ def build(split, method):
 
         if split == "matched":   # GSM8K and RLVR have no shifted variant
             jobs.append(dict(con=f"{B}/midtraining/gsm8k/contaminated/test/contaminated_midtraining_gsm8k_test.jsonl",
-                             unc=f"{B}/midtraining/gsm8k/uncontaminated/test/uncontaminated_midtraining_math-mix_gsm8k_test.jsonl",
-                             dev=f"{B}/midtraining/gsm8k/uncontaminated/dev/uncontaminated_midtraining_math-mix_gsm8k_dev.jsonl",
+                             unc=f"{B}/midtraining/gsm8k/uncontaminated/test/uncontaminated_midtraining_gsm8k_test.jsonl",
+                             dev=f"{B}/midtraining/gsm8k/uncontaminated/dev/uncontaminated_midtraining_gsm8k_dev.jsonl",
                              models=ALL))
 
         # SFT: model-pair files
