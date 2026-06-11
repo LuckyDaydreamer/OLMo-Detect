@@ -1,16 +1,19 @@
 #!/bin/bash
-#SBATCH --job-name=olmo_detect_run_all
+#SBATCH --job-name=run_all
 #SBATCH --time=7-00:00:00
 #SBATCH --mem=128G
 #SBATCH --partition=deeplearn
 #SBATCH --qos=gpgpudeeplearn
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=16
-#SBATCH --output=logs/run_all_%j.out
+#SBATCH --output=logs/run_all_%x_%j.out
 # =============================================================================
 # Run ONE detection method across EVERY domain for a split, then score it.
 #
-#   sbatch run_all.slurm <method> [matched|shifted]
+#   sbatch --job-name=<method> run_all.slurm <method> [matched|shifted]
+#
+# Passing --job-name puts the method in the log filename and in squeue (it is
+# optional — the method is also printed at the top of the log either way).
 #
 # <method> is a run_detection method name:
 #   loss_zlib_lowercase  minkprob  dcpdd  recall  camia  pac
@@ -25,11 +28,20 @@ set -euo pipefail
 
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 module load GCCcore/11.3.0 Python/3.11.3 2>/dev/null || true
-# Activate your environment first, e.g.:  conda activate olmo-detect
-cd "$(dirname "$0")"
+# Activate your environment first, e.g.:  source .venv/bin/activate
+
+# Run from the directory you submitted from. sbatch copies this script to a
+# spool dir, so "$0" is NOT the repo — use SLURM_SUBMIT_DIR (falls back to the
+# script dir when run as a plain shell script).
+cd "${SLURM_SUBMIT_DIR:-$(dirname "$0")}"
 mkdir -p logs
 
-METHOD="${1:?usage: sbatch run_all.slurm <method> [matched|shifted]}"
+METHOD="${1:?usage: sbatch --job-name=<method> run_all.slurm <method> [matched|shifted]}"
 SPLIT="${2:-matched}"
+
+echo "=================================================="
+echo " run_all  |  method: ${METHOD}  |  split: ${SPLIT}"
+echo " repo: $(pwd)  |  job: ${SLURM_JOB_ID:-NA}"
+echo "=================================================="
 
 python -u run_all.py --method "$METHOD" --split "$SPLIT"
