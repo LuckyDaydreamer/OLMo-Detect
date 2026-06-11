@@ -2,11 +2,12 @@
 #SBATCH --job-name=run_all
 #SBATCH --time=7-00:00:00
 #SBATCH --mem=128G
-#SBATCH --partition=deeplearn
-#SBATCH --qos=gpgpudeeplearn
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=16
 #SBATCH --output=logs/run_all_%x_%j.out
+# Set your cluster's GPU partition / QOS (names differ per site), e.g.:
+##SBATCH --partition=<gpu-partition>
+##SBATCH --qos=<qos>
 # =============================================================================
 # Run ONE detection method across EVERY domain for a split, then score it.
 #
