@@ -148,10 +148,11 @@ Methods with tunable hyperparameters are tuned on the `dev` split, with all thre
 
 **Step 2: Compute AUC and TPR@5%FPR.** 
 
-Run `evaluate.py` for the target method. Set `--results-dir` to the output directory generated in Step 1 (e.g., `results_repro/`). If omitted, the script evaluates the scores provided in `results/`.
+Run `evaluate.py` for the target method. Set `--results-dir` to the output directory generated in Step 1 (e.g., `results_repro/`). If omitted, the script evaluates the scores provided in `results/`. Use `--split` to match the split you ran in Step 1: matched and shifted scores can live in the same directory, so `--split shifted` is needed to score a shifted run (otherwise the matched scores are read). GSM8K and RLVR have no shifted version and show `n/a` under `--split shifted`.
 ```bash
-python evaluate.py --list                                                 # show available method keys
-python evaluate.py --method camia --show-tpr --results-dir results_repro  # AUC/TPR@5%FPR per stage / domain / subset
+python evaluate.py --list                                                               # show available method keys
+python evaluate.py --method ppl --show-tpr --results-dir results_repro                  # matched (default)
+python evaluate.py --method ppl --show-tpr --split shifted --results-dir results_repro  # shifted
 ```
 
 **Example.** 

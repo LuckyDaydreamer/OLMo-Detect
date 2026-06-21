@@ -25,7 +25,12 @@ Method-specific data handling (this is where methods differ — handled for you)
 Usage:
   python evaluate.py --method ppl
   python evaluate.py --method camia --fpr 0.05      # also prints TPR@FPR
+  python evaluate.py --method ppl --split shifted    # score the shifted split
   python evaluate.py --list                          # list method keys
+
+--split shifted scores the shifted contaminated sets (contaminated_<domain>_shifted)
+against the same uncontaminated sets. GSM8K and RLVR have no shifted variant, so
+they show n/a under --split shifted.
 """
 from __future__ import annotations
 import argparse, json, math
@@ -34,6 +39,7 @@ import numpy as np
 from sklearn.metrics import roc_auc_score, roc_curve
 
 RESULTS = Path(__file__).resolve().parent / "results"
+SPLIT = "matched"          # set from --split; affects only the contaminated dirs
 SIZES = ["1b", "7b", "13b", "32b"]
 SDIR = {s: f"OLMo2-{s.upper()}-Instruct" for s in SIZES}
 
@@ -94,26 +100,41 @@ def _read(path: Path, col):
     return [float(s[col]) for s in d.get("result",{}).get("samples",[])
             if col in s and _valid(s.get(col))]
 
+def _cname(matched_name):
+    """Map a contaminated-dir name to the active --split, or None if the domain
+    has no shifted variant (name has no '_matched', e.g. GSM8K, RLVR)."""
+    if SPLIT == "matched":
+        return matched_name
+    return matched_name.replace("_matched", "_shifted") if "_matched" in matched_name else None
+
+def _cread(matched_name, sd, stem, col):
+    name = _cname(matched_name)
+    return _read(RESULTS/name/sd/f"{stem}.json", col) if name else []
+
 def leaf_scores(leaf, method, size):
-    """Return (con_scores, uncon_scores) for one leaf at one size, or ([],[])."""
+    """Return (con_scores, uncon_scores) for one leaf at one size, or ([],[]).
+    Under --split shifted, a leaf with no shifted variant yields ([],[]) so that
+    neither its contaminated nor uncontaminated samples pollute pooled scopes."""
     stem, col = METHODS[method]
     sd = SDIR[size]
     if leaf["kind"] == "simple":
-        return (_read(RESULTS/leaf["con"]/sd/f"{stem}.json", col),
+        if _cname(leaf["con"]) is None:    # no shifted variant -> drop the leaf
+            return [], []
+        return (_cread(leaf["con"], sd, stem, col),
                 _read(RESULTS/leaf["unc"]/sd/f"{stem}.json", col))
     if leaf["kind"] == "dpo":
         if method == "selfcrit":           # selfcrit lives in the combined dir
-            return (_read(RESULTS/f"contaminated_posttraining_dpo_{size}_matched"/sd/f"{stem}.json", col),
+            return (_cread(f"contaminated_posttraining_dpo_{size}_matched", sd, stem, col),
                     _read(RESULTS/f"uncontaminated_posttraining_dpo_{size}"/sd/f"{stem}.json", col))
-        con = (_read(RESULTS/f"contaminated_posttraining_dpo_{size}_matched_chosen"/sd/f"{stem}.json", col) +
-               _read(RESULTS/f"contaminated_posttraining_dpo_{size}_matched_rejected"/sd/f"{stem}.json", col))
+        con = (_cread(f"contaminated_posttraining_dpo_{size}_matched_chosen", sd, stem, col) +
+               _cread(f"contaminated_posttraining_dpo_{size}_matched_rejected", sd, stem, col))
         unc = (_read(RESULTS/f"uncontaminated_posttraining_dpo_{size}_chosen"/sd/f"{stem}.json", col) +
                _read(RESULTS/f"uncontaminated_posttraining_dpo_{size}_rejected"/sd/f"{stem}.json", col))
         return con, unc
     if leaf["kind"] == "sft":
         pair = "1b-32b" if size in ("1b","32b") else "7b-13b"
         sub = leaf["sub"]
-        return (_read(RESULTS/f"contaminated_posttraining_sft_{pair}_{sub}_matched"/sd/f"{stem}.json", col),
+        return (_cread(f"contaminated_posttraining_sft_{pair}_{sub}_matched", sd, stem, col),
                 _read(RESULTS/f"uncontaminated_posttraining_sft_{pair}_{sub}"/sd/f"{stem}.json", col))
     raise ValueError(leaf["kind"])
 
@@ -142,12 +163,15 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--method"); ap.add_argument("--fpr", type=float, default=0.05)
     ap.add_argument("--list", action="store_true"); ap.add_argument("--show-tpr", action="store_true")
+    ap.add_argument("--split", choices=["matched", "shifted"], default="matched",
+                    help="Which contaminated split to score (default: matched).")
     ap.add_argument("--results-dir", default="results",
                     help="Score directory to read (default: results/; use results_repro/ to score a fresh run_all.slurm).")
     a = ap.parse_args()
     if a.list or not a.method:
         print("methods:", ", ".join(METHODS)); return
-    global RESULTS
+    global RESULTS, SPLIT
+    SPLIT = a.split
     RESULTS = Path(a.results_dir) if Path(a.results_dir).is_absolute() else Path(__file__).resolve().parent / a.results_dir
     if not RESULTS.is_dir():
         ap.error(f"results dir not found: {RESULTS}")
@@ -170,7 +194,7 @@ def main():
                 rows.append((f"      subset: {l['subset']}", [l]))
 
     hdr = f"{'scope':34s} " + " ".join(f"{s.upper():>8s}" for s in SIZES) + f" {'Avg':>8s}"
-    print(f"Method: {m}   (AUC{' / TPR@'+format(a.fpr*100,'g')+'%' if a.show_tpr else ''})")
+    print(f"Method: {m}   split: {SPLIT}   (AUC{' / TPR@'+format(a.fpr*100,'g')+'%' if a.show_tpr else ''})")
     print(hdr); print("-"*len(hdr))
     for label, leaves in rows:
         per, (aa, at) = scope_metrics(leaves, m, a.fpr)
