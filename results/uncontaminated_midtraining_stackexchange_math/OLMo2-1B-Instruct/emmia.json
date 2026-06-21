@@ -1,0 +1,372 @@
+{
+  "model_name": "OLMo2-1B-Instruct",
+  "model_path": "olmo_models/OLMo2-1B-Instruct",
+  "dataset_name": "uncontaminated_midtraining_stackexchange_math",
+  "dataset_path": "benchmark/midtraining/stackexchange/uncontaminated/test/uncontaminated_midtraining_stackexchange_math_test.jsonl",
+  "dataset_data_type": "paragraph",
+  "method_name": "emmia",
+  "result": {
+    "method": "emmia",
+    "dataset": "uncontaminated_midtraining_stackexchange_math",
+    "final_auc_by_submethod": {
+      "loss": 0.2673469387755102,
+      "zlib": 0.7387755102040816,
+      "mink": 0.6861224489795918,
+      "minkpp": 0.6616326530612245
+    },
+    "emmia_auc": 0.7387755102040816,
+    "num_scored_records": 35,
+    "samples": [
+      {
+        "record_index": 0,
+        "sample_id": "sample_0",
+        "token_count": 502,
+        "emmia_loss_score": -0.35020408163265304,
+        "emmia_zlib_score": -0.6220408163265306,
+        "emmia_mink_score": -0.6946938775510204,
+        "emmia_minkpp_score": -0.7257142857142858,
+        "text": "Problem: Show that\n$$\\frac {1} {r-1} = \\frac {1} {r+1} + \\frac {2} {r^2+1} + \\frac {4} {r^4+1} +\\cdots $$\nfor all $r > 1$, with a hint given that $\\displaystyle\\frac {1} {r-1} - \\frac {1} {r+1} = \\frac {2} {r^2-1}$.\n\nThoughts :\nI am having difficulty seeing a connection from the hint to the problem. Any insights appreciated.\n\n\nFirst, replace $r$ by $r^{2^n}$ in your identity to get:\n\n$$\\frac{1}{r^{2^n}-1}-\\frac{1}{r^{2^n}+1}=\\frac{2}{r^{2^{n+1}}-1}$$\n\nThen consider the partial sum: $s_n=\\frac{1}{r+1}+\\frac{2}{r^2+1}+\\ldots+\\frac{2^{n-1}}{r^{2^{n-1}}+1}$\n\nYou have:\n\n$$\\begin{align}\\frac{1}{r-1}-s_1&=\\frac{1}{r-1}-\\frac{1}{r+1}=\\frac{2}{r^2-1}\\\\\\frac{1}{r-1}-s_2&=\\frac{1}{r-1}-s_0-\\frac{2}{r^2+1}\\\\\n&=\\frac{2}{r^2-1}-\\frac{2}{r^2+1}=\\frac{4}{r^4+1}\\end{align}$$\n\nAnd so on, in general (by induction):\n\n$$\\frac{1}{r-1}-s_n=\\frac{2^n}{r^{2^n}+1}$$\n\nThen take the limit:\n\n$$\\frac{1}{r-1}-s=\\lim_{n\\to\\infty}\\frac{2^n}{r^{2^n}+1}=\\lim_{u\\to\\infty}\\frac{u}{r^u+1}=0$$\n(with substitution $u=2^n$, and using $r>1)$. So $s=\\frac{1}{r-1}$"
+      },
+      {
+        "record_index": 1,
+        "sample_id": "sample_1",
+        "token_count": 359,
+        "emmia_loss_score": -0.3551020408163265,
+        "emmia_zlib_score": -0.6302040816326531,
+        "emmia_mink_score": -0.603265306122449,
+        "emmia_minkpp_score": -0.6555102040816326,
+        "text": "If $H$ is a homotopy from $f$ to $g$, and $H'$ is a homotopy of $g$ to $j$, then\n\n$F\\left(x,t\\right) = \\left\\{\n     \\begin{array}{lr}\n       H(x,2t) &,\\text{ if } 0 \\le t \\le \\frac{1}{2}\\\\\n       H'(x,2t-1) &, \\text{ if } \\frac{1}{2} \\le t \\le 1\n     \\end{array}\n   \\right.\\\\$\n\nis a homotopy from $f$ to $j$.\n\nI can see that this is a transitive property, but I can't seem to find a way to show that this mapping is continuous.\n\nI know to show continuity I must show that $V \\in T' \\Rightarrow F^{-1}(V) \\in T$, but I can't see how to show that $F^{-1}(V) \\in T.$\n\nAnyone have any ideas?\n\n\nThis follows from the pasting lemma.  If the domain of $F$ is $X\\times[0,1]$, the restriction of $F$ to $X\\times[0,1/2]$ is clearly continuous, since it is obtained by composing the continuous functions $H$ and $(x,t)\\mapsto (x,2t)$.  Similarly, the restriction of $F$ to $X\\times[1/2,1]$ is also continuous.  Since these sets are closed, by the pasting lemma $F$ is also continuous on their union, which is all of $X\\times[0,1]$."
+      },
+      {
+        "record_index": 2,
+        "sample_id": "sample_2",
+        "token_count": 278,
+        "emmia_loss_score": -0.3673469387755102,
+        "emmia_zlib_score": -0.6016326530612246,
+        "emmia_mink_score": -0.7036734693877551,
+        "emmia_minkpp_score": -0.7110204081632653,
+        "text": "I can't seem to figure out the inequality option, I substituted n=2 for the answer bit is there any elegant way of getting it?\n\n\nSince $\\tan x <1 ~ \\forall x \\in \\left(0,\\dfrac{\\pi}{4}\\right)$, We can say that -\n\n$$\\int_{0}^{\\pi/4}\\tan^nx <\\int_{0}^{\\pi/4}\\tan^{n-2}x$$\n\nAnd also that\n\n$$\\int_{0}^{\\pi/4}\\tan^nx > \\int_{0}^{\\pi/4}\\tan^{n+2}x$$\n\nHence\n\n$$I_n+I_{n-2}> I_n+I_n=2I_n \\implies \\color{blue}{\\frac{1}{n-1}>2I_n} \\tag  1$$\n\nand\n\n$$I_n+I_{n+2}< I_n+I_n=2I_n \\implies\\color{blue}{\\frac{1}{n+1}<2I_n} \\tag2$$\n\nCombinig $(1)$ and $(2)$, we get\n\n$$\\boxed{\\color{green}{\\frac{1}{n+1}<2I_n <\\frac{1}{n-1}}}$$"
+      },
+      {
+        "record_index": 3,
+        "sample_id": "sample_3",
+        "token_count": 415,
+        "emmia_loss_score": -0.49142857142857144,
+        "emmia_zlib_score": -0.4922448979591837,
+        "emmia_mink_score": -0.5363265306122449,
+        "emmia_minkpp_score": -0.529795918367347,
+        "text": "Good day! I encountered this problem yesterday and I eventually answered the problem correctly.\nThe problem is\n\nIf $N$ is divisible by $1,2,3,...,13$ then $N$ must also be divisible by $14$ and $15.$\n\nUsing this same idea, what is the smallest integer such that the following statement is true?\n\nIf $N$ is divisible by $1,2,3,. . . M$ then $N$ must also be divisible by $M + 1, M + 2, M + 3$ and $M + 4.$\n\nBut I am wondering if there is a general rule/ proof/ algorithm for this? I used rough way to solve this one.\n\n\nYour statement is true if and only if each of $M+1,M+2,M+3,M+4$ is not a prime power.\n\nI doubt there is a good way to find $M$ other than brute force. $M=53$ give $54,55,56,57$ without any prime powers, so that $M$ works, but I haven't found if it is the smallest.\n\nMore generally, for $M+1,M+2,\\dots,M+k$, you'd need to know something about prime power gaps. I'm not sure what is known about that, but I'm assuming they are arbitrarily large.\n\nFor general $k$, I think you can use $M=(k+1)!^2+1$. Then $M+1,M+2,\\dots,M+k$ are not prime powers, but this $M$ is not the smallest such $M$ by far.\n\nA smaller $M$ for a general $k$ is:\n\n$$M=1+\\prod_{p\\leq k+1} p^{1+\\lfloor \\log_p (k+1)\\rfloor}$$\n\nThis gives $M=13$ for $k=2$ and $M=1+8\\cdot 9=73$ for $k=3$."
+      },
+      {
+        "record_index": 4,
+        "sample_id": "sample_4",
+        "token_count": 494,
+        "emmia_loss_score": -0.4546938775510204,
+        "emmia_zlib_score": -0.5681632653061225,
+        "emmia_mink_score": -0.5273469387755102,
+        "emmia_minkpp_score": -0.6220408163265306,
+        "text": "Perhaps an odd question, but something I often wonder hypothetically.\n\nIf an individual, without connection to a professional mathematical environment, were to devise a convenient and clear notation for a certain mathematical discipline, to where should they present their findings such as to allow the mathematical community to review & consider it for adoption?\n\nExample: $\\frac{d^2y}{dx^2}$ is great, but $y''(x)$ can be far more convenient.\n\n\nBecause of all the cranks out there, it is quite difficult for an outsider to convince the mathematical establishment of a fact . Look at the story of Kurt Heegner, the Havergal Brian of mathematics.\n\nThus to convince the mathematical establishment that a notation is better than what they' been using, that might as well be impossible, even if it actually is better (which it may or may not be).\n\nIn principle, mathematicians are willing to accept something is true if you can prove it. If you can prove the Riemann hypothesis is false, mathematicians will accept your discovery, even though potentially it could perhaps invalidate lots of work that depends on the Riemann hypothesis being true.\n\nBut if you're asking them to change the way something has been notated for decades if not centuries, without having a concomitant disproof of something widely believed to be true, you can just forget about it.\n\nTake the Legendre symbol, for example. $$\\left(\\frac{a}{p}\\right)$$ Looks like a fraction, doesn't it? Or maybe the guy meant to write a binomial coefficient?\n\nBut even though it's ambiguous notation, even though some mathematicians agree that it's ambiguous, even though you can't really type it on a typewriter, even though the TeX for it is kind of annoying, the notation for the Legendre symbol is here to stay.\n\nIt doesn't help the would-be inventor of a great new notation for the Legendre symbol that it's called \"Legendre symbol \" rather than \"Legendre function .\" The terminology is just as entrenched as the notation.\n\nMaybe you can come up with some super brilliantly simple but unambiguous new notation for it. But all the facts pertaining to the Legendre symbol have been proven, verified and published for a couple of centuries or so.\n\nAdopting a better notation for the Legendre symbol would be only slightly more likely than getting everyone to speak Esperanto and use the duodecimal numeral system."
+      },
+      {
+        "record_index": 5,
+        "sample_id": "sample_5",
+        "token_count": 248,
+        "emmia_loss_score": -0.430204081632653,
+        "emmia_zlib_score": -0.5502040816326531,
+        "emmia_mink_score": -0.5297959183673469,
+        "emmia_minkpp_score": -0.556734693877551,
+        "text": "I am struggling to understand the line \" $\\{x\\in X : (f+g)(x) > a\\} = \\cup S_r$ \". How two sets can be equal? Could you elaborate on this?\n\nThank you in advance.\n\n\n1. If $x \\in \\bigcup S_r$ , then there is a rational $r$ such that $f(x)>r$ and $g(x)> \\alpha -r$ . It follows that $(f+g)(x)> \\alpha$ .\n\n2. Let $(f+g)(x)> \\alpha$ and suppose that $x \\notin \\bigcup S_r$ . Now choose a sequence $\\{r_n\\}$ of rationals such that \\begin{align*}\nf(x) > r_n\\ \\text{for all $n$ and $r_n \\to f(x)$}. \n\\end{align*} Since $x \\notin S_{r_n}$ for all $n$ , we have $g(x)  \\le \\alpha -r_n$ for all $n$ . With $n \\to \\infty$ we get $g(x) \\le \\alpha-f(x)$ , a contradiction !"
+      },
+      {
+        "record_index": 6,
+        "sample_id": "sample_6",
+        "token_count": 387,
+        "emmia_loss_score": -0.3681632653061224,
+        "emmia_zlib_score": -0.6073469387755102,
+        "emmia_mink_score": -0.6506122448979592,
+        "emmia_minkpp_score": -0.6669387755102041,
+        "text": "Let $(X, \\mathcal{A}, \\mu)$ be a measure space, $S:X\\rightarrow X$ a nonsingular transformation, and $f\\in L^\\infty$ . The operator $U:L^\\infty \\rightarrow L^\\infty$ defined by\n\n$\nUf(x) = f(S(x))\n$\n\nis called the Koopman operator with respect to $S$ .\n\nThis is the definition of Koopman operator according to reference [1] and similar definitions can be found also in another textbooks/papers.\n\nBut, why we need functions defined on $L^\\infty$ and not on other spaces like $L^1$ ?\n\n[1]: Andrzej Lasota, Michael C. Mackey-Probabilistic properties of deterministic systems-Cambridge University Press (1985)\n\n\nOne possible reason is that on $L^\\infty$ you get an isometry. That's not the case on $L^1$ . You can still define the operator, of course.\n\nSay you take $L^1[0,1]$ with Lebesgue measure, and $S(x)=x^2$ . Then, with $f(t)=t$ , you have $$\n\\|f\\|_1=\\tfrac12,\\ \\ \\ \\|Uf\\|_1=\\int_0^1 t^2\\,dt=\\tfrac13.\n$$ In fact, we can push the example and show that in $L^1$ the operator $U$ is not even bounded. Take $S$ as above and $f_n(t)=n\\,1_{[0,1/n]}$ . Then $$\n\\|f_n\\|_1=1, \\ \\ \\ \\|Uf_n\\|_1=n^2\\int_0^11_{[0,1/n]},\\,dt=n\n$$"
+      },
+      {
+        "record_index": 7,
+        "sample_id": "sample_7",
+        "token_count": 313,
+        "emmia_loss_score": -0.43999999999999995,
+        "emmia_zlib_score": -0.5469387755102041,
+        "emmia_mink_score": -0.5828571428571429,
+        "emmia_minkpp_score": -0.5273469387755102,
+        "text": "In this recent paper , in the introduction, the authors say:\n\n\"Disproportionate divisions are easily seen to exist when all the demands are rational...  However, this does notimmediately demonstrate existence for irrational demands, since taking limits with respect to the Hausdorff metric , for example, does not preserve measure \".\n\nThe context is a partition of the unit interval $[0,1]$ into sub-intervals. I am trying to understand the emphasized sentence. Does it mean that there exists an infinite sequence of subsets of $[0,1]$ , say $X_1,X_2,\\ldots,$ , and another subset $X\\subseteq [0,1]$ , and a measure $\\mu$ , such that:\n\n* The Hausdorff distance between $X_n$ and $X$ approaches $0$ when $n\\to\\infty$ , but -\n\n* The measure $\\mu(X_n)$ does not approach the measure $\\mu(X)$ when $n\\to\\infty$ ?\n\nIf so, what is an example of such a sequence?\n\n\nIn $[0,1]$ let $X_n$ be the finite set $$\nX_n = \\left\\{\\frac{k}{n} : 0 \\le k \\le n\\right\\}\n$$ Then $X_n$ converges to $[0,1]$ in the Haudsdorff metric, even though each $X_n$ has measure $0$ and $[0,1]$ has measure $1$ ."
+      },
+      {
+        "record_index": 8,
+        "sample_id": "sample_8",
+        "token_count": 511,
+        "emmia_loss_score": -0.603265306122449,
+        "emmia_zlib_score": -0.36489795918367346,
+        "emmia_mink_score": -0.5061224489795918,
+        "emmia_minkpp_score": -0.4587755102040817,
+        "text": "I am a little confused about this question. It says one way we can compute the eigenvalue and eigenvector of a matrix is by solving for a system of non-linear equations given by:\n\n(A - $\\lambda I$ ) $x$ = $0$ , $x^{T} x$ = $1$\n\nIf $x_{0}$ , and $\\lambda_{0}$ are the initial values, then the next iteration is determined by solving for $\\delta x$ and $\\delta \\lambda$ in the following systems(Part 1):\n\n$A\\delta x - \\delta \\lambda x_{0} = -(A-\\lambda_{0}I)x_{0}$\n\n- $x_{0}^{T} \\delta x = \\frac{1}{2}(x_{0}^{T}x_{0}-1)$\n\nand therefore(Part 2); $x_{1} = x_{0} + \\delta x $ and $\\lambda_{1} = \\lambda_{0} + \\delta \\lambda$\n\nI am really confused about this question for a number of reasons:\n\n1. How do we apply Newton's method to matrices?\n\n2. How do we even get from part 1 to part 2?\n\n3. How is it even possible to solve for the eigenvalue and eigenvector in the equations showed above?\n\n\nYour point 1 : i.e., the way to build the general iteration step.\n\nLet $A$ be an $n \\times n$ matrix.\n\nHere, the Newton's method will provide at the same time an eigenvalue and an associated (unit norm) eigenvector, i.e., will solve the pair of equations :\n\n$$\\begin{cases}f(x,\\lambda)&:=&(A-\\lambda I)x&=&0\\\\g(x,\\lambda)&:=&x^Tx-1&=&0\\end{cases}$$\n\n(in fact $g$ is not dependent upon $\\lambda$ )\n\nLet $y=\\binom{x}{\\lambda} \\in \\mathbb{R^{n+1}}$ .\n\nTherefore, the heart of the Newton scheme will be written in this way :\n\n$$y_{k+1}=y_k-J^{-1}\\binom{f(x_k,\\lambda_k)}{g(x_k,\\lambda_k)} \\ \\ \\text{where} \\ \\ J=\\begin{pmatrix}A-\\lambda I&-x\\\\2x^T& 0\\end{pmatrix}, \\ \\ \\text{with arbitrary} \\ \\ y_1. \\tag{1}$$\n\n(one recognizes in $J$ the jacobian matrix of partial derivatives of $f$ and $g$ with respect to $x$ and $\\lambda$ resp.)\n\nRemarks :\n\na) Expression (1) is an extension to $n+1$ dimensions of the scalar case :\n\n$$y_{k+1}=y_k-\\dfrac{f(y_k)}{f'(y_k)}$$\n\nb) It has been said that $y_1$ is arbitrary. This is not exact, as for all Newton methods. $y_1$ has to be in a convergence \"basin\" in order that the method converges. This convergence is towards one the eigenpairs $(x,\\lambda)$ which, generally speaking, is \"not to far\" from the initial vector $y_1$ .\n\nc) The number of steps can be reduced in particular by stopping iterations when the norm of $(A-\\lambda I)x$ is small enough.\n\nd) This method can be twined with a so-called deflation method.\n\ne) Here is a Matlab program implementing the method :\n\nn=2;A=rand(n);I=eye(n);\n    Y=rand(n+1,1);\n    for k=1:10 % number of iteration steps\n        x=Y(1:n);L=Y(n+1);\n        J=[A-L*I,-x;\n           2*x',0];\n        V=[A*x-L*x;\n          x'*x-1];\n        Y=Y-inv(J)*V;\n    end;\n    x=Y(1:n),% approx. of eigenvector\n    L=Y(n+1),% approx. of eigenvalue\n    [P,D]=eig(A), % comparison with \"true\" eigenelements\n\nYour point 2: The iteration step in your method\n\nYour increments $\\delta x$ and $\\delta \\lambda$ can be gathered into $\\delta y=\\binom{\\delta x}{\\delta \\lambda}$ . It means, by considering relationship (1), that\n\n$$\\delta y:=\\binom{\\delta x}{\\delta \\lambda}=-J^{-1}\\binom{f(x_n,\\lambda_n)}{g(x_n,\\lambda_n)}$$\n\notherwise said, that by multiplication by $J^{-1}$ , that\n\n$$J \\binom{\\delta x}{\\delta \\lambda}=-\\binom{f(x_n,\\lambda_n)}{g(x_n,\\lambda_n)}$$\n\nExpanding this matrix-vector relationship, one obtains :\n\n$$\\begin{cases}\\color{red}{(A-\\lambda I)} \\delta x & - & x \\delta \\lambda&=&-(A-\\lambda I)x\\\\\n \\ \\ \\ \\ \\ 2x \\delta x &&&=&-x^tx+1\\end{cases}$$\n\nwhich is almost exactly the system you have, but for a discrepancy in the factor featured in red...\n\nFig. 1: The case of matrix $A=\\begin{pmatrix}0&1;-2&3\\end{pmatrix}$ with $\\lambda_1=1$ and $\\lambda_2=2$ with associated eigenvectors $\\pm\\binom{1/\\sqrt{2}}{1/\\sqrt{2}}$ and $\\pm\\binom{1/\\sqrt{5}}{2/\\sqrt{5}}$ . The $\\pm$ sign is important because it generates $4$ solutions instead of $2$ ."
+      },
+      {
+        "record_index": 9,
+        "sample_id": "sample_9",
+        "token_count": 221,
+        "emmia_loss_score": -0.4514285714285714,
+        "emmia_zlib_score": -0.5559183673469388,
+        "emmia_mink_score": -0.4677551020408164,
+        "emmia_minkpp_score": -0.4922448979591837,
+        "text": "In the article about metric space on wikipedia:\n\nIf $X$ is a complete subset of the metric space $M$, then $X$ is closed in $M$. Indeed, a space is complete if it is closed in any containing metric space.\n\nDo the second sentences say that:\n\nIn a metric space, a subset is complete if and only if the subset is closed in the metric space.\n\nIf not, what is the relation between completeness and closedness for a subset in a metric space?\n\nThanks and regards!\n\n\nNotice: A subset is complete iff it is closed in any metric space in which it is a subspace.\n\nA closed subspace of a complete metric space is complete. On the other hand, a closed subspace of a metric space need not be complete. Take the space $(0,1)$ which is closed in itself. But it is not complete. So closedness is not enough for completeness.\n\nHowever a compact metric space is always complete. Compactness is the right property.\n\nFor this and more, try out G. F. Simmons, \"Introduction to Topology and Modern Analysis\"."
+      },
+      {
+        "record_index": 10,
+        "sample_id": "sample_10",
+        "token_count": 511,
+        "emmia_loss_score": -0.5346938775510204,
+        "emmia_zlib_score": -0.44979591836734695,
+        "emmia_mink_score": -0.43591836734693873,
+        "emmia_minkpp_score": -0.45387755102040817,
+        "text": "I have the following well-known exercise in cardinal arithmetics:\n\nIf $\\kappa, \\lambda$ are cardinals such that $\\lambda$ is infinite, then $\\kappa^{<\\lambda}$ equals the supremum of the $\\kappa^{\\theta}$, where $\\theta < \\lambda$ is a cardinal.\n\n1) Isn't this false for $\\kappa=1$? The left side is $\\lambda$ and the right side $1$. Remark that $\\kappa^{<\\lambda}$ is defined to be the cardinality of the disjoint(?) union of the function sets $map(\\alpha,\\kappa)$, where $\\alpha < \\lambda$ is an ordinal.\n\n2) Is this supremum understood as a cardinal supremum or an ordinal supremum? If the latter is the case, why should the supremum be a cardinal at all?\n\n3) Anyway, I don't know how to solve this exercise. I've already seen it several times, but 1) and 2) remain obscure in the literature I know.\n\n\nFirst, (2): if you define a cardinal to be an ordinal that is not bijectable with any strictly smaller ordinal, then suppose that $\\alpha$ is the ordinal supremum of $\\kappa^{\\theta}$, $\\theta\\lt\\lambda$. Let $\\beta$ be a strictly smaller ordinal than $\\alpha$. By the definition of supremum, there must exist a $\\theta\\lt\\lambda$ such that $\\beta\\lt\\kappa^{\\theta}\\leq\\alpha$; in particular, $\\kappa^{\\theta}$ cannot be bijected with $\\beta$ (being a cardinal), and therefore neither can $\\alpha$ (that would give an embedding of $\\kappa^{\\theta}$ into $\\beta$, and Cantor-Bernstein would give you $|\\beta|=\\kappa^{\\theta}$, contradicting that the latter is not bijectable with any strictly smaller ordinal). Thus, $\\alpha$ is not bijectable with any strictly smaller ordinal, and so must be a cardinal. So whether you define the supremum as the ordinal-sup or the cardinal-sup, you will still get a cardinal (this holds for any set of cardinals).\n\nSecond, (1): you are correct that the definition does not match this for $\\kappa=1$ (or for $\\kappa = 0$); as noted by Carl in the comments, this is likely an erratum or ommission; it should hold for any $\\kappa>1$.\n\nEdit: The definition as a sum is done running over all ordinals, rather than all cardinals, so I'm fixing this below.\n\nFinally, (3): you are trying to show that the supremum of the $\\kappa^{\\theta}$ equals the sum over all ordinals $\\alpha<\\lambda$ of $|\\kappa^{\\alpha}$, assuming $\\kappa\\geq 2$ (to prevent the problems noted). This because $|\\kappa^{\\alpha}|=|map(\\theta,\\kappa)|$ by definition, and the cardinality of the disjoint union is the cardinal sum. I believe this can be shown by transfinite induction on $\\lambda$ as I do below, but there probably is a simpler method.\n\nSo, the proposition we want to show is that for any infinite ordinal $\\lambda$, we have\n$$\\sup_{\\alpha\\lt\\lambda}|\\kappa^{\\alpha}| = \\sum_{\\alpha\\lt\\lambda}|\\kappa^{\\alpha}|.$$\n\nFirst, the equality holds for $\\lambda=\\omega$: if $2\\leq \\kappa\\lt\\aleph_0$, then $\\sup\\{|\\kappa^n|\\,|\\, n=0,1,2,3,\\ldots\\} = \\aleph_0$ and $\\sum_{n=0}^{\\infty}|\\kappa^n| = \\aleph_0$; if $\\aleph_0\\leq\\kappa$, then $|\\kappa^n|=\\kappa$ for all $n$, and $\\sum_{n=0}^{\\infty}|\\kappa^n| = \\sum_{n=0}^{\\infty}\\kappa = \\kappa\\aleph_0=\\kappa$, so both sides agree.\n\nAssume the result holds for $\\lambda$; then the supremum of $|\\kappa^{\\alpha}|$ with $\\alpha\\lt\\lambda^+$ is $|\\kappa^{\\lambda}|$; on the other hand, \n$$\\sum_{\\alpha\\lt\\lambda^+}|\\kappa^{\\alpha}| = \\left(\\sum_{\\alpha\\lt\\lambda}|\\kappa^{\\alpha}|\\right) + \\kappa^{\\lambda} = \\sup_{\\alpha\\lt\\lambda}|\\kappa^{\\alpha}|+|\\kappa^{\\lambda}|=|\\kappa^{\\lambda}|,$$\nwhere the last equality holds because $|\\kappa^{\\alpha}|\\leq |\\kappa^{\\lambda}|$ for each $\\alpha\\lt \\lambda$, so the supremum is at most $|\\kappa^{\\lambda}|$, and the sum of two infinite cardinals is equal to their maximum. So again the two expressions agree.\n\nFinally, we want to show that if $\\lambda$ is a limit ordinal and the result holds for all $\\beta\\lt\\lambda$, then it holds for $\\lambda$. Then\n$$\\sup_{\\alpha\\lt\\lambda}(|\\kappa^{\\alpha}|) = \\sup_{\\beta\\lt\\lambda}\\left(\\sup_{\\alpha\\lt\\beta}(|\\kappa^{\\alpha}|\\right) = \\sup_{\\beta\\lt\\lambda}\\sum_{\\alpha\\lt\\beta}|\\kappa^{\\alpha}| = \\sum_{\\alpha\\lt\\lambda}(|\\kappa^{\\alpha}|).$$\nSo the equality holds for $\\lambda$ as well. This establishes the result by transfinite induction for all infinite ordinals $\\lambda$\n\nFurther Edit, 2 Sep 2010: Clarify how to finish it off.\n\nSo, the above shows that for any ordinal $\\lambda$, $\\sup_{\\alpha\\lt\\lambda}|\\kappa^{\\alpha}| = \\sum_{\\alpha\\lt\\lambda}|\\kappa^{\\alpha}|$. To finish the exercise, we need to show that if $\\lambda$ is a cardinal (that is, an ordinal that is not bijectable with any strictly smaller ordinal), then $\\sup\\{|\\kappa^{\\alpha}|\\colon\\alpha$ is an ordinal and $\\alpha\\lt\\lambda\\} = \\sup\\{|\\kappa^{\\theta}|\\colon \\theta$ is a cardinal and $\\theta\\lt\\lambda\\}$. To see this, note that $|\\kappa^{\\alpha}|=|\\kappa|^{|\\alpha|}$, and since $\\lambda$ is assumed to be a cardinal, if $\\alpha\\lt\\lambda$, then there exists a cardinal $\\theta$, $\\theta\\lt\\lambda$, such that $|\\alpha|=|\\theta|$, and hence $|\\kappa^{\\alpha}|=|\\kappa^{\\theta}|$.  Thus, the two sets are equal, so their suprema are equal as well."
+      },
+      {
+        "record_index": 11,
+        "sample_id": "sample_11",
+        "token_count": 221,
+        "emmia_loss_score": -0.33877551020408164,
+        "emmia_zlib_score": -0.6375510204081632,
+        "emmia_mink_score": -0.6702040816326531,
+        "emmia_minkpp_score": -0.6751020408163265,
+        "text": "If f is in $L^1(\\mathbb{R})$, is it true that $\\lim_{h \\to 0^+} \\frac1{h} \\int_x^{x+h} f(t)\\mathrm{d}t$ exists and is finite for every x in $\\mathbb{R}$?\n\nWould it be possible to use something along the lines of the following argument: The Lebesgue Differentiation Theorem says that this integral is equal to f(x) a.e., which is finite a.e. if f is in $L^1(\\mathbb{R})$. And since the integral doesn't change on a set of measure 0, then the limit itself must be finite a.e.\n\n\nNo.  As you said, it is true almost everywhere, but for example if $f(x)=x^{-1/2}$ on $(0,1)$ (and whatever you like elsewhere), then for $0\\lt h\\lt 1$, $1/h\\int_0^h f(t)dt=2/\\sqrt{h}$."
+      },
+      {
+        "record_index": 12,
+        "sample_id": "sample_12",
+        "token_count": 472,
+        "emmia_loss_score": -0.3036734693877551,
+        "emmia_zlib_score": -0.673469387755102,
+        "emmia_mink_score": -0.7191836734693877,
+        "emmia_minkpp_score": -0.6995918367346938,
+        "text": "We can easily see that if a sequence of inner functions converges then certainly the limit is still inner (using the fact that a countable union of measure zero sets still has measure zero). This implies that the set of inner functions is closed in $H^2$.\n\nNow, is the set of the singular inner functions closed?\n\nWe know that a singular inner function has the form:\n\n$$S(z) = K \\text{exp} \\left ( -\\frac{1}{2\\pi} \\int_0^{2\\pi} \\frac{e^{i \\theta} + z}{e^{i  \\theta} - z} \\, d\\mu(\\theta) \\right )$$\nwhere $\\mu$ is a positive Borel measure singular with respect to the Lebesgue measure and $K$ is a constant of modulus $1$.\n\nThus if we take $S_n \\to S$ in $H^2$ then $S_n \\to S$ uniformly on compact sets. Clearly $S$ is inner because $S_n$ is inner, now we need to show it is singular. My question now is, does anyone have a hint how I show this? I know that if $(\\mu_n)$ is a sequence of positive finite Borel measures, then by Riesz and Alaoglu we have that a subsequence converge to a finite positive Borel measure $\\mu$. Can I use this?\n\n\nYou could use Hurwitz's theorem .  For some $R$ with $0\\lt R\\lt1$, $S$ has no zeros on $\\partial B(0,R)$, and $R$ can be taken arbitrarily close to 1.  By Hurwitz's theorem, $S$ has the same number of zeros in $B(0,R)$ as $S_n$ for sufficiently large $n$.  Each $S_n$ is never zero in the open disk, so this shows that $S$ is never zero on $B(0,R)$.  Thus $S$ is never zero on the disk.  This means that $S$ has no Blaschke factor, hence it is singular.\n\nI do not know whether $(\\mu_n)$ converges weak-$*$ to the singular measure of $S$."
+      },
+      {
+        "record_index": 13,
+        "sample_id": "sample_13",
+        "token_count": 280,
+        "emmia_loss_score": -0.5461224489795918,
+        "emmia_zlib_score": -0.46693877551020413,
+        "emmia_mink_score": -0.41959183673469386,
+        "emmia_minkpp_score": -0.47510204081632657,
+        "text": "It is claimed in some logic books that the compactness theorem of first-order logic can be proven using Tychnoff's theorem from topology.\n\nNow, to me this feels very strange because I consider logic as something \"lower\" in the sense that the theorems of topology follow from the axioms and theorems in logic. How can we avoid circularities then?\n\nAnother small question I have is that if we have $A \\iff B$ and we prove both directions with contraposition, does there exist a direct proof? You could say we could just follow the steps backwards, but is this always possible?\n\n\nWhen we study mathematical logic, we use the same mathematical methods that would be used to study any other area (algebra, analysis, topology, etc.).  This includes the use of set-theoretical techniques.  Otherwise, we would be needlessly hamstringing ourselves.  In principle, the results that we obtain could be built up entirely from primitive axioms, just like the rest of mathematics; but just like the rest of mathematics complete formalization is not usually the goal.\n\nHowever, even ignoring those practical considerations, it's not hard to see that none of the axioms of point set topology or set theory used in topology presuppose that the compactness theorem of logic holds. So there is no circularity if we use topological methods to prove the compactness theorem."
+      },
+      {
+        "record_index": 14,
+        "sample_id": "sample_14",
+        "token_count": 511,
+        "emmia_loss_score": -0.44897959183673464,
+        "emmia_zlib_score": -0.5485714285714285,
+        "emmia_mink_score": -0.506938775510204,
+        "emmia_minkpp_score": -0.5771428571428572,
+        "text": "This is a problem in baby Rudin. Chapter 4, problem 15. I'm just looking at examples at the moment. It says that any continuous open map is monotone. Recall, an open map $f: X \\to Y$ is such that any open set $U$ in $X$ will haves its image, $f(U)$ open in $Y$.\n\nSo,\nLet $$ f: \\mathbb{R} \\to [-1, 1] $$ $$f: x \\mapsto \\sin(x) $$ and consider the open interval $$ (\\frac{\\pi}{3}, \\frac{7\\pi}{12}) $$ The image of this interval in $[-1, 1]$ is $$ (\\frac{\\sqrt{3}}{2}, 1] $$ which is open in $[-1, 1]$ (its complement is $[-1, \\frac{\\sqrt3}{2}]$, certainly closed). The problem is, the function is not monotonic on this interval. It is continuous, so it must not be an open map. I'm pretty sure I have the image right, so, where am I making a mistake?\n\nI really hope I'm not making a dumb error!\n\n\nThe mistake is misinterpreting for which codomain the statement holds.  Continuous open maps from $\\mathbb{R}$ to $\\mathbb{R}$ are monotone.  You have changed the codomain to the image with subspace topology, and this changes the meaning of open map.  Since the interval $\\left(\\frac{\\sqrt{3}}{2},1\\right]$ is not open in $\\mathbb{R}$, your example demonstrates the fact that this non-monotone continuous map cannot be an open map.\n\nAthough in this case you have a map that is not open, note that if you are trying to show that a map is open, it is not enough to give an example of an open set that is mapped to an open set.  You would have to prove that every open set is mapped to an open set.  On the other hand, to show that a map is not open, you only need to demonstrate that there exists an open set that is not mapped to an open set, and this fact will come in handy if you approach this problem using contraposition.\n\nA side remark: You will at some point have to invoke completeness of $\\mathbb{R}$ (or a theorem that uses completeness).  The function $f(x)=x^3-6x$ as a map from $\\mathbb{Q}$ to $\\mathbb{Q}$ is continuous and open but not monotone."
+      },
+      {
+        "record_index": 15,
+        "sample_id": "sample_15",
+        "token_count": 160,
+        "emmia_loss_score": -0.3110204081632653,
+        "emmia_zlib_score": -0.6628571428571428,
+        "emmia_mink_score": -0.6889795918367346,
+        "emmia_minkpp_score": -0.6955102040816327,
+        "text": "Ramanujan presented this double inequality without showing a proof, namely: \n$$\\sqrt\\pi \\left(\\frac{x}{e}\\right)^{x}\\left(8x^3+4x^2+x+\\frac{1}{100} \\right)^{1/6}<\\Gamma(x+1)<\\sqrt\\pi \\left(\\frac{x}{e}\\right)^{x}\\left(8x^3+4x^2+x+\\frac{1}{30} \\right)^{1/6}, \\space x \\ge 0$$\nI wonder if there is a nice proof for it. Could you help here? Thanks.\n\n\nIt is probably explained in this paper or its references.\n\nhttp://arxiv.org/pdf/1112.1896"
+      },
+      {
+        "record_index": 16,
+        "sample_id": "sample_16",
+        "token_count": 241,
+        "emmia_loss_score": -0.5738775510204082,
+        "emmia_zlib_score": -0.41714285714285715,
+        "emmia_mink_score": -0.4448979591836735,
+        "emmia_minkpp_score": -0.4791836734693878,
+        "text": "Michael Artin in Proposition 2.6 states:\n\nLet $a,b$ be integers not both zero, and let $d$ be the positive integer which generates the subgroup $a \\mathbb Z +b \\mathbb Z$ then\n\n* $d$ can be written in the form of $ar+bs$\n\n* $d$ divides both $a,b$\n\n* If an integer $e$ divides $a$ and $b$, it also divides $d$\n\nMy questions:\n\n1. How does the second proposition hold true for $a=2,b=7 , d=9$?\n\n2. How do we prove this? (a slight hint may be sufficient)\n\n\nQuestion 1: It doesn't, but these three numbers don't satisfy the assumptions because $2\\mathbb{Z}+7\\mathbb{Z}$ isn't generated by $9$. (As pointed out slightly faster by Julian).\n\nQuestion 2: This follows from the fact that $\\{a,b\\}\\subset a\\mathbb{Z}+b\\mathbb{Z}$. (Here I have taken your second question to mean \"how do we prove the second proposition?\")."
+      },
+      {
+        "record_index": 17,
+        "sample_id": "sample_17",
+        "token_count": 215,
+        "emmia_loss_score": -0.3395918367346939,
+        "emmia_zlib_score": -0.6277551020408163,
+        "emmia_mink_score": -0.6840816326530611,
+        "emmia_minkpp_score": -0.7102040816326531,
+        "text": "This is the motivating question for the rather vague question here: when is the region bounded by a Jordan curve \"skinny\"?\n\nSuppose we are given two Jordan curves in the plane, one inside the other and each contained in an epsilon neighborhood of the other. How can we conclude that the annular region between the two curves is itself contained in the two epsilon neighborhoods of the original curves?\n\nNote: by epsilon neighborhood of a curve I mean the set of all points which lie within a distance epsilon from some point in the image of the curve.\n\nFollow up: Since the statement above is false (see Hagen's answer) we might ask whether it is true if we assume point-wise closeness of chosen parametrizations of the curves.  This is answered in the affirmative by user7...\n\n\nWe can't. Consider an arbitrarily large closed disk. At two points of its circumference let two thin strips emerge that first wind araound back and forth very close to the disk boundary and then meet. The contour arount this figure consists of two Jordan curves making a counterexample."
+      },
+      {
+        "record_index": 18,
+        "sample_id": "sample_18",
+        "token_count": 362,
+        "emmia_loss_score": -0.3763265306122449,
+        "emmia_zlib_score": -0.5787755102040817,
+        "emmia_mink_score": -0.6595918367346938,
+        "emmia_minkpp_score": -0.6693877551020408,
+        "text": "Calculate the limit: $\\lim_{n\\to+\\infty}\\sum_{k=1}^n\\frac{\\sin{\\frac{k\\pi}n}}{n}$ Using definite integral between the interval $[0,1]$.\n\nIt seems to me like a Riemann integral definition:\n\n$\\sum_{k=1}^n\\frac{\\sin{\\frac{k\\pi}{n}}}{n}=\\frac1n(\\sin{\\frac{\\pi}n}+...+\\sin\\pi)$\n\nSo $\\Delta x=\\frac 1n$ and $f(x)=\\sin(\\frac{\\pi x}n)$ (Not sure about $f(x))$\n\nHow do i proceed from this point?\n\n\nIdeas: take the partition $\\,P_n\\,$ of the unit interval\n\n$$P_n:=\\left\\{0=x_0\\,,\\,x_1=\\frac1n\\,,\\ldots,\\,x_k=\\frac kn\\,,\\ldots,\\,x_n=\\frac nn=1\\right\\}$$\n\nand choose points\n\n$$c_i:=\\frac in\\;,\\;\\;1\\le i\\le n$$\n\nSince we already know that $\\,\\sin \\pi x\\,$ is continuous everywhere and Riemann integrable in any closed, finite interval, we can apply the Riemann integral definition for the particular partitions and particular points $\\,c_i\\,$ as above in each subinterval, and get:\n\n$$\\lim_{n\\to\\infty}\\frac 1n\\sum_{k=1}^n \\sin\\frac{\\pi k}n=\\int\\limits_0^1 \\sin\\pi x\\,dx=\\ldots\\ldots$$"
+      },
+      {
+        "record_index": 19,
+        "sample_id": "sample_19",
+        "token_count": 511,
+        "emmia_loss_score": -0.5012244897959184,
+        "emmia_zlib_score": -0.44979591836734695,
+        "emmia_mink_score": -0.5591836734693878,
+        "emmia_minkpp_score": -0.49877551020408156,
+        "text": "Let $l^{\\infty}$ be the space of all bounded sequences of real numbers $(x_n)_{n =1}^{\\infty}$ with the sup norm. I have to show that $l^{\\infty}$ is complete with respect to this norm.\n\nProof: In the proof below I am confused with the sequence $x^n = (x_1^{n},x_2^{n}\\ldots )$. I am not able to visualize this sequence. How this sequence can be formed? Is $(x^{n})$ is collection of cauchy sequences?\n\n$x_1^{n}$,$x_2^{n}$ are different cauchy sequences they may be converging to different points so how can we assume that $(x^{n})$ will converge to fixed point $x$?\n\nPlease help me to understand this. Any numerical example supporting this will be very much helpful.  Thanks\n\n\nElements of $l^\\infty$ are sequences. You have to show that a Cauchy sequence in $l^\\infty$ converges.\n\nUsing a different notation, consider a Cauchy sequence $(x_n)$ in $l^\\infty$ . Each $x_n$ is itself a sequence; let's denote it by $$\nx_n(0), x_n(1), \\dots\n$$ So, if $x_n$ is the sequence $1, 1/3, 1/5,\\dotsc$ (the reciprocals of the odd integers), you'd have $x_n(0)=1$ , $x_n(1)=1/3$ and so on. Thus $x_n(k)$ means \"the $k$ -th term in the $n$ -th element of the sequence we're starting with\". The book page you show simply writes this as $x^n_k$ .\n\nSo every $x_n$ (or $x^n$ in the book's notation) is a bounded sequence, not a Cauchy one, because it's an element of $l^\\infty$ . It's not at all assumed that $x_n$ converges (most elements of $l^\\infty$ don't). It's the sequence (of sequences) $x_0,x_1,\\dotsc$ that is a Cauchy sequence under the sup norm.\n\nThe fact that $(x_n)$ is a Cauchy sequence means that, for all $\\def\\eps{\\varepsilon}\\eps>0$ , there is $N$ such that, for $n,m>N$ $$\n\\|x_n-x_m\\|<\\eps\n$$ that is, $$\\sup_k|x_n(k)-x_m(k)|<\\eps,$$ which implies $$\n|x_n(k)-x_m(k)|<\\eps, \\text{ for all } k.\n$$ (it would be equivalent if we used $\\le\\eps$ throughout)."
+      },
+      {
+        "record_index": 20,
+        "sample_id": "sample_20",
+        "token_count": 131,
+        "emmia_loss_score": -0.5191836734693878,
+        "emmia_zlib_score": -0.44244897959183677,
+        "emmia_mink_score": -0.5004081632653061,
+        "emmia_minkpp_score": -0.5191836734693878,
+        "text": "I am studying about the sequence space $l^{p}, l^{\\infty}$ and function space $C[a. b]$. It is mentioned in the book that all of these spaces are of infinite dimension. I want to prove that these spaces are of infinite dimension. I am not finding a way to proceed.\n\nAny help and suggestions would be helpful to me.\n\nThanks\n\n\nYou just need to construct infinitely many linearly independent vectors. For $l_p$ and $l_{\\infty}$ take vectors $(0,0,0,...0,1.....).$ For $C[a,b]$ polynomials $x^n$ will do."
+      },
+      {
+        "record_index": 21,
+        "sample_id": "sample_21",
+        "token_count": 511,
+        "emmia_loss_score": -0.6571428571428571,
+        "emmia_zlib_score": -0.3142857142857143,
+        "emmia_mink_score": -0.3110204081632653,
+        "emmia_minkpp_score": -0.3771428571428571,
+        "text": "Use induction and Newton's binomial formula to show that:\n\n$ i)$ $ \\binom{n}{0}+\\binom{n}{1}+\\cdots+\\binom{n}{n}=2^n, \\forall n\\in \\mathbb N$\n\n$ ii)$ $\\binom{n}{0}-\\binom{n}{1}+\\binom{n}{3}-\\cdots+(-1)^n\\binom{n}{n}=0, \\forall n\\in \\mathbb N$\n\n$ iii)$ $\\binom{n}{1}+2\\binom{n}{2}+3\\binom{n}{3}+\\cdots+n\\binom{n}{n}=n(2^{n-1}), \\forall n\\in \\mathbb N$\n\n$ iv)$ $1\\cdot 2\\binom{n}{2}+2\\cdot 3\\binom{n}{3}+\\cdots+(n-1)\\cdot n\\binom{n}{n}=n(n-1)2^{n-2}, \\forall n\\in \\mathbb N$\n\nI really don't know how I can start with this.\n\n\nThis feels like your homework and I'm not comfortable simply solving you the problems. I'm not sure if you already know that, but I will simply explain and provide examples of the needed subjects. You can report any specific problems you are having:\n\nProof by induction\n\nYou can use that to proof statements about natural numbers. Identify the statement $P(n)$ you wish to prove and do the following:\n\n1) Prove the base case, ie, the smallest natural number for which the statement is true.\n\n2) Suppose P(n) is true and prove that it implies in P(n+1) being true.\n\nExample : $1 + 2 + 3 + ... + n = \\frac{(n)(n+1)}{2}$\n\nIt is clearly true for n = 0. Supposing it is true for n, we have:\n\n$1 + 2 + 3 + ... + n + (n+1) = \\frac{(n)(n+1)}{2} + (n+1) = \\frac{(n)(n+1) + 2(n+1)}{2} = \\frac{(n+1)(n+2)}{2}$\n\nWhich is the statemente for $n+1$. This ends the proof.\n\nNewton's binomial formula\n\nI won't prove it. I will simply show and use one or two times.\n\n$(a + b)^n = \\sum_{i=0}^{n}  a^ib^{n-i}\\binom{n}{i}$\n\nFor example:\n\n$1.04^2 = (1 + 0.04)^2 = 1^0\\times0.04^2 \\binom{2}{0} + 1^1\\times0.04^1 \\binom{2}{1} + 1^2\\times0.04^0 \\binom{2}{2} = 1.0816$\n\nOf course this is a very complicated way of doing something simple. But the formula should help in several of your exercices. Try to apply for the correct values of $a$ and $b$."
+      },
+      {
+        "record_index": 22,
+        "sample_id": "sample_22",
+        "token_count": 511,
+        "emmia_loss_score": -0.33387755102040817,
+        "emmia_zlib_score": -0.6302040816326531,
+        "emmia_mink_score": -0.7028571428571428,
+        "emmia_minkpp_score": -0.716734693877551,
+        "text": "I want to derive $$\\pi \\cot(\\pi z) = \\sum_{-\\infty}^{\\infty}\\frac{1}{z-n} + \\frac{1}{n}$$ without taking derivatives.\n\nI know through Mittag Leffler that $$\\pi \\cot(\\pi z) = g(z) +\\sum_{-\\infty}^{\\infty}\\frac{1}{z-n} + \\frac{1}{n}$$  for some entire analytic $g(z)$ but I'm having a hard time showing that $g(z) = 0$. I do not want to take the integral of $\\frac{\\pi^2}{\\sin^2(\\pi z)}$.\n\nI have deduced that $g(0) = 0$, $g$ is odd, and $g$ is periodic with period $1$. If I could deduce that $g$ was bounded even in a strip of length $1$ I wold be finished because of Louiville Theorem. To this end, I can show that $\\pi \\cot(\\pi z)$ is bounded towards infinity but I was not able to show that the sum could be bounded.\n\n\nI don't know if that is Cauchy's method, but one way to establish $g\\equiv 0$ without differentiating is to use a functional equation:\n\n$$2\\pi \\cot (2\\pi z) = \\pi \\frac{\\cos^2(\\pi z) - \\sin^2(\\pi z)}{\\sin (\\pi z)\\cos (\\pi z)} = \\pi \\cot (\\pi z) + \\pi\\cot \\left(\\pi \\left(z+\\tfrac{1}{2}\\right)\\right),$$\n\nand with\n\n$$s(z) = \\frac{1}{z} + \\sum_{n\\neq 0} \\left(\\frac{1}{z-n} + \\frac{1}{n}\\right) = \\lim_{N\\to\\infty} \\sum_{n=-N}^N \\frac{1}{z-n}$$\n\nwe have\n\n$$\\begin{align}\ns(z) + s\\left(z+\\tfrac{1}{2}\\right) &= \\lim_{N\\to\\infty} \\left(\\sum_{n=-N}^N \\frac{1}{z-n} + \\sum_{n=-N}^N\\frac{1}{z+\\frac{1}{2}-n}\\right)\\\\\n&= 2\\lim_{N\\to\\infty} \\left(\\sum_{n=-N}^N\\frac{1}{2z-2n} + \\sum_{n=-N}^N \\frac{1}{2z+1-n}\\right)\\\\\n&= 2\\lim_{N\\to\\infty} \\sum_{k=-(2N+1)}^{2N} \\frac{1}{2z-k}\\\\\n&= 2s(2z),\n\\end{align}$$\n\nso the entire function $g$ also satisfies the functional equation\n\n$$g(z) + g\\left(z+\\tfrac{1}{2}\\right) = 2g(2z).\\tag{$\\ast$}$$\n\nBut a continuous $1$-periodic function $f$ satisfying the functional equation $(\\ast)$ is constant on $\\mathbb{R}$. Separately considering the real and imaginary part of $f$, we may assume that $f$ is real-valued (and our $g$ is real-valued on $\\mathbb{R}$). By continuity and periodicity, there is an $x_0 \\in [0,1]$ with $f(x) \\leqslant f(x_0)$ for all $x\\in \\mathbb{R}$. Let $x_k = 2^{-k}x_0$ for $k\\in\\mathbb{N}$. Then\n\n$$2 f(x_0) = 2f(x_k) = 2f(2x_{k+1}) = f(x_{k+1}) + f\\left(x_{k+1}+\\tfrac{1}{2}\\right)$$\n\nshows inductively that $f(x_k) = f(x_0)$ for all $k$. Hence, by continuity, $f(0) = \\max \\{ f(x) : x\\in\\mathbb{R}\\}$. The analogous argument shows $f(0) = \\min \\{ f(x) : x\\in \\mathbb{R}\\}$, so $f \\equiv f(0)$ is constant.\n\nSince $g$ is holomorphic, it follows that $g$ is constant on $\\mathbb{C}$, hence $g(z) \\equiv g(0) = 0$."
+      },
+      {
+        "record_index": 23,
+        "sample_id": "sample_23",
+        "token_count": 143,
+        "emmia_loss_score": -0.4922448979591837,
+        "emmia_zlib_score": -0.48081632653061224,
+        "emmia_mink_score": -0.5257142857142857,
+        "emmia_minkpp_score": -0.6048979591836735,
+        "text": "How do you factor\n\n$$x^4+2x^2+4 $$\n\nso it can be written as\n\n$$ (x^2+2x+2)(x^2-2x+2) $$\n\n\nI'm thinking you have a slight mistake in there.  In any case, you can rewrite this as\n\n$$(x^4+4x^2+4)-2x^2=(x^2+2)^2-(x\\sqrt2)^2$$\n\nfrom which point it can be treated as the difference of $2$ squares to obtain\n\n$$(x^2+x\\sqrt2+2)(x^2-x\\sqrt2+2)$$"
+      },
+      {
+        "record_index": 24,
+        "sample_id": "sample_24",
+        "token_count": 511,
+        "emmia_loss_score": -0.4481632653061224,
+        "emmia_zlib_score": -0.5257142857142857,
+        "emmia_mink_score": -0.6612244897959184,
+        "emmia_minkpp_score": -0.5812244897959185,
+        "text": "This question came from a problem I was solving for self-study.\n\nStatement of the problem\n\nLet $Y_n \\sim \\mathcal N(0,\\sigma^2)$ be independent normally distributed variables, $X_n = Y_1+\\cdots+Y_n$ their $n$ -th partial sum and, for any real $u$ , define $Z_n^u=\\exp(uX_n-nu^2\\sigma^2/2)$ .\n\nIt is straightforward to prove that $Z^u$ is a positive martingale under the natural filtration $\\mathscr F_n = \\sigma(Y_1,\\dots,Y_n)$ .\n\nToo see this, it suffices to know that $Z_n^u$ is a product of $n$ independent variables of the form $\\exp(uY_j-u^2\\sigma^2/2)$ , and that $E(e^{uY_j})$ , the MGF of $Y_j$ , is precisely $e^{u^2\\sigma^2/2}$ , so that $Z^u$ is in $L_1$ and $E(Z_n^u) = 1$ for all $n$ . The martingale property follows from $$E[Z_{n+1}^u/Z_n^u|\\mathscr F_n] = E[\\exp(uY_{n+1}-u^2\\sigma^2/2)|\\mathscr F_n] = E(e^{uY_{n+1}-u^2\\sigma^2/2})=1.$$\n\nIt is known, by the martingale convergence theorem, that $Z_n^u$ converges almost surely to $Z_\\infty^u$ .\n\nThe problem asks to compute this limit and to say when it is true that $Z_n^u=E[Z_\\infty^u|\\mathscr F_n]$ .\n\nSome ideas\n\nOf course, this last relation would hold if $Z^u$ was\na UI martingale. However, my intuition told me that this was not the case, as the partial sums, which have $\\mathcal N(0,n\\sigma^2)$ distributions, \"concentrate their measure\" in increasingly larger intervals $[-K, K]$ as $n$ increases (I haven't tried to prove this).\n\nI started looking around on the internet and found the law of the iterated logarithm , which I used to (correctly, I hope) compute this limit value to be $0$ a.s. when $u$ is not zero and $1$ if it is. Moreover, I found that there is a product martingale theorem by Kakutani which mentions that $P (Z_\\infty^u = 0) = 1$ if and only if $Z^u$ is not a UI family.\n\nMain question\n\nIs there a more elementary way of computing $Z_\\infty^u$ , which doesn't use the aforementioned law or Kakutani's theorem? Maybe using the fact that $X_n/n$ converges to $0$ a.s. and in $L_2$ (by the strong law and by a simple calculation of $V (X_n/n)$ , respectively)?\n\nOther questions\n\nWhat am I dealing with here? Is it in some way natural to consider these exponential martingales? Searching on the internet I found the Wikipedia page for the Doléans exponential which mentions the Girsanov theorem for continuous time as an application, but it didn't give me much insight.\n\n\nHere is an elementary computation of $Z^u_\\infty$. Start with the fact that $X_n/n\\to0$ almost surely by the law of large numbers hence, almost surely, $ uX_n\\leqslant nu^2/4$ for every $n$ large enough. Assume that $u\\ne0$. The preceding remark shows that $uX_n-nu^2/2\\to-\\infty$ almost surely when $n\\to\\infty$, thus $P(Z^u_\\infty=0)=1$ and $E(Z^u_\\infty\\mid\\mathscr F_n)=0$ almost surely, in particular $E(Z^u_\\infty\\mid\\mathscr F_n)\\ne Z^u_n$ almost surely."
+      },
+      {
+        "record_index": 25,
+        "sample_id": "sample_25",
+        "token_count": 271,
+        "emmia_loss_score": -0.38612244897959186,
+        "emmia_zlib_score": -0.6,
+        "emmia_mink_score": -0.6040816326530613,
+        "emmia_minkpp_score": -0.6424489795918367,
+        "text": "Prove using induction that $\\forall n\\in\\mathbb N, \\forall x\\in \\mathbb R: 0\n\nMy attempt:\n\nBase: for $n=1: 1-x<\\frac 1 {1+x}\\iff 1-x^2<1$, true since $0 Suppose the statement is true for $n$, prove for $n+1$: $(1-x)^{n+1}=(1-x)(1-x)^{n}\\overset{i.h}<\\frac{(1-x)}{1+nx}$ Now I got stuck, maybe another induction to show that $1+nx+x<1+nx$? Is there another way? Moreover, I was told it's wrong to begin with $(1-x)^{n+1}$ and reach to $\\frac 1 {1+(n+1)x}$ but why? Is it assuming what I need to prove?\n\n\nApply again the base case: $1-x<\\displaystyle\\frac1{1+x}$ and that $x^2>0$ to get\n\n$$\\frac{1-x}{1+nx} < \\frac1{(1+nx)(1+x)}=\\frac1{1+(n+1)x+nx^2}<\\frac1{1+(n+1)x}\\,.$$"
+      },
+      {
+        "record_index": 26,
+        "sample_id": "sample_26",
+        "token_count": 511,
+        "emmia_loss_score": -0.5983673469387755,
+        "emmia_zlib_score": -0.396734693877551,
+        "emmia_mink_score": -0.41387755102040824,
+        "emmia_minkpp_score": -0.4881632653061225,
+        "text": "Let $X$ be the collection of all sequences $\\{\\alpha_n\\}_{n=1}^{\\infty}$ of scalars from $\\mathbb{K}$ such that $\\alpha_n=0$ for all but a finite number of values of $n$. Define addition and scalar multiplication on $X$ by\n\n$\\{\\alpha_n\\} + \\{\\beta_n\\} = \\{\\alpha_n + \\beta_n \\}$ and $\\lambda \\{\\alpha_n\\} = \\{\\lambda \\alpha_n\\}$.\n\nVerify that $X$ is a vector space over $\\mathbb{K}$.\n\nAccording to my textbook which is being used for this problem, I need to verify the property of closure under addition and scalar multiplication as well as the following 8 axioms:\n\n1). $x+(y+z)=(x+y)+z$\n\n$\\{\\alpha_n\\} + (\\{\\beta_n + \\gamma_n\\}) = \\{\\alpha_n + \\beta_n + \\gamma_n\\}$ and similarly, $\\{(\\alpha_n + \\beta_n)\\} + \\{\\gamma_n\\} = \\{\\alpha_n + \\beta_n + \\gamma_n\\}$ by definition of addition on $X$.\n\n2).$x+y=y+x$\n\n$\\{\\alpha_n\\} + \\{\\beta_n\\} = \\{\\beta_n\\} + \\{\\alpha_n\\}$.\n\nSince $\\{\\alpha_n\\} = 0$ for all but finitely many values of $n$, then $\\{\\alpha_n\\} + \\{\\beta_n\\} = 0+0 = \\{\\beta_n\\} + \\{\\alpha_n\\} = 0+0$.\n\n3). $x+0 = x$.\n\n$\\{\\alpha_n\\} + 0 = \\{\\alpha_n\\}$.\n\nBy the definition of addition on $X, \\{\\alpha_n\\} + 0 = \\{\\alpha_n + 0\\} = \\{\\alpha_n\\}$.\n\n4). $x+ (-1)x= 0$.\n\n$\\{\\alpha_n\\} + (-1)\\{\\alpha_n\\}=0$.\n\nLet $\\lambda = -1$ and we use the definition of scalar multiplication: \n$\\{\\alpha_n\\}+ \\lambda \\{\\alpha_n\\} = \\{\\alpha_n\\} + \\{\\lambda \\alpha_n\\}$. Using the definition of addition on $X$, we get $\\{\\alpha_n+ \\lambda \\alpha_n\\} = \\{\\alpha_n - \\alpha_n\\}=0$.\n\n5). $(\\lambda + \\mu)\\{\\alpha_n\\} = \\lambda \\{\\alpha_n\\} + \\mu \\{\\alpha_n\\}$.\n\nUsing the definition of scalar multiplication on $X$, we can write $(\\lambda+\\mu)\\{\\alpha_n\\} = \\{(\\lambda + \\mu)\\alpha_n\\} = \\{\\lambda \\alpha_n + \\mu \\alpha_n\\}$. Using addition on $X$, we can have $\\{\\lambda \\alpha_n + \\mu \\alpha_n\\} = \\{\\lambda \\alpha_n\\} + \\{\\mu \\alpha_n\\}$. Again using scalar multiplication, we have $\\lambda \\{\\alpha_n\\} + \\mu \\{\\alpha_n\\}$.\n\n6). $\\lambda \\{\\alpha_n + \\beta_n\\} = \\lambda \\{\\alpha_n\\}+ \\lambda\\{\\beta_n\\}$.\n\nBy scalar multiplication on $X$,  $\\lambda \\{\\alpha_n + \\beta_n\\} = \\{\\lambda(\\alpha_n + \\beta_n)\\}$. Using addition, $\\lambda\\{\\alpha_n+\\beta_n\\} = \\lambda[\\{\\alpha_n\\}+\\{\\beta_n\\}]$. By scalar multiplication, $\\lambda[\\{\\alpha_n\\}+\\{\\beta_n\\}] = \\{\\lambda \\alpha_n\\} + \\{\\lambda \\beta_n\\}$. Again by scalar multiplication, $\\lambda\\{ \\alpha_n\\} +\\lambda \\{ \\beta_n\\}$.\n\n7). $(\\lambda \\mu)\\{\\alpha_n\\} = \\lambda (\\mu \\{\\alpha_n\\})$.\n\nBy scalar multiplication, $(\\lambda \\mu)\\{\\alpha_n\\} = \\{(\\lambda \\mu)\\alpha_n\\}$. Writing $(\\lambda \\mu) = (\\lambda)(\\mu)$, we have $(\\lambda)(\\mu)\\{\\alpha_n\\}$. By scalar multiplication, $(\\lambda)(\\mu)\\{\\alpha_n\\} = \\lambda\\{\\mu \\alpha_n\\}$.\n\n8). $1 \\cdot \\{\\alpha_n\\} = \\{\\alpha_n\\}$.\n\nLet $\\lambda=1$. By scalar multiplication, $\\lambda \\{\\alpha_n\\} = \\{\\lambda \\alpha_n\\} = \\{1 \\cdot \\alpha_n\\} = \\{\\alpha_n\\}$.\n\nI have not shown the property of closure under addition and scalar multiplication since I am unsure about how to do that with my given information. Any help/advice/suggestions will be greatly appreciated. Thanks in advance.\n\nThe textbook I am using is Functional Analysis An Elementary Introduction by Markus Haase.\n\n\nWell, I think that by \"closure\" your text-book means that addition and scalar multiplication are well-defined. Indeed, call $V$ your candidate vector space of all the sequences with finite support (i.e., with a finite number of non-zero terms), then you can think to $V$ as a subset of the cartesian product $\\mathbb K^{\\mathbb N}$ (the space of all sequences indexed by $\\mathbb N$ in your field). Of course addition is defined as a function\n$$\\mathbb K^{\\mathbb N}\\times \\mathbb K^{\\mathbb N}\\to \\mathbb K^{\\mathbb N}$$\nand similarly scalar multiplication is defined as \n$$\\mathbb K^{\\mathbb N}\\times \\mathbb K\\to \\mathbb K^{\\mathbb N}\\,.$$\nNow, if you restrict the domain respectively from $\\mathbb K^{\\mathbb N}\\times \\mathbb K^{\\mathbb N}$ to $V\\times V$ and from $\\mathbb K^{\\mathbb N}\\times \\mathbb K$ to $V\\times \\mathbb K$, you have to check that the codomain is in $V$. In other words, the sum of two sequences with finite support, as well as a multiple of such a sequence, has again finite support. For this you have just to use the elementary property that $0+0=0$ and $0\\cdot\\lambda=0$ for all $\\lambda \\in \\mathbb K$.\n\nEDIT: Just to be completely explicit, take two elements $\\{a_n\\}_n\\,, \\{b_n\\}_n$ in $V$ and $\\lambda\\in \\mathbb K$. Then, there exists $m\\in\\mathbb N$ such that $a_n=b_n=0$ for all $n\\geq m$. Of course then $a_n+b_n=0$ and $a_n\\lambda=0$ for all $n\\geq m$, showing that both $\\{a_n+b_n\\}_n$ and $\\{a_n\\}_n\\lambda$ belong to $V$."
+      },
+      {
+        "record_index": 27,
+        "sample_id": "sample_27",
+        "token_count": 305,
+        "emmia_loss_score": -0.38285714285714284,
+        "emmia_zlib_score": -0.5836734693877551,
+        "emmia_mink_score": -0.5877551020408164,
+        "emmia_minkpp_score": -0.6457142857142857,
+        "text": "Let $f(0) = 0$ and $0 $$\\int_0^x{f(t)^3 dt \\leq \\left( \\int_0^x f(t) dt\\right)^2} :\\forall x>0$$ The hint I was given was \"differentiate, factor and differentiate again\" but I'm not sure where to start\n\nLet $g(x)=\\left(\\int_0^xf(t)dt\\right)^2-\\int_0^xf(t)^3dt$. We want to show $g(x)\\geq0$ for all $x\\geq0$. Clearly $g(0)=0$, so it suffices to show $g'(x)\\geq0$ for all $x\\geq0$. Differentiating, we get\n$$g'(x)=2f(x)\\int_0^xf(t)dt-f(x)^3=f(x)\\left[2\\int_0^xf(t)dt-f(x)^2\\right].$$\nSince $f(0)=0$ and $f'(x)>0$ for all $x\\geq0$, $f(x)\\geq0$ for all $x\\geq0$. So all that is left is to show $h(x)=2\\int_0^xf(t)dt-f(x)^2\\geq0$ for all $x\\geq0$, which you can do in more or less the same way."
+      },
+      {
+        "record_index": 28,
+        "sample_id": "sample_28",
+        "token_count": 511,
+        "emmia_loss_score": -0.49714285714285716,
+        "emmia_zlib_score": -0.48081632653061224,
+        "emmia_mink_score": -0.5159183673469387,
+        "emmia_minkpp_score": -0.5502040816326531,
+        "text": "In Bredon's book, at page 118-119, there is a little chapter about the Thom-Pontrjagin construction, and I'm trying to follow the reason depicted there.\n\nHe starts with a map $f \\colon R^{n+k}\\to R^n_+$ (constant outside a compact) coming from a map $f \\colon S^{n+k}\\to S^n$ where we identify the spheres with the one-point compactification of the respective real spaces (denoted with $R^n_+$), and he builds a fattened manifold $M^k\\times E^n \\xrightarrow{embedded} R^{n+k}$ using such map $f$. Then he introduce this map $\\theta$, homotopic to the identity of $R^n_+$ which spreads $E^n$ on all $R^n$ and everything else to $\\infty$. and now it comes the part which is confusing me:\n\nThen the composition $\\theta\\circ f\\simeq f$ is the same as the map taking $N\\cong M^k\\times E^n \\to E^n$ by the projection followed by a diffeomorphism $E^n\\to R^n$ and taking everything else to $\\infty$. Therefore  every fattened $k-$manifold $g\\colon M^k\\times E^n \\to R^{n+k}$ gives rise to a map $\\phi_g \\colon R^{n+k} \\to R^n_+$ of this form, and every map $R^{n+k} \\to R^n_+$ as above, is homotopic to a map arising in this way.\n\nI don't get how a fattened manifold induces the map $\\phi_g$, because the only idea which came to my mind is to include the fat. manifold in $R^{n+k}$, project to the second factor $E^n$, and then use the map $\\theta$ (as suggested by the picture above?) but in this way the induced map is always null-homotopic, because $E^n \\neq S^n$ and therefore by composing with a stereographic projection we can \"shrink\" it to a point.\n\nSo how does this \"assignment\" works precisely?\n\n\nI think, \"fattern manifold\" is $k$-submanifold $M\\subset\\mathbb R^{n+k}$ with trivialized normal bundle, so you can identify neighborhood of $M$ with $M\\times E^n$, $g$ is the inclusion $M\\times E^n\\subset \\mathbb R^{n+k}$. And the map $\\theta_g$ is constructed as follows: you should project $M\\times E^n$ on the $E^n$, then cover $S^n$ without $\\infty$ by this $E^n$, and send all the $\\mathbb R^{n+k}\\setminus (M\\times E^n)$ to $\\infty$.\n\nIf you continue $\\theta_g$ on the $S^{n+k}=\\mathbb R^{n+k}\\cup\\{\\infty\\}$ (let $\\infty\\mapsto\\infty$), this mapping is not always null-homotopic. For example, if $n=2$, $k=1$ and $M$ is $S^1$ with standart embedding into $\\mathbb R^3$, the map $\\theta_g:S^3\\to S^2$ will be homotopic to Hopf fibration (you can prove is as a beautiful geometric-topology exercise).\n\nEDIT: But fixed trivialization of normal bundle (or neighborhood) of $S^1$ with $S^1\\times \\mathbb R^2$ must be not \"trivial\", it must be twisted so that any two constant sections form the Hopf link."
+      },
+      {
+        "record_index": 29,
+        "sample_id": "sample_29",
+        "token_count": 511,
+        "emmia_loss_score": -0.41714285714285715,
+        "emmia_zlib_score": -0.5469387755102041,
+        "emmia_mink_score": -0.6171428571428572,
+        "emmia_minkpp_score": -0.603265306122449,
+        "text": "Questions\n\nIs the asymptotic relationship correct? How do I determine $c_1$ and $\\kappa$? As, $|s| \\to 0$\n\n$$ \\sum_{r=1}^\\infty s^r \\ln(r) \\sim c_1 \\sqrt{s} + (\\kappa - 1 + \\frac{\\ln(2 \\pi)}{2} )s$$\n\nIs it possible to find $A_r$ using this relationship (for any of the r's)? Where,\n\n$$ \\sum_{r=1}^\\infty A_r(s) \\ln(p_r) \\sim c_1 \\sqrt{s} + (\\kappa - 1 + \\frac{\\ln(2 \\pi)}{2} )s$$\n\nBackground\n\nRecently I found a technique as in a previous question: Number-theoretic asymptotic looks false but is true?\n\nThis led me to another series with interesting properties:\n\n$$ K(s) = s \\ln 1 + s^2 \\ln 2 + s^3 \\ln 3 +  \\dots  =  \\sum_{r=1}^\\infty s^r \\ln(r) $$\n\n$$ \\implies K(s) =  A_1(s) \\ln 2 + A_2(s) \\ln(3) + A_3(s) \\ln 5 + \\dots = \\sum_{r=1}^\\infty A_r(s) \\ln(p_r) $$\n\nWhere $p_r$ is the r'th prime\n\nNow consider the following:\n\n$$ K(s) =  \\sum_{r=1}^\\infty s^r \\ln(r) $$\n$$ \\implies \\sum_{r=0}^\\infty s^r K(s) = s \\ln 1! + s^2 \\ln 2! + s^3 \\ln 3! + \\dots $$\n$$ \\implies \\frac{ K(s)}{1-s} = \\sum_{r=1}^\\infty s^r \\ln r! $$\n\nUsing Stirling approximation:\n\n$$ \\implies \\frac{ K(s)}{1-s} = \\sum_{r=1}^\\infty s^r (r \\ln(r) - r +\\frac{1}{2}\\ln(2 \\pi) + \\frac{1}{2} \\ln r + \\sum_{k=1}^\\infty a_k/r^k)  $$\n\nwhere $a_n$ is the coefficients of the $1/r$ error terms\n\n$$ \\implies \\frac{ K(s)}{1-s} = s \\frac{dK}{ds} - \\frac{s}{(1-s)^2} + \\frac{\\ln(2 \\pi) s }{2(1-s)} + \\frac{K}{2} + a_1 \\text{Li}_1(s)  + a_2 \\text{Li}_2(s)\\dots $$\n\nwhere $\\text{Li}_r(s)$ is the $r$'th poly-logarithmic function.\nTaking $|s| \\to 0 $ and using the asymptotic relation of $\\text{Li}_r(s) \\sim s$\n\n$$ \\implies \\frac{ K(s)}{2} \\sim s \\frac{dK}{ds} - s + \\frac{\\ln(2 \\pi) s }{2} +  \\kappa s $$\n\nwhre $\\kappa= \\sum a_r$ and now solving the differential equation:\n\n$$ K(s) \\sim c_1 \\sqrt{s} + (\\kappa - 1 + \\frac{\\ln(2 \\pi)}{2} )s$$\n\n\nThe series\n\n$$\n\\sum_{r=1}^{\\infty} s^r \\ln(r) = s^2 \\ln(2) + s^3 \\ln(3) + \\cdots\n$$\n\nis, in fact, an asymptotic expansion with respect to the asymptotic scale $\\{s^r\\}_{r\\in\\mathbb N}$ as $s \\to 0$. In particular, it is its own asymptotic expansion as $s \\to 0$ . Proving this would be a very valuable exercise if it is not immediately obvious.\n\nOne particular consequence of this fact is that\n\n$$\n\\sum_{r=1}^{\\infty} s^r \\ln(r) = s^2 \\ln(2) + O(s^3) \\qquad \\text{as } s \\to 0, \\tag{$*$}\n$$\n\nso it can't possibly be true that an asymptotic for the series includes a term involving $\\sqrt{s}$ since that would violate $(*)$. No terms which decay more slowly than $s^2$ may appear in an asymptotic for the series unless they are cancelled out by some other term.\n\nNow, to try to address your proposed derivation:\n\nI'm not an expert in the polylogs, but you might want to be more careful \"solving\" an \"asymptotic differential equation\". Making something like that rigorous is difficult because there are so many cases where doing that gives you the wrong answer. Assuming what you've done prior to that step is correct, that must be where your error lies. You have found an example where \"solving\" an \"asymptotic differential equation\" gives you nonsense."
+      },
+      {
+        "record_index": 30,
+        "sample_id": "sample_30",
+        "token_count": 236,
+        "emmia_loss_score": -0.47183673469387755,
+        "emmia_zlib_score": -0.5028571428571429,
+        "emmia_mink_score": -0.563265306122449,
+        "emmia_minkpp_score": -0.5893877551020408,
+        "text": "Problem: Prove that if $\\lim_{x \\to \\infty} f(x)$ exists and $\\lim_{x \\to \\infty} f''(x)$ exists, then $\\lim_{x \\to \\infty} f''(x)=\\lim_{x \\to \\infty} f'(x)=0$.\n\nI just need help in proving that $\\lim_{x \\to \\infty} f'(x)$ exists. Hints would also be appreciated\n\n\nBy Taylor's theorem, for any $x $ there exists $x < \\xi_x < x+1$ such that\n\n$$f(x+1) = f(x) + f'(x) + f''(\\xi_x)/2.$$\n\nThen\n\n$$\\lim_{x \\to \\infty}f'(x) = \\lim_{x \\to \\infty}f(x+1)- \\lim_{x \\to \\infty}f(x)-  \\lim_{x \\to \\infty}f''(\\xi_x)/2 = -  \\lim_{x \\to \\infty}f''(x)/2. $$"
+      },
+      {
+        "record_index": 31,
+        "sample_id": "sample_31",
+        "token_count": 258,
+        "emmia_loss_score": -0.3771428571428571,
+        "emmia_zlib_score": -0.603265306122449,
+        "emmia_mink_score": -0.6236734693877551,
+        "emmia_minkpp_score": -0.6693877551020408,
+        "text": "Find a function $f: \\mathbb{R} \\rightarrow \\mathbb{R}$ that is Riemann\n  integrable on every bounded and closed interval, such that the\n   function $$ g: \\mathbb{R} \\rightarrow \\mathbb{R}: x \\mapsto\n\\int_{0}^{x} f$$ is not differentiable in at least one point.\n\nI was looking for a function $f$ such that $g$ is not continuous in one point (and so a fortiori not differentiable). I wanted to pick $$ f: \\mathbb{R} \\mapsto \\mathbb{R}:  x \\mapsto - \\frac{1}{(x-1)^2} $$ since then $g(1)$ would blow up. But I think this function $f$ is not Riemann integrable on every bounded and closed interval, since it is not even bounded on, say, the interval $[-1,1]$. So anyone have another idea?\n\n\nJust take the function $f(x)=1$ for $x>0$ and $f(x)=0$ for $x\\leq 0$.  The integral should have a corner at $x=0$."
+      },
+      {
+        "record_index": 32,
+        "sample_id": "sample_32",
+        "token_count": 102,
+        "emmia_loss_score": -0.4546938775510205,
+        "emmia_zlib_score": -0.5036734693877551,
+        "emmia_mink_score": -0.6,
+        "emmia_minkpp_score": -0.6040816326530613,
+        "text": "I would like to calculate the fundamental group $\\Pi_1$ of $S^2 - \\{N,S\\}$, where $N,S$ are the north respectively south pole of $S^2$, but do not see yet how to do this.\nUsing a stereographic projection shows that $S^2\\setminus\\{N,S\\}$ is homeomorphic to $\\mathbb{R}^2\\setminus\\{0\\}$. What is the fundamental group of this space?"
+      },
+      {
+        "record_index": 33,
+        "sample_id": "sample_33",
+        "token_count": 511,
+        "emmia_loss_score": -0.4277551020408163,
+        "emmia_zlib_score": -0.5559183673469388,
+        "emmia_mink_score": -0.636734693877551,
+        "emmia_minkpp_score": -0.6302040816326531,
+        "text": "Does anybody know how I can plot in MATLAB the cone of positive semidefinite matrices as shown in the figure below? Thanks.\n\nPSD cone\n\n\nIt is slightly easier to work on (symmetric) Positive Definite Matrices.\n\nSuch matrices\n\n$$\\begin{pmatrix} x & y \\\\ y & z \\end{pmatrix}$$\n\nare characterized by the double property:\n\n$$x>0 \\ \\ \\text{and} \\ \\ xz-y^2>0$$\n\n(positivity of the principal minors).\n\nSuch matrices, when considered as points $(x,y,z) \\in \\mathbb{R^3}$ , define a domain which is the interior of the half-cone with equation\n\n$$y=\\pm \\sqrt{xz} \\ \\ \\text{for} \\ \\ (x,z) \\in (0,+\\infty)^2$$\n\nThis surface can be rendered in different ways by materializing different curves traced on it. Of course, as it is a cone, it is interesting to materialize it as a ruled surface. It suffices to join point $(0,0,0)$ either to points $(1,t,t^2)$ or to points of the form $(t^2,t,1)$ which both belong to parabolas.\n\nHere is a Matlab program that implements these ideas (please note that the roles of $x$ and $z$ have been exchanged). The generated graphics is below.\n\nclear all;close all;hold on;axis equal;\n\nx = 0:.02:2;             \ny = 0:.02:2;             \n\nset(gcf,'color','w');\n[X,Y]=meshgrid (x,y); \nZ=sqrt(X.*Y);\n\naxis([0,2,0,2,-2,2]);\nsurf(X,Y, Z,'edgecolor','none');shading interp\nsurf(X,Y,-Z,'edgecolor','none');shading interp\n\nfor t=0:0.2:1\n\n  plot3([0,2],[0,2*t^2],[0,2*t],'linewidth',1,'color','k');\n  plot3([0,2*t^2],[0,2],[0,2*t],'linewidth',1,'color','k');\n\nend;\n\nview([62,24]);\n\nOn the following graphics, the vertical axis is for variable $y$ .\n\nEdit : In order to broaden the perspective, here are two documents generalizing this issue, both with nice graphics: -1- (this is chapter 5 of the very valuable book of Jon Dattorro entitled \"Convex optimization and Euclidean geometry\" ; see the end of this chapter) and -2- ."
+      },
+      {
+        "record_index": 34,
+        "sample_id": "sample_34",
+        "token_count": 131,
+        "emmia_loss_score": -0.35918367346938773,
+        "emmia_zlib_score": -0.609795918367347,
+        "emmia_mink_score": -0.686530612244898,
+        "emmia_minkpp_score": -0.7183673469387755,
+        "text": "I know that the answer should be $$ x < \\frac{1}{e}$$ but cannot figure out how to get it at all.\n\nThank you for an help!!!\n\n\nBy observing that, for $x>0$, \n$$x^{\\ln n}=e^{\\ln n \\cdot\\ln x}=n^{\\ln x}$$ one may write\n$$\n\\sum_{n=2}^\\infty x^{\\ln n}=\\sum_{n=2}^\\infty \\frac1{n^{-\\ln x}}\n$$ then one may recognize a $p$-series: $-\\ln x>1$"
+      }
+    ]
+  }
+}
