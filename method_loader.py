@@ -15,7 +15,6 @@ DEFAULT_METHOD_MODULES = {
     "dcpdd": "methods.dcpdd_method",
     "recall": "methods.recall_method",
     "camia": "methods.camia_method",
-    "emmia": "methods.emmia_method",
     "pac": "methods.pac_method",
     "guided_instruction": "methods.guided_instruction_method",
     "dcq": "methods.dcq_method",
@@ -35,7 +34,6 @@ METHOD_ALIASES = {
     "dcpdd": "dcpdd",
     "recall": "recall",
     "camia": "camia",
-    "emmia": "emmia", #
     "pac": "pac",
     "guided_instruction": "guided_instruction", 
     "dcq": "dcq", 

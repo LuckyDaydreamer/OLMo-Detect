@@ -12,6 +12,9 @@ pools instances across stages; domain/stage numbers pool their members).
   Perplexity, Zlib, Lowercase, Min-K%, Min-K%++, DC-PDD, RECALL, CAMIA, PAC,
   Neighborhood, DCQ, CDD, Guided Instruction, Self-Critique
 
+EMMIA is NOT covered here: it aggregates by AVERAGING per-cell AUCs (not
+pooling) and has a different on-disk layout, so it is scored by evaluate_emmia.py.
+
 Method-specific data handling (this is where methods differ — handled for you):
   * DPO          → contaminated = chosen ∪ rejected pooled (likewise uncontam.).
   * SFT          → split across model-pair dirs (1B/32B vs 7B/13B); merged here.
