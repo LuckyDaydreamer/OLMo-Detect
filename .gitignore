@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+
+# model weights: downloaded from the HuggingFace Hub
+/olmo_models
+/data
+# output of your own scoring runs
+/results_repro
+# generated tables and intermediate analysis artefacts
+/tables/*
+!/tables/.gitkeep
+/analysis/logs/*
+!/analysis/logs/emmia_dev_select.json
+!/analysis/logs/smollm2_excluded_nonmembers.json
