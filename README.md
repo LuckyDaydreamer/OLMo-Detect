@@ -147,7 +147,7 @@ The original OLMo 2 data is available from the following sources:
     - 32B: [olmo-2-0325-32b-preference-mix](https://huggingface.co/datasets/allenai/olmo-2-0325-32b-preference-mix)
   - **RLVR:** [RLVR-GSM-MATH-IF-Mixed-Constraints](https://huggingface.co/datasets/allenai/RLVR-GSM-MATH-IF-Mixed-Constraints)
 
-We employ Infini-gram, a suffix-array–based indexing system, to index the full OLMo 2 training corpus across all four model sizes and all three training stages. The complete indexed corpus (~12.3 TB) will be made available for download; the link will be added here once hosting is arranged.
+We employ Infini-gram, a suffix-array–based indexing system, to index the full OLMo 2 training corpus across all four model sizes and all three training stages. The complete indexed corpus (~12.3 TB) is available for download via the University of Melbourne Mediaflux data mover: [download link](https://mediaflux.researchsoftware.unimelb.edu.au/mflux/data/mover/index.html?token=kg48rxcqq76v15kvwwsfj2iqkvmijugyydjrqr2jq8gseyh4ojrt1nw0rg3dq2k70l23lv5klxose7z8nrm7eccvx47plvyr8nbog9f0j38lk4mstzqazj4sunnm2sqttmisrbke7k52jhhsr7zj8b7x1hrk4ajr2yhslqqpclk2d2o006zxfwf5myjhx2ba2z0p8ezz91yemcxoypo9bj01z7wmzxncocti3won).
 
 
 ## Benchmark Construction Code
