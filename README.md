@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/badge/domains-9-4F8DFD"> 
   <img src="https://img.shields.io/badge/models-OLMo%202%20(1B%E2%80%9332B)-7C5CFC"> 
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-1b2330"></a>
+  <a href="https://huggingface.co/datasets/TedSSS/OLMo-Detect"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-dataset-ffc107"></a>
 </p>
 
 ---
@@ -96,6 +97,18 @@ OLMo-Detect/
 - **DPO** additionally has separate `chosen`, `rejected` and `pair` files (e.g. `..._chosen_matched_test.jsonl`), since its two scored inputs are evaluated independently; the `pair` file holds the preference pair itself (`chosen_text` + `rejected_text`) for methods that score a pair jointly.
 - Math Mix and RLVR have no shifted variant.
 
+
+### Hugging Face
+
+The benchmark is also on the Hub as [`TedSSS/OLMo-Detect`](https://huggingface.co/datasets/TedSSS/OLMo-Detect), one config per file pair with `dev` and `test` splits:
+
+```python
+from datasets import load_dataset
+members     = load_dataset("TedSSS/OLMo-Detect", "pretraining_dclm_member_matched", split="test")
+non_members = load_dataset("TedSSS/OLMo-Detect", "pretraining_dclm_non_member", split="test")
+```
+
+On the Hub, Math Mix files are under `midtraining/mathmix/`, and the four dev-only RLVR files (`gsm8k_math` and `pooled_dev`) are not included.
 
 ### Data Format
 Every instance has a **`text`** field, which is the input scored by MIAs (for DPO `pair` files, the scored inputs are `chosen_text` and `rejected_text` instead). Non-members carry per-model **`<size>_13-gram_overlap_score`** fields (the 13-gram overlap with the OLMo 2 corpus). Additionally, each domain keeps its source-native metadata:
